@@ -11,7 +11,6 @@ from podcastcondensor.pipeline import run_pipeline
 
 
 def setup_logging(verbose: bool = False):
-    """Configure logging."""
     level = logging.DEBUG if verbose else logging.INFO
     fmt = "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
     logging.basicConfig(
@@ -23,7 +22,6 @@ def setup_logging(verbose: bool = False):
 
 
 def cmd_run(args):
-    """Run the condensation pipeline."""
     cfg = Config(
         default_model=args.model,
         lang=args.lang,
@@ -31,13 +29,18 @@ def cmd_run(args):
         output_merge_gap=args.merge_gap,
         pad_before=args.pad_before,
         pad_after=args.pad_after,
-        max_chunks_per_batch=args.max_chunks_per_batch,
-        max_chars_per_chunk=args.max_chars_per_chunk,
+        max_segments_per_batch=args.batch_size,
         resolve_maybe=args.resolve_maybe,
         keep_temp=args.keep_temp,
         prefer_auto_subs=args.prefer_auto_subs,
         ollama_host=args.ollama_host,
         ollama_timeout=args.ollama_timeout,
+        block_size_words=args.block_size,
+        max_blocks=args.max_blocks,
+        audio_speed=args.speed,
+        segment_gap_threshold=args.segment_gap,
+        segment_max_words=args.segment_max_words,
+        segment_min_words=args.segment_min_words,
     )
 
     result = run_pipeline(
@@ -52,7 +55,6 @@ def cmd_run(args):
             print(f"  - {e}", file=sys.stderr)
         sys.exit(1)
 
-    # Print summary
     audio = result.get("phases", {}).get("audio", {}).get("condensed_path")
     if audio:
         print(f"\n✅ Condensed audio: {audio}")
@@ -65,7 +67,6 @@ def cmd_run(args):
 
 
 def cmd_status(args):
-    """Check Ollama status and available models."""
     host = args.ollama_host
     ok = check_ollama(host)
     if ok:
@@ -85,23 +86,17 @@ def cmd_status(args):
 
 
 def main():
-    """Main entry point."""
     parser = argparse.ArgumentParser(
         description="podcastcondensor — local-first podcast condensing pipeline",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=(
             "Examples:\n"
             "  python -m podcastcondensor run URL\n"
-            "  python -m podcastcondensor run URL --model qwen3:8b --lang en\n"
+            "  python -m podcastcondensor run URL --model qwen2.5:7b\n"
             "  python -m podcastcondensor status\n"
-            "  python -m podcastcondensor run URL --dry-run\n"
         ),
     )
-    parser.add_argument(
-        "--verbose", "-v",
-        action="store_true",
-        help="Enable debug logging",
-    )
+    parser.add_argument("--verbose", "-v", action="store_true", help="Debug logging")
     parser.add_argument(
         "--ollama-host",
         default="http://localhost:11434",
@@ -113,36 +108,45 @@ def main():
     # run
     run_p = sub.add_parser("run", help="Run condensation pipeline")
     run_p.add_argument("url", help="YouTube URL")
-    run_p.add_argument("--model", default="qwen3:8b",
-                        help="Ollama model (default: qwen3:8b)")
-    run_p.add_argument("--lang", default="en",
-                        help="Subtitle language (default: en)")
-    run_p.add_argument("--output-dir", default="",
-                        help="Output directory (default: output/)")
-    run_p.add_argument("--merge-gap", type=float, default=2.0,
-                        help="Max gap in seconds to merge keep intervals (default: 2.0)")
-    run_p.add_argument("--pad-before", type=float, default=0.35,
-                        help="Seconds to pad before each interval (default: 0.35)")
-    run_p.add_argument("--pad-after", type=float, default=0.5,
-                        help="Seconds to pad after each interval (default: 0.5)")
+    run_p.add_argument("--model", default="qwen2.5:7b",
+                        help="Ollama model (default: qwen2.5:7b)")
+    run_p.add_argument("--lang", default="en")
+    run_p.add_argument("--output-dir", default="")
+
+    # Segmentation
+    run_p.add_argument("--segment-gap", type=float, default=0.5,
+                        help="Min silence (sec) to split segments (default: 0.5)")
+    run_p.add_argument("--segment-max-words", type=int, default=400,
+                        help="Max words per segment (default: 400)")
+    run_p.add_argument("--segment-min-words", type=int, default=20,
+                        help="Min words before merge orphan (default: 20)")
+
+    # Classification
+    run_p.add_argument("--batch-size", type=int, default=5,
+                        help="Segments per classification batch (default: 5)")
     run_p.add_argument("--resolve-maybe", action=argparse.BooleanOptionalAction,
-                        default=True,
-                        help="Resolve maybe chunks with second pass (default: True)")
-    run_p.add_argument("--dry-run", action="store_true",
-                        help="Download only, skip LLM and audio")
-    run_p.add_argument("--keep-temp", action="store_true",
-                        help="Keep temporary segment files")
-    run_p.add_argument("--prefer-auto-subs", action="store_true",
-                        help="Prefer auto-generated subtitles")
-    run_p.add_argument("--max-chunks-per-batch", type=int, default=20,
-                        help="Chunks per classification batch (default: 20)")
-    run_p.add_argument("--max-chars-per-chunk", type=int, default=600,
-                        help="Max chars per chunk before truncation (default: 600)")
-    run_p.add_argument("--ollama-timeout", type=int, default=120,
-                        help="Ollama request timeout in seconds (default: 120)")
+                        default=True)
+    run_p.add_argument("--ollama-timeout", type=int, default=600)
+
+    # Audio
+    run_p.add_argument("--merge-gap", type=float, default=2.0,
+                        help="Max gap (sec) to merge kept intervals (default: 2.0)")
+    run_p.add_argument("--pad-before", type=float, default=0.35)
+    run_p.add_argument("--pad-after", type=float, default=0.5)
+    run_p.add_argument("--speed", type=float, default=1.25,
+                        help="Playback speed (default: 1.25)")
+
+    # Other
+    run_p.add_argument("--dry-run", action="store_true")
+    run_p.add_argument("--keep-temp", action="store_true")
+    run_p.add_argument("--prefer-auto-subs", action="store_true")
+    run_p.add_argument("--block-size", type=int, default=1200,
+                        help="Target words per thematic block (default: 1200)")
+    run_p.add_argument("--max-blocks", type=int, default=0,
+                        help="Only process first N blocks, rest auto-kept (0=all, default: 0)")
 
     # status
-    status_p = sub.add_parser("status", help="Check Ollama status")
+    sub.add_parser("status", help="Check Ollama status")
 
     args = parser.parse_args()
     setup_logging(args.verbose)

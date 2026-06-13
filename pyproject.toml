@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "podcastcondensor"
+version = "0.1.0"
+description = "Local-first podcast condensing pipeline"
+requires-python = ">=3.10"
+dependencies = ["requests"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
