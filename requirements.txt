@@ -1,0 +1,4 @@
+# podcastcondensor dependencies
+# yt-dlp: YouTube audio + subtitle download
+# ffmpeg must be installed separately via apt
+# Everything else is standard library + Ollama HTTP API
