@@ -1,4 +1,7 @@
-"""YouTube downloader — audio + subtitles via yt-dlp subprocess."""
+"""YouTube downloader — audio + subtitles via yt-dlp subprocess.
+
+Resumable: checks for existing files before re-downloading.
+"""
 
 import json
 import logging
@@ -18,7 +21,6 @@ def extract_video_id(url: str) -> Optional[str]:
     m = VIDEO_ID_RE.search(url)
     if m:
         return m.group(1)
-    # Try a more general fallback — yt-dlp can resolve it
     return None
 
 
@@ -44,18 +46,52 @@ def download_metadata(url: str) -> dict:
     return json.loads(out)
 
 
+def _find_existing_audio(output_dir: str, video_id: str, audio_format: str) -> Optional[str]:
+    """Check if audio file already exists."""
+    expected = os.path.join(output_dir, f"{video_id}.{audio_format}")
+    if os.path.exists(expected):
+        logger.info("Audio exists, reusing: %s", expected)
+        return expected
+    for f in os.listdir(output_dir):
+        if f.startswith(video_id) and f.endswith(f".{audio_format}"):
+            path = os.path.join(output_dir, f)
+            if os.path.getsize(path) > 0:
+                logger.info("Audio exists, reusing: %s", path)
+                return path
+    return None
+
+
+def _find_existing_subtitle(output_dir: str, video_id: str) -> Optional[str]:
+    """Check if subtitle file already exists (srt or vtt)."""
+    for f in sorted(os.listdir(output_dir)):
+        if f.startswith(video_id) and f.endswith((".srt", ".vtt")):
+            path = os.path.join(output_dir, f)
+            if os.path.getsize(path) > 0:
+                logger.info("Subtitles exist, reusing: %s", path)
+                return path
+    return None
+
+
 def download_audio(
     url: str,
     output_dir: str,
+    video_id: str,
     format_spec: str = "bestaudio/best",
     audio_format: str = "mp3",
     audio_bitrate: str = "64k",
 ) -> str:
-    """Download best available audio, return path to file."""
+    """Download best available audio, return path to file.
+
+    Skips download if audio file already exists in output_dir.
+    """
+    # Check for existing
+    existing = _find_existing_audio(output_dir, video_id, audio_format)
+    if existing:
+        return existing
+
     outtmpl = os.path.join(output_dir, "%(id)s.%(ext)s")
-    # First download best audio in native format
     code, _, err = _run_ytdlp([
-        "-x",  # extract audio
+        "-x",
         "--audio-format", audio_format,
         "--audio-quality", audio_bitrate,
         "--no-playlist",
@@ -67,42 +103,38 @@ def download_audio(
     if code != 0:
         raise RuntimeError(f"Audio download failed: {err.strip()}")
 
-    # Find the produced file
-    # Use yt-dlp to get the video ID
-    meta = download_metadata(url)
-    vid = meta["id"]
-    expected = os.path.join(output_dir, f"{vid}.{audio_format}")
+    expected = os.path.join(output_dir, f"{video_id}.{audio_format}")
     if os.path.exists(expected):
         return expected
 
-    # Fallback: scan directory for any matching file
     for f in os.listdir(output_dir):
-        if f.startswith(vid) and f.endswith(f".{audio_format}"):
+        if f.startswith(video_id) and f.endswith(f".{audio_format}"):
             return os.path.join(output_dir, f)
     raise FileNotFoundError(
-        f"Could not find downloaded audio for {vid} in {output_dir}"
+        f"Could not find downloaded audio for {video_id} in {output_dir}"
     )
 
 
 def download_subtitles(
     url: str,
     output_dir: str,
+    video_id: str,
     lang: str = "en",
     prefer_auto: bool = False,
 ) -> Optional[str]:
     """Download subtitles.
 
     Returns path to the subtitle file actually used, or None if none found.
+    Skips download if subtitle files already exist.
 
     Strategy:
     1. If prefer_auto: try auto subs first, then manual.
     2. Otherwise: try manual subs first, then auto subs.
-    3. Returns first successful download.
     """
-    vid = extract_video_id(url)
-    if not vid:
-        meta = download_metadata(url)
-        vid = meta["id"]
+    # Check for existing
+    existing = _find_existing_subtitle(output_dir, video_id)
+    if existing:
+        return existing
 
     outtmpl = os.path.join(output_dir, "%(id)s.%(ext)s")
 
@@ -113,36 +145,31 @@ def download_subtitles(
 
     for stype in subtitle_types:
         if stype == "manual":
-            subs = f"--write-subs"
-            langs = f"--sub-langs", f"{lang}"
+            subs = "--write-subs"
+            langs = "--sub-langs", lang
         else:
             subs = "--write-auto-subs"
-            langs = "--sub-langs", f"{lang}"
+            langs = "--sub-langs", lang
 
         code, _, err = _run_ytdlp([
             "--skip-download",
             "--no-playlist",
             subs,
             *langs,
-            "--convert-subs", "srt",  # easiest to parse
+            "--convert-subs", "srt",
             "-o", outtmpl,
             url,
         ])
         if code == 0:
-            # Find the actual subtitle file
             for f in sorted(os.listdir(output_dir)):
-                if f.startswith(vid) and f.endswith((".srt", ".vtt")):
+                if f.startswith(video_id) and f.endswith((".srt", ".vtt")):
                     fpath = os.path.join(output_dir, f)
                     if os.path.getsize(fpath) > 0:
                         logger.info("Using subtitles: %s (%s)", f, stype)
                         return fpath
-        # If manual subs requested but yt-dlp errored (no manual subs exist),
-        # continue to try auto
-        logger.debug(
-            "No %s subtitles for %s: %s", stype, lang, err.strip()
-        )
+        logger.debug("No %s subtitles for %s: %s", stype, lang, err.strip())
 
-    logger.warning("No subtitles found for %s (lang=%s)", vid, lang)
+    logger.warning("No subtitles found for %s (lang=%s)", video_id, lang)
     return None
 
 
@@ -152,8 +179,10 @@ def download_all(url: str, output_dir: str, lang: str = "en",
                  audio_bitrate: str = "64k") -> dict:
     """Download audio and subtitles for a URL.
 
+    Skips existing files — safe to re-run.
+
     Returns dict with keys:
-        video_id, title, audio_path, subtitle_path
+        video_id, title, audio_path, subtitle_path, duration
     """
     Path(output_dir).mkdir(parents=True, exist_ok=True)
 
@@ -164,11 +193,13 @@ def download_all(url: str, output_dir: str, lang: str = "en",
     logger.info("Downloading: %s — %s", video_id, title)
 
     audio_path = download_audio(
-        url, output_dir, audio_format=audio_format,
-        audio_bitrate=audio_bitrate
+        url, output_dir, video_id,
+        audio_format=audio_format,
+        audio_bitrate=audio_bitrate,
     )
     subtitle_path = download_subtitles(
-        url, output_dir, lang=lang, prefer_auto=prefer_auto
+        url, output_dir, video_id,
+        lang=lang, prefer_auto=prefer_auto,
     )
 
     return {

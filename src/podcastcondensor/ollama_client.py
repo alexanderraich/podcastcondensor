@@ -113,7 +113,7 @@ def generate(
     temperature: float = 0.1,
     max_tokens: int = 2048,
     system: Optional[str] = None,
-    format_schema: Optional[dict] = None,
+    force_json: bool = False,
 ) -> str:
     """Send a generate request to Ollama, return raw text response.
 
@@ -125,7 +125,7 @@ def generate(
         temperature: Sampling temperature (low for deterministic)
         max_tokens: Max tokens to generate
         system: Optional system prompt
-        format_schema: Optional JSON schema for structured output
+        force_json: If True, forces Ollama to output valid JSON
 
     Returns:
         Raw response text
@@ -141,8 +141,8 @@ def generate(
     }
     if system:
         payload["system"] = system
-    if format_schema:
-        payload["format"] = format_schema
+    if force_json:
+        payload["format"] = "json"
 
     url = f"{host}/api/generate"
     logger.debug(
@@ -177,18 +177,34 @@ def generate_batch(
     timeout: int = 120,
     temperature: float = 0.1,
     retries: int = 1,
+    payload_override: Optional[str] = None,
 ) -> list:
     """Classify a batch of chunks using the local model.
 
     Sends prompt + JSON chunks, parses JSON response.
     Retries on parse failure.
 
+    Args:
+        prompt_template: The classification prompt text
+        chunks: List of chunk dicts
+        model: Model name
+        host: Ollama host
+        timeout: Request timeout
+        temperature: Sampling temperature
+        retries: Number of retries on parse failure
+        payload_override: If set, use this as the full JSON payload
+                         instead of building from chunks only.
+                         Used for global-context classification.
+
     Returns list of decision dicts or raises on failure.
     """
     import json
 
-    payload = json.dumps({"chunks": chunks}, ensure_ascii=False, indent=2)
-    full_prompt = prompt_template.strip() + "\n\n" + payload
+    if payload_override:
+        full_prompt = prompt_template.strip() + "\n\n" + payload_override
+    else:
+        payload = json.dumps({"chunks": chunks}, ensure_ascii=False, indent=2)
+        full_prompt = prompt_template.strip() + "\n\n" + payload
 
     for attempt in range(retries + 1):
         try:
@@ -198,25 +214,19 @@ def generate_batch(
                 host=host,
                 timeout=timeout,
                 temperature=temperature,
+                force_json=True,
             )
             decisions = _parse_json_response(raw)
             if decisions:
                 return decisions
             logger.warning(
-                "Attempt %d/%d: empty or invalid response",
-                attempt + 1, retries + 1,
+                "Attempt %d/%d: empty or invalid response (raw: %s...)",
+                attempt + 1, retries + 1, raw[:200],
             )
         except Exception as e:
             logger.warning(
                 "Attempt %d/%d failed: %s", attempt + 1, retries + 1, e
             )
-            if attempt < retries:
-                # Try with smaller batch
-                half = len(chunks) // 2
-                logger.info("Retrying with first %d chunks only", half)
-                payload = json.dumps({"chunks": chunks[:half]},
-                                      ensure_ascii=False, indent=2)
-                full_prompt = prompt_template.strip() + "\n\n" + payload
 
     raise RuntimeError(
         f"Failed to get valid classification after {retries + 1} attempts"
