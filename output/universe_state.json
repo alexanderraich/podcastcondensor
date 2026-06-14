@@ -1,0 +1,1637 @@
+{
+  "metadata": {
+    "source_playlist": "https://www.youtube.com/playlist?list=PLZxCUWw2kdo1vAsOOOa3RwzwYvHbybjHR",
+    "episodes_built_from": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      11,
+      12,
+      13,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "last_built_episode": 20,
+    "updated_at": "2026-06-14T15:16:14"
+  },
+  "entities": [
+    {
+      "id": "lord_of_spirits_podcast",
+      "title": "Lord of Spirits Podcast",
+      "summary": "A podcast focusing on spiritual reality, Orthodox Christian traditions, and practical engagement with angels and demons.",
+      "category": "tradition",
+      "episode_numbers": [
+        1
+      ],
+      "tags": [
+        "orthodox_christianity",
+        "angels",
+        "demons"
+      ]
+    },
+    {
+      "id": "materialism_in_christianity",
+      "title": "Materialism in Christianity",
+      "summary": "The belief that the physical world is all that exists, often seen as a problem for addressing spiritual issues.",
+      "category": "concept",
+      "episode_numbers": [
+        1
+      ],
+      "tags": [
+        "orthodox_christianity",
+        "spiritual_issues"
+      ]
+    },
+    {
+      "id": "gods_in_bible",
+      "title": "Gods in the Bible",
+      "summary": "The term 'gods' used in biblical texts, often challenging monotheistic interpretations.",
+      "category": "concept",
+      "episode_numbers": [
+        1
+      ],
+      "tags": [
+        "orthodox_christianity",
+        "polytheism"
+      ]
+    },
+    {
+      "id": "mount_herman",
+      "title": "Mount Herman",
+      "summary": "A site of divine events and significance in ancient religious practices.",
+      "category": "place",
+      "episode_numbers": [
+        1
+      ],
+      "tags": [
+        "ancient_religion",
+        "divine_events"
+      ]
+    },
+    {
+      "id": "guardian_angel",
+      "title": "Guardian Angel",
+      "summary": "A spiritual being in Orthodox Christianity believed to protect and guide individuals.",
+      "category": "being",
+      "episode_numbers": [
+        1
+      ],
+      "tags": [
+        "orthodox_christianity",
+        "angels"
+      ]
+    },
+    {
+      "id": "divine_council",
+      "title": "Divine Council",
+      "summary": "The concept of the divine council in ancient and biblical contexts.",
+      "category": "being",
+      "episode_numbers": [
+        2
+      ],
+      "tags": []
+    },
+    {
+      "id": "mount_sinai",
+      "title": "Mount Sinai",
+      "summary": "A mountain where gods dwell, contrasted with its role in the biblical narrative involving divine encounters.",
+      "category": "place",
+      "episode_numbers": [
+        2
+      ],
+      "tags": []
+    },
+    {
+      "id": "seraphim",
+      "title": "Seraphim",
+      "summary": "A rank of angels involved in throne guardianship, creation administration, and spiritual warfare.",
+      "category": "being",
+      "episode_numbers": [
+        2,
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "cherubim",
+      "title": "Cherubim",
+      "summary": "A rank of angels involved in throne guardianship, creation administration, and spiritual warfare.",
+      "category": "being",
+      "episode_numbers": [
+        2,
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "dominions",
+      "title": "Dominions",
+      "summary": "A rank of angels involved in throne guardianship, creation administration, and spiritual warfare.",
+      "category": "being",
+      "episode_numbers": [
+        2,
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "virtues",
+      "title": "Virtues",
+      "summary": "A rank of angels involved in throne guardianship, creation administration, and spiritual warfare.",
+      "category": "being",
+      "episode_numbers": [
+        2,
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "powers",
+      "title": "Powers",
+      "summary": "A rank of angels involved in throne guardianship, creation administration, and spiritual warfare.",
+      "category": "being",
+      "episode_numbers": [
+        2,
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "principalities",
+      "title": "Principalities",
+      "summary": "A rank of angels involved in throne guardianship, creation administration, and spiritual warfare.",
+      "category": "being",
+      "episode_numbers": [
+        2,
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "lucifer",
+      "title": "lucifer",
+      "summary": "The concept of Lucifer’s fall is discussed.",
+      "category": "historical_figure",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "angelic_rebellions",
+      "title": "angelic_rebellions",
+      "summary": "Multiple apostasies among angels are mentioned, contrasting with human sin.",
+      "category": "being",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "giants_and_nephilim",
+      "title": "giants and nephilim",
+      "summary": "The creation of giants and nephilim through angelic-human unions is discussed.",
+      "category": "being",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "satan_and_devil",
+      "title": "satan and devil",
+      "summary": "The distinction between Satan and the devil, their roles in Jewish tradition and Christian scripture.",
+      "category": "being",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "theosis",
+      "title": "theosis",
+      "summary": "The concept of divine transformation in Orthodox Christianity.",
+      "category": "theological_category",
+      "episode_numbers": [
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "sons_of_god",
+      "title": "sons of God",
+      "summary": "A term used by St. Paul and central to the discussion in this episode.",
+      "category": "being",
+      "episode_numbers": [
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "ancient_pagan_beliefs",
+      "title": "Ancient Pagan Beliefs",
+      "summary": "Belief in territorial spirits and their interaction with human life.",
+      "category": "being",
+      "episode_numbers": [
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "most_high_god",
+      "title": "Most High God",
+      "summary": "Concept of a supreme deity across various religions, contrasted with pagan worship and conflict between false gods and the true God.",
+      "category": "being",
+      "episode_numbers": [
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "saints",
+      "title": "Saints",
+      "summary": "Veneration of saints in Christianity, their role as helpers rather than worshipped deities.",
+      "category": "being",
+      "episode_numbers": [
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "nephilim",
+      "title": "Nephilim",
+      "summary": "Biblical origin of giants, focusing on Genesis 6. Meaning, cultural significance, and connection to the Nephilim.",
+      "category": "being",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "giants",
+      "title": "Giants",
+      "summary": "Ancient rituals combining metallurgy, alchemy, and sexual practices as spiritual acts. Connection to demons and divine providence.",
+      "category": "being",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "amalekites",
+      "title": "Amalekites",
+      "summary": "Ancient tribe involved in demonic rituals and warfare against giants. Historical context.",
+      "category": "historical_figure",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "horites",
+      "title": "Horites",
+      "summary": "Ancient tribe connected to demonic rituals and warfare against giants. Historical context.",
+      "category": "historical_figure",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "philistines",
+      "title": "Philistines",
+      "summary": "Ancient tribe involved in demonic rituals and warfare against giants. Historical context.",
+      "category": "historical_figure",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "adam_and_eve_creation",
+      "title": "Creation of humanity in Genesis",
+      "summary": "The creation of humanity is compared to ancient Near Eastern temple-building practices, emphasizing God's role as Creator and humans' image-bearing function.",
+      "category": "being",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "queen_mother",
+      "title": "Queen mother in Solomon’s court",
+      "summary": "The position of the queen mother is discussed, involving receiving petitions and influencing the king's decisions.",
+      "category": "being",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "mary_mother_of_jesus",
+      "title": "Mary as Jesus' mother in Orthodox Christianity",
+      "summary": "The role of Mary is traced from the Old Testament to the New Testament, emphasizing her importance for understanding salvation and God's kingdom.",
+      "category": "being",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    }
+  ],
+  "concepts": [
+    {
+      "id": "polytheism_vs_monotheism",
+      "title": "Polytheism vs Monotheism",
+      "summary": "The distinction between belief in multiple gods and the belief in one God, with challenges to traditional categorizations.",
+      "episode_numbers": [
+        1
+      ],
+      "tags": [
+        "orthodox_christianity",
+        "religious_practices"
+      ]
+    },
+    {
+      "id": "angelic_death",
+      "title": "Angel Death",
+      "summary": "The nature of death for angels and the concept of spiritual versus physical death.",
+      "episode_numbers": [
+        1
+      ],
+      "tags": [
+        "orthodox_christianity",
+        "angels"
+      ]
+    },
+    {
+      "id": "divine_council_in_bible",
+      "title": "Divine Council in Bible",
+      "summary": "Yahweh’s dual role as both father and son, and how angelic beings are referred to as sons of God.",
+      "episode_numbers": [
+        2
+      ],
+      "tags": []
+    },
+    {
+      "id": "mountain_of_gods",
+      "title": "Mountain of Gods",
+      "summary": "Common ancient Near Eastern belief in a mountain where gods dwell, contrasted with biblical narratives involving divine encounters.",
+      "episode_numbers": [
+        2
+      ],
+      "tags": []
+    },
+    {
+      "id": "angelic_ranks_and_roles",
+      "title": "Angelic Ranks and Roles",
+      "summary": "Various ranks of angels such as seraphim, cherubim, dominions, virtues, powers, and principalities.",
+      "episode_numbers": [
+        2,
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "angelic_hierarchy_in_christianity",
+      "title": "Angelical Hierarchy in Christianity",
+      "summary": "Hierarchy of angels including archangels and their roles in Christian tradition.",
+      "episode_numbers": [
+        2,
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "nature_and_origin_of_demons",
+      "title": "Nature and Origin of Demons",
+      "summary": "Demons as created beings in rebellion against God, practical advice on dealing with paranormal experiences.",
+      "episode_numbers": [
+        2,
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "divine_succession",
+      "title": "divine_succession",
+      "summary": "The concept of divine succession and Lucifer’s fall is discussed.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "human_rebellion_against_god",
+      "title": "human_rebellion_against_god",
+      "summary": "Human rebellion against God, illustrated through ancient myths and biblical narratives.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "multiple_apostasies_among_angels",
+      "title": "multiple_apostasies_among_angels",
+      "summary": "Multiple apostasies among angels are mentioned, contrasting with human sin.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "demonic_origins",
+      "title": "demonic_origins",
+      "summary": "The creation of giants and nephilim through angelic-human unions is discussed, connecting to modern understandings of evil.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "fall_of_angelic_beings",
+      "title": "fall_of_angelic_beings",
+      "summary": "The fall of angelic beings as depicted in the Tower of Babel narrative is discussed, contrasting with Paul’s interpretation and Plato’s account.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "demonic_interactions_with_physical_world",
+      "title": "demonic_interactions_with_physical_world",
+      "summary": "Questions about demonic interactions with the physical world are addressed, providing biblical examples.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "osis",
+      "title": "osis",
+      "summary": "The concept of divine transformation and the purpose of human existence in Orthodox Christianity, contrasted with Western Protestant and Catholic views.",
+      "episode_numbers": [
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "promises_to_abraham",
+      "title": "promises to Abraham",
+      "summary": "God's promises to Abraham regarding his descendants, focusing on the imagery of stars and sand.",
+      "episode_numbers": [
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "demonic_influence",
+      "title": "demonic influence",
+      "summary": "Questions about demonic influence in mental illness, distinguishing between possession and temptation.",
+      "episode_numbers": [
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "territorial_spirits",
+      "title": "Territorial Spirits",
+      "summary": "Ancient belief in spirits governing human life.",
+      "episode_numbers": [
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "war_between_god_and_fallen_angels",
+      "title": "War Between God and Fallen Angels",
+      "summary": "Theological concept of a conflict between God and rebellious beings, with Christ’s resurrection marking judgment.",
+      "episode_numbers": [
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "holy_ones",
+      "title": "Holy Ones",
+      "summary": "Concept of humans becoming holy without ceasing to be human, through baptism and active engagement in Christian practices.",
+      "episode_numbers": [
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "divine_beings_and_culture_heroes",
+      "title": "Divine Beings and Culture Heroes",
+      "summary": "Discussion of divine beings and culture heroes in various mythologies, contrasting Pagan and biblical narratives.",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "ancient_rituals",
+      "title": "Ancient Rituals",
+      "summary": "Rituals combining metallurgy, alchemy, and sexual practices as spiritual acts. Connection to biblical accounts and archaeological findings.",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "divine_providence",
+      "title": "Divine Providence",
+      "summary": "Concept of divine providence in relation to the death of children and spiritual warfare. Interpretation of texts like Joshua and Deuteronomy.",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "gigantomachy",
+      "title": "Gigantomachy",
+      "summary": "Concept of gigantomachy across different cultures, comparison with biblical narratives. Depictions of Saint Christopher as a giant.",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "giants_and_demons",
+      "title": "Giants and Demons",
+      "summary": "Connection between giants and demons in ancient texts. Discussion on the nature of initiation rituals for social identity.",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "temple_building_practices",
+      "title": "Ancient Near Eastern temple-building practices compared to human creation",
+      "summary": "The episode compares the creation of humanity in Genesis to ancient Near Eastern temple-building practices, highlighting God's role as Creator and humans' image-bearing function.",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "idolatry_vs_biblical_view",
+      "title": "Idolatry contrasted with the biblical view of God’s sovereignty",
+      "summary": "The episode discusses idolatry, contrasting it with the biblical view of God's sovereignty and how humans are created to serve Him rather than trap gods for their benefit.",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "number_70",
+      "title": "Significance of number 70 in biblical contexts",
+      "summary": "The episode explores the significance of the number 70, connecting it to leadership roles like elders and Christ's disciples.",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "davidic_kingship_transformation",
+      "title": "Transition from Davidic kingship to its fulfillment in Christ",
+      "summary": "The episode delves into the transition from Davidic kingship to its fulfillment in Christ, emphasizing theological significance.",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "concept_1",
+      "title": "Divine Council Concept in OT",
+      "summary": "Concept of divine council with angelic beings as sons of God, Mount Sinai as divine mountain, and god's glory shared with humanity.",
+      "episode_numbers": [
+        20
+      ]
+    },
+    {
+      "id": "concept_2",
+      "title": "Pagan Gods and Human Sacrifices",
+      "summary": "Ancient gods needing human sacrifices and the contrast with pagan myths of divine father and son.",
+      "episode_numbers": [
+        20
+      ]
+    },
+    {
+      "id": "concept_3",
+      "title": "Ascension Imagery in Daniel and Revelation",
+      "summary": "Imagery of ascension in Daniel, Jesus' enthronement, cloud symbolizing divine ascent and kingdom transfer.",
+      "episode_numbers": [
+        20
+      ]
+    },
+    {
+      "id": "concept_4",
+      "title": "Resurrection Appearances in Paul's Epistles",
+      "summary": "Resurrection appearances in Paul's epistles, Jesus' identity vs. visual perception, and the iconic representation of Christ are discussed.",
+      "episode_numbers": [
+        19
+      ],
+      "tags": []
+    },
+    {
+      "id": "concept_5",
+      "title": "Mark’s Longer Ending and Mount of Transfiguration Revelation",
+      "summary": "The longer ending in Mark is mentioned, along with the revelation on the Mount of Transfiguration. Iconic representation of Christ is also discussed.",
+      "episode_numbers": [
+        19
+      ],
+      "tags": []
+    },
+    {
+      "id": "concept_6",
+      "title": "Ignatius’s Martyrdom Concept and Lake of Fire Imagery Critique",
+      "summary": "Ignatius's martyrdom concept is mentioned, along with critiques of lake of fire imagery. The value of historical Jesus scholarship is also discussed.",
+      "episode_numbers": [
+        19
+      ],
+      "tags": []
+    },
+    {
+      "id": "christianity_new_exodus",
+      "title": "Christianity as new Exodus",
+      "summary": "Christianity viewed as a continuation of the Israelite exodus, with distinct identity and role in society.",
+      "episode_numbers": [
+        18
+      ]
+    },
+    {
+      "id": "angelic_beings_sons_of_God",
+      "title": "Angelic beings as sons of God",
+      "summary": "Belief that angels are descendants or children of God.",
+      "episode_numbers": [
+        18
+      ]
+    },
+    {
+      "id": "mount_sinai_divine_mountain",
+      "title": "Mount Sinai as divine mountain",
+      "summary": "Mount Sinai is considered a sacred and divine location in religious contexts.",
+      "episode_numbers": [
+        18
+      ]
+    },
+    {
+      "id": "concept_7",
+      "title": "Orthodox Church Values Multiple Perspectives on the Resurrection",
+      "summary": "The Orthodox Church values multiple perspectives on the resurrection, with women as primary witnesses and examples from Old Testament like Deborah and Moses. The Christ sends disciples who take their duties seriously is also mentioned.",
+      "episode_numbers": [
+        19
+      ],
+      "tags": []
+    },
+    {
+      "id": "concept_8",
+      "title": "Jesus as Lord and Son, Emphasizing Gospel Revelations of Christ",
+      "summary": "Jesus is presented as the lord and son, with gospel revelations of Christ emphasized. Miraculous visions versus testimonies are also discussed.",
+      "episode_numbers": [
+        19
+      ],
+      "tags": []
+    },
+    {
+      "id": "concept_9",
+      "title": "Divine Council Concept in Old Testament",
+      "summary": "The divine council concept in the Old Testament is discussed, including angelic beings as sons of God and Mount Sinai as a divine mountain.",
+      "episode_numbers": [
+        19
+      ],
+      "tags": []
+    }
+  ],
+  "claims": [
+    {
+      "id": "materialism_problem",
+      "title": "Materialism Problem",
+      "claim": "Modern Christians often live as though the physical world is all that exists, making it difficult to address spiritual issues.",
+      "episode_numbers": [
+        1
+      ],
+      "tags": [
+        "orthodox_christianity",
+        "spiritual_issues"
+      ]
+    },
+    {
+      "id": "gods_in_bible_challenge",
+      "title": "Gods in Bible Challenge",
+      "claim": "The term 'gods' in biblical texts challenges traditional monotheistic interpretations, particularly from Psalms and Exodus.",
+      "episode_numbers": [
+        1
+      ],
+      "tags": [
+        "orthodox_christianity",
+        "polytheism"
+      ]
+    },
+    {
+      "id": "angels_are_sons_of_god",
+      "title": "Angels are Sons of God",
+      "claim": "Angelic beings are referred to as sons of God, serving as intermediaries for God's will.",
+      "episode_numbers": [
+        2
+      ],
+      "tags": []
+    },
+    {
+      "id": "angels_do_not_reproduce",
+      "title": "Angels Do Not Reproduce",
+      "claim": "Angels do not reproduce and are cosmic intelligences.",
+      "episode_numbers": [
+        2,
+        3,
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "fallen_angel_serve_god",
+      "title": "Fallen Angels Serve God Despite Themselves",
+      "claim": "Fallen angels serve God despite themselves.",
+      "episode_numbers": [
+        2,
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "01",
+      "title": "ancient_myths_and_biblical_narratives",
+      "claim": "Ancient myths and biblical narratives reflect the concept of divine succession and Lucifer’s fall.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "02",
+      "title": "human_sin_vs_angelic_rebellions",
+      "claim": "Human sin is contrasted with multiple apostasies among angels, illustrating a larger rebellion.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "03",
+      "title": "giants_and_nephilim_creation",
+      "claim": "Giants and nephilim are created through angelic-human unions, leading to human apostasy and spiritual rebellion.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "04",
+      "title": "fall_of_angelic_beings_tower_of_babel",
+      "claim": "The fall of angelic beings is depicted in the Tower of Babel narrative, contrasting with Paul’s interpretation and Plato’s account.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "05",
+      "title": "satan_and_devil_distinction",
+      "claim": "Satan and the devil are distinguished in Jewish tradition and Christian scripture, with Satan's fall after Christ’s ministry.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "osis_claim_1",
+      "title": "osis claim 1",
+      "claim": "Theosis is about divine transformation and the purpose of human existence, not just an individual spiritual program.",
+      "episode_numbers": [
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "osis_claim_2",
+      "title": "osis claim 2",
+      "claim": "Through baptism, believers are made sons of God and heirs to divine glory in Orthodox Christianity.",
+      "episode_numbers": [
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "1",
+      "title": "Ancient Beliefs vs. Modern Secular Perspectives",
+      "claim": "The episode contrasts ancient pagan beliefs with modern secular perspectives, setting the stage for exploring Halloween traditions from an Orthodox Christian standpoint.",
+      "episode_numbers": [
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "2",
+      "title": "Pagan to Christian Conversion",
+      "claim": "Early Christians defeated and replaced pagan deities with saints through deliberate acts of spiritual warfare, using St. Demetrius as an example.",
+      "episode_numbers": [
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "giants_creation_challenges_beliefs",
+      "title": "Giants' Creation Challenges Traditional Religious Beliefs",
+      "claim": "The creation of giants challenges traditional religious beliefs and is seen as a subversion of ancient Pagan practices through Christian narratives.",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "giants_and_racial_identities",
+      "title": "Giants and Racial Identities",
+      "claim": "Social identity in ancient societies, including Israelite tribes, was defined through ritual participation rather than genetics.",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "giants_and_religious_interpretations",
+      "title": "Giants and Religious Interpretations",
+      "claim": "Early Christian interpretations of Genesis 6 and the Nephilim, including views from Saint Irenaeus and Saint Justin Martyr.",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "adam_image_of_god",
+      "title": "Adam was created to image God",
+      "claim": "God created man to image Him, contrasting this with idolatry where humans create images to trap gods for their benefit.",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "queen_mother_influence",
+      "title": "Queen mother's role in ancient Israel",
+      "claim": "The queen mother received petitions and influenced the king's decisions, drawing parallels to modern governmental structures.",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "mary_model_for_christians",
+      "title": "Mary as a model for Christian life in Orthodox Christianity",
+      "claim": "The Virgin Mary is emphasized as a model for Christian life, with her role deeply rooted in scripture and central to understanding salvation.",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "claim_1",
+      "title": "Divine Council Concept in OT",
+      "summary": "Concept of divine council with angelic beings as sons of God, Mount Sinai as divine mountain, and god's glory shared with humanity.",
+      "episode_numbers": [
+        20
+      ]
+    },
+    {
+      "id": "claim_2",
+      "title": "Pagan Gods Needing Human Sacrifices",
+      "summary": "Ancient gods needing human sacrifices and the contrast with pagan myths of divine father and son.",
+      "episode_numbers": [
+        20
+      ]
+    },
+    {
+      "id": "claim_3",
+      "title": "Ascension Imagery in Daniel and Revelation",
+      "summary": "Imagery of ascension in Daniel, Jesus' enthronement, cloud symbolizing divine ascent and kingdom transfer.",
+      "episode_numbers": [
+        20
+      ]
+    },
+    {
+      "id": "claim_4",
+      "title": "Astral projection and demonic influence relation discussed within religious frameworks",
+      "summary": "Demonic influence is explored within religious contexts, including astral projection.",
+      "episode_numbers": [
+        16
+      ],
+      "tags": []
+    },
+    {
+      "id": "claim_5",
+      "title": "Underworld rivers and gates symbolism in ancient texts, giants in ancient texts, brazen gates significance",
+      "summary": "Symbolism of underworld rivers and gates is discussed, along with the presence of giants in ancient texts and the importance of brazen gates.",
+      "episode_numbers": [
+        16
+      ],
+      "tags": []
+    },
+    {
+      "id": "claim_6",
+      "title": "Bronze technology connection to pre-flood knowledge, collapse of the golden age, hope for resurrection in Christianity",
+      "summary": "Connection between bronze technology and pre-flood knowledge is noted, along with discussions on the collapse of the golden age and Christian hope for resurrection.",
+      "episode_numbers": [
+        16
+      ],
+      "tags": []
+    },
+    {
+      "id": "christianity_new_exodus_role_in_society",
+      "title": "Role of Christians in society",
+      "claim": "Christianity views its members as having distinct roles within society, separate from other religions.",
+      "episode_numbers": [
+        18
+      ]
+    },
+    {
+      "id": "animals_have_souls_heaven",
+      "title": "Animals have souls in heaven",
+      "claim": "In Christian belief, animals are believed to possess souls and may be present in heaven.",
+      "episode_numbers": [
+        18
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "psalms_82",
+      "reference": "Psalms:82:6-7",
+      "summary": "God judging other gods, challenging the monotheistic interpretation.",
+      "episode_numbers": [
+        1
+      ],
+      "tags": [
+        "orthodox_christianity",
+        "polytheism"
+      ]
+    },
+    {
+      "id": "exodus_20_3",
+      "reference": "Exodus:20:3",
+      "summary": "The commandment against other gods, often interpreted as monotheistic but challenging in context.",
+      "episode_numbers": [
+        1
+      ],
+      "tags": [
+        "orthodox_christianity",
+        "polytheism"
+      ]
+    },
+    {
+      "id": "psalm_82",
+      "reference": "psalm:82",
+      "summary": "Scripture reference to the sons of God.",
+      "episode_numbers": [
+        2
+      ],
+      "tags": []
+    },
+    {
+      "id": "isaiah_14_13",
+      "reference": "isaiah:14:13",
+      "summary": "Scripture reference to the fall of Lucifer, comparing it to a fallen angel serving God.",
+      "episode_numbers": [
+        2
+      ],
+      "tags": []
+    },
+    {
+      "id": "first_kings_22_19-23",
+      "reference": "1_kings:22:19-23",
+      "summary": "Scripture reference to the lying spirit used by God.",
+      "episode_numbers": [
+        2
+      ],
+      "tags": []
+    },
+    {
+      "id": "01",
+      "reference": "genesis:1-2",
+      "summary": "Genesis passages are referenced to illustrate divine succession and human rebellion against God.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "02",
+      "reference": "isaiah:14",
+      "summary": "Isaiah 14 is referenced for the concept of Lucifer’s fall.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "galatians_4:5-7",
+      "reference": "galatians 4:5-7",
+      "summary": "St. Paul's writings on the promise that Abraham’s offspring would be like angels.",
+      "episode_numbers": [
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "romans_8:16-17",
+      "reference": "romans 8:16-17",
+      "summary": "St. Paul's writings on adoption as central to salvation.",
+      "episode_numbers": [
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "1",
+      "reference": "galatians:3-4",
+      "summary": "Scripture reference used to illustrate the conflict between false gods and the true God.",
+      "episode_numbers": [
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "2",
+      "reference": "psalm_82",
+      "summary": "Scripture reference used to illustrate the conflict between false gods and the true God.",
+      "episode_numbers": [
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "genesis_6",
+      "reference": "gen:6",
+      "summary": "Biblical origin of giants, focusing on Genesis 6 and the Nephilim.",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "revelation",
+      "reference": "rev",
+      "summary": "Message about redemption despite human sin using Revelation to illustrate Christ's love and sacrifice.",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "genesis_1",
+      "reference": "Genesis 1:26-27",
+      "summary": "God created man in His image to rule over the earth.",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "deuteronomy_34",
+      "reference": "Deuteronomy 34:9-10",
+      "summary": "Moses was one of the seventy elders appointed by God.",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "psalm_45",
+      "reference": "Psalm 45:12-16",
+      "summary": "The psalm praises both the king and his queen mother, highlighting their roles.",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "scriptural_link_1",
+      "reference": "Mark:30-42",
+      "summary": "Resurrection appearances in Mark are discussed, including the longer ending and the revelation on the Mount of Transfiguration.",
+      "episode_numbers": [
+        19
+      ],
+      "tags": []
+    },
+    {
+      "id": "scriptural_link_2",
+      "reference": "Exodus 15:1-18, Hosea 13:14",
+      "summary": "Red Sea crossing and death imagery in biblical texts.",
+      "episode_numbers": [
+        17
+      ],
+      "tags": []
+    },
+    {
+      "id": "scriptural_link_3",
+      "reference": "Psalm 24:1-6, Hosea 13:14",
+      "summary": "Biblical parallels between Psalm 24 and death imagery in Hosea.",
+      "episode_numbers": [
+        17
+      ],
+      "tags": []
+    }
+  ],
+  "historical_links": [
+    {
+      "id": "enochic_literature",
+      "title": "Enochic Literature",
+      "summary": "The origins of the title 'Lord of Spirits' in Enochic literature.",
+      "episode_numbers": [
+        1
+      ],
+      "tags": [
+        "orthodox_christianity",
+        "historical_sources"
+      ]
+    },
+    {
+      "id": "mount_tabor",
+      "title": "Mount Tabor",
+      "summary": "Another mountain where gods dwell, contrasted with Mount Sinai in the biblical narrative.",
+      "episode_numbers": [
+        2
+      ],
+      "tags": []
+    },
+    {
+      "id": "01",
+      "title": "ancient_myths",
+      "summary": "Ancient myths are used to illustrate divine succession and angelic rebellions, including references to pagan myths.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "ancient_celestial_bodies",
+      "title": "ancient celestial bodies",
+      "summary": "Ancient peoples' understanding of celestial bodies as divine beings, linking this to modern interpretations of promises to Abraham.",
+      "episode_numbers": [
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "1",
+      "title": "Pagan-to-Christian Conversion Process",
+      "summary": "Historical context of early Christians defeating and replacing pagan deities with saints.",
+      "episode_numbers": [
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "decline_of_paganism_in_rome",
+      "title": "Decline of Paganism in the Roman Empire",
+      "summary": "Discussion on the decline of paganism, particularly focusing on animal sacrifice and Christianization efforts.",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "davidic_kingship",
+      "title": "Davidic kingship in ancient Israel",
+      "summary": "The episode discusses the transition from Davidic kingship to its fulfillment in Christ, providing historical context.",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "link_1",
+      "title": "Bronze technology, pre-flood knowledge connection, collapse of the golden age, hope for resurrection in Christianity",
+      "summary": "Connection between bronze technology and pre-flood knowledge is discussed, along with discussions on the collapse of the golden age and Christian hope for resurrection.",
+      "episode_numbers": [
+        16
+      ],
+      "tags": []
+    },
+    {
+      "id": "historical_link_1",
+      "title": "Ancient Gods vs. Leviathan in Genesis",
+      "summary": "Contrast between ancient gods depicted in Genesis and the concept of leviathan, as well as pagan myths of divine father and son.",
+      "episode_numbers": [
+        20
+      ],
+      "tags": []
+    },
+    {
+      "id": "historical_link_2",
+      "title": "Divine Council Concept in OT",
+      "summary": "Discussion on the divine council concept, angelic beings as sons of God, and Mount Sinai as a divine mountain.",
+      "episode_numbers": [
+        13
+      ],
+      "tags": []
+    },
+    {
+      "id": "ancient_beliefs_stars_planets",
+      "title": "Ancient beliefs about stars and planets",
+      "summary": "Ancient cultures had various beliefs regarding the celestial bodies, including their influence on human affairs.",
+      "episode_numbers": [
+        18
+      ],
+      "tags": []
+    }
+  ],
+  "glossary": [
+    {
+      "id": "polytheism",
+      "term": "Polytheism",
+      "definition": "The belief in multiple gods or goddesses.",
+      "episode_numbers": [
+        1
+      ],
+      "language": "English"
+    },
+    {
+      "id": "monotheism",
+      "term": "Monotheism",
+      "definition": "The belief in one God.",
+      "episode_numbers": [
+        1
+      ],
+      "language": "English"
+    },
+    {
+      "id": "archangels",
+      "term": "Archangels",
+      "definition": "Angelic beings who stand before God's throne, belonging to a higher rank than other archangels.",
+      "episode_numbers": [
+        2,
+        5
+      ],
+      "language": "English",
+      "tags": []
+    },
+    {
+      "id": "01",
+      "term": "nephilim",
+      "definition": "Giants created through angelic-human unions, leading to human apostasy and spiritual rebellion.",
+      "episode_numbers": [
+        3
+      ],
+      "language": "English",
+      "tags": []
+    },
+    {
+      "id": "osis",
+      "term": "osis",
+      "definition": "The concept of divine transformation and the purpose of human existence in Orthodox Christianity, contrasted with Western Protestant and Catholic views.",
+      "episode_numbers": [
+        4
+      ],
+      "language": "English",
+      "tags": []
+    },
+    {
+      "id": "1",
+      "term": "baptism",
+      "definition": "Metaphor for recruitment into an army against evil spirits, symbolizing active engagement in Christian practices.",
+      "episode_numbers": [
+        5
+      ],
+      "language": "English",
+      "tags": []
+    },
+    {
+      "id": "nephilim",
+      "term": "Nephilim",
+      "definition": "Biblical beings of giant stature, often associated with the offspring of fallen angels and human women.",
+      "episode_numbers": [
+        7
+      ],
+      "language": "English",
+      "tags": []
+    },
+    {
+      "id": "giants",
+      "term": "Giants",
+      "definition": "Ancient mythological beings of enormous size, often associated with divine or demonic origins.",
+      "episode_numbers": [
+        7
+      ],
+      "language": "English",
+      "tags": []
+    },
+    {
+      "id": "temple_building_practices",
+      "term": "Temple-building practices",
+      "definition": "Ancient Near Eastern practices of constructing temples, used as a comparison to the creation of humanity in Genesis.",
+      "episode_numbers": [
+        8
+      ],
+      "language": "English",
+      "tags": []
+    },
+    {
+      "id": "idolatry",
+      "term": "Idolatry",
+      "definition": "The practice of worshiping false gods or images, contrasted with the biblical view of God's sovereignty.",
+      "episode_numbers": [
+        8
+      ],
+      "language": "English",
+      "tags": []
+    },
+    {
+      "id": "number_70",
+      "term": "Number 70",
+      "definition": "A significant number in biblical contexts, often associated with leadership roles like elders and Christ's disciples.",
+      "episode_numbers": [
+        8
+      ],
+      "language": "English",
+      "tags": []
+    }
+  ],
+  "open_threads": [
+    {
+      "id": "angelic_death_open_thread",
+      "title": "Angel Death Open Thread",
+      "summary": "Questions about the nature of death for angels and the concept of spiritual versus physical death remain open.",
+      "episode_numbers": [
+        1
+      ]
+    },
+    {
+      "id": "angelic_hierarchy_and_human_hierarchies",
+      "title": "Angelical Hierarchy and Human Hierarchies",
+      "summary": "Discussion on how angelic hierarchies relate to human hierarchies like government and church leadership.",
+      "episode_numbers": [
+        2,
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "01",
+      "title": "demonic_interactions_with_physical_world",
+      "summary": "Questions about demonic interactions with the physical world are raised, likely to recur.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "osis_open_thread_1",
+      "title": "osis open thread 1",
+      "summary": "Unresolved ideas about the continuous process of becoming holy through baptism in Orthodox Christianity.",
+      "episode_numbers": [
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "1",
+      "title": "Spiritual Warfare and Human Role",
+      "summary": "Discussion on the ongoing battle against evil spirits and humans' role in this conflict.",
+      "episode_numbers": [
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "giants_existence",
+      "title": "Giants' Existence and Nature",
+      "summary": "Questions about the existence of giants today or whether they are a different species.",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "adam_and_eve_creation",
+      "title": "Creation of humanity in Genesis compared to ancient Near Eastern practices",
+      "summary": "The episode compares the creation of humanity in Genesis to ancient Near Eastern temple-building practices, highlighting God's role as Creator and humans' image-bearing function.",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "davidic_kingship_transformation",
+      "title": "Transition from Davidic kingship to its fulfillment in Christ",
+      "summary": "The episode delves into the transition from Davidic kingship to its fulfillment in Christ, emphasizing theological significance.",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "thread_1",
+      "title": "Live Broadcast on Facebook and Ancient Faith Radio",
+      "summary": "Discussion of live broadcast on Facebook, ancient faith radio presentation, god's praise and blessings, support for podcasters.",
+      "episode_numbers": [
+        20
+      ]
+    },
+    {
+      "id": "thread_2",
+      "title": "Divine council concept in Old Testament, including angelic beings as sons of God and Mount Sinai as a divine mountain with ritual and sacred space interaction",
+      "summary": "Angelic beings are considered sons of God, and Mount Sinai is described as a divine mountain with associated rituals.",
+      "episode_numbers": [
+        16
+      ],
+      "tags": []
+    },
+    {
+      "id": "thread_3",
+      "title": "Underworld concepts from ancient mythology, including sheol as the grave and demonic realm, pagan underworld practices described",
+      "summary": "Sheol is portrayed as a place of the dead and demonic influence in ancient mythologies.",
+      "episode_numbers": [
+        16
+      ],
+      "tags": []
+    },
+    {
+      "id": "thread_4",
+      "title": "Astral projection and demonic influence relation discussed within religious frameworks",
+      "summary": "Demonic influence is explored within religious contexts, including astral projection.",
+      "episode_numbers": [
+        16
+      ],
+      "tags": []
+    },
+    {
+      "id": "thread_5",
+      "title": "Underworld rivers and gates symbolism in ancient texts, giants in ancient texts, brazen gates significance",
+      "summary": "Symbolism of underworld rivers and gates is discussed, along with the presence of giants in ancient texts and the importance of brazen gates.",
+      "episode_numbers": [
+        16
+      ],
+      "tags": []
+    },
+    {
+      "id": "thread_6",
+      "title": "Bronze technology connection to pre-flood knowledge, collapse of the golden age, hope for resurrection in Christianity",
+      "summary": "Connection between bronze technology and pre-flood knowledge is noted, along with discussions on the collapse of the golden age and Christian hope for resurrection.",
+      "episode_numbers": [
+        16
+      ],
+      "tags": []
+    },
+    {
+      "id": "intense_practice_critique",
+      "title": "Critique of intense spiritual practices",
+      "summary": "Discussion on the potential dangers and critiques of certain intense religious or spiritual practices.",
+      "episode_numbers": [
+        18
+      ]
+    },
+    {
+      "id": "christian_astrology_vs_modern",
+      "title": "Christian astrology vs. modern astrology",
+      "summary": "Comparison between Christian beliefs about astrology and contemporary scientific understanding.",
+      "episode_numbers": [
+        18
+      ]
+    }
+  ],
+  "canonical_repetitions": [
+    {
+      "id": "orthodox_christianity_practice",
+      "title": "Orthodox Christianity Practice",
+      "summary": "Practical advice on deepening one's relationship with guardian angels through prayer is repeated.",
+      "episode_numbers": [
+        1
+      ],
+      "tags": [
+        "orthodox_christianity",
+        "prayer"
+      ]
+    },
+    {
+      "id": "angelic_ranks_and_roles",
+      "title": "Angelic Ranks and Roles",
+      "summary": "Various ranks of angels such as seraphim, cherubim, dominions, virtues, powers, and principalities.",
+      "episode_numbers": [
+        2,
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "01",
+      "title": "human_sin_vs_angelic_rebellions",
+      "summary": "The contrast between human sin and angelic rebellions is a recurring theme.",
+      "episode_numbers": [
+        3
+      ],
+      "tags": []
+    },
+    {
+      "id": "osis_canonical_repetition_1",
+      "title": "osis canonical repetition 1",
+      "summary": "Repetition of the concept that in Orthodox Christianity, becoming holy is seen as a continuous process rather than a one-time event.",
+      "episode_numbers": [
+        4
+      ],
+      "tags": []
+    },
+    {
+      "id": "1",
+      "title": "Importance of Baptism and Exorcistic Acts",
+      "summary": "Repetition on the importance of baptism and exorcistic acts in switching loyalties from paganism to Christianity.",
+      "episode_numbers": [
+        5
+      ],
+      "tags": []
+    },
+    {
+      "id": "giants_and_demons_connection",
+      "title": "Giants and Demons Connection",
+      "summary": "Discussion on the connection between giants and demons in ancient texts.",
+      "episode_numbers": [
+        7
+      ],
+      "tags": []
+    },
+    {
+      "id": "adam_image_of_god",
+      "title": "Adam as God's image-bearer",
+      "summary": "The episode emphasizes that Adam was created to image God, contrasting this with idolatry.",
+      "episode_numbers": [
+        8
+      ],
+      "tags": []
+    },
+    {
+      "id": "repetition_1",
+      "title": "Divine Council Concept in OT",
+      "summary": "Concept of divine council with angelic beings as sons of God, Mount Sinai as divine mountain, and god's glory shared with humanity.",
+      "episode_numbers": [
+        20
+      ]
+    },
+    {
+      "id": "repetition_2",
+      "title": "Pagan Gods Needing Human Sacrifices",
+      "summary": "Ancient gods needing human sacrifices and the contrast with pagan myths of divine father and son.",
+      "episode_numbers": [
+        20
+      ]
+    },
+    {
+      "id": "repetition_3",
+      "title": "Underworld concepts from ancient mythology include sheol as the grave and demonic realm, pagan underworld practices described",
+      "summary": "Sheol is portrayed as a place of the dead and demonic influence in ancient mythologies.",
+      "episode_numbers": [
+        16
+      ],
+      "tags": []
+    },
+    {
+      "id": "repetition_4",
+      "title": "Astral projection and demonic influence relation discussed within religious frameworks",
+      "summary": "Demonic influence is explored within religious contexts, including astral projection.",
+      "episode_numbers": [
+        16
+      ],
+      "tags": []
+    },
+    {
+      "id": "repetition_5",
+      "title": "Underworld rivers and gates symbolism in ancient texts, giants in ancient texts, brazen gates significance",
+      "summary": "Symbolism of underworld rivers and gates is discussed, along with the presence of giants in ancient texts and the importance of brazen gates.",
+      "episode_numbers": [
+        16
+      ],
+      "tags": []
+    },
+    {
+      "id": "repetition_6",
+      "title": "Bronze technology connection to pre-flood knowledge, collapse of the golden age, hope for resurrection in Christianity",
+      "summary": "Connection between bronze technology and pre-flood knowledge is noted, along with discussions on the collapse of the golden age and Christian hope for resurrection.",
+      "episode_numbers": [
+        16
+      ],
+      "tags": []
+    },
+    {
+      "id": "divine_council_concept_in_OT",
+      "title": "Divine council concept in OT",
+      "summary": "The idea of a divine council or assembly is discussed multiple times, emphasizing its importance and relevance.",
+      "episode_numbers": [
+        18
+      ]
+    }
+  ]
+}

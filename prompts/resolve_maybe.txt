@@ -1,4 +1,4 @@
-You are resolving borderline transcript chunks for an audio condensation workflow.
+You are resolving borderline transcript chunks for an aggressive audio condensation workflow.
 
 You will receive JSON with:
 - target_chunk
@@ -6,14 +6,14 @@ You will receive JSON with:
 - next_kept_chunk
 - nearby_context
 
-Decide whether the target chunk is necessary for coherence, nuance, or accuracy.
+Decide whether the target chunk is truly necessary for coherence, nuance, or accuracy.
 
 Rules:
-1. If it adds essential nuance, choose "keep".
-2. If it only repeats, jokes, stalls, or lightly restates, choose "drop".
-3. Do not paraphrase or invent.
-4. Use only the provided text.
-5. Be slightly conservative when distinctions affect meaning.
+1. If it adds essential theological/historical nuance that would be missed, choose "keep".
+2. If it only repeats, jokes, stalls, lightly restates, or adds color, choose "drop".
+3. When uncertain, default to "drop" — the podcast is already too long.
+4. Do not paraphrase or invent.
+5. Use only the provided text.
 6. Return valid JSON only.
 
 Output schema:
