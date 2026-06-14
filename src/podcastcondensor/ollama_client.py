@@ -297,10 +297,17 @@ def _classify_parse_dict(text: str) -> Optional[list]:
     if not isinstance(data, dict):
         return None
 
-    # Format 1: {"decisions": [...]}
+    # Format 1: {"decisions": [...]} — normalize each item
     decisions = data.get("decisions")
     if isinstance(decisions, list):
-        return decisions
+        normalized = []
+        for item in decisions:
+            if not isinstance(item, dict):
+                continue
+            item["id"] = item.get("id") or item.get("chunk_id") or item.get("segment_id", "?")
+            item["label"] = item.get("label") or item.get("classification", "maybe")
+            normalized.append(item)
+        return normalized if normalized else None
 
     # Format 2: single classification object
     label = data.get("label") or data.get("classification")
