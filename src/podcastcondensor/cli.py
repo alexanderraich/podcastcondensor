@@ -26,6 +26,7 @@ def setup_logging(verbose: bool = False):
 def cmd_run(args):
     cfg = Config(
         default_model=args.model,
+        classify_model=args.classify_model,
         lang=args.lang,
         output_root=os.path.abspath(args.output_dir) if args.output_dir else "",
         output_merge_gap=args.merge_gap,
@@ -133,6 +134,7 @@ def cmd_process_playlist(args):
     """Process playlist episodes using a pre-built universe state."""
     cfg = Config(
         default_model=args.model,
+        classify_model=getattr(args, 'classify_model', 'qwen2.5:7b'),
         lang=args.lang,
         output_root=os.path.abspath(args.output_dir) if args.output_dir else "",
         output_merge_gap=args.merge_gap,
@@ -212,8 +214,10 @@ def main():
     # run
     run_p = sub.add_parser("run", help="Run condensation pipeline")
     run_p.add_argument("url", help="YouTube URL")
-    run_p.add_argument("--model", default="qwen2.5:7b",
-                        help="Ollama model (default: qwen2.5:7b)")
+    run_p.add_argument("--model", default="qwen2.5:3b",
+                        help="Ollama model for extraction/summarization (default: qwen2.5:3b)")
+    run_p.add_argument("--classify-model", default="qwen2.5:7b",
+                        help="Ollama model for classification (default: qwen2.5:7b)")
     run_p.add_argument("--lang", default="en")
     run_p.add_argument("--output-dir", default="")
 
@@ -267,7 +271,7 @@ def main():
                          help="Last episode to process (1-based, default: 20)")
     build_p.add_argument("--state-file", default="",
                          help="Path to universe state JSON file (default: output/universe_state.json)")
-    build_p.add_argument("--model", default="qwen2.5:7b",
+    build_p.add_argument("--model", default="qwen2.5:3b",
                          help="Ollama model (default: qwen2.5:7b)")
     build_p.add_argument("--lang", default="en")
     build_p.add_argument("--output-dir", default="")
@@ -299,7 +303,10 @@ def main():
                         help="First episode to process (1-based, default: 21)")
     proc_p.add_argument("--end", type=int, default=0,
                         help="Last episode to process (0=until end, default: 0)")
-    proc_p.add_argument("--model", default="qwen2.5:7b")
+    proc_p.add_argument("--model", default="qwen2.5:3b",
+                         help="Ollama model for extraction/summarization (default: qwen2.5:3b)")
+    proc_p.add_argument("--classify-model", default="qwen2.5:7b",
+                         help="Ollama model for classification (default: qwen2.5:7b)")
     proc_p.add_argument("--lang", default="en")
     proc_p.add_argument("--output-dir", default="")
     proc_p.add_argument("--batch-size", type=int, default=5)

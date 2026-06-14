@@ -1,0 +1,60 @@
+{
+  "entities": [],
+  "concepts": [
+    "creation of humanity",
+    "temple-like construction",
+    "ancient Near Eastern temple-building practices",
+    "idolatry",
+    "image-bearing function",
+    "biblical view of God’s sovereignty",
+    "human role in creation",
+    "subduing the earth",
+    "Adam naming animals",
+    "Christ's authority",
+    "kingship and monarchy",
+    "Deuteronomy",
+    "1 Samuel",
+    "Davidic kingship",
+    "fulfillment in Christ",
+    "queen mother",
+    "Solomon",
+    "Mary as Jesus' mother",
+    "Orthodox Christianity"
+  ],
+  "claims": [],
+  "relations": [],
+  "open_threads": [
+    "The significance of the number 70 in biblical contexts and its connection to leadership roles.",
+    "Questions about the role of the queen mother in ancient Israel and its connection to the New Testament.",
+    "The theological significance of the Virgin Mary in Orthodox Christianity."
+  ],
+  "scriptural_links": [],
+  "historical_links": [
+    {
+      "id": "ancient-near-eastern-temple-building-practices",
+      "description": "Comparing the creation of humanity in Genesis to ancient Near Eastern temple-building practices"
+    },
+    {
+      "id": "biblical-view-of-God-s-sovereignty",
+      "description": "Contrasting idolatry with God’s sovereignty and exploring humans' role in serving Him."
+    },
+    {
+      "id": "number-70-in-biblical-contexts",
+      "description": "Connecting the number 70 to leadership roles like elders and Christ's disciples, analyzing passages from Deuteronomy and 1 Samuel for understanding God’s perspective on human rule."
+    },
+    {
+      "id": "transition-from-Davidic-kingship-to-Christ",
+      "description": "Discussing the transition from Davidic kingship to its fulfillment in Christ, emphasizing theological significance and addressing questions about the role of the queen mother in ancient Israel and its connection to the New Testament."
+    },
+    {
+      "id": "queen-mother-in-context-of-Solomon-and-Davidic-kingship",
+      "description": "Exploring the queen mother's position within the context of Solomon and Davidic kingship, drawing parallels to modern governmental structures and referencing early Christian writings that mention Mary as Jesus' mother."
+    },
+    {
+      "id": "theological-significance-of-the-Virgin-Mary-in-Orthodox-Christianity",
+      "description": "Discussing the theological significance of the Virgin Mary in Orthodox Christianity, tracing her role from the Old Testament to the New Testament and emphasizing her importance for understanding salvation and God's kingdom."
+    }
+  ],
+  "glossary": [],
+  "canonical_repetitions": []
+}

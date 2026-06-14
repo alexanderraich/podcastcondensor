@@ -126,12 +126,13 @@ def classify_segments(
         }
         if universe_state_context:
             payload_parts["universe_state"] = universe_state_context
-        payload = json.dumps(payload_parts, ensure_ascii=False, indent=2)
-        full_prompt = prompt_template.strip() + "\n\n" + payload
+        payload_json = json.dumps(payload_parts, ensure_ascii=False, indent=2)
+        payload = payload_json + '\n\n{"decisions": ['
 
+        prompt_len = len(prompt_template) + len(payload) + 2
         logger.info(
             "Batch %d/%d (%d segments, block %d, %d chars)",
-            batch_num, total_batches, len(batch), block_id, len(full_prompt),
+            batch_num, total_batches, len(batch), block_id, prompt_len,
         )
 
         decisions = generate_batch(
@@ -140,6 +141,7 @@ def classify_segments(
             model=model,
             host=host,
             timeout=ollama_timeout,
+            retries=2,
             payload_override=payload,
         )
         all_decisions.extend(decisions)
