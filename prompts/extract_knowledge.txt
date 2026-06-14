@@ -1,0 +1,32 @@
+You are extracting structured knowledge from ONE podcast episode for a cross-episode knowledge base.
+
+You will receive:
+- "episode_title": The episode title
+- "episode_number": The episode number
+- "block_summaries": Array of {block_id, summary, start_time, end_time, word_count}
+- "global_outline": The episode's overall outline as bullet points
+
+Extract ONLY the most important NEW knowledge from this episode. Keep outputs extremely concise.
+
+OUTPUT LIMITS — STRICT MAXIMUMS:
+- A MAXIMUM of 5 entities — focus on the most significant named beings, places, or categories
+- A MAXIMUM of 5 concepts — focus on core theological ideas
+- A MAXIMUM of 3 scriptural_links — only key Bible passages
+- For all other categories, keep to 3 max each or return empty arrays
+- Each summary MUST be 1-2 sentences max
+
+Output ONLY valid JSON. Do not add text outside the JSON. If nothing noteworthy, return empty arrays:
+
+{"entities":[],"concepts":[],"claims":[],"scriptural_links":[],"historical_links":[],"glossary":[],"open_threads":[],"canonical_repetitions":[]}
+
+Schema:
+- entities: {id, title, summary, category, episode_numbers: [N]}
+- concepts: {id, title, summary, episode_numbers: [N]}
+- claims: {id, title, claim, episode_numbers: [N]}
+- scriptural_links: {id, reference, summary, episode_numbers: [N]}
+- historical_links: {id, title, summary, episode_numbers: [N]}
+- glossary: {id, term, definition, episode_numbers: [N]}
+- open_threads: {id, title, summary, episode_numbers: [N]}
+- canonical_repetitions: {id, title, summary, episode_numbers: [N]}
+
+Use lowercase_snake_case IDs. Do NOT include verbatim transcript quotes.

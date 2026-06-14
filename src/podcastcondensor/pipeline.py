@@ -4,6 +4,7 @@ Three-phase architecture:
   Phase A: Global episode map (blocks → summaries → outline)
   Phase B: Segment classification with global context
   Phase C: Global cleanup / dedup
+  Phase D: Universe state knowledge extraction (optional)
 """
 
 import json
@@ -27,6 +28,7 @@ from podcastcondensor.classifier import (
 )
 from podcastcondensor.intervals import build_intervals, compute_stats
 from podcastcondensor.audio import build_condensed_audio, get_audio_duration
+from podcastcondensor.universe_state import UniverseState
 
 logger = logging.getLogger(__name__)
 
@@ -35,6 +37,8 @@ def run_pipeline(
     url: str,
     cfg: Config,
     dry_run: bool = False,
+    universe_state: Optional[UniverseState] = None,
+    episode_num: Optional[int] = None,
 ) -> dict:
     """Run the full podcast condensing pipeline.
 
@@ -79,7 +83,7 @@ def run_pipeline(
     # Phase 1: Download
     # ----------------------------------------------------------------
     logger.info("=== Phase 1: Download ===")
-    download_dir = os.path.join(cfg.output_root, "downloads")
+    download_dir = "/tmp/podcastcondensor/downloads"
     meta = download_all(
         url,
         output_dir=download_dir,
@@ -221,7 +225,8 @@ def run_pipeline(
             decisions = json.load(f)
         logger.info("Reusing %d decisions from disk", len(decisions))
     else:
-        decisions = classify_segments(
+        universe_state_context = ""
+        phase_b_kwargs = dict(
             segments=classify_segs,
             model=model,
             prompt_path=cfg.classify_global_prompt_path,
@@ -232,6 +237,17 @@ def run_pipeline(
             ollama_timeout=cfg.ollama_timeout,
             output_path=_ap("decisions.json"),
         )
+
+        if universe_state is not None:
+            universe_state_context = universe_state.get_context(max_items=40)
+            phase_b_kwargs["universe_state_context"] = universe_state_context
+            logger.info(
+                "Universe state context: %d chars from %d episodes",
+                len(universe_state_context),
+                universe_state.data.get("metadata", {}).get("last_built_episode", 0),
+            )
+
+        decisions = classify_segments(**phase_b_kwargs)
         if not _exists("decisions.json"):
             _write_json(_ap("decisions.json"), decisions)
 
@@ -294,6 +310,53 @@ def run_pipeline(
             else:
                 _write_json(_ap("decisions_resolved.json"), decisions)
                 artifacts["phases"]["maybe_resolution"] = {"resolved": 0}
+
+    # ----------------------------------------------------------------
+    # Phase D: Universe State knowledge extraction (optional)
+    # ----------------------------------------------------------------
+    if universe_state is not None and not dry_run and cfg.extract_concepts_prompt_path:
+        logger.info("=== Phase D: Extract knowledge for universe state ===")
+
+        # Use block summaries + global outline (already computed in Phase A)
+        block_data = global_data.get("block_summaries", [])
+        outline_text = global_data.get("global_outline", "")
+
+        ep_title = meta.get("title", "")
+        ep_number = episode_num
+
+        # Check if knowledge was already extracted for this run
+        if _exists("state_knowledge.json"):
+            with open(_ap("state_knowledge.json")) as f:
+                knowledge = json.load(f)
+            logger.info("Reusing previously extracted knowledge from disk")
+        else:
+            knowledge = UniverseState.extract_knowledge(
+                block_summaries=block_data,
+                global_outline=outline_text,
+                episode_title=ep_title,
+                episode_number=ep_number,
+                model=model,
+                prompt_path=cfg.extract_concepts_prompt_path,
+                host=cfg.ollama_host,
+                timeout=cfg.ollama_timeout,
+            )
+            _write_json(_ap("state_knowledge.json"), knowledge)
+
+        if knowledge:
+            # Fall back to simple concept extraction if knowledge is partial
+            if knowledge.get("concepts") or knowledge.get("entities"):
+                universe_state.add_episode_knowledge(ep_number or 0, knowledge)
+                artifacts["phases"]["universe_state"] = {
+                    "knowledge_extracted": True,
+                    "concepts_added": len(knowledge.get("concepts", [])),
+                    "entities_added": len(knowledge.get("entities", [])),
+                }
+            else:
+                logger.warning("Knowledge extraction returned empty, skipping state update")
+                artifacts["phases"]["universe_state"] = {
+                    "knowledge_extracted": False,
+                    "reason": "empty_result",
+                }
 
     # ----------------------------------------------------------------
     # Build intervals

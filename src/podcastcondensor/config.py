@@ -13,7 +13,7 @@ class Config:
     ollama_timeout: int = 600
 
     # Global map
-    block_size_words: int = 1200
+    block_size_words: int = 600
     max_blocks: int = 0  # 0 = all blocks, N = only process first N blocks
     block_summary_prompt_path: str = ""
     outline_prompt_path: str = ""
@@ -28,6 +28,7 @@ class Config:
     classify_global_prompt_path: str = ""
     classify_local_prompt_path: str = ""
     resolve_maybe_prompt_path: str = ""
+    extract_concepts_prompt_path: str = ""
 
     # Interval / padding
     output_merge_gap: float = 2.0
@@ -66,6 +67,10 @@ class Config:
         if not self.resolve_maybe_prompt_path:
             self.resolve_maybe_prompt_path = os.path.join(
                 base, "prompts", "resolve_maybe.txt"
+            )
+        if not self.extract_concepts_prompt_path:
+            self.extract_concepts_prompt_path = os.path.join(
+                base, "prompts", "extract_knowledge_fast.txt"
             )
         if not self.block_summary_prompt_path:
             self.block_summary_prompt_path = os.path.join(

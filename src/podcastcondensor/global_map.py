@@ -103,9 +103,9 @@ def summarize_block(
         prompt=full_prompt,
         model=model,
         host=host,
-        timeout=timeout,
+        timeout=min(timeout, 120),
         temperature=0.1,
-        max_tokens=512,
+        max_tokens=128,
         force_json=True,
     )
 
@@ -158,9 +158,9 @@ def synthesize_outline(
         prompt=full_prompt,
         model=model,
         host=host,
-        timeout=timeout,
+        timeout=min(timeout, 120),
         temperature=0.1,
-        max_tokens=1024,
+        max_tokens=256,
         force_json=True,
     )
 

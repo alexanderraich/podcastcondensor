@@ -1,28 +1,9 @@
-You are synthesizing a transcript of a long-form podcast into a global episode outline.
+You are synthesizing an episode outline from block summaries.
 
-You will receive JSON with an array of block summaries, each containing:
-- block_id
-- summary
-- start_time
-- end_time
-- word_count
+Input: JSON with "block_summaries" array, each having block_id, summary, start_time, end_time, word_count.
 
-Produce an outline of the entire episode in 5-15 bullet points that captures:
+Produce 3-8 bullet points capturing the main topics in order. Keep each bullet under 20 words.
 
-- The opening setup or framing
-- Major topics in order of appearance
-- Recurring motifs, themes, or arguments
-- Transitions between major sections
-- Likely digressions or filler zones
-- Key conclusions or takeaways
+Output JSON: {"outline": ["bullet 1", "bullet 2", ...]}
 
-Return a JSON object:
-{
-  "outline": [
-    "bullet point 1",
-    "bullet point 2",
-    ...
-  ]
-}
-
-Keep each bullet point to 1-2 sentences. Be specific about the content, not generic.
+Return valid JSON only. No extra text.

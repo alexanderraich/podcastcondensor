@@ -33,8 +33,9 @@ def classify_segments(
     host: str = "http://localhost:11434",
     ollama_timeout: int = 600,
     output_path: Optional[str] = None,
+    universe_state_context: str = "",
 ) -> List[dict]:
-    """Classify all segments using global context (block summaries + outline).
+    """Classify all segments using global context (block summaries + outline + universe state).
 
     Each segment dict must have:
       - segment_id, block_id, start, end, text, word_count
@@ -115,14 +116,17 @@ def classify_segments(
             nct = segments[next_idx]["text"]
             next_seg_text = nct[:200] if len(nct) > 200 else nct
 
-        payload = json.dumps({
+        payload_parts = {
             "chunks": batch_for_model,
             "block_summary": block_summary,
             "global_outline": global_outline,
             "previous_decision": prev_decision,
             "next_chunk_text": next_seg_text,
             "kept_claims_so_far": kept_claims_so_far[-20:],
-        }, ensure_ascii=False, indent=2)
+        }
+        if universe_state_context:
+            payload_parts["universe_state"] = universe_state_context
+        payload = json.dumps(payload_parts, ensure_ascii=False, indent=2)
         full_prompt = prompt_template.strip() + "\n\n" + payload
 
         logger.info(
