@@ -19,6 +19,7 @@ Rules:
 - All values must come from the input text; do not invent entities or concepts.
 - Use stable lowercase_snake_case IDs (e.g. "divine_simplicity", "temple_worship").
 - Prefer recovering and normalizing partial information over returning nothing.
+- Extract claims when the text makes a substantive theological, historical, or interpretive assertion. Do not treat descriptions of what someone said as claims unless they are presented as the podcast's own position.
 - The response must be parseable as strict JSON.
 
 Required field formats for each object type:
@@ -39,8 +40,9 @@ concepts — each concept object must have:
 
 claims — each claim object must have:
   "id": "lowercase_snake_case_id"
-  "title": "Short label (max 80 chars)"
-  "claim": "The claim statement (max 200 chars)"
+  "text": "The claim statement — a full sentence expressing a theological, historical, or interpretive position (max 300 chars)"
+  "topic": "Short topic label, e.g. 'Christology', 'Soteriology', 'Angelology', 'Ecclesiology', 'Scripture', 'Liturgy', 'History', 'Moral Theology', 'Eschatology', or 'Other'"
+  "supporting_reference": "Optional — scripture reference, council, father, or source that supports the claim. Empty string if none."
   "episode_numbers": [integer]
 
 scriptural_links — each link must have:
@@ -77,7 +79,9 @@ Output schema example (use this exact structure; fill arrays with properly typed
   "concepts": [
     {"id": "original_sin", "title": "Original Sin", "summary": "The doctrine that Adam's sin corrupted human nature and is passed to all descendants", "episode_numbers": [21]}
   ],
-  "claims": [],
+  "claims": [
+    {"id": "temple_as_microcosm", "text": "The Jerusalem temple was understood as a microcosm of the created order, with the holy of holies representing heaven and the outer courts representing the earth.", "topic": "Scripture", "supporting_reference": "Exodus 25-40, Temple structure", "episode_numbers": [21]}
+  ],
   "scriptural_links": [],
   "historical_links": [],
   "glossary": [],

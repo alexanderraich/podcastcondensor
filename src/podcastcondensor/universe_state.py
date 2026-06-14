@@ -58,8 +58,9 @@ def _make_item(category: str, item_id: str, text: str, episode_num: int) -> dict
         base["title"] = text[:80]
         base["summary"] = text[:200]
     elif category == "claims":
-        base["title"] = text[:80]
-        base["claim"] = text[:200]
+        base["text"] = text[:300]
+        base["topic"] = "Other"
+        base["supporting_reference"] = ""
     elif category == "scriptural_links":
         base["reference"] = text[:80]
         base["summary"] = text[:200]
@@ -92,7 +93,7 @@ def _content_dedup_key(item: dict, category: str) -> str:
         name = n(item.get("term", ""))
     else:
         name = n(item.get("title", ""))
-    summary = n(item.get("summary", "") or item.get("claim", "") or item.get("definition", ""))
+    summary = n(item.get("summary", "") or item.get("text", "") or item.get("claim", "") or item.get("definition", ""))
     return f"{name}::{summary}"
 
 
@@ -204,7 +205,7 @@ class UniverseState:
             ("Glossary:", self.data.get("glossary", []),
              lambda g: f"- {g.get('term', g.get('id', '?'))}: {g.get('definition', '')}" if g.get('definition') else f"- {g.get('term', g.get('id', '?'))}"),
             ("Key claims:", self.data.get("claims", []),
-             lambda c: f"- {c.get('title', c.get('id', '?'))}: {c.get('claim', '')}" if c.get('claim') else f"- {c.get('title', c.get('id', '?'))}"),
+             lambda c: f"- {c.get('text', c.get('id', '?'))}{' [' + c.get('topic', '') + ']' if c.get('topic') else ''}" if c.get('text') else f"- {c.get('id', '?')}"),
             ("Frequent repetitions (drop on repeat):", self.data.get("canonical_repetitions", []),
              lambda c: f"- {c.get('title', c.get('id', '?'))}: {c.get('summary', '')}" if c.get('summary') else f"- {c.get('title', c.get('id', '?'))}"),
         ]:
@@ -273,7 +274,7 @@ class UniverseState:
             }
             deduped = []
             for item in normalized:
-                item_id = item.get("id") or item.get("term", "").lower().replace(" ", "_") or item.get("title", "").lower().replace(" ", "_")
+                item_id = item.get("id") or item.get("term", "").lower().replace(" ", "_") or item.get("title", "").lower().replace(" ", "_") or item.get("text", "").lower().replace(" ", "_")[:60]
 
                 # Primary dedup: stable ID match (works for deterministic IDs)
                 if item_id in existing_ids:
