@@ -33,12 +33,36 @@ python3 -m podcastcondensor process-playlist [PLAYLIST_URL] --state-file output/
 - Phase D: Extract knowledge into universe state — uses 3b
 - Extraction and merging are separate: LLM extracts per-episode knowledge, Python merges/deduplicates globally
 
+### Segmentation (two-pass architecture)
+
+**Pass 1 — Deterministic rough cut** (`resegment` in `rechunker.py`):
+Three signals, all sentence-boundary-aware:
+- **Gap silence** — gaps >8s always split; gaps 0.5s–8s split only at sentence boundaries
+- **Discourse markers** ("So ", "Now ", "But "...) — split only at sentence boundaries
+- **Hard word cap** (400 words) — enters sentence-completion overflow mode: allows up to 150 extra words to find the next `.`, `!`, or `?` before cutting
+
+**Pass 2 — LLM refinement** (`refine_segments` in `rechunker.py`):
+Takes one rough segment at a time (~400-550 words), sends its merged text to qwen2.5:7b, and asks for verbatim substrings split at topic + sentence boundaries. Strict validation checks:
+- Concatenating outputs reproduces the input exactly
+- Every output ends with sentence punctuation
+- No hallucinated or rephrased content
+
+On any validation failure, falls back to deterministic sentence-boundary grouping. Configurable via `--refine`/`--no-refine`. Never cuts mid-sentence.
+
 ## Known issues
+
+### Fixed
+
+- **resolve_maybe now defaults to "drop"** — both error/fallback paths in `resolve_maybe()` were defaulting to "keep", contradicting the prompt's instruction. Changed to "drop". (Fixed 2026-06-14)
+- **Segmentation no longer cuts mid-sentence** — Signal C (hard cap) now enters a sentence-completion overflow mode, accumulating up to `sentence_overflow_words` (default 150) additional words to find the next `.`, `!`, or `?` before cutting. Controlled by `sentence_overflow_words` in Config. (Fixed 2026-06-14)
+
+### Deferred (need history rebuild)
 
 - State knowledge for already-processed episodes gets duplicated on re-run (Phase D appends without dedup)
 - 7 episodes have 0 entities extracted (the prompt's entity schema lost field specs in a cleanup edit)
 - If restarting `process-playlist`, manually delete `state_knowledge.json` for that episode to force re-extraction
-- The `resolve_maybe` prompt exists but may default back to permissive behavior
+
+These three issues (#1, #2, #4 in project tracking) all need a history rebuild. Parked for now.
 
 ## Useful files
 

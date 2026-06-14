@@ -21,8 +21,12 @@ class Config:
 
     # Segmentation (replaces old chunking)
     segment_gap_threshold: float = 0.5
+    segment_gap_sentence_threshold: float = 8.0
     segment_max_words: int = 400
     segment_min_words: int = 20
+    sentence_overflow_words: int = 150
+    refine_segments: bool = True
+    refine_batch_size_words: int = 1000
 
     # Classification (segment-based)
     max_segments_per_batch: int = 5

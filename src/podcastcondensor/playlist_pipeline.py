@@ -22,7 +22,7 @@ from podcastcondensor.config import Config
 from podcastcondensor.downloader import download_subtitles, resolve_episode_sources
 from podcastcondensor.ollama_client import generate, check_ollama, find_best_model
 from podcastcondensor.subtitles import load_subtitles
-from podcastcondensor.rechunker import resegment
+from podcastcondensor.rechunker import resegment, refine_segments
 from podcastcondensor.global_map import build_global_map
 from podcastcondensor.universe_state import UniverseState
 from podcastcondensor.pipeline import run_pipeline
@@ -159,13 +159,19 @@ def build_universe_state(
         # Level 4: Nothing cached — build from raw subtitles
         else:
             logger.info("Cache MISS — downloading and processing from scratch")
-            subtitle_path = download_subtitles(
-                url=video_url,
-                output_dir=download_dir,
-                video_id=src["id"],
-                lang=cfg.lang,
-                prefer_auto=cfg.prefer_auto_subs,
-            )
+            # Resume fallback: check if we already have the SRT in the run dir
+            local_srt = os.path.join(run_dir, "source_subtitles.srt")
+            if os.path.exists(local_srt):
+                logger.info("Reusing local SRT copy: %s", local_srt)
+                subtitle_path = local_srt
+            else:
+                subtitle_path = download_subtitles(
+                    url=video_url,
+                    output_dir=download_dir,
+                    video_id=src["id"],
+                    lang=cfg.lang,
+                    prefer_auto=cfg.prefer_auto_subs,
+                )
 
             if not subtitle_path:
                 logger.warning("No subtitles for episode %d, skipping", episode_num)
@@ -179,14 +185,29 @@ def build_universe_state(
             seg_objects = resegment(
                 entries=cleaned,
                 gap_threshold=cfg.segment_gap_threshold,
+                gap_sentence_threshold=cfg.segment_gap_sentence_threshold,
                 max_words=cfg.segment_max_words,
                 min_words=cfg.segment_min_words,
+                sentence_overflow_words=cfg.sentence_overflow_words,
             )
+
+            # Pass 2: LLM-based per-boundary BREAK/CONTINUE refinement
+            if cfg.refine_segments and len(seg_objects) > 1:
+                seg_objects = refine_segments(
+                    rough_segments=seg_objects,
+                    entries=cleaned,
+                    model=cfg.default_model,  # use 3b — fast, tiny output
+                    host=cfg.ollama_host,
+                    timeout=min(cfg.ollama_timeout, 60),
+                    target_min_words=50,
+                    target_max_words=200,
+                )
+
             segments = [s.to_dict() for s in seg_objects]
 
             _write_json(
                 segments_path,
-                {"segments": segments, "pipeline": "podcastcondensor", "version": "0.2.0"},
+                {"segments": segments, "pipeline": "podcastcondensor", "version": "0.3.0"},
             )
             logger.info("  → %d segments", len(segments))
 
@@ -359,10 +380,12 @@ def process_with_universe_state(
         List of result dicts, one per episode.
     """
     # Resolve episode sources
+    # end_episode=0 means "process only the start episode"
+    effective_end = end_episode if end_episode and end_episode >= start_episode else start_episode
     sources = resolve_episode_sources(
         playlist_url=playlist_url,
         start_ep=start_episode,
-        end_ep=end_episode,
+        end_ep=effective_end,
     )
     logger.info(
         "Processing episodes with universe state (%d episodes in state)",

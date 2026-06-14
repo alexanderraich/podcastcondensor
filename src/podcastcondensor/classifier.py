@@ -295,10 +295,11 @@ def resolve_maybe(
                 sid_to_label[sid] = result["label"]
                 logger.info("Resolved maybe %s -> %s", sid, result["label"])
             else:
-                sid_to_label[sid] = "keep"
+                logger.info("Resolve returned no valid label for %s, defaulting drop", sid)
+                sid_to_label[sid] = "drop"
         except Exception as e:
-            logger.warning("Failed to resolve %s, defaulting keep: %s", sid, e)
-            sid_to_label[sid] = "keep"
+            logger.warning("Failed to resolve %s, defaulting drop: %s", sid, e)
+            sid_to_label[sid] = "drop"
 
     result = []
     for d in all_decisions:
