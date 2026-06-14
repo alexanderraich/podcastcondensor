@@ -18,7 +18,7 @@ from typing import Optional
 from podcastcondensor.config import Config
 from podcastcondensor.downloader import download_all
 from podcastcondensor.subtitles import load_subtitles
-from podcastcondensor.rechunker import resegment, resolve_block_ids, Segment
+from podcastcondensor.rechunker import resegment, refine_segments, resolve_block_ids, Segment
 from podcastcondensor.global_map import build_global_map
 from podcastcondensor.ollama_client import check_ollama, find_best_model
 from podcastcondensor.classifier import (
@@ -63,6 +63,10 @@ def run_pipeline(
             "segment_max_words": cfg.segment_max_words,
             "speed": cfg.audio_speed,
             "segment_min_words": cfg.segment_min_words,
+            "segment_gap_sentence_threshold": cfg.segment_gap_sentence_threshold,
+            "sentence_overflow_words": cfg.sentence_overflow_words,
+            "refine_segments": cfg.refine_segments,
+            "refine_batch_size_words": cfg.refine_batch_size_words,
         },
         "phases": {},
         "errors": [],
@@ -136,26 +140,49 @@ def run_pipeline(
             segments = json.load(f)["segments"]
         logger.info("Reusing %d segments from disk", len(segments))
     else:
-        if not meta["subtitle_path"]:
+        # Determine subtitle source: prefer download cache, fall back to
+        # output-directory copy (so we can resume even if /tmp is cleaned).
+        srt_source = meta.get("subtitle_path") or ""
+        if not srt_source or not os.path.exists(srt_source):
+            srt_source = _ap("source_subtitles.srt")
+        if not srt_source or not os.path.exists(srt_source):
             artifacts["errors"].append("No subtitles available.")
             return artifacts
 
-        # Copy raw subtitles
-        shutil.copy2(meta["subtitle_path"], _ap("source_subtitles.srt"))
+        # Persist a copy to the run directory for future resume
+        if srt_source != _ap("source_subtitles.srt"):
+            shutil.copy2(srt_source, _ap("source_subtitles.srt"))
 
         # Parse and clean (load_subtitles internally cleans)
-        cleaned = load_subtitles(meta["subtitle_path"])
+        cleaned = load_subtitles(srt_source)
 
         # Resegment into editing units
         seg_objects = resegment(
             entries=cleaned,
             gap_threshold=cfg.segment_gap_threshold,
+            gap_sentence_threshold=cfg.segment_gap_sentence_threshold,
             max_words=cfg.segment_max_words,
             min_words=cfg.segment_min_words,
+            sentence_overflow_words=cfg.sentence_overflow_words,
         )
+
+        # Pass 2: LLM-based semantic refinement (per-boundary BREAK/CONTINUE)
+        # Each candidate boundary gets a binary decision from the 3b model.
+        # Only called when rules (50-180 word range) don't force a decision.
+        if cfg.refine_segments and len(seg_objects) > 1:
+            seg_objects = refine_segments(
+                rough_segments=seg_objects,
+                entries=cleaned,
+                model=cfg.default_model,  # use 3b — fast, tiny output
+                host=cfg.ollama_host,
+                timeout=min(cfg.ollama_timeout, 60),
+                target_min_words=50,
+                target_max_words=200,
+            )
+
         segments = [s.to_dict() for s in seg_objects]
 
-        _write_json(_ap("segments.json"), {"segments": segments, "pipeline": "podcastcondensor", "version": "0.2.0"})
+        _write_json(_ap("segments.json"), {"segments": segments, "pipeline": "podcastcondensor", "version": "0.3.0"})
 
     artifacts["phases"]["segmentation"] = {"segment_count": len(segments)}
 

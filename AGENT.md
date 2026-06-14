@@ -61,6 +61,17 @@ Practical habits to avoid common failures in multi-step software projects.
 - Provide explicit output paths for generated artifacts.
 - Make failures easy to reproduce and inspect.
 
+## 11. Don't spin — compile a diagnostic on the first sign of trouble
+- If a problem's solution isn't immediately obvious, do not attempt iterations.
+- Do not tweak prompts, try variations, or write code hoping to stumble on a fix.
+- Instead, immediately compile a thorough diagnostic prompt for the user's research agent:
+  - What was attempted and why it failed (with actual data/errors)
+  - The relevant code, prompt text, and validation logic (inline)
+  - Hardware constraints (RAM, VRAM, models, latency)
+  - What's needed from the agent (specific unanswered questions)
+- Hand the prompt to the user and wait for their research agent's answer.
+- "Try something and see" is not allowed for non-trivial problems — diagnose first.
+
 ## Checklist
 
 Before claiming success, verify:

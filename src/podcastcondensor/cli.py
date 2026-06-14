@@ -152,6 +152,7 @@ def cmd_process_playlist(args):
         segment_gap_threshold=args.segment_gap,
         segment_max_words=args.segment_max_words,
         segment_min_words=args.segment_min_words,
+        refine_segments=args.refine,
     )
 
     # Load universe state
@@ -321,6 +322,8 @@ def main():
     proc_p.add_argument("--segment-gap", type=float, default=0.5)
     proc_p.add_argument("--segment-max-words", type=int, default=400)
     proc_p.add_argument("--segment-min-words", type=int, default=20)
+    proc_p.add_argument("--refine", action=argparse.BooleanOptionalAction,
+                        default=True, help="Enable LLM-based segment refinement (default: on)")
     proc_p.add_argument("--prefer-auto-subs", action="store_true")
     proc_p.add_argument("--keep-temp", action="store_true")
     proc_p.add_argument("--ollama-timeout", type=int, default=600)
