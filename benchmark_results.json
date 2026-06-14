@@ -1,0 +1,182 @@
+[
+  {
+    "model": "qwen2.5:3b",
+    "task": "summarize",
+    "name": "clean_theology",
+    "valid": true,
+    "echoing": false,
+    "latency": 10.1,
+    "output_len": 151,
+    "error": null
+  },
+  {
+    "model": "qwen2.5:3b",
+    "task": "summarize",
+    "name": "banter_filler",
+    "valid": true,
+    "echoing": false,
+    "latency": 1.4,
+    "output_len": 108,
+    "error": null
+  },
+  {
+    "model": "qwen2.5:3b",
+    "task": "summarize",
+    "name": "historical_context",
+    "valid": true,
+    "echoing": false,
+    "latency": 1.7,
+    "output_len": 135,
+    "error": null
+  },
+  {
+    "model": "qwen2.5:3b",
+    "task": "classify",
+    "name": "core_theology",
+    "valid": true,
+    "echoing": false,
+    "latency": 2.6,
+    "output_len": 230,
+    "error": null
+  },
+  {
+    "model": "qwen2.5:3b",
+    "task": "classify",
+    "name": "greeting",
+    "valid": true,
+    "echoing": false,
+    "latency": 1.6,
+    "output_len": 96,
+    "error": null
+  },
+  {
+    "model": "qwen2.5:3b",
+    "task": "classify",
+    "name": "ad_break",
+    "valid": true,
+    "echoing": false,
+    "latency": 1.2,
+    "output_len": 96,
+    "error": null
+  },
+  {
+    "model": "qwen2.5:7b",
+    "task": "summarize",
+    "name": "clean_theology",
+    "valid": true,
+    "echoing": false,
+    "latency": 16.4,
+    "output_len": 85,
+    "error": null
+  },
+  {
+    "model": "qwen2.5:7b",
+    "task": "summarize",
+    "name": "banter_filler",
+    "valid": true,
+    "echoing": false,
+    "latency": 2.7,
+    "output_len": 114,
+    "error": null
+  },
+  {
+    "model": "qwen2.5:7b",
+    "task": "summarize",
+    "name": "historical_context",
+    "valid": true,
+    "echoing": false,
+    "latency": 3.0,
+    "output_len": 120,
+    "error": null
+  },
+  {
+    "model": "qwen2.5:7b",
+    "task": "classify",
+    "name": "core_theology",
+    "valid": true,
+    "echoing": false,
+    "latency": 2.6,
+    "output_len": 67,
+    "error": null
+  },
+  {
+    "model": "qwen2.5:7b",
+    "task": "classify",
+    "name": "greeting",
+    "valid": true,
+    "echoing": false,
+    "latency": 1.8,
+    "output_len": 67,
+    "error": null
+  },
+  {
+    "model": "qwen2.5:7b",
+    "task": "classify",
+    "name": "ad_break",
+    "valid": true,
+    "echoing": false,
+    "latency": 1.8,
+    "output_len": 67,
+    "error": null
+  },
+  {
+    "model": "qwen3:8b",
+    "task": "summarize",
+    "name": "clean_theology",
+    "valid": true,
+    "echoing": false,
+    "latency": 21.9,
+    "output_len": 147,
+    "error": null
+  },
+  {
+    "model": "qwen3:8b",
+    "task": "summarize",
+    "name": "banter_filler",
+    "valid": true,
+    "echoing": false,
+    "latency": 4.9,
+    "output_len": 160,
+    "error": null
+  },
+  {
+    "model": "qwen3:8b",
+    "task": "summarize",
+    "name": "historical_context",
+    "valid": true,
+    "echoing": false,
+    "latency": 5.9,
+    "output_len": 180,
+    "error": null
+  },
+  {
+    "model": "qwen3:8b",
+    "task": "classify",
+    "name": "core_theology",
+    "valid": true,
+    "echoing": false,
+    "latency": 4.2,
+    "output_len": 56,
+    "error": null
+  },
+  {
+    "model": "qwen3:8b",
+    "task": "classify",
+    "name": "greeting",
+    "valid": true,
+    "echoing": false,
+    "latency": 4.1,
+    "output_len": 56,
+    "error": null
+  },
+  {
+    "model": "qwen3:8b",
+    "task": "classify",
+    "name": "ad_break",
+    "valid": true,
+    "echoing": false,
+    "latency": 4.2,
+    "output_len": 62,
+    "error": null
+  }
+]
