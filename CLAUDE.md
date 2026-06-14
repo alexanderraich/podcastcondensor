@@ -55,6 +55,9 @@ On any validation failure, falls back to deterministic sentence-boundary groupin
 
 - **resolve_maybe now defaults to "drop"** — both error/fallback paths in `resolve_maybe()` were defaulting to "keep", contradicting the prompt's instruction. Changed to "drop". (Fixed 2026-06-14)
 - **Segmentation no longer cuts mid-sentence** — Signal C (hard cap) now enters a sentence-completion overflow mode, accumulating up to `sentence_overflow_words` (default 150) additional words to find the next `.`, `!`, or `?` before cutting. Controlled by `sentence_overflow_words` in Config. (Fixed 2026-06-14)
+- **Universe state leak fixed** — `get_context()` now excludes items from episodes >= current, so episode N's own knowledge doesn't bias its classification context. (Fixed 2026-06-14)
+- **Entity/claims schema in extraction prompt** — added explicit required fields for all 8 object types, entity category taxonomy, and concrete examples. Claims now extract properly (74 total vs 28 before). (Fixed 2026-06-14)
+- **Phase D dedup hardened** — added content-based dedup key fallback alongside existing ID-based dedup, preventing duplication on rerun when LLM generates unstable IDs. (Fixed 2026-06-14)
 
 ### Deferred — universe state persistence bugs
 
@@ -66,6 +69,22 @@ On any validation failure, falls back to deterministic sentence-boundary groupin
 These are all the same bug: the universe state should only contain episodes *before* the current one during processing. The fix is to version the state per-episode and exclude the current episode's prior knowledge from the context fed to classification and extraction.
 
 Tied to all of this: the `extract_knowledge_fast.txt` prompt lost its entity schema field specs in an earlier cleanup edit, which is why some extractions produce empty entity lists even when concepts are found. The prompt needs its full schema restored. Parked for now — needs a clean history rebuild to verify.
+
+## Audio cutting bottleneck
+
+With the universe-state fix, keep rate jumped from 6.7% to 50.9%, producing 103 intervals instead of 13. This exposed a new bottleneck: `ffmpeg -c copy` takes ~10s per cut (seeking through a ~1.5GB MP3 file), so 103 cuts = ~50 min of audio extraction.
+
+**Idea 1 — Single ffmpeg pass with multiple -ss/-to:** Feed all intervals in one command using `-ss start1 -to end1 -ss start2 -to end2 ...` instead of N separate processes. Skips repeated seek overhead.
+
+**Idea 2 — ffmpeg -f segment with segment_times:** Let ffmpeg handle all cuts internally by specifying break points. Cleaner but may not align to exact boundaries.
+
+**Idea 3 — Extract to WAV first, then cut:** Convert the full audio to WAV once (fast linear pass), then cut from the uncompressed file. Seeks in WAV are instant.
+
+**Idea 4 — Parallelize cuts:** Run N ffmpeg processes in parallel (one per core). Each still seeks, but wall-clock drops from 50min to ~10min.
+
+**Idea 5 — Replace ffmpeg -c copy with mp3cut or trim:** Tools like `mp3splt` or `sox` can cut MP3s at frame boundaries without re-encoding, often faster than ffmpeg's seek.
+
+**Idea 6 — Stitch with padding, then strip:** Concatenate all intervals separated by a silence marker, then strip the silence in one pass. Moves the per-cut cost into a single final-format pass.
 
 ## Useful files
 
