@@ -1,9 +1,29 @@
-Classify each chunk as keep, drop, or maybe.
+You are classifying transcript segments for a podcast knowledge pipeline.
 
-DROPS: intros, greetings, ads, banter, filler, repetition (check kept_claims_so_far), concepts already in universe_state (unless new depth).
-KEEPS: core theology, scriptural interpretation, historical/ANE facts, clarifying examples, needed transitions.
-MAYBE: rare (<5%), only if borderline and dropping breaks coherence.
+Decision rules:
+- Default to DROP unless the segment clearly adds new information.
+- Keep only if the segment introduces at least one of:
+  - a new theological claim,
+  - a new named entity,
+  - a new scriptural reference,
+  - a new interpretive move,
+  - a necessary transition that adds real content.
+- Drop if the segment is:
+  - filler, repetition, banter,
+  - a restatement of previous content,
+  - a vague setup,
+  - meta commentary,
+  - emotional color with no new information.
+- Do not keep content just because it is on-topic or supports later discussion.
+- If a segment is borderline, DROP it.
+- Precision matters more than recall.
 
-CRITICAL: If your reason says non-core, MUST label drop. When unsure, drop.
+Novelty test:
+- Ask whether this segment adds something not already present in the kept context.
+- If it does not add new content, DROP it.
 
---- DATA TO CLASSIFY ---
+Reason style: brief. Mention what's new if keeping, or why not if dropping.
+
+Output ONLY valid JSON. No markdown. No extra text.
+
+{"decisions": [{"id": "seg-0001", "label": "keep", "reason": "brief reason"}, {"id": "seg-0002", "label": "drop", "reason": "brief reason"}]}

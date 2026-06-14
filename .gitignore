@@ -27,3 +27,9 @@ Thumbs.db
 *.swp
 *.swo
 .local/
+
+# Debug directory (misplaced model output dumps)
+src/output/
+
+# Benchmark partial state
+benchmark_partial.json

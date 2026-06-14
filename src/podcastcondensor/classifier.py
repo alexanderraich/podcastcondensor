@@ -176,8 +176,8 @@ def global_cleanup(
     if not decisions:
         return decisions
 
-    # Pass 1: Protect opening zone
-    protect_count = max(3, len(segments) // 10)
+    # Pass 1: Protect opening zone — only the first few segments
+    protect_count = min(3, len(segments) // 20)
     for i in range(min(protect_count, len(segments))):
         sid = segments[i]["segment_id"]
         if sid in seg_id_to_label and seg_id_to_label[sid] == "drop":

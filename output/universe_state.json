@@ -21,10 +21,11 @@
       17,
       18,
       19,
-      20
+      20,
+      21
     ],
-    "last_built_episode": 20,
-    "updated_at": "2026-06-14T17:34:35"
+    "last_built_episode": 21,
+    "updated_at": "2026-06-14T18:10:14"
   },
   "entities": [
     {
@@ -2247,6 +2248,564 @@
       "tags": [],
       "title": "Christ sends disciples who take their duties seriously",
       "summary": "Christ sends disciples who take their duties seriously"
+    },
+    {
+      "id": "gods_presence",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "God's presence",
+      "summary": "God's presence"
+    },
+    {
+      "id": "death_by_holiness",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "death by holiness",
+      "summary": "death by holiness"
+    },
+    {
+      "id": "nimrod",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Nimrod",
+      "summary": "Nimrod"
+    },
+    {
+      "id": "babylonian_empire",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Babylonian Empire",
+      "summary": "Babylonian Empire"
+    },
+    {
+      "id": "nephilim",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Nephilim",
+      "summary": "Nephilim"
+    },
+    {
+      "id": "tower_of_babel",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Tower of Babel",
+      "summary": "Tower of Babel"
+    },
+    {
+      "id": "sacred_space",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "sacred space",
+      "summary": "sacred space"
+    },
+    {
+      "id": "holy_days",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "holy days",
+      "summary": "holy days"
+    },
+    {
+      "id": "abraham",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Abraham",
+      "summary": "Abraham"
+    },
+    {
+      "id": "yahweh_worship",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Yahweh worship",
+      "summary": "Yahweh worship"
+    },
+    {
+      "id": "tabernacle",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "tabernacle",
+      "summary": "tabernacle"
+    },
+    {
+      "id": "consecration",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "consecration",
+      "summary": "consecration"
+    },
+    {
+      "id": "purification",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "purification",
+      "summary": "purification"
+    },
+    {
+      "id": "anointing",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "anointing",
+      "summary": "anointing"
+    },
+    {
+      "id": "glory_cloud",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "glory cloud",
+      "summary": "glory cloud"
+    },
+    {
+      "id": "temple_dedication",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "temple dedication",
+      "summary": "temple dedication"
+    },
+    {
+      "id": "desecration_by_antiochus_iv",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "desecration by Antiochus IV",
+      "summary": "desecration by Antiochus IV"
+    },
+    {
+      "id": "empty_temple",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "empty temple",
+      "summary": "empty temple"
+    },
+    {
+      "id": "new_testament",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "New Testament",
+      "summary": "New Testament"
+    },
+    {
+      "id": "zachariah",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Zachariah",
+      "summary": "Zachariah"
+    },
+    {
+      "id": "theotokos",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Theotokos",
+      "summary": "Theotokos"
+    },
+    {
+      "id": "purity_laws",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "purity laws",
+      "summary": "purity laws"
+    },
+    {
+      "id": "christian_life",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Christian life",
+      "summary": "Christian life"
+    },
+    {
+      "id": "repentance",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "repentance",
+      "summary": "repentance"
+    },
+    {
+      "id": "angelic_beings",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "angelic beings",
+      "summary": "angelic beings"
+    },
+    {
+      "id": "sons_of_god",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "sons of God",
+      "summary": "sons of God"
+    },
+    {
+      "id": "pentecost",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Pentecost",
+      "summary": "Pentecost"
+    },
+    {
+      "id": "temple_imagery",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "temple imagery",
+      "summary": "temple imagery"
+    },
+    {
+      "id": "atonement",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "atonement",
+      "summary": "atonement"
+    },
+    {
+      "id": "christs_sacrifice",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Christ's sacrifice",
+      "summary": "Christ's sacrifice"
+    },
+    {
+      "id": "organ_donation",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "organ donation",
+      "summary": "organ donation"
+    },
+    {
+      "id": "living_organ_donation",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "living organ donation",
+      "summary": "living organ donation"
+    },
+    {
+      "id": "deceased_donation",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "deceased donation",
+      "summary": "deceased donation"
+    },
+    {
+      "id": "gods_presence_in_creation",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "God's presence in creation",
+      "summary": "God's presence in creation"
+    },
+    {
+      "id": "death_by_holiness_concept",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Death by holiness concept",
+      "summary": "Death by holiness concept"
+    },
+    {
+      "id": "nimrod_as_god_ninerta",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Nimrod as god Ninerta",
+      "summary": "Nimrod as god Ninerta"
+    },
+    {
+      "id": "babylonian_empire_origins",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Babylonian Empire origins",
+      "summary": "Babylonian Empire origins"
+    },
+    {
+      "id": "giant_episode_and_divine_council",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Giant episode and divine council",
+      "summary": "Giant episode and divine council"
+    },
+    {
+      "id": "contending_spirit_with_humanity",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Contending spirit with humanity",
+      "summary": "Contending spirit with humanity"
+    },
+    {
+      "id": "ancient_egyptian_temple_inscription",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "ancient Egyptian temple inscription",
+      "summary": "ancient Egyptian temple inscription"
+    },
+    {
+      "id": "yahweh_worship_continued_by_edom_descendants",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Yahweh worship continued by Edom descendants",
+      "summary": "Yahweh worship continued by Edom descendants"
+    },
+    {
+      "id": "moses_meets_midianite_priest_in_wilderness",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Moses meets Midianite priest in wilderness",
+      "summary": "Moses meets Midianite priest in wilderness"
+    },
+    {
+      "id": "tabernacle_consecration",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "tabernacle consecration",
+      "summary": "tabernacle consecration"
+    },
+    {
+      "id": "purification_and_anointing_of_tabernacle_elements",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "purification and anointing of tabernacle elements",
+      "summary": "purification and anointing of tabernacle elements"
+    },
+    {
+      "id": "glory_cloud_appearing_over_tabernacle",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "glory cloud appearing over tabernacle",
+      "summary": "glory cloud appearing over tabernacle"
+    },
+    {
+      "id": "temple_dedication_and_departure",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "temple dedication and departure",
+      "summary": "temple dedication and departure"
+    },
+    {
+      "id": "gods_presence_in_the_temple",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "God's presence in the temple",
+      "summary": "God's presence in the temple"
+    },
+    {
+      "id": "empty_temple_during_roman_period",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "empty temple during Roman period",
+      "summary": "empty temple during Roman period"
+    },
+    {
+      "id": "exile_language_in_new_testament",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "exile language in New Testament",
+      "summary": "exile language in New Testament"
+    },
+    {
+      "id": "ancient_israel_worship",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "ancient Israel worship",
+      "summary": "ancient Israel worship"
+    },
+    {
+      "id": "theotokos_brought_to_temple_as_virgin",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Theotokos brought to temple as virgin",
+      "summary": "Theotokos brought to temple as virgin"
+    },
+    {
+      "id": "purity_laws_lead_to_transition_in_new_testament",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Purity laws lead to transition in New Testament",
+      "summary": "Purity laws lead to transition in New Testament"
+    },
+    {
+      "id": "zachariah_welcomes_theotokos_into_holy_of_holies",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Zachariah welcomes Theotokos into holy of holies",
+      "summary": "Zachariah welcomes Theotokos into holy of holies"
+    },
+    {
+      "id": "pentecost_and_temple_imagery",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Pentecost and temple imagery",
+      "summary": "Pentecost and temple imagery"
+    },
+    {
+      "id": "atoning_power_of_christs_sacrifice",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "atoning power of Christ's sacrifice",
+      "summary": "atoning power of Christ's sacrifice"
+    },
+    {
+      "id": "holiness_and_death_by_holiness",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "holiness and death by holiness",
+      "summary": "holiness and death by holiness"
+    },
+    {
+      "id": "christian_life_focused_on_repentance",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Christian life focused on repentance",
+      "summary": "Christian life focused on repentance"
+    },
+    {
+      "id": "end-of-life_patients_eligible_for_donation",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "end-of-life patients eligible for donation",
+      "summary": "end-of-life patients eligible for donation"
+    },
+    {
+      "id": "tissue_and_eye_donation",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "tissue and eye donation",
+      "summary": "tissue and eye donation"
+    },
+    {
+      "id": "transition_from_ancient_israel_worship",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "transition from ancient Israel worship",
+      "summary": "transition from ancient Israel worship"
+    },
+    {
+      "id": "living_organ_donation_vs._deceased_donation",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "living organ donation vs. deceased donation",
+      "summary": "living organ donation vs. deceased donation"
+    },
+    {
+      "id": "tissue_and_eye_donation_also_considered",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "tissue and eye donation also considered",
+      "summary": "tissue and eye donation also considered"
     }
   ],
   "claims": [
@@ -2892,6 +3451,173 @@
       "episode_numbers": [
         13
       ]
+    },
+    {
+      "id": "Nimrod",
+      "type": "Person",
+      "details": "Nimrod, often associated with the Babylonian Empire origins and Nimrod as god Ninerta.",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "Tower of Babel",
+      "type": "Event",
+      "details": "The Tower of Babel is mentioned in relation to divine withdrawal and sacred space concepts.",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "Ancient Egyptian Temple Inscription",
+      "type": "Artifact",
+      "details": "An ancient temple inscription is referenced as part of Yahweh worship continuation by Edom descendants.",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "Nimrod_as_god_Ninerta",
+      "title": "Nimrod as god Ninerta",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "Babylonian_Empire_origins",
+      "title": "Babylonian Empire origins",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "ancient_Egyptian_temple_inscription",
+      "title": "Ancient Egyptian temple inscription",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "Yahweh_worship_continued_by_Edom_descendants",
+      "title": "Yahweh worship continued by Edom descendants",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "Moses_meets_Midianite_priest_in_wilderness",
+      "title": "Moses meets Midianite priest in wilderness",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "tabernacle_consecration",
+      "title": "Tabernacle consecration, purification, and anointing of tabernacle elements",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "Gods_presence_in_the_temple",
+      "title": "God's presence in the temple",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "desecration_by_Antiochus_IV",
+      "title": "Desecration by Antiochus IV",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "empty_temple_during_Roman_period",
+      "title": "Empty temple during Roman period",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "exile_language_in_New_Testament",
+      "title": "Exile language in New Testament",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "ancient_Israel_worship",
+      "title": "Ancient Israel worship",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "Theotokos_brought_to_temple_as_virgin",
+      "title": "Theotokos brought to temple as virgin",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "Purity_laws_lead_to_transition_in_New_Testament",
+      "title": "Purity laws lead to transition in New Testament",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "Zachariah_welcomes_Theotokos_into_holy_of_holies",
+      "title": "Zachariah welcomes Theotokos into holy of holies",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "ancient_egyptian_temple_inscription",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "ancient Egyptian temple inscription",
+      "summary": "ancient Egyptian temple inscription"
+    },
+    {
+      "id": "babylonian_empire_origins",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Babylonian Empire origins",
+      "summary": "Babylonian Empire origins"
+    },
+    {
+      "id": "moses_meets_midianite_priest_in_wilderness",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Moses meets Midianite priest in wilderness",
+      "summary": "Moses meets Midianite priest in wilderness"
+    },
+    {
+      "id": "desecration_by_antiochus_iv",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "desecration by Antiochus IV",
+      "summary": "desecration by Antiochus IV"
+    },
+    {
+      "id": "empty_temple_during_roman_period",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "empty temple during Roman period",
+      "summary": "empty temple during Roman period"
     }
   ],
   "glossary": [
@@ -3861,6 +4587,132 @@
       "tags": [],
       "title": "the concept of divine council judgment and its implications for modern theology",
       "summary": "the concept of divine council judgment and its implications for modern theology"
+    },
+    {
+      "id": "the_concept_of_death_by_holiness_and_its_implications_in_mod",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "The concept of death by holiness and its implications in modern contexts",
+      "summary": "The concept of death by holiness and its implications in modern contexts"
+    },
+    {
+      "id": "the_role_of_nephilim_in_genesis_and_their_significance_in_un",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "The role of Nephilim in Genesis and their significance in understanding ancient ",
+      "summary": "The role of Nephilim in Genesis and their significance in understanding ancient cultures"
+    },
+    {
+      "id": "the_transition_from_ancient_israel_worship_to_the_christian_",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "The transition from ancient Israel worship to the Christian era, particularly re",
+      "summary": "The transition from ancient Israel worship to the Christian era, particularly regarding purity laws and the Virgin Theotokos"
+    },
+    {
+      "id": "the_divine_council_concept_in_both_old_and_new_testaments_an",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "The divine council concept in both Old and New Testaments and its relevance toda",
+      "summary": "The divine council concept in both Old and New Testaments and its relevance today"
+    },
+    {
+      "id": "the_symbolism_of_mount_sinai_and_pentecost_in_contemporary_r",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "The symbolism of Mount Sinai and Pentecost in contemporary religious practices",
+      "summary": "The symbolism of Mount Sinai and Pentecost in contemporary religious practices"
+    },
+    {
+      "id": "the_concept_of_the_divine_council_in_the_old_testament_and_i",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "The concept of the divine council in the Old Testament and its implications",
+      "summary": "The concept of the divine council in the Old Testament and its implications"
+    },
+    {
+      "id": "the_role_of_nephilim_in_genesis_and_their_significance",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "The role of Nephilim in Genesis and their significance",
+      "summary": "The role of Nephilim in Genesis and their significance"
+    },
+    {
+      "id": "the_transition_from_ancient_israel_worship_to_christian_wors",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "The transition from ancient Israel worship to Christian worship, particularly re",
+      "summary": "The transition from ancient Israel worship to Christian worship, particularly regarding purity laws and virginity"
+    },
+    {
+      "id": "the_symbolism_of_the_temple_and_its_importance_in_both_jewis",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "The symbolism of the temple and its importance in both Jewish and Christian trad",
+      "summary": "The symbolism of the temple and its importance in both Jewish and Christian traditions"
+    },
+    {
+      "id": "the_concept_of_death_by_holiness_and_its_impact_on_contempor",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "The concept of death by holiness and its impact on contemporary discussions abou",
+      "summary": "The concept of death by holiness and its impact on contemporary discussions about sin and redemption"
+    },
+    {
+      "id": "the_role_of_nephilim_in_genesis",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "The role of Nephilim in Genesis",
+      "summary": "The role of Nephilim in Genesis"
+    },
+    {
+      "id": "transition_from_ancient_israel_worship_to_christian_life_foc",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Transition from ancient Israel worship to Christian life focused on repentance",
+      "summary": "Transition from ancient Israel worship to Christian life focused on repentance"
+    },
+    {
+      "id": "understanding_the_concept_of_death_by_holiness",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Understanding the concept of death by holiness",
+      "summary": "Understanding the concept of death by holiness"
+    },
+    {
+      "id": "the_significance_of_mount_sinai_as_a_divine_mountain",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "The significance of Mount Sinai as a divine mountain",
+      "summary": "The significance of Mount Sinai as a divine mountain"
     }
   ],
   "canonical_repetitions": [
