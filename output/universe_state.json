@@ -7,11 +7,16 @@
       3,
       4,
       5,
+      6,
       7,
       8,
+      9,
+      10,
       11,
       12,
       13,
+      14,
+      15,
       16,
       17,
       18,
@@ -19,7 +24,7 @@
       20
     ],
     "last_built_episode": 20,
-    "updated_at": "2026-06-14T15:16:14"
+    "updated_at": "2026-06-14T15:26:42"
   },
   "entities": [
     {
@@ -609,52 +614,55 @@
     },
     {
       "id": "concept_1",
-      "title": "Divine Council Concept in OT",
-      "summary": "Concept of divine council with angelic beings as sons of God, Mount Sinai as divine mountain, and god's glory shared with humanity.",
+      "title": "God's Body Concept and Critique of Anthropomorphism",
+      "summary": "Discussion on the concept of God's body, critique of anthropomorphism, scriptural references to God’s body parts, communication through divine presence.",
       "episode_numbers": [
-        20
-      ]
+        10
+      ],
+      "tags": []
     },
     {
       "id": "concept_2",
-      "title": "Pagan Gods and Human Sacrifices",
-      "summary": "Ancient gods needing human sacrifices and the contrast with pagan myths of divine father and son.",
+      "title": "Greek Philosophical Questioning and Prime Mover Concept",
+      "summary": "Critique of Greek philosophical questioning of God's body, influence of pagan worldview on Greek philosophy, prime mover concept as filtered through mystic theology.",
       "episode_numbers": [
-        20
-      ]
+        10
+      ],
+      "tags": []
     },
     {
       "id": "concept_3",
-      "title": "Ascension Imagery in Daniel and Revelation",
-      "summary": "Imagery of ascension in Daniel, Jesus' enthronement, cloud symbolizing divine ascent and kingdom transfer.",
+      "title": "Divine Council in OT and Angelic Beings as Sons of God",
+      "summary": "Discussion on the divine council concept in OT, angelic beings as sons of God, Mount Sinai as divine mountain.",
       "episode_numbers": [
-        20
-      ]
+        10
+      ],
+      "tags": []
     },
     {
       "id": "concept_4",
-      "title": "Resurrection Appearances in Paul's Epistles",
-      "summary": "Resurrection appearances in Paul's epistles, Jesus' identity vs. visual perception, and the iconic representation of Christ are discussed.",
+      "title": "False Accusation Against St. John Christom and Apollinarian Solution",
+      "summary": "Discussion on the false accusation against St. John Christom, originist charge as guilt by association, divine person concept incompatible with orthodox Christology, Apollinarian solution to divine-human union.",
       "episode_numbers": [
-        19
+        10
       ],
       "tags": []
     },
     {
       "id": "concept_5",
-      "title": "Mark’s Longer Ending and Mount of Transfiguration Revelation",
-      "summary": "The longer ending in Mark is mentioned, along with the revelation on the Mount of Transfiguration. Iconic representation of Christ is also discussed.",
+      "title": "God the Son as Yahweh and Different Aspects of Trinity",
+      "summary": "Discussion on God the Son as Yahweh, multiple encounters with God, different aspects of Trinity.",
       "episode_numbers": [
-        19
+        10
       ],
       "tags": []
     },
     {
       "id": "concept_6",
-      "title": "Ignatius’s Martyrdom Concept and Lake of Fire Imagery Critique",
-      "summary": "Ignatius's martyrdom concept is mentioned, along with critiques of lake of fire imagery. The value of historical Jesus scholarship is also discussed.",
+      "title": "Pagan Gods with Multiple Bodies and Prohibition of Idolatry",
+      "summary": "Discussion on pagan gods with multiple bodies, idolatry and localizing deities, Torah's prohibition of idolatry, body of God in temple rituals.",
       "episode_numbers": [
-        19
+        10
       ],
       "tags": []
     },
@@ -684,10 +692,10 @@
     },
     {
       "id": "concept_7",
-      "title": "Orthodox Church Values Multiple Perspectives on the Resurrection",
-      "summary": "The Orthodox Church values multiple perspectives on the resurrection, with women as primary witnesses and examples from Old Testament like Deborah and Moses. The Christ sends disciples who take their duties seriously is also mentioned.",
+      "title": "Divine Creation Concept and Philosophical Notion of God’s Love for Humanity",
+      "summary": "Discussion on the divine creation concept, philosophical notion of God's love for humanity.",
       "episode_numbers": [
-        19
+        10
       ],
       "tags": []
     },
@@ -708,6 +716,93 @@
         19
       ],
       "tags": []
+    },
+    {
+      "id": "spiritual_reality_orthodox_christ",
+      "title": "Spiritual Reality in Orthodox Christian Tradition",
+      "summary": "Focuses on the roles of angels, demons, and saints in everyday life through intercession and combat. Challenges modern secular views.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "angels_intercession",
+      "title": "Angels Interceding for Humans",
+      "summary": "Explains the practice of angels interceding for humans, drawing from biblical and apocryphal texts as a form of communal prayer.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "veneration_worship_diff",
+      "title": "Veneration vs. Worship in Orthodox Christianity",
+      "summary": "Explains the distinction between venerating saints and angels versus worshipping God alone, emphasizing that worship involves offering sacrifices (Eucharist and incense).",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "secular_authorities_worship",
+      "title": "Offering Worship to Secular Authorities",
+      "summary": "Discusses the importance of praying for secular authorities while not engaging in their worship or sacrifices.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "spiritual_afflictions",
+      "title": "Spiritual Afflictions and Trust in God’s Purpose",
+      "summary": "Explores the concept of spiritual afflictions like those experienced by Job and St. Paul, emphasizing trust in God's purpose over seeking explanations.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "ruling_with_christ",
+      "title": "Ruling with Christ: Service Over Authority",
+      "summary": "Introduces the concept of ruling with Christ, focusing on service rather than authority.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "orthodox_saints_interaction",
+      "title": "Orthodox Christian Interaction with Departed Saints",
+      "summary": "Discusses Orthodox interaction with departed saints, distinguishing it from necromancy and explaining the rare occurrence of demonic possession.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "christmas_origin",
+      "title": "Origin of Christmas",
+      "summary": "Discusses the historical context of Jesus's birth, including debates over his exact year of birth and the dating of Christmas. Critiques interpretations linking Christmas to pagan festivals.",
+      "episode_numbers": [
+        9
+      ]
+    },
+    {
+      "id": "ignatius_writings",
+      "title": "Saint Ignatius’s Writings on Incarnation",
+      "summary": "Explores key mysteries such as the Virgin Birth and Christ's divine identity, focusing on how these events were revealed through celestial signs.",
+      "episode_numbers": [
+        9
+      ]
+    },
+    {
+      "id": "matsarote",
+      "title": "Hebrew Word 'Matsarote' (Constellation)",
+      "summary": "Explains the connection between the Hebrew word 'matsarote' and the tribes of Israel and the high priest's breastplate.",
+      "episode_numbers": [
+        9
+      ]
     }
   ],
   "claims": [
@@ -902,43 +997,46 @@
     },
     {
       "id": "claim_1",
-      "title": "Divine Council Concept in OT",
-      "summary": "Concept of divine council with angelic beings as sons of God, Mount Sinai as divine mountain, and god's glory shared with humanity.",
+      "title": "Creation ex nihilo debate in ancient views vs. Mormon theology",
+      "summary": "Ancient view of creation from nothing versus the Mormon perspective on divine council and angelic beings.",
       "episode_numbers": [
-        20
-      ]
+        15
+      ],
+      "tags": []
     },
     {
       "id": "claim_2",
-      "title": "Pagan Gods Needing Human Sacrifices",
-      "summary": "Ancient gods needing human sacrifices and the contrast with pagan myths of divine father and son.",
+      "title": "Divine council concept in Old Testament",
+      "summary": "Concept of a divine council with angelic beings as sons of God from the Old Testament perspective.",
       "episode_numbers": [
-        20
-      ]
+        15
+      ],
+      "tags": []
     },
     {
       "id": "claim_3",
-      "title": "Ascension Imagery in Daniel and Revelation",
-      "summary": "Imagery of ascension in Daniel, Jesus' enthronement, cloud symbolizing divine ascent and kingdom transfer.",
+      "title": "Mount Sinai as divine mountain and angelic beings as sons of God",
+      "summary": "Mount Sinai seen as a divine mountain with angelic beings as sons of God.",
       "episode_numbers": [
-        20
-      ]
+        15
+      ],
+      "tags": []
     },
     {
       "id": "claim_4",
-      "title": "Astral projection and demonic influence relation discussed within religious frameworks",
-      "summary": "Demonic influence is explored within religious contexts, including astral projection.",
+      "title": "Passover as archetypal event for divine presence in ritual life",
+      "summary": "Passover viewed as an archetypal event for divine presence in ritual life.",
       "episode_numbers": [
-        16
+        15
       ],
       "tags": []
     },
     {
       "id": "claim_5",
-      "title": "Underworld rivers and gates symbolism in ancient texts, giants in ancient texts, brazen gates significance",
-      "summary": "Symbolism of underworld rivers and gates is discussed, along with the presence of giants in ancient texts and the importance of brazen gates.",
+      "title": "Mountain of God concept with Mount Sinai as a divine mountain and angelic beings as sons of God",
+      "summary": "Concept of the Mountain of God with Mount Sinai seen as a divine mountain and angelic beings as sons of God.",
       "episode_numbers": [
-        16
+        15
       ],
       "tags": []
     },
@@ -966,6 +1064,87 @@
       "episode_numbers": [
         18
       ]
+    },
+    {
+      "id": "angels_intercession_communal_prayer",
+      "title": "Angels Interceding for Humans as Communal Prayer",
+      "summary": "Explains that asking angels to pray for us is a long-standing tradition in Orthodox Christianity and should be understood as a form of communal prayer rather than bypassing direct communication with God.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "veneration_worship_distinction",
+      "title": "Veneration vs. Worship Distinction in Orthodox Christianity",
+      "summary": "Explains that while Protestants may see these practices as idolatry, Orthodox Christians differentiate between venerating saints and angels and worshipping God alone.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "offer_worship_secular_authorities",
+      "title": "Offering Worship to Secular Authorities",
+      "summary": "Discusses the importance of praying for secular authorities while not engaging in their worship or sacrifices.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "spiritual_afflictions_trust_in_god",
+      "title": "Spiritual Afflictions: Trust in God’s Purpose",
+      "summary": "Explores the concept of spiritual afflictions like those experienced by Job and St. Paul, emphasizing trust in God's purpose over seeking explanations.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "ruling_with_christ_service_over_authority",
+      "title": "Ruling with Christ: Service Over Authority",
+      "summary": "Introduces the concept of ruling with Christ, focusing on service rather than authority.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "orthodox_saints_interaction_rare_occurrence",
+      "title": "Orthodox Christian Interaction with Departed Saints: Rare Occurrence of Possession",
+      "summary": "Discusses the interaction between Orthodox Christians and departed saints, distinguishing it from necromancy and explaining that while demonic possession is rare, it can happen through deliberate invitation or prolonged exposure.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "celestial_bodies_messages",
+      "title": "Celestial Bodies as Messengers of God",
+      "claim": "For Jews, celestial bodies are seen as divine messengers rather than independent deities.",
+      "episode_numbers": [
+        9
+      ],
+      "tags": []
+    },
+    {
+      "id": "ignatius_mysteries",
+      "title": "Mysteries Revealed Through theotokos and Christ",
+      "claim": "Saint Ignatius’s writings focus on key mysteries such as the Virgin Birth and Christ's divine identity, revealing these events through celestial signs.",
+      "episode_numbers": [
+        9
+      ],
+      "tags": []
+    },
+    {
+      "id": "christmas_origin",
+      "title": "Origin of Christmas",
+      "claim": "Christmas does not stem from pagan influences but rather from early Christian practices and liturgical decisions, critiquing interpretations linking Revelation 12 to the birth of Christ based on celestial events.",
+      "episode_numbers": [
+        9
+      ],
+      "tags": []
     }
   ],
   "scriptural_links": [
@@ -1145,6 +1324,25 @@
         17
       ],
       "tags": []
+    },
+    {
+      "id": "link_1",
+      "reference": "Gen:28:13-15, Exo:24:16, Deut:27:1-8, Ps:95:6, Isa:6:1-3, Rev:4:7",
+      "summary": "Scriptural references to God’s body parts and divine presence.",
+      "episode_numbers": [
+        10
+      ],
+      "tags": []
+    },
+    {
+      "id": "psalm_19",
+      "reference": "Ps C:V-V",
+      "summary": "Explores Psalm 19 and its specific astronomical references, emphasizing that these are not just poetic images but convey actual messages from God.",
+      "episode_numbers": [
+        2,
+        9
+      ],
+      "tags": []
     }
   ],
   "historical_links": [
@@ -1216,10 +1414,10 @@
     },
     {
       "id": "link_1",
-      "title": "Bronze technology, pre-flood knowledge connection, collapse of the golden age, hope for resurrection in Christianity",
-      "summary": "Connection between bronze technology and pre-flood knowledge is discussed, along with discussions on the collapse of the golden age and Christian hope for resurrection.",
+      "title": "Greek philosophy influences on LDS understanding of reality",
+      "summary": "Influence of Greek philosophy on the LDS perspective on reality.",
       "episode_numbers": [
-        16
+        15
       ],
       "tags": []
     },
@@ -1247,6 +1445,33 @@
       "summary": "Ancient cultures had various beliefs regarding the celestial bodies, including their influence on human affairs.",
       "episode_numbers": [
         18
+      ],
+      "tags": []
+    },
+    {
+      "id": "ancient_pagan_practices",
+      "title": "Ancient Pagan Practices and Christian Teachings",
+      "summary": "Discusses parallels between ancient pagan practices and Christian teachings, emphasizing the importance of praying for secular authorities while not engaging in their worship.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "link_2",
+      "title": "Divine council concept in the Old Testament",
+      "summary": "The concept of a divine council is discussed, including angelic beings as sons of God and Mount Sinai being considered a divine mountain.",
+      "episode_numbers": [
+        14
+      ],
+      "tags": []
+    },
+    {
+      "id": "ignatius_writings",
+      "title": "Saint Ignatius’s Writings on Incarnation",
+      "summary": "Focuses on key mysteries such as the Virgin Birth and Christ's divine identity, revealing these events through celestial signs.",
+      "episode_numbers": [
+        9
       ],
       "tags": []
     }
@@ -1360,6 +1585,57 @@
       ],
       "language": "English",
       "tags": []
+    },
+    {
+      "id": "term_1",
+      "term": "atonement",
+      "definition": "The act or process by which sins are forgiven and reconciled to God, often involving rituals such as the Day of Atonement.",
+      "episode_numbers": [
+        14
+      ],
+      "language": "English",
+      "tags": []
+    },
+    {
+      "id": "term_2",
+      "term": "Day of Atonement (Yom Kippur)",
+      "definition": "A significant day in Judaism and Christianity, marked by rituals to atone for sins throughout the year.",
+      "episode_numbers": [
+        14
+      ],
+      "language": "English",
+      "tags": []
+    },
+    {
+      "id": "term_3",
+      "term": "High priest's sin offering",
+      "definition": "A ritual performed by the high priest to atone for his own sins and those of the people, involving sacrifices such as a goat offered to Yahweh.",
+      "episode_numbers": [
+        14
+      ],
+      "language": "English",
+      "tags": []
+    },
+    {
+      "id": "term_4",
+      "term": "Divine council concept in OT",
+      "definition": "The idea of a divine council or assembly, including angelic beings as sons of God and Mount Sinai being considered a divine mountain.",
+      "episode_numbers": [
+        14
+      ],
+      "language": "English",
+      "tags": []
+    },
+    {
+      "id": "matsarote",
+      "term": "matsarote",
+      "definition": "Hebrew word for constellation, connecting to the tribes of Israel and the high priest's breastplate.",
+      "episode_numbers": [
+        3,
+        9
+      ],
+      "language": "Hebrew",
+      "tags": []
     }
   ],
   "open_threads": [
@@ -1437,45 +1713,46 @@
     },
     {
       "id": "thread_1",
-      "title": "Live Broadcast on Facebook and Ancient Faith Radio",
-      "summary": "Discussion of live broadcast on Facebook, ancient faith radio presentation, god's praise and blessings, support for podcasters.",
+      "title": "Creation ex nihilo debate and ancient views of chaos",
+      "summary": "Discussion on creation from nothing versus ancient views of chaos.",
       "episode_numbers": [
-        20
-      ]
+        15
+      ],
+      "tags": []
     },
     {
       "id": "thread_2",
-      "title": "Divine council concept in Old Testament, including angelic beings as sons of God and Mount Sinai as a divine mountain with ritual and sacred space interaction",
-      "summary": "Angelic beings are considered sons of God, and Mount Sinai is described as a divine mountain with associated rituals.",
+      "title": "Divine council concept in Old Testament and angelic beings as sons of God",
+      "summary": "Concept of a divine council with angelic beings as sons of God from the Old Testament perspective.",
       "episode_numbers": [
-        16
+        15
       ],
       "tags": []
     },
     {
       "id": "thread_3",
-      "title": "Underworld concepts from ancient mythology, including sheol as the grave and demonic realm, pagan underworld practices described",
-      "summary": "Sheol is portrayed as a place of the dead and demonic influence in ancient mythologies.",
+      "title": "Mount Sinai as divine mountain and angelic beings as sons of God",
+      "summary": "Mount Sinai seen as a divine mountain with angelic beings as sons of God.",
       "episode_numbers": [
-        16
+        15
       ],
       "tags": []
     },
     {
       "id": "thread_4",
-      "title": "Astral projection and demonic influence relation discussed within religious frameworks",
-      "summary": "Demonic influence is explored within religious contexts, including astral projection.",
+      "title": "Passover as archetypal event for divine presence in ritual life",
+      "summary": "Passover viewed as an archetypal event for divine presence in ritual life.",
       "episode_numbers": [
-        16
+        15
       ],
       "tags": []
     },
     {
       "id": "thread_5",
-      "title": "Underworld rivers and gates symbolism in ancient texts, giants in ancient texts, brazen gates significance",
-      "summary": "Symbolism of underworld rivers and gates is discussed, along with the presence of giants in ancient texts and the importance of brazen gates.",
+      "title": "Mountain of God concept with Mount Sinai as a divine mountain and angelic beings as sons of God",
+      "summary": "Concept of the Mountain of God with Mount Sinai seen as a divine mountain and angelic beings as sons of God.",
       "episode_numbers": [
-        16
+        15
       ],
       "tags": []
     },
@@ -1503,6 +1780,24 @@
       "episode_numbers": [
         18
       ]
+    },
+    {
+      "id": "demonic_possession_rare_occurrence",
+      "title": "Rare Occurrence of Demonic Possession",
+      "summary": "Explains that while demonic possession is rare, it can happen through deliberate invitation or prolonged exposure.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "pagan_influence_on_christmas",
+      "title": "Pagan Influence on Christmas",
+      "summary": "Discusses the historical context of Jesus's birth, including debates over his exact year of birth and the dating of Christmas. Critiques interpretations linking Christmas to pagan festivals.",
+      "episode_numbers": [
+        9
+      ],
+      "tags": []
     }
   ],
   "canonical_repetitions": [
@@ -1575,44 +1870,46 @@
     },
     {
       "id": "repetition_1",
-      "title": "Divine Council Concept in OT",
-      "summary": "Concept of divine council with angelic beings as sons of God, Mount Sinai as divine mountain, and god's glory shared with humanity.",
+      "title": "Creation ex nihilo debate in ancient views vs. Mormon theology",
+      "summary": "Ancient view of creation from nothing versus the Mormon perspective on divine council and angelic beings.",
       "episode_numbers": [
-        20
-      ]
+        15
+      ],
+      "tags": []
     },
     {
       "id": "repetition_2",
-      "title": "Pagan Gods Needing Human Sacrifices",
-      "summary": "Ancient gods needing human sacrifices and the contrast with pagan myths of divine father and son.",
+      "title": "Divine council concept in Old Testament",
+      "summary": "Concept of a divine council with angelic beings as sons of God from the Old Testament perspective.",
       "episode_numbers": [
-        20
-      ]
+        15
+      ],
+      "tags": []
     },
     {
       "id": "repetition_3",
-      "title": "Underworld concepts from ancient mythology include sheol as the grave and demonic realm, pagan underworld practices described",
-      "summary": "Sheol is portrayed as a place of the dead and demonic influence in ancient mythologies.",
+      "title": "Mount Sinai as divine mountain and angelic beings as sons of God",
+      "summary": "Mount Sinai seen as a divine mountain with angelic beings as sons of God.",
       "episode_numbers": [
-        16
+        15
       ],
       "tags": []
     },
     {
       "id": "repetition_4",
-      "title": "Astral projection and demonic influence relation discussed within religious frameworks",
-      "summary": "Demonic influence is explored within religious contexts, including astral projection.",
+      "title": "Passover as archetypal event for divine presence in ritual life",
+      "summary": "Passover viewed as an archetypal event for divine presence in ritual life.",
       "episode_numbers": [
-        16
+        15
       ],
       "tags": []
     },
     {
       "id": "repetition_5",
-      "title": "Underworld rivers and gates symbolism in ancient texts, giants in ancient texts, brazen gates significance",
-      "summary": "Symbolism of underworld rivers and gates is discussed, along with the presence of giants in ancient texts and the importance of brazen gates.",
+      "title": "Mountain of God concept with Mount Sinai as a divine mountain and angelic beings as sons of God",
+      "summary": "Concept of the Mountain of God with Mount Sinai seen as a divine mountain and angelic beings as sons of God.",
       "episode_numbers": [
-        16
+        15
       ],
       "tags": []
     },
@@ -1632,6 +1929,69 @@
       "episode_numbers": [
         18
       ]
+    },
+    {
+      "id": "angels_intercession_communal_prayer",
+      "title": "Angels Interceding for Humans as Communal Prayer",
+      "summary": "Explains that asking angels to pray for us is a long-standing tradition in Orthodox Christianity and should be understood as a form of communal prayer rather than bypassing direct communication with God.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "veneration_worship_distinction",
+      "title": "Veneration vs. Worship Distinction in Orthodox Christianity",
+      "summary": "Explains that while Protestants may see these practices as idolatry, Orthodox Christians differentiate between venerating saints and angels and worshipping God alone.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "offer_worship_secular_authorities",
+      "title": "Offering Worship to Secular Authorities",
+      "summary": "Discusses the importance of praying for secular authorities while not engaging in their worship or sacrifices.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "spiritual_afflictions_trust_in_god",
+      "title": "Spiritual Afflictions: Trust in God’s Purpose",
+      "summary": "Explores the concept of spiritual afflictions like those experienced by Job and St. Paul, emphasizing trust in God's purpose over seeking explanations.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "ruling_with_christ_service_over_authority",
+      "title": "Ruling with Christ: Service Over Authority",
+      "summary": "Introduces the concept of ruling with Christ, focusing on service rather than authority.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "orthodox_saints_interaction_rare_occurrence",
+      "title": "Orthodox Christian Interaction with Departed Saints: Rare Occurrence of Possession",
+      "summary": "Discusses the interaction between Orthodox Christians and departed saints, distinguishing it from necromancy and explaining that while demonic possession is rare, it can happen through deliberate invitation or prolonged exposure.",
+      "episode_numbers": [
+        6
+      ],
+      "tags": []
+    },
+    {
+      "id": "celestial_bodies_messages",
+      "title": "Celestial Bodies as Messengers of God",
+      "summary": "Emphasizes that for Jews, celestial bodies are seen as divine messengers rather than independent deities.",
+      "episode_numbers": [
+        9
+      ],
+      "tags": []
     }
   ]
 }
