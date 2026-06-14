@@ -1,38 +1,86 @@
-You are extracting knowledge from one podcast episode block bundle.
+You are extracting structured knowledge from one podcast episode's summaries and outline.
 
 Return ONLY valid JSON. No markdown, no commentary, no code fences.
 
-You must always return the full top-level object with these keys:
-- entities: array
-- concepts: array
-- claims: array
-- scriptural_links: array
-- historical_links: array
-- glossary: array
-- open_threads: array
-- canonical_repetitions: array
+You must always return the full top-level object with ALL of these keys:
+- entities: array of entity objects
+- concepts: array of concept objects
+- claims: array of claim objects
+- scriptural_links: array of scriptural reference objects
+- historical_links: array of historical link objects
+- glossary: array of glossary term objects
+- open_threads: array of open-thread objects
+- canonical_repetitions: array of repetition objects
 
 Rules:
-- If a section has no items, return an empty array.
-- Do not omit keys.
+- If a section has no items, return an empty array [].
+- Do not omit any key.
 - Do not invent fields outside the schema.
-- Use stable IDs when possible.
-- Preserve useful items even if some sections are sparse.
-- If you are unsure, include a conservative item rather than omitting the section.
+- All values must come from the input text; do not invent entities or concepts.
+- Use stable lowercase_snake_case IDs (e.g. "divine_simplicity", "temple_worship").
+- Prefer recovering and normalizing partial information over returning nothing.
 - The response must be parseable as strict JSON.
 
-Important:
-- The input may include prior search results, summaries, and outline material.
-- Reuse any cached search results or previously seen evidence if present.
-- On rerun, do not repeat fallback searches if the same query/context was already searched in this session; use cached results instead.
-- Prefer recovering and normalizing partial information over returning nothing.
+Required field formats for each object type:
 
-Output schema example:
+entities — each entity object must have:
+  "id": "lowercase_snake_case_unique_id"
+  "title": "Full Name or Title of the entity (max 80 chars)"
+  "category": one of "person", "place", "group", "angelic_being", "divine_person", "writings", "liturgical_feast", "object", "theological_concept"
+  "summary": "1-2 sentence description of who or what this is (max 200 chars)"
+  "episode_numbers": [single episode number as integer]
+  If a person or entity appears multiple times, use one entry and list all episode numbers.
+
+concepts — each concept object must have:
+  "id": "lowercase_snake_case_id"
+  "title": "Short name (max 80 chars)"
+  "summary": "1-2 sentence explanation (max 200 chars)"
+  "episode_numbers": [integer]
+
+claims — each claim object must have:
+  "id": "lowercase_snake_case_id"
+  "title": "Short label (max 80 chars)"
+  "claim": "The claim statement (max 200 chars)"
+  "episode_numbers": [integer]
+
+scriptural_links — each link must have:
+  "reference": "Book Chapter:Verse (e.g. Genesis 1:1)"
+  "summary": "How it is used (max 200 chars)"
+  "episode_numbers": [integer]
+
+historical_links — each link must have:
+  "title": "Event, council, period name (max 80 chars)"
+  "summary": "How it relates (max 200 chars)"
+  "episode_numbers": [integer]
+
+glossary — each term must have:
+  "term": "Word or phrase (max 80 chars)"
+  "definition": "Definition (max 200 chars)"
+  "language": "Language of origin (e.g. Greek, Hebrew, English)"
+  "episode_numbers": [integer]
+
+open_threads — each thread must have:
+  "title": "Topic label (max 80 chars)"
+  "summary": "What was left open (max 200 chars)"
+  "episode_numbers": [integer]
+
+canonical_repetitions — each must have:
+  "title": "Topic label (max 80 chars)"
+  "summary": "What is frequently repeated (max 200 chars)"
+  "episode_numbers": [integer]
+
+Output schema example (use this exact structure; fill arrays with properly typed objects):
 {
-  "entities": [],
-  "concepts": [],
+  "entities": [
+    {"id": "adam", "title": "Adam", "category": "person", "summary": "First man created by God, whose sin introduced death into the world", "episode_numbers": [21]}
+  ],
+  "concepts": [
+    {"id": "original_sin", "title": "Original Sin", "summary": "The doctrine that Adam's sin corrupted human nature and is passed to all descendants", "episode_numbers": [21]}
+  ],
   "claims": [],
-  "relations": [],
+  "scriptural_links": [],
+  "historical_links": [],
+  "glossary": [],
   "open_threads": [],
-  "scriptural_links": []
+  "canonical_repetitions": []
 }

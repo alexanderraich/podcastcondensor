@@ -35,7 +35,8 @@ def extract_segment(
 ):
     """Extract a segment from the audio file using ffmpeg.
 
-    Fast cut using re-encode for reliable cutting.
+    Uses fast copy mode (-c copy) — no re-encoding during extraction.
+    Format conversion and speed-up are done in the concat step.
     """
     duration = end - start
     if duration <= 0.01:
@@ -47,9 +48,7 @@ def extract_segment(
         "-i", audio_path,
         "-ss", str(start),
         "-t", str(duration),
-        "-ar", str(sample_rate),
-        "-b:a", bitrate,
-        "-ac", "1",  # mono for speech
+        "-c", "copy",  # fast copy — no re-encoding
         output_path,
     ]
     logger.debug("Extracting segment: %.2f-%.2f -> %s", start, end, output_path)

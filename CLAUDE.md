@@ -56,13 +56,16 @@ On any validation failure, falls back to deterministic sentence-boundary groupin
 - **resolve_maybe now defaults to "drop"** — both error/fallback paths in `resolve_maybe()` were defaulting to "keep", contradicting the prompt's instruction. Changed to "drop". (Fixed 2026-06-14)
 - **Segmentation no longer cuts mid-sentence** — Signal C (hard cap) now enters a sentence-completion overflow mode, accumulating up to `sentence_overflow_words` (default 150) additional words to find the next `.`, `!`, or `?` before cutting. Controlled by `sentence_overflow_words` in Config. (Fixed 2026-06-14)
 
-### Deferred (need history rebuild)
+### Deferred — universe state persistence bugs
 
-- State knowledge for already-processed episodes gets duplicated on re-run (Phase D appends without dedup)
-- 7 episodes have 0 entities extracted (the prompt's entity schema lost field specs in a cleanup edit)
-- If restarting `process-playlist`, manually delete `state_knowledge.json` for that episode to force re-extraction
+**Root cause:** When processing episode N, the universe state already contains episode N's previous knowledge (either from a prior run or because the playlist loop added it before extraction completed). This means:
+- Phase D appends without dedup → knowledge doubles on re-run
+- Extracted entities get misclassified against stale state → 7 episodes got 0 entities
+- Must manually delete `state_knowledge.json` to force re-extraction
 
-These three issues (#1, #2, #4 in project tracking) all need a history rebuild. Parked for now.
+These are all the same bug: the universe state should only contain episodes *before* the current one during processing. The fix is to version the state per-episode and exclude the current episode's prior knowledge from the context fed to classification and extraction.
+
+Tied to all of this: the `extract_knowledge_fast.txt` prompt lost its entity schema field specs in an earlier cleanup edit, which is why some extractions produce empty entity lists even when concepts are found. The prompt needs its full schema restored. Parked for now — needs a clean history rebuild to verify.
 
 ## Useful files
 
