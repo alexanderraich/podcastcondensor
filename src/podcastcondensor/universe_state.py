@@ -79,6 +79,23 @@ def _make_item(category: str, item_id: str, text: str, episode_num: int) -> dict
     return base
 
 
+def _content_dedup_key(item: dict, category: str) -> str:
+    """Build a normalized content-based dedup key for an item.
+
+    Used as a fallback when LLM-generated IDs are unstable across runs.
+    Derived from the semantic fields that define the item's identity.
+    """
+    n = lambda s: s.lower().strip()[:80] if s else ""
+    if category == "scriptural_links":
+        name = n(item.get("reference", ""))
+    elif category == "glossary":
+        name = n(item.get("term", ""))
+    else:
+        name = n(item.get("title", ""))
+    summary = n(item.get("summary", "") or item.get("claim", "") or item.get("definition", ""))
+    return f"{name}::{summary}"
+
+
 def _merge_episode_numbers(items: list, episode_num: int) -> list:
     """Merge an episode number into each item's episode_numbers list if not present."""
     result = []
@@ -156,14 +173,28 @@ class UniverseState:
     # Context for prompts
     # ------------------------------------------------------------------
 
-    def get_context(self, max_items: int = 8, max_chars: int = 3000) -> str:
+    def get_context(self, max_items: int = 8, max_chars: int = 3000,
+                    exclude_episode_gte: Optional[int] = None) -> str:
         """Format universe state as a concise string for LLM prompt context.
 
         Args:
             max_items: Maximum number of items to include per category.
             max_chars: Maximum total output length. Truncated if exceeded.
+            exclude_episode_gte: If set, exclude items whose episode_numbers
+                include any episode >= this value. Items with no episode_numbers
+                field are also excluded (conservative — avoids leaking
+                current-episode knowledge).
         """
         parts = []
+
+        def _exclude_item(item: dict) -> bool:
+            """True if item should be excluded based on episode filter."""
+            if exclude_episode_gte is None:
+                return False
+            ep_nums = item.get("episode_numbers")
+            if not ep_nums:
+                return True  # no episode info — conservative: exclude
+            return any(ep >= exclude_episode_gte for ep in ep_nums)
 
         for label, items, formatter in [
             ("Core concepts already established:", self.data.get("concepts", []),
@@ -177,6 +208,8 @@ class UniverseState:
             ("Frequent repetitions (drop on repeat):", self.data.get("canonical_repetitions", []),
              lambda c: f"- {c.get('title', c.get('id', '?'))}: {c.get('summary', '')}" if c.get('summary') else f"- {c.get('title', c.get('id', '?'))}"),
         ]:
+            if exclude_episode_gte is not None:
+                items = [it for it in items if not _exclude_item(it)]
             selected = items[:max_items]
             if selected:
                 block = label + "\n" + "\n".join(formatter(it) for it in selected if formatter(it))
@@ -231,15 +264,29 @@ class UniverseState:
             if not normalized:
                 continue
 
-            # Merge with existing (dedup by id)
+            # Merge with existing (dedup by id first, then by content key)
             existing = self.data.get(category, [])
             existing_ids = {e.get("id") for e in existing if isinstance(e, dict)}
+            existing_content_keys = {
+                _content_dedup_key(e, category)
+                for e in existing if isinstance(e, dict)
+            }
             deduped = []
             for item in normalized:
                 item_id = item.get("id") or item.get("term", "").lower().replace(" ", "_") or item.get("title", "").lower().replace(" ", "_")
+
+                # Primary dedup: stable ID match (works for deterministic IDs)
                 if item_id in existing_ids:
                     continue
+
+                # Fallback dedup: content-based key (catches unstable LLM IDs)
+                ck = _content_dedup_key(item, category)
+                if ck and ck in existing_content_keys:
+                    continue
+
                 existing_ids.add(item_id)
+                if ck:
+                    existing_content_keys.add(ck)
                 if not item.get("id"):
                     item["id"] = item_id
                 deduped.append(item)

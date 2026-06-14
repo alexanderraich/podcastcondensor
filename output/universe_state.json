@@ -25,7 +25,7 @@
       21
     ],
     "last_built_episode": 21,
-    "updated_at": "2026-06-14T19:47:32"
+    "updated_at": "2026-06-14T20:13:36"
   },
   "entities": [
     {
@@ -3157,6 +3157,132 @@
       "tags": [],
       "title": "donation criteria for end-of-life patients",
       "summary": "donation criteria for end-of-life patients"
+    },
+    {
+      "id": "gods_presence_in_eden",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "God's presence in Eden",
+      "summary": "God's presence in Eden"
+    },
+    {
+      "id": "nimrod_as_babylonian_god",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Nimrod as Babylonian god",
+      "summary": "Nimrod as Babylonian god"
+    },
+    {
+      "id": "gods_withdrawal_and_assignment_of_angels",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "God's withdrawal and assignment of angels",
+      "summary": "God's withdrawal and assignment of angels"
+    },
+    {
+      "id": "abraham_as_beginning_of_salvation",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Abraham as beginning of salvation",
+      "summary": "Abraham as beginning of salvation"
+    },
+    {
+      "id": "sacred_space_not_tied_to_physical_places",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Sacred space not tied to physical places",
+      "summary": "Sacred space not tied to physical places"
+    },
+    {
+      "id": "moses_and_exodus_context",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Moses and Exodus context",
+      "summary": "Moses and Exodus context"
+    },
+    {
+      "id": "theotokos_brought_to_temple_as_young_girl",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Theotokos brought to temple as young girl",
+      "summary": "Theotokos brought to temple as young girl"
+    },
+    {
+      "id": "purity_and_service_of_virgins_at_temple_entrance",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Purity and service of virgins at temple entrance",
+      "summary": "Purity and service of virgins at temple entrance"
+    },
+    {
+      "id": "christs_victory_and_triumph",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Christ's victory and triumph",
+      "summary": "Christ's victory and triumph"
+    },
+    {
+      "id": "gentile_cornelius_receiving_holy_spirit",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Gentile Cornelius receiving Holy Spirit",
+      "summary": "Gentile Cornelius receiving Holy Spirit"
+    },
+    {
+      "id": "peter_eating_unclean_animals",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Peter eating unclean animals",
+      "summary": "Peter eating unclean animals"
+    },
+    {
+      "id": "orthodox_christian_purification",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Orthodox Christian purification",
+      "summary": "Orthodox Christian purification"
+    },
+    {
+      "id": "cleanliness_inside_leads_to_external_actions",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Cleanliness inside leads to external actions",
+      "summary": "Cleanliness inside leads to external actions"
+    },
+    {
+      "id": "internal_temple_of_the_holy_spirit",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Internal temple of the Holy Spirit",
+      "summary": "Internal temple of the Holy Spirit"
     }
   ],
   "claims": [
@@ -5186,6 +5312,78 @@
       "tags": [],
       "title": "Transition from personal encounters with God through Moses to the tabernacle and",
       "summary": "Transition from personal encounters with God through Moses to the tabernacle and divine presence at camp"
+    },
+    {
+      "id": "the_concept_of_death_by_holiness_in_eden_and_its_implication",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "The concept of death by holiness in Eden and its implications",
+      "summary": "The concept of death by holiness in Eden and its implications"
+    },
+    {
+      "id": "nimrods_role_as_a_babylonian_god_and_his_connection_to_the_t",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Nimrod's role as a Babylonian god and his connection to the Tower of Babel",
+      "summary": "Nimrod's role as a Babylonian god and his connection to the Tower of Babel"
+    },
+    {
+      "id": "transition_from_god_with_moses_and_instructions_for_building",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Transition from God with Moses and instructions for building the tabernacle",
+      "summary": "Transition from God with Moses and instructions for building the tabernacle"
+    },
+    {
+      "id": "sacred_space_not_tied_to_physical_places;_context_of_moses_a",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Sacred space not tied to physical places; context of Moses and Exodus",
+      "summary": "Sacred space not tied to physical places; context of Moses and Exodus"
+    },
+    {
+      "id": "ancient_israel_worship_in_the_tabernacle_and_temple,_includi",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Ancient Israel worship in the tabernacle and temple, including purity and servic",
+      "summary": "Ancient Israel worship in the tabernacle and temple, including purity and service of virgins at temple entrance"
+    },
+    {
+      "id": "rededication_of_the_temple_and_christs_victory",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Rededication of the temple and Christ's victory",
+      "summary": "Rededication of the temple and Christ's victory"
+    },
+    {
+      "id": "orthodox_christian_purification_and_writing_law_in_hearts",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Orthodox Christian purification and writing law in hearts",
+      "summary": "Orthodox Christian purification and writing law in hearts"
+    },
+    {
+      "id": "organ_donation_process_and_its_importance",
+      "episode_numbers": [
+        21
+      ],
+      "tags": [],
+      "title": "Organ donation process and its importance",
+      "summary": "Organ donation process and its importance"
     }
   ],
   "canonical_repetitions": [

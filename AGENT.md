@@ -72,6 +72,13 @@ Practical habits to avoid common failures in multi-step software projects.
 - Hand the prompt to the user and wait for their research agent's answer.
 - "Try something and see" is not allowed for non-trivial problems — diagnose first.
 
+## 12. Never delete working output
+- A run that completed successfully produced valuable artifacts — do not delete them.
+- When testing a new change, do NOT clear existing output. Let the new run overwrite or coexist.
+- "Clearing for a fresh test" destroys the ability to compare and roll back.
+- If you must isolate a test, use --max-blocks N or a separate output directory.
+- This rule exists because of a specific failure: deleting a perfectly good condensed audio and pipeline output in order to "test fresh", which wasted the user's time and lost working results.
+
 ## Checklist
 
 Before claiming success, verify:

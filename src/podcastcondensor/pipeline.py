@@ -274,12 +274,14 @@ def run_pipeline(
         )
 
         if universe_state is not None:
-            universe_state_context = universe_state.get_context(max_items=8, max_chars=3000)
+            universe_state_context = universe_state.get_context(
+                max_items=8, max_chars=3000,
+                exclude_episode_gte=episode_num,
+            )
             phase_b_kwargs["universe_state_context"] = universe_state_context
             logger.info(
-                "Universe state context: %d chars from %d episodes",
-                len(universe_state_context),
-                universe_state.data.get("metadata", {}).get("last_built_episode", 0),
+                "Universe state context: %d chars (excluding episodes >= %s)",
+                len(universe_state_context), episode_num,
             )
 
         decisions = classify_segments(**phase_b_kwargs)
