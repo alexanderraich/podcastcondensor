@@ -264,7 +264,7 @@ def _parse_json_response(raw: str) -> Optional[list]:
 
     # Try to find JSON object or array in the text
     for start_char, end_char, parser_fn in [
-        ("{", "}", lambda t: json.loads(t).get("decisions", [])),
+        ("{", "}", lambda t: _classify_parse_dict(t)),
         ("[", "]", json.loads),
     ]:
         start = text.find(start_char)
@@ -278,5 +278,37 @@ def _parse_json_response(raw: str) -> Optional[list]:
                         return result
                 except json.JSONDecodeError:
                     continue
+
+    return None
+
+
+def _classify_parse_dict(text: str) -> Optional[list]:
+    """Parse a dict response, accepting multiple formats.
+
+    Accepts:
+    - {"decisions": [{"id": "...", "label":"keep", "reason":"..."}]}
+    - {"classification": "keep", "reason": "...", "id": "..."}
+    - {"label": "keep", "reason": "..."}
+    """
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError:
+        return None
+    if not isinstance(data, dict):
+        return None
+
+    # Format 1: {"decisions": [...]}
+    decisions = data.get("decisions")
+    if isinstance(decisions, list):
+        return decisions
+
+    # Format 2: single classification object
+    label = data.get("label") or data.get("classification")
+    if label in ("keep", "drop", "maybe"):
+        return [{
+            "id": data.get("id", data.get("chunk_id", "?")),
+            "label": label,
+            "reason": data.get("reason", ""),
+        }]
 
     return None

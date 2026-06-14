@@ -51,6 +51,7 @@ def run_pipeline(
         "timestamp": run_timestamp,
         "config": {
             "model": cfg.default_model,
+            "classify_model": cfg.classify_model,
             "lang": cfg.lang,
             "merge_gap": cfg.output_merge_gap,
             "pad_before": cfg.pad_before,
@@ -113,11 +114,18 @@ def run_pipeline(
         artifacts["errors"].append("Ollama is not running. Start: ollama serve")
         return artifacts
 
-    model = find_best_model(cfg.default_model, cfg.fallback_model, cfg.ollama_host)
-    if model is None:
+    # Resolve separate models for reduction vs. classification
+    reduction_model = find_best_model(cfg.default_model, cfg.fallback_model, cfg.ollama_host)
+    classify_model = find_best_model(cfg.classify_model, cfg.fallback_model, cfg.ollama_host)
+    if reduction_model is None:
         artifacts["errors"].append(f"No model found. Pull: ollama pull {cfg.default_model}")
         return artifacts
-    artifacts["config"]["model_used"] = model
+    if classify_model is None:
+        classify_model = reduction_model
+        artifacts["config"]["classify_model_used"] = classify_model
+    artifacts["config"]["reduction_model_used"] = reduction_model
+    artifacts["config"]["classify_model_used"] = classify_model
+    logger.info("Models: reduction=%s  classify=%s", reduction_model, classify_model)
 
     # ----------------------------------------------------------------
     # Phase 2: Parse subtitles → clean → resegment
@@ -172,7 +180,7 @@ def run_pipeline(
 
         global_data = build_global_map(
             chunks=segments_for_map,
-            model=model,
+            model=reduction_model,
             block_prompt_path=cfg.block_summary_prompt_path,
             outline_prompt_path=cfg.outline_prompt_path,
             block_size_words=cfg.block_size_words,
@@ -228,7 +236,7 @@ def run_pipeline(
         universe_state_context = ""
         phase_b_kwargs = dict(
             segments=classify_segs,
-            model=model,
+            model=classify_model,
             prompt_path=cfg.classify_global_prompt_path,
             global_outline=global_data["global_outline"],
             block_summaries=global_data["block_summaries"],
@@ -239,7 +247,7 @@ def run_pipeline(
         )
 
         if universe_state is not None:
-            universe_state_context = universe_state.get_context(max_items=40)
+            universe_state_context = universe_state.get_context(max_items=8, max_chars=3000)
             phase_b_kwargs["universe_state_context"] = universe_state_context
             logger.info(
                 "Universe state context: %d chars from %d episodes",
@@ -300,7 +308,7 @@ def run_pipeline(
                     maybe_segments=maybe_segs,
                     all_segments=segments,
                     all_decisions=decisions,
-                    model=model,
+                    model=classify_model,
                     prompt_path=cfg.resolve_maybe_prompt_path,
                     host=cfg.ollama_host,
                     ollama_timeout=cfg.ollama_timeout,
@@ -335,7 +343,7 @@ def run_pipeline(
                 global_outline=outline_text,
                 episode_title=ep_title,
                 episode_number=ep_number,
-                model=model,
+                model=reduction_model,
                 prompt_path=cfg.extract_concepts_prompt_path,
                 host=cfg.ollama_host,
                 timeout=cfg.ollama_timeout,
@@ -459,7 +467,8 @@ def _write_review(path: str, stats: dict, artifacts: dict) -> str:
     d = artifacts.get("phases", {}).get("download", {})
     lines.append(f"- Video ID: {d.get('video_id', '?')}")
     lines.append(f"- Title: {d.get('title', '?')}")
-    lines.append(f"- Model: {artifacts['config'].get('model_used', '?')}")
+    lines.append(f"- Reduction model: {artifacts['config'].get('reduction_model_used', '?')}")
+    lines.append(f"- Classify model:  {artifacts['config'].get('classify_model_used', '?')}")
     lines.append(f"- Run: {artifacts['timestamp']}")
     lines.append("")
     lines.append("## Statistics")

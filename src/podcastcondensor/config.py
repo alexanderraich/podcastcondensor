@@ -8,8 +8,9 @@ from dataclasses import dataclass
 class Config:
     # Ollama
     ollama_host: str = "http://localhost:11434"
-    default_model: str = "qwen2.5:7b"
-    fallback_model: str = "qwen2.5:7b"
+    default_model: str = "qwen2.5:3b"
+    classify_model: str = "qwen2.5:7b"
+    fallback_model: str = "qwen2.5:3b"
     ollama_timeout: int = 600
 
     # Global map

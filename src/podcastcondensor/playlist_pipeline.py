@@ -236,21 +236,28 @@ def build_universe_state(
             block_summaries = global_data.get("block_summaries", [])
             global_outline = global_data.get("global_outline", "")
 
-            EXTRACTION_TIMEOUT = 120
-            try:
-                knowledge = UniverseState.extract_knowledge(
-                    block_summaries=block_summaries,
-                    global_outline=global_outline,
-                    episode_title=title,
-                    episode_number=episode_num,
-                    model=model,
-                    prompt_path=cfg.extract_concepts_prompt_path,
-                    host=cfg.ollama_host,
-                    timeout=EXTRACTION_TIMEOUT,
-                )
-            except Exception as e:
-                logger.warning("Extraction failed for ep %d: %s — returning empty", episode_num, e)
-                knowledge = {}
+            for attempt in range(2):
+                EXTRACTION_TIMEOUT = 300
+                try:
+                    knowledge = UniverseState.extract_knowledge(
+                        block_summaries=block_summaries,
+                        global_outline=global_outline,
+                        episode_title=title,
+                        episode_number=episode_num,
+                        model=model,
+                        prompt_path=cfg.extract_concepts_prompt_path,
+                        host=cfg.ollama_host,
+                        timeout=EXTRACTION_TIMEOUT,
+                    )
+                    if knowledge and any(knowledge.values()):
+                        break
+                    logger.warning("Extraction empty for ep %d, retrying...", episode_num)
+                    knowledge = {}
+                except Exception as e:
+                    logger.warning("Extraction failed for ep %d: %s%s",
+                                   episode_num, e,
+                                   "" if attempt == 0 else " — giving up")
+                    knowledge = {}
         elif segments is not None:
             # Fallback: extract from raw segment text (multiple calls for long episodes)
             logger.info("Extracting knowledge directly from segment text (no global map available)")

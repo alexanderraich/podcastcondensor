@@ -1,0 +1,36 @@
+{
+  "entities": [],
+  "concepts": [
+    "body of God",
+    "divine council",
+    "angels as sons of God",
+    "Mount Sinai",
+    "incarnation",
+    "resurrection",
+    "angelic beings with specific roles",
+    "different levels of glory",
+    "angels interacting with the physical world",
+    "bat consciousness analogy",
+    "Angelic Falls concept",
+    "Heaven as corruption",
+    "family programming resources",
+    "Christ's two bodies",
+    "Eucharist",
+    "kenosis",
+    "ancient sense of body metaphor for Christ",
+    "god's presence through the church"
+  ],
+  "claims": [],
+  "relations": [],
+  "open_threads": [
+    "the evolution of language and concepts regarding God and angels in different historical periods",
+    "the specific roles and levels of glory of angelic beings",
+    "the nature of resurrection and its implications for humanity",
+    "the limitations of incarnation and the role of human nature",
+    "the concept of Christ's two bodies and their significance",
+    "the meaning and practice of Eucharist in theological understanding",
+    "the presence of God in the world through the church"
+  ],
+  "scriptural_links": [],
+  "historical_links": []
+}

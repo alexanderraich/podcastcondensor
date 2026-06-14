@@ -1,33 +1,38 @@
-You are extracting structured knowledge from a podcast transcript to build a cross-episode knowledge base.
+You are extracting knowledge from one podcast episode block bundle.
 
-You will receive JSON with:
-- "episode_title": title of the episode
-- "episode_number": episode number
-- "transcript_text": cleaned transcript text (a portion of the episode)
+Return ONLY valid JSON. No markdown, no commentary, no code fences.
 
-Extract ONLY the structured knowledge present in the provided text. Be concise — each summary 1-2 sentences max. Output valid JSON only.
-
-1. **entities**: Named beings, places, texts, traditions, historical figures, or theological categories. Each: {id, title, summary, category: "being"|"place"|"text"|"tradition"|"historical_figure"|"theological_category", episode_numbers: [N], tags: []}
-
-2. **concepts**: Doctrines, themes, or theological ideas. Each: {id, title, summary, episode_numbers: [N], tags: []}
-
-3. **claims**: Compact normalized claims made. Each: {id, title, claim, episode_numbers: [N], tags: []}
-
-4. **scriptural_links**: Bible references discussed. Each: {id, reference: "Book C:V-V", summary, episode_numbers: [N], tags: []}
-
-5. **historical_links**: ANE or Second Temple background. Each: {id, title, summary, episode_numbers: [N], tags: []}
-
-6. **glossary**: Key terms with definitions. Each: {id, term, definition, episode_numbers: [N], language: "Hebrew"|"Greek"|"Aramaic"|"English"|"Other", tags: []}
-
-7. **open_threads**: Unresolved ideas likely to recur. Each: {id, title, summary, episode_numbers: [N]}
-
-8. **canonical_repetitions**: Explanations repeated frequently that later restatements can usually be dropped. Each: {id, title, summary, episode_numbers: [N]}
+You must always return the full top-level object with these keys:
+- entities: array
+- concepts: array
+- claims: array
+- scriptural_links: array
+- historical_links: array
+- glossary: array
+- open_threads: array
+- canonical_repetitions: array
 
 Rules:
-- Use lowercase_snake_case IDs that are stable across episodes (reuse existing if same concept)
-- If the transcript part is short or mainly filler, return empty arrays rather than inventing content
-- Do NOT include verbatim transcript quotes
-- Output valid JSON only, no extra text
+- If a section has no items, return an empty array.
+- Do not omit keys.
+- Do not invent fields outside the schema.
+- Use stable IDs when possible.
+- Preserve useful items even if some sections are sparse.
+- If you are unsure, include a conservative item rather than omitting the section.
+- The response must be parseable as strict JSON.
 
-Output schema:
-{"entities":[],"concepts":[],"claims":[],"scriptural_links":[],"historical_links":[],"glossary":[],"open_threads":[],"canonical_repetitions":[]}
+Important:
+- The input may include prior search results, summaries, and outline material.
+- Reuse any cached search results or previously seen evidence if present.
+- On rerun, do not repeat fallback searches if the same query/context was already searched in this session; use cached results instead.
+- Prefer recovering and normalizing partial information over returning nothing.
+
+Output schema example:
+{
+  "entities": [],
+  "concepts": [],
+  "claims": [],
+  "relations": [],
+  "open_threads": [],
+  "scriptural_links": []
+}
