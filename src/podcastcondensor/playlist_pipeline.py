@@ -27,6 +27,17 @@ from podcastcondensor.global_map import build_global_map
 from podcastcondensor.universe_state import UniverseState
 from podcastcondensor.pipeline import run_pipeline
 
+# Strategy imports
+from podcastcondensor.strategies import (
+    create_knowledge_extractor,
+    KnowledgeExtractionStrategy,
+)
+from podcastcondensor.strategies.knowledge import (
+    OllamaKnowledgeExtractionStrategy,
+    DeepSeekKnowledgeExtractionStrategy,
+)
+from podcastcondensor.pipeline import _compute_fingerprint, _cache_fingerprint_matches
+
 logger = logging.getLogger(__name__)
 
 
@@ -51,16 +62,7 @@ def build_universe_state(
       4. Extract structured knowledge from outline + summaries
       5. Merge into universe state
 
-    Args:
-        playlist_url: YouTube playlist URL
-        cfg: Pipeline config
-        start_episode: 1-based index of first episode (default 1)
-        end_episode: 1-based index of last episode (default 20)
-        state_path: Path to save/load universe state JSON
-        dry_run: If True, skip LLM calls and just prepare data
-
-    Returns:
-        UniverseState populated with knowledge from the episode range.
+    Uses the configured ``knowledge_provider`` for extraction.
     """
     # Initialize state
     if state_path:
@@ -88,7 +90,7 @@ def build_universe_state(
     else:
         model = cfg.default_model
 
-    # Resolve episode sources (playlist + direct fallback)
+    # Resolve episode sources
     sources = resolve_episode_sources(
         playlist_url=playlist_url,
         start_ep=start_episode,
@@ -116,28 +118,35 @@ def build_universe_state(
 
         # ----------------------------------------------------------
         # Artifact reuse hierarchy (cheapest first):
-        #   1. state_knowledge.json (already extracted)
+        #   1. state_knowledge.json (already extracted) — with fingerprint check
         #   2. global_map.json (block summaries + outline)
         #   3. segments.json (clean segmented transcript)
         #   4. raw subtitles
         # ----------------------------------------------------------
 
-        # Level 1: Already has knowledge extracted
+        # Level 1: Already has knowledge extracted (with fingerprint validation)
         if os.path.exists(knowledge_path):
             try:
                 with open(knowledge_path) as f:
                     existing_knowledge = json.load(f)
-                if existing_knowledge.get("concepts") or existing_knowledge.get("entities"):
-                    logger.info("Cache HIT: reusing existing knowledge from %s", knowledge_path)
-                    state.add_episode_knowledge(episode_num, existing_knowledge)
-                    continue
+
+                # Validate cache fingerprint
+                if _cache_fingerprint_matches(existing_knowledge, cfg, ""):
+                    has_content = existing_knowledge.get("concepts") or existing_knowledge.get("entities")
+                    if has_content or existing_knowledge.get("concepts") == [] and existing_knowledge.get("entities") == []:
+                        logger.info("Cache HIT (fingerprint valid): reusing knowledge from %s", knowledge_path)
+                        if existing_knowledge.get("concepts") or existing_knowledge.get("entities"):
+                            state.add_episode_knowledge(episode_num, existing_knowledge)
+                        continue
+                else:
+                    logger.info("Cache MISS: fingerprint changed, will re-extract")
             except (json.JSONDecodeError, KeyError):
                 pass
 
         segments = None
         global_data = None
 
-        # Level 2: Has global map (block summaries + outline) — the ideal reduced artifact
+        # Level 2: Has global map (block summaries + outline)
         global_map_path = os.path.join(run_dir, "global_map.json")
         segments_path = os.path.join(run_dir, "segments.json")
 
@@ -145,12 +154,11 @@ def build_universe_state(
             logger.info("Cache HIT: reusing global map from %s", global_map_path)
             with open(global_map_path) as f:
                 global_data = json.load(f)
-            # Also load segments if available (may be needed for block assignment)
             if os.path.exists(segments_path):
                 with open(segments_path) as f:
                     segments = json.load(f).get("segments", [])
 
-        # Level 3: Only has segments (clean transcript)
+        # Level 3: Only has segments
         elif os.path.exists(segments_path):
             logger.info("Cache MISS for global map — reusing segments only")
             with open(segments_path) as f:
@@ -159,7 +167,6 @@ def build_universe_state(
         # Level 4: Nothing cached — build from raw subtitles
         else:
             logger.info("Cache MISS — downloading and processing from scratch")
-            # Resume fallback: check if we already have the SRT in the run dir
             local_srt = os.path.join(run_dir, "source_subtitles.srt")
             if os.path.exists(local_srt):
                 logger.info("Reusing local SRT copy: %s", local_srt)
@@ -191,12 +198,11 @@ def build_universe_state(
                 sentence_overflow_words=cfg.sentence_overflow_words,
             )
 
-            # Pass 2: LLM-based per-boundary BREAK/CONTINUE refinement
             if cfg.refine_segments and len(seg_objects) > 1:
                 seg_objects = refine_segments(
                     rough_segments=seg_objects,
                     entries=cleaned,
-                    model=cfg.default_model,  # use 3b — fast, tiny output
+                    model=cfg.default_model,
                     host=cfg.ollama_host,
                     timeout=min(cfg.ollama_timeout, 60),
                     target_min_words=50,
@@ -204,14 +210,13 @@ def build_universe_state(
                 )
 
             segments = [s.to_dict() for s in seg_objects]
-
             _write_json(
                 segments_path,
                 {"segments": segments, "pipeline": "podcastcondensor", "version": "0.3.0"},
             )
             logger.info("  → %d segments", len(segments))
 
-        # If we have segments but no global_map, run Phase A to produce block summaries + outline
+        # If we have segments but no global_map, run Phase A
         if segments is not None and global_data is None and not dry_run:
             logger.info("Building global map (block summaries + outline)...")
             segments_for_map = []
@@ -246,41 +251,25 @@ def build_universe_state(
                 _write_json(knowledge_path, {})
                 continue
 
-        # Extract knowledge from the best available reduced artifact
+        # Extract knowledge
         if dry_run:
             logger.info("Dry-run: skipping knowledge extraction")
             continue
 
         if global_data is not None:
-            # Use block summaries + outline (compact — ~1 LLM call)
-            logger.info("Extracting knowledge from block summaries + outline (1 call)")
+            logger.info(
+                "Extracting knowledge (%s/%s) from block summaries + outline",
+                cfg.knowledge_provider, cfg.knowledge_model,
+            )
             block_summaries = global_data.get("block_summaries", [])
             global_outline = global_data.get("global_outline", "")
 
-            for attempt in range(2):
-                EXTRACTION_TIMEOUT = 300
-                try:
-                    knowledge = UniverseState.extract_knowledge(
-                        block_summaries=block_summaries,
-                        global_outline=global_outline,
-                        episode_title=title,
-                        episode_number=episode_num,
-                        model=model,
-                        prompt_path=cfg.extract_concepts_prompt_path,
-                        host=cfg.ollama_host,
-                        timeout=EXTRACTION_TIMEOUT,
-                    )
-                    if knowledge and any(knowledge.values()):
-                        break
-                    logger.warning("Extraction empty for ep %d, retrying...", episode_num)
-                    knowledge = {}
-                except Exception as e:
-                    logger.warning("Extraction failed for ep %d: %s%s",
-                                   episode_num, e,
-                                   "" if attempt == 0 else " — giving up")
-                    knowledge = {}
+            knowledge = _extract_with_strategy(cfg, block_summaries, global_outline,
+                                                title, episode_num)
+            _write_json(knowledge_path, knowledge)
+
         elif segments is not None:
-            # Fallback: extract from raw segment text (multiple calls for long episodes)
+            # Fallback: extract from raw segment text
             logger.info("Extracting knowledge directly from segment text (no global map available)")
             all_texts = [s.get("text", "") for s in segments]
             words = " ".join(all_texts).split()
@@ -315,12 +304,11 @@ def build_universe_state(
                 except Exception as e:
                     logger.warning("  Chunk %d failed: %s", ci + 1, e)
             knowledge = merged
+            _write_json(knowledge_path, knowledge)
         else:
             logger.warning("No transcript data for episode %d", episode_num)
             _write_json(knowledge_path, {})
             continue
-
-        _write_json(knowledge_path, knowledge)
 
         any_items = any(len(v) for v in knowledge.values())
         if any_items:
@@ -334,9 +322,6 @@ def build_universe_state(
         else:
             logger.warning("  → Empty knowledge, nothing added")
 
-    # Final save
-
-    # Final save
     state.save()
     logger.info("=" * 60)
     logger.info("BUILD COMPLETE")
@@ -351,8 +336,85 @@ def build_universe_state(
 
 
 # ---------------------------------------------------------------------------
+# Extract knowledge using configured strategy
+# ---------------------------------------------------------------------------
+
+
+def _extract_with_strategy(
+    cfg: Config,
+    block_summaries: list,
+    global_outline: str,
+    title: str,
+    episode_num: int,
+) -> dict:
+    """Extract knowledge using the configured provider strategy."""
+    from podcastcondensor.llm.deepseek import resolve_api_key, ENV_API_KEY_VARS
+
+    logger.info(
+        "Knowledge provider: %s (model: %s)",
+        cfg.knowledge_provider, cfg.knowledge_model,
+    )
+
+    if cfg.knowledge_provider == "deepseek":
+        api_key = resolve_api_key()
+        if not api_key:
+            vars_help = " or ".join(f"${v}" for v in ENV_API_KEY_VARS)
+            logger.warning(
+                "%s not set — falling back to Ollama for extraction",
+                vars_help,
+            )
+            extractor = OllamaKnowledgeExtractionStrategy(
+                model=cfg.default_model,
+                prompt_path=cfg.extract_concepts_prompt_path,
+                host=cfg.ollama_host,
+                timeout=cfg.ollama_timeout,
+            )
+        else:
+            extractor = create_knowledge_extractor(
+                provider="deepseek",
+                prompt_path=cfg.extract_concepts_prompt_path,
+                model=cfg.knowledge_model,
+                timeout=min(cfg.ollama_timeout, 300),
+                deepseek_base_url=cfg.knowledge_base_url or None,
+                deepseek_api_key=api_key,
+            )
+    else:
+        extractor = OllamaKnowledgeExtractionStrategy(
+            model=cfg.default_model,
+            prompt_path=cfg.extract_concepts_prompt_path,
+            host=cfg.ollama_host,
+            timeout=cfg.ollama_timeout,
+        )
+
+    for attempt in range(2):
+        try:
+            knowledge = extractor.extract(
+                block_summaries=block_summaries,
+                global_outline=global_outline,
+                episode_title=title,
+                episode_number=episode_num,
+            )
+            if knowledge and any(knowledge.values()):
+                # Attach cache fingerprint
+                knowledge["_fingerprint"] = _compute_fingerprint(cfg, global_outline)
+                return knowledge
+            logger.warning("Extraction empty for ep %d, retrying...", episode_num)
+            knowledge = {}
+        except Exception as e:
+            logger.warning(
+                "Extraction failed for ep %d: %s%s",
+                episode_num, e,
+                "" if attempt == 0 else " — giving up",
+            )
+            knowledge = {}
+
+    return {}
+
+
+# ---------------------------------------------------------------------------
 # Process episodes with an existing universe state (full pipeline)
 # ---------------------------------------------------------------------------
+
 
 def process_with_universe_state(
     playlist_url: str,
@@ -367,20 +429,7 @@ def process_with_universe_state(
     Runs the full pipeline (download → classify → cut audio) for each episode,
     using the UniverseState as context during classification. After each episode,
     new knowledge is extracted and the state is updated.
-
-    Args:
-        playlist_url: YouTube playlist URL
-        cfg: Pipeline config
-        state: Loaded UniverseState instance
-        start_episode: 1-based index of first episode to process (default 21)
-        end_episode: Optional 1-based index of last episode
-        dry_run: If True, skip LLM calls
-
-    Returns:
-        List of result dicts, one per episode.
     """
-    # Resolve episode sources
-    # end_episode=0 means "process only the start episode"
     effective_end = end_episode if end_episode and end_episode >= start_episode else start_episode
     sources = resolve_episode_sources(
         playlist_url=playlist_url,
@@ -427,7 +476,6 @@ def process_with_universe_state(
                 "universe_state_updated": result.get("phases", {}).get("universe_state", {}).get("knowledge_extracted", False),
             })
 
-            # Log stats
             stats_data = {}
             stats_path = os.path.join(result.get("output_dir", ""), "stats.json")
             if os.path.exists(stats_path):
@@ -456,7 +504,6 @@ def process_with_universe_state(
                 "error": str(e),
             })
 
-    # Summary
     successful = sum(1 for r in results if r.get("success"))
     logger.info("=" * 60)
     logger.info("PROCESSING COMPLETE")
@@ -472,6 +519,7 @@ def process_with_universe_state(
 # Utility
 # ---------------------------------------------------------------------------
 
+
 def _write_json(path: str, data: dict):
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
@@ -479,10 +527,7 @@ def _write_json(path: str, data: dict):
 
 
 def _parse_extract_response(raw: str) -> Optional[dict]:
-    """Parse the JSON response from knowledge extraction.
-
-    Handles markdown code fences and surrounding text.
-    """
+    """Parse the JSON response from knowledge extraction."""
     if not raw:
         return None
     text = raw.strip()
@@ -510,5 +555,3 @@ def _parse_extract_response(raw: str) -> Optional[dict]:
             except json.JSONDecodeError:
                 pass
     return None
-
-

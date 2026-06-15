@@ -7,11 +7,33 @@ Phase C: global cleanup / dedup
 import json
 import logging
 import os
-from typing import List, Optional
+import re
+from typing import List, Optional, Tuple
 
 from podcastcondensor.ollama_client import generate_batch, generate
 
 logger = logging.getLogger(__name__)
+
+# ---------------------------------------------------------------------------
+# Keywords suggestive of off-topic administrative / procedural content
+# that typically appears at the tail of episodes.
+# ---------------------------------------------------------------------------
+_OFF_TOPIC_KEYWORDS = [
+    "subscribe", "patreon", "donate", "donation", "next week",
+    "next time", "support us", "check out", "sign up",
+    "merch", "book plug", "please rate", "review us",
+    "closing", "outro", "announcements", "sponsor",
+    "thanks for listening", "join us next",
+]
+
+
+def _has_off_topic_keywords(text: str) -> bool:
+    """Check whether *text* contains off-topic administrative keywords."""
+    lower = text.lower()
+    for kw in _OFF_TOPIC_KEYWORDS:
+        if kw in lower:
+            return True
+    return False
 
 
 def _load_prompt(path: str) -> str:
@@ -166,9 +188,10 @@ def global_cleanup(
 ) -> List[dict]:
     """Global deduplication and cleanup pass on segment decisions.
 
-    1. Protect opening segments (first ~10%) from dropping.
-    2. Deduplicate text-similar kept segments.
-    3. Ensure transitions between blocks are preserved.
+    Deduplicates text-similar kept segments.  No longer protects opening
+    segments — that was overriding the classifier's judgment on intro/setup
+    material that should be evaluated by the same criteria as everything
+    else.
     """
     seg_id_to_label = {d["id"]: d["label"] for d in decisions}
     seg_id_to_seg = {s["segment_id"]: s for s in segments}
@@ -176,14 +199,7 @@ def global_cleanup(
     if not decisions:
         return decisions
 
-    # Pass 1: Protect opening zone — only the first few segments
-    protect_count = min(3, len(segments) // 20)
-    for i in range(min(protect_count, len(segments))):
-        sid = segments[i]["segment_id"]
-        if sid in seg_id_to_label and seg_id_to_label[sid] == "drop":
-            seg_id_to_label[sid] = "keep"
-
-    # Pass 2: Text-similarity dedup
+    # Pass 1: Text-similarity dedup
     kept_texts = []
     for decision in decisions:
         sid = decision["id"]
@@ -333,3 +349,209 @@ def _parse_resolve_response(raw: str) -> Optional[dict]:
         except json.JSONDecodeError:
             pass
     return None
+
+
+# ---------------------------------------------------------------------------
+# Listenability helpers — called after classification & cleanup
+# ---------------------------------------------------------------------------
+
+
+def apply_continuity_bias(
+    segments: List[dict],
+    decisions: List[dict],
+    bridge_gap_sec: float = 3.0,
+    min_cluster_size: int = 1,
+) -> List[dict]:
+    """Add bridging and context padding to reduce fragmentation.
+
+    1. **Bridge pass** — if a dropped segment sits *between* two kept
+       segments with only a small gap on each side, keep it as a bridge.
+
+    2. **Context pass** — isolated kept segments without nearby neighbours
+       get their immediate predecessor / successor kept for context.
+
+    3. **Cluster pass** — any dropped segment that directly touches a kept
+       segment (adjacent in segment sequence) and is very short (<50 words)
+       gets kept as minimal context.
+
+    Returns an updated decisions list.
+    """
+    sid_to_label = {d["id"]: d["label"] for d in decisions}
+    sid_to_seg = {s["segment_id"]: s for s in segments}
+
+    changes = 0
+
+    # --- Pass 1: Bridge dropped segments that connect two kept segments ---
+    for i, seg in enumerate(segments):
+        sid = seg["segment_id"]
+        if sid_to_label.get(sid) != "drop":
+            continue
+
+        prev_kept_idx = None
+        next_kept_idx = None
+        for j in range(i - 1, -1, -1):
+            if sid_to_label.get(segments[j]["segment_id"]) == "keep":
+                prev_kept_idx = j
+                break
+        for j in range(i + 1, len(segments)):
+            if sid_to_label.get(segments[j]["segment_id"]) == "keep":
+                next_kept_idx = j
+                break
+
+        if prev_kept_idx is not None and next_kept_idx is not None:
+            gap_prev = seg["start"] - segments[prev_kept_idx]["end"]
+            gap_next = segments[next_kept_idx]["start"] - seg["end"]
+            if gap_prev <= bridge_gap_sec and gap_next <= bridge_gap_sec:
+                sid_to_label[sid] = "keep"
+                changes += 1
+                logger.debug("Bridge keep: %s (gap %.1f/%.1f)", sid, gap_prev, gap_next)
+
+    # --- Pass 2: Context padding around isolated kept segments ---
+    for i, seg in enumerate(segments):
+        sid = seg["segment_id"]
+        if sid_to_label.get(sid) != "keep":
+            continue
+
+        # Check if this kept segment has kept neighbours nearby
+        has_kept_before = any(
+            sid_to_label.get(segments[j]["segment_id"]) == "keep"
+            for j in range(max(0, i - 3), i)
+        )
+        has_kept_after = any(
+            sid_to_label.get(segments[j]["segment_id"]) == "keep"
+            for j in range(i + 1, min(len(segments), i + 4))
+        )
+
+        if not has_kept_before and i > 0:
+            prev_sid = segments[i - 1]["segment_id"]
+            if sid_to_label.get(prev_sid) == "drop":
+                sid_to_label[prev_sid] = "keep"
+                changes += 1
+                logger.debug("Context before isolated %s: kept %s", sid, prev_sid)
+
+        if not has_kept_after and i < len(segments) - 1:
+            next_sid = segments[i + 1]["segment_id"]
+            if sid_to_label.get(next_sid) == "drop":
+                sid_to_label[next_sid] = "keep"
+                changes += 1
+                logger.debug("Context after isolated %s: kept %s", sid, next_sid)
+
+    # --- Pass 3: Keep very short adjacent neighbours of kept segments ---
+    for i, seg in enumerate(segments):
+        sid = seg["segment_id"]
+        if sid_to_label.get(sid) != "keep":
+            continue
+        # Check neighbours (one on each side) — keep if very short
+        for neighbour_idx in (i - 1, i + 1):
+            if neighbour_idx < 0 or neighbour_idx >= len(segments):
+                continue
+            n_sid = segments[neighbour_idx]["segment_id"]
+            if sid_to_label.get(n_sid) == "drop":
+                n_words = segments[neighbour_idx].get("word_count", 0)
+                if n_words < 30:
+                    sid_to_label[n_sid] = "keep"
+                    changes += 1
+                    logger.debug("Short neighbour keep: %s (%d words)", n_sid, n_words)
+
+    if changes:
+        logger.info("Continuity bias: %d segments promoted to keep", changes)
+
+    # Rebuild decisions list
+    result = []
+    for d in decisions:
+        entry = dict(d)
+        new_label = sid_to_label.get(entry["id"])
+        if new_label:
+            entry["label"] = new_label
+        result.append(entry)
+    return result
+
+
+def detect_tail_block(
+    segments: List[dict],
+    decisions: List[dict],
+    tail_fraction: float = 0.12,
+    min_keep_fraction: float = 0.03,
+) -> List[str]:
+    """Detect off-topic trailing material and return IDs to force-drop.
+
+    Uses three signals:
+
+    1. **Block identity** — if the last N segments are in a different block
+       from the main discussion, flag them.
+
+    2. **Keyword match** — if the tail contains administrative/off-topic
+       keywords, flag with higher confidence.
+
+    3. **Min-content heuristic** — if the last block has very little kept
+       content (< ``min_keep_fraction`` of total), it's likely off-topic.
+
+    Returns a set of ``segment_id`` strings to force-drop.
+    """
+    if not segments or len(segments) < 10:
+        return []
+
+    sid_to_label = {d["id"]: d["label"] for d in decisions}
+
+    # Measure kept content per block
+    block_kept_sec: dict = {}
+    for seg in segments:
+        if sid_to_label.get(seg["segment_id"]) == "keep":
+            bid = seg.get("block_id", 0)
+            block_kept_sec[bid] = block_kept_sec.get(bid, 0) + (seg["end"] - seg["start"])
+
+    if not block_kept_sec:
+        return []
+
+    total_kept = sum(block_kept_sec.values())
+
+    # Find segments in the tail region (last tail_fraction)
+    tail_start = int(len(segments) * (1.0 - tail_fraction))
+    tail_segs = segments[tail_start:]
+    if not tail_segs:
+        return []
+
+    # Determine dominant block of the tail
+    tail_block_counts: dict = {}
+    for seg in tail_segs:
+        bid = seg.get("block_id", 0)
+        tail_block_counts[bid] = tail_block_counts.get(bid, 0) + 1
+
+    if not tail_block_counts:
+        return []
+
+    tail_block = max(tail_block_counts, key=tail_block_counts.get)
+
+    # Heuristic 1: tail block has very little kept content
+    tail_kept_sec = block_kept_sec.get(tail_block, 0)
+    is_min_content_tail = (
+        total_kept > 0 and tail_kept_sec / total_kept < min_keep_fraction
+    )
+
+    # Heuristic 2: keyword check
+    # Check if ANY of the tail segments have off-topic keywords
+    has_off_topic_kw = any(
+        _has_off_topic_keywords(seg.get("text", ""))
+        for seg in tail_segs
+    )
+
+    # Heuristic 3: there exists a main block before the tail block
+    main_blocks = [b for b in block_kept_sec if b != tail_block]
+    has_main_content_before = bool(main_blocks)
+
+    if (is_min_content_tail or has_off_topic_kw) and has_main_content_before:
+        # Flag ALL segments in the tail region that belong to the tail block
+        flagged = [
+            seg["segment_id"]
+            for seg in tail_segs
+            if seg.get("block_id", 0) == tail_block
+        ]
+        if flagged:
+            logger.info(
+                "Tail detection: %d segments flagged in block %s "
+                "(tail_kept=%.0fs/%.0fs total, kw=%s)",
+                len(flagged), tail_block, tail_kept_sec, total_kept, has_off_topic_kw,
+            )
+        return flagged
+
+    return []
