@@ -24,7 +24,7 @@
       21
     ],
     "last_built_episode": 21,
-    "updated_at": "2026-06-14T21:42:53"
+    "updated_at": "2026-06-15T14:24:38"
   },
   "entities": [
     {
@@ -431,6 +431,123 @@
       "title": "Cornelius",
       "category": "person",
       "summary": "A centurion in the Roman army who received the Holy Spirit through Peter's preaching",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "adam",
+      "title": "Adam",
+      "category": "person",
+      "summary": "First man created by God, whose sin introduced death into the world",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "Prophet who led Israel out of Egypt and received instructions for the tabernacle",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "solomon",
+      "title": "Solomon",
+      "category": "person",
+      "summary": "King of Israel who built the First Temple in Jerusalem",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "peter",
+      "title": "Peter",
+      "category": "person",
+      "summary": "Apostle who received vision of unclean animals and preached to Cornelius",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "babylon",
+      "title": "Babylon",
+      "category": "place",
+      "summary": "Ancient empire associated with Nimrod and the Tower of Babel",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "jerusalem_temple",
+      "title": "Jerusalem Temple",
+      "category": "place",
+      "summary": "Central place of worship for ancient Israel, built by Solomon",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "nephilim",
+      "title": "Nephilim",
+      "category": "angelic_being",
+      "summary": "Offspring of fallen angels and human women, associated with the Tower of Babel",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "holy_spirit",
+      "title": "Holy Spirit",
+      "category": "divine_person",
+      "summary": "Third Person of the Trinity, who writes the law in hearts and indwells believers",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "christ",
+      "title": "Christ",
+      "category": "divine_person",
+      "summary": "Son of God, whose victory and triumph are celebrated in temple rededication",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "temple",
+      "title": "Temple (Jerusalem)",
+      "category": "object",
+      "summary": "Solomon's Temple, later rededicated; central place of worship",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "jesus_christ",
+      "title": "Jesus Christ",
+      "category": "divine_person",
+      "summary": "Second person of the Trinity who came to earth as a human",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "ancient_israel_worship",
+      "title": "Ancient Israel Worship",
+      "category": "concept",
+      "summary": "Worship practices of ancient Israelites centered around the tabernacle and later temple",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "organ_donation",
+      "title": "Organ Donation",
+      "category": "concept",
+      "summary": "Medical procedure where organs are removed from a donor to save or prolong another person's life",
       "episode_numbers": [
         21
       ]
@@ -914,6 +1031,150 @@
       "id": "organ_donation_process",
       "title": "Organ Donation Process",
       "summary": "Detailed explanation of the process of organ donation, including criteria for donors and recipients",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "tabernacle_as_microcosm",
+      "title": "Tabernacle As Microcosm",
+      "summary": "The tabernacle was seen as a representation or microcosm of the created order, with different parts symbolizing various aspects of God's presence and creation",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "sacred_space",
+      "title": "Sacred Space",
+      "summary": "Places set apart for God's presence, not tied to physical locations but to divine encounter",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "temple_worship",
+      "title": "Temple Worship",
+      "summary": "Ancient Israelite worship centered on the tabernacle and temple, involving sacrifices and purity",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "internal_temple",
+      "title": "Internal Temple of the Holy Spirit",
+      "summary": "Believers as dwelling places of the Holy Spirit, with cleanliness inside leading to external actions",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "god_withdrawal",
+      "title": "God's Withdrawal",
+      "summary": "God's decision to withdraw from direct involvement with humanity after Babel, assigning angels to nations",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "temple_rededication",
+      "title": "Temple Rededication",
+      "summary": "The cleansing and rededication of the temple, associated with Christ's victory",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "tower_of_babel",
+      "title": "Tower of Babel",
+      "summary": "Babylonian structure built by humans as a tower reaching heaven, destroyed by God",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "abraham_is_beginning_of_salvation",
+      "title": "Abraham is the Beginning of Salvation",
+      "summary": "God's call to Abraham marked the beginning of salvation for his descendants",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "tabernacle_as_sacred_space",
+      "title": "Tabernacle as Sacred Space",
+      "summary": "Sacred space not tied to physical places, represented by the tabernacle and later temple",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "jesus_victory_over_temple",
+      "title": "Jesus' Victory Over Temple",
+      "summary": "Christ's victory over the old covenant system of sacrifices in the temple",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "bible_worship",
+      "title": "Bible Worship",
+      "summary": "Ancient Israel worship practices centered around the tabernacle and temple",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "tabernacle_consecration",
+      "title": "Tabernacle Consecration",
+      "summary": "Process of dedicating the tabernacle as a holy place for God's presence",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "moses_and_exodus_context",
+      "title": "Moses and Exodus Context",
+      "summary": "Context for Moses leading Israel out of Egypt and receiving the Ten Commandments",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "ancient_israel_worship_in_tabernacle",
+      "title": "Ancient Israel Worship in Tabernacle",
+      "summary": "Worship practices in the tabernacle before the temple was built",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "christ_victory_and_triumph",
+      "title": "Christ's Victory and Triumph",
+      "summary": "Christ's victory over sin, death, and Satan is celebrated in the rededication of the temple",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "nephilim_connection_tower_of_babel",
+      "title": "Nephilim Connection to Tower of Babel",
+      "summary": "Connection between the Nephilim (fallen angels) and the Tower of Babel, often seen as a rebellion against God's authority",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "purity_and_service_of_virgins_at_temple",
+      "title": "Purity and Service of Virgins at Temple",
+      "summary": "Theotokos (Virgin Mary) is often depicted as a virgin who served in the temple, symbolizing purity and service",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "christ_victory",
+      "title": "Christ's Victory and Triumph",
+      "summary": "Christ's victory over sin, death, and Satan is often seen as a rededication of the temple in spiritual terms",
       "episode_numbers": [
         21
       ]
@@ -1650,6 +1911,420 @@
       "episode_numbers": [
         21
       ]
+    },
+    {
+      "id": "death_by_holiness_in_eden",
+      "text": "In Eden, death was introduced by the presence or holiness of God due to Adam's sin.",
+      "topic": "Theology",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "tabernacle_as_microcosm_of_created_order",
+      "text": "The tabernacle was understood as a microcosm of the created order, with different parts representing various aspects of God's presence and creation.",
+      "topic": "Theology",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "god_with_moses_instructions_for_tabernacle",
+      "text": "God gave instructions to Moses for building the tabernacle, which was a portable sanctuary used by Israelites during their wanderings in the wilderness.",
+      "topic": "Theology",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "tabernacle_not_tied_to_physical_places",
+      "text": "Sacred space is not tied to physical places; Moses and Exodus context suggests that God's presence was with Israelites regardless of their location.",
+      "topic": "Theology",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "abraham_beginning_of_salvation",
+      "text": "Abraham is seen as the beginning of salvation, leading to the covenant with God and the birth of Israel.",
+      "topic": "History and Culture",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "tabernacle_center_of_israelite_camp",
+      "text": "God's presence was at the center of the Israelite camp, symbolizing his sovereignty over them.",
+      "topic": "Theology",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "dedication_of_solomon_temple",
+      "text": "Solomon's temple was dedicated and considered a higher level of purity compared to the tabernacle, reflecting God's presence in a more permanent location.",
+      "topic": "Theology",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "purity_and_service_of_virgins_at_temple_entry",
+      "text": "Purity and service were emphasized for virgins at the temple entrance, reflecting God's holiness and the importance of sanctity.",
+      "topic": "Theology",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "rededication_of_temple_and_christ_victory",
+      "text": "The rededication of the temple was seen as a victory for God, symbolizing his sovereignty over Israel and the world.",
+      "topic": "Theology",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "orthodox_purification_and_law_in_hearts",
+      "text": "Orthodox Christians believe that the Holy Spirit writes the law in their hearts, emphasizing internal purity over external actions.",
+      "topic": "Theology",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "organ_donation_process_complexity_and_importance",
+      "text": "Organ donation involves complex processes and criteria for end-of-life patients, reflecting the importance of this procedure in modern healthcare.",
+      "topic": "Science and Medicine",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "death_by_holiness_claim",
+      "text": "God's presence in Eden was so holy that it could cause death to sinful beings, a concept called 'death by holiness'.",
+      "topic": "Theology",
+      "supporting_reference": "Genesis 3",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "nimrod_babylonian_god",
+      "text": "Nimrod was considered a god in Babylonian tradition and is connected to the Tower of Babel.",
+      "topic": "History",
+      "supporting_reference": "Genesis 10-11",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "nephilim_babel",
+      "text": "The Nephilim, offspring of fallen angels and humans, were connected to the Tower of Babel.",
+      "topic": "Angelology",
+      "supporting_reference": "Genesis 6",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "god_withdrawal_angels",
+      "text": "God withdrew and assigned angels to nations after the Tower of Babel.",
+      "topic": "Angelology",
+      "supporting_reference": "Deuteronomy 32:8",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "abraham_salvation_beginning",
+      "text": "Abraham marks the beginning of God's plan of salvation.",
+      "topic": "Soteriology",
+      "supporting_reference": "Genesis 12",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "tabernacle_god_presence",
+      "text": "The tabernacle was built so that God's presence would dwell at the center of the Israelite camp.",
+      "topic": "Scripture",
+      "supporting_reference": "Exodus 25-40",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "theotokos_temple_presentation",
+      "text": "The Theotokos (Virgin Mary) was brought to the temple as a young girl, reflecting the purity of temple service.",
+      "topic": "Mariology",
+      "supporting_reference": "Protoevangelium of James",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "cornelius_holy_spirit",
+      "text": "The Gentile Cornelius received the Holy Spirit, signifying the inclusion of Gentiles in the Church.",
+      "topic": "Ecclesiology",
+      "supporting_reference": "Acts 10",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "peter_unclean_animals",
+      "text": "Peter's vision of unclean animals signified that the Gospel was for all nations.",
+      "topic": "Scripture",
+      "supporting_reference": "Acts 10",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "holy_spirit_law_in_hearts",
+      "text": "The Holy Spirit writes the law in believers' hearts, leading to internal purification.",
+      "topic": "Soteriology",
+      "supporting_reference": "Jeremiah 31:33",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "cornelius_gentile_inclusion",
+      "text": "Cornelius, a Gentile, received the Holy Spirit, signifying the inclusion of Gentiles into the Church.",
+      "topic": "Ecclesiology",
+      "supporting_reference": "Acts 10",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "holy_spirit_writes_law",
+      "text": "The Holy Spirit writes the law of God on the hearts of believers, making them internally clean.",
+      "topic": "Moral Theology",
+      "supporting_reference": "Jeremiah 31:33, 2 Corinthians 3:3",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "jesus_victory_over_temple",
+      "text": "Jesus' victory over the old covenant system of sacrifices in the temple marked a new era of worship and purification.",
+      "topic": "Other",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "orthodox_purification_process",
+      "text": "The process of writing God's law on hearts leads to external actions and internal purity, represented by the temple as a microcosm.",
+      "topic": "Other",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "eden_death_by_holiness",
+      "text": "God's presence in Eden led to death due to sin, as seen through the concept of 'death by holiness'",
+      "topic": "History",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "bible_worship_in_tabernacle",
+      "text": "Ancient Israel worship practices centered around the tabernacle and temple, not tied to physical places like Eden",
+      "topic": "Biblical Practices",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "orthodox_purification_holy_spirit_law",
+      "text": "In Orthodox Christianity, the Holy Spirit writes laws in hearts as a form of purification",
+      "topic": "Orthodoxy",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "abraham_is_beginning_of_salvation",
+      "text": "Abraham's covenant marks the beginning of salvation for his descendants, including Israel and Christians.",
+      "topic": "Scripture",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "tabernacle_as_sacred_space_not_tied_to_physical_places",
+      "text": "The tabernacle represents a sacred space not tied to physical places, symbolized by the holy of holies in the temple.",
+      "topic": "Scripture",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "moses_and_exodus_context",
+      "text": "Moses and Exodus provide context for understanding God's presence with Israel through the tabernacle and temple.",
+      "topic": "Other",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "ancient_israel_worship_in_tabernacle",
+      "text": "Ancient Israel worshipped in the tabernacle before the temple was built, as seen in Exodus 40:34-38.",
+      "topic": "Scripture",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "rededication_of_temple",
+      "text": "The rededication of the temple is a celebration of Christ's victory and triumph over sin, death, and Satan.",
+      "topic": "Other",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "orthodox_purification",
+      "text": "Orthodox Christians purify themselves by writing God's law in their hearts as a form of purification.",
+      "topic": "Scripture",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "god_in_eden",
+      "text": "God's presence in Eden is a foundational concept that explains death by holiness.",
+      "topic": "Theology",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "nephilim_connection_to_babel",
+      "text": "Nephilim are connected to the Tower of Babel, which was built by humans to reach heaven.",
+      "topic": "History and Mythology",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "moses_and_tabernacle_instructions",
+      "text": "Instructions for building the tabernacle were given through Moses, emphasizing sacred space not tied to physical places.",
+      "topic": "Religion",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "rededication_of_temple_victory",
+      "text": "Christ's victory is central in the rededication of the temple process, highlighting his triumph over sin and death.",
+      "topic": "Theology",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "orthodox_purification_law_in_hearts",
+      "text": "In Orthodox Christianity, God writes law in hearts, leading to internal purity that manifests externally through actions.",
+      "topic": "Religion",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "organ_donation_complexity",
+      "text": "The organ donation process is complex and important due to the need for matching criteria between donors and recipients.",
+      "topic": "Science and Medicine",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "god_holiness_and_death",
+      "text": "God's holiness can be so pure that it causes death to sinners, as seen in the concept of death by holiness.",
+      "topic": "Scripture",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "nephilim_tower_of_babel_connection",
+      "text": "The Nephilim (fallen angels) are often connected to the Tower of Babel, seen as a rebellion against God's authority.",
+      "topic": "Scripture",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "god_with_moses_instructions",
+      "text": "God transitioned from direct revelation to instructions given through Moses for building the tabernacle and later temple.",
+      "topic": "History",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "rededication_of_temple_virgin_service",
+      "text": "The Virgin Mary is often depicted as a virgin who served in the temple, symbolizing purity and service.",
+      "topic": "Scripture",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "christ_victory_rededication",
+      "text": "Christ's victory over sin, death, and Satan is often seen as a rededication of the temple in spiritual terms.",
+      "topic": "Theology",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "id": "orthodox_purification_holy_spirit",
+      "text": "Orthodox Christians emphasize internal cleansing and purity through the Holy Spirit, often seen as a form of purification.",
+      "topic": "Theology",
+      "supporting_reference": "",
+      "episode_numbers": [
+        21
+      ]
     }
   ],
   "scriptural_links": [
@@ -1967,6 +2642,78 @@
         21
       ],
       "id": "tower_of_babel"
+    },
+    {
+      "title": "Exodus",
+      "summary": "God led Israel out of slavery in Egypt and gave them instructions for building the tabernacle during their journey in the wilderness.",
+      "episode_numbers": [
+        21
+      ],
+      "id": "exodus"
+    },
+    {
+      "title": "Solomon's Temple Dedication",
+      "summary": "Dedication of the First Temple in Jerusalem",
+      "episode_numbers": [
+        21
+      ],
+      "id": "solomon's_temple_dedication"
+    },
+    {
+      "title": "Babylonian Empire",
+      "summary": "Origins associated with Nimrod and the Tower of Babel",
+      "episode_numbers": [
+        21
+      ],
+      "id": "babylonian_empire"
+    },
+    {
+      "title": "Dedication of Solomon's Temple",
+      "summary": "Ceremony where God's glory filled the temple",
+      "episode_numbers": [
+        21
+      ],
+      "id": "dedication_of_solomon's_temple"
+    },
+    {
+      "title": "Rededication of the Temple",
+      "summary": "Cleansing and rededication of the temple, associated with Christ's victory",
+      "episode_numbers": [
+        21
+      ],
+      "id": "rededication_of_the_temple"
+    },
+    {
+      "title": "Presentation of Mary in the Temple",
+      "summary": "Tradition of Mary being presented as a young girl to serve in the temple",
+      "episode_numbers": [
+        21
+      ],
+      "id": "presentation_of_mary_in_the_temple"
+    },
+    {
+      "id": "jesus_victory_over_temple",
+      "title": "Jesus' Victory Over Temple",
+      "summary": "Christ's victory over the old covenant system of sacrifices in the temple marked a new era of worship and purification",
+      "episode_numbers": [
+        21
+      ]
+    },
+    {
+      "title": "Rededication of Temple",
+      "summary": "Process after temple destruction, focusing on Christ's victory over sin and death.",
+      "episode_numbers": [
+        21
+      ],
+      "id": "rededication_of_temple"
+    },
+    {
+      "title": "Solomon's Temple",
+      "summary": "First temple built by King Solomon, located in Jerusalem, often seen as a symbol of God's presence among His people.",
+      "episode_numbers": [
+        21
+      ],
+      "id": "solomon's_temple"
     }
   ],
   "glossary": [
@@ -2304,6 +3051,42 @@
         21
       ],
       "id": "rededication_of_the_temple"
+    },
+    {
+      "term": "Orthodox Christian",
+      "definition": "Members of a tradition within Christianity that emphasizes the importance of the Holy Spirit, sacraments, and historical continuity with early Christians.",
+      "language": "",
+      "episode_numbers": [
+        21
+      ],
+      "id": "orthodox_christian"
+    },
+    {
+      "term": "Orthodox Christianity",
+      "definition": "Christian tradition emphasizing the importance of the Holy Spirit and liturgical practices",
+      "language": "English",
+      "episode_numbers": [
+        21
+      ],
+      "id": "orthodox_christianity"
+    },
+    {
+      "term": "Orthodox Christian purification",
+      "definition": "Process of purification for Orthodox Christians as they write God's law in their hearts",
+      "language": "",
+      "episode_numbers": [
+        21
+      ],
+      "id": "orthodox_christian_purification"
+    },
+    {
+      "term": "Orthodox Christianism",
+      "definition": "A form of Christianity that emphasizes the importance of the Holy Spirit and internal purity over external rituals",
+      "language": "English",
+      "episode_numbers": [
+        21
+      ],
+      "id": "orthodox_christianism"
     }
   ],
   "open_threads": [
@@ -2474,6 +3257,14 @@
         19
       ],
       "id": "jesus_as_lord_and_son"
+    },
+    {
+      "title": "Organ Donation",
+      "summary": "Discussion of organ donation process and its importance, but not fully explored in theological context",
+      "episode_numbers": [
+        21
+      ],
+      "id": "organ_donation"
     }
   ],
   "canonical_repetitions": [
@@ -2572,6 +3363,22 @@
         19
       ],
       "id": "divine_council_judgment"
+    },
+    {
+      "title": "God's Presence in Sacred Space",
+      "summary": "Repeated theme of God dwelling in Eden, tabernacle, temple, and now in believers",
+      "episode_numbers": [
+        21
+      ],
+      "id": "god's_presence_in_sacred_space"
+    },
+    {
+      "title": "Purity and Holiness",
+      "summary": "Emphasis on purity standards for approaching God, from Eden to temple to internal purification",
+      "episode_numbers": [
+        21
+      ],
+      "id": "purity_and_holiness"
     }
   ]
 }

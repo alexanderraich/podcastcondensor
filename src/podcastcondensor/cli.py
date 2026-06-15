@@ -23,6 +23,66 @@ def setup_logging(verbose: bool = False):
     )
 
 
+def _add_provider_args(parser: argparse.ArgumentParser):
+    """Add shared provider-selection arguments to a subparser."""
+
+    parser.add_argument(
+        "--classification-provider", default="ollama",
+        choices=["ollama", "deepseek"],
+        help="Provider for segment classification (default: ollama)",
+    )
+    parser.add_argument(
+        "--classification-model", default="",
+        help="Model for classification (provider default if omitted)",
+    )
+    parser.add_argument(
+        "--classification-base-url", default="",
+        help="Base URL for cloud classification provider",
+    )
+    parser.add_argument(
+        "--classification-fallback", default="",
+        choices=["ollama", ""],
+        help="Fallback provider if cloud classification fails (default: no fallback)",
+    )
+    parser.add_argument(
+        "--knowledge-provider", default="ollama",
+        choices=["ollama", "deepseek"],
+        help="Provider for knowledge extraction (default: ollama)",
+    )
+    parser.add_argument(
+        "--knowledge-model", default="",
+        help="Model for knowledge extraction (provider default if omitted)",
+    )
+    parser.add_argument(
+        "--knowledge-base-url", default="",
+        help="Base URL for cloud knowledge extraction",
+    )
+    parser.add_argument(
+        "--audio-strategy", default="single_pass_filter",
+        choices=["sequential_copy", "parallel_copy", "single_pass_filter", "safe_batched"],
+        help="Audio cutting strategy (default: single_pass_filter — one linear read via filter_complex; safe_batched for low-memory WSL)",
+    )
+    parser.add_argument(
+        "--audio-parallel-workers", type=int, default=2,
+        help="Workers for parallel audio cutting (default: 2)",
+    )
+    parser.add_argument(
+        "--audio-safe-batch-size", type=int, default=5,
+        help="Intervals per batch in safe_batched mode (default: 5, lower = less memory)",
+    )
+    parser.add_argument(
+        "--enable-continuity-bias", action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Apply continuity bias (bridge/context/neighbour passes) after classification "
+             "(default: enabled; disable for experiment matrix)",
+    )
+    parser.add_argument(
+        "--decisions-only", action="store_true", default=False,
+        help="Stop after Phase C + intervals; skip Phase D and audio cutting "
+             "(useful for classifier evaluation)",
+    )
+
+
 def cmd_run(args):
     cfg = Config(
         default_model=args.model,
@@ -44,6 +104,19 @@ def cmd_run(args):
         segment_gap_threshold=args.segment_gap,
         segment_max_words=args.segment_max_words,
         segment_min_words=args.segment_min_words,
+        # Provider selection
+        classification_provider=args.classification_provider,
+        classification_model=args.classification_model,
+        classification_base_url=args.classification_base_url,
+        classification_fallback_provider=args.classification_fallback,
+        knowledge_provider=args.knowledge_provider,
+        knowledge_model=args.knowledge_model,
+        knowledge_base_url=args.knowledge_base_url,
+        audio_strategy=args.audio_strategy,
+        audio_parallel_workers=args.audio_parallel_workers,
+        audio_safe_batch_size=args.audio_safe_batch_size,
+        enable_continuity_bias=args.enable_continuity_bias,
+        decisions_only=args.decisions_only,
     )
 
     result = run_pipeline(
@@ -88,6 +161,78 @@ def cmd_status(args):
         sys.exit(1)
 
 
+def cmd_doctor(args):
+    """Diagnose the environment and provider connectivity."""
+    import json
+    print("🩺 podcastcondensor doctor")
+    print("=" * 50)
+
+    # --- Python / project ---
+    print(f"\n📦 Environment:")
+    print(f"   Python:       {sys.version.split()[0]}")
+    print(f"   Config path:  {args.ollama_host}")
+
+    # --- Ollama ---
+    print(f"\n🦙 Ollama ({args.ollama_host}):")
+    ok = check_ollama(args.ollama_host)
+    if ok:
+        models = list_models(args.ollama_host)
+        print(f"   ✅ Running — {len(models)} models available")
+        for m in models[:5]:
+            print(f"      - {m}")
+        if len(models) > 5:
+            print(f"      ... and {len(models) - 5} more")
+    else:
+        print(f"   ❌ NOT running (or unreachable)")
+        print(f"      Start with: ollama serve &")
+
+    # --- DeepSeek ---
+    print(f"\n🌐 DeepSeek:")
+    from podcastcondensor.llm.deepseek import resolve_api_key, ENV_API_KEY_VARS
+    api_key = resolve_api_key()
+    for v in ENV_API_KEY_VARS:
+        val = os.environ.get(v, "")
+        if val:
+            print(f"   ✅ {v} is set ({len(val)} chars)")
+        else:
+            print(f"   ❌ {v} not set")
+
+    if api_key:
+        # Optional connectivity test
+        if args.check:
+            from podcastcondensor.llm.deepseek import DeepSeekClient
+            client = DeepSeekClient(api_key=api_key)
+            try:
+                resp = client.generate(
+                    prompt="Reply with exactly: OK",
+                    model="deepseek-chat",
+                    timeout=30,
+                    temperature=0,
+                    max_tokens=10,
+                )
+                print(f"   ✅ API connectivity: {resp[:100]}")
+            except Exception as e:
+                print(f"   ❌ API connectivity failed: {e}")
+    else:
+        vars_help = " or ".join(f"export {v}='sk-...'" for v in ENV_API_KEY_VARS)
+        print(f"   Set one: {vars_help}")
+
+    # --- ffmpeg ---
+    print(f"\n🎵 ffmpeg:")
+    import subprocess
+    try:
+        r = subprocess.run(["ffmpeg", "-version"], capture_output=True, text=True, timeout=10)
+        if r.returncode == 0:
+            ver = r.stdout.split("\n")[0] if r.stdout else "?"
+            print(f"   ✅ {ver}")
+        else:
+            print(f"   ❌ ffmpeg not working: {r.stderr[:200]}")
+    except FileNotFoundError:
+        print("   ❌ ffmpeg not found — install it")
+
+    print("\n✅ Doctor check complete.")
+
+
 def cmd_build_universe(args):
     """Build universe state from initial episodes (1-20)."""
     cfg = Config(
@@ -101,6 +246,9 @@ def cmd_build_universe(args):
         segment_gap_threshold=args.segment_gap,
         segment_max_words=args.segment_max_words,
         segment_min_words=args.segment_min_words,
+        knowledge_provider=args.knowledge_provider,
+        knowledge_model=args.knowledge_model,
+        knowledge_base_url=args.knowledge_base_url,
     )
 
     state_path = os.path.abspath(args.state_file) if args.state_file else ""
@@ -153,6 +301,19 @@ def cmd_process_playlist(args):
         segment_max_words=args.segment_max_words,
         segment_min_words=args.segment_min_words,
         refine_segments=args.refine,
+        # Provider selection
+        classification_provider=args.classification_provider,
+        classification_model=args.classification_model,
+        classification_base_url=args.classification_base_url,
+        classification_fallback_provider=args.classification_fallback,
+        knowledge_provider=args.knowledge_provider,
+        knowledge_model=args.knowledge_model,
+        knowledge_base_url=args.knowledge_base_url,
+        audio_strategy=args.audio_strategy,
+        audio_parallel_workers=args.audio_parallel_workers,
+        audio_safe_batch_size=args.audio_safe_batch_size,
+        enable_continuity_bias=args.enable_continuity_bias,
+        decisions_only=args.decisions_only,
     )
 
     # Load universe state
@@ -199,8 +360,8 @@ def main():
         epilog=(
             "Examples:\n"
             "  python -m podcastcondensor run URL\n"
-            "  python -m podcastcondensor run URL --model qwen2.5:7b\n"
-            "  python -m podcastcondensor status\n"
+            "  python -m podcastcondensor doctor --check\n"
+            "  python -m podcastcondensor run URL --classification-provider deepseek\n"
         ),
     )
     parser.add_argument("--verbose", "-v", action="store_true", help="Debug logging")
@@ -212,7 +373,16 @@ def main():
 
     sub = parser.add_subparsers(dest="command", required=True)
 
+    # ------------------------------------------------------------------
+    # doctor
+    # ------------------------------------------------------------------
+    doc_p = sub.add_parser("doctor", help="Check environment and provider connectivity")
+    doc_p.add_argument("--check", action="store_true",
+                       help="Also test API connectivity (costs token)")
+
+    # ------------------------------------------------------------------
     # run
+    # ------------------------------------------------------------------
     run_p = sub.add_parser("run", help="Run condensation pipeline")
     run_p.add_argument("url", help="YouTube URL")
     run_p.add_argument("--model", default="qwen2.5:3b",
@@ -245,6 +415,9 @@ def main():
     run_p.add_argument("--speed", type=float, default=1.25,
                         help="Playback speed (default: 1.25)")
 
+    # Provider selection
+    _add_provider_args(run_p)
+
     # Other
     run_p.add_argument("--dry-run", action="store_true")
     run_p.add_argument("--keep-temp", action="store_true")
@@ -255,7 +428,7 @@ def main():
                         help="Only process first N blocks, rest auto-kept (0=all, default: 0)")
 
     # ------------------------------------------------------------------
-    # build-universe: Build cross-episode knowledge base from episodes 1-20
+    # build-universe
     # ------------------------------------------------------------------
     build_p = sub.add_parser(
         "build-universe",
@@ -284,9 +457,14 @@ def main():
     build_p.add_argument("--ollama-timeout", type=int, default=600)
     build_p.add_argument("--dry-run", action="store_true",
                          help="Skip LLM calls and just prepare data")
+    # build-universe uses knowledge_provider for extraction
+    build_p.add_argument("--knowledge-provider", default="ollama",
+                         choices=["ollama", "deepseek"])
+    build_p.add_argument("--knowledge-model", default="")
+    build_p.add_argument("--knowledge-base-url", default="")
 
     # ------------------------------------------------------------------
-    # process-playlist: Full pipeline with universe state context
+    # process-playlist
     # ------------------------------------------------------------------
     proc_p = sub.add_parser(
         "process-playlist",
@@ -329,7 +507,12 @@ def main():
     proc_p.add_argument("--ollama-timeout", type=int, default=600)
     proc_p.add_argument("--dry-run", action="store_true")
 
+    # Provider selection
+    _add_provider_args(proc_p)
+
+    # ------------------------------------------------------------------
     # status
+    # ------------------------------------------------------------------
     sub.add_parser("status", help="Check Ollama status")
 
     args = parser.parse_args()
@@ -339,6 +522,8 @@ def main():
         cmd_run(args)
     elif args.command == "status":
         cmd_status(args)
+    elif args.command == "doctor":
+        cmd_doctor(args)
     elif args.command == "build-universe":
         cmd_build_universe(args)
     elif args.command == "process-playlist":

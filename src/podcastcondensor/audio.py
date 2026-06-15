@@ -1,13 +1,37 @@
-"""Audio cutting — ffmpeg-based interval extraction and concat."""
+"""Audio cutting — ffmpeg-based interval extraction and concat.
+
+.. caution::
+   All ffmpeg subprocesses run with ``ionice -c 3`` on Linux so that
+   seeking through large audio files (~1.5 GB) does not starve the rest
+   of the system of disk bandwidth.
+"""
 
 import logging
 import os
 import subprocess
+import sys
 import tempfile
 from pathlib import Path
 from typing import List
 
 logger = logging.getLogger(__name__)
+
+
+# ---------------------------------------------------------------------------
+# I/O safety — prevent HDD thrashing on large files
+# ---------------------------------------------------------------------------
+
+
+def _ionice_cmd(cmd: list) -> list:
+    """Prepend ``ionice -c 3`` on Linux for lowest I/O priority."""
+    if sys.platform == "linux":
+        return ["ionice", "-c", "3"] + cmd
+    return cmd
+
+
+def _run_ffmpeg(cmd: list, **kwargs) -> subprocess.CompletedProcess:
+    """Run ffmpeg with I/O safety (``ionice`` on Linux)."""
+    return subprocess.run(_ionice_cmd(cmd), **kwargs)
 
 
 def get_audio_duration(audio_path: str) -> float:
@@ -18,7 +42,7 @@ def get_audio_duration(audio_path: str) -> float:
         "-of", "csv=p=0",
         audio_path,
     ]
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    result = _run_ffmpeg(cmd, capture_output=True, text=True)
     if result.returncode != 0:
         raise RuntimeError(f"ffprobe failed: {result.stderr}")
     return float(result.stdout.strip())
@@ -52,7 +76,7 @@ def extract_segment(
         output_path,
     ]
     logger.debug("Extracting segment: %.2f-%.2f -> %s", start, end, output_path)
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    result = _run_ffmpeg(cmd, capture_output=True, text=True)
     if result.returncode != 0:
         raise RuntimeError(
             f"ffmpeg segment extraction failed: {result.stderr}"
@@ -108,7 +132,7 @@ def concat_segments(
         if atempo:
             cmd += ["-filter:a", ",".join(atempo)]
         cmd.append(output_path)
-        result = subprocess.run(cmd, capture_output=True, text=True)
+        result = _run_ffmpeg(cmd, capture_output=True, text=True)
         if result.returncode != 0:
             raise RuntimeError(f"ffmpeg copy failed: {result.stderr}")
         return output_path
@@ -133,7 +157,7 @@ def concat_segments(
         cmd += ["-filter:a", ",".join(atempo)]
     cmd.append(output_path)
 
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    result = _run_ffmpeg(cmd, capture_output=True, text=True)
     if result.returncode != 0:
         raise RuntimeError(f"ffmpeg concat failed: {result.stderr}")
 
