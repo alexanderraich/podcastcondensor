@@ -1,17 +1,20 @@
 """Cross-episode knowledge base for podcastcondensor.
 
-Tracks entities, concepts, claims, scriptural links, and glossary terms
-established across episodes so the classifier can drop re-explanations
-and focus on new content.
+Rolling structured knowledge accumulation. Each episode produces a
+structured summary (entities, concepts, claims, glossary, etc.) via a
+single-shot DeepSeek call over the full transcript. The state grows by
+merging these per-episode extractions — no raw transcript dump.
+
+``get_context()`` formats the accumulated knowledge for the classifier
+so it knows what has already been covered.
 """
 
 import json
 import logging
 import os
+import re
 from datetime import datetime
-from typing import Any, Dict, List, Optional
-
-from podcastcondensor.ollama_client import generate
+from typing import List, Optional
 
 logger = logging.getLogger(__name__)
 
@@ -22,107 +25,89 @@ DEFAULT_STATE = {
         "last_built_episode": 0,
         "updated_at": "",
     },
+    "episode_summaries": [],
     "entities": [],
     "concepts": [],
     "claims": [],
     "scriptural_links": [],
-    "historical_links": [],
     "glossary": [],
-    "open_threads": [],
-    "canonical_repetitions": [],
 }
+
+
+def _fresh_default() -> dict:
+    return {
+        "metadata": dict(DEFAULT_STATE["metadata"]),
+        "episode_summaries": [],
+        "entities": [],
+        "concepts": [],
+        "claims": [],
+        "scriptural_links": [],
+        "glossary": [],
+    }
 
 
 def _now() -> str:
     return datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
 
 
-def _deduplicate_by_id(items: List[dict]) -> List[dict]:
-    """Deduplicate a list of dicts by their 'id' field, keeping the last occurrence."""
-    seen = {}
-    for item in items:
-        item_id = item.get("id")
-        if item_id:
-            seen[item_id] = item
-    return list(seen.values())
+# ------------------------------------------------------------------
+# Prompt for the per-episode single-shot extraction
+# ------------------------------------------------------------------
+
+_EXTRACT_PROMPT = """You are an expert podcast transcript analyst.
+
+Given the FULL transcript of a single episode of the "Lord of Spirits" podcast,
+produce a structured summary. Return ONLY valid JSON — no markdown, no extra text.
+
+Input:
+{
+  "episode_title": "...",
+  "episode_number": N,
+  "transcript": "Full cleaned transcript text..."
+}
+
+Output format:
+{
+  "summary": "2-3 paragraph narrative summary of the episode's content, themes, and key arguments.",
+  "concepts": [
+    {"id": "short-kebab-case-id", "title": "Concept Name", "summary": "Brief explanation"}
+  ],
+  "entities": [
+    {"id": "short-kebab-case-id", "title": "Entity Name", "category": "person|place|theological|historical|other", "summary": "Brief description"}
+  ],
+  "claims": [
+    {"id": "short-kebab-case-id", "text": "The claim being made (max 300 chars)", "topic": "Theology|Scripture|History|Other"}
+  ],
+  "scriptural_links": [
+    {"id": "short-kebab-case-id", "reference": "Book Chapter:Verse", "summary": "How it is used in the episode"}
+  ],
+  "glossary": [
+    {"id": "short-kebab-case-id", "term": "Term", "definition": "Definition"}
+  ]
+}
+
+Rules:
+- Every item must have a unique, stable-looking `id` (kebab-case).
+- Items are episode-specific — the caller merges across episodes.
+- Return an empty array [] for any category with nothing to report.
+- Be precise and faithful to the transcript — no hallucination.
+- Prioritise distinctive content (new concepts or developments) over generic statements."""
 
 
-def _make_item(category: str, item_id: str, text: str, episode_num: int) -> dict:
-    """Wrap a plain string into a structured knowledge dict."""
-    base = {"id": item_id, "episode_numbers": [episode_num], "tags": []}
-    if category == "entities":
-        base["title"] = text[:80]
-        base["summary"] = text[:200]
-        base["category"] = "theological_category"
-    elif category == "concepts":
-        base["title"] = text[:80]
-        base["summary"] = text[:200]
-    elif category == "claims":
-        base["text"] = text[:300]
-        base["topic"] = "Other"
-        base["supporting_reference"] = ""
-    elif category == "scriptural_links":
-        base["reference"] = text[:80]
-        base["summary"] = text[:200]
-    elif category == "historical_links":
-        base["title"] = text[:80]
-        base["summary"] = text[:200]
-    elif category == "glossary":
-        base["term"] = text[:80]
-        base["definition"] = text[:200]
-        base["language"] = "English"
-    elif category == "open_threads":
-        base["title"] = text[:80]
-        base["summary"] = text[:200]
-    elif category == "canonical_repetitions":
-        base["title"] = text[:80]
-        base["summary"] = text[:200]
-    return base
-
-
-def _content_dedup_key(item: dict, category: str) -> str:
-    """Build a normalized content-based dedup key for an item.
-
-    Used as a fallback when LLM-generated IDs are unstable across runs.
-    Derived from the semantic fields that define the item's identity.
-    """
-    n = lambda s: s.lower().strip()[:80] if s else ""
-    if category == "scriptural_links":
-        name = n(item.get("reference", ""))
-    elif category == "glossary":
-        name = n(item.get("term", ""))
-    else:
-        name = n(item.get("title", ""))
-    summary = n(item.get("summary", "") or item.get("text", "") or item.get("claim", "") or item.get("definition", ""))
-    return f"{name}::{summary}"
-
-
-def _merge_episode_numbers(items: list, episode_num: int) -> list:
-    """Merge an episode number into each item's episode_numbers list if not present."""
-    result = []
-    for item in items:
-        if not isinstance(item, dict):
-            logger.warning("Skipping non-dict item: %s", str(item)[:80])
-            continue
-        item = dict(item)  # shallow copy
-        ep_nums = item.get("episode_numbers", [])
-        if isinstance(ep_nums, list) and episode_num not in ep_nums:
-            ep_nums = ep_nums + [episode_num]
-            item["episode_numbers"] = sorted(ep_nums)
-        result.append(item)
-    return result
+# ==================================================================
 
 
 class UniverseState:
     """Persistent cross-episode knowledge base.
 
-    Loads from / saves to a JSON file. Provides context for LLM prompts
-    and accumulates new knowledge after each episode.
+    Accumulates per-episode structured knowledge (entities, concepts, claims,
+    glossary) plus episode summaries.  ``get_context()`` formats the
+    accumulated knowledge for the classifier.
     """
 
     def __init__(self, path: str):
         self.path = path
-        self.data: Dict[str, Any] = dict(DEFAULT_STATE)
+        self.data = _fresh_default()
         self.load()
 
     # ------------------------------------------------------------------
@@ -150,8 +135,11 @@ class UniverseState:
                     len(self.data.get("entities", [])),
                 )
             except (json.JSONDecodeError, KeyError) as e:
-                logger.warning("Corrupted universe state at %s: %s — starting fresh", self.path, e)
-                self.data = dict(DEFAULT_STATE)
+                logger.warning(
+                    "Corrupted universe state at %s: %s — starting fresh",
+                    self.path, e,
+                )
+                self.data = _fresh_default()
         else:
             logger.info("No universe state at %s — starting fresh", self.path)
 
@@ -171,251 +159,50 @@ class UniverseState:
         )
 
     # ------------------------------------------------------------------
-    # Context for prompts
-    # ------------------------------------------------------------------
-
-    def get_context(self, max_items: int = 8, max_chars: int = 3000,
-                    exclude_episode_gte: Optional[int] = None) -> str:
-        """Format universe state as a concise string for LLM prompt context.
-
-        Args:
-            max_items: Maximum number of items to include per category.
-            max_chars: Maximum total output length. Truncated if exceeded.
-            exclude_episode_gte: If set, exclude items whose episode_numbers
-                include any episode >= this value. Items with no episode_numbers
-                field are also excluded (conservative — avoids leaking
-                current-episode knowledge).
-        """
-        parts = []
-
-        def _exclude_item(item: dict) -> bool:
-            """True if item should be excluded based on episode filter."""
-            if exclude_episode_gte is None:
-                return False
-            ep_nums = item.get("episode_numbers")
-            if not ep_nums:
-                return True  # no episode info — conservative: exclude
-            return any(ep >= exclude_episode_gte for ep in ep_nums)
-
-        for label, items, formatter in [
-            ("Core concepts already established:", self.data.get("concepts", []),
-             lambda c: f"- {c.get('title', c.get('id', '?'))}: {c.get('summary', '')}" if c.get('summary') else f"- {c.get('title', c.get('id', '?'))}"),
-            ("Key entities:", self.data.get("entities", []),
-             lambda e: f"- {e.get('title', e.get('id', '?'))}: {e.get('summary', '')}" if e.get('summary') else f"- {e.get('title', e.get('id', '?'))}"),
-            ("Glossary:", self.data.get("glossary", []),
-             lambda g: f"- {g.get('term', g.get('id', '?'))}: {g.get('definition', '')}" if g.get('definition') else f"- {g.get('term', g.get('id', '?'))}"),
-            ("Key claims:", self.data.get("claims", []),
-             lambda c: f"- {c.get('text', c.get('id', '?'))}{' [' + c.get('topic', '') + ']' if c.get('topic') else ''}" if c.get('text') else f"- {c.get('id', '?')}"),
-            ("Frequent repetitions (drop on repeat):", self.data.get("canonical_repetitions", []),
-             lambda c: f"- {c.get('title', c.get('id', '?'))}: {c.get('summary', '')}" if c.get('summary') else f"- {c.get('title', c.get('id', '?'))}"),
-        ]:
-            if exclude_episode_gte is not None:
-                items = [it for it in items if not _exclude_item(it)]
-            selected = items[:max_items]
-            if selected:
-                block = label + "\n" + "\n".join(formatter(it) for it in selected if formatter(it))
-                if len(block) > max_chars // 3:
-                    block = block[:max_chars // 3] + "..."
-                parts.append(block)
-
-        if not parts:
-            return "(no prior episodes processed — universe state is empty)"
-
-        result = "\n\n".join(parts)
-        if len(result) > max_chars:
-            result = result[:max_chars - 100] + "\n...(truncated)"
-        return result
-
-    # ------------------------------------------------------------------
-    # Add knowledge from an episode
-    # ------------------------------------------------------------------
-
-    def add_episode_knowledge(self, episode_num: int, knowledge: dict):
-        """Merge structured knowledge from an episode into the state.
-
-        Accepts both dict items (with id, title, summary) and string items
-        (which get auto-wrapped into dict format).
-
-        Args:
-            episode_num: 1-based episode number.
-            knowledge: dict with keys matching DEFAULT_STATE (entities, concepts, etc.)
-        """
-        for category in ["entities", "concepts", "claims", "scriptural_links",
-                          "historical_links", "glossary", "open_threads",
-                          "canonical_repetitions"]:
-            items = knowledge.get(category, [])
-            if not items:
-                continue
-
-            # Normalize string items into dict format
-            normalized = []
-            for item in items:
-                if isinstance(item, str):
-                    item_text = item.strip().rstrip(".")
-                    if not item_text:
-                        continue
-                    item_id = item_text.lower().replace(" ", "_").replace("'", "")[:60]
-                    normalized.append(_make_item(category, item_id, item_text, episode_num))
-                elif isinstance(item, dict):
-                    item["episode_numbers"] = list(set(
-                        item.get("episode_numbers", []) + [episode_num]
-                    ))
-                    normalized.append(item)
-
-            if not normalized:
-                continue
-
-            # Merge with existing (dedup by id first, then by content key)
-            existing = self.data.get(category, [])
-            existing_ids = {e.get("id") for e in existing if isinstance(e, dict)}
-            existing_content_keys = {
-                _content_dedup_key(e, category)
-                for e in existing if isinstance(e, dict)
-            }
-            deduped = []
-            for item in normalized:
-                item_id = item.get("id") or item.get("term", "").lower().replace(" ", "_") or item.get("title", "").lower().replace(" ", "_") or item.get("text", "").lower().replace(" ", "_")[:60]
-
-                # Primary dedup: stable ID match (works for deterministic IDs)
-                if item_id in existing_ids:
-                    continue
-
-                # Fallback dedup: content-based key (catches unstable LLM IDs)
-                ck = _content_dedup_key(item, category)
-                if ck and ck in existing_content_keys:
-                    continue
-
-                existing_ids.add(item_id)
-                if ck:
-                    existing_content_keys.add(ck)
-                if not item.get("id"):
-                    item["id"] = item_id
-                deduped.append(item)
-
-            self.data[category] = existing + deduped
-
-            logger.info(
-                "  %s: %d new items (total: %d)",
-                category, len(deduped), len(self.data[category]),
-            )
-
-        # Update metadata
-        meta = self.data.setdefault("metadata", {})
-        meta.setdefault("episodes_built_from", [])
-        if episode_num not in meta["episodes_built_from"]:
-            meta["episodes_built_from"].append(episode_num)
-            meta["episodes_built_from"].sort()
-        meta["last_built_episode"] = max(
-            meta.get("last_built_episode", 0), episode_num
-        )
-        self.save()
-
-    def add_episode_concepts(self, episode_num: int, title: str, video_id: str,
-                              concepts: List[str]):
-        """Simpler variant: add only concept strings (no structured knowledge).
-
-        Used for lightweight updates after single-episode processing.
-        """
-        new_entries = []
-        existing_ids = {c.get("id", "") for c in self.data.get("concepts", [])}
-
-        for concept_text in concepts:
-            concept_text = concept_text.strip().rstrip(".")
-            if not concept_text:
-                continue
-            cid = concept_text.lower().replace(" ", "_").replace("'", "")[:60]
-            if cid in existing_ids:
-                continue
-            new_entries.append({
-                "id": cid,
-                "title": concept_text[:80],
-                "summary": concept_text[:200],
-                "episode_numbers": [episode_num],
-                "related_entities": [],
-                "tags": [],
-            })
-            existing_ids.add(cid)
-
-        if new_entries:
-            self.data.setdefault("concepts", []).extend(new_entries)
-            logger.info("Added %d new concepts from episode %d", len(new_entries), episode_num)
-
-        meta = self.data.setdefault("metadata", {})
-        meta.setdefault("episodes_built_from", [])
-        if episode_num not in meta["episodes_built_from"]:
-            meta["episodes_built_from"].append(episode_num)
-            meta["episodes_built_from"].sort()
-        meta["last_built_episode"] = max(
-            meta.get("last_built_episode", 0), episode_num
-        )
-
-        # Record episode info
-        meta.setdefault("episodes", {})
-        meta["episodes"][str(episode_num)] = {
-            "title": title,
-            "video_id": video_id,
-            "concept_count": len(new_entries),
-        }
-
-        self.save()
-
-    # ------------------------------------------------------------------
-    # LLM-driven knowledge extraction
+    # Per-episode knowledge extraction (single DeepSeek call)
     # ------------------------------------------------------------------
 
     @staticmethod
-    def extract_knowledge(
-        block_summaries: List[dict],
-        global_outline: str,
+    def extract_knowledge_from_transcript(
+        transcript_text: str,
+        *,
         episode_title: str = "",
         episode_number: Optional[int] = None,
-        model: str = "qwen2.5:7b",
-        prompt_path: str = "",
-        host: str = "http://localhost:11434",
-        timeout: int = 600,
+        client=None,
+        model: str = "deepseek-chat",
+        prompt: str = "",
+        timeout: int = 300,
     ) -> dict:
-        """Call the LLM to extract structured knowledge from episode data.
+        """Single-shot extraction: full transcript → structured knowledge.
 
-        Args:
-            block_summaries: List of {block_id, summary, start_time, end_time, word_count}
-            global_outline: Episode outline string
-            episode_title: The episode title
-            episode_number: Optional episode number
-            model: Ollama model name
-            prompt_path: Path to the extraction prompt template
-            host: Ollama host URL
-            timeout: Request timeout
-
-        Returns:
-            dict with keys matching DEFAULT_STATE, or empty dict if extraction fails.
+        Returns a dict with keys matching DEFAULT_STATE (episode_summaries
+        excluded here — handled by the caller), or an empty dict on failure.
         """
-        prompt_template = _load_prompt(prompt_path)
+        effective_prompt = (prompt.strip() if prompt else _EXTRACT_PROMPT.strip())
 
         payload = json.dumps({
             "episode_title": episode_title,
             "episode_number": episode_number,
-            "block_summaries": block_summaries,
-            "global_outline": global_outline,
+            "transcript": transcript_text,
         }, ensure_ascii=False, indent=2)
 
-        full_prompt = prompt_template.strip() + "\n\n" + payload
+        full_prompt = effective_prompt + "\n\n" + payload
 
         logger.info(
-            "Extracting knowledge from '%s' (%d blocks, %d chars)",
-            episode_title, len(block_summaries), len(full_prompt),
+            "Extracting knowledge: '%s' (%d chars total)",
+            episode_title, len(full_prompt),
         )
 
         try:
-            raw = generate(
+            raw = client.generate(
                 prompt=full_prompt,
                 model=model,
-                host=host,
                 timeout=timeout,
                 temperature=0.1,
+                max_tokens=8192,
                 force_json=True,
             )
-            debug_tag = f"ep{episode_number or ''}"
-            knowledge = _parse_structured_response(raw, debug_tag=debug_tag)
+            knowledge = _parse_structured_response(raw)
             if knowledge:
                 logger.info(
                     "Extracted: %d entities, %d concepts, %d claims, %d gloss terms",
@@ -426,58 +213,165 @@ class UniverseState:
                 )
                 return knowledge
             else:
-                logger.warning("Knowledge extraction returned empty result")
+                logger.warning("Extraction returned empty")
                 return {}
         except Exception as e:
             logger.error("Knowledge extraction failed: %s", e)
             return {}
 
     # ------------------------------------------------------------------
+    # Merge extracted knowledge into the state
+    # ------------------------------------------------------------------
+
+    def add_episode_knowledge(self, episode_num: int, knowledge: dict):
+        """Merge structured knowledge from an episode into the state.
+
+        Accumulates episode summaries and merges entities/concepts/claims
+        etc. with dedup by id.
+        """
+        # Episode summary
+        ep_summary = knowledge.get("summary", "").strip()
+        if ep_summary:
+            eps = self.data.setdefault("episode_summaries", [])
+            eps.append({
+                "episode_number": episode_num,
+                "summary": ep_summary,
+            })
+
+        # Structured items
+        for category in ["entities", "concepts", "claims",
+                         "scriptural_links", "glossary"]:
+            items = knowledge.get(category, [])
+            if not items:
+                continue
+
+            existing = self.data.get(category, [])
+            existing_ids = {
+                e.get("id") for e in existing if isinstance(e, dict) and e.get("id")
+            }
+
+            deduped = []
+            for item in items:
+                if not isinstance(item, dict):
+                    continue
+                item_id = item.get("id")
+                if item_id and item_id in existing_ids:
+                    continue
+                item["episode_numbers"] = [episode_num]
+                if item_id:
+                    existing_ids.add(item_id)
+                deduped.append(item)
+
+            self.data[category] = existing + deduped
+            if deduped:
+                logger.info(
+                    "  %s: %d new (total: %d)",
+                    category, len(deduped), len(self.data[category]),
+                )
+
+        # Update metadata
+        meta = self.data.setdefault("metadata", {})
+        meta.setdefault("episodes_built_from", [])
+        if episode_num not in meta["episodes_built_from"]:
+            meta["episodes_built_from"].append(episode_num)
+            meta["episodes_built_from"].sort()
+        meta["last_built_episode"] = max(
+            meta.get("last_built_episode", 0), episode_num,
+        )
+        self.save()
+
+    # ------------------------------------------------------------------
+    # Context for prompts
+    # ------------------------------------------------------------------
+
+    def get_context(self, exclude_episode_gte: Optional[int] = None,
+                    max_chars: int = 3000) -> str:
+        """Format accumulated universe knowledge as classifier context.
+
+        Args:
+            exclude_episode_gte: If set, exclude items whose episode_numbers
+                include any episode >= this value.
+            max_chars: Rough character budget for the output.
+        """
+        parts = []
+
+        # Episode summaries (most recent first, capped)
+        summaries = list(self.data.get("episode_summaries", []))
+        if exclude_episode_gte is not None:
+            summaries = [
+                s for s in summaries
+                if s.get("episode_number", 0) < exclude_episode_gte
+            ]
+        if summaries:
+            block = "Recent episode summaries:\n"
+            for s in summaries[-3:]:  # last 3
+                block += f"- Ep {s['episode_number']}: {s['summary'][:300]}...\n"
+            parts.append(block)
+
+        # Structured items
+        for label, items, formatter in [
+            ("Core concepts already established:",
+             self.data.get("concepts", []),
+             lambda c: f"- {c.get('title', '?')}: {c.get('summary', '')}" if c.get('summary') else f"- {c.get('title', '?')}"),
+            ("Key entities:",
+             self.data.get("entities", []),
+             lambda e: f"- {e.get('title', '?')}: {e.get('summary', '')}" if e.get('summary') else f"- {e.get('title', '?')}"),
+            ("Glossary:",
+             self.data.get("glossary", []),
+             lambda g: f"- {g.get('term', '?')}: {g.get('definition', '')}" if g.get('definition') else f"- {g.get('term', '?')}"),
+            ("Key claims:",
+             self.data.get("claims", []),
+             lambda c: f"- {c.get('text', '?')}" if c.get('text') else f"- {c.get('id', '?')}"),
+            ("Scriptural references:",
+             self.data.get("scriptural_links", []),
+             lambda s: f"- {s.get('reference', '?')}: {s.get('summary', '')}" if s.get('summary') else f"- {s.get('reference', '?')}"),
+        ]:
+            if not items:
+                continue
+            if exclude_episode_gte is not None:
+                items = [
+                    it for it in items
+                    if not any(ep >= exclude_episode_gte
+                               for ep in it.get("episode_numbers", []))
+                ]
+            selected = items[:6]
+            if selected:
+                block = label + "\n" + "\n".join(formatter(it) for it in selected)
+                parts.append(block)
+
+        if not parts:
+            return "(no prior episodes processed — universe state is empty)"
+
+        result = "\n\n".join(parts)
+        if len(result) > max_chars:
+            result = result[:max_chars - 100] + "\n…(truncated)"
+        return result
+
+    # ------------------------------------------------------------------
     # Reset
     # ------------------------------------------------------------------
 
     def reset(self):
-        """Clear all state (useful for testing or rebuilding)."""
-        self.data = dict(DEFAULT_STATE)
+        """Clear all state."""
+        self.data = _fresh_default()
         self.data["metadata"]["updated_at"] = _now()
         self.save()
         logger.info("Universe state reset to empty")
 
 
 # ------------------------------------------------------------------
-# Internal helpers
+# JSON parsing helper
 # ------------------------------------------------------------------
 
-def _load_prompt(path: str) -> str:
-    with open(path, "r", encoding="utf-8") as f:
-        return f.read()
 
-
-def _parse_structured_response(raw: str, debug_tag: str = "") -> Optional[dict]:
-    """Parse the JSON response from knowledge extraction.
-
-    Accepts:
-    - ```json ... ```
-    - ``` ... ```
-    - unfenced raw JSON
-    - leading/trailing prose (extracts first JSON object found)
-    - common malformed JSON (repair pass)
-
-    Debug: if non-empty debug_tag, saves raw text and parse status to output/debug/.
-    """
+def _parse_structured_response(raw: str) -> Optional[dict]:
+    """Parse JSON from the LLM response, handling common formatting issues."""
     if not raw:
         return None
 
     text = raw.strip()
-    raw_len = len(raw)
-    prefix = raw[:200]
 
-    # Save raw for debugging
-    if debug_tag:
-        _save_debug_raw(debug_tag, "raw", raw)
-
-    # Step 1: Strip markdown code fences (both ```json and ```)
-    stripped_any_fence = False
+    # Strip markdown code fences
     if "```" in text:
         lines = text.split("\n")
         clean = []
@@ -491,82 +385,31 @@ def _parse_structured_response(raw: str, debug_tag: str = "") -> Optional[dict]:
                 clean.append(line)
         if clean:
             text = "\n".join(clean).strip()
-            stripped_any_fence = True
 
-    # Step 2: Find first JSON object
+    # Find first JSON object
     start = text.find("{")
     if start < 0:
-        logger.warning("_parse_structured_response(%s): no { found in response", debug_tag)
         return None
     end = text.rfind("}")
     if end <= start:
-        logger.warning("_parse_structured_response(%s): no matching }} found", debug_tag)
         return None
     candidate = text[start:end + 1]
 
-    # Step 3: Try strict parse
+    # Try strict parse
     try:
         result = json.loads(candidate)
-        if isinstance(result, dict):
-            return result
-        return None
-    except json.JSONDecodeError as e:
-        logger.debug("_parse_structured_response(%s): strict parse failed: %s", debug_tag, e)
+        return result if isinstance(result, dict) else None
+    except json.JSONDecodeError:
+        pass
 
-    # Step 4: Repair common malformed JSON (trailing commas, single quotes)
-    import re as _re
-    repaired = candidate
-    repaired = _re.sub(r",\s*([}\]])", r"\1", repaired)
-    repaired = _re.sub(r",\s*}", "}", repaired)
-    repaired = _re.sub(r",\s*]", "]", repaired)
-    # Replace single quotes with double quotes (but not inside already-escaped strings)
-    # Simple approach: if strict parse failed due to single quotes, try replacing
-    if "'" in repaired:
-        # Only do this if the string looks like it has single-quoted keys
-        repaired = _re.sub(r"(?<=[{, ])'([^']+?)'(?=\s*:)", r'"\1"', repaired)
-
+    # Try repair: trailing commas
+    repaired = re.sub(r",\s*([}\]])", r"\1", candidate)
     try:
         result = json.loads(repaired)
-        if isinstance(result, dict):
-            return result
-        return None
-    except json.JSONDecodeError as e:
-        logger.debug("_parse_structured_response(%s): repair parse failed: %s", debug_tag, e)
+        return result if isinstance(result, dict) else None
+    except json.JSONDecodeError:
+        pass
 
-    # Step 5: Last resort — extract first { ... } that forms valid JSON via bracket matching
-    depth = 0
-    start_idx = -1
-    for i, ch in enumerate(candidate):
-        if ch == "{":
-            if depth == 0:
-                start_idx = i
-            depth += 1
-        elif ch == "}":
-            depth -= 1
-            if depth == 0 and start_idx >= 0:
-                try:
-                    result = json.loads(candidate[start_idx:i + 1])
-                    if isinstance(result, dict):
-                        return result
-                except json.JSONDecodeError:
-                    pass
-                start_idx = -1
-
-    logger.warning("_parse_structured_response(%s): ALL parses failed. raw_len=%d first_200=%s",
-                   debug_tag, raw_len, raw[:200])
+    logger.warning("Failed to parse extraction response (first 200 chars): %s",
+                   candidate[:200])
     return None
-
-
-import os as _os
-_DEBUG_DIR = _os.path.join(
-    _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), "output", "debug"
-)
-
-
-def _save_debug_raw(tag: str, stage: str, content: str):
-    """Save raw model output to output/debug/ for inspection."""
-    _os.makedirs(_DEBUG_DIR, exist_ok=True)
-    path = _os.path.join(_DEBUG_DIR, f"{tag}_{stage}.txt")
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(content)
-    logger.debug("Saved debug raw: %s", path)

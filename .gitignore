@@ -6,16 +6,20 @@ dist/
 build/
 *.egg
 *.whl
-.venv/
 venv/
 
-# Output artifacts
+# Output artifacts (episode dirs + universe state)
 output/*/
 !output/.gitkeep
+output/universe_state.json
+output/universe.dump
 
-# Temp files
+# Temp
 *.tmp
 *.temp
+
+# Pytest cache
+.pytest_cache/
 
 # OS
 .DS_Store
@@ -26,10 +30,12 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# Local ffmpeg/yt-dlp binaries
 .local/
 
-# Debug directory (misplaced model output dumps)
-src/output/
+# Claude Code local settings
+.claude/settings.local.json
 
-# Benchmark partial state
-benchmark_partial.json
+# Debug directory
+src/output/

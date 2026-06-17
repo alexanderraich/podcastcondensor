@@ -1,9 +1,0 @@
-You are synthesizing an episode outline from block summaries.
-
-Input: JSON with "block_summaries" array, each having block_id, summary, start_time, end_time, word_count.
-
-Produce 3-8 bullet points capturing the main topics in order. Keep each bullet under 20 words.
-
-Output JSON: {"outline": ["bullet 1", "bullet 2", ...]}
-
-Return valid JSON only. No extra text.
