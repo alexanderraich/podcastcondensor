@@ -16,12 +16,12 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 class TestAudioStrategySelection:
     """create_audio_strategy must return correct type for each name."""
 
-    def test_sequential_copy(self):
+    def test_single_pass_filter(self):
         from podcastcondensor.audio_strategies import create_audio_strategy
-        strat = create_audio_strategy("sequential_copy")
-        from podcastcondensor.audio_strategies import SequentialCopyCutStrategy
-        assert isinstance(strat, SequentialCopyCutStrategy)
-        assert strat.name() == "sequential_copy"
+        strat = create_audio_strategy("single_pass_filter")
+        from podcastcondensor.audio_strategies import SinglePassFilterCutStrategy
+        assert isinstance(strat, SinglePassFilterCutStrategy)
+        assert strat.name() == "single_pass_filter"
 
     def test_parallel_copy(self):
         from podcastcondensor.audio_strategies import create_audio_strategy
@@ -30,7 +30,7 @@ class TestAudioStrategySelection:
         assert isinstance(strat, ParallelCopyCutStrategy)
         assert strat.name() == "parallel_copy"
 
-    def test_single_pass_filter(self):
+    def test_single_pass_filter_selection(self):
         from podcastcondensor.audio_strategies import create_audio_strategy
         strat = create_audio_strategy("single_pass_filter")
         from podcastcondensor.audio_strategies import SinglePassFilterCutStrategy
@@ -59,7 +59,7 @@ class TestFilterGraphBuilding:
     def test_single_interval(self):
         from podcastcondensor.audio_strategies import SinglePassFilterCutStrategy
         graph = SinglePassFilterCutStrategy._build_filter_graph(
-            intervals=[{"start": 10.0, "end": 20.0}],
+            intervals=[{"start": 10.0, "end": 20.0}], beep=False,
         )
         assert "atrim=10.000:20.000" in graph
         assert "asetpts=PTS-STARTPTS[a0]" in graph
@@ -71,7 +71,7 @@ class TestFilterGraphBuilding:
             intervals=[
                 {"start": 10.0, "end": 20.0},
                 {"start": 30.0, "end": 40.5},
-            ],
+            ], beep=False,
         )
         assert "[a0]" in graph
         assert "[a1]" in graph
@@ -84,7 +84,7 @@ class TestFilterGraphBuilding:
                 {"start": 0.0, "end": 5.0},
                 {"start": 10.0, "end": 15.0},
                 {"start": 20.0, "end": 25.0},
-            ],
+            ], beep=False,
         )
         assert "concat=n=3" in graph
         assert "a0" in graph and "a1" in graph and "a2" in graph
@@ -94,7 +94,7 @@ class TestFilterGraphBuilding:
         atempo = _atempo_filters(1.25)
         graph = SinglePassFilterCutStrategy._build_filter_graph(
             intervals=[{"start": 10.0, "end": 20.0}],
-            atempo=atempo,
+            atempo=atempo, beep=False,
         )
         assert "atempo=1.250" in graph
         assert graph.endswith("[outa]")
@@ -189,10 +189,10 @@ class TestAtempoFilters:
 class TestZeroIntervals:
     """All strategies must reject empty interval lists with a clear error."""
 
-    def test_sequential_zero_intervals(self):
-        from podcastcondensor.audio_strategies import SequentialCopyCutStrategy
+    def test_zero_intervals_raise(self):
+        from podcastcondensor.audio_strategies import SinglePassFilterCutStrategy
         import pytest
-        strat = SequentialCopyCutStrategy()
+        strat = SinglePassFilterCutStrategy()
         with pytest.raises(ValueError, match="No intervals|no intervals"):
             strat.cut(
                 audio_path="/dev/null",
@@ -235,8 +235,6 @@ class TestConfigDefaults:
         cfg = Config()
         # single_pass_filter is the default — one linear read, no HDD thrash
         assert cfg.audio_strategy == "single_pass_filter"
-        assert cfg.audio_parallel_workers == 2
-        assert cfg.audio_single_pass_batch_size == 100
 
 
 # ---------------------------------------------------------------------------

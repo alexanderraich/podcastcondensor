@@ -1,13 +1,11 @@
 """Interval building — convert kept segment decisions to audio cut intervals.
 
-Enhancements for listenability:
-  - **Cluster merging**: kept segments close in time are grouped into spans.
-  - **Min context padding**: isolated kept segments get brief surrounding context.
-  - **Fragmentation analysis**: island detection and quality metrics.
+No clustering (cluster_gap=0). Kept segments are collected individually,
+padded, and overlapping padding is merged. Decisions are treated as final.
 """
 
 import logging
-from typing import List, Optional, Set
+from typing import List, Set
 
 logger = logging.getLogger(__name__)
 
@@ -37,18 +35,12 @@ def build_intervals(
     Returns list of ``{start, end, kept_ids}`` dicts.
     """
     sid_to_label = {d["id"]: d["label"] for d in decisions}
-    sid_to_seg = {s["segment_id"]: s for s in segments}
-
-    # Remove any trailing segments flagged as "force_drop" by tail detection
-    force_drop_ids = _collect_force_drop_ids(decisions)
-    if force_drop_ids:
-        logger.info("Interval builder: %d force-drop IDs excluded", len(force_drop_ids))
 
     # Step 1: Collect kept intervals
     kept = []
     for seg in segments:
         label = sid_to_label.get(seg["segment_id"], "drop")
-        if label == "keep" and seg["segment_id"] not in force_drop_ids:
+        if label == "keep":
             kept.append(seg)
 
     if not kept:
@@ -115,8 +107,8 @@ def compute_stats(
     drop_count = labels.count("drop")
     maybe_count = labels.count("maybe")
 
-    total_original = sum(s["end"] - s["start"] for s in segments)
-    total_condensed = sum(i["end"] - i["start"] for i in intervals)
+    total_original = sum(max(0, s["end"] - s["start"]) for s in segments)
+    total_condensed = sum(max(0, i["end"] - i["start"]) for i in intervals)
 
     maybe_segments = [
         {
@@ -282,14 +274,6 @@ def _cluster_segments(
             clusters.append([seg])
 
     return clusters
-
-
-def _collect_force_drop_ids(decisions: List[dict]) -> Set[str]:
-    """Extract IDs of segments marked with ``force_drop=True``."""
-    return {
-        d["id"] for d in decisions
-        if d.get("force_drop") or d.get("label") == "force_drop"
-    }
 
 
 def _merge_kept_ids(a: str, b: str) -> str:

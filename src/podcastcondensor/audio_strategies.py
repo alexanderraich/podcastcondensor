@@ -281,22 +281,7 @@ class SequentialCopyCutStrategy(AudioCuttingStrategy):
         bitrate: str = "64k",
         speed: float = 1.0,
     ) -> str:
-        from podcastcondensor.audio import build_condensed_audio
-
-        cleaned = normalize_intervals(intervals)
-        if not cleaned:
-            raise ValueError("No intervals to cut after normalisation")
-
-        return build_condensed_audio(
-            audio_path=audio_path,
-            intervals=cleaned,
-            output_path=output_path,
-            format_spec=format_spec,
-            sample_rate=sample_rate,
-            bitrate=bitrate,
-            keep_temp=False,
-            speed=speed,
-        )
+        raise NotImplementedError("SequentialCopyCutStrategy removed — use single_pass_filter")
 
     def name(self) -> str:
         return self._name
@@ -624,26 +609,62 @@ class SinglePassFilterCutStrategy(AudioCuttingStrategy):
     def _build_filter_graph(
         intervals: List[dict],
         atempo: Optional[List[str]] = None,
+        *,
+        beep: bool = True,
+        beep_freq: float = 1000,
+        beep_duration: float = 0.25,
+        sample_rate: int = 22050,
     ) -> str:
         """Build a ``filter_complex`` string for the given intervals.
 
+        When ``beep=True``, a short studio tone (default 1000 Hz, 250 ms)
+        is inserted between each interval to mark segment transitions.
+
         Returns e.g.::
 
-            [0:a]atrim=10:20,asetpts=PTS-STARTPTS[a0];
-            [0:a]atrim=30:40,asetpts=PTS-STARTPTS[a1];
-            [a0][a1]concat=n=2:v=0:a=1[outa]
+            [0:a]atrim=10:20,asetpts=PTS-STARTPTS,aresample=22050[a0];
+            sine=f=800:d=0.1,aresample=22050[b0];
+            [0:a]atrim=30:40,asetpts=PTS-STARTPTS,aresample=22050[a1];
+            [a0][b0][a1]concat=n=3:v=0:a=1[outa]
         """
-        parts: List[str] = []
-        for i, iv in enumerate(intervals):
-            start_s = f"{iv['start']:.3f}"
-            end_s = f"{iv['end']:.3f}"
-            parts.append(
-                f"[0:a]atrim={start_s}:{end_s},asetpts=PTS-STARTPTS[a{i}]"
-            )
-
         n = len(intervals)
-        concat_inputs = "".join(f"[a{i}]" for i in range(n))
-        concat = f"{concat_inputs}concat=n={n}:v=0:a=1"
+        parts: List[str] = []
+
+        if beep and n > 1:
+            # atrim chains are UNCHANGED (zero perf overhead on the hot path).
+            # Only sine outputs get aformat to match target rate.
+            # FFmpeg 6+ concat auto-handles mixed sample rates.
+            for i, iv in enumerate(intervals):
+                start_s = f"{iv['start']:.3f}"
+                end_s = f"{iv['end']:.3f}"
+                parts.append(
+                    f"[0:a]atrim={start_s}:{end_s},asetpts=PTS-STARTPTS[a{i}]"
+                )
+                if i < n - 1:
+                    parts.append(
+                        f"sine=f={beep_freq}:d={beep_duration},"
+                        f"aformat=sample_rates={sample_rate}:channel_layouts=mono[b{i}]"
+                    )
+
+            # Interleave: a0, b0, a1, b1, ..., a{n-1}
+            concat_labels: List[str] = []
+            for i in range(n):
+                concat_labels.append(f"[a{i}]")
+                if i < n - 1:
+                    concat_labels.append(f"[b{i}]")
+            total = n + (n - 1)
+            concat_inputs = "".join(concat_labels)
+            concat = f"{concat_inputs}concat=n={total}:v=0:a=1"
+        else:
+            # No beep — existing behavior
+            for i, iv in enumerate(intervals):
+                start_s = f"{iv['start']:.3f}"
+                end_s = f"{iv['end']:.3f}"
+                parts.append(
+                    f"[0:a]atrim={start_s}:{end_s},asetpts=PTS-STARTPTS[a{i}]"
+                )
+            concat_inputs = "".join(f"[a{i}]" for i in range(n))
+            concat = f"{concat_inputs}concat=n={n}:v=0:a=1"
 
         if atempo:
             concat += "," + ",".join(atempo)
@@ -661,7 +682,10 @@ class SinglePassFilterCutStrategy(AudioCuttingStrategy):
         atempo: List[str],
     ):
         """Run one ffmpeg invocation for a batch of intervals."""
-        filter_graph = self._build_filter_graph(intervals, atempo=atempo)
+        filter_graph = self._build_filter_graph(
+            intervals, atempo=atempo,
+            beep=True, sample_rate=sample_rate,
+        )
         cmd = [
             "ffmpeg", "-y",
             "-i", audio_path,
@@ -970,26 +994,60 @@ class SafeBatchedCutStrategy(AudioCuttingStrategy):
     # ------------------------------------------------------------------
 
     @staticmethod
-    def _build_small_filter_graph(intervals: List[dict]) -> str:
+    def _build_small_filter_graph(
+        intervals: List[dict],
+        *,
+        beep: bool = True,
+        beep_freq: float = 1000,
+        beep_duration: float = 0.25,
+        sample_rate: int = 22050,
+    ) -> str:
         """Build a tiny ``filter_complex`` string for *intervals* (≤10).
+
+        When ``beep=True``, a short studio tone is inserted between intervals.
 
         Returns e.g.::
 
-            [0:a]atrim=10:20,asetpts=PTS-STARTPTS[a0];
-            [0:a]atrim=30:40,asetpts=PTS-STARTPTS[a1];
-            [a0][a1]concat=n=2:v=0:a=1[outa]
+            [0:a]atrim=10:20,asetpts=PTS-STARTPTS,aformat=sample_rates=22050:channel_layouts=mono[a0];
+            sine=f=800:d=0.1,aformat=sample_rates=22050:channel_layouts=mono[b0];
+            [0:a]atrim=30:40,asetpts=PTS-STARTPTS,aformat=sample_rates=22050:channel_layouts=mono[a1];
+            [a0][b0][a1]concat=n=3:v=0:a=1[outa]
         """
-        parts = []
-        for i, iv in enumerate(intervals):
-            start_s = f"{iv['start']:.3f}"
-            end_s = f"{iv['end']:.3f}"
-            parts.append(
-                f"[0:a]atrim={start_s}:{end_s},asetpts=PTS-STARTPTS[a{i}]"
-            )
         n = len(intervals)
-        concat_inputs = "".join(f"[a{i}]" for i in range(n))
-        concat = f"{concat_inputs}concat=n={n}:v=0:a=1[outa]"
-        parts.append(f"{concat}")
+        parts = []
+
+        if beep and n > 1:
+            # atrim chains are UNCHANGED (zero perf overhead).
+            # Only sine outputs get aformat. FFmpeg 6+ concat handles mixed rates.
+            for i, iv in enumerate(intervals):
+                start_s = f"{iv['start']:.3f}"
+                end_s = f"{iv['end']:.3f}"
+                parts.append(
+                    f"[0:a]atrim={start_s}:{end_s},asetpts=PTS-STARTPTS[a{i}]"
+                )
+                if i < n - 1:
+                    parts.append(
+                        f"sine=f={beep_freq}:d={beep_duration},"
+                        f"aformat=sample_rates={sample_rate}:channel_layouts=mono[b{i}]"
+                    )
+            concat_labels: list = []
+            for i in range(n):
+                concat_labels.append(f"[a{i}]")
+                if i < n - 1:
+                    concat_labels.append(f"[b{i}]")
+            total = n + (n - 1)
+            concat_str = f"{''.join(concat_labels)}concat=n={total}:v=0:a=1[outa]"
+        else:
+            for i, iv in enumerate(intervals):
+                start_s = f"{iv['start']:.3f}"
+                end_s = f"{iv['end']:.3f}"
+                parts.append(
+                    f"[0:a]atrim={start_s}:{end_s},asetpts=PTS-STARTPTS[a{i}]"
+                )
+            concat_inputs = "".join(f"[a{i}]" for i in range(n))
+            concat_str = f"{concat_inputs}concat=n={n}:v=0:a=1[outa]"
+
+        parts.append(concat_str)
         return ";\n".join(parts)
 
     def _run_filter_complex_batch(
@@ -1006,7 +1064,9 @@ class SafeBatchedCutStrategy(AudioCuttingStrategy):
         graph has only ``2n + 1`` nodes (atrim + asetpts per interval,
         one concat).
         """
-        filter_graph = self._build_small_filter_graph(intervals)
+        filter_graph = self._build_small_filter_graph(
+            intervals, sample_rate=sample_rate, beep=True,
+        )
         cmd = [
             "ffmpeg", "-y",
             "-i", audio_path,
@@ -1113,7 +1173,6 @@ class SafeBatchedCutStrategy(AudioCuttingStrategy):
 # ---------------------------------------------------------------------------
 
 STRATEGY_REGISTRY = {
-    "sequential_copy": SequentialCopyCutStrategy,
     "parallel_copy": ParallelCopyCutStrategy,
     "single_pass_filter": SinglePassFilterCutStrategy,
     "safe_batched": SafeBatchedCutStrategy,
