@@ -411,11 +411,11 @@ class DeepSeekSegmentation:
         )
 
         # Sanity check: too many hallucinated → fail
-        if len(sentences) > 50 and hallucinated_count / len(sentences) > 0.5:
+        if hallucinated_count > 5:
             raise ValueError(
-                f"{hallucinated_count}/{len(sentences)} sentences "
-                f"({hallucinated_count/len(sentences):.0%}) fully unmatchable "
-                f"— punctuated output is too divergent"
+                f"{hallucinated_count} sentences had zero word overlap with "
+                f"any entry in the transcript — the punctuated output has "
+                f"diverged too far from the source"
             )
 
         return result
