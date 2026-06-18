@@ -300,7 +300,7 @@ class DeepSeekSegmentation:
 
         result: List[dict] = []
         entry_idx = 0  # forward scan cursor
-        hallucinated_count = 0
+        zero_overlap_count = 0
         total_overlap_score = 0
         total_entries_scanned = 0
 
@@ -354,10 +354,10 @@ class DeepSeekSegmentation:
                     sid, entry_idx, entry_idx, scan_limit, sentence[:80],
                 )
                 logger.warning(
-                    "Sentence %d completely unmatchable (hallucinated): %r",
+                    "Sentence %d zero-overlap (invented word?): %r",
                     sid, sentence[:80],
                 )
-                hallucinated_count += 1
+                zero_overlap_count += 1
                 if result:
                     last = result[-1]
                     st = et_ = last["end_time"]
@@ -399,19 +399,20 @@ class DeepSeekSegmentation:
             entry_idx = max(entry_idx, best_end)
 
         # ── Summary debug ─────────────────────────────────────────────
-        matched = len(sentences) - hallucinated_count
+        matched = len(sentences) - zero_overlap_count
         avg_scan = total_entries_scanned / max(len(sentences), 1)
         logger.info(
             "Sentence-to-entry mapping: %d sentences, %d matched, "
-            "%d hallucinated/skipped (%.0f%%), avg scan window=%.0f entries, "
+            "%d zero-overlap (%.0f%%), avg scan window=%.0f entries, "
             "cursor reached entry %d/%d",
-            len(sentences), matched, hallucinated_count,
-            hallucinated_count / max(len(sentences), 1) * 100,
+            len(sentences), matched, zero_overlap_count,
+            zero_overlap_count / max(len(sentences), 1) * 100,
             avg_scan, entry_idx, len(entry_words),
         )
 
-        # Sanity check: too many hallucinated → fail
-        if hallucinated_count > 5:
+        # Sanity check: >5 sentences with zero overlap means the
+        # punctuated output has seriously diverged from the transcript.
+        if zero_overlap_count > 5:
             raise ValueError(
                 f"{hallucinated_count} sentences had zero word overlap with "
                 f"any entry in the transcript — the punctuated output has "

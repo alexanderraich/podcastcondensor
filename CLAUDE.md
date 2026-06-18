@@ -30,7 +30,7 @@ When auto-captions have no punctuation (the common case), phase 3 works in three
 2. **Map** — each punctuated sentence is matched back to the original SRT entries via forward-scanning word-overlap scoring. This recovers real timestamps from the SRT. **Never falls back to proportional/interpolated timestamps**, which would produce audio cut at wrong positions.
 3. **Segment** — DeepSeek groups sentences into topical segments.
 
-If the mapping stage detects >50% hallucinated sentences, a `ValueError` is raised.
+If the mapping stage detects >5 sentences with zero word overlap, a `ValueError` is raised — this means the punctuated output has seriously diverged from the source transcript.
 
 Phase 2 merges knowledge into the universe state automatically (both in build-universe and process-playlist modes). No separate extraction phase.
 
