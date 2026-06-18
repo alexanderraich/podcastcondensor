@@ -33,7 +33,7 @@ class TestDeepSeekSegmentationMocked:
         assert all(s["end"] >= s["start"] for s in segs)
 
     def test_no_punctuation_path_produces_monotonic_timing(self):
-        """No-punctuation path produces monotonic segments with proportional timing."""
+        """No-punctuation path produces monotonic segments with real timestamps via text matching."""
         from podcastcondensor.segmentation.deepseek import DeepSeekSegmentation
 
         class MockClient:
@@ -43,7 +43,10 @@ class TestDeepSeekSegmentationMocked:
                 MockClient.call_count += 1
                 p = kwargs.get("prompt", "")
                 if "cleanup" in p.lower():
-                    return json.dumps({"schema_version": 1, "text": "First. Second. Third. Fourth. Fifth."})
+                    # Punctuated output preserves the same words as entries
+                    return json.dumps(
+                        {"schema_version": 1, "text": "Entry 1. Entry 2. Entry 3. Entry 4. Entry 5."}
+                    )
                 return json.dumps({
                     "schema_version": 1,
                     "segments": [
@@ -57,7 +60,9 @@ class TestDeepSeekSegmentationMocked:
             {"index": i, "start": (i-1)*10, "end": i*10, "text": f"entry {i}", "type": "speech"}
             for i in range(1, 11)
         ]
-        segs = seg.segment(entries, "first second third")
+        # transcript_text is the deduped merge
+        transcript_text = "entry 1 entry 2 entry 3 entry 4 entry 5 entry 6 entry 7 entry 8 entry 9 entry 10"
+        segs = seg.segment(entries, transcript_text)
         assert MockClient.call_count == 2, f"Expected 2 calls, got {MockClient.call_count}"
         assert len(segs) >= 1
         for i in range(1, len(segs)):
