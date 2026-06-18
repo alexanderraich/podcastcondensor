@@ -216,6 +216,7 @@ def run_pipeline(
         seg_strategy = DeepSeekSegmentation(
             client=ds, timeout=cfg.deepseek_timeout,
             max_tokens=cfg.segmentation_max_tokens,
+            checkpoint_dir=run_dir,
         )
         segments = seg_strategy.segment(
             entries=cleaned, transcript_text=transcript_text,

@@ -2,6 +2,7 @@
 
 import json
 import logging
+import os
 import re
 from typing import List, Optional
 
@@ -51,13 +52,14 @@ class DeepSeekSegmentation:
     _PUNC_SAMPLE = 200
     _PUNC_THRESHOLD = 0.05
 
-    def __init__(self, client, model="deepseek-chat", timeout=300, max_tokens=12000, retries=1):
+    def __init__(self, client, model="deepseek-chat", timeout=300, max_tokens=12000, retries=1, checkpoint_dir=None):
         self._client = client
         self._model = model
         self._timeout = timeout
         self._max_tokens = max_tokens
         self._retries = retries
         self._validator = SegmentationValidator(check_sentence_complete=False, check_round_trip=False)
+        self._checkpoint_dir = checkpoint_dir
 
     def segment(self, entries: List[dict], transcript_text: str) -> List[dict]:
         if not entries:
@@ -86,16 +88,39 @@ class DeepSeekSegmentation:
 
     # ---- Slow path: no punctuation ----
 
+    _PUNCTUATED_CHECKPOINT = "punctuated_text.json"
+
     def _segment_no_punc(self, entries: List[dict], transcript_text: str) -> List[dict]:
         logger.info("No punctuation — adding via DeepSeek (%d chars)...", len(transcript_text))
-        punctuated = self._call_punctuate(transcript_text)
+
+        # Checkpoint: save/load the expensive DeepSeek punctuation output
+        checkpoint_path = None
+        if self._checkpoint_dir:
+            checkpoint_path = os.path.join(
+                self._checkpoint_dir, self._PUNCTUATED_CHECKPOINT,
+            )
+
+        if checkpoint_path and os.path.exists(checkpoint_path):
+            with open(checkpoint_path, "r", encoding="utf-8") as f:
+                ckpt = json.load(f)
+            punctuated = ckpt["text"]
+            logger.info("Loaded punctuated text from checkpoint (%d chars)", len(punctuated))
+        else:
+            punctuated = self._call_punctuate(transcript_text)
+            if checkpoint_path:
+                os.makedirs(os.path.dirname(checkpoint_path), exist_ok=True)
+                with open(checkpoint_path, "w", encoding="utf-8") as f:
+                    json.dump({"text": punctuated, "schema_version": 1}, f, ensure_ascii=False)
+                logger.info("Saved punctuated text to checkpoint: %s", checkpoint_path)
 
         sentences = [s.strip() for s in re.split(r'(?<=[.!?])\s+', punctuated) if s.strip()]
         if len(sentences) <= 1:
             raise RuntimeError(f"Punctuation produced only {len(sentences)} sentence(s)")
 
-        # Map sentences to entry ranges
-        entry_ranges = self._map_sentences_to_entries(sentences, entries)
+        # Map sentences to entry ranges using text matching
+        entry_ranges = self._map_sentences_to_entries_accurate(
+            sentences, entries, transcript_text,
+        )
 
         # Segment by sentence IDs
         sent_entries = [
@@ -243,28 +268,156 @@ class DeepSeekSegmentation:
         return segments
 
     @staticmethod
-    def _map_sentences_to_entries(sentences: List[str], entries: List[dict]) -> List[dict]:
-        """Map each sentence to proportional timing.
+    def _map_sentences_to_entries_accurate(
+        sentences: List[str],
+        entries: List[dict],
+        transcript_text: str,
+    ) -> List[dict]:
+        """Map punctuated sentences to real entry timestamps via word overlap.
 
-        Auto-caption entries are short overlapping fragments that get
-        deduped away, making text-based mapping unreliable. Instead,
-        allocate timing proportionally: sentence N gets its position
-        based on N/total_sentences through the episode duration.
+        For each sentence (from the DeepSeek-punctuated output), we scan
+        forward through the cleaned SRT entries (which have real timestamps)
+        and find the range of entries with the highest word-overlap score.
+
+        This handles DeepSeek's occasional word insertions/deletions gracefully
+        because it only cares about overlapping words, not exact positions.
+        Forward-only scanning prevents backwards timestamp jumps.
+
+        Never falls back to proportional timestamps.
         """
-        total_sec = entries[-1]["end"] - entries[0]["start"] if entries else 0
-        total = len(sentences)
-        result = []
+        def _words(text: str) -> set:
+            """Lowercased word set, stripped of punctuation."""
+            return set(re.sub(r"[^\w'\s]", "", text).lower().split())
+
+        if not entries:
+            raise ValueError("No entries to map against")
+
+        # Pre-compute word sets for each entry (lowercase, no punctuation)
+        entry_words = [
+            (e, _words(e.get("text", "")))
+            for e in entries
+        ]
+
+        result: List[dict] = []
+        entry_idx = 0  # forward scan cursor
+        hallucinated_count = 0
+        total_overlap_score = 0
+        total_entries_scanned = 0
+
         for sid, sentence in enumerate(sentences, 1):
-            frac = sid / total
-            start_t = entries[0]["start"] + frac * total_sec
-            end_t = entries[0]["start"] + ((sid + 0.5) / total) * total_sec
+            sw = _words(sentence)
+            if not sw:
+                # Empty sentence — carry forward
+                if result:
+                    last = result[-1]
+                    st = et_ = last["end_time"]
+                    se = ee = last["end_entry"]
+                else:
+                    st = et_ = entries[0]["start"]
+                    se = ee = entries[0]["index"]
+                result.append({
+                    "sentence_id": sid, "start_entry": se, "end_entry": ee,
+                    "start_time": st, "end_time": et_,
+                })
+                continue
+
+            # Scan forward from entry_idx, find the entry range with
+            # best word overlap.  Stop when overlap drops off for
+            # several consecutive entries.
+            best_start = entry_idx
+            best_end = entry_idx
+            best_score = 0
+            scan_limit = min(entry_idx + 200, len(entry_words))
+            running_score = 0
+            for i in range(entry_idx, scan_limit):
+                ew = entry_words[i][1]
+                if not ew:
+                    if running_score > 0:
+                        running_score *= 0.9  # decay through empty entries
+                    continue
+                overlap = len(sw & ew)
+                if overlap > 0:
+                    running_score += overlap
+                else:
+                    running_score *= 0.5  # decay
+                if running_score > best_score:
+                    best_score = running_score
+                    best_end = i
+                    # Reset start if this is the first entry in a new cluster
+                    if best_start == best_end or running_score == overlap:
+                        best_start = i
+
+            if best_score < 1:
+                # No overlap at all — hallucinated sentence
+                logger.debug(
+                    "Sentence %d (cursor=%d, scanned=%d-%d) no overlap: %r",
+                    sid, entry_idx, entry_idx, scan_limit, sentence[:80],
+                )
+                logger.warning(
+                    "Sentence %d completely unmatchable (hallucinated): %r",
+                    sid, sentence[:80],
+                )
+                hallucinated_count += 1
+                if result:
+                    last = result[-1]
+                    st = et_ = last["end_time"]
+                    se = ee = last["end_entry"]
+                else:
+                    st = et_ = entries[0]["start"]
+                    se = ee = entries[0]["index"]
+                result.append({
+                    "sentence_id": sid, "start_entry": se, "end_entry": ee,
+                    "start_time": st, "end_time": et_,
+                })
+                continue
+
+            # Use the first and last overlapping entry for timestamps
+            start_e = entry_words[best_start][0]
+            end_e = entry_words[best_end][0]
+
             result.append({
                 "sentence_id": sid,
-                "start_entry": 1,
-                "end_entry": 1,
-                "start_time": start_t,
-                "end_time": end_t,
+                "start_entry": start_e["index"],
+                "end_entry": end_e["index"],
+                "start_time": start_e["start"],
+                "end_time": end_e["end"],
             })
+
+            total_overlap_score += best_score
+            total_entries_scanned += scan_limit - entry_idx
+
+            logger.debug(
+                "Sentence %d mapped: cursor %d→%d, entries %d–%d "
+                "(t=%.0f–%.0f), score=%d",
+                sid, entry_idx, best_end,
+                start_e["index"], end_e["index"],
+                start_e["start"], end_e["end"],
+                best_score,
+            )
+
+            # Advance cursor past the matched entries
+            entry_idx = max(entry_idx, best_end)
+
+        # ── Summary debug ─────────────────────────────────────────────
+        matched = len(sentences) - hallucinated_count
+        avg_scan = total_entries_scanned / max(len(sentences), 1)
+        logger.info(
+            "Sentence-to-entry mapping: %d sentences, %d matched, "
+            "%d hallucinated/skipped (%.0f%%), avg scan window=%.0f entries, "
+            "cursor reached entry %d/%d",
+            len(sentences), matched, hallucinated_count,
+            hallucinated_count / max(len(sentences), 1) * 100,
+            avg_scan, entry_idx, len(entry_words),
+        )
+
+        # Sanity check: too many hallucinated → fail
+        if len(sentences) > 50 and hallucinated_count / len(sentences) > 0.5:
+            raise ValueError(
+                f"{hallucinated_count}/{len(sentences)} sentences "
+                f"({hallucinated_count/len(sentences):.0%}) fully unmatchable "
+                f"— punctuated output is too divergent"
+            )
+
         return result
 
     @staticmethod
