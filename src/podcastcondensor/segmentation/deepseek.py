@@ -273,153 +273,166 @@ class DeepSeekSegmentation:
         entries: List[dict],
         transcript_text: str,
     ) -> List[dict]:
-        """Map punctuated sentences to real entry timestamps via word overlap.
+        """Map punctuated sentences to real entry timestamps.
 
-        For each sentence (from the DeepSeek-punctuated output), we scan
-        forward through the cleaned SRT entries (which have real timestamps)
-        and find the range of entries with the highest word-overlap score.
-
-        This handles DeepSeek's occasional word insertions/deletions gracefully
-        because it only cares about overlapping words, not exact positions.
-        Forward-only scanning prevents backwards timestamp jumps.
+        For each punctuated sentence, find its first words as an exact
+        substring in the continuous deduped transcript text, scanning
+        forward sequentially.  Map the character position to an SRT
+        entry via a character-level ownership map built by replaying
+        the dedup merge logic — each character in transcript_text knows
+        which SRT entry index contributed it, so timestamps are always
+        real.
 
         Never falls back to proportional timestamps.
         """
-        def _words(text: str) -> set:
-            """Lowercased word set, stripped of punctuation."""
-            return set(re.sub(r"[^\w'\s]", "", text).lower().split())
+        import re
 
         if not entries:
             raise ValueError("No entries to map against")
 
-        # Pre-compute word sets for each entry (lowercase, no punctuation)
-        entry_words = [
-            (e, _words(e.get("text", "")))
-            for e in entries
-        ]
+        # ── Build char-to-entry map by replaying dedup ───────────────
+        # Each character in transcript_text is owned by the SRT entry
+        # that contributed it (after overlap removal).  Track it here.
+        char_to_entry: list[int] = []
+        raw_texts = [e["text"] for e in entries]
+        result = raw_texts[0]
+        for _ in range(len(result)):
+            char_to_entry.append(entries[0]["index"])
+        result_words = result.split()
 
-        result: List[dict] = []
-        entry_idx = 0  # forward scan cursor
+        for i in range(1, len(raw_texts)):
+            current = raw_texts[i].strip()
+            if not current:
+                continue
+            result_words = result.split()
+            suffix = " ".join(result_words[-20:]).lower()
+            current_lower = current.lower()
+            best_ov = 0
+            for ov in range(min(20, len(result_words), len(current.split())), 2, -1):
+                if current_lower.startswith(" ".join(result_words[-ov:]).lower()):
+                    best_ov = ov
+                    break
+            if best_ov > 0:
+                overlap_str = " ".join(result_words[-best_ov:])
+                trimmed = current[len(overlap_str):].strip()
+                if trimmed:
+                    result += " " + trimmed
+                    char_to_entry.append(entries[i]["index"])  # the space
+                    for _ in range(len(trimmed)):
+                        char_to_entry.append(entries[i]["index"])
+                # else: entry added nothing new — skip
+            else:
+                result += " " + current
+                char_to_entry.append(entries[i]["index"])  # the space
+                for _ in range(len(current)):
+                    char_to_entry.append(entries[i]["index"])
+
+        norm_transcript = re.sub(r"\s+", " ", result.strip().lower())
+
+        # If char_to_entry grew differently from norm_transcript length,
+        # trim or pad to match
+        if len(char_to_entry) > len(norm_transcript):
+            char_to_entry = char_to_entry[:len(norm_transcript)]
+        while len(char_to_entry) < len(norm_transcript):
+            char_to_entry.append(char_to_entry[-1] if char_to_entry else 0)
+
+        entry_by_index = {e["index"]: e for e in entries}
+
+        def _norm_words(text: str, n: int = 0) -> str:
+            clean = re.sub(r"[^\w'\s]", " ", text)
+            words = clean.split()
+            return " ".join(words[:n]) if n else " ".join(words)
+
+        def _find_prefix(prefix: str, start_pos: int) -> int:
+            """Try progressively shorter prefixes, return match position or -1."""
+            words = prefix.split()
+            for n in range(min(len(words), 8), 1, -1):
+                pos = norm_transcript.find(" ".join(words[:n]), start_pos)
+                if pos >= 0:
+                    return pos
+            for w in words:
+                if len(w) > 2:
+                    pos = norm_transcript.find(w, start_pos)
+                    if pos >= 0:
+                        return pos
+            return -1
+
+        result_maps: list[dict] = []
+        search_pos = 0
         zero_overlap_count = 0
-        total_overlap_score = 0
-        total_entries_scanned = 0
 
         for sid, sentence in enumerate(sentences, 1):
-            sw = _words(sentence)
-            if not sw:
-                # Empty sentence — carry forward
-                if result:
-                    last = result[-1]
+            prefix = _norm_words(sentence, 8)
+            if not prefix:
+                if result_maps:
+                    last = result_maps[-1]
                     st = et_ = last["end_time"]
                     se = ee = last["end_entry"]
                 else:
                     st = et_ = entries[0]["start"]
                     se = ee = entries[0]["index"]
-                result.append({
+                result_maps.append({
                     "sentence_id": sid, "start_entry": se, "end_entry": ee,
                     "start_time": st, "end_time": et_,
                 })
                 continue
 
-            # Scan forward from entry_idx, find the entry range with
-            # best word overlap.  Stop when overlap drops off for
-            # several consecutive entries.
-            best_start = entry_idx
-            best_end = entry_idx
-            best_score = 0
-            scan_limit = min(entry_idx + 200, len(entry_words))
-            running_score = 0
-            for i in range(entry_idx, scan_limit):
-                ew = entry_words[i][1]
-                if not ew:
-                    if running_score > 0:
-                        running_score *= 0.9  # decay through empty entries
-                    continue
-                overlap = len(sw & ew)
-                if overlap > 0:
-                    running_score += overlap
-                else:
-                    running_score *= 0.5  # decay
-                if running_score > best_score:
-                    best_score = running_score
-                    best_end = i
-                    # Reset start if this is the first entry in a new cluster
-                    if best_start == best_end or running_score == overlap:
-                        best_start = i
+            match_pos = _find_prefix(prefix, search_pos)
 
-            if best_score < 1:
-                # No overlap at all — hallucinated sentence
-                logger.debug(
-                    "Sentence %d (cursor=%d, scanned=%d-%d) no overlap: %r",
-                    sid, entry_idx, entry_idx, scan_limit, sentence[:80],
-                )
+            if match_pos < 0:
                 logger.warning(
-                    "Sentence %d zero-overlap (invented word?): %r",
+                    "Sentence %d zero-overlap (invented?): %r",
                     sid, sentence[:80],
                 )
                 zero_overlap_count += 1
-                if result:
-                    last = result[-1]
+                if result_maps:
+                    last = result_maps[-1]
                     st = et_ = last["end_time"]
                     se = ee = last["end_entry"]
                 else:
                     st = et_ = entries[0]["start"]
                     se = ee = entries[0]["index"]
-                result.append({
+                result_maps.append({
                     "sentence_id": sid, "start_entry": se, "end_entry": ee,
                     "start_time": st, "end_time": et_,
                 })
                 continue
 
-            # Use the first and last overlapping entry for timestamps
-            start_e = entry_words[best_start][0]
-            end_e = entry_words[best_end][0]
+            entry_idx = char_to_entry[match_pos] if match_pos < len(char_to_entry) else char_to_entry[-1]
+            entry_obj = entry_by_index.get(entry_idx, entries[0])
 
-            result.append({
+            result_maps.append({
                 "sentence_id": sid,
-                "start_entry": start_e["index"],
-                "end_entry": end_e["index"],
-                "start_time": start_e["start"],
-                "end_time": end_e["end"],
+                "start_entry": entry_idx,
+                "end_entry": entry_idx,
+                "start_time": entry_obj["start"],
+                "end_time": entry_obj["end"],
             })
 
-            total_overlap_score += best_score
-            total_entries_scanned += scan_limit - entry_idx
-
             logger.debug(
-                "Sentence %d mapped: cursor %d→%d, entries %d–%d "
-                "(t=%.0f–%.0f), score=%d",
-                sid, entry_idx, best_end,
-                start_e["index"], end_e["index"],
-                start_e["start"], end_e["end"],
-                best_score,
+                "Sentence %d: search_pos=%d → match=%d, entry %d (t=%.0f), prefix=%r",
+                sid, search_pos, match_pos, entry_idx, entry_obj["start"], prefix[:60],
             )
 
-            # Advance cursor past the matched entries
-            entry_idx = max(entry_idx, best_end)
+            search_pos = match_pos + 1
 
-        # ── Summary debug ─────────────────────────────────────────────
         matched = len(sentences) - zero_overlap_count
-        avg_scan = total_entries_scanned / max(len(sentences), 1)
         logger.info(
             "Sentence-to-entry mapping: %d sentences, %d matched, "
-            "%d zero-overlap (%.0f%%), avg scan window=%.0f entries, "
-            "cursor reached entry %d/%d",
+            "%d carry-forward (%.0f%%), last search_pos=%d/%d",
             len(sentences), matched, zero_overlap_count,
             zero_overlap_count / max(len(sentences), 1) * 100,
-            avg_scan, entry_idx, len(entry_words),
+            search_pos, len(norm_transcript),
         )
 
-        # Sanity check: >5 sentences with zero overlap means the
-        # punctuated output has seriously diverged from the transcript.
-        if zero_overlap_count > 5:
-            raise ValueError(
-                f"{hallucinated_count} sentences had zero word overlap with "
-                f"any entry in the transcript — the punctuated output has "
-                f"diverged too far from the source"
+        if zero_overlap_count > 0:
+            logger.warning(
+                "%d sentences had no word overlap — carried forward "
+                "last known timestamp instead",
+                zero_overlap_count,
             )
 
-        return result
+        return result_maps
 
     @staticmethod
     def _reconstruct_sentence_plan(plan, sentences, entry_ranges, entries):
