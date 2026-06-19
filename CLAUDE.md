@@ -22,15 +22,13 @@ Once the SRT is downloaded and cleaned programmatically, the **global state** ph
 
 **Resumable:** every phase checks for its artefact before running. If the artefact exists, the phase is skipped. Interrupted runs pick up where they left off.
 
-### Timestamp recovery (no fake timestamps)
+### Timestamp recovery (no fake timestamps, zero tolerance)
 
 When auto-captions have no punctuation (the common case), phase 3 works in three steps:
 
 1. **Punctuate** — DeepSeek adds sentence-ending punctuation to the deduped transcript (~3 min, checkpointed).
-2. **Map** — each punctuated sentence is matched back to the original SRT entries via forward-scanning word-overlap scoring. This recovers real timestamps from the SRT. **Never falls back to proportional/interpolated timestamps**, which would produce audio cut at wrong positions.
+2. **Map** — each punctuated sentence gets real timestamps by matching its first few words as an **exact substring** against the continuous deduped transcript text, scanning forward sequentially. The `char_to_entry` map is built by replaying the dedup merge logic (tracking which SRT entry contributed each character). Progressively shorter prefixes are tried if the full prefix isn't found; as a last resort, the first single content word (len > 2) is matched. Hallucinated sentences (no match at all) carry forward the last known timestamp. **Never falls back to proportional/interpolated timestamps**, which would produce audio cut at wrong positions.
 3. **Segment** — DeepSeek groups sentences into topical segments.
-
-If the mapping stage detects >5 sentences with zero word overlap, a `ValueError` is raised — this means the punctuated output has seriously diverged from the source transcript.
 
 Phase 2 merges knowledge into the universe state automatically (both in build-universe and process-playlist modes). No separate extraction phase.
 
@@ -97,4 +95,10 @@ SRT → clean ──→ Global state ──→ merge into state
 SRT → clean → Global state → segment → classify → finalize → cut audio
                (phase 2)     (3)       (4)         (5)        (6)
 ```
+
+## Open points
+
+- **Classifier compression low (~10%).** The classifier keeps too many segments (28/47 for ep22, compressing 136→124 min). Likely needs prompt tuning or lower `max_blocks` — not a timestamp issue.
+- **Zero-duration tail segments.** Sentences near the end that all map to the last SRT entry produce segments with `start ≈ end ≈ final_timestamp`. These get classifier label "drop" if they're truly just tail/sponsor content, but the zero duration is a mapping artifact (not enough words in final entries to differentiate sentences).
+- **`decisions_final.json` may be identical to `decisions.json`.** If there are no "maybe" labels, tail detection doesn't fire, and continuity bias is off, the finalize phase is a no-op. That's fine — the copy is preserved for checkpoint consistency.
 
