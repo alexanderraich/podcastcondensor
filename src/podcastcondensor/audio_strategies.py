@@ -91,7 +91,7 @@ def _get_available_memory_mb() -> float:
 
 
 # ---------------------------------------------------------------------------
-# Concat helper (reused by SinglePassFilterCutStrategy and SafeBatchedCutStrategy)
+# Concat helper (reused by SinglePassFilterCutStrategy and SequentialCopyCutStrategy)
 # ---------------------------------------------------------------------------
 
 
@@ -101,6 +101,9 @@ def _concat_batch_files(
     sample_rate: int,
     bitrate: str,
     atempo: Optional[List[str]] = None,
+    beep: bool = False,
+    beep_freq: float = 1000,
+    beep_duration: float = 0.25,
 ):
     """Concatenate batch temp files using the concat demuxer.
 
@@ -108,15 +111,43 @@ def _concat_batch_files(
     (same sample rate, channel layout, format).  This function applies
     format conversion and optional speed adjustment at concat time.
 
+    When *beep* is ``True`` and there are multiple segments, a short studio
+    tone is inserted between each pair to mark transitions.  The beep is
+    generated once with ffmpeg's ``sine`` filter and interleaved into the
+    concat list — no filter_complex overhead.  The beep matches the sample
+    rate and channel count of the first segment so the concat demuxer
+    doesn't choke on mismatched stream parameters.
+
     Raises ``RuntimeError`` on ffmpeg failure.
     """
     tmpdir = tempfile.mkdtemp()
     try:
+        # Generate beep file once if needed, matching source audio format
+        beep_path = None
+        if beep and len(batch_paths) > 1:
+            # Probe the first segment for its sample rate and channels
+            beep_sr, beep_ac = _probe_audio_params(batch_paths[0])
+            beep_path = os.path.join(tmpdir, "beep.mp3")
+            beep_cmd = [
+                "ffmpeg", "-y",
+                "-f", "lavfi",
+                "-i", f"sine=f={beep_freq}:d={beep_duration}",
+                "-ar", str(beep_sr),
+                "-ac", str(beep_ac),
+                "-b:a", bitrate,
+                beep_path,
+            ]
+            result = _run_ffmpeg(beep_cmd, capture_output=True, text=True)
+            if result.returncode != 0:
+                logger.warning("Beep generation failed (%s) — continuing without", result.stderr[:200])
+                beep_path = None
+
         concat_file = os.path.join(tmpdir, "concat.txt")
         with open(concat_file, "w") as f:
-            for bp in batch_paths:
-                abs_path = os.path.abspath(bp)
-                f.write(f"file '{abs_path}'\n")
+            for i, bp in enumerate(batch_paths):
+                if i > 0 and beep_path:
+                    f.write(f"file '{os.path.abspath(beep_path)}'\n")
+                f.write(f"file '{os.path.abspath(bp)}'\n")
 
         cmd = [
             "ffmpeg", "-y",
@@ -208,6 +239,27 @@ def _get_audio_duration(audio_path: str) -> float:
     return float(result.stdout.strip())
 
 
+def _probe_audio_params(audio_path: str):
+    """Probe sample rate and channel count from an audio file.
+
+    Returns ``(sample_rate, channels)`` as ints.  Used to replicate the
+    source audio format when generating beep tones so the concat demuxer
+    receives homogenous stream parameters.
+    """
+    cmd = [
+        "ffprobe", "-v", "error",
+        "-select_streams", "a:0",
+        "-show_entries", "stream=sample_rate,channels",
+        "-of", "csv=p=0",
+        audio_path,
+    ]
+    result = _run_ffmpeg(cmd, capture_output=True, text=True)
+    if result.returncode != 0:
+        raise RuntimeError(f"ffprobe stream probe failed: {result.stderr}")
+    parts = result.stdout.strip().split(",")
+    return int(parts[0]), int(parts[1])
+
+
 def normalize_intervals(
     intervals: List[dict],
     audio_duration: Optional[float] = None,
@@ -262,13 +314,32 @@ def normalize_intervals(
 
 
 class SequentialCopyCutStrategy(AudioCuttingStrategy):
-    """Wraps the existing ``build_condensed_audio`` one-to-one.
+    """Sequential ``-c copy`` extraction + one final concat.  Minimal memory.
 
-    Every interval is extracted via ``ffmpeg -c copy``, sequentially.
-    Temp files are concatenated with the concat demuxer.
+    Designed for WSL and large interval counts where a single
+    ``filter_complex`` graph OOMs ffmpeg.
+
+    **How it works:**
+
+    1. Normalised intervals are extracted one at a time with
+       ``ffmpeg -c copy`` (packet copy — *no* decode/re-encode, ~0 memory).
+    2. Each extraction is a seek + packet copy and completes in <1 s.
+    3. After every interval a **checkpoint file** is written for resumability.
+    4. On re-run, completed intervals are skipped.
+    5. Once all intervals are extracted, **one** concat+encode pass produces
+       the final output (each interval encoded exactly once).
+    6. If ``-c copy`` fails for an interval, falls back to a tiny
+       ``filter_complex`` graph for that single interval.
+    7. On success the temp directory is cleaned up.
+
+    **All ffmpeg processes use ``ionice -c 3``** so audio cutting never
+    starves the system.
     """
 
-    def __init__(self):
+    CHECKPOINT_FILE = "_checkpoint.json"
+
+    def __init__(self, batch_size: int = 0):
+        """*batch_size* is accepted for backward compatibility but ignored."""
         self._name = "sequential_copy"
 
     def cut(
@@ -281,10 +352,204 @@ class SequentialCopyCutStrategy(AudioCuttingStrategy):
         bitrate: str = "64k",
         speed: float = 1.0,
     ) -> str:
-        raise NotImplementedError("SequentialCopyCutStrategy removed — use single_pass_filter")
+        t0 = time.time()
+
+        if not intervals:
+            raise ValueError("No intervals to cut")
+
+        # Normalise intervals
+        try:
+            audio_dur = _get_audio_duration(audio_path)
+        except Exception:
+            audio_dur = None
+
+        cleaned = normalize_intervals(intervals, audio_duration=audio_dur)
+        if not cleaned:
+            raise ValueError("All intervals were invalid after normalisation")
+
+        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+        atempo = _atempo_filters(speed)
+
+        total = len(cleaned)
+        total_kept = sum(iv["end"] - iv["start"] for iv in cleaned)
+        logger.info(
+            "Sequential copy cut: %d intervals (%ds kept), speed=%.2f",
+            total, int(total_kept), speed,
+        )
+
+        # Temp directory alongside the output
+        tmpdir = os.path.join(
+            os.path.dirname(os.path.abspath(output_path)), ".seq_segments",
+        )
+        os.makedirs(tmpdir, exist_ok=True)
+
+        # Checkpoint path
+        ckpt_path = os.path.join(tmpdir, self.CHECKPOINT_FILE)
+
+        try:
+            # Load checkpoint
+            completed = self._load_checkpoint(ckpt_path, total, audio_path)
+
+            # ── Extract each interval with -c copy ────────────────────────
+            seg_paths: List[str] = []
+            for idx, iv in enumerate(cleaned):
+                seg_path = os.path.join(tmpdir, f"seg_{idx:04d}.{format_spec}")
+
+                if idx in completed and os.path.exists(seg_path):
+                    logger.debug("  [%d/%d] checkpoint hit — skipping", idx + 1, total)
+                    seg_paths.append(seg_path)
+                    continue
+
+                # Extract with -c copy
+                try:
+                    self._extract_one(
+                        audio_path, iv, seg_path, format_spec,
+                    )
+                except Exception as exc:
+                    logger.warning(
+                        "  [%d/%d] stream copy failed (%s) — "
+                        "falling back to filter_complex",
+                        idx + 1, total, exc,
+                    )
+                    self._extract_one_filter_complex(
+                        audio_path, iv, seg_path, sample_rate, bitrate,
+                    )
+
+                seg_paths.append(seg_path)
+                completed.add(idx)
+                self._save_checkpoint(ckpt_path, completed, total, audio_path)
+                logger.info("  [%d/%d] %.1fs-%.1fs done", idx + 1, total, iv["start"], iv["end"])
+
+            # ── One concat pass (with beeps between segments) ────────────
+            logger.info("Concatenating %d segments...", len(seg_paths))
+            _concat_batch_files(
+                batch_paths=seg_paths,
+                output_path=output_path,
+                sample_rate=sample_rate,
+                bitrate=bitrate,
+                atempo=atempo,
+                beep=True,
+            )
+
+            elapsed = time.time() - t0
+            logger.info("Done (%.1fs): %s", elapsed, output_path)
+            return output_path
+
+        finally:
+            shutil.rmtree(tmpdir, ignore_errors=True)
 
     def name(self) -> str:
         return self._name
+
+    # ------------------------------------------------------------------
+    # Single-interval extraction
+    # ------------------------------------------------------------------
+
+    @staticmethod
+    def _extract_one(
+        audio_path: str,
+        iv: dict,
+        output_path: str,
+        format_spec: str,
+    ):
+        """Extract one interval with ``-c copy`` (packet copy, no decode)."""
+        duration = iv["end"] - iv["start"]
+        if duration <= 0.01:
+            raise RuntimeError("Zero-duration interval")
+
+        cmd = [
+            "ffmpeg", "-y",
+            "-ss", f"{iv['start']:.3f}",
+            "-i", audio_path,
+            "-t", f"{duration:.3f}",
+            "-c", "copy",
+            "-avoid_negative_ts", "make_zero",
+            output_path,
+        ]
+        result = _run_ffmpeg(cmd, capture_output=True, text=True)
+        if result.returncode != 0:
+            raise RuntimeError(f"ffmpeg copy failed: {result.stderr[:300]}")
+
+    @staticmethod
+    def _extract_one_filter_complex(
+        audio_path: str,
+        iv: dict,
+        output_path: str,
+        sample_rate: int,
+        bitrate: str,
+    ):
+        """Fallback — extract one interval via filter_complex."""
+        start_s = f"{iv['start']:.3f}"
+        end_s = f"{iv['end']:.3f}"
+        filter_graph = (
+            f"[0:a]atrim={start_s}:{end_s},asetpts=PTS-STARTPTS[outa]"
+        )
+        cmd = [
+            "ffmpeg", "-y",
+            "-i", audio_path,
+            "-filter_complex", filter_graph,
+            "-map", "[outa]",
+            "-ar", str(sample_rate),
+            "-b:a", bitrate,
+            "-ac", "1",
+            output_path,
+        ]
+        result = _run_ffmpeg(cmd, capture_output=True, text=True)
+        if result.returncode != 0:
+            raise RuntimeError(
+                f"ffmpeg filter-complex failed: {result.stderr[:300]}"
+            )
+
+    # ------------------------------------------------------------------
+    # Checkpoint helpers
+    # ------------------------------------------------------------------
+
+    @staticmethod
+    def _load_checkpoint(ckpt_path: str, total: int, audio_path: str) -> set:
+        """Load completed interval indices, or return empty set."""
+        if not os.path.exists(ckpt_path):
+            return set()
+
+        try:
+            with open(ckpt_path) as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, OSError) as exc:
+            logger.warning("Cannot read checkpoint (%s) — starting fresh", exc)
+            return set()
+
+        if data.get("total") != total:
+            logger.warning(
+                "Checkpoint interval count mismatch (%s vs %s) — starting fresh",
+                data.get("total"), total,
+            )
+            return set()
+
+        stored_audio = data.get("audio_path", "")
+        if stored_audio and stored_audio != os.path.abspath(audio_path):
+            logger.warning("Checkpoint audio path differs — starting fresh")
+            return set()
+
+        completed = {i for i in data.get("completed", []) if 0 <= i < total}
+        if completed:
+            logger.info(
+                "Resuming from checkpoint: %d/%d intervals already done",
+                len(completed), total,
+            )
+        return completed
+
+    @staticmethod
+    def _save_checkpoint(ckpt_path: str, completed: set, total: int, audio_path: str):
+        """Write checkpoint metadata."""
+        data = {
+            "completed": sorted(completed),
+            "total": total,
+            "audio_path": os.path.abspath(audio_path),
+        }
+        try:
+            with open(ckpt_path, "w") as f:
+                json.dump(data, f, indent=2)
+        except OSError as exc:
+            logger.warning("Failed to write checkpoint: %s", exc)
 
 
 # ---------------------------------------------------------------------------
@@ -715,7 +980,7 @@ class SinglePassFilterCutStrategy(AudioCuttingStrategy):
         """Concatenate batch temp files using the concat demuxer.
 
         Delegates to the module-level ``_concat_batch_files`` so the same
-        logic is shared with ``SafeBatchedCutStrategy``.
+        logic is shared with ``SequentialCopyCutStrategy``.
         """
         _concat_batch_files(
             batch_paths=batch_paths,
@@ -724,448 +989,6 @@ class SinglePassFilterCutStrategy(AudioCuttingStrategy):
             bitrate=bitrate,
             atempo=atempo,
         )
-
-
-# ---------------------------------------------------------------------------
-# Strategy 4: Safe batched cut (for WSL / low-memory environments)
-# ---------------------------------------------------------------------------
-
-
-class SafeBatchedCutStrategy(AudioCuttingStrategy):
-    """Low-memory batched audio cutting for resource-constrained environments.
-
-    Designed for WSL and low-memory systems where a single massive
-    ``filter_complex`` graph would be killed by the OOM killer.
-
-    **How it works:**
-
-    1. Normalised intervals are split into small *batches* (default 5).
-    2. Each batch is processed sequentially with its own tiny
-       ``filter_complex`` graph (atrim + asetpts + concat).
-    3. After every batch a **checkpoint file** is written to
-       ``<output_dir>/.safe_batches/_checkpoint.json``.
-    4. On interruption, running the **same strategy again** detects the
-       checkpoint and resumes from the last completed batch.
-    5. If ``filter_complex`` fails for a batch (rare with 5 intervals, but
-       possible on extremely constrained systems), the strategy falls back
-       to per-interval ``-c copy`` extraction (no decode, minimal memory).
-    6. Once all batches are done they are concatenated into the final
-       output with the concat demuxer.
-    7. On full success the ``.safe_batches/`` directory is cleaned up.
-
-    **All ffmpeg processes use both ``nice -n 19`` and ``ionice -c 3``**
-    (lowest CPU + I/O priority) so audio cutting never starves the system.
-
-    **Memory monitoring:** Before each batch, ``/proc/meminfo`` is checked.
-    If available memory drops below 512 MB a warning is logged (no abort —
-    the user may want to proceed anyway).
-    """
-
-    CHECKPOINT_FILE = "_checkpoint.json"
-    BATCH_PREFIX = "batch_"
-
-    def __init__(self, batch_size: int = 5):
-        self._batch_size = batch_size
-        self._name = "safe_batched"
-
-    def cut(
-        self,
-        audio_path: str,
-        intervals: List[dict],
-        output_path: str,
-        format_spec: str = "mp3",
-        sample_rate: int = 22050,
-        bitrate: str = "64k",
-        speed: float = 1.0,
-    ) -> str:
-        t0 = time.time()
-
-        if not intervals:
-            raise ValueError("No intervals to cut")
-
-        # Normalise intervals
-        try:
-            audio_dur = _get_audio_duration(audio_path)
-        except Exception:
-            audio_dur = None
-
-        cleaned = normalize_intervals(intervals, audio_duration=audio_dur)
-        if not cleaned:
-            raise ValueError("All intervals were invalid after normalisation")
-
-        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-        atempo = _atempo_filters(speed)
-
-        # Build batches
-        batches = [
-            cleaned[i:i + self._batch_size]
-            for i in range(0, len(cleaned), self._batch_size)
-        ]
-        total_kept = sum(iv["end"] - iv["start"] for iv in cleaned)
-        logger.info(
-            "Safe batched cut: %d intervals (%ds kept) in %d batches of %d",
-            len(cleaned), int(total_kept), len(batches), self._batch_size,
-        )
-
-        # Persisted checkpoint directory (alongside the output)
-        checkpoint_dir = os.path.join(
-            os.path.dirname(os.path.abspath(output_path)), ".safe_batches",
-        )
-        os.makedirs(checkpoint_dir, exist_ok=True)
-
-        # Resume from checkpoint if one exists
-        completed = self._load_checkpoint(
-            checkpoint_dir, len(batches), cleaned, audio_path,
-        )
-
-        mem_warned = False
-        for batch_idx, batch in enumerate(batches):
-            if batch_idx in completed:
-                logger.info(
-                    "  Batch %d/%d already complete — skipping",
-                    batch_idx + 1, len(batches),
-                )
-                continue
-
-            # Warn once if memory is low
-            mem_mb = _get_available_memory_mb()
-            if mem_mb < MEMORY_WARN_THRESHOLD_MB and not mem_warned:
-                logger.warning(
-                    "Low system memory: %.0f MB available — audio cutting "
-                    "may be slow. Close other applications or reduce "
-                    "--audio-safe-batch-size.",
-                    mem_mb,
-                )
-                mem_warned = True
-
-            batch_out = os.path.join(
-                checkpoint_dir, f"{self.BATCH_PREFIX}{batch_idx:04d}.{format_spec}",
-            )
-
-            # Try filter_complex first (small graph, low memory)
-            try:
-                self._run_filter_complex_batch(
-                    audio_path=audio_path,
-                    intervals=batch,
-                    output_path=batch_out,
-                    sample_rate=sample_rate,
-                    bitrate=bitrate,
-                )
-            except Exception as exc:
-                logger.warning(
-                    "Filter_complex batch %d failed (%s) — "
-                    "falling back to stream copy",
-                    batch_idx, exc,
-                )
-                # Stream-copy fallback — no decode/re-encode, minimal memory
-                self._run_stream_copy_batch(
-                    audio_path=audio_path,
-                    intervals=batch,
-                    output_path=batch_out,
-                    format_spec=format_spec,
-                    sample_rate=sample_rate,
-                    bitrate=bitrate,
-                )
-
-            completed.add(batch_idx)
-            self._save_checkpoint(
-                checkpoint_dir, completed, len(batches), cleaned, audio_path,
-            )
-            logger.info("  Batch %d/%d done", batch_idx + 1, len(batches))
-
-        # ── Concatenate all batch files ──────────────────────────────────
-        batch_paths = [
-            os.path.join(
-                checkpoint_dir, f"{self.BATCH_PREFIX}{i:04d}.{format_spec}",
-            )
-            for i in range(len(batches))
-        ]
-        logger.info("Concatenating %d batch files...", len(batch_paths))
-        _concat_batch_files(
-            batch_paths=batch_paths,
-            output_path=output_path,
-            sample_rate=sample_rate,
-            bitrate=bitrate,
-            atempo=atempo,
-        )
-
-        # Clean up checkpoint dir on full success
-        try:
-            shutil.rmtree(checkpoint_dir, ignore_errors=True)
-        except Exception:
-            pass
-
-        elapsed = time.time() - t0
-        logger.info("Done (safe batched, %.1fs): %s", elapsed, output_path)
-        return output_path
-
-    def name(self) -> str:
-        return self._name
-
-    # ------------------------------------------------------------------
-    # Checkpoint helpers
-    # ------------------------------------------------------------------
-
-    def _load_checkpoint(
-        self,
-        checkpoint_dir: str,
-        total_batches: int,
-        intervals: List[dict],
-        audio_path: str,
-    ) -> set:
-        """Load completed batch indices from checkpoint, or return empty set.
-
-        Validates the stored metadata matches the current run so we never
-        resume with wrong intervals or a different audio source.
-        """
-        ckpt_path = os.path.join(checkpoint_dir, self.CHECKPOINT_FILE)
-        if not os.path.exists(ckpt_path):
-            return set()
-
-        try:
-            with open(ckpt_path) as f:
-                data = json.load(f)
-        except (json.JSONDecodeError, OSError) as exc:
-            logger.warning("Cannot read checkpoint (%s) — starting fresh", exc)
-            return set()
-
-        # Sanity checks — bail on mismatch so we don't produce garbage
-        if data.get("total_batches") != total_batches:
-            logger.warning(
-                "Checkpoint batch count mismatch (%s vs current %s) — "
-                "starting fresh",
-                data.get("total_batches"), total_batches,
-            )
-            return set()
-
-        if data.get("interval_count") != len(intervals):
-            logger.warning(
-                "Checkpoint interval count mismatch (%s vs current %s) — "
-                "starting fresh",
-                data.get("interval_count"), len(intervals),
-            )
-            return set()
-
-        stored_audio = data.get("audio_path", "")
-        current_audio = os.path.abspath(audio_path)
-        if stored_audio and stored_audio != current_audio:
-            logger.warning(
-                "Checkpoint audio path differs (%s) — starting fresh",
-                stored_audio,
-            )
-            return set()
-
-        completed = set(data.get("completed", []))
-        # Clamp to valid range
-        completed = {i for i in completed if 0 <= i < total_batches}
-        if completed:
-            logger.info(
-                "Resuming from checkpoint: %d/%d batches already done",
-                len(completed), total_batches,
-            )
-        return completed
-
-    def _save_checkpoint(
-        self,
-        checkpoint_dir: str,
-        completed: set,
-        total_batches: int,
-        intervals: List[dict],
-        audio_path: str,
-    ):
-        """Write checkpoint metadata to disk."""
-        ckpt_path = os.path.join(checkpoint_dir, self.CHECKPOINT_FILE)
-        data = {
-            "completed": sorted(completed),
-            "total_batches": total_batches,
-            "interval_count": len(intervals),
-            "audio_path": os.path.abspath(audio_path),
-            "batch_size": self._batch_size,
-            "timestamp": time.time(),
-        }
-        try:
-            with open(ckpt_path, "w") as f:
-                json.dump(data, f, indent=2)
-        except OSError as exc:
-            logger.warning("Failed to write checkpoint: %s", exc)
-
-    # ------------------------------------------------------------------
-    # Batch execution
-    # ------------------------------------------------------------------
-
-    @staticmethod
-    def _build_small_filter_graph(
-        intervals: List[dict],
-        *,
-        beep: bool = True,
-        beep_freq: float = 1000,
-        beep_duration: float = 0.25,
-        sample_rate: int = 22050,
-    ) -> str:
-        """Build a tiny ``filter_complex`` string for *intervals* (≤10).
-
-        When ``beep=True``, a short studio tone is inserted between intervals.
-
-        Returns e.g.::
-
-            [0:a]atrim=10:20,asetpts=PTS-STARTPTS,aformat=sample_rates=22050:channel_layouts=mono[a0];
-            sine=f=800:d=0.1,aformat=sample_rates=22050:channel_layouts=mono[b0];
-            [0:a]atrim=30:40,asetpts=PTS-STARTPTS,aformat=sample_rates=22050:channel_layouts=mono[a1];
-            [a0][b0][a1]concat=n=3:v=0:a=1[outa]
-        """
-        n = len(intervals)
-        parts = []
-
-        if beep and n > 1:
-            # atrim chains are UNCHANGED (zero perf overhead).
-            # Only sine outputs get aformat. FFmpeg 6+ concat handles mixed rates.
-            for i, iv in enumerate(intervals):
-                start_s = f"{iv['start']:.3f}"
-                end_s = f"{iv['end']:.3f}"
-                parts.append(
-                    f"[0:a]atrim={start_s}:{end_s},asetpts=PTS-STARTPTS[a{i}]"
-                )
-                if i < n - 1:
-                    parts.append(
-                        f"sine=f={beep_freq}:d={beep_duration},"
-                        f"aformat=sample_rates={sample_rate}:channel_layouts=mono[b{i}]"
-                    )
-            concat_labels: list = []
-            for i in range(n):
-                concat_labels.append(f"[a{i}]")
-                if i < n - 1:
-                    concat_labels.append(f"[b{i}]")
-            total = n + (n - 1)
-            concat_str = f"{''.join(concat_labels)}concat=n={total}:v=0:a=1[outa]"
-        else:
-            for i, iv in enumerate(intervals):
-                start_s = f"{iv['start']:.3f}"
-                end_s = f"{iv['end']:.3f}"
-                parts.append(
-                    f"[0:a]atrim={start_s}:{end_s},asetpts=PTS-STARTPTS[a{i}]"
-                )
-            concat_inputs = "".join(f"[a{i}]" for i in range(n))
-            concat_str = f"{concat_inputs}concat=n={n}:v=0:a=1[outa]"
-
-        parts.append(concat_str)
-        return ";\n".join(parts)
-
-    def _run_filter_complex_batch(
-        self,
-        audio_path: str,
-        intervals: List[dict],
-        output_path: str,
-        sample_rate: int,
-        bitrate: str,
-    ):
-        """Run one ffmpeg invocation with a small filter graph.
-
-        This is the primary path for each batch — low memory because the
-        graph has only ``2n + 1`` nodes (atrim + asetpts per interval,
-        one concat).
-        """
-        filter_graph = self._build_small_filter_graph(
-            intervals, sample_rate=sample_rate, beep=True,
-        )
-        cmd = [
-            "ffmpeg", "-y",
-            "-i", audio_path,
-            "-filter_complex", filter_graph,
-            "-map", "[outa]",
-            "-ar", str(sample_rate),
-            "-b:a", bitrate,
-            "-ac", "1",
-            output_path,
-        ]
-        logger.debug(
-            "Safe filter batch: %d intervals via filter_complex",
-            len(intervals),
-        )
-        result = _run_ffmpeg(cmd, capture_output=True, text=True)
-        if result.returncode != 0:
-            raise RuntimeError(
-                f"Safe filter batch failed ({len(intervals)} intervals): "
-                f"{result.stderr[:500]}"
-            )
-
-    def _run_stream_copy_batch(
-        self,
-        audio_path: str,
-        intervals: List[dict],
-        output_path: str,
-        format_spec: str,
-        sample_rate: int,
-        bitrate: str,
-    ):
-        """Fallback: extract each interval with ``-c copy`` then concat.
-
-        ``-c copy`` performs no decode or re-encode — it simply copies the
-        relevant packets from the demuxer to the muxer.  This is the most
-        memory-efficient extraction method available.  Each interval is a
-        separate ffmpeg call; the batch is then concatenated with encoding.
-
-        This path is only reached when ``_run_filter_complex_batch`` raises,
-        which should be rare for batches of 5 intervals.
-        """
-        tmpdir = tempfile.mkdtemp(prefix="pc_safe_seg_")
-        seg_paths = []
-        try:
-            for i, iv in enumerate(intervals):
-                seg_path = os.path.join(
-                    tmpdir, f"seg_{i:04d}.{format_spec}",
-                )
-                duration = iv["end"] - iv["start"]
-                if duration <= 0.01:
-                    logger.warning("  skip zero-duration seg %d", i)
-                    continue
-
-                cmd = [
-                    "ffmpeg", "-y",
-                    "-i", audio_path,
-                    "-ss", str(iv["start"]),
-                    "-t", str(duration),
-                    "-c", "copy",
-                    seg_path,
-                ]
-                result = _run_ffmpeg(cmd, capture_output=True, text=True)
-                if result.returncode != 0:
-                    raise RuntimeError(
-                        f"Safe copy seg {i} failed: {result.stderr[:300]}"
-                    )
-                seg_paths.append(seg_path)
-
-            if not seg_paths:
-                raise RuntimeError("All intervals in batch were zero-duration")
-
-            logger.debug(
-                "Safe copy batch: %d segments via -c copy",
-                len(seg_paths),
-            )
-
-            # Concat with re-encode (so the output is homogenous with
-            # filter_complex batches)
-            concat_file = os.path.join(tmpdir, "concat.txt")
-            with open(concat_file, "w") as f:
-                for seg in seg_paths:
-                    f.write(f"file '{os.path.abspath(seg)}'\n")
-
-            cmd = [
-                "ffmpeg", "-y",
-                "-f", "concat",
-                "-safe", "0",
-                "-i", concat_file,
-                "-ar", str(sample_rate),
-                "-b:a", bitrate,
-                "-ac", "1",
-                output_path,
-            ]
-            result = _run_ffmpeg(cmd, capture_output=True, text=True)
-            if result.returncode != 0:
-                raise RuntimeError(
-                    f"Safe copy batch concat failed: {result.stderr[:300]}"
-                )
-        finally:
-            shutil.rmtree(tmpdir, ignore_errors=True)
 
 
 # ---------------------------------------------------------------------------
@@ -1175,7 +998,7 @@ class SafeBatchedCutStrategy(AudioCuttingStrategy):
 STRATEGY_REGISTRY = {
     "parallel_copy": ParallelCopyCutStrategy,
     "single_pass_filter": SinglePassFilterCutStrategy,
-    "safe_batched": SafeBatchedCutStrategy,
+    "sequential_copy": SequentialCopyCutStrategy,
 }
 
 
