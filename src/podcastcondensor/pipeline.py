@@ -1,12 +1,14 @@
 """Pipeline — orchestrate condensing workflow (DeepSeek-only).
 
-Phases (see CLAUDE.md):
-  1: Download         — yt-dlp: raw MP3 + raw SRT
-  2: Global state     — single DeepSeek call: outline + universe knowledge
-  3: Segmentation     — DeepSeek punctuate + sentence-range segment
-  4: Classification   — DeepSeek single-batch with universe context
-  5: Finalize         — dedup, resolve maybes, continuity bias, tail detect
-  6: Audio cutting    — build intervals, ffmpeg with beeps
+Phases:
+  1: Download          — yt-dlp: raw MP3 + raw SRT
+  2: Global state      — single DeepSeek call: outline + universe knowledge
+  3: Classify raw      — single DeepSeek call: tick keep/drop per SRT entry
+  4: Audio cutting     — build intervals from kept entries' real timestamps
+
+No segmentation, no punctuation fix, no sentence-to-entry mapping, no post-processing.
+The LLM decides directly on raw SRT entries. Universe state is provided as context
+so the LLM can avoid re-keeping content already covered in prior episodes.
 
 Every phase writes its primary artefact and checks for it on re-run (resumable).
 """
@@ -22,20 +24,14 @@ from typing import Optional
 from podcastcondensor.config import Config
 from podcastcondensor.downloader import download_all
 from podcastcondensor.subtitles import load_subtitles
-from podcastcondensor.global_state import build_global_state, map_blocks_to_segments
-from podcastcondensor.classifier import (
-    classify_segments,
-    global_cleanup,
-    resolve_maybe,
-    apply_continuity_bias,
-    detect_tail_block,
-)
+from podcastcondensor.global_state import build_global_state
+from podcastcondensor.classify_raw import classify_raw
 from podcastcondensor.intervals import build_intervals, compute_stats
 from podcastcondensor.audio_strategies import _get_audio_duration as get_audio_duration
 from podcastcondensor.audio_strategies import create_audio_strategy
 from podcastcondensor.universe_state import UniverseState
 from podcastcondensor.llm.deepseek import resolve_api_key, DeepSeekClient
-from podcastcondensor.segmentation.deepseek import DeepSeekSegmentation
+from podcastcondensor.segmentation.sentence_units import build_transcript_from_entries
 
 logger = logging.getLogger(__name__)
 
@@ -46,6 +42,7 @@ def run_pipeline(
     dry_run: bool = False,
     universe_state: Optional[UniverseState] = None,
     episode_num: Optional[int] = None,
+    debug_max_intervals: int = 0,
 ) -> dict:
     run_timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
@@ -55,7 +52,6 @@ def run_pipeline(
         "config": {
             "model": cfg.deepseek_model,
             "lang": cfg.lang,
-            "merge_gap": cfg.output_merge_gap,
             "speed": cfg.audio_speed,
         },
         "phases": {},
@@ -162,9 +158,6 @@ def run_pipeline(
         logger.info("Checkpoint HIT — loaded global_state.json")
     else:
         cleaned = load_subtitles(_ap("source_subtitles.srt"))
-        from podcastcondensor.segmentation.sentence_units import (
-            build_transcript_from_entries,
-        )
         transcript_text = build_transcript_from_entries(cleaned)
 
         global_data = build_global_state(
@@ -198,182 +191,172 @@ def run_pipeline(
         "concepts": len(global_data.get("concepts", [])),
     }
 
-    # ================================================================
-    # Phase 3: Segmentation  (artefact: segments.json)
-    # ================================================================
-    logger.info("=== Phase 3: Segmentation ===")
-    segments = _load_json(_ap("segments.json"))
-    if segments is not None:
-        segments = segments.get("segments", segments)
-        logger.info("Checkpoint HIT — loaded %d segments from segments.json", len(segments))
-    else:
-        cleaned = load_subtitles(_ap("source_subtitles.srt"))
-        from podcastcondensor.segmentation.sentence_units import (
-            build_transcript_from_entries,
-        )
-        transcript_text = build_transcript_from_entries(cleaned)
-
-        seg_strategy = DeepSeekSegmentation(
-            client=ds, timeout=cfg.deepseek_timeout,
-            max_tokens=cfg.segmentation_max_tokens,
-            checkpoint_dir=run_dir,
-        )
-        segments = seg_strategy.segment(
-            entries=cleaned, transcript_text=transcript_text,
-        )
-        for s in segments:
-            s["block_id"] = s.get("block_id", 0)
-
-        _write_json(_ap("segments.json"), {
-            "segments": segments,
-            "pipeline": "podcastcondensor",
-            "version": "0.3.0",
-        })
-
-    artifacts["phases"]["segmentation"] = {"segment_count": len(segments)}
-
-    # Map segments to topic blocks by word-index overlap
-    seg_to_block = global_data.get("chunk_to_block") or {}
-    if not seg_to_block:
-        # Rebuild transcript for word-offset calculation
-        seg_text = " ".join(s["text"] for s in segments)
-        seg_to_block = map_blocks_to_segments(
-            segments,
-            global_data.get("block_summaries", []),
-            seg_text,
-        )
-        global_data["chunk_to_block"] = seg_to_block
-
-    block_summaries = global_data.get("block_summaries", [])
     global_outline = global_data.get("global_outline", "")
 
-    for s in segments:
-        bid = seg_to_block.get(s.get("segment_id", s.get("uid")), 0)
-        s["block_id"] = bid
-        if bid == 0 and isinstance(s.get("uid"), str):
-            bid = seg_to_block.get(s["uid"], 0)
-            s["block_id"] = bid
+    # ================================================================
+    # Phase 3: Classify raw SRT entries  (artefact: decisions.json)
+    # ================================================================
+    logger.info("=== Phase 3: Classify raw SRT entries ===")
+    # Load cleaned entries with original SRT indices
+    # (clean_entries removes noise/echoes/dedups but preserves cue numbers)
+    entries = load_subtitles(_ap("source_subtitles.srt"), reindex=False)
+    logger.info("Phase 3: %d cleaned entries with original SRT indices", len(entries))
 
-    # max_blocks filter
-    if cfg.max_blocks > 0 and len(block_summaries) > cfg.max_blocks:
-        classify_segs = [s for s in segments if s["block_id"] <= cfg.max_blocks]
-        auto_drop_segs = [s for s in segments if s["block_id"] > cfg.max_blocks]
+    decisions = _load_json(_ap("decisions.json"))
+    if decisions is not None and isinstance(decisions, dict) and "ranges" in decisions:
+        logger.info("Checkpoint HIT — loaded decisions.json")
     else:
-        classify_segs = segments
-        auto_drop_segs = []
 
-    # ================================================================
-    # Phase 4: Classification  (artefact: none — decisions flow to Phase 5)
-    # ================================================================
-    logger.info("=== Phase 4: Classification ===")
+        universe_ctx = ""
+        if universe_state is not None:
+            universe_ctx = universe_state.get_context()
 
-    universe_ctx = ""
-    if universe_state is not None:
-        universe_ctx = universe_state.get_context()
+        result = classify_raw(
+            srt_path=_ap("source_subtitles.srt"),
+            client=ds,
+            global_outline=global_outline,
+            universe_state_context=universe_ctx,
+            model=cfg.deepseek_model,
+            timeout=cfg.deepseek_timeout or 600,
+            prompt_path=cfg.classify_raw_prompt_path,
+        )
 
-    decisions = classify_segments(
-        segments=classify_segs, client=ds,
-        global_outline=global_outline,
-        block_summaries=block_summaries,
-        model=cfg.deepseek_model,
-        prompt_path=cfg.classify_global_prompt_path,
-        timeout=cfg.deepseek_timeout,
-        universe_state_context=universe_ctx,
-    )
+        kept_ranges = result.get("kept_ranges", [])
+        dropped_ranges = result.get("dropped_ranges", [])
 
-    if auto_drop_segs:
-        existing_ids = {d["id"] for d in decisions}
-        for s in auto_drop_segs:
-            if s["segment_id"] not in existing_ids:
-                decisions.append({
-                    "id": s["segment_id"],
-                    "label": "drop",
-                    "reason": "beyond-max-blocks",
+        # Build text lookup by entry index (raw SRT index)
+        entry_texts = {e["index"]: e["text"] for e in entries}
+
+        def _annotate_ranges(ranges, default_label):
+            out = []
+            for r in ranges:
+                s, e = r.get("start", 0), r.get("end", 0)
+                texts = []
+                for ei in range(s, e + 1):
+                    t = entry_texts.get(ei, "")
+                    if t:
+                        texts.append(t)
+                out.append({
+                    "start": s,
+                    "end": e,
+                    "label": default_label,
+                    "reason": r.get("reason", ""),
+                    "text": " ".join(texts),
                 })
+            return out
 
-    artifacts["phases"]["classification"] = {"decision_count": len(decisions)}
+        annotated = (
+            _annotate_ranges(kept_ranges, "keep") +
+            _annotate_ranges(dropped_ranges, "drop")
+        )
+        annotated.sort(key=lambda r: r["start"])
 
-    _write_json(_ap("decisions.json"), decisions)
+        # Build per-entry decisions by raw entry index (matches LLM's cue numbers)
+        reasons = {}
+        for r in kept_ranges:
+            for ei in range(r.get("start", 0), r.get("end", 0) + 1):
+                reasons[ei] = ("keep", r.get("reason", ""))
+        for r in dropped_ranges:
+            for ei in range(r.get("start", 0), r.get("end", 0) + 1):
+                existing = reasons.get(ei)
+                if existing is None:
+                    reasons[ei] = ("drop", r.get("reason", ""))
+
+        # Only emit decisions for entries that exist in the raw SRT
+        per_entry = []
+        for e in entries:
+            label, reason = reasons.get(e["index"], ("drop", ""))
+            per_entry.append({"id": str(e["index"]), "label": label, "reason": reason})
+        per_entry.sort(key=lambda d: int(d["id"]))
+
+        decisions = {
+            "version": "0.4.0",
+            "episode": episode_num or 0,
+            "universe_state_used": bool(universe_ctx),
+            "total_entries": len(entries),
+            "kept_count": sum(1 for d in per_entry if d["label"] == "keep"),
+            "ranges": annotated,
+        }
+
+        _write_json(_ap("decisions.json"), decisions)
+
+    # Expand ranges into per-entry decisions for the audio cutter (checkpoint path)
+    if decisions.get("decisions") is None:
+        sd = decisions.get("ranges", [])
+        reasons = {}
+        for r in sd:
+            for ei in range(r.get("start", 0), r.get("end", 0) + 1):
+                reasons[ei] = (r.get("label", "drop"), r.get("reason", ""))
+
+        per_entry = []
+        for e in entries:
+            label, reason = reasons.get(e["index"], ("drop", ""))
+            per_entry.append({"id": str(e["index"]), "label": label, "reason": reason})
+        per_entry.sort(key=lambda d: int(d["id"]))
+        decisions["decisions"] = per_entry
+        # Fix stale metadata if checkpoint was from a buggy run
+        decisions["total_entries"] = len(per_entry)
+        decisions["kept_count"] = sum(1 for d in per_entry if d["label"] == "keep")
+
+    artifacts["phases"]["classify"] = {
+        "total_entries": decisions.get("total_entries", 0),
+        "kept_count": decisions.get("kept_count", 0),
+        "universe_state_used": decisions.get("universe_state_used", False),
+    }
 
     # ================================================================
-    # Phase 5: Finalize decisions  (artefact: decisions_final.json)
+    # Phase 4: Audio cutting  (artefact: condensed_*.mp3)
     # ================================================================
-    logger.info("=== Phase 5: Finalize decisions ===")
-    decisions = global_cleanup(segments, decisions)
-
-    maybe_ids = [d["id"] for d in decisions if d.get("label") == "maybe"]
-    if maybe_ids and cfg.resolve_maybe:
-        maybe_segs = [s for s in segments if s["segment_id"] in maybe_ids]
-        if maybe_segs:
-            logger.info("Resolving %d maybe segments...", len(maybe_segs))
-            decisions = resolve_maybe(
-                maybe_segments=maybe_segs, all_segments=segments,
-                all_decisions=decisions, client=ds,
-                model=cfg.deepseek_model,
-                prompt_path=cfg.classify_global_prompt_path,
-                timeout=120,
-            )
-
-    if cfg.enable_continuity_bias:
-        logger.info("Applying continuity bias...")
-        decisions = apply_continuity_bias(
-            segments, decisions, bridge_gap_sec=cfg.bridge_gap_sec,
-        )
-
-    if cfg.enable_tail_detection:
-        tail_ids = detect_tail_block(
-            segments, decisions,
-            tail_fraction=cfg.tail_fraction,
-            min_keep_fraction=cfg.tail_min_keep_fraction,
-        )
-        if tail_ids:
-            logger.info("Tail detection: force-dropping %d segments", len(tail_ids))
-            for d in decisions:
-                if d["id"] in tail_ids:
-                    d["label"] = "drop"
-                    d["reason"] = "tail"
-
-    _write_json(_ap("decisions_final.json"), decisions)
-    artifacts["phases"]["finalize"] = {"decision_count": len(decisions)}
-
-    if cfg.decisions_only:
-        logger.info("decisions_only=True — skipping audio cutting")
-        audio_duration = get_audio_duration(meta["audio_path"])
-        intervals = build_intervals(
-            segments, decisions,
-            merge_gap=cfg.output_merge_gap,
-            pad_before=cfg.pad_before,
-            pad_after=cfg.pad_after,
-            audio_duration=audio_duration,
-            cluster_gap=0,
-        )
-        stats = compute_stats(segments, decisions, intervals)
-        _write_json(_ap("stats.json"), stats)
-        artifacts["phases"]["intervals"] = {"interval_count": len(intervals)}
-        _print_results(stats, artifacts)
+    logger.info("=== Phase 4: Audio cutting ===")
+    audio_path = meta["audio_path"]
+    if not os.path.exists(audio_path):
+        artifacts["errors"].append(f"Audio not found: {audio_path}")
         return artifacts
 
-    # ================================================================
-    # Phase 6: Audio cutting  (artefact: condensed_*.mp3)
-    # ================================================================
-    logger.info("=== Phase 6: Audio cutting ===")
-    audio_duration = get_audio_duration(meta["audio_path"])
+    audio_duration = get_audio_duration(audio_path)
 
+    per_entry = decisions.get("decisions", [])
+
+    # Convert entries to segment-like dicts for the reverted intervals builder
+    segments = [
+        {"segment_id": str(e["index"]), "start": e["start"], "end": e["end"], "text": e["text"]}
+        for e in entries
+    ]
     intervals = build_intervals(
-        segments, decisions,
+        segments=segments, decisions=per_entry,
         merge_gap=cfg.output_merge_gap,
         pad_before=cfg.pad_before,
         pad_after=cfg.pad_after,
         audio_duration=audio_duration,
-        cluster_gap=0,  # no clustering — decisions are final
+        cluster_gap=cfg.cluster_gap,
     )
     artifacts["phases"]["intervals"] = {"interval_count": len(intervals)}
 
+    # ── Snapshot full intervals for stats (before any debug cap) ────────
+    full_intervals = list(intervals)
+
+    # ── DEBUG: cap intervals for quick test listen ──────────────────────
+    if debug_max_intervals > 0 and intervals:
+        original_count = len(intervals)
+        intervals = intervals[:debug_max_intervals]
+        logger.warning(
+            "🔎 DEBUG CAP: intervals truncated from %d to first %d — "
+            "output is NOT a full condensed episode!",
+            original_count, debug_max_intervals,
+        )
+
     condensed_path = _ap(f"condensed_{meta['video_id']}.{cfg.audio_format}")
+    if debug_max_intervals > 0:
+        # Mark debug output so it's not confused with a real run
+        name, ext = os.path.splitext(condensed_path)
+        condensed_path = f"{name}_DEBUG_{debug_max_intervals}intervals{ext}"
     if intervals:
-        strategy = create_audio_strategy(cfg.audio_strategy)
+        strategy = create_audio_strategy(
+            cfg.audio_strategy,
+            batch_size=cfg.audio_safe_batch_size,
+        )
         strategy.cut(
-            audio_path=meta["audio_path"], intervals=intervals,
+            audio_path=audio_path, intervals=intervals,
             output_path=condensed_path, format_spec=cfg.audio_format,
             sample_rate=cfg.audio_sample_rate, bitrate=cfg.audio_bitrate,
             speed=cfg.audio_speed,
@@ -383,9 +366,9 @@ def run_pipeline(
         artifacts["phases"]["audio"] = {"condensed_path": None}
 
     # ================================================================
-    # Results
+    # Results — use full_intervals so stats reflect the full episode
     # ================================================================
-    stats = compute_stats(segments, decisions, intervals)
+    stats = compute_stats(segments, per_entry, full_intervals)
     _write_json(_ap("stats.json"), stats)
     artifacts["output_dir"] = run_dir
     _print_results(stats, artifacts)
@@ -398,7 +381,7 @@ def _print_results(stats: dict, artifacts: dict):
     print("=" * 50)
     print("PODCAST CONDENSOR — RESULTS")
     print("=" * 50)
-    print(f"  Total segments:    {stats['total_segments']}")
+    print(f"  SRT entries:       {stats['total_segments']}")
     print(f"  Kept:              {stats['keep_count']}")
     print(f"  Dropped:           {stats['drop_count']}")
     print(f"  Original duration: {_fmt_duration(stats['original_duration_sec'])}")
@@ -407,6 +390,7 @@ def _print_results(stats: dict, artifacts: dict):
     if speed != 1.0:
         print(f"  At {speed}x:         {_fmt_duration(cd / speed)}")
     print(f"  Compression ratio: {stats['compression_ratio']:.1%}")
+    print(f"  Universe considered:{'yes' if artifacts.get('phases',{}).get('classify',{}).get('universe_state_used') else 'no'}")
     audio = artifacts.get("phases", {}).get("audio", {}).get("condensed_path")
     if audio:
         print(f"  Output:            {audio}")

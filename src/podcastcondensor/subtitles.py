@@ -154,8 +154,13 @@ def _partial_dedup(entries: List[dict]) -> List[dict]:
     return result
 
 
-def clean_entries(entries: List[dict]) -> List[dict]:
+def clean_entries(entries: List[dict], reindex: bool = True) -> List[dict]:
     """Clean raw subtitle entries: strip artifacts, dedup, remove echoes.
+
+    When *reindex* is True (default, backward-compatible) entries get
+    sequential 1‑based indices.  When False, original SRT cue numbers
+    are preserved (with gaps where noise/echo entries were removed),
+    matching what the LLM sees in the raw SRT file.
 
     Each returned entry:
       {index, start, end, text, type}
@@ -204,17 +209,25 @@ def clean_entries(entries: List[dict]) -> List[dict]:
         len(cleaned) - len(deduped), len(deduped),
     )
 
-    # Re-index
-    for i, entry in enumerate(deduped):
-        entry["index"] = i + 1
+    # Re-index (unless caller wants original SRT indices preserved)
+    if reindex:
+        for i, entry in enumerate(deduped):
+            entry["index"] = i + 1
 
     return deduped
 
 
-def load_subtitles(filepath: str) -> List[dict]:
+def load_subtitles(filepath: str, reindex: bool = True) -> List[dict]:
     """Load subtitles from .srt or .vtt file, return CLEANED entries.
 
-    This is the primary entry point. Output is cleaned and deduplicated.
+    When *reindex* is True (default), entries get sequential 1-based indices.
+    When False, original SRT cue numbers are preserved (with gaps where
+    noise/echo entries were removed), matching what the LLM sees in the raw
+    SRT.
+
+    Phase-2 callers (global state) should use the default reindex=True.
+    Phase-3/4 callers (raw classifier + audio cutting) should use
+    reindex=False so LLM decisions by cue number map to the actual entries.
     """
     if not os.path.exists(filepath):
         raise FileNotFoundError(f"Subtitle file not found: {filepath}")
@@ -223,6 +236,7 @@ def load_subtitles(filepath: str) -> List[dict]:
         text = f.read()
 
     raw = parse_srt_text(text)
-    cleaned = clean_entries(raw)
-    logger.info("Loaded %s: %d entries after cleaning", filepath, len(cleaned))
+    cleaned = clean_entries(raw, reindex=reindex)
+    logger.info("Loaded %s: %d entries after cleaning%s", filepath, len(cleaned),
+                " (original indices)" if not reindex else "")
     return cleaned

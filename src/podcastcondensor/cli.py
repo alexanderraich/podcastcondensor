@@ -88,6 +88,7 @@ def cmd_process_playlist(args):
         start_episode=args.start,
         end_episode=args.end,
         dry_run=args.dry_run,
+        debug_max_intervals=args.debug_max_intervals,
     )
     successful = sum(1 for r in results if r.get("success"))
     print(f"\nEpisodes: {successful}/{len(results)} successful")
@@ -125,6 +126,8 @@ def main():
     proc.add_argument("--dry-run", action="store_true")
     proc.add_argument("--prefer-auto-subs", action="store_true")
     proc.add_argument("--lang", default="en")
+    proc.add_argument("--debug-max-intervals", type=int, default=0,
+                      help="DEBUG: cap at N intervals for quick test listen")
     proc.set_defaults(func=cmd_process_playlist)
 
     args = parser.parse_args()

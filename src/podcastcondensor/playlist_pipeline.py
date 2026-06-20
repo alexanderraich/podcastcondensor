@@ -180,6 +180,7 @@ def process_with_universe_state(
     start_episode: int = 21,
     end_episode: Optional[int] = None,
     dry_run: bool = False,
+    debug_max_intervals: int = 0,
 ) -> List[dict]:
     """Process episodes using an existing UniverseState.
 
@@ -219,6 +220,7 @@ def process_with_universe_state(
                 dry_run=dry_run,
                 universe_state=state,
                 episode_num=episode_num,
+                debug_max_intervals=debug_max_intervals,
             )
 
             errors = result.get("errors", [])
