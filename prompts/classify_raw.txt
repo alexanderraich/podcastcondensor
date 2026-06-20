@@ -4,14 +4,25 @@ Return json only.
 Your goal: cut the show roughly in half. Target 45-55% of original duration.
 You may keep up to 75% if the episode is unusually dense, but default to ~50%.
 
+Lower bound: never go below 25%. If you find yourself keeping fewer than
+25% of entries, you are cutting genuine substance — revise upward.
+Audio under 25% is too choppy to listen to.
+
 The SRT is raw YouTube auto-captions — NO punctuation, lots of short fragments,
 and some pre-show chatter before the episode formally starts. Decide at a
 sentence level: use content and speaker rhythm to infer sentence boundaries,
 and NEVER cut in the middle of a sentence.
 
+CRITICAL — novelty threshold:
+Every passage must earn its keep by adding something **new** to the episode.
+A passage that merely restates, rephrases, or re-illustrates a point already
+made is filler — even if it is perfectly correct and theological on point.
+Ask yourself: "would the episode lose anything if this were gone?" If not, drop it.
+
 You receive:
 1. **episode_outline** — what this episode is about.
-2. **universe_state** — what has been covered in previous episodes (null if none, still focus on the episode outline).
+2. **universe_state** — what has been covered in previous episodes (null
+   if none, still focus on the episode outline).
 3. **srt** — the raw SRT subtitle file of the episode, with cue numbers.
 
 Return two lists of cue-number ranges with reasons:
@@ -29,22 +40,31 @@ Be aggressive about dropping:
 - Guest bio readings (keep the guest's actual commentary)
 - Caller introductions / "where are you calling from" banter
 - Off-topic tangents, extended jokes, banter that doesn't advance the topic
-- Restatements / paraphrases of the same point (keep one)
+- **Restatements of the same point — keep the FIRST clear statement, drop the rest.**
+  Includes: rephrasing the same idea in different words, extending an example
+  past its payoff, repeating a concept already said earlier in this episode.
+- **Illustrations beyond the first.** First analogy for a concept → keep.
+  Second analogy for the exact same concept → drop.
+- **Scriptural citations used as proof-texts in passing.** Exegesis of a primary
+  passage → keep. A verse cited briefly to support a point already made → drop.
 - Repetition of concepts already covered in universe_state without new depth
 - Closing remarks, email/phone repetition, outro
 
 **KEEP** (the core content):
-- Scriptural exegesis and theological argument
-- Historical context and patristic sources
+- Scriptural exegesis and theological argument — but only the FIRST time
+  each distinct argument appears. Drop rephrasings.
+- Historical context and patristic sources — same: one instance per source.
 - Doctrinal claims and distinctions
 - New concepts not in universe_state
-- Illustrative stories and analogies that genuinely clarify
+- Illustrative stories and analogies — the BEST one, not all of them.
+- Caller Q&A (question + host response, drop the pleasantries)
 
 {"kept_ranges": [
-  {"start": 108, "end": 218, "reason": "Exegesis of Genesis 6"},
-  {"start": 405, "end": 530, "reason": "Threefold office of Christ"}
+  {"start": 108, "end": 218, "reason": "First clear exegesis of Genesis 6 — core"},
+  {"start": 405, "end": 530, "reason": "Threefold office of Christ — new doctrinal claim"}
 ],
 "dropped_ranges": [
   {"start": 1, "end": 12, "reason": "Pre-show chatter and sponsor"},
-  {"start": 219, "end": 235, "reason": "Tangent about modern translation"}
+  {"start": 219, "end": 235, "reason": "Tangent about modern translation"},
+  {"start": 320, "end": 340, "reason": "Restatement of Genesis 6 exegesis already covered"}
 ]}
