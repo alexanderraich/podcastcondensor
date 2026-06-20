@@ -75,6 +75,7 @@ def cmd_process_playlist(args):
         output_root=os.path.abspath(args.output_dir) if args.output_dir else "",
         prefer_auto_subs=args.prefer_auto_subs,
         deepseek_timeout=600,
+        skip_audio=getattr(args, 'skip_audio', False),
     )
     state_path = os.path.abspath(args.state_file)
     if not os.path.exists(state_path):
@@ -128,6 +129,8 @@ def main():
     proc.add_argument("--lang", default="en")
     proc.add_argument("--debug-max-intervals", type=int, default=0,
                       help="DEBUG: cap at N intervals for quick test listen")
+    proc.add_argument("--skip-audio", action="store_true",
+                      help="Skip audio cutting phase (stats only)")
     proc.set_defaults(func=cmd_process_playlist)
 
     args = parser.parse_args()

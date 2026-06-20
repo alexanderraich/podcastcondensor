@@ -33,6 +33,7 @@ class Config:
     # Operation
     output_root: str = ""
     keep_temp: bool = False
+    skip_audio: bool = False
 
     # Download
     prefer_auto_subs: bool = False

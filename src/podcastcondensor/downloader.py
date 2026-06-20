@@ -93,6 +93,7 @@ def download_audio(
     outtmpl = os.path.join(output_dir, "%(id)s.%(ext)s")
     code, _, err = _run_ytdlp([
         "-x",
+        "--js-runtimes", "node",
         "--audio-format", audio_format,
         "--audio-quality", audio_bitrate,
         "--no-playlist",
@@ -157,6 +158,7 @@ def download_subtitles(
         code, _, err = _run_ytdlp([
             "--skip-download",
             "--no-playlist",
+            "--js-runtimes", "node",
             subs,
             *langs,
             "--convert-subs", "srt",

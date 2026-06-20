@@ -317,7 +317,20 @@ def run_pipeline(
 
     per_entry = decisions.get("decisions", [])
 
-    # Convert entries to segment-like dicts for the reverted intervals builder
+    # ── Print classifier stats before committing to audio cut ──────────
+    kept_ids = {d["id"] for d in per_entry if d["label"] == "keep"}
+    kept_dur = sum(e["end"] - e["start"] for e in entries if str(e["index"]) in kept_ids)
+    total_dur = sum(e["end"] - e["start"] for e in entries) if entries else 1
+    pct = 100 * kept_dur / total_dur if total_dur > 0 else 0
+    kept_entries_frac = 100 * len(kept_ids) / len(entries) if entries else 0
+    logger.info(
+        "CLASSIFICATION STATS: %d/%d entries kept (%d%%) — "
+        "estimate %.0fm / %.0fm (%.0f%% of duration)",
+        len(kept_ids), len(entries), int(kept_entries_frac),
+        kept_dur / 60, total_dur / 60, pct,
+    )
+
+    # Convert entries to segment-like dicts for intervals builder
     segments = [
         {"segment_id": str(e["index"]), "start": e["start"], "end": e["end"], "text": e["text"]}
         for e in entries
@@ -334,6 +347,17 @@ def run_pipeline(
 
     # ── Snapshot full intervals for stats (before any debug cap) ────────
     full_intervals = list(intervals)
+
+    # ── Compute + persist + print stats right away ──────────────────────
+    stats = compute_stats(segments, per_entry, full_intervals)
+    _write_json(_ap("stats.json"), stats)
+    artifacts["output_dir"] = run_dir
+    _print_results(stats, artifacts)
+
+    # ── Early exit if --skip-audio ──────────────────────────────────────
+    if cfg.skip_audio:
+        logger.info("Skip-audio set — stopping after stats (no audio cutting)")
+        return artifacts
 
     # ── DEBUG: cap intervals for quick test listen ──────────────────────
     if debug_max_intervals > 0 and intervals:
@@ -365,13 +389,6 @@ def run_pipeline(
     else:
         artifacts["phases"]["audio"] = {"condensed_path": None}
 
-    # ================================================================
-    # Results — use full_intervals so stats reflect the full episode
-    # ================================================================
-    stats = compute_stats(segments, per_entry, full_intervals)
-    _write_json(_ap("stats.json"), stats)
-    artifacts["output_dir"] = run_dir
-    _print_results(stats, artifacts)
     return artifacts
 
 
