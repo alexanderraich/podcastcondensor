@@ -60,11 +60,9 @@ Be aggressive about dropping:
 - Caller Q&A (question + host response, drop the pleasantries)
 
 {"kept_ranges": [
-  {"start": 108, "end": 218, "reason": "First clear exegesis of Genesis 6 — core"},
-  {"start": 405, "end": 530, "reason": "Threefold office of Christ — new doctrinal claim"}
+  {"start": 42, "end": 99, "reason": "Replace with actual keep range"},
+  {"start": 201, "end": 305, "reason": "Replace with actual keep range"}
 ],
 "dropped_ranges": [
-  {"start": 1, "end": 12, "reason": "Pre-show chatter and sponsor"},
-  {"start": 219, "end": 235, "reason": "Tangent about modern translation"},
-  {"start": 320, "end": 340, "reason": "Restatement of Genesis 6 exegesis already covered"}
+  {"start": 1, "end": 10, "reason": "Replace with actual drop range"}
 ]}
