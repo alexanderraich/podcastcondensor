@@ -16,13 +16,17 @@ Every phase writes its primary artefact and checks for it on re-run (resumable).
 import json
 import logging
 import os
-import shutil
 from pathlib import Path
 from datetime import datetime
 from typing import Optional
 
 from podcastcondensor.config import Config
-from podcastcondensor.downloader import download_all
+from podcastcondensor.downloader import (
+    download_audio,
+    download_metadata,
+    _find_existing_audio,
+)
+from podcastcondensor.transcribe import transcribe_audio
 from podcastcondensor.subtitles import load_subtitles
 from podcastcondensor.global_state import build_global_state
 from podcastcondensor.classify_raw import classify_raw
@@ -74,11 +78,7 @@ def run_pipeline(
         return None
 
     # Resolve video ID
-    from podcastcondensor.downloader import (
-        extract_video_id,
-        _find_existing_audio,
-        _find_existing_subtitle,
-    )
+    from podcastcondensor.downloader import extract_video_id
     local_video_id = extract_video_id(url)
     if not local_video_id:
         from podcastcondensor.downloader import download_metadata
@@ -101,38 +101,42 @@ def run_pipeline(
     ds = DeepSeekClient(api_key=api_key)
 
     # ================================================================
-    # Phase 1: Download  (artefact: source_subtitles.srt + audio)
+    # Phase 1: Download audio + transcribe  (artefact: source_subtitles.srt)
     # ================================================================
-    logger.info("=== Phase 1: Download ===")
-    if os.path.exists(_ap("source_subtitles.srt")):
-        logger.info("Checkpoint HIT — SRT exists, reusing")
-        audio_path = _find_existing_audio(run_dir, local_video_id, cfg.audio_format)
-        if not audio_path:
-            from podcastcondensor.downloader import download_audio
-            audio_path = download_audio(
-                url, run_dir, local_video_id,
-                audio_format=cfg.audio_format,
-                audio_bitrate=cfg.audio_bitrate,
-            )
-        meta = {
-            "video_id": local_video_id,
-            "title": local_video_id,
-            "audio_path": audio_path,
-            "subtitle_path": _find_existing_subtitle(run_dir, local_video_id) or "",
-        }
-    else:
-        meta = download_all(
-            url, output_dir=run_dir, lang=cfg.lang,
-            prefer_auto=cfg.prefer_auto_subs,
+    logger.info("=== Phase 1: Download + Transcribe ===")
+
+    # ── Download audio (checkpoint: existing audio file) ─────────
+    audio_path = _find_existing_audio(run_dir, local_video_id, cfg.audio_format)
+    if not audio_path:
+        audio_path = download_audio(
+            url, run_dir, local_video_id,
             audio_format=cfg.audio_format,
             audio_bitrate=cfg.audio_bitrate,
         )
-        # Normalise SRT name
-        srt_source = meta.get("subtitle_path") or ""
-        if srt_source and srt_source != _ap("source_subtitles.srt"):
-            shutil.copy2(srt_source, _ap("source_subtitles.srt"))
-            if os.path.exists(srt_source):
-                os.remove(srt_source)
+
+    # ── Fetch metadata for title ─────────────────────────────────
+    # Use existing global_state's title if available, otherwise fetch
+    existing_gs = _load_json(_ap("global_state.json"))
+    if existing_gs and existing_gs.get("episode_title"):
+        title = existing_gs["episode_title"]
+    else:
+        try:
+            meta_info = download_metadata(url)
+            title = meta_info.get("title", local_video_id)
+        except Exception:
+            title = local_video_id
+
+    # ── Transcribe audio to SRT (checkpoint: source_subtitles.srt) ──
+    if not os.path.exists(_ap("source_subtitles.srt")):
+        transcribe_audio(
+            audio_path, run_dir, model_size=cfg.whisper_model,
+        )
+
+    meta = {
+        "video_id": local_video_id,
+        "title": title,
+        "audio_path": audio_path,
+    }
 
     artifacts["phases"]["download"] = {
         "video_id": meta["video_id"],
@@ -146,7 +150,7 @@ def run_pipeline(
 
     # Ensure source_subtitles.srt exists
     if not os.path.exists(_ap("source_subtitles.srt")):
-        artifacts["errors"].append("No subtitles available after download.")
+        artifacts["errors"].append("No subtitles available after transcribing.")
         return artifacts
 
     # ================================================================
