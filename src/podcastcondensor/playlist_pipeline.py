@@ -11,12 +11,12 @@ Two modes:
 import json
 import logging
 import os
-import shutil
 from pathlib import Path
 from typing import List, Optional
 
 from podcastcondensor.config import Config
-from podcastcondensor.downloader import download_subtitles, resolve_episode_sources
+from podcastcondensor.downloader import download_audio, resolve_episode_sources
+from podcastcondensor.transcribe import transcribe_audio
 from podcastcondensor.subtitles import load_subtitles
 from podcastcondensor.universe_state import UniverseState
 from podcastcondensor.pipeline import run_pipeline
@@ -68,8 +68,6 @@ def build_universe_state(
     )
     logger.info("Resolved %d episode sources", len(sources))
 
-    download_dir = "/tmp/podcastcondensor/downloads"
-
     for src in sources:
         episode_num = src["episode_number"]
         video_url = src["video_url"]
@@ -89,26 +87,30 @@ def build_universe_state(
             with open(gs_path) as f:
                 global_data = json.load(f)
         else:
-            # Download SRT (cached by yt-dlp)
-            subtitle_path = download_subtitles(
+            # Download audio + transcribe to SRT
+            audio_path = download_audio(
                 url=video_url,
-                output_dir=download_dir,
+                output_dir=ep_dir,
                 video_id=src["id"],
-                lang=cfg.lang,
-                prefer_auto=cfg.prefer_auto_subs,
+                audio_format=cfg.audio_format,
+                audio_bitrate=cfg.audio_bitrate,
             )
 
-            if not subtitle_path:
-                logger.warning("No subtitles for episode %d, skipping", episode_num)
+            if not audio_path:
+                logger.warning("No audio for episode %d, skipping", episode_num)
                 continue
 
-            # Copy raw SRT into ep dir
+            transcribe_audio(
+                audio_path, ep_dir, model_size=cfg.whisper_model,
+            )
+
             target_srt = os.path.join(ep_dir, "source_subtitles.srt")
-            if subtitle_path != target_srt:
-                shutil.copy2(subtitle_path, target_srt)
+            if not os.path.exists(target_srt):
+                logger.warning("Transcription failed for episode %d, skipping", episode_num)
+                continue
 
             # Clean + build transcript
-            cleaned = load_subtitles(subtitle_path)
+            cleaned = load_subtitles(target_srt)
             logger.info("Cleaned %d subtitle entries", len(cleaned))
 
             if dry_run:

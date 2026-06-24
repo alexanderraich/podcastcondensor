@@ -30,6 +30,9 @@ class Config:
     audio_parallel_workers: int = 2
     audio_safe_batch_size: int = 6
 
+    # Transcription (faster-whisper)
+    whisper_model: str = "base"
+
     # Operation
     output_root: str = ""
     keep_temp: bool = False
