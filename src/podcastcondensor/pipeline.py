@@ -16,6 +16,7 @@ Every phase writes its primary artefact and checks for it on re-run (resumable).
 import json
 import logging
 import os
+import traceback
 from pathlib import Path
 from datetime import datetime
 from typing import Optional
@@ -38,6 +39,56 @@ from podcastcondensor.llm.deepseek import resolve_api_key, DeepSeekClient
 from podcastcondensor.segmentation.sentence_units import build_transcript_from_entries
 
 logger = logging.getLogger(__name__)
+
+# ── Crash-safe telemetry ────────────────────────────────────────────────────
+# WSL can OOM and hard-crash.  Normal logger writes may not flush to disk.
+# We maintain a fsynced _step.txt that survives reboot.
+
+TELEMETRY_FILENAME = "_step.txt"
+
+
+def _telemetry_path(run_dir: str) -> str:
+    return os.path.join(run_dir, TELEMETRY_FILENAME)
+
+
+def write_step(run_dir: str, step_name: str):
+    """Crash-safe step marker — fsynced immediately so it survives WSL crash."""
+    path = _telemetry_path(run_dir)
+    try:
+        Path(run_dir).mkdir(parents=True, exist_ok=True)
+        with open(path, "w") as f:
+            f.write(f"{datetime.now().isoformat()} {step_name}\n")
+            f.flush()
+            os.fsync(f.fileno())
+    except Exception:
+        pass  # telemetry must never block the pipeline
+
+
+def read_last_step(run_dir: str) -> str:
+    """Return the last completed step, or empty string."""
+    path = _telemetry_path(run_dir)
+    try:
+        if os.path.exists(path):
+            with open(path) as f:
+                return f.read().strip()
+    except Exception:
+        pass
+    return ""
+
+
+def log_crash(run_dir: str, phase: str, exc_info):
+    """Append crash details to a _crash.log (fsynced)."""
+    path = os.path.join(run_dir, "_crash.log")
+    try:
+        Path(run_dir).mkdir(parents=True, exist_ok=True)
+        with open(path, "a") as f:
+            f.write(f"=== CRASH at {datetime.now().isoformat()} during phase [{phase}] ===\n")
+            traceback.print_exception(*exc_info, file=f)
+            f.write("\n")
+            f.flush()
+            os.fsync(f.fileno())
+    except Exception:
+        pass
 
 
 def run_pipeline(
@@ -91,6 +142,12 @@ def run_pipeline(
         run_dir = os.path.join(cfg.output_root, local_video_id)
     Path(run_dir).mkdir(parents=True, exist_ok=True)
 
+    # ── Telemetry: show last completed step ─────────────────────────
+    last_step = read_last_step(run_dir)
+    if last_step:
+        logger.info("📊 TELEMETRY: last completed step was — %s", last_step)
+    write_step(run_dir, f"PIPELINE_START ep={episode_num} url={url}")
+
     # DeepSeek client
     api_key = resolve_api_key()
     if not api_key:
@@ -108,14 +165,15 @@ def run_pipeline(
     # ── Download audio (checkpoint: existing audio file) ─────────
     audio_path = _find_existing_audio(run_dir, local_video_id, cfg.audio_format)
     if not audio_path:
+        logger.info("TELEMETRY: downloading audio...")
         audio_path = download_audio(
             url, run_dir, local_video_id,
             audio_format=cfg.audio_format,
             audio_bitrate=cfg.audio_bitrate,
         )
+    write_step(run_dir, "PHASE1_AUDIO_DOWNLOADED")
 
     # ── Fetch metadata for title ─────────────────────────────────
-    # Use existing global_state's title if available, otherwise fetch
     existing_gs = _load_json(_ap("global_state.json"))
     if existing_gs and existing_gs.get("episode_title"):
         title = existing_gs["episode_title"]
@@ -128,9 +186,14 @@ def run_pipeline(
 
     # ── Transcribe audio to SRT (checkpoint: source_subtitles.srt) ──
     if not os.path.exists(_ap("source_subtitles.srt")):
+        logger.info("TELEMETRY: transcribing audio (this may be slow / crash-prone)...")
+        write_step(run_dir, "PHASE1_TRANSCRIBE_STARTING")
         transcribe_audio(
             audio_path, run_dir, model_size=cfg.whisper_model,
         )
+        write_step(run_dir, "PHASE1_TRANSCRIBE_DONE")
+    else:
+        write_step(run_dir, "PHASE1_TRANSCRIBE_SKIPPED_CHECKPOINT")
 
     meta = {
         "video_id": local_video_id,
@@ -146,6 +209,7 @@ def run_pipeline(
 
     if dry_run:
         logger.info("Dry run: stopping after download")
+        write_step(run_dir, "PIPELINE_DRYRUN_EXIT")
         return artifacts
 
     # Ensure source_subtitles.srt exists
@@ -160,10 +224,13 @@ def run_pipeline(
     global_data = _load_json(_ap("global_state.json"))
     if global_data is not None:
         logger.info("Checkpoint HIT — loaded global_state.json")
+        write_step(run_dir, "PHASE2_CHECKPOINT_HIT")
     else:
+        write_step(run_dir, "PHASE2_START")
         cleaned = load_subtitles(_ap("source_subtitles.srt"))
         transcript_text = build_transcript_from_entries(cleaned)
 
+        write_step(run_dir, "PHASE2_CALLING_DEEPSEEK")
         global_data = build_global_state(
             transcript_text=transcript_text,
             episode_title=meta.get("title", ""),
@@ -173,6 +240,7 @@ def run_pipeline(
             prompt_path=cfg.global_state_prompt_path,
             timeout=cfg.deepseek_timeout,
         )
+        write_step(run_dir, "PHASE2_DEEPSEEK_RESPONSE_RECEIVED")
 
         # Merge structured knowledge into universe state if available
         if universe_state is not None:
@@ -188,6 +256,7 @@ def run_pipeline(
 
         # Persist
         _write_json(_ap("global_state.json"), global_data)
+        write_step(run_dir, "PHASE2_DONE")
 
     artifacts["phases"]["global_state"] = {
         "num_blocks": len(global_data.get("block_summaries", [])),
@@ -209,12 +278,14 @@ def run_pipeline(
     decisions = _load_json(_ap("decisions.json"))
     if decisions is not None and isinstance(decisions, dict) and "ranges" in decisions:
         logger.info("Checkpoint HIT — loaded decisions.json")
+        write_step(run_dir, "PHASE3_CHECKPOINT_HIT")
     else:
-
+        write_step(run_dir, "PHASE3_START")
         universe_ctx = ""
         if universe_state is not None:
             universe_ctx = universe_state.get_context()
 
+        write_step(run_dir, "PHASE3_CALLING_DEEPSEEK")
         result = classify_raw(
             srt_path=_ap("source_subtitles.srt"),
             client=ds,
@@ -283,6 +354,7 @@ def run_pipeline(
         }
 
         _write_json(_ap("decisions.json"), decisions)
+        write_step(run_dir, "PHASE3_DONE")
 
     # Expand ranges into per-entry decisions for the audio cutter (checkpoint path)
     if decisions.get("decisions") is None:
@@ -312,6 +384,7 @@ def run_pipeline(
     # Phase 4: Audio cutting  (artefact: condensed_*.mp3)
     # ================================================================
     logger.info("=== Phase 4: Audio cutting ===")
+    write_step(run_dir, "PHASE4_START")
     audio_path = meta["audio_path"]
     if not os.path.exists(audio_path):
         artifacts["errors"].append(f"Audio not found: {audio_path}")
@@ -348,6 +421,7 @@ def run_pipeline(
         cluster_gap=cfg.cluster_gap,
     )
     artifacts["phases"]["intervals"] = {"interval_count": len(intervals)}
+    write_step(run_dir, f"PHASE4_INTERVALS_BUILT count={len(intervals)}")
 
     # ── Snapshot full intervals for stats (before any debug cap) ────────
     full_intervals = list(intervals)
@@ -361,6 +435,8 @@ def run_pipeline(
     # ── Early exit if --skip-audio ──────────────────────────────────────
     if cfg.skip_audio:
         logger.info("Skip-audio set — stopping after stats (no audio cutting)")
+        write_step(run_dir, "PHASE4_SKIP_AUDIO")
+        write_step(run_dir, "PIPELINE_DONE_SKIP_AUDIO")
         return artifacts
 
     # ── DEBUG: cap intervals for quick test listen ──────────────────────
@@ -383,6 +459,7 @@ def run_pipeline(
             cfg.audio_strategy,
             batch_size=cfg.audio_safe_batch_size,
         )
+        write_step(run_dir, "PHASE4_CUTTING_START")
         strategy.cut(
             audio_path=audio_path, intervals=intervals,
             output_path=condensed_path, format_spec=cfg.audio_format,
@@ -390,9 +467,11 @@ def run_pipeline(
             speed=cfg.audio_speed,
         )
         artifacts["phases"]["audio"] = {"condensed_path": condensed_path}
+        write_step(run_dir, "PHASE4_CUTTING_DONE")
     else:
         artifacts["phases"]["audio"] = {"condensed_path": None}
 
+    write_step(run_dir, "PIPELINE_DONE")
     return artifacts
 
 

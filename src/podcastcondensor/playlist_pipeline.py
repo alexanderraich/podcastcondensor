@@ -11,6 +11,8 @@ Two modes:
 import json
 import logging
 import os
+import traceback
+from datetime import datetime
 from pathlib import Path
 from typing import List, Optional
 
@@ -24,6 +26,21 @@ from podcastcondensor.llm.deepseek import resolve_api_key, DeepSeekClient
 from podcastcondensor.global_state import build_global_state
 
 logger = logging.getLogger(__name__)
+
+
+def _write_crash_log(ep_dir: str, context: str, exc: Exception):
+    """Crash-safe exception log (fsynced)."""
+    path = os.path.join(ep_dir, "_crash.log")
+    try:
+        Path(ep_dir).mkdir(parents=True, exist_ok=True)
+        with open(path, "a") as f:
+            f.write(f"=== CRASH at {datetime.now().isoformat()} context=[{context}] ===\n")
+            traceback.print_exception(type(exc), exc, exc.__traceback__, file=f)
+            f.write("\n")
+            f.flush()
+            os.fsync(f.fileno())
+    except Exception:
+        pass
 
 
 # ---------------------------------------------------------------------------
@@ -271,6 +288,9 @@ def process_with_universe_state(
             logger.exception(
                 "Failed to process episode %d: %s", episode_num, e,
             )
+            # Write crash-safe telemetry
+            ep_dir = os.path.join(cfg.output_root, f"ep-{episode_num:03d}")
+            _write_crash_log(ep_dir, f"process_episode_{episode_num}", e)
             results.append({
                 "episode": episode_num,
                 "title": title,
