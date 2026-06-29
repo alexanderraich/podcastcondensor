@@ -5,6 +5,7 @@ to provide the CUDA runtime libraries for ctranslate2.
 """
 
 import ctypes
+import gc
 import logging
 import os
 import subprocess
@@ -329,74 +330,128 @@ def transcribe_audio(
     _diag_write(f"MODEL_LOAD_DONE in {time.time() - t_model:.1f}s")
     _log_gpu_memory("after-model-load")
 
-    t_start = time.time()
-    _diag_write("CALLING model.transcribe()")
-    logger.info("Starting faster-whisper transcribe() call...")
+    # ── Decode audio to numpy array first ────────────────────────────
+    # faster-whisper's FeatureExtractor.__call__ computes the STFT over
+    # the ENTIRE audio at once, creating multi-GB intermediate arrays
+    # (complex128 ~3 GB, windowed ~1.5 GB) for a 2.84h episode.
+    # This causes OOM on 8 GB systems.
+    #
+    # Fix: decode audio into a numpy array, then process in 30-second
+    # chunks so each STFT call only sees ~480k samples (~26 MB peak
+    # instead of 5+ GB).
+    _diag_write("DECODE_AUDIO_START")
+    from faster_whisper.audio import decode_audio as _decode_audio
+
+    audio_array = _decode_audio(audio_path, sampling_rate=16000)
+    _diag_write(f"DECODE_AUDIO_DONE: {len(audio_array)} samples")
+
+    CHUNK_SEC = 30
+    CHUNK_SAMPLES = CHUNK_SEC * 16000  # 480 000
+    n_chunks = (len(audio_array) + CHUNK_SAMPLES - 1) // CHUNK_SAMPLES
+    _diag_write(f"Processing in {n_chunks} chunks of {CHUNK_SEC}s each")
+    logger.info(
+        "Decoded %d samples (%.1fs) — processing in %d x %ds chunks",
+        len(audio_array), len(audio_array) / 16000, n_chunks, CHUNK_SEC,
+    )
 
     # ── Start watchdog (heartbeat while transcribe blocks) ──────────
-    # Stays running through BOTH the transcribe() call AND the segment
-    # iteration — faster-whisper's generator does on-the-fly decode,
-    # so CUDA is active the whole time.
     watchdog_thread = _run_watchdog(diag_path)
 
-    try:
-        # Memory-conservative settings:
-        #   beam_size=1          — no multi-hypothesis overhead
-        #   vad_filter=False      — no VAD pre-pass (biggest memory spike)
-        #   condition_on_previous_text=False  — prevents memory leak from
-        #                                       growing n-gram cache on
-        #                                       very long audio
-        segments, info = model.transcribe(
-            audio_path,
-            beam_size=beam_size,
-            language="en",
-            vad_filter=vad_filter,
-            condition_on_previous_text=condition_on_previous_text,
-        )
-    except Exception as exc:
-        _stop_watchdog()
-        _diag_write(f"TRANSCRIBE_EXCEPTION: {type(exc).__name__}: {exc}")
-        import traceback as _tb
-        _diag_write(f"TRANSCRIBE_EXCEPTION traceback: {_tb.format_exc()}")
-        logger.exception("model.transcribe() raised an exception")
-        raise
-
-    elapsed_init = time.time() - t_start
-    _diag_write(
-        f"Transcribe() RETURNED generator after {elapsed_init:.1f}s — "
-        f"language={info.language} prob={info.language_probability*100:.0f}%",
-    )
-    logger.info(
-        "Transcribe() returned generator after %.1fs — language %s (%.0f%%), iterating...",
-        elapsed_init,
-        info.language, info.language_probability * 100,
-    )
-
+    t_start = time.time()
     count = 0
     log_every = 100
-    try:
-        with open(output_srt, "w", encoding="utf-8") as f:
-            for seg in segments:
-                count += 1
-                f.write(f"{count}\n")
-                f.write(f"{_srt_timestamp(seg.start)} --> {_srt_timestamp(seg.end)}\n")
-                f.write(f"{seg.text.strip()}\n\n")
+    first_chunk = True
 
-                if count % log_every == 0:
-                    elapsed = time.time() - t_start
-                    seg_dur = seg.end - seg.start
-                    msg = (
-                        f"Progress: seg={count} elapsed={elapsed:.0f}s "
-                        f"current_seg={seg.start:.1f}–{seg.end:.1f} dur={seg_dur:.1f}s"
+    for chunk_idx in range(n_chunks):
+        chunk = audio_array[
+            chunk_idx * CHUNK_SAMPLES : (chunk_idx + 1) * CHUNK_SAMPLES
+        ]
+        chunk_offset = chunk_idx * CHUNK_SEC
+
+        _diag_write(
+            f"CHUNK {chunk_idx + 1}/{n_chunks} "
+            f"offset={chunk_offset}s samples={len(chunk)}"
+        )
+
+        # Force GC before each chunk to keep RSS low — NumPy's allocator
+        # tends to hold freed large arrays in its internal pool.
+        gc.collect()
+
+        try:
+            segs, info = model.transcribe(
+                chunk,  # Pass numpy array (skips decode_audio inside fw)
+                beam_size=beam_size,
+                language="en",
+                vad_filter=vad_filter,
+                condition_on_previous_text=condition_on_previous_text,
+            )
+        except Exception as exc:
+            _stop_watchdog()
+            _diag_write(
+                f"CHUNK_TRANSCRIBE_EXCEPTION chunk={chunk_idx}: "
+                f"{type(exc).__name__}: {exc}"
+            )
+            import traceback as _tb
+            _diag_write(
+                f"CHUNK_TRANSCRIBE_EXCEPTION traceback: {_tb.format_exc()}"
+            )
+            raise
+
+        if first_chunk:
+            _diag_write(
+                f"First chunk: language={info.language} "
+                f"prob={info.language_probability*100:.0f}%"
+            )
+            first_chunk = False
+
+        # Write chunks to SRT — append mode after first
+        open_mode = "w" if chunk_idx == 0 else "a"
+        try:
+            seg_count = 0
+            with open(output_srt, open_mode, encoding="utf-8") as f:
+                for seg in segs:
+                    count += 1
+                    seg_count += 1
+                    seg.start += chunk_offset
+                    seg.end += chunk_offset
+                    f.write(f"{count}\n")
+                    f.write(
+                        f"{_srt_timestamp(seg.start)} --> "
+                        f"{_srt_timestamp(seg.end)}\n"
                     )
-                    logger.info("📊 %s", msg)
-    except Exception as exc:
-        _stop_watchdog()
-        _diag_write(f"SEGMENT_ITER_EXCEPTION: {type(exc).__name__}: {exc}")
-        import traceback as _tb
-        _diag_write(f"SEGMENT_ITER_EXCEPTION traceback: {_tb.format_exc()}")
-        logger.exception("Segment iteration crashed")
-        raise
+                    f.write(f"{seg.text.strip()}\n\n")
+
+                    if count % log_every == 0:
+                        elapsed = time.time() - t_start
+                        msg = (
+                            f"Progress: seg={count} elapsed={elapsed:.0f}s "
+                            f"current_seg={seg.start:.1f}–{seg.end:.1f} "
+                            f"dur={seg.end - seg.start:.1f}s"
+                        )
+                        logger.info("📊 %s", msg)
+        except Exception as exc:
+            _stop_watchdog()
+            _diag_write(
+                f"CHUNK_SEGMENT_ITER_EXCEPTION chunk={chunk_idx}: "
+                f"{type(exc).__name__}: {exc}"
+            )
+            import traceback as _tb
+            _diag_write(
+                f"CHUNK_SEGMENT_ITER_EXCEPTION traceback: {_tb.format_exc()}"
+            )
+            raise
+
+        _diag_write(
+            f"CHUNK {chunk_idx + 1}/{n_chunks} done — "
+            f"{seg_count} segments this chunk, {count} total"
+        )
+
+        # Release chunk reference so GC can free it
+        del segs, chunk
+
+    # Free the big audio array
+    del audio_array
+    gc.collect()
 
     _stop_watchdog()
     total_time = time.time() - t_start
