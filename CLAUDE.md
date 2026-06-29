@@ -97,3 +97,26 @@ SRT → clean ──→ Global state ──→ merge into state
 SRT → clean → Global state → classify raw → cut audio
                (phase 2)     (3)          (4)
 ```
+
+## Transcription (faster-whisper) — OOM prevention
+
+On the 8 GB RAM / 6 GB VRAM WSL2 machine, transcription is the most crash-prone phase. Defaults are set for memory-conservative operation:
+
+| Setting | Default | Why |
+|---------|---------|-----|
+| `whisper_beam_size` | `1` | Beam 3 keeps 3× decoder state |
+| `whisper_vad_filter` | `False` | VAD pre-scan doubles peak GPU memory on 2.75h audio |
+| `whisper_condition_on_prev` | `False` | Text cache grows unbounded on long audio — disabling prevents memory leak |
+
+Environment: `OMP_NUM_THREADS=2` and `MKL_NUM_THREADS=2` are set before any C library import to prevent OpenMP thread explosion.
+
+All three are configurable via `config.py` under the `# Transcription` section. To run on a machine with 16+ GB RAM / 8+ GB VRAM:
+```python
+whisper_beam_size = 5
+whisper_vad_filter = True
+whisper_condition_on_prev = True
+```
+
+**Diagnostics:** Every `logger.info/warning/error` from `transcribe.py` is automatically tee'd (via `_DiagLogHandler`) to `output/ep-NNN/_transcribe_diag.log` with immediate fsync. Additionally a watchdog daemon thread heartbeats every 30s during the blocking `model.transcribe()` call, with GPU memory snapshots every 60s and system memory every 120s. If the Python process is OOM-killed, the diag log survives up to the last written line.
+
+**DON'T** use `os.dup2` / fd redirection for diagnostics — it can corrupt the terminal state of the parent Claude session on crash.

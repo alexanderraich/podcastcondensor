@@ -118,7 +118,11 @@ def build_universe_state(
                 continue
 
             transcribe_audio(
-                audio_path, ep_dir, model_size=cfg.whisper_model,
+                audio_path, ep_dir,
+                model_size=cfg.whisper_model,
+                beam_size=cfg.whisper_beam_size,
+                vad_filter=cfg.whisper_vad_filter,
+                condition_on_previous_text=cfg.whisper_condition_on_prev,
             )
 
             target_srt = os.path.join(ep_dir, "source_subtitles.srt")
