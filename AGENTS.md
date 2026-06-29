@@ -35,6 +35,20 @@
 | `prompts/global_state.txt` | Prompt for Phase 2 |
 | `CLAUDE.md` | Pipeline docs, open points |
 
+## Crash recovery / resume
+
+The pipeline is fully resumable — every phase checks for its artefact before running. If a phase crashes, just re-run the same command.
+
+**Diagnostic artifacts after a crash:**
+
+| File | What it captures |
+|------|-----------------|
+| `output/ep-NNN/_transcribe_diag.log` | Every `logger.info/warning/error` from the transcribe module + watchdog heartbeats every 30s + exception tracebacks. All fsynced immediately — survives WSL OOM kill. |
+
+**Transcribe crash troubleshooting:** If the diag log ends at `CALLING model.transcribe()` with no watchdog tick, the crash is in the first 30s of the faster-whisper call (likely GPU OOM or driver panic). Lower `whisper_beam_size` (default 1) and set `whisper_vad_filter=False` in `config.py`. If watchdog ticks appear, the model is running but eventually runs out of memory or time.
+
+**Never hook fd 2.** Do not use `os.dup2` to redirect stderr — it can leave the terminal in a broken state if the process crashes mid-redirect, killing the parent Claude session.
+
 ## When you're stuck
 
 Do not iterate blindly. Compile a diagnostic with the actual data, the relevant code, and what's needed — hand it to the user.

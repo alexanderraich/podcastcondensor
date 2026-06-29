@@ -32,6 +32,9 @@ class Config:
 
     # Transcription (faster-whisper)
     whisper_model: str = "base"
+    whisper_beam_size: int = 1
+    whisper_vad_filter: bool = False
+    whisper_condition_on_prev: bool = False
 
     # Operation
     output_root: str = ""
