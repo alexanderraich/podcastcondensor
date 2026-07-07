@@ -379,7 +379,10 @@ def run_pipeline(
             original_count, debug_max_intervals,
         )
 
-    condensed_path = _ap(f"condensed_{meta['video_id']}.{cfg.audio_format}")
+    if episode_num is not None:
+        condensed_path = _ap(f"condensed_ep{episode_num:03d}.{cfg.audio_format}")
+    else:
+        condensed_path = _ap(f"condensed_{meta['video_id']}.{cfg.audio_format}")
     if debug_max_intervals > 0:
         # Mark debug output so it's not confused with a real run
         name, ext = os.path.splitext(condensed_path)
