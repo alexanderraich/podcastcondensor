@@ -98,6 +98,114 @@ SRT → clean → Global state → classify raw → cut audio
                (phase 2)     (3)          (4)
 ```
 
+## Master Cut — Cross-Episode Thematic Anthology
+
+The `build-master-cut` subcommand produces a single audio file from all ~140
+episodes containing only the core thematic content, at configurable duration
+(default 3.5h).
+
+### Pipeline (6 phases)
+
+| # | Phase | Artefact | Key file |
+|---|-------|----------|----------|
+| 1 | **Download** | audio + SRT per episode | `download_pool.py` |
+| 2 | **Global state** | `global_state.json` with `word_ranges` per item | `global_state.py` |
+| 3 | **Universe merge** | `universe_state.json` with timestamp segments | `universe_state.py` |
+| 4 | **Theme extraction** | `themes.json` (one DeepSeek call) | `theme_extraction.py` |
+| 5 | **Selection** | ordered playlist within time budget | `master_cut.py` |
+| 6 | **Audio assembly** | `master_cut.mp3` with dual beeps | `master_cut.py` |
+
+### Audio Position Architecture (critical design decision)
+
+**No keyword-based back-mapping from concepts to audio.**
+
+Phase 2 produces `word_ranges` on each concept/entity/claim alongside its
+definition. A post-process converts word indices to timestamps via the SRT
+entries. The universe state stores:
+
+```json
+{
+  "id": "divine-council",
+  "title": "Divine Council",
+  "segments": [
+    {"episode": 1, "start": 600, "end": 669, "word_start": 1700, "word_end": 1900}
+  ]
+}
+```
+
+**Known limitation — Phase 2 over-tagging:** The LLM's word_ranges include
+*tangential mentions* of a concept (e.g. "we're not teaching angelology"
+gets tagged under `divine-council`). Solutions:
+1. When resolving theme segments, **use concepts only** — skip entities,
+   claims, scriptural_links, and glossary (which contain host intros and
+   generic references). See `resolve_theme_segments_from_state()`.
+2. For tighter audio, **run Phase 3 classifier** with a stricter prompt
+   (target 80-90% drop) and use its keep/drop decisions as a filter on
+   the concept word_ranges. Without classifier, expect 30-50% content
+   to be intros, previews, and meta-talk.
+
+### Phase 3 Classifier
+
+The classifier is required to produce listenable output. It receives the
+raw SRT, the episode outline, and the universe state as context. The
+default prompt targets 50% compression; for master cut purposes the
+prompt should target 80-90% drop — only keep substantive exegesis,
+historical context, and doctrinal claims.
+
+### Master Cut Selection Algorithm
+
+The `select_segments_for_master_cut()` function:
+1. Sorts themes by importance descending.
+2. Allocates a time budget proportional to each theme's importance weight.
+3. Takes segments chronologically within each theme as a **contiguous block**
+   (not interleaved across themes).
+4. Ensures at least `min_segs` per theme (scales with target duration:
+   2 for 10min, 5 for 42min, 10 for 3.5h).
+5. Skips themes that can't fill `min_segs` — their budget redistributes.
+6. Single beep within a theme, triple beep between themes.
+
+### Data sizes (determines everything)
+
+| Metric | Per episode | 29 eps | 140 eps |
+|--------|-------------|--------|---------|
+| Cleaned transcript | ~113K chars / ~28K tokens | 3.3M chars | 15.9 MB |
+| SRT raw | ~480K chars | 13.9 MB | 67 MB |
+
+**Batching is impossible:** even 2 episodes fill 56K tokens — beyond the
+64K DeepSeek context with any prompt overhead. Phase 2 must be one
+DeepSeek call per episode. This is the binding constraint.
+
+### Why Phase 2 must be per-episode (and no keyword grep)
+
+The naive approach would be: universe state stores only concept names →
+keyword-grep all SRTs to find where each gets mentioned → map to
+timestamps. This fails because YT auto-captions transcribe vocabulary
+unreliably ("divine council" → "the divine counsel", "theosis" →
+absent). Even whisper has recognition variation across episodes.
+
+The correct flow: whisper transcribe → DeepSeek reads the full cleaned
+transcript → **DeepSeek itself** identifies where each concept is
+discussed (via word indices) → post-process converts to exact audio
+timestamps via SRT entries. No text search, no vocabulary guesswork.
+
+## `build-master-cut` command
+
+```bash
+python3 -m podcastcondensor build-master-cut \
+  [PLAYLIST_URL] \
+  --state-file output/universe_state.json \
+  --output master_cut.mp3 \
+  --target-duration 12600 \
+  [--force-whisper] \
+  [--parallel-downloads 4]
+```
+
+### Dual beep system
+
+- **Single beep** (250ms, 1000Hz): between segments within the same theme
+- **Triple beep** (3×250ms, 250ms gaps): between different themes
+Generated via ffmpeg sine + concat demuxer. No filter_complex.
+
 ## Transcription (faster-whisper) — OOM prevention
 
 On the 8 GB RAM / 6 GB VRAM WSL2 machine, transcription is the most crash-prone phase. Defaults are set for memory-conservative operation:

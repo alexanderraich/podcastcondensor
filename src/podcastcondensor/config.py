@@ -45,6 +45,14 @@ class Config:
     prefer_auto_subs: bool = False
     lang: str = "en"
 
+    # Master cut
+    master_cut_target_duration: int = 12600
+    master_cut_output: str = "master_cut.mp3"
+    master_cut_parallel_downloads: int = 4
+    master_cut_cluster_gap: float = 15.0
+    master_cut_min_segment: float = 15.0
+    master_cut_prefer_yt_subs: bool = True
+
     def __post_init__(self):
         base = os.path.abspath(
             os.path.join(os.path.dirname(__file__), "..", "..")

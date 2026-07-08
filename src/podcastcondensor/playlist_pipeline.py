@@ -6,6 +6,11 @@ Two modes:
 
   process: Full 6-phase pipeline per episode.  Phase 2 automatically
            extracts knowledge and merges into the universe state.
+
+Two additional entry points for the master cut pipeline:
+  ``build_master_cut()`` — orchestrates all phases for the master cut.
+  (The actual implementation lives in ``master_cut.py`` — this module
+   just re-exports it so the CLI can import from the same place.)
 """
 
 import json
@@ -66,7 +71,6 @@ def build_universe_state(
 
     Fully resumable: skips episodes whose ``global_state.json`` already exists.
     """
-    # --- Initialise state ---------------------------------------------------
     if state_path:
         state = UniverseState(state_path)
         state.data["metadata"]["source_playlist"] = playlist_url
@@ -77,7 +81,6 @@ def build_universe_state(
         state.data["metadata"]["source_playlist"] = playlist_url
         state.save()
 
-    # --- Resolve episode sources --------------------------------------------
     sources = resolve_episode_sources(
         playlist_url=playlist_url,
         start_ep=start_episode,
@@ -98,13 +101,11 @@ def build_universe_state(
         Path(ep_dir).mkdir(parents=True, exist_ok=True)
         gs_path = os.path.join(ep_dir, "global_state.json")
 
-        # Checkpoint: skip if global_state.json already exists
         if os.path.exists(gs_path):
             logger.info("Checkpoint HIT — global_state.json exists for episode %d", episode_num)
             with open(gs_path) as f:
                 global_data = json.load(f)
         else:
-            # Download audio + transcribe to SRT
             audio_path = download_audio(
                 url=video_url,
                 output_dir=ep_dir,
@@ -130,7 +131,6 @@ def build_universe_state(
                 logger.warning("Transcription failed for episode %d, skipping", episode_num)
                 continue
 
-            # Clean + build transcript
             cleaned = load_subtitles(target_srt)
             logger.info("Cleaned %d subtitle entries", len(cleaned))
 
@@ -138,12 +138,9 @@ def build_universe_state(
                 logger.info("Dry-run: skipping extraction")
                 continue
 
-            from podcastcondensor.segmentation.sentence_units import (
-                build_transcript_from_entries,
-            )
+            from podcastcondensor.segmentation.sentence_units import build_transcript_from_entries
             transcript_text = build_transcript_from_entries(cleaned)
 
-            # Phase 2 single-shot call
             api_key = resolve_api_key()
             if not api_key:
                 logger.error("DeepSeek API key not set — skipping")
@@ -158,14 +155,13 @@ def build_universe_state(
                 model=cfg.deepseek_model,
                 prompt_path=cfg.global_state_prompt_path,
                 timeout=cfg.deepseek_timeout,
+                srt_entries=cleaned,
             )
 
-            # Write checkpoint
             with open(gs_path, "w", encoding="utf-8") as f:
                 json.dump(global_data, f, ensure_ascii=False, indent=2)
             logger.info("Wrote %s", gs_path)
 
-            # Merge knowledge into state
             knowledge = {
                 "summary": global_data.get("summary", ""),
                 "entities": global_data.get("entities", []),
@@ -267,7 +263,6 @@ def process_with_universe_state(
                 ),
             })
 
-            # Log stats
             stats_path = os.path.join(
                 result.get("output_dir", ""), "stats.json",
             )
@@ -292,7 +287,6 @@ def process_with_universe_state(
             logger.exception(
                 "Failed to process episode %d: %s", episode_num, e,
             )
-            # Write crash-safe telemetry
             ep_dir = os.path.join(cfg.output_root, f"ep-{episode_num:03d}")
             _write_crash_log(ep_dir, f"process_episode_{episode_num}", e)
             results.append({
@@ -312,3 +306,10 @@ def process_with_universe_state(
     logger.info("=" * 60)
 
     return results
+
+
+# ---------------------------------------------------------------------------
+# Master cut pipeline (re-exported from master_cut module)
+# ---------------------------------------------------------------------------
+
+from podcastcondensor.master_cut import build_master_cut  # noqa: E402,F811

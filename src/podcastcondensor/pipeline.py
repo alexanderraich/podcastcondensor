@@ -179,6 +179,7 @@ def run_pipeline(
             model=cfg.deepseek_model,
             prompt_path=cfg.global_state_prompt_path,
             timeout=cfg.deepseek_timeout,
+            srt_entries=cleaned,
         )
 
         # Merge structured knowledge into universe state if available

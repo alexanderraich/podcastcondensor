@@ -13,40 +13,32 @@ Input:
   "transcript": "Full cleaned transcript text..."
 }
 
-Output format:
+Output format — with word_ranges:
+
 {
   "topic_segments": [
-    {
-      "segment_id": 1,
-      "title": "Short title",
-      "start_word_index": 0,
-      "end_word_index": 800,
-      "summary": "1-3 sentence summary of this topic block"
-    }
+    {"segment_id": 1, "title": "Short title", "start_word_index": 0, "end_word_index": 800, "summary": "..."}
   ],
-  "global_outline": "- Bullet point 1\n- Bullet point 2\n- Bullet point 3",
-  "summary": "2-3 paragraph narrative summary of the episode's content, themes, and key arguments.",
+  "global_outline": "- Bullet point 1\n- Bullet point 2",
+  "summary": "2-3 paragraph narrative summary of the episode.",
   "concepts": [
-    {"id": "kebab-case-id", "title": "Concept Name", "summary": "Brief explanation"}
+    {"id": "kebab-case-id", "title": "Concept Name", "summary": "Brief explanation", "word_ranges": [{"start_word": 300, "end_word": 520}]}
   ],
   "entities": [
-    {"id": "kebab-case-id", "title": "Entity Name", "category": "person|place|theological|historical|other", "summary": "Brief description"}
+    {"id": "kebab-case-id", "title": "Entity Name", "category": "person|place|theological|historical|other", "summary": "Brief description", "word_ranges": [{"start_word": 100, "end_word": 350}]}
   ],
   "claims": [
-    {"id": "kebab-case-id", "text": "The claim being made (max 300 chars)", "topic": "Theology|Scripture|History|Other"}
+    {"id": "kebab-case-id", "text": "The claim being made (max 300 chars)", "topic": "Theology|Scripture|History|Other", "word_ranges": [{"start_word": 800, "end_word": 950}]}
   ],
   "scriptural_links": [
-    {"id": "kebab-case-id", "reference": "Book Chapter:Verse", "summary": "How it is used in the episode"}
+    {"id": "kebab-case-id", "reference": "Book Chapter:Verse", "summary": "How it is used", "word_ranges": [{"start_word": 1200, "end_word": 1350}]}
   ],
   "glossary": [
-    {"id": "kebab-case-id", "term": "Term", "definition": "Definition"}
+    {"id": "kebab-case-id", "term": "Term", "definition": "Definition", "word_ranges": [{"start_word": 2000, "end_word": 2100}]}
   ]
 }
 
-Rules:
-- topic_segments: identify natural thematic blocks. Use start_word_index/end_word_index (0-based word position in the transcript) so blocks can be mapped to segments later.
-- global_outline: 5-15 bullet points synthesising the episode's narrative/thematic arc.
-- summary: narrative summary of the episode.
-- Every item in entities/concepts/claims/scriptural_links/glossary must have a unique, stable-looking id (kebab-case).
-- Return an empty array [] for any category with nothing to report.
-- Be precise and faithful to the transcript — no hallucination.
+word_ranges: For concepts, entities, claims, scriptural_links, and glossary entries,
+add a "word_ranges" field — a list of {"start_word": N, "end_word": N} pairs indicating
+where in the transcript this item is discussed. An item may have multiple ranges.
+Return [] if unsure.
