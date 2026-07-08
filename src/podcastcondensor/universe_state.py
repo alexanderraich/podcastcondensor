@@ -228,6 +228,11 @@ class UniverseState:
 
         Accumulates episode summaries and merges entities/concepts/claims
         etc. with dedup by id.
+
+        When an item with the same ID already exists (e.g. ``divine-council``
+        appears in multiple episodes), its ``segments`` array is extended
+        with the new episode's timestamp references. This is how the universe
+        state builds up cross-episode audio position pointers.
         """
         # Episode summary
         ep_summary = knowledge.get("summary", "").strip()
@@ -246,27 +251,45 @@ class UniverseState:
                 continue
 
             existing = self.data.get(category, [])
-            existing_ids = {
-                e.get("id") for e in existing if isinstance(e, dict) and e.get("id")
+            existing_by_id = {
+                e.get("id"): e for e in existing
+                if isinstance(e, dict) and e.get("id")
             }
 
-            deduped = []
+            new_items = []
             for item in items:
                 if not isinstance(item, dict):
                     continue
                 item_id = item.get("id")
-                if item_id and item_id in existing_ids:
-                    continue
-                item["episode_numbers"] = [episode_num]
-                if item_id:
-                    existing_ids.add(item_id)
-                deduped.append(item)
 
-            self.data[category] = existing + deduped
-            if deduped:
+                if item_id and item_id in existing_by_id:
+                    # Merge segments onto existing item
+                    existing_item = existing_by_id[item_id]
+                    new_segs = item.get("segments", [])
+                    if new_segs:
+                        existing_segs = existing_item.setdefault("segments", [])
+                        existing_segs.extend(new_segs)
+                        logger.debug(
+                            "  %s: %d segments appended to '%s'",
+                            category, len(new_segs), item_id,
+                        )
+                    # Track episode provenance
+                    existing_eps = existing_item.setdefault("episode_numbers", [])
+                    if episode_num not in existing_eps:
+                        existing_eps.append(episode_num)
+                        existing_eps.sort()
+                else:
+                    # New item — add with segments
+                    item["episode_numbers"] = [episode_num]
+                    new_items.append(item)
+                    if item_id:
+                        existing_by_id[item_id] = item
+
+            self.data[category] = existing + new_items
+            if new_items:
                 logger.info(
                     "  %s: %d new (total: %d)",
-                    category, len(deduped), len(self.data[category]),
+                    category, len(new_items), len(self.data[category]),
                 )
 
         # Update metadata

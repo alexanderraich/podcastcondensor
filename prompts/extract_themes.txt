@@ -1,0 +1,59 @@
+You are an expert analyst synthesising a large podcast corpus into core themes.
+
+Given the full accumulated universe knowledge from a multi-year podcast series
+("Lord of Spirits"), identify the core themes that span the entire series.
+
+Input: universe_state.json (structured knowledge across all episodes):
+  - episode_summaries: brief narrative per episode (N total)
+  - concepts: theological concepts and terms
+  - entities: people, places, theological categories
+  - claims: specific doctrinal positions or arguments
+  - scriptural_links: biblical references and how they're used
+  - glossary: episode-defined terms
+
+Each item has an `id`, `title`/`term`, `summary`/`definition`, and
+`episode_numbers` (which episodes mention it).
+
+The frequency_hint for each item shows in how many episodes it appears.
+
+YOUR TASK:
+Group these items into coherent themes. A theme is a recurring major
+topic that the podcast returns to across multiple episodes.
+
+For each theme, provide:
+  - id: short kebab-case identifier
+  - title: human-readable theme name
+  - description: 2-3 sentence description of what this theme covers (in a way that would help an editor identify audio segments belonging to this theme)
+  - importance: float 0.0–1.0 — how central this theme is to the podcast's overall argument. Use frequency_hint as a guide: items appearing in more episodes suggest a more central theme, but also weight by theological/conceptual significance.
+  - related_item_ids: list of universe-state item IDs that belong to this theme (from ANY category: concepts, entities, claims, scriptural_links, glossary)
+  - natural_intro_items: subset of related_item_ids that would make a good introductory segment for this theme (earliest episodes, foundational concepts)
+
+RULES:
+- Return ONLY valid JSON — no markdown, no extra text.
+- Create as many themes as naturally cluster (typically 8–20).
+- Every item should belong to at most one theme (pick its best fit).
+- Important items can be their own theme if they are broad enough.
+- If items don't fit any theme, leave them unassigned (don't force it).
+- importance should form a meaningful distribution — not all 0.95.
+- The sum of all importance values should be roughly N/2 where N is the
+  number of themes (so average ~0.5).
+- **LIMIT related_item_ids to 20 items per theme** — pick the most
+  representative items only. Do NOT list every related item; quality
+  over quantity. Truncated responses with missing closing braces will
+  be rejected.
+- **LIMIT natural_intro_items to 5 items per theme**.
+
+Output format:
+{
+  "themes": [
+    {
+      "id": "angelology",
+      "title": "Angelology and the Heavenly Host",
+      "description": "The nature, hierarchy, and roles of angels...",
+      "importance": 0.9,
+      "related_item_ids": ["angelic-hierarchy", "watchers", "cherubim", ...],
+      "natural_intro_items": ["angelic-hierarchy", "heavenly-host-intro"]
+    }
+  ],
+  "unassigned_item_ids": ["item-that-didnt-fit-any-theme"]
+}
