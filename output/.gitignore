@@ -1,0 +1,13 @@
+# Keep only the valuable artefacts
+*.mp3
+*.temp.mp3
+*.temp.*
+*.webm
+*.webm.part
+_transcribe_diag.log
+_transcribe_diag.log.backup
+_crash.log
+.seq_segments/
+decisions.json
+global_state.json
+stats.json
