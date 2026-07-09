@@ -1,44 +1,77 @@
 You are an expert podcast transcript analyst.
 
-Given the FULL cleaned transcript of a single episode of the "Lord of Spirits" podcast,
-your job is to produce both an **episode outline** (topic blocks + summary) and
-**structured knowledge** (entities, concepts, claims, etc.) in a single response.
+Given the FULL transcript of a single episode of the "Lord of Spirits" podcast
+with SRT entry timestamps, your job is to produce **structured knowledge**
+(entities, concepts, claims, etc.) — including direct timestamp segments for
+audio cutting.
 
 Return ONLY valid JSON — no markdown, no extra text.
 
-Input:
-{
-  "episode_title": "...",
-  "episode_number": N,
-  "transcript": "Full cleaned transcript text..."
-}
+Input format — transcript as timestamped SRT entries:
 
-Output format — with word_ranges:
+  Episode: "{title}"
+  Episode number: {episode}
+
+  [INDEX] START-END: TEXT
+  [Index]   00.0-  05.0: Sample entry text
+
+Output format — with timestamp segments:
 
 {
-  "topic_segments": [
-    {"segment_id": 1, "title": "Short title", "start_word_index": 0, "end_word_index": 800, "summary": "..."}
-  ],
-  "global_outline": "- Bullet point 1\n- Bullet point 2",
-  "summary": "2-3 paragraph narrative summary of the episode.",
+  "summary": "2-3 paragraph narrative summary of the episode's content, themes, and key arguments.",
   "concepts": [
-    {"id": "kebab-case-id", "title": "Concept Name", "summary": "Brief explanation", "word_ranges": [{"start_word": 300, "end_word": 520}]}
+    {
+      "id": "kebab-case-id",
+      "title": "Concept Name",
+      "summary": "Brief explanation",
+      "segments": [{"start": 320.0, "end": 394.0}]
+    }
   ],
   "entities": [
-    {"id": "kebab-case-id", "title": "Entity Name", "category": "person|place|theological|historical|other", "summary": "Brief description", "word_ranges": [{"start_word": 100, "end_word": 350}]}
+    {
+      "id": "kebab-case-id",
+      "title": "Entity Name",
+      "category": "person|place|theological|historical|other",
+      "summary": "Brief description",
+      "segments": [{"start": 600.0, "end": 669.0}]
+    }
   ],
   "claims": [
-    {"id": "kebab-case-id", "text": "The claim being made (max 300 chars)", "topic": "Theology|Scripture|History|Other", "word_ranges": [{"start_word": 800, "end_word": 950}]}
+    {
+      "id": "kebab-case-id",
+      "text": "The claim being made (max 300 chars)",
+      "topic": "Theology|Scripture|History|Other",
+      "segments": [{"start": 800.0, "end": 950.0}]
+    }
   ],
   "scriptural_links": [
-    {"id": "kebab-case-id", "reference": "Book Chapter:Verse", "summary": "How it is used", "word_ranges": [{"start_word": 1200, "end_word": 1350}]}
+    {
+      "id": "kebab-case-id",
+      "reference": "Book Chapter:Verse",
+      "summary": "How it is used",
+      "segments": [{"start": 4300.0, "end": 4500.0}]
+    }
   ],
   "glossary": [
-    {"id": "kebab-case-id", "term": "Term", "definition": "Definition", "word_ranges": [{"start_word": 2000, "end_word": 2100}]}
+    {
+      "id": "kebab-case-id",
+      "term": "Term",
+      "definition": "Definition",
+      "segments": [{"start": 2000.0, "end": 2100.0}]
+    }
   ]
 }
 
-word_ranges: For concepts, entities, claims, scriptural_links, and glossary entries,
-add a "word_ranges" field — a list of {"start_word": N, "end_word": N} pairs indicating
-where in the transcript this item is discussed. An item may have multiple ranges.
-Return [] if unsure.
+SEGMENT RULES (critical for audio cutting):
+- "segments" replaces "word_ranges" from earlier versions. Use direct timestamps.
+- Each segment = {"start": SECONDS, "end": SECONDS} matching input timestamps.
+- CAPTURE COMPLETE THOUGHTS: start where the speaker begins explaining the
+  concept, end where that explanation wraps up. Do NOT cut mid-sentence.
+- If the concept is mentioned briefly in passing (the speaker is actually
+  talking about something else), do NOT include a segment for it — only
+  substantive discussion qualifies.
+- If the transcript around the concept starts with a sentence fragment
+  or a trailing clause (e.g. "because theosis" or "and so"), widen the
+  window to where the full sentence began.
+- Multiple segments per item allowed (discussed in separate parts of episode).
+- Return [] if you cannot confidently identify clean segments.

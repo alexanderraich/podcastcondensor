@@ -13,6 +13,7 @@ from podcastcondensor.playlist_pipeline import (
     process_with_universe_state,
     build_master_cut,
 )
+from podcastcondensor.minimal_theme_cut import build_minimal_theme_cut
 from podcastcondensor.universe_state import UniverseState
 
 
@@ -174,6 +175,59 @@ def cmd_build_master_cut(args):
     print("")
 
 
+def cmd_build_minimal_theme(args):
+    """Build a minimal cut of one theme — LLM decides the length."""
+    cfg = Config(
+        output_root=os.path.abspath(args.output_dir) if args.output_dir else "",
+        deepseek_timeout=600,
+        keep_temp=args.keep_temp,
+    )
+
+    end_ep = args.end if args.end > 0 else 140
+    out_path = os.path.abspath(args.output) if not os.path.isabs(args.output) else args.output
+
+    result = build_minimal_theme_cut(
+        theme_id=args.theme_id,
+        playlist_url=args.playlist_url,
+        cfg=cfg,
+        state_file=os.path.abspath(args.state_file) if args.state_file else "",
+        themes_file=os.path.abspath(args.themes_file) if args.themes_file else "",
+        output_path=out_path,
+        start_episode=args.start,
+        end_episode=end_ep,
+    )
+
+    # Print results
+    print("=" * 60)
+    print("MINIMAL THEME CUT RESULTS")
+    print("=" * 60)
+    for phase in result.get("phases", []):
+        name = phase.get("phase", "?")
+        elapsed = phase.get("elapsed_sec", 0)
+        extra = ""
+        if name == "download":
+            extra = f", {phase.get('episodes', 0)} episodes"
+        elif name == "load_theme":
+            extra = f", {phase.get('theme_title', '?')} ({phase.get('related_items', 0)} items)"
+        elif name == "resolve_segments":
+            extra = f", {phase.get('candidate_count', 0)} candidates, {phase.get('total_available_sec', 0):.0f}s"
+        elif name == "llm_selection":
+            extra = f", {phase.get('selected', 0)}/{phase.get('candidates', 0)} kept, {phase.get('total_duration_sec', 0):.0f}s"
+        elif name == "assemble_audio":
+            extra = f", → {phase.get('output_path', '?')}"
+        print(f"  {name:20s} {elapsed:.0f}s{extra}")
+
+    print(f"\n  Output:   {result.get('output_path', 'N/A')}")
+    errors = result.get("errors", [])
+    if errors:
+        print(f"  Errors:   {len(errors)}")
+        for e in errors[:3]:
+            print(f"    - {e}")
+    else:
+        print(f"  Errors:   0 (success)")
+    print("")
+
+
 def main():
     parser = argparse.ArgumentParser(description="podcastcondensor — DeepSeek-powered podcast condensing")
     parser.add_argument("--verbose", "-v", action="store_true")
@@ -240,6 +294,29 @@ def main():
     mc.add_argument("--lang", default="en")
     mc.add_argument("--prefer-auto-subs", action="store_true")
     mc.set_defaults(func=cmd_build_master_cut)
+
+    # build-minimal-theme
+    mt = sub.add_parser(
+        "build-minimal-theme",
+        help="Build a minimal audio cut for one theme — LLM decides the length",
+    )
+    mt.add_argument("theme_id", help="Kebab-case theme ID (e.g. 'theosis-and-salvation')")
+    mt.add_argument("playlist_url",
+                    help="YouTube playlist URL (unused; kept for backwards compatibility)")
+    mt.add_argument("--state-file", default="",
+                    help="Path to universe state JSON (default: output/universe_state.json)")
+    mt.add_argument("--themes-file", default="output/_themes.json",
+                    help="Path to cached themes JSON (default: output/_themes.json)")
+    mt.add_argument("--output", default="output/minimal_theme_cut.mp3",
+                    help="Output audio path (default: output/minimal_theme_cut.mp3)")
+    mt.add_argument("--start", type=int, default=1,
+                    help="First episode to include (default: 1)")
+    mt.add_argument("--end", type=int, default=0,
+                    help="Last episode to include (default: 0 = 140)")
+    mt.add_argument("--keep-temp", action="store_true",
+                    help="Keep temporary files (debug)")
+    mt.add_argument("--output-dir", default="")
+    mt.set_defaults(func=cmd_build_minimal_theme)
 
     args = parser.parse_args()
     setup_logging(args.verbose)

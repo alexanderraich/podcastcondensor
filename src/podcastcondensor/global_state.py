@@ -21,70 +21,81 @@ logger = logging.getLogger(__name__)
 
 _DEFAULT_PROMPT = """You are an expert podcast transcript analyst.
 
-Given the FULL cleaned transcript of a single episode of the "Lord of Spirits" podcast,
-your job is to produce both an **episode outline** (topic blocks + summary) and
-**structured knowledge** (entities, concepts, claims, etc.) in a single response.
+Given the FULL transcript of a single episode of the "Lord of Spirits" podcast
+with SRT entry timestamps, your job is to produce **structured knowledge**
+(entities, concepts, claims, etc.) — including direct timestamp segments for
+audio cutting.
 
 Return ONLY valid JSON — no markdown, no extra text.
 
-Input:
-{
-  "episode_title": "...",
-  "episode_number": N,
-  "transcript": "Full cleaned transcript text..."
-}
+Input format — transcript as timestamped SRT entries:
 
-Output format — with word_ranges added to each knowledge item:
+  Episode: "{title}"
+  Episode number: {episode}
+
+  [INDEX] START-END: TEXT
+  [Index]   00.0-  05.0: Sample entry text
+
+Output format — with timestamp segments:
 
 {
-  "topic_segments": [
-    {
-      "segment_id": 1,
-      "title": "Short title",
-      "start_word_index": 0,
-      "end_word_index": 800,
-      "summary": "1-3 sentence summary of this topic block"
-    }
-  ],
-  "global_outline": "- Bullet point 1\\n- Bullet point 2\\n- Bullet point 3",
   "summary": "2-3 paragraph narrative summary of the episode's content, themes, and key arguments.",
   "concepts": [
-    {"id": "kebab-case-id", "title": "Concept Name", "summary": "Brief explanation",
-     "word_ranges": [{"start_word": 300, "end_word": 520}]}
+    {
+      "id": "kebab-case-id",
+      "title": "Concept Name",
+      "summary": "Brief explanation",
+      "segments": [{"start": 320.0, "end": 394.0}]
+    }
   ],
   "entities": [
-    {"id": "kebab-case-id", "title": "Entity Name", "category": "person|place|theological|historical|other",
-     "summary": "Brief description",
-     "word_ranges": [{"start_word": 100, "end_word": 350}]}
+    {
+      "id": "kebab-case-id",
+      "title": "Entity Name",
+      "category": "person|place|theological|historical|other",
+      "summary": "Brief description",
+      "segments": [{"start": 600.0, "end": 669.0}]
+    }
   ],
   "claims": [
-    {"id": "kebab-case-id", "text": "The claim being made (max 300 chars)", "topic": "Theology|Scripture|History|Other",
-     "word_ranges": [{"start_word": 800, "end_word": 950}]}
+    {
+      "id": "kebab-case-id",
+      "text": "The claim being made (max 300 chars)",
+      "topic": "Theology|Scripture|History|Other",
+      "segments": [{"start": 800.0, "end": 950.0}]
+    }
   ],
   "scriptural_links": [
-    {"id": "kebab-case-id", "reference": "Book Chapter:Verse", "summary": "How it is used in the episode",
-     "word_ranges": [{"start_word": 1200, "end_word": 1350}]}
+    {
+      "id": "kebab-case-id",
+      "reference": "Book Chapter:Verse",
+      "summary": "How it is used",
+      "segments": [{"start": 4300.0, "end": 4500.0}]
+    }
   ],
   "glossary": [
-    {"id": "kebab-case-id", "term": "Term", "definition": "Definition",
-     "word_ranges": [{"start_word": 2000, "end_word": 2100}]}
+    {
+      "id": "kebab-case-id",
+      "term": "Term",
+      "definition": "Definition",
+      "segments": [{"start": 2000.0, "end": 2100.0}]
+    }
   ]
 }
 
-IMPORTANT — word_ranges:
-For concepts, entities, claims, scriptural_links, and glossary entries,
-also include a "word_ranges" field — a list of one or more
-{"start_word": N, "end_word": N} pairs indicating WHICH PORTIONS of the
-transcript discuss or reference this item. Use the same word-indexing
-scheme as topic_segments (0-based word offset from transcript start).
-
-- An item may have multiple word_ranges if it's discussed in several
-  separate portions of the episode.
-- Ranges should be faithful — only cover the actual discussion, not
-  tangential mentions.
-- Return an empty array [] if you cannot confidently identify ranges.
-- This is CRITICAL for audio extraction — the word_ranges will be
-  converted to exact audio timestamps."""
+SEGMENT RULES (critical for audio cutting):
+- "segments" replaces "word_ranges" from earlier versions. Use direct timestamps.
+- Each segment = {"start": SECONDS, "end": SECONDS} matching input timestamps.
+- CAPTURE COMPLETE THOUGHTS: start where the speaker begins explaining the
+  concept, end where that explanation wraps up. Do NOT cut mid-sentence.
+- If the concept is mentioned briefly in passing (the speaker is actually
+  talking about something else), do NOT include a segment for it — only
+  substantive discussion qualifies.
+- If the transcript around the concept starts with a sentence fragment
+  or a trailing clause (e.g. "because theosis" or "and so"), widen the
+  window to where the full sentence began.
+- Multiple segments per item allowed (discussed in separate parts of episode).
+- Return [] if you cannot confidently identify clean segments."""
 
 
 def _load_prompt(prompt_path: str = "") -> str:
@@ -94,70 +105,115 @@ def _load_prompt(prompt_path: str = "") -> str:
     return _DEFAULT_PROMPT
 
 
-def convert_word_ranges_to_segments(
+def _format_timestamped_transcript(entries: List[dict]) -> str:
+    """Format cleaned subtitle entries as timestamped lines for the LLM prompt.
+
+    Each line: ``[INDEX] START-END: TEXT`` so the LLM can reference exact
+    timestamps in its output segments.
+    """
+    lines = []
+    for e in entries:
+        lines.append(
+            f"[{e['index']:4d}] {e['start']:7.1f}-{e['end']:7.1f}: {e['text']}"
+        )
+    return "\n".join(lines)
+
+
+def _validate_segments(
     items: List[dict],
     episode_number: int,
     srt_entries: List[dict],
 ) -> List[dict]:
-    """Convert word_ranges on each item to timestamp segments.
+    """Validate and snap LLM-returned segments to SRT entry boundaries.
 
-    For each item that has a ``word_ranges`` array, computes overlapping
-    SRT entries' timestamps and stores them as ``segments`` on the item.
+    Mutates items in-place, replacing their ``segments`` with snapped +
+    filtered versions.
 
-    Each segment dict::
+    Validation steps:
+      1. Snap each segment's start/end to the containing SRT entry boundaries.
+      2. Drop segments < 3 seconds (hallucination guard).
+      3. Log a warning for segments that start mid-sentence (entry text
+         begins with a lowercase letter — indicates bad boundary).
 
-        {"episode": N, "start": 123.4, "end": 567.8,
-         "word_start": 300, "word_end": 520}
+    Each mutated segment::
 
-    Mutates items in-place. Items without word_ranges get an empty list.
+        {"episode": N, "start": 123.4, "end": 567.8}
+
+    Items without segments or with only filtered-out segments get ``[]``.
     """
-    # Compute word range for each SRT entry
-    entry_word_ranges = []
-    offset = 0
-    for entry in srt_entries:
-        wc = len(entry["text"].split())
-        entry_word_ranges.append((offset, offset + wc))
-        offset += wc
-
     for item in items:
-        word_ranges = item.pop("word_ranges", []) if isinstance(item, dict) else []
-        if not word_ranges:
+        if not isinstance(item, dict):
+            continue
+        raw_segs = item.pop("segments", [])
+        if not raw_segs:
             item["segments"] = []
             continue
 
-        timestamp_segments = []
-        for wr in word_ranges:
-            if not isinstance(wr, dict):
+        cleaned = []
+        for seg in raw_segs:
+            if not isinstance(seg, dict):
                 continue
-            swi = wr.get("start_word", 0)
-            ewi = wr.get("end_word", 0)
-            if ewi <= swi:
+            start = seg.get("start", 0)
+            end = seg.get("end", 0)
+            if end <= start:
                 continue
 
-            start_time = None
-            end_time = None
-            for entry, (cw_start, cw_end) in zip(srt_entries, entry_word_ranges):
-                if cw_start < ewi and cw_end > swi:
-                    if start_time is None:
-                        start_time = entry["start"]
-                    end_time = max(end_time or 0, entry["end"])
+            # Snapping: find SRT entry CONTAINING start, and entry CONTAINING end
+            start_entry = None
+            for e in srt_entries:
+                if e["start"] <= start <= e["end"]:
+                    start_entry = e
+                    break
+            # If no containing entry, find nearest start within 10s
+            if start_entry is None:
+                for e in srt_entries:
+                    if abs(e["start"] - start) < 10.0:
+                        start_entry = e
+                        break
 
-            if start_time is not None and end_time is not None:
-                timestamp_segments.append({
-                    "episode": episode_number,
-                    "start": round(start_time, 3),
-                    "end": round(end_time, 3),
-                    "word_start": swi,
-                    "word_end": ewi,
-                })
+            end_entry = None
+            for e in reversed(srt_entries):
+                if e["start"] <= end <= e["end"]:
+                    end_entry = e
+                    break
+            if end_entry is None:
+                for e in reversed(srt_entries):
+                    if abs(e["end"] - end) < 10.0:
+                        end_entry = e
+                        break
 
-        item["segments"] = timestamp_segments
+            if start_entry is None or end_entry is None:
+                logger.debug("Segment %.1f-%.1f: no matching entries, dropped", start, end)
+                continue
+
+            snapped_start = start_entry["start"]
+            snapped_end = end_entry["end"]
+
+            # Drop too-short segments (hallucination guard)
+            if snapped_end - snapped_start < 3.0:
+                logger.debug("Segment %.1f-%.1f: too short (%.1fs), dropped",
+                             snapped_start, snapped_end, snapped_end - snapped_start)
+                continue
+
+            # Log warning for mid-sentence boundaries
+            first_word = start_entry["text"].strip().split()[0] if start_entry["text"].strip() else ""
+            if first_word and first_word[0].islower():
+                logger.info("Segment %.1f-%.1f: starts mid-sentence ('%s...') — may need widening",
+                            snapped_start, snapped_end, start_entry["text"][:60])
+
+            cleaned.append({
+                "episode": episode_number,
+                "start": snapped_start,
+                "end": snapped_end,
+            })
+
+        item["segments"] = cleaned
 
     return items
 
 
 def build_global_state(
-    transcript_text: str,
+    transcript_text: str = "",
     *,
     episode_title: str = "",
     episode_number: Optional[int] = None,
@@ -167,30 +223,53 @@ def build_global_state(
     timeout: int = 300,
     srt_entries: Optional[List[dict]] = None,
 ) -> dict:
-    """Single DeepSeek call: full transcript → outline + structured knowledge.
+    """Single DeepSeek call: timestamped transcript → structured knowledge.
 
-    If ``srt_entries`` is provided, also converts word_ranges on each
-    knowledge item to timestamp segments (via ``convert_word_ranges_to_segments``).
+    The LLM receives a timestamped SRT transcript (``[INDEX] START-END: TEXT``)
+    and returns direct timestamp segments on each knowledge item. No word
+    indices, no post-conversion.
 
-    Returns a dict with keys:
-        blocks, block_summaries, global_outline, chunk_to_block,
-        summary, entities, concepts, claims, scriptural_links, glossary
+    Args:
+        transcript_text: Ignored (kept for backward compatibility).
+        episode_title: Episode title for LLM context.
+        episode_number: Episode number for provenance tracking.
+        client: DeepSeek LLM client.
+        model: Model name.
+        prompt_path: Path to custom prompt file.
+        timeout: LLM request timeout.
+        srt_entries: **Required.** Cleaned subtitle entries with timestamps.
 
-    Raises RuntimeError if the LLM response is empty or cannot be parsed.
+    Returns:
+        Dict with keys: summary, entities, concepts, claims,
+        scriptural_links, glossary. Each knowledge item has a ``segments``
+        array snapped to SRT entry boundaries.
+
+    Raises:
+        RuntimeError if LLM response is empty or unparseable, or if
+        srt_entries is not provided.
     """
-    prompt_template = _load_prompt(prompt_path)
-    total_words = len(transcript_text.split())
+    if not srt_entries:
+        raise RuntimeError("srt_entries is required — pass cleaned subtitle entries with timestamps")
 
-    payload = json.dumps({
-        "episode_title": episode_title,
-        "episode_number": episode_number,
-        "transcript": transcript_text,
-    }, ensure_ascii=False, indent=2)
-    full_prompt = prompt_template.strip() + "\n\n" + payload
+    prompt_template = _load_prompt(prompt_path)
+
+    # Build timestamped transcript from SRT entries
+    timestamped_transcript = _format_timestamped_transcript(srt_entries)
+
+    ep_display = episode_title or f"Episode {episode_number or ''}"
+
+    full_prompt = (
+        prompt_template.strip()
+        + "\n\n"
+        + f"Episode: \"{ep_display}\"\n"
+        + f"Episode number: {episode_number or 0}\n\n"
+        + "Transcript entries with timestamps:\n"
+        + timestamped_transcript
+    )
 
     logger.info(
-        "Global state: '%s' (%d words, %d chars total)",
-        episode_title, total_words, len(full_prompt),
+        "Global state: '%s' (%d entries, %d chars total)",
+        ep_display, len(srt_entries), len(full_prompt),
     )
 
     raw = client.generate(
@@ -203,41 +282,7 @@ def build_global_state(
     if not data:
         raise RuntimeError("Global state: empty or unparseable LLM response")
 
-    raw_topic_segs = data.get("topic_segments", [])
-    if not raw_topic_segs:
-        raise RuntimeError("Global state: no topic_segments in response")
-
-    # Build block_summaries
-    block_summaries = []
-    for ts in raw_topic_segs:
-        block_summaries.append({
-            "block_id": ts.get("segment_id", len(block_summaries) + 1),
-            "title": ts.get("title", ""),
-            "summary": ts.get("summary", ""),
-            "word_count": ts.get("end_word_index", 0) - ts.get("start_word_index", 0),
-            "start_word_index": ts.get("start_word_index", 0),
-            "end_word_index": ts.get("end_word_index", 0),
-        })
-        logger.info(
-            "  Topic %d (%s): %s",
-            block_summaries[-1]["block_id"],
-            block_summaries[-1]["title"][:40],
-            block_summaries[-1]["summary"][:100],
-        )
-
-    # Normalise outline
-    outline_raw = data.get("global_outline", "")
-    if isinstance(outline_raw, list):
-        global_outline = "\n".join(f"- {b}" for b in outline_raw)
-    else:
-        global_outline = outline_raw.strip()
-    logger.info("Global outline:\n%s", global_outline[:500])
-
     result = {
-        "blocks": block_summaries,
-        "block_summaries": block_summaries,
-        "global_outline": global_outline,
-        "chunk_to_block": {},
         "summary": data.get("summary", ""),
         "entities": data.get("entities", []),
         "concepts": data.get("concepts", []),
@@ -246,13 +291,11 @@ def build_global_state(
         "glossary": data.get("glossary", []),
     }
 
-    # Convert word_ranges to timestamp segments if SRT entries provided
+    # Validate + snap segments for each knowledge category
     ep_num = episode_number or 0
     for category in ("entities", "concepts", "claims", "scriptural_links", "glossary"):
-        if srt_entries and result.get(category):
-            result[category] = convert_word_ranges_to_segments(
-                result[category], ep_num, srt_entries,
-            )
+        if result.get(category):
+            _validate_segments(result[category], ep_num, srt_entries)
             seg_count = sum(
                 len(item.get("segments", [])) for item in result[category]
             )
@@ -260,11 +303,11 @@ def build_global_state(
                 logger.info("  %s: %d timestamp segments", category, seg_count)
 
     logger.info(
-        "Global state complete: %d blocks, %d entities, %d concepts, %d claims",
-        len(block_summaries),
+        "Global state complete: %d entities, %d concepts, %d claims, %d glossary",
         len(result["entities"]),
         len(result["concepts"]),
         len(result["claims"]),
+        len(result["glossary"]),
     )
     return result
 
