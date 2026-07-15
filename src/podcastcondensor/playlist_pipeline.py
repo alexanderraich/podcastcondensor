@@ -192,10 +192,22 @@ def build_universe_state(
 # Process episodes with an existing universe state (full pipeline)
 # ---------------------------------------------------------------------------
 
+def _episode_is_done(episode_dir: str, cfg: Config) -> bool:
+    """Check if episode has all output artefacts and can be skipped."""
+    if not os.path.isdir(episode_dir):
+        return False
+    if not os.path.exists(os.path.join(episode_dir, "source_subtitles.srt")):
+        return False
+    if cfg.skip_global_state:
+        return os.path.exists(os.path.join(episode_dir, "compressed.json"))
+    else:
+        return os.path.exists(os.path.join(episode_dir, "decisions.json"))
+
+
 def process_with_universe_state(
     playlist_url: str,
     cfg: Config,
-    state: UniverseState,
+    state: Optional[UniverseState] = None,
     start_episode: int = 21,
     end_episode: Optional[int] = None,
     dry_run: bool = False,
@@ -203,22 +215,48 @@ def process_with_universe_state(
 ) -> List[dict]:
     """Process episodes using an existing UniverseState.
 
-    Runs the full 6-phase pipeline per episode.  Phase 2 inside the
-    pipeline handles knowledge extraction and state update automatically.
+    When ``state`` is None and ``cfg.skip_global_state`` is True, runs the
+    new one-shot compression pipeline (no universe state needed).
+
+    Runs the full pipeline per episode. Phase 2 inside the pipeline handles
+    the actual compression or knowledge extraction depending on mode.
     """
     effective_end = (
         end_episode if end_episode and end_episode >= start_episode
         else start_episode
     )
+
+    # ── Quick skip: check output dirs before touching YouTube ────────────
+    wanted = list(range(start_episode, effective_end + 1))
+    skipped = []
+    needed = []
+    for ep in wanted:
+        ep_dir = os.path.join(cfg.output_root, f"ep-{ep:03d}")
+        if _episode_is_done(ep_dir, cfg):
+            skipped.append(ep)
+        else:
+            needed.append(ep)
+
+    if skipped:
+        logger.info("Skipping %d already-done episode(s): %s", len(skipped), skipped)
+
+    if not needed:
+        logger.info("All episodes already processed — nothing to do.")
+        return []
+
+    # Only resolve YouTube for episodes that need processing
     sources = resolve_episode_sources(
         playlist_url=playlist_url,
-        start_ep=start_episode,
-        end_ep=effective_end,
+        start_ep=min(needed),
+        end_ep=max(needed),
     )
-    logger.info(
-        "Processing episodes with universe state (%d episodes in state)",
-        state.data.get("metadata", {}).get("last_built_episode", 0),
-    )
+    if state is not None:
+        logger.info(
+            "Processing episodes with universe state (%d episodes in state)",
+            state.data.get("metadata", {}).get("last_built_episode", 0),
+        )
+    else:
+        logger.info("Processing episodes (compress mode, no universe state)")
 
     results = []
 
@@ -301,8 +339,9 @@ def process_with_universe_state(
     logger.info("=" * 60)
     logger.info("PROCESSING COMPLETE")
     logger.info("  Episodes processed: %d/%d", successful, len(results))
-    logger.info("  Universe state now has %d concepts",
-                len(state.data.get("concepts", [])))
+    if state is not None:
+        logger.info("  Universe state now has %d concepts",
+                    len(state.data.get("concepts", [])))
     logger.info("=" * 60)
 
     return results

@@ -80,12 +80,21 @@ def cmd_process_playlist(args):
         prefer_auto_subs=args.prefer_auto_subs,
         deepseek_timeout=600,
         skip_audio=getattr(args, 'skip_audio', False),
+        skip_global_state=not args.use_global_state,
     )
-    state_path = os.path.abspath(args.state_file)
-    if not os.path.exists(state_path):
-        print(f"Universe state not found: {state_path}")
-        sys.exit(1)
-    state = UniverseState(state_path)
+
+    if cfg.skip_global_state:
+        # New compression path: one LLM call per episode, no universe state.
+        # run_pipeline still handles Phase 1 (download) + new Phase 2 (compress).
+        state = None
+    else:
+        # Legacy path: requires existing universe state for two-call pipeline.
+        state_path = os.path.abspath(args.state_file)
+        if not os.path.exists(state_path):
+            print(f"Universe state not found: {state_path}")
+            sys.exit(1)
+        state = UniverseState(state_path)
+
     results = process_with_universe_state(
         playlist_url=args.playlist_url,
         cfg=cfg,
@@ -251,9 +260,10 @@ def main():
     build.set_defaults(func=cmd_build_universe)
 
     # process-playlist
-    proc = sub.add_parser("process-playlist", help="Process episodes with universe state")
+    proc = sub.add_parser("process-playlist", help="Main pipeline: download → compress → audio cut")
     proc.add_argument("playlist_url", help="YouTube playlist URL")
-    proc.add_argument("--state-file", required=True, help="Path to universe state JSON")
+    proc.add_argument("--state-file", default="output/universe_state.json",
+                      help="Path to universe state JSON (required with --use-global-state)")
     proc.add_argument("--start", type=int, default=22)
     proc.add_argument("--end", type=int, default=0, help="0 = until end")
     proc.add_argument("--output-dir", default="")
@@ -264,6 +274,8 @@ def main():
                       help="DEBUG: cap at N intervals for quick test listen")
     proc.add_argument("--skip-audio", action="store_true",
                       help="Skip audio cutting phase (stats only)")
+    proc.add_argument("--use-global-state", action="store_true",
+                      help="Enable legacy global-state pipeline (two LLM calls per episode instead of one-shot compress)")
     proc.set_defaults(func=cmd_process_playlist)
 
     # build-master-cut

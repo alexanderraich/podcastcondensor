@@ -14,6 +14,7 @@ class Config:
     # Prompt paths
     global_state_prompt_path: str = ""
     classify_raw_prompt_path: str = ""
+    compress_prompt_path: str = ""
 
     # Interval / padding
     output_merge_gap: float = 2.0
@@ -40,6 +41,7 @@ class Config:
     output_root: str = ""
     keep_temp: bool = False
     skip_audio: bool = False
+    skip_global_state: bool = True  # if True: one-shot compress instead of Phase 2 + Phase 3
 
     # Download
     prefer_auto_subs: bool = False
@@ -66,4 +68,8 @@ class Config:
         if not self.classify_raw_prompt_path:
             self.classify_raw_prompt_path = os.path.join(
                 base, "prompts", "classify_raw.txt"
+            )
+        if not self.compress_prompt_path:
+            self.compress_prompt_path = os.path.join(
+                base, "prompts", "compress_episode.txt"
             )
