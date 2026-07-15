@@ -1,14 +1,18 @@
 """Pipeline — orchestrate condensing workflow (DeepSeek-only).
 
-Phases:
+Two modes (controlled by ``cfg.skip_global_state``):
+
+**Compress mode (default):** one-shot compression
+  1: Download          — yt-dlp: raw MP3 + raw SRT
+  2: Compress          — single DeepSeek call: timestamped transcript → 1-2
+                         direct timestamp segments (core idea identification)
+  3: Audio cutting     — use returned segments directly as intervals
+
+**Legacy mode (``skip_global_state=False``):** two-call pipeline
   1: Download          — yt-dlp: raw MP3 + raw SRT
   2: Global state      — single DeepSeek call: outline + universe knowledge
   3: Classify raw      — single DeepSeek call: tick keep/drop per SRT entry
   4: Audio cutting     — build intervals from kept entries' real timestamps
-
-No segmentation, no punctuation fix, no sentence-to-entry mapping, no post-processing.
-The LLM decides directly on raw SRT entries. Universe state is provided as context
-so the LLM can avoid re-keeping content already covered in prior episodes.
 
 Every phase writes its primary artefact and checks for it on re-run (resumable).
 """
@@ -29,10 +33,10 @@ from podcastcondensor.downloader import (
 from podcastcondensor.transcribe import transcribe_audio
 from podcastcondensor.subtitles import load_subtitles
 from podcastcondensor.global_state import build_global_state
-from podcastcondensor.classify_raw import classify_raw
+from podcastcondensor.classify_raw import classify_raw, compress_episode
 from podcastcondensor.intervals import build_intervals, compute_stats
 from podcastcondensor.audio_strategies import _get_audio_duration as get_audio_duration
-from podcastcondensor.audio_strategies import create_audio_strategy
+from podcastcondensor.audio_strategies import create_audio_strategy, normalize_intervals
 from podcastcondensor.universe_state import UniverseState
 from podcastcondensor.llm.deepseek import resolve_api_key, DeepSeekClient
 from podcastcondensor.segmentation.sentence_units import build_transcript_from_entries
@@ -159,6 +163,104 @@ def run_pipeline(
     if not os.path.exists(_ap("source_subtitles.srt")):
         artifacts["errors"].append("No subtitles available after transcribing.")
         return artifacts
+
+    # ================================================================
+    # Phase 2 + 3: Compress or legacy global-state pipeline
+    # ================================================================
+    if cfg.skip_global_state:
+        # === Compress path: single LLM call → direct timestamp segments ===
+        logger.info("=== Phase 2: Compress episode (one-shot) ===")
+        compressed = _load_json(_ap("compressed.json"))
+        if compressed is not None:
+            logger.info("Checkpoint HIT — loaded compressed.json")
+        else:
+            entries = load_subtitles(_ap("source_subtitles.srt"))
+            compressed = compress_episode(
+                srt_entries=entries,
+                episode_title=meta.get("title", ""),
+                episode_number=episode_num,
+                client=ds,
+                model=cfg.deepseek_model,
+                timeout=cfg.deepseek_timeout,
+                prompt_path=cfg.compress_prompt_path,
+            )
+            _write_json(_ap("compressed.json"), compressed)
+
+        segments = compressed.get("segments", [])
+        artifacts["phases"]["compress"] = {
+            "core_idea": (compressed.get("core_idea", "") or "")[:120],
+            "segment_count": len(segments),
+        }
+
+        # ── Stats ────────────────────────────────────────────────────
+        audio_duration = get_audio_duration(audio_path)
+        kept_dur = sum(s["end"] - s["start"] for s in segments)
+        logger.info(
+            "COMPRESSION STATS: %d segment(s), %.0fs / %.0fs total (%.1f%%)",
+            len(segments), kept_dur, audio_duration,
+            100 * kept_dur / audio_duration if audio_duration > 0 else 0,
+        )
+
+        # ── Print summary ────────────────────────────────────────────
+        print("")
+        print("=" * 50)
+        print("PODCAST CONDENSOR — RESULTS")
+        print("=" * 50)
+        print(f"  Core idea:        {compressed.get('core_idea', '(none)')[:120]}")
+        print(f"  Segments:         {len(segments)}")
+        for i, s in enumerate(segments):
+            print(f"    [{i+1}] {s['start']:.0f}s-{s['end']:.0f}s ({s['end']-s['start']:.0f}s)"
+                  f" — {s.get('reason', '')[:80]}")
+        print(f"  Original duration: {_fmt_duration(audio_duration)}")
+        print(f"  Condensed duration:{_fmt_duration(kept_dur)}")
+        if cfg.audio_speed != 1.0:
+            print(f"  At {cfg.audio_speed}x:   {_fmt_duration(kept_dur / cfg.audio_speed)}")
+        print(f"  Compression ratio: {kept_dur / audio_duration:.1%}"
+              if audio_duration > 0 else "")
+        print("")
+
+        # ── Early exit if --skip-audio ───────────────────────────────
+        if cfg.skip_audio:
+            logger.info("Skip-audio set — stopping after compress (no audio cutting)")
+            artifacts["output_dir"] = run_dir
+            return artifacts
+
+        # ── Audio cutting with direct segments ────────────────────────
+        if not segments:
+            logger.info("No segments to cut — skipping audio")
+            artifacts["phases"]["audio"] = {"condensed_path": None}
+            return artifacts
+
+        # Apply padding and normalize intervals
+        intervals = []
+        for s in segments:
+            start = max(0, s["start"] - cfg.pad_before)
+            end = s["end"] + cfg.pad_after
+            if audio_duration > 0:
+                end = min(end, audio_duration)
+            intervals.append({"start": round(start, 3), "end": round(end, 3)})
+        intervals = normalize_intervals(intervals, audio_duration=audio_duration)
+
+        if episode_num is not None:
+            condensed_path = _ap(f"condensed_ep{episode_num:03d}.{cfg.audio_format}")
+        else:
+            condensed_path = _ap(f"condensed_{meta['video_id']}.{cfg.audio_format}")
+
+        strategy = create_audio_strategy(
+            cfg.audio_strategy,
+            batch_size=cfg.audio_safe_batch_size,
+        )
+        strategy.cut(
+            audio_path=audio_path, intervals=intervals,
+            output_path=condensed_path, format_spec=cfg.audio_format,
+            sample_rate=cfg.audio_sample_rate, bitrate=cfg.audio_bitrate,
+            speed=cfg.audio_speed,
+        )
+        artifacts["phases"]["audio"] = {"condensed_path": condensed_path}
+        artifacts["output_dir"] = run_dir
+        return artifacts
+
+    # === Legacy path: global_state + classify_raw ===
 
     # ================================================================
     # Phase 2: Global state  (artefact: global_state.json)

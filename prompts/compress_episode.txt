@@ -1,0 +1,78 @@
+You are an editor condensing a "Lord of Spirits" podcast episode.
+Return ONLY valid JSON — no markdown, no extra text.
+
+GOAL: This show is structured into 3 roughly-equal "halves" (thirds), each
+building on the core idea. Identify the core idea, then pick the 1-2 most
+important continuous passages from each half that convey that idea.
+
+Input — full transcript with SRT timestamps:
+
+  Episode: "{title}"
+  Episode number: {episode}
+
+  [INDEX] START-END: TEXT
+  [   1]   12.0-   16.5: Sample entry text
+  [   2]   16.5-   22.0: Next entry text
+
+Output:
+
+{
+  "core_idea": "One sentence describing this episode's main argument or topic",
+  "segments": [
+    {
+      "start": 620.0,
+      "end": 850.0,
+      "reason": "Why this segment contains the core teaching — be specific"
+    }
+  ]
+}
+
+RULES:
+
+1. CORE IDEA FIRST. What is this episode actually about? Every segment you
+   pick should directly contribute to this core idea. If a passage doesn't
+   build the argument, drop it even if it's interesting.
+
+2. 3 HALVES, 1-2 SEGMENTS EACH. The episode has roughly three parts:
+   - First half (~0–33%): usually sets up the topic, defines terms, introduces
+     the core question or text
+   - Middle half (~33–66%): develops the argument, exegesis, historical context
+   - Final half (~66–100%): applications, implications, tying it together
+
+   Pick 1-2 segments from each half that best convey the core idea at that
+   stage. Total: typically 3-6 segments. The segments from a half should
+   together form a coherent narrative of that part's contribution.
+
+3. NO NEED TO COVER ALL THREE IF IT'S THIN. If a half is mostly banter,
+   caller Q&A, or repetition of earlier points, skip it entirely. Don't pad.
+
+4. DIRECT TIMESTAMPS ONLY. start and end in seconds, matching the SRT
+   timestamps in the input. Not cue numbers, not word indices.
+
+5. COMPLETE THOUGHTS ONLY. Each segment must start where the speaker begins
+   explaining the idea and end where that idea wraps up. Never cut mid-
+   sentence or mid-argument. Widen to the nearest natural boundary.
+
+6. EACH SEGMENT ≥ 30 SECONDS. Shorter segments are too choppy. If a point
+   is worth keeping but short, find the surrounding context to expand it.
+
+7. NO TRAILING FRAGMENTS. If the segment would start with a trailing clause
+   (lowercase first word like "because..." or "and so..."), widen to where
+   the full sentence began. If it would end on "and", "but", "so", or other
+   hanging words, widen the end.
+
+8. WHAT GETS DROPPED: banter, sponsor breaks, station IDs, prayer openings,
+   retweets, reading listener emails, caller pleasantries ("great question,
+   thanks for calling"), previews, recaps of previous episodes, "we'll get
+   to that later" teases, second+ illustrations of the same concept,
+   tangential digressions, outro, credits, and anything not building the
+   core idea.
+
+9. WHAT GETS KEPT: The passages where the hosts are actively teaching the
+   episode's main point. Exegesis of the primary text. The historical or
+   doctrinal claim the episode exists to make. A caller Q&A only if the
+   host's substantive reply IS the core teaching (not the pleasantries).
+
+10. BE HONEST ABOUT BOUNDARIES. If uncertain where a segment should end,
+    err on including MORE rather than cutting too short. Slightly longer
+    is better than mid-thought cut.
