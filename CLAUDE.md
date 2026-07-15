@@ -35,9 +35,9 @@ direct timestamp segments for the most relevant passages.
 ```
 
 **Strategy:** The show has 3 roughly-equal halves (thirds). The LLM
-identifies the core idea, then picks the 1-2 most important continuous
-passages from each half that best convey that idea. The prompt guides
-this — no hard caps in code, the LLM decides how many segments are
+identifies the 1-2 key points the episode is making, then collects the
+continuous passages across the 3 halves that develop each point. The
+prompt guides this — no hard caps in code, the LLM decides what's
 appropriate.
 
 **Cardinal rules (enforced via prompt, not code):**
