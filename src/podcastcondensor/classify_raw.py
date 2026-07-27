@@ -146,6 +146,42 @@ def _snap_segment(seg: dict, srt_entries: list):
             snapped_start, snapped_end, start_entry["text"][:80],
         )
 
+    # Widen end boundary by one SRT entry if the last entry starts
+    # with continuation language (lowercase = mid-speech carryover
+    # from the prior SRT entry). This catches the common case where
+    # the LLM picks a grammatically complete sentence that is still
+    # building the argument — the actual wrap-up is in the next block.
+    _CONTINUATION_PREFIXES = ("and ", "but ", "so ", "or ", "for ",
+                              "nor ", "yet ", "because ", "if ", "when ",
+                              "which ", "that ", "though ", "although ",
+                              "while ", "since ", "unless ")
+    end_text = end_entry["text"].strip()
+    end_first = end_text.split()[0] if end_text else ""
+    should_widen = (
+        end_first and (
+            end_first[0].islower()
+            or end_text.lower().startswith(_CONTINUATION_PREFIXES)
+        )
+    )
+    if should_widen:
+        end_idx = None
+        for i, e in enumerate(srt_entries):
+            if e is end_entry:
+                end_idx = i
+                break
+        if end_idx is not None and end_idx + 1 < len(srt_entries):
+            next_entry = srt_entries[end_idx + 1]
+            gap = next_entry["start"] - snapped_end
+            if gap < 10.0:
+                old_end = snapped_end
+                snapped_end = next_entry["end"]
+                logger.info(
+                    "Segment %.1f-%.1f → %.1f-%.1f: widened end by 1 SRT entry "
+                    "('%s...' → '%s...')",
+                    snapped_start, old_end, snapped_start, snapped_end,
+                    end_text[:60], next_entry["text"][:60],
+                )
+
     seg["start"] = snapped_start
     seg["end"] = snapped_end
     return seg

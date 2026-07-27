@@ -54,6 +54,14 @@ RULES:
    cut mid-sentence or mid-argument. Widen to the nearest natural
    boundary.
 
+   **Critical:** A grammatically complete sentence ("So that's the
+   divine council framework") is NOT the same as a completed argument.
+   Check that the point has been fully *taught*, not just introduced.
+   If the segment's final sentences announce what will be shown or
+   state a conclusion without the reasoning that led to it, widen the
+   end to include the development or application that completes the
+   teaching.
+
 6. NO TRAILING FRAGMENTS. If the segment would start with a trailing
    clause (lowercase first word like "because..." or "and so..."),
    widen to where the full sentence began. If it would end on "and",

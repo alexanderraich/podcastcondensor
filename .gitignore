@@ -8,8 +8,10 @@ build/
 *.whl
 venv/
 
-# Output artifacts (episode dirs + universe state)
-output/*/
+# Output artifacts — track transcription + LLM decisions, ignore everything else
+output/ep-*/*
+!output/ep-*/source_subtitles.srt
+!output/ep-*/compressed.json
 !output/.gitkeep
 output/universe_state.json
 output/universe.dump
