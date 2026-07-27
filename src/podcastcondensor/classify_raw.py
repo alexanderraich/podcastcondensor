@@ -138,15 +138,33 @@ def _snap_segment(seg: dict, srt_entries: list):
         logger.warning("Segment %.1f-%.1f: too short (%.1fs), dropped", snapped_start, snapped_end, duration)
         return None
 
-    # Warn on mid-sentence boundary at start
+    # ── Widen start backward if the first SRT entry continues mid-thought ──
     first_word = start_entry["text"].strip().split()[0] if start_entry["text"].strip() else ""
     if first_word and first_word[0].islower():
-        logger.warning(
-            "Segment %.1f-%.1f: starts mid-sentence ('%s...') — may need widening",
-            snapped_start, snapped_end, start_entry["text"][:80],
-        )
+        start_idx = None
+        for i, e in enumerate(srt_entries):
+            if e is start_entry:
+                start_idx = i
+                break
+        if start_idx is not None and start_idx > 0:
+            prev_entry = srt_entries[start_idx - 1]
+            gap = snapped_start - prev_entry["end"]
+            if gap < 5.0:
+                old_start = snapped_start
+                snapped_start = prev_entry["start"]
+                logger.info(
+                    "Segment %.1f-%.1f → %.1f-%.1f: widened start by 1 SRT entry "
+                    "('%s...' ← '%s...')",
+                    old_start, snapped_end, snapped_start, snapped_end,
+                    start_entry["text"][:60], prev_entry["text"][:60],
+                )
+        else:
+            logger.warning(
+                "Segment %.1f-%.1f: starts mid-sentence ('%s...') — cannot widen (first entry)",
+                snapped_start, snapped_end, start_entry["text"][:80],
+            )
 
-    # Widen end boundary by one SRT entry if the last entry starts
+    # ── Widen end boundary by one SRT entry if the last entry starts ──
     # with continuation language (lowercase = mid-speech carryover
     # from the prior SRT entry). This catches the common case where
     # the LLM picks a grammatically complete sentence that is still
@@ -157,13 +175,13 @@ def _snap_segment(seg: dict, srt_entries: list):
                               "while ", "since ", "unless ")
     end_text = end_entry["text"].strip()
     end_first = end_text.split()[0] if end_text else ""
-    should_widen = (
+    should_widen_end = (
         end_first and (
             end_first[0].islower()
             or end_text.lower().startswith(_CONTINUATION_PREFIXES)
         )
     )
-    if should_widen:
+    if should_widen_end:
         end_idx = None
         for i, e in enumerate(srt_entries):
             if e is end_entry:
@@ -180,6 +198,33 @@ def _snap_segment(seg: dict, srt_entries: list):
                     "('%s...' → '%s...')",
                     snapped_start, old_end, snapped_start, snapped_end,
                     end_text[:60], next_entry["text"][:60],
+                )
+
+    # ── Minimum segment duration floor: extend until 90 s or a natural gap ──
+    duration = snapped_end - snapped_start
+    MIN_DURATION = 90.0
+    if duration < MIN_DURATION:
+        _extend_end_idx = None
+        for i, e in enumerate(srt_entries):
+            if e is end_entry:
+                _extend_end_idx = i
+                break
+        if _extend_end_idx is not None:
+            _old = snapped_end
+            while snapped_end - snapped_start < MIN_DURATION:
+                if _extend_end_idx + 1 >= len(srt_entries):
+                    break
+                next_e = srt_entries[_extend_end_idx + 1]
+                gap = next_e["start"] - snapped_end
+                if gap > 5.0:
+                    break
+                snapped_end = next_e["end"]
+                _extend_end_idx += 1
+            if snapped_end != _old:
+                logger.info(
+                    "Segment %.1f-%.1f: extended to minimum duration (%.0fs, was %.0fs)",
+                    snapped_start, snapped_end,
+                    snapped_end - snapped_start, duration,
                 )
 
     seg["start"] = snapped_start

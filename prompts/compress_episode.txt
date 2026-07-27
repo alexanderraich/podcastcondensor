@@ -67,7 +67,9 @@ RULES:
    widen to where the full sentence began. If it would end on "and",
    "but", "so", or other hanging words, widen the end.
 
-7. WHAT GETS DROPPED: banter, sponsor breaks, station IDs, prayer
+7. WHAT GETS DROPPED: banter, sponsor breaks, station IDs, the
+   recurring show intro bumper ("The modern world doesn't
+   acknowledge..." through "Welcome to the Lord of Spirits"), prayer
    openings, retweets, reading listener emails, caller pleasantries
    ("great question, thanks for calling"), previews, recaps of previous
    episodes, "we'll get to that later" teases, second+ illustrations
