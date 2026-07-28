@@ -22,35 +22,39 @@ from pathlib import Path
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 
+# Episodes known to be Q&A or readings (auto-detected from title, but
+# hardcoded here as a safety net for the cut script which reads the
+# universe state after it's already been built).
+QA_EPISODES = {18, 34, 38}
+READING_EPISODES = {40}
+
 
 def load_state(path: str) -> dict:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
-def load_episode_titles(output_root: str) -> dict:
-    """Try to load episode titles from manifest."""
-    titles = {}
-    # Check for episode manifests or fallback to summary
-    state_path = os.path.join(output_root, "universe_state.json")
-    if os.path.exists(state_path):
-        with open(state_path) as f:
-            data = json.load(f)
-        for es in data.get("episode_summaries", []):
-            titles[es["episode_number"]] = es.get("summary", "")[:60]
-    return titles
-
-
 def collect_segments(
     state: dict,
     categories: list,
     episode_range: set,
+    *,
+    skip_qa: bool = False,
+    skip_reading: bool = False,
 ) -> list:
     """Collect all unique segments from specified categories for given episodes.
 
     Returns list of dicts: {episode, start, end, category, item_id, item_title}
     Deduplicated by (episode, start, end).
+
+    When *skip_qa* is True, segments from known Q&A episodes are excluded.
+    When *skip_reading* is True, segments from known reading episodes are excluded.
     """
+    skip_eps = set()
+    if skip_qa:
+        skip_eps |= QA_EPISODES
+    if skip_reading:
+        skip_eps |= READING_EPISODES
     seen = set()
     segments = []
 
@@ -60,7 +64,7 @@ def collect_segments(
             item_title = item.get("title") or item.get("term") or item.get("text", "")[:60]
             for seg in item.get("segments", []):
                 ep = seg.get("episode", 0)
-                if ep not in episode_range:
+                if ep not in episode_range or ep in skip_eps:
                     continue
                 start = seg.get("start", 0)
                 end = seg.get("end", 0)
@@ -244,6 +248,14 @@ def main():
     parser.add_argument("--episodes", default="31-40", help="Episode range (e.g. 31-40)")
     parser.add_argument("--speed", type=float, default=1.25)
     parser.add_argument("--dry-run", action="store_true", help="Just print stats, don't cut")
+    parser.add_argument("--skip-qa", action="store_true", default=True,
+                        help="Skip Q&A episodes (default: on)")
+    parser.add_argument("--skip-reading", action="store_true", default=True,
+                        help="Skip reading episodes (default: on)")
+    parser.add_argument("--no-skip-qa", action="store_false", dest="skip_qa",
+                        help="Include Q&A episodes")
+    parser.add_argument("--no-skip-reading", action="store_false", dest="skip_reading",
+                        help="Include reading episodes")
     args = parser.parse_args()
 
     # Parse episode range
@@ -260,6 +272,8 @@ def main():
         state=state,
         categories=["concepts", "claims"],
         episode_range=ep_range,
+        skip_qa=args.skip_qa,
+        skip_reading=args.skip_reading,
     )
 
     total_dur = sum(s["duration"] for s in segments)
