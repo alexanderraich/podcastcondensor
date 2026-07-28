@@ -64,6 +64,8 @@ def cmd_build_universe(args):
         end_episode=args.end,
         state_path=state_path or None,
         dry_run=args.dry_run,
+        prefer_yt_subs=args.yt_subs,
+        skip_qa=not args.include_qa,
     )
     print(f"\nUniverse state: {state.data['metadata'].get('last_built_episode', 0)} episodes")
     print(f"  Concepts: {len(state.data.get('concepts', []))}")
@@ -248,7 +250,7 @@ def main():
     doc.set_defaults(func=cmd_doctor)
 
     # build-universe
-    build = sub.add_parser("build-universe", help="Build universe state from episodes 1-21")
+    build = sub.add_parser("build-universe", help="Build universe state from episodes")
     build.add_argument("playlist_url", help="YouTube playlist URL")
     build.add_argument("--start", type=int, default=1)
     build.add_argument("--end", type=int, default=21)
@@ -256,6 +258,10 @@ def main():
     build.add_argument("--output-dir", default="")
     build.add_argument("--dry-run", action="store_true")
     build.add_argument("--prefer-auto-subs", action="store_true")
+    build.add_argument("--yt-subs", action="store_true",
+                       help="Download YouTube subtitles instead of whisper transcription (much faster)")
+    build.add_argument("--include-qa", action="store_true",
+                       help="Include Q&A episodes (default: skip them — they don't develop coherent themes)")
     build.add_argument("--lang", default="en")
     build.set_defaults(func=cmd_build_universe)
 

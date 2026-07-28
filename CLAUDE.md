@@ -4,153 +4,158 @@ Condensing "Lord of Spirits" podcast episodes using DeepSeek LLM.
 
 **Playlist:** https://www.youtube.com/playlist?list=PLZxCUWw2kdo1vAsOOOa3RwzwYvHbybjHR
 
-## Architecture — per-episode aggressive compression
+## Architecture — cross-episode universe state → concept/claim audio cuts
 
-The project tried a "universe state" approach (cross-episode knowledge →
-thematic cuts). It failed — mid-thought cuts, unreliable timestamps, brittle
-pipeline. **Current approach:** Condense each episode independently with a
-single strict LLM call.
+Two-phase approach:
 
-### Phase 1: Download + Transcribe
+1. **Build universe state** — download SRTs, extract structured knowledge per episode via one DeepSeek call, merge into cross-episode knowledge base.
+2. **Audio cutting** — pick concepts/claims from the universe state, collect their timestamp segments across all episodes, assemble into a single audio file.
 
-Downloads MP3 + SRT per episode. Prefers YouTube auto-subs; falls back to
-faster-whisper. Same as before — see "Transcription OOM prevention" below.
+### Phase 1: Download SRTs
 
-**Artefact:** `source_subtitles.srt` + `.mp3` per episode dir.
+Two sub-modes via `--yt-subs` flag:
 
-### Phase 2: LLM Compression (single DeepSeek call per episode)
+| Mode | Flag | Speed | SRT Quality | Use case |
+|------|------|-------|-------------|----------|
+| YouTube subs | `--yt-subs` | ~30s/ep | Fragmented, overlapping chunks | Quick universe knowledge building |
+| Whisper | *(default)* | ~30-45min/ep | Clean sentence-level chunks | Clean audio cutting boundaries |
+
+YT subs are fine for LLM knowledge extraction (the model handles fragmentary text). Whisper is needed when cutting audio so segments land on clean boundaries.
+
+### Phase 2: LLM Extraction (one DeepSeek call per episode)
 
 Receives the **full timestamped SRT transcript** — each entry shown as
-`[INDEX] START-END: TEXT` — and returns the episode's core idea plus
-direct timestamp segments for the most relevant passages.
+`[INDEX] START-END: TEXT` — and returns structured knowledge with
+direct timestamp segments:
 
 ```json
 {
-  "core_idea": "One sentence describing the episode's main argument",
-  "segments": [
-    {"start": 620.0, "end": 850.0, "reason": "Core theological argument: the divine council as a template for Israel's governance"},
-    {"start": 1800.0, "end": 2100.0, "reason": "Historical context on Ugaritic texts and their relation to Psalm 82"}
-  ]
+  "summary": "2-3 paragraph narrative summary…",
+  "concepts": [
+    {"id": "divine-council", "title": "Divine Council", "summary": "…",
+     "segments": [{"episode": 5, "start": 620.0, "end": 850.0}]}
+  ],
+  "entities": [
+    {"id": "melchizedek", "title": "Melchizedek", "category": "person",
+     "summary": "…", "segments": […]}
+  ],
+  "claims": [ … ],
+  "scriptural_links": [ … ],
+  "glossary": [ … ]
 }
 ```
 
-**Strategy:** The show has 3 roughly-equal halves (thirds). The LLM
-identifies the 1-2 key points the episode is making, then collects the
-continuous passages across the 3 halves that develop each point. The
-prompt guides this — no hard caps in code, the LLM decides what's
-appropriate.
+**Cost:** ~$0.03/episode. One call per episode.
 
-**Cardinal rules (enforced via prompt, not code):**
-- **Default to DROP.** The LLM must justify keeping something.
-- **Complete thoughts only.** Start where the speaker begins explaining,
-  end where the idea wraps up. Never mid-sentence or mid-argument.
-- **3-halves structure.** Pick 1-2 passages per half that build the core
-  idea. If a half is thin (banter, repetition), skip it — don't pad.
-- **No trailing fragments.** Widen to full sentence start/end if a
-  boundary would cut mid-thought.
+### Phase 3: Merge into universe state
 
-**Validation (code level):** Returned timestamps are snapped to SRT entry
-boundaries. Segments <3s dropped (hallucination guard). Mid-sentence
-boundaries are logged as warnings (not rejected). No maximum segment
-count — the LLM decides.
+Each episode's extracted knowledge is merged into `output/universe_state.json`.
+Items with the same `id` across episodes accumulate `segments` and
+`episode_numbers` arrays — building up a cross-episode audio position map.
 
-**Cost:** ~$0.03/episode. One call, no state, no post-processing.
+### Phase 4: Audio cutting
 
-### Phase 3: Audio Cut
+Extract segments for selected concepts/claims from the universe state, download
+audio for those episodes, cut+concatenate with beep separators at 1.25× speed.
 
-Extracts the selected segments from the source MP3, concatenates with beep
-separators, applies 1.25× speed. Same audio cutting as before — see
-`audio_strategies.py`.
+## Q&A episodes
 
-## Why this approach works
+Q&A episodes (detected by "Q&A" in the YouTube title) are **skipped by default**
+— they jump between unrelated caller questions rather than developing coherent
+themes. Use `--include-qa` to override.
 
-| Problem | Old approach | New approach |
-|---------|-------------|--------------|
-| Mid-thought cuts | LLM estimated word indices or theme boundaries; always wrong | LLM sees full timestamps, told to find complete thought boundaries |
-| Too much content kept | Prompt said "move through full arc" | Prompt says "3 halves, 1-2 substantive passages each" |
-| Complex state | Two LLM calls + universe state + JSON merging | One LLM call, no cross-episode state |
-| Brittle | global_state → decisions.json → intervals | Direct segment ranges → intervals |
-| No hard caps | Code overrode LLM with arbitrary limits | Code only validates (snap to SRT, hallucination guard); LLM decides what to keep |
+Episodes known as Q&A: 18, 34, 38 (and any others with "Q&A" in title).
 
 ## Current status (July 2026)
 
-**Working:** Per-episode compression pipeline. Tested on Ep. 29 (Monster
-Manual, 2h50m → ~20m, 7 segments across all 3 halves).
+**Universe state:** built for eps 1-40 (eps 1-28 with whisper, eps 31-40 whisper rebuild in progress).
 
-- `source_subtitles.srt` + MP3 exist for eps 1-29 (YouTube subs or whisper)
-- Phase 2 compression tested and working with `compress_episode.txt` prompt
-- Audio cutting works (sequential copy strategy, beep separators, 1.25× speed)
-- Artefact skipping implemented: checks `output/ep-NNN/compressed.json` before
-  hitting YouTube or the LLM
+**Audio cuts:** `build-minimal-theme` cuts one concept's clips. `build-master-cut`
+does multi-theme anthology. Custom scripts used for category-specific cuts.
 
-**Not working / unmaintained:** The universe-state approach (`build-universe`,
-`build-minimal-theme`, `build-master-cut`) is abandoned. Code still in repo
-but not the main workflow.
+**Commands are the main workflow:**
 
-**Next:** Run compression across remaining episodes, iterate on the prompt
-as needed based on output quality.
+| Command | Purpose | Status |
+|---------|---------|--------|
+| `build-universe --yt-subs` | Fast universe state (YT subs, ~30s/ep) | ✅ Working |
+| `build-universe` | Full universe state (whisper, ~30min/ep) | ✅ Working |
+| `build-master-cut` | Multi-theme audio anthology | ✅ Working |
+| `build-minimal-theme` | Single-concept audio cut | ✅ Working |
 
-## Data sizes
-
-| Metric | Per episode | 29 eps | 140 eps |
-|--------|-------------|--------|---------|
-| Cleaned transcript | ~113K chars / ~28K tokens | 3.3M chars | 15.9 MB |
-| SRT entries | ~1500-2200 | ~50K entries | ~250K entries |
-| Timestamped format | ~170K chars / ~42K tokens | 4.9M chars | 23.8 MB |
-
-## `process-playlist` command (main workflow)
-
-```bash
-python3 -m podcastcondensor process-playlist [PLAYLIST_URL] --start 1 --end 29
-```
-
-Runs all three phases per episode. Fully resumable: skips episodes whose
-`condensed_*.mp3` already exists (or whose SRT exists if only Phase 1+2 done).
-
-**Cost:** ~$0.03/episode (one DeepSeek call). No universe state needed.
-
-## `doctor` command
-
-```bash
-python3 -m podcastcondensor doctor --check
-```
-
-## Legacy commands (unmaintained)
-
-These were part of the abandoned universe-state approach. They still exist
-in the repo but are not the main workflow:
-
-| Command | Description |
-|---------|-------------|
-| `build-universe` | Builds cross-episode universe state (Phase 2 only, no audio) |
-| `build-minimal-theme` | Single-theme audio cut from universe state |
-| `build-master-cut` | Cross-episode thematic anthology |
+**Legacy (abandoned):** The per-episode compression pipeline
+(`process-playlist` compress mode, `prompts/compress_episode.txt`) is
+unmaintained. The old two-call classifier pipeline
+(`global_state.json` → `decisions.json`) is also legacy.
 
 ## Output
 
 ```
 output/
+  universe_state.json     # cross-episode knowledge base
   ep-NNN/
-    source_subtitles.srt    # raw downloaded SRT
-    compressed.json         # Phase 2 output: core idea + 1-2 timestamp segments
-    condensed_epNNN.mp3     # final audio (1-2 segments, beep-separated, 1.25x)
-    stats.json              # compression statistics (legacy path only)
-    global_state.json       # (legacy) from universe-state approach
-    decisions.json          # (legacy) from universe-state approach
+    source_subtitles.srt  # SRT (YT or whisper)
+    global_state.json     # per-episode DeepSeek extraction
 ```
+
+## Commands
+
+### `build-universe`
+
+```bash
+# Fast path (YT subs) — for knowledge building only
+python3 -m podcastcondensor build-universe [PLAYLIST_URL] \
+  --start N --end N --yt-subs
+
+# Full path (whisper) — for clean audio cutting
+python3 -m podcastcondensor build-universe [PLAYLIST_URL] \
+  --start N --end N
+```
+
+Resumable: skips episodes with existing `global_state.json`. Runs Phase 1
+(download) + Phase 2 (DeepSeek extraction) per episode.
+
+### `build-master-cut`
+
+```bash
+python3 -m podcastcondensor build-master-cut [PLAYLIST_URL] \
+  --start N --end N \
+  --target-duration 3600 \
+  --output my_cut.mp3
+```
+
+Does: download → universe state → theme extraction → segment selection → audio cut.
+
+### `build-minimal-theme`
+
+```bash
+python3 -m podcastcondensor build-minimal-theme [THEME_ID] \
+  [PLAYLIST_URL]
+```
+
+Cuts all segments for one concept across all episodes.
+
+## Data sizes
+
+| Metric | Per episode | 10 eps | 140 eps |
+|--------|-------------|--------|---------|
+| Cleaned transcript | ~113K chars / ~28K tokens | 1.1M chars | 15.9 MB |
+| SRT entries | ~1500-2200 | 15-22K | ~250K entries |
+| Universe state items | ~30-50 concepts+claims | ~300-500 | ~4000-7000 |
 
 ## Required
 
 - DeepSeek API key in `ANTHROPIC_AUTH_TOKEN` or `DEEPSEEK_API_KEY`
 - ffmpeg
+- yt-dlp
+- faster-whisper (for whisper mode)
 
 ## Prompts
 
 | File | Used by | Description |
 |------|---------|-------------|
-| `prompts/compress_episode.txt` | Phase 2 (compression) | Full transcript → core idea + 3-half timestamped segments |
+| `prompts/global_state.txt` | Phase 2 (extraction) | Full transcript → structured knowledge with timestamp segments |
+| `prompts/compress_episode.txt` | *(legacy)* | Archived old per-episode compression prompt |
 | `prompts/classify_raw.txt` | *(legacy)* | Archived old classifier prompt |
-| `prompts/global_state.txt` | *(legacy)* | Archived universe-state prompt |
 | `prompts/extract_themes.txt` | *(legacy)* | Archived theme extraction prompt |
 
 ## Transcription (faster-whisper) — OOM prevention

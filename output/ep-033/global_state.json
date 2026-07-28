@@ -1,0 +1,682 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen De Young conclude their four-part series on Old Testament Christology by examining appearances of God in human form throughout the Hebrew Scriptures. They focus on the 'heavenly man' seen by prophets like Daniel and Ezekiel, identifying this figure as the pre-incarnate Christ. Key passages include Daniel 10 (the man by the Tigris), Ezekiel 1 (the throne chariot with cherubim), and Genesis 18 (the three visitors at Mamre). The hosts argue that these theophanies reveal the second person of the Trinity acting in history for humanity's salvation. They also discuss the covenant ratification in Exodus 24, linking it to the Eucharist, and explore the 'cherubim zodiac' as a cosmic symbol. The episode emphasizes that God's appearances are always salvific, culminating in the incarnation where the heavenly man becomes the man from heaven, Jesus Christ.",
+  "entities": [
+    {
+      "id": "daniel",
+      "title": "Daniel",
+      "category": "person",
+      "summary": "Prophet who received visions of the heavenly man in Daniel 10 and 7.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 150.0,
+          "end": 155.8
+        },
+        {
+          "episode": 33,
+          "start": 599.0,
+          "end": 620.399
+        },
+        {
+          "episode": 33,
+          "start": 667.139,
+          "end": 726.639
+        },
+        {
+          "episode": 33,
+          "start": 1786.88,
+          "end": 1811.339
+        }
+      ]
+    },
+    {
+      "id": "ezekiel",
+      "title": "Ezekiel",
+      "category": "person",
+      "summary": "Exilic prophet who saw the throne chariot vision with cherubim and the likeness of a man on the throne.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 3245.0,
+          "end": 3266.0
+        },
+        {
+          "episode": 33,
+          "start": 3622.86,
+          "end": 3651.679
+        },
+        {
+          "episode": 33,
+          "start": 4530.0,
+          "end": 4558.0
+        }
+      ]
+    },
+    {
+      "id": "abraham",
+      "title": "Abraham",
+      "category": "person",
+      "summary": "Patriarch who hosted the Lord and two angels at Mamre (Genesis 18), eating with the pre-incarnate Christ.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 6643.199,
+          "end": 6720.0
+        },
+        {
+          "episode": 33,
+          "start": 7020.0,
+          "end": 7105.56
+        },
+        {
+          "episode": 33,
+          "start": 7541.84,
+          "end": 7566.96
+        },
+        {
+          "episode": 33,
+          "start": 7595.0,
+          "end": 7630.0
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "Leader of Israel who saw God face to face and received the covenant; key figure in Exodus 24.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 4755.279,
+          "end": 4769.96
+        },
+        {
+          "episode": 33,
+          "start": 5486.79,
+          "end": 5500.92
+        },
+        {
+          "episode": 33,
+          "start": 6201.119,
+          "end": 6221.119
+        }
+      ]
+    },
+    {
+      "id": "michael-archangel",
+      "title": "Michael the Archangel",
+      "category": "other",
+      "summary": "Chief prince who helps the heavenly man in Daniel 10; patron of Israel.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 1910.279,
+          "end": 1927.839
+        },
+        {
+          "episode": 33,
+          "start": 2179.28,
+          "end": 2207.59
+        },
+        {
+          "episode": 33,
+          "start": 2315.76,
+          "end": 2330.0
+        }
+      ]
+    },
+    {
+      "id": "gabriel-archangel",
+      "title": "Gabriel the Archangel",
+      "category": "other",
+      "summary": "Angel who appears in Daniel; distinguished from the heavenly man.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 1929.599,
+          "end": 1949.72
+        },
+        {
+          "episode": 33,
+          "start": 1971.359,
+          "end": 1986.24
+        }
+      ]
+    },
+    {
+      "id": "prince-of-persia",
+      "title": "Prince of Persia",
+      "category": "other",
+      "summary": "Fallen angelic ruler over Persia, opposed by the heavenly man and Michael.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 786.72,
+          "end": 808.8
+        },
+        {
+          "episode": 33,
+          "start": 2179.28,
+          "end": 2207.59
+        },
+        {
+          "episode": 33,
+          "start": 2441.48,
+          "end": 2451.32
+        }
+      ]
+    },
+    {
+      "id": "prince-of-greece",
+      "title": "Prince of Greece",
+      "category": "other",
+      "summary": "Fallen angelic ruler over Greece, mentioned in Daniel 10.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 858.639,
+          "end": 870.0
+        },
+        {
+          "episode": 33,
+          "start": 2441.48,
+          "end": 2451.32
+        }
+      ]
+    },
+    {
+      "id": "sodom-and-gomorrah",
+      "title": "Sodom and Gomorrah",
+      "category": "place",
+      "summary": "Cities destroyed by fire from Yahweh, with Yahweh on earth sending fire from Yahweh in heaven.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 7768.239,
+          "end": 7787.119
+        },
+        {
+          "episode": 33,
+          "start": 8040.0,
+          "end": 8069.239
+        },
+        {
+          "episode": 33,
+          "start": 8076.0,
+          "end": 8110.239
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "heavenly-man",
+      "title": "Heavenly Man",
+      "summary": "The pre-incarnate Christ appearing in human form in Old Testament theophanies, seen by prophets like Daniel and Ezekiel.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 47.48,
+          "end": 59.48
+        },
+        {
+          "episode": 33,
+          "start": 195.0,
+          "end": 215.96
+        },
+        {
+          "episode": 33,
+          "start": 480.0,
+          "end": 507.319
+        },
+        {
+          "episode": 33,
+          "start": 630.0,
+          "end": 665.44
+        },
+        {
+          "episode": 33,
+          "start": 1786.88,
+          "end": 1811.339
+        },
+        {
+          "episode": 33,
+          "start": 6294.479,
+          "end": 6318.0
+        }
+      ]
+    },
+    {
+      "id": "man-from-heaven",
+      "title": "Man from Heaven",
+      "summary": "The incarnate Christ, who came down from heaven to bring salvation, inverting the pattern of judgment seen in Old Testament theophanies.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 6326.96,
+          "end": 6337.76
+        },
+        {
+          "episode": 33,
+          "start": 7950.0,
+          "end": 8002.0
+        }
+      ]
+    },
+    {
+      "id": "cherubim-zodiac",
+      "title": "Cherubim Zodiac",
+      "summary": "The four living creatures in Ezekiel 1, identified with the four cardinal zodiac signs (man, lion, ox, eagle), representing the cosmic scope of God's throne.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 298.839,
+          "end": 311.0
+        },
+        {
+          "episode": 33,
+          "start": 840.0,
+          "end": 882.72
+        },
+        {
+          "episode": 33,
+          "start": 3701.0,
+          "end": 3717.0
+        },
+        {
+          "episode": 33,
+          "start": 3817.0,
+          "end": 3864.0
+        }
+      ]
+    },
+    {
+      "id": "covenant-ratification",
+      "title": "Covenant Ratification",
+      "summary": "The ceremony in Exodus 24 involving blood sprinkling and a meal, which prefigures the Eucharist and the new covenant in Christ.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 4937.199,
+          "end": 5007.319
+        },
+        {
+          "episode": 33,
+          "start": 5032.88,
+          "end": 5067.159
+        },
+        {
+          "episode": 33,
+          "start": 5458.56,
+          "end": 5595.84
+        },
+        {
+          "episode": 33,
+          "start": 5599.92,
+          "end": 5639.92
+        }
+      ]
+    },
+    {
+      "id": "time-and-space",
+      "title": "Time and Space in Heaven",
+      "summary": "The concept that God is not bound by linear time, allowing Christ's incarnate body to appear in Old Testament theophanies.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 300.0,
+          "end": 314.0
+        },
+        {
+          "episode": 33,
+          "start": 7140.0,
+          "end": 7199.359
+        },
+        {
+          "episode": 33,
+          "start": 7200.0,
+          "end": 7255.52
+        },
+        {
+          "episode": 33,
+          "start": 7380.0,
+          "end": 7426.479
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-daniel-10-christ",
+      "text": "The man Daniel sees in Daniel 10 is the pre-incarnate Christ, not an angel, as shown by his divine appearance and authority over Michael.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 1786.88,
+          "end": 1811.339
+        },
+        {
+          "episode": 33,
+          "start": 2159.4,
+          "end": 2185.44
+        }
+      ]
+    },
+    {
+      "id": "claim-ezekiel-1-christ",
+      "text": "The figure on the sapphire throne in Ezekiel 1 is Christ, the heavenly man, seen in human likeness.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 4530.0,
+          "end": 4558.0
+        },
+        {
+          "episode": 33,
+          "start": 4567.479,
+          "end": 4587.439
+        }
+      ]
+    },
+    {
+      "id": "claim-genesis-18-christ",
+      "text": "One of the three visitors to Abraham in Genesis 18 is Yahweh (Christ) in human form, who eats and has his feet washed.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 7020.0,
+          "end": 7105.56
+        },
+        {
+          "episode": 33,
+          "start": 7541.84,
+          "end": 7566.96
+        }
+      ]
+    },
+    {
+      "id": "claim-exodus-24-eucharist",
+      "text": "The covenant ratification in Exodus 24, with blood and a meal, prefigures the Eucharist as the new covenant in Christ's blood.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 5458.56,
+          "end": 5595.84
+        },
+        {
+          "episode": 33,
+          "start": 5599.92,
+          "end": 5639.92
+        }
+      ]
+    },
+    {
+      "id": "claim-cherubim-zodiac",
+      "text": "The four living creatures in Ezekiel 1 correspond to the four cardinal zodiac signs, showing God's sovereignty over the cosmos.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 3817.0,
+          "end": 3864.0
+        },
+        {
+          "episode": 33,
+          "start": 3864.0,
+          "end": 3888.159
+        }
+      ]
+    },
+    {
+      "id": "claim-time-and-space",
+      "text": "Christ's appearances in the Old Testament are not limited by linear time; his incarnate body is eternal and can appear before the incarnation.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 7140.0,
+          "end": 7199.359
+        },
+        {
+          "episode": 33,
+          "start": 7200.0,
+          "end": 7255.52
+        },
+        {
+          "episode": 33,
+          "start": 7380.0,
+          "end": 7426.479
+        }
+      ]
+    },
+    {
+      "id": "claim-salvific-purpose",
+      "text": "All divine appearances in Scripture are for the purpose of salvation, not merely to display power or knowledge.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 8328.799,
+          "end": 8399.84
+        },
+        {
+          "episode": 33,
+          "start": 8439.79,
+          "end": 8478.52
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "daniel-10",
+      "reference": "Daniel 10:1-21",
+      "summary": "Vision of the heavenly man by the Tigris; identifies him as Christ battling angelic princes.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 599.0,
+          "end": 876.24
+        },
+        {
+          "episode": 33,
+          "start": 1786.88,
+          "end": 1811.339
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-1",
+      "reference": "Ezekiel 1:1-28",
+      "summary": "Vision of the throne chariot with cherubim and the likeness of a man on the throne.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 3245.0,
+          "end": 3549.119
+        },
+        {
+          "episode": 33,
+          "start": 4530.0,
+          "end": 4587.439
+        }
+      ]
+    },
+    {
+      "id": "genesis-18",
+      "reference": "Genesis 18:1-15",
+      "summary": "The Lord appears to Abraham as one of three men; eats and has feet washed.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 6643.199,
+          "end": 6720.0
+        },
+        {
+          "episode": 33,
+          "start": 7020.0,
+          "end": 7105.56
+        }
+      ]
+    },
+    {
+      "id": "exodus-24",
+      "reference": "Exodus 24:1-18",
+      "summary": "Covenant ratification with blood and a meal; elders see God and eat.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 4755.279,
+          "end": 4909.92
+        },
+        {
+          "episode": 33,
+          "start": 5458.56,
+          "end": 5595.84
+        }
+      ]
+    },
+    {
+      "id": "revelation-1",
+      "reference": "Revelation 1:12-15",
+      "summary": "John's vision of the Son of Man, similar to Daniel 10's description.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 1568.279,
+          "end": 1608.319
+        },
+        {
+          "episode": 33,
+          "start": 1638.79,
+          "end": 1676.72
+        }
+      ]
+    },
+    {
+      "id": "revelation-4",
+      "reference": "Revelation 4:2-3",
+      "summary": "Throne vision with rainbow and gemstones, echoing Ezekiel 1.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 4590.0,
+          "end": 4632.96
+        }
+      ]
+    },
+    {
+      "id": "john-8-56",
+      "reference": "John 8:56",
+      "summary": "Jesus says Abraham saw his day and was glad, linking to Genesis 18.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 7595.0,
+          "end": 7639.0
+        }
+      ]
+    },
+    {
+      "id": "genesis-19-24",
+      "reference": "Genesis 19:24",
+      "summary": "Yahweh on earth rains fire from Yahweh in heaven, showing two divine persons.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 8076.0,
+          "end": 8110.239
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "kyriakos-anthropos",
+      "term": "Kyriakos Anthropos",
+      "definition": "Greek term meaning 'Lordly Man' or 'Dominican Man,' used by St. Mark the Ascetic for the pre-incarnate Christ appearing in human form.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 360.0,
+          "end": 462.8
+        }
+      ]
+    },
+    {
+      "id": "man-of-desires",
+      "term": "Man of Desires",
+      "definition": "Title for Daniel in Daniel 10, meaning 'pleasing man' or 'favored man,' not a man full of passions.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 1090.759,
+          "end": 1177.519
+        },
+        {
+          "episode": 33,
+          "start": 1289.759,
+          "end": 1327.859
+        }
+      ]
+    },
+    {
+      "id": "cherubim",
+      "term": "Cherubim",
+      "definition": "Living creatures (angelic beings) that serve as God's throne chariot; in Ezekiel, they have four faces representing the zodiac.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 847.24,
+          "end": 882.72
+        },
+        {
+          "episode": 33,
+          "start": 3717.0,
+          "end": 3764.8
+        }
+      ]
+    },
+    {
+      "id": "merkavah",
+      "term": "Merkavah",
+      "definition": "Hebrew term for the divine throne chariot, central to Ezekiel's vision and Jewish mysticism.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 3612.679,
+          "end": 3629.86
+        }
+      ]
+    },
+    {
+      "id": "sacramentum",
+      "term": "Sacramentum",
+      "definition": "Latin term for a sacred oath, used by Zwingli to describe the Eucharist as an oath-taking, though he denied the real presence.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 5678.0,
+          "end": 5727.239
+        }
+      ]
+    },
+    {
+      "id": "soteriological-motive",
+      "term": "Soteriological Motive",
+      "definition": "Theological concept that all God's actions are aimed at human salvation.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 8415.68,
+          "end": 8428.719
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen De Young continue their series on Old Testament Christology, focusing on 'the word of the Lord' or 'word of God.' They argue that in Scripture, this phrase never refers to the Bible but to a divine person—the pre-incarnate Christ—who appears to prophets, creates, and reveals God. They critique modern Protestant tendencies to equate 'word of God' with Scripture and challenge the 19th-century German scholarly view that John's Logos concept is derived from Greek philosophy. Instead, they ground it in Hebrew and Second Temple Jewish traditions, particularly the 'Debar Yahweh' (word of the Lord) in the Old Testament. They examine key passages: Genesis 15 (Abraham), 1 Samuel 3 (Samuel's call), Jeremiah 1 (Jeremiah's call), and the Targums' use of 'Memra.' The second half of the episode is a detailed exegesis of John 1:1-18, showing that John's prologue recapitulates Genesis, identifying the Logos as the pre-existent, creative, and revelatory agent of God, who became incarnate in Jesus Christ. They conclude that Christ as the Logos is the rational order of creation and the key to all true knowledge.",
+  "entities": [
+    {
+      "id": "debar-yahweh",
+      "title": "Debar Yahweh",
+      "category": "theological",
+      "summary": "Hebrew phrase meaning 'word of the Lord,' used in the Old Testament to refer to a divine person who appears to prophets and acts as God's agent in creation and revelation.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 2788.32,
+          "end": 2844.0
+        },
+        {
+          "episode": 31,
+          "start": 2928.48,
+          "end": 2977.0
+        },
+        {
+          "episode": 31,
+          "start": 5807.439,
+          "end": 5871.159
+        }
+      ]
+    },
+    {
+      "id": "logos",
+      "title": "Logos",
+      "category": "theological",
+      "summary": "Greek term for 'word,' used by John to identify Jesus Christ as the pre-existent, divine agent of creation and revelation. In Greek philosophy, it meant rational order; John redefines it through the Old Testament concept of Debar Yahweh.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 1539.0,
+          "end": 1572.0
+        },
+        {
+          "episode": 31,
+          "start": 1922.44,
+          "end": 1971.599
+        },
+        {
+          "episode": 31,
+          "start": 6868.0,
+          "end": 6962.0
+        }
+      ]
+    },
+    {
+      "id": "philo-of-alexandria",
+      "title": "Philo of Alexandria",
+      "category": "historical",
+      "summary": "First-century Jewish philosopher from Alexandria who wrote extensively about the Logos as a mediator between God and creation. Often misinterpreted as a Platonist, but his views align with Second Temple Jewish traditions.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 3330.0,
+          "end": 3402.719
+        },
+        {
+          "episode": 31,
+          "start": 3600.0,
+          "end": 3700.679
+        },
+        {
+          "episode": 31,
+          "start": 3840.0,
+          "end": 3926.4
+        }
+      ]
+    },
+    {
+      "id": "john-the-baptist",
+      "title": "John the Baptist",
+      "category": "person",
+      "summary": "The forerunner of Christ, mentioned in John 1:6-8 as a witness to the light (salvation). He is the paradigm of the prophets, testifying to the Logos before the incarnation.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 8529.0,
+          "end": 8572.559
+        },
+        {
+          "episode": 31,
+          "start": 9525.28,
+          "end": 9560.319
+        }
+      ]
+    },
+    {
+      "id": "samuel",
+      "title": "Samuel",
+      "category": "person",
+      "summary": "Old Testament prophet whose call in 1 Samuel 3 involved a visual encounter with the word of the Lord, who stood by his bed. This illustrates that knowing God comes through seeing the Word.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 5201.279,
+          "end": 5262.0
+        },
+        {
+          "episode": 31,
+          "start": 5280.0,
+          "end": 5363.0
+        }
+      ]
+    },
+    {
+      "id": "jeremiah",
+      "title": "Jeremiah",
+      "category": "person",
+      "summary": "Old Testament prophet called in Jeremiah 1, where the word of the Lord appeared to him, spoke in the first person as Yahweh, and touched his mouth. This shows the personal, bodily nature of the Word.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 5659.72,
+          "end": 5735.359
+        },
+        {
+          "episode": 31,
+          "start": 5736.359,
+          "end": 5766.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "word-of-the-lord-as-person",
+      "title": "Word of the Lord as a Divine Person",
+      "summary": "In the Old Testament, 'the word of the Lord' (Debar Yahweh) is not a message but a divine person who appears to prophets, creates, and reveals God. This figure is both identified with Yahweh and distinguished from Him, prefiguring Christ.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 150.0,
+          "end": 261.36
+        },
+        {
+          "episode": 31,
+          "start": 660.0,
+          "end": 712.6
+        },
+        {
+          "episode": 31,
+          "start": 2788.32,
+          "end": 2844.0
+        },
+        {
+          "episode": 31,
+          "start": 5807.439,
+          "end": 5871.159
+        }
+      ]
+    },
+    {
+      "id": "logos-in-johns-prologue",
+      "title": "Logos in John's Prologue",
+      "summary": "John 1:1-18 identifies Jesus Christ as the eternal Logos (Word) who was with God and was God, through whom all things were made. The prologue recapitulates Genesis, showing the Logos as the light of creation and the agent of salvation from the beginning.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 6868.0,
+          "end": 6962.0
+        },
+        {
+          "episode": 31,
+          "start": 7005.199,
+          "end": 7100.52
+        },
+        {
+          "episode": 31,
+          "start": 7877.239,
+          "end": 7973.399
+        },
+        {
+          "episode": 31,
+          "start": 8100.0,
+          "end": 8212.36
+        },
+        {
+          "episode": 31,
+          "start": 9186.0,
+          "end": 9261.12
+        }
+      ]
+    },
+    {
+      "id": "theosis-as-purpose-of-creation",
+      "title": "Theosis as the Purpose of Creation",
+      "summary": "The light of John 1:4-5 is the life of God in Christ, intended from the first day of creation to be shared with humanity, making them children of God. This shows that deification (theosis) is the goal of creation.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 8298.719,
+          "end": 8438.799
+        },
+        {
+          "episode": 31,
+          "start": 8951.559,
+          "end": 9039.84
+        }
+      ]
+    },
+    {
+      "id": "philo-and-second-temple-judaism",
+      "title": "Philo and Second Temple Judaism",
+      "summary": "Philo of Alexandria, often seen as a Hellenistic Jew, actually reflects Second Temple Jewish ideas about the Logos as a personal mediator, not Greek philosophy. His views align with the Dead Sea Scrolls and show a Jewish rather than Platonic origin.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 3330.0,
+          "end": 3402.719
+        },
+        {
+          "episode": 31,
+          "start": 3600.0,
+          "end": 3700.679
+        },
+        {
+          "episode": 31,
+          "start": 3840.0,
+          "end": 3926.4
+        }
+      ]
+    },
+    {
+      "id": "targums-and-memra",
+      "title": "Targums and Memra",
+      "summary": "The Targums (Aramaic paraphrases) often insert 'Memra' (word) where the Hebrew text has Yahweh, especially in anthropomorphic contexts, to distinguish the visible Word from the invisible Father. This reflects a developed theology of the Word as a distinct divine person.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 4410.0,
+          "end": 4475.0
+        },
+        {
+          "episode": 31,
+          "start": 4505.119,
+          "end": 4533.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "word-of-god-not-bible",
+      "text": "In the Bible, the phrase 'word of God' or 'word of the Lord' is never used to refer to the Bible itself; it always refers to a divine person.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 660.0,
+          "end": 712.6
+        }
+      ]
+    },
+    {
+      "id": "johns-logos-from-ot",
+      "text": "John's use of Logos in his prologue is derived from the Old Testament concept of Debar Yahweh, not from Greek philosophy. This is confirmed by Second Temple Jewish literature like the Dead Sea Scrolls.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 570.0,
+          "end": 611.0
+        },
+        {
+          "episode": 31,
+          "start": 1922.44,
+          "end": 1971.599
+        },
+        {
+          "episode": 31,
+          "start": 2580.0,
+          "end": 2614.639
+        }
+      ]
+    },
+    {
+      "id": "theosis-from-creation",
+      "text": "The light of John 1:4-5 is the life of God in Christ, intended from the first day of creation to be shared with humanity, making deification (theosis) the purpose of creation.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 8298.719,
+          "end": 8438.799
+        }
+      ]
+    },
+    {
+      "id": "christ-as-logos-interface",
+      "text": "Christ as the Logos is the interface between God and creation: He creates, reveals, and saves. All true knowledge comes through Him, and He is the rational order of the universe.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 10119.0,
+          "end": 10207.84
+        },
+        {
+          "episode": 31,
+          "start": 10429.68,
+          "end": 10503.719
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-15",
+      "reference": "Genesis 15:1-8",
+      "summary": "The word of the Lord appears to Abram in a vision; Abram calls Him 'Lord Yahweh,' and the figure does not correct him, showing the Word is identified with Yahweh.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 4770.0,
+          "end": 4844.64
+        },
+        {
+          "episode": 31,
+          "start": 4876.159,
+          "end": 5018.399
+        }
+      ]
+    },
+    {
+      "id": "1-samuel-3",
+      "reference": "1 Samuel 3:1-21",
+      "summary": "Samuel's call: the word of the Lord is rare, and Samuel did not know Yahweh because he had not seen the word. The Lord stands by his bed, showing a visual, bodily encounter.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 5201.279,
+          "end": 5262.0
+        },
+        {
+          "episode": 31,
+          "start": 5280.0,
+          "end": 5363.0
+        },
+        {
+          "episode": 31,
+          "start": 5494.0,
+          "end": 5587.359
+        }
+      ]
+    },
+    {
+      "id": "jeremiah-1",
+      "reference": "Jeremiah 1:4-9",
+      "summary": "The word of the Lord comes to Jeremiah, speaks as Yahweh ('I formed you'), and touches his mouth, identifying the Word as a divine person who acts bodily.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 5659.72,
+          "end": 5735.359
+        },
+        {
+          "episode": 31,
+          "start": 5736.359,
+          "end": 5766.0
+        }
+      ]
+    },
+    {
+      "id": "john-1-1-18",
+      "reference": "John 1:1-18",
+      "summary": "The prologue identifies Jesus as the eternal Logos, who was with God and was God, through whom all things were made. It recapitulates Genesis, showing the Logos as the light of creation and salvation.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 6868.0,
+          "end": 6962.0
+        },
+        {
+          "episode": 31,
+          "start": 7005.199,
+          "end": 7100.52
+        },
+        {
+          "episode": 31,
+          "start": 7877.239,
+          "end": 7973.399
+        },
+        {
+          "episode": 31,
+          "start": 8100.0,
+          "end": 8212.36
+        },
+        {
+          "episode": 31,
+          "start": 9186.0,
+          "end": 9261.12
+        }
+      ]
+    },
+    {
+      "id": "psalm-33-6",
+      "reference": "Psalm 33:6",
+      "summary": "By the word of the Lord the heavens were made, and by the breath (Spirit) of his mouth all their host. This associates the Word with creation and the Spirit with life.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 6129.92,
+          "end": 6190.79
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "debar",
+      "term": "Debar",
+      "definition": "Hebrew word meaning 'word,' 'matter,' or 'thing.' It has a broad range, referring not just to spoken words but to concepts, events, and even persons.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 2876.719,
+          "end": 2934.639
+        }
+      ]
+    },
+    {
+      "id": "memra",
+      "term": "Memra",
+      "definition": "Aramaic term for 'word,' used in the Targums to refer to the divine Word as a distinct person, often inserted where the Hebrew has Yahweh to avoid anthropomorphism.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 4410.0,
+          "end": 4475.0
+        }
+      ]
+    },
+    {
+      "id": "monogenes",
+      "term": "Monogenes",
+      "definition": "Greek term meaning 'only begotten' or 'unique,' used in John 1:14,18 to describe Christ as the unique Son of God, distinct from other children of God.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 9327.239,
+          "end": 9413.959
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God, sharing in His divine life. In this episode, it is identified as the purpose of creation, initiated by the light of Christ from the beginning.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 8428.559,
+          "end": 8456.479
+        },
+        {
+          "episode": 31,
+          "start": 8951.559,
+          "end": 9039.84
+        }
+      ]
+    }
+  ]
+}
