@@ -362,12 +362,14 @@ def _extract_segment(
         output_path,
     ]
     result = subprocess.run(
-        _ionice_cmd(cmd), capture_output=True, text=True, timeout=120,
+        _ionice_cmd(cmd), capture_output=True, timeout=120,
     )
     if result.returncode != 0:
+        # ffmpeg may output non-UTF-8 bytes to stderr; decode safely
+        err_text = result.stderr.decode("utf-8", errors="replace")[:300]
         raise RuntimeError(
             f"Segment extraction failed ({source_audio}, {start:.1f}-{end:.1f}): "
-            f"{result.stderr[:300]}"
+            f"{err_text}"
         )
 
 
