@@ -1,0 +1,18 @@
+{
+  "total_segments": 2169,
+  "keep_count": 1528,
+  "drop_count": 641,
+  "maybe_count": 0,
+  "original_duration_sec": 8531.4,
+  "condensed_duration_sec": 6430.5,
+  "compression_ratio": 0.754,
+  "maybe_segments": [],
+  "fragmentation": {
+    "num_intervals": 36,
+    "num_islands": 1,
+    "island_ratio": 0.028,
+    "avg_segments_per_interval": 42.4,
+    "keep_density": 0.732,
+    "status": "ok"
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "summary": "In this episode, Fr. Andrew and Fr. Stephen explore the biblical and theological foundations for the veneration of relics, beginning with a recap of their earlier discussions on the nature of bodies, the noetic being, and the concept of matter being 'used' by spiritual beings. They clarify that 'body' in ancient understanding refers to a nexus of powers and potentialities, which later Greek philosophical terms like nature, will, and energy help disambiguate. The hosts then connect this to the idea that human beings can serve as the body of God (theosis) or of demonic powers (demonosis), emphasizing that our works actualize spiritual energies. The second half of the episode applies these concepts to relics: the bodies of saints remain their bodies even after death, and because they were instruments of God's works, they continue to be the body of Christ. The hosts argue that matter is not evil but is the medium through which God works salvation, citing St. John of Damascus. They also address related practices such as cremation, the 40-day blessing of infants, and the role of altar servers, concluding with a call to care for the material world as the arena of salvation.",
+  "entities": [
+    {
+      "id": "st-john-chrysostom",
+      "title": "St. John Chrysostom",
+      "category": "person",
+      "summary": "Church Father quoted on demons being souls of sinners, not those who die violently.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 3677.59,
+          "end": 3778.82
+        }
+      ]
+    },
+    {
+      "id": "st-john-of-damascus",
+      "title": "St. John of Damascus",
+      "category": "person",
+      "summary": "Church Father whose defense of icons centers on matter being used by God for salvation.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 5700.0,
+          "end": 5830.0
+        },
+        {
+          "episode": 24,
+          "start": 5830.0,
+          "end": 5943.779
+        }
+      ]
+    },
+    {
+      "id": "st-mary-magdalene",
+      "title": "St. Mary Magdalene",
+      "category": "person",
+      "summary": "Saint whose incorrupt hand is venerated as a relic, noted for being warm and flexible.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 185.74,
+          "end": 206.219
+        },
+        {
+          "episode": 24,
+          "start": 6214.899,
+          "end": 6253.859
+        }
+      ]
+    },
+    {
+      "id": "mount-athos",
+      "title": "Mount Athos",
+      "category": "place",
+      "summary": "Monastic community in Greece known for major relics and veneration practices.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 185.74,
+          "end": 206.219
+        },
+        {
+          "episode": 24,
+          "start": 6241.619,
+          "end": 6344.739
+        }
+      ]
+    },
+    {
+      "id": "azazel",
+      "title": "Azazel",
+      "category": "theological",
+      "summary": "Demonic figure in 1 Enoch to whom sins are attributed; associated with the scapegoat ritual.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 4060.139,
+          "end": 4113.42
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "body-as-nexus-of-powers",
+      "title": "Body as Nexus of Powers and Potentialities",
+      "summary": "The ancient understanding of 'body' as a set of powers and potentialities, not merely physical matter. This applies to God, angels, and humans.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 262.6,
+          "end": 366.699
+        }
+      ]
+    },
+    {
+      "id": "nature-will-energy",
+      "title": "Nature, Will, and Energy",
+      "summary": "Greek philosophical terms that clarify the ancient concept of body: nature as dynamic powers, will as movement toward perfection, energy as actualization.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 621.19,
+          "end": 702.779
+        },
+        {
+          "episode": 24,
+          "start": 807.9,
+          "end": 969.57
+        },
+        {
+          "episode": 24,
+          "start": 1101.97,
+          "end": 1166.369
+        }
+      ]
+    },
+    {
+      "id": "theosis-and-demonosis",
+      "title": "Theosis and Demonosis",
+      "summary": "Humans can function as the body of God (theosis) or of demonic powers (demonosis) by doing their works, actualizing spiritual energies.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 3500.98,
+          "end": 3625.219
+        },
+        {
+          "episode": 24,
+          "start": 3811.59,
+          "end": 3981.659
+        }
+      ]
+    },
+    {
+      "id": "relics-as-body-of-christ",
+      "title": "Relics as the Body of Christ",
+      "summary": "The bodies of saints remain their bodies after death and, because they did God's works, continue to be the body of Christ, worthy of veneration.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 5399.84,
+          "end": 5525.84
+        },
+        {
+          "episode": 24,
+          "start": 5747.279,
+          "end": 5830.0
+        }
+      ]
+    },
+    {
+      "id": "matter-as-mediator-of-grace",
+      "title": "Matter as Mediator of Grace",
+      "summary": "God works through material creation to mediate salvation; matter is not evil but is transfigured and used as an instrument of divine energies.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 5747.279,
+          "end": 5943.779
+        },
+        {
+          "episode": 24,
+          "start": 5999.14,
+          "end": 6158.1
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "body-is-not-just-metaphor",
+      "text": "Biblical language about God's body (eyes, etc.) is not merely metaphorical but refers to His powers; treating it as metaphor loses truth.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 1359.97,
+          "end": 1427.329
+        }
+      ]
+    },
+    {
+      "id": "human-works-actualize-spiritual-energies",
+      "text": "Human works are the actualization of spiritual energies; good works are God's works through us, evil works are the works of demons.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 3811.59,
+          "end": 3981.659
+        }
+      ]
+    },
+    {
+      "id": "relics-are-still-the-saint",
+      "text": "The body of a saint after death is still that saint and therefore the body of Christ, because identity is not based on matter but on what it is being.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 5399.84,
+          "end": 5525.84
+        }
+      ]
+    },
+    {
+      "id": "cremation-inappropriate-for-christians",
+      "text": "Cremation dissolves the body which is still the person and part of Christ's body; Christians should lovingly lay the body to rest, not destroy it.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 6701.939,
+          "end": 6882.739
+        }
+      ]
+    },
+    {
+      "id": "material-world-is-arena-of-salvation",
+      "text": "Salvation is worked out through material life; the world to come is this world transfigured, not a replacement.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 7300.899,
+          "end": 7472.29
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "2-kings-13-21",
+      "reference": "2 Kings 13:21",
+      "summary": "Bones of Elisha bring a dead man back to life, cited as a biblical example of relics.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 174.939,
+          "end": 200.46
+        }
+      ]
+    },
+    {
+      "id": "romans-5-12",
+      "reference": "Romans 5:12",
+      "summary": "Sin enters the world through Adam as a power, not just an act.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 4026.78,
+          "end": 4047.739
+        }
+      ]
+    },
+    {
+      "id": "genesis-4-7",
+      "reference": "Genesis 4:7",
+      "summary": "Sin crouches at Cain's door, personified as a power seeking to master him.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 4042.59,
+          "end": 4060.139
+        }
+      ]
+    },
+    {
+      "id": "1-john-3-8",
+      "reference": "1 John 3:8",
+      "summary": "The Son of God appeared to destroy the works of the devil; those who sin are of the devil.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 4124.38,
+          "end": 4153.819
+        }
+      ]
+    },
+    {
+      "id": "ephesians-1-22-23",
+      "reference": "Ephesians 1:22-23",
+      "summary": "The church is the body of Christ, the fullness of him who fills all in all.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 4986.26,
+          "end": 5013.6
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "noetic",
+      "term": "Noetic",
+      "definition": "Pertaining to the intellect or mind; in Orthodox theology, the spiritual/intellectual capacity of humans and angels that images God.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 1948.96,
+          "end": 1965.92
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God through participation in His divine energies, not by nature but by grace.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 3500.98,
+          "end": 3555.86
+        }
+      ]
+    },
+    {
+      "id": "demonosis",
+      "term": "Demonosis",
+      "definition": "The process of becoming like demons by doing their works; the opposite of theosis.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 3571.699,
+          "end": 3625.219
+        }
+      ]
+    },
+    {
+      "id": "energies",
+      "term": "Energies (Divine)",
+      "definition": "God's works or actions in the world, through which He is present and active, especially in matter.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 1101.97,
+          "end": 1166.369
+        },
+        {
+          "episode": 24,
+          "start": 5747.279,
+          "end": 5830.0
+        }
+      ]
+    },
+    {
+      "id": "incorrupt",
+      "term": "Incorrupt",
+      "definition": "A state where a saint's body does not decay after death, seen as a sign of sanctity.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 6236.659,
+          "end": 6253.859
+        }
+      ]
+    }
+  ]
+}

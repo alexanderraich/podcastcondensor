@@ -1,0 +1,444 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young continue their series on sacrifice, focusing on ancient Israel's worship as prescribed in the Torah. They emphasize that Israelite worship was not derived from paganism but was a divine revelation that both continued and corrected existing sacrificial practices. The hosts explore the pre-Torah patriarchal worship, the development of a centralized priesthood after the Golden Calf incident, and the daily life of a faithful Israelite, which was integrated with agricultural cycles and family leadership. They discuss key offerings: incense, sin offerings, peace offerings, thank offerings, grain offerings, and drink offerings, highlighting that sin offerings were not transactional but purgative, cleansing the residue of sin. Major discontinuities with paganism include the showbread (God feeding priests, not vice versa), high priest vestments (dressed like an idol but serving as an icon of God), and the disposal of blood (poured out at the altar, not consumed or fed to the dead). The Passover is reinterpreted as an act of liberation from slavery to demonic powers, not penal substitution. The episode concludes with the agricultural calendar feasts (Rosh Hashanah, First Fruits, Sukkot) and the priestly role of Israel for the nations, urging Christians to embrace their priestly vocation to transform the world through worship and sacrifice.",
+  "entities": [
+    {
+      "id": "yahweh",
+      "title": "Yahweh",
+      "category": "theological",
+      "summary": "The God of Israel, who reveals Himself as distinct from pagan deities, demanding worship that reflects His character and providing for His people.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 1686.799,
+          "end": 1698.839
+        },
+        {
+          "episode": 13,
+          "start": 4872.96,
+          "end": 4895.92
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "historical",
+      "summary": "Prophet and leader of Israel, through whom the Torah was given. Priesthood was initially with him but later transferred to Aaron and the Levites.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 1545.2,
+          "end": 1573.24
+        }
+      ]
+    },
+    {
+      "id": "aaron",
+      "title": "Aaron",
+      "category": "historical",
+      "summary": "Brother of Moses, first high priest of Israel. His sons Nadab and Abihu were killed for offering unauthorized incense.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 1545.2,
+          "end": 1573.24
+        },
+        {
+          "episode": 13,
+          "start": 3879.199,
+          "end": 3912.8
+        }
+      ]
+    },
+    {
+      "id": "levites",
+      "title": "Levites",
+      "category": "historical",
+      "summary": "The tribe of Levi, set apart as priests after the Golden Calf incident. They served in the Tabernacle and Temple.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 1596.859,
+          "end": 1614.24
+        }
+      ]
+    },
+    {
+      "id": "phinehas",
+      "title": "Phinehas",
+      "category": "historical",
+      "summary": "Grandson of Aaron, high priest of Israel. He was of African descent (his mother from Put), showing that Israelite identity was ritually, not ethnically, determined.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6718.5,
+          "end": 6781.439
+        }
+      ]
+    },
+    {
+      "id": "elijah",
+      "title": "Elijah",
+      "category": "historical",
+      "summary": "Prophet who confronted the prophets of Baal on Mount Carmel, where fire from heaven (lightning) consumed the sacrifice.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 4279.6,
+          "end": 4313.38
+        }
+      ]
+    },
+    {
+      "id": "david",
+      "title": "David",
+      "category": "historical",
+      "summary": "King of Israel, who ate the showbread when fleeing from Saul, an act cited by Jesus to illustrate that the Sabbath is for man.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 4723.439,
+          "end": 4770.0
+        }
+      ]
+    },
+    {
+      "id": "jeroboam",
+      "title": "Jeroboam",
+      "category": "historical",
+      "summary": "First king of the northern kingdom of Israel, who set up golden calves at Bethel and Dan as state religion, leading Israel into idolatry.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 1710.0,
+          "end": 1728.44
+        }
+      ]
+    },
+    {
+      "id": "recabites",
+      "title": "Recabites",
+      "category": "historical",
+      "summary": "A nomadic group who lived in tents and abstained from wine, praised by God through Jeremiah for their faithfulness and dependence on Him.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 7466.199,
+          "end": 7527.319
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "israelite-worship-as-way-of-life",
+      "title": "Israelite Worship as a Way of Life",
+      "summary": "For ancient Israelites, worship was not a separate compartment but an integrated way of life encompassing family, agriculture, and community. It was public, collective, and centered on dependence on God for survival.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 990.0,
+          "end": 1029.279
+        },
+        {
+          "episode": 13,
+          "start": 1045.39,
+          "end": 1080.39
+        }
+      ]
+    },
+    {
+      "id": "sin-as-disease-not-transaction",
+      "title": "Sin as Disease, Not Transaction",
+      "summary": "Sin is portrayed as a corrupting force that leaves a residue, like a disease, rather than a legal infraction. Sacrifices, especially sin offerings, cleanse this pollution, not pay a penalty.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 3012.239,
+          "end": 3084.96
+        },
+        {
+          "episode": 13,
+          "start": 3582.39,
+          "end": 3620.0
+        }
+      ]
+    },
+    {
+      "id": "showbread-inversion",
+      "title": "Showbread as Inversion of Pagan Practice",
+      "summary": "In pagan temples, priests fed the idol; in the Tabernacle, God feeds the priests through the showbread, demonstrating God's provision and care for His servants.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 4648.84,
+          "end": 4718.479
+        }
+      ]
+    },
+    {
+      "id": "high-priest-as-icon",
+      "title": "High Priest as Icon of God",
+      "summary": "The high priest's vestments mirror those of pagan idols, but instead of being worshipped, he serves as an icon of God through his actions, imaging God to the people.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 4999.79,
+          "end": 5125.439
+        }
+      ]
+    },
+    {
+      "id": "passover-as-liberation",
+      "title": "Passover as Liberation from Demonic Powers",
+      "summary": "Passover is not about penal substitution but about God freeing Israel from slavery to Egyptian gods and demonic powers. The blood marks the household for liberation, not payment.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6103.0,
+          "end": 6184.56
+        },
+        {
+          "episode": 13,
+          "start": 6329.52,
+          "end": 6415.8
+        }
+      ]
+    },
+    {
+      "id": "israel-as-priesthood-for-nations",
+      "title": "Israel as a Priesthood for the Nations",
+      "summary": "Israel's distinct laws and purity standards were not for isolation but to enable them to serve as priests for the world, offering sacrifices on behalf of all nations, as symbolized by the 70 bulls at Sukkot.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 7580.0,
+          "end": 7680.279
+        },
+        {
+          "episode": 13,
+          "start": 7722.72,
+          "end": 7756.739
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "israelite-worship-not-derived-from-paganism",
+      "text": "Israelite worship was not derived from paganism; rather, it was a divine revelation that corrected and inverted pagan practices, showing Yahweh's unique character.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 529.96,
+          "end": 604.679
+        },
+        {
+          "episode": 13,
+          "start": 5214.56,
+          "end": 5275.52
+        }
+      ]
+    },
+    {
+      "id": "sin-offerings-not-penal-substitution",
+      "text": "Sin offerings were not about paying a penalty or substituting punishment; they were about cleansing the pollution of sin, like a disease, to allow God's presence to remain safely with His people.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 3582.39,
+          "end": 3655.42
+        },
+        {
+          "episode": 13,
+          "start": 3806.44,
+          "end": 3879.199
+        }
+      ]
+    },
+    {
+      "id": "passover-not-penal-substitution",
+      "text": "Passover is not about penal substitution (lamb dying instead of firstborn); it is about liberation from slavery to demonic powers, with the blood marking households for freedom.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6103.0,
+          "end": 6184.56
+        },
+        {
+          "episode": 13,
+          "start": 6329.52,
+          "end": 6415.8
+        }
+      ]
+    },
+    {
+      "id": "materialist-christianity-devolves-into-politics",
+      "text": "When Christianity becomes materialist, it loses priesthood, sacrifice, and worship, and inevitably devolves into political ideology (right or left), using force instead of grace.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 8386.0,
+          "end": 8505.92
+        }
+      ]
+    },
+    {
+      "id": "eucharist-fulfills-sin-offering",
+      "text": "The Eucharist, instituted by Christ as 'remembrance' (anamnesis), fulfills and transforms the sin offering, as the same Greek word is used for sin offerings in the Septuagint.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6030.0,
+          "end": 6082.8
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "exodus-30-7-9",
+      "reference": "Exodus 30:7-9",
+      "summary": "Command to burn incense on the altar of incense every morning and evening, with specific instructions not to offer strange incense or other offerings on it.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 2818.8,
+          "end": 2854.46
+        }
+      ]
+    },
+    {
+      "id": "leviticus-10-1-2",
+      "reference": "Leviticus 10:1-2",
+      "summary": "Nadab and Abihu, sons of Aaron, offered unauthorized fire before the Lord and were consumed by fire from His presence, illustrating the danger of approaching God improperly.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 3879.199,
+          "end": 3912.8
+        }
+      ]
+    },
+    {
+      "id": "numbers-10-10",
+      "reference": "Numbers 10:10",
+      "summary": "Sin offerings are offered as a 'remembrance' (anamnesis) before the Lord, using the same Greek word Christ used at the Last Supper.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6030.0,
+          "end": 6057.88
+        }
+      ]
+    },
+    {
+      "id": "jeremiah-35",
+      "reference": "Jeremiah 35",
+      "summary": "The Recabites are praised for their faithfulness in living as nomads and abstaining from wine, embodying dependence on God.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 7466.199,
+          "end": 7527.319
+        }
+      ]
+    },
+    {
+      "id": "revelation-5-11-12",
+      "reference": "Revelation 5:11-12",
+      "summary": "Vision of countless angels praising the Lamb, used as closing doxology for the episode.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 8731.86,
+          "end": 8754.62
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "showbread",
+      "term": "Showbread",
+      "definition": "Bread placed on a table in the Tabernacle/Temple, replaced daily, eaten by priests. Symbolizes God feeding His priests, inverting pagan practice where priests fed idols.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 4512.279,
+          "end": 4654.199
+        }
+      ]
+    },
+    {
+      "id": "sin-offering",
+      "term": "Sin Offering",
+      "definition": "A sacrifice offered to cleanse the pollution of sin, not as punishment but as purification. Offered daily, not one-to-one with specific sins.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 3473.599,
+          "end": 3587.719
+        }
+      ]
+    },
+    {
+      "id": "peace-offering",
+      "term": "Peace Offering",
+      "definition": "A sacrifice to restore relationship after a major rupture, often involving greater value to express contrition, similar to making peace after a serious offense.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 3962.32,
+          "end": 4026.48
+        }
+      ]
+    },
+    {
+      "id": "first-fruits",
+      "term": "First Fruits",
+      "definition": "The first portion of the harvest offered to God, symbolizing dedication of the whole harvest. Connected to the concept of firstborn as heir.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 7168.0,
+          "end": 7229.0
+        }
+      ]
+    },
+    {
+      "id": "sukkot",
+      "term": "Sukkot (Feast of Tabernacles)",
+      "definition": "A harvest festival where Israelites lived in temporary shelters to remember their dependence on God in the wilderness. Included sacrifice of 70 bulls for the nations.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 7332.79,
+          "end": 7390.5
+        },
+        {
+          "episode": 13,
+          "start": 7540.79,
+          "end": 7596.56
+        }
+      ]
+    },
+    {
+      "id": "manumission",
+      "term": "Manumission",
+      "definition": "The act of setting slaves free. Used to describe the Exodus as liberation from slavery to demonic powers, not a payment to them.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6422.399,
+          "end": 6441.92
+        }
+      ]
+    }
+  ]
+}

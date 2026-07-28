@@ -13,6 +13,8 @@ output/ep-*/*
 !output/ep-*/source_subtitles.srt
 !output/ep-*/compressed.json
 !output/ep-*/global_state.json
+!output/ep-*/decisions.json
+!output/ep-*/stats.json
 !output/.gitkeep
 # universe_state.json is explicitly ignored — commit it manually with -f
 output/universe.dump

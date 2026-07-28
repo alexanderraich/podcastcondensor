@@ -1,0 +1,305 @@
+{
+  "summary": "In this inaugural episode of the Lord of Spirits podcast, hosts Father Andrew Stephen Damick and Father Stephen De Young introduce the show's purpose: to help Christians, especially Orthodox Christians in the West, recover a sense of the spiritual reality that permeates the physical world. They critique modern materialism—not just as greed, but as a habitual worldview that treats the material world as all that exists, even among believers. The hosts argue that many Christians are 'materialists by habit,' living as if God and spirits are irrelevant to daily life. They aim to reconnect listeners with the biblical and traditional understanding of a universe filled with spiritual beings: angels, demons, and the departed saints, all referred to as 'gods' in Scripture. The episode lays foundational concepts such as the Divine Council, the title 'Lord of Spirits' (from Enochic literature and linked to 'Lord of Hosts'), and the proper use of the word 'gods' in the Bible. They emphasize that Christianity is not monotheism in the modern sense but 'monolatry'—worship of the one true God while acknowledging the existence of other spiritual beings. The show also takes live calls, discussing topics like guardian angels, the significance of Mount Hermon, and the meaning of 1 Corinthians 11:10 regarding head coverings and angels.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of the podcast, Chief Content Officer at Ancient Faith Ministries, former pastor of 11 years. He brings a pastoral perspective and interest in practical spirituality.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 63.7,
+          "end": 100.64
+        },
+        {
+          "episode": 1,
+          "start": 229.56,
+          "end": 255.0
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "Co-host, pastor of Archangel Gabriel Orthodox Church in Lafayette, LA, with a PhD in Biblical Studies. He provides scholarly expertise on Scripture and ancient Near Eastern context.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 127.799,
+          "end": 149.56
+        },
+        {
+          "episode": 1,
+          "start": 392.699,
+          "end": 399.459
+        }
+      ]
+    },
+    {
+      "id": "lord-of-spirits-title",
+      "title": "Lord of Spirits",
+      "category": "theological",
+      "summary": "Title for God found in Enochic literature (especially 1 Enoch), equivalent to 'Lord of Hosts' (Yahweh Sabaoth). It emphasizes God's authority over all spiritual beings.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 1641.9,
+          "end": 1709.98
+        }
+      ]
+    },
+    {
+      "id": "mount-hermon",
+      "title": "Mount Hermon",
+      "category": "place",
+      "summary": "A mountain on the border of Israel and Syria, traditionally associated with the divine council, the fall of the Watchers (angels), and the Transfiguration. It was a site of pagan worship and considered an entrance to the underworld.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 4262.92,
+          "end": 4333.0
+        },
+        {
+          "episode": 1,
+          "start": 4337.0,
+          "end": 4419.0
+        }
+      ]
+    },
+    {
+      "id": "elohim",
+      "title": "Elohim",
+      "category": "theological",
+      "summary": "Hebrew word for God or gods, used in the Old Testament to refer to Yahweh, other spiritual beings (angels, demons), and even deceased humans (e.g., Samuel). It is a flexible term denoting a spiritual being with authority.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 2927.119,
+          "end": 2979.199
+        },
+        {
+          "episode": 1,
+          "start": 2999.32,
+          "end": 3058.79
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "materialism-by-habit",
+      "title": "Materialism by Habit",
+      "summary": "The tendency of modern Christians to live as if only the material world exists, despite professing belief in the spiritual. This habitual materialism leads to treating prayer and spiritual practices as optional additions to life rather than integral to it.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 1036.2,
+          "end": 1210.44
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "title": "Divine Council",
+      "summary": "The heavenly assembly of spiritual beings (angels, sons of God) over which God presides as King. This concept is central to understanding passages like Psalm 82 and the title 'Lord of Hosts.'",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 1710.0,
+          "end": 1740.0
+        },
+        {
+          "episode": 1,
+          "start": 2366.79,
+          "end": 2419.28
+        }
+      ]
+    },
+    {
+      "id": "monolatry",
+      "title": "Monolatry vs. Monotheism",
+      "summary": "The biblical teaching that there is only one God worthy of worship (Yahweh), while other spiritual beings exist and are called 'gods.' This contrasts with modern monotheism, which denies the existence of other gods.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 4755.319,
+          "end": 4789.76
+        }
+      ]
+    },
+    {
+      "id": "spiritual-geography",
+      "title": "Spiritual Geography",
+      "summary": "The idea that spiritual realities (heaven, hell, paradise) are not distant locations but overlap with the physical world, often associated with specific geographical sites like mountains and springs.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 4509.0,
+          "end": 4527.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "christians-materialists-by-habit",
+      "text": "Modern Christians are materialists by habit, living as if the 3D world of the senses is all that exists, even though they profess belief in the spiritual.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 1036.2,
+          "end": 1093.0
+        }
+      ]
+    },
+    {
+      "id": "bible-acknowledges-many-gods",
+      "text": "The Bible acknowledges the existence of many gods (spiritual beings) but teaches that only Yahweh is to be worshipped. This is monolatry, not monotheism.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 2366.79,
+          "end": 2419.28
+        },
+        {
+          "episode": 1,
+          "start": 4755.319,
+          "end": 4789.76
+        }
+      ]
+    },
+    {
+      "id": "monotheism-modern-invention",
+      "text": "The term 'monotheism' was invented in the late 16th/early 17th century by Western scholars and does not accurately describe biblical religion.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 4796.399,
+          "end": 4813.239
+        }
+      ]
+    },
+    {
+      "id": "angels-cannot-be-killed",
+      "text": "Good angels cannot be killed by bad angels because they do not have mortal bodies; however, evil angels can die spiritually, being separated from God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 3461.28,
+          "end": 3503.119
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "psalm-82-1",
+      "reference": "Psalm 82:1",
+      "summary": "Used to show that God stands in the assembly of gods, indicating a divine council of spiritual beings.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 2366.79,
+          "end": 2419.28
+        }
+      ]
+    },
+    {
+      "id": "exodus-15-11",
+      "reference": "Exodus 15:11",
+      "summary": "Asks 'Who is like you, O Lord, among the gods?' implying the existence of other gods.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 2523.0,
+          "end": 2541.519
+        }
+      ]
+    },
+    {
+      "id": "exodus-21-5-6",
+      "reference": "Exodus 21:5-6",
+      "summary": "Describes a slave being brought 'to the gods' (Elohim), interpreted as the household gods or ancestors, showing the term's flexibility.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 3090.0,
+          "end": 3199.44
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-11-10",
+      "reference": "1 Corinthians 11:10",
+      "summary": "Discusses women covering their heads 'because of the angels,' linked to the sin of the Watchers in Genesis 6.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 3853.88,
+          "end": 3893.0
+        },
+        {
+          "episode": 1,
+          "start": 3926.4,
+          "end": 4111.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "monolatry",
+      "term": "Monolatry",
+      "definition": "The worship of one God while acknowledging the existence of other gods. This is the biblical position, as opposed to monotheism which denies other gods.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 4755.319,
+          "end": 4789.76
+        }
+      ]
+    },
+    {
+      "id": "divine-council-glossary",
+      "term": "Divine Council",
+      "definition": "The assembly of heavenly beings (angels, sons of God) who serve under God's authority. Referenced in Psalm 82 and other passages.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 1710.0,
+          "end": 1740.0
+        }
+      ]
+    },
+    {
+      "id": "watchers",
+      "term": "Watchers",
+      "definition": "A class of angels mentioned in Enochic literature who descended to earth and sinned with human women, leading to the Nephilim (giants).",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 4034.639,
+          "end": 4068.94
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God through participation in His divine life. Contrasted with 'demonosis'—becoming like demons through sin.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 5340.0,
+          "end": 5370.5
+        }
+      ]
+    }
+  ]
+}

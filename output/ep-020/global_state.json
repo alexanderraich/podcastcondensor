@@ -1,0 +1,416 @@
+{
+  "summary": "In this episode, the hosts explore the Ascension of Christ as an enthronement event, drawing parallels with ancient Near Eastern temple architecture and mythology. They begin with petrosomatoglyphs—footprints carved in stone outside temples—which trace the path of a deity's victory and enthronement. This motif appears in pagan temples (e.g., Baal at Ain Dara, Buddha in Myanmar) and is fulfilled in Christ's Ascension, where His footprint is venerated on the Mount of Olives. The discussion contrasts pagan chaoskampf (struggle against chaos) and succession myths with the biblical narrative: God creates without conflict, and Christ's enthronement is a peaceful reception of authority from the Father. The Sabbath is reinterpreted as God's rest after creation, a model for humanity's participation in divine rule. The episode culminates in Daniel 7's vision of the Son of Man receiving dominion, which is directly linked to Christ's Ascension in the New Testament (Matthew 28, Acts 1, Mark 14). The hosts emphasize that believers are called to co-reign with Christ, as seen in Revelation 20, and that this vision empowers Christians to face persecution with confidence, knowing that true lordship belongs to Christ alone.",
+  "entities": [
+    {
+      "id": "ain-dara",
+      "title": "Ain Dara",
+      "category": "place",
+      "summary": "An ancient Syro-Hittite temple site in Syria, dedicated to Baal, featuring large petrosomatoglyph footprints at the entrance.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 359.5,
+          "end": 375.0
+        },
+        {
+          "episode": 20,
+          "start": 538.2,
+          "end": 569.96
+        },
+        {
+          "episode": 20,
+          "start": 660.0,
+          "end": 706.799
+        }
+      ]
+    },
+    {
+      "id": "baal",
+      "title": "Baal",
+      "category": "theological",
+      "summary": "A Canaanite storm god, often depicted as a cloud-rider, whose myth involves defeating chaos monsters and being enthroned.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 570.0,
+          "end": 611.0
+        },
+        {
+          "episode": 20,
+          "start": 1237.79,
+          "end": 1259.98
+        },
+        {
+          "episode": 20,
+          "start": 6591.84,
+          "end": 6630.0
+        }
+      ]
+    },
+    {
+      "id": "ancient-of-days",
+      "title": "Ancient of Days",
+      "category": "theological",
+      "summary": "A title for God in Daniel 7, depicted as an old man with white hair, presiding over the divine council and giving dominion to the Son of Man.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 6170.779,
+          "end": 6186.119
+        },
+        {
+          "episode": 20,
+          "start": 6429.6,
+          "end": 6449.96
+        },
+        {
+          "episode": 20,
+          "start": 6516.0,
+          "end": 6535.439
+        }
+      ]
+    },
+    {
+      "id": "son-of-man",
+      "title": "Son of Man",
+      "category": "theological",
+      "summary": "A heavenly figure in Daniel 7, riding on clouds, who receives eternal dominion from the Ancient of Days; identified with Christ in the New Testament.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 6214.6,
+          "end": 6237.64
+        },
+        {
+          "episode": 20,
+          "start": 6480.0,
+          "end": 6501.0
+        },
+        {
+          "episode": 20,
+          "start": 6731.0,
+          "end": 6749.84
+        }
+      ]
+    },
+    {
+      "id": "pergamon-altar",
+      "title": "Pergamon Altar",
+      "category": "place",
+      "summary": "A massive altar to Zeus in Pergamon, decorated with the Gigantomachy, which John of Patmos called 'the throne of Satan' (Revelation 2:13).",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 1689.759,
+          "end": 1739.42
+        },
+        {
+          "episode": 20,
+          "start": 1753.0,
+          "end": 1776.99
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "petrosomatoglyph",
+      "title": "Petrosomatoglyph",
+      "summary": "A footprint or other body part carved into rock, often found outside ancient temples, symbolizing the path of a deity's victory and enthronement.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 60.0,
+          "end": 115.9
+        },
+        {
+          "episode": 20,
+          "start": 106.0,
+          "end": 115.9
+        },
+        {
+          "episode": 20,
+          "start": 349.5,
+          "end": 365.0
+        },
+        {
+          "episode": 20,
+          "start": 1080.0,
+          "end": 1110.16
+        }
+      ]
+    },
+    {
+      "id": "chaoskampf",
+      "title": "Chaoskampf",
+      "summary": "A German term for 'struggle against chaos,' referring to a mythological motif where a god defeats a chaos monster, often leading to creation or enthronement.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 1310.759,
+          "end": 1330.4
+        },
+        {
+          "episode": 20,
+          "start": 1350.0,
+          "end": 1367.16
+        }
+      ]
+    },
+    {
+      "id": "succession-myth",
+      "title": "Succession Myth",
+      "summary": "A mythological pattern where a younger god overthrows an older god to become the supreme deity, often involving violence and usurpation.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 1198.48,
+          "end": 1242.44
+        },
+        {
+          "episode": 20,
+          "start": 1283.799,
+          "end": 1295.0
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "title": "Divine Council",
+      "summary": "The assembly of heavenly beings (angels, saints) surrounding God's throne, depicted in Scripture as participating in judgment and governance.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 6418.0,
+          "end": 6435.72
+        },
+        {
+          "episode": 20,
+          "start": 7590.0,
+          "end": 7602.64
+        }
+      ]
+    },
+    {
+      "id": "sabbath-as-enthronement",
+      "title": "Sabbath as Enthronement",
+      "summary": "The Sabbath is not merely a day of rest but a participation in God's rest after creation, symbolizing enthronement and co-reigning with Christ.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 933.2,
+          "end": 959.559
+        },
+        {
+          "episode": 20,
+          "start": 3942.4,
+          "end": 3984.719
+        },
+        {
+          "episode": 20,
+          "start": 7950.0,
+          "end": 7977.39
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "ascension-as-enthronement",
+      "text": "The Ascension of Christ is not merely a departure but His enthronement as King, receiving all authority in heaven and on earth, fulfilling Daniel 7.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 6089.399,
+          "end": 6107.6
+        },
+        {
+          "episode": 20,
+          "start": 7156.8,
+          "end": 7198.119
+        }
+      ]
+    },
+    {
+      "id": "sabbath-made-for-man",
+      "text": "The Sabbath was made for man as an invitation to enter God's rest, which is participation in His enthronement and rule, not merely a day off.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 933.2,
+          "end": 959.559
+        },
+        {
+          "episode": 20,
+          "start": 3942.4,
+          "end": 3984.719
+        }
+      ]
+    },
+    {
+      "id": "pagan-myths-inverted",
+      "text": "Pagan myths of chaoskampf and succession are inverted in Scripture: God creates without struggle, and Christ receives dominion peacefully from the Father.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 3390.0,
+          "end": 3448.44
+        },
+        {
+          "episode": 20,
+          "start": 3540.0,
+          "end": 3575.84
+        },
+        {
+          "episode": 20,
+          "start": 4025.92,
+          "end": 4049.32
+        }
+      ]
+    },
+    {
+      "id": "saints-co-reign",
+      "text": "Believers who are faithful to Christ will co-reign with Him, sitting on thrones and judging, as seen in Revelation 20 and Daniel 7.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 7590.0,
+          "end": 7649.96
+        },
+        {
+          "episode": 20,
+          "start": 7740.0,
+          "end": 7768.119
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "daniel-7",
+      "reference": "Daniel 7:9-14",
+      "summary": "Vision of the Ancient of Days and the Son of Man receiving dominion; used as the primary Old Testament text for the Ascension as enthronement.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 6150.0,
+          "end": 6260.84
+        }
+      ]
+    },
+    {
+      "id": "psalm-110",
+      "reference": "Psalm 110:1",
+      "summary": "The Lord said to my Lord, 'Sit at my right hand until I make your enemies your footstool'; most quoted OT verse in the NT, applied to Christ's enthronement.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 7460.0,
+          "end": 7507.399
+        }
+      ]
+    },
+    {
+      "id": "matthew-28",
+      "reference": "Matthew 28:18-20",
+      "summary": "Jesus declares all authority in heaven and on earth has been given to Him, commissioning the disciples to make disciples of all nations.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 7108.319,
+          "end": 7161.84
+        }
+      ]
+    },
+    {
+      "id": "acts-1",
+      "reference": "Acts 1:6-11",
+      "summary": "Description of the Ascension: Jesus is lifted up and a cloud takes Him, connecting to Daniel's cloud-riding Son of Man.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 7237.6,
+          "end": 7302.0
+        }
+      ]
+    },
+    {
+      "id": "revelation-20",
+      "reference": "Revelation 20:4-6",
+      "summary": "Vision of thrones and saints reigning with Christ for a thousand years, fulfilling Daniel's prophecy of the saints receiving the kingdom.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 7535.479,
+          "end": 7587.42
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "petrosomatoglyph",
+      "term": "Petrosomatoglyph",
+      "definition": "A footprint or other body part carved into rock, often marking a deity's path to enthronement in ancient temples.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 60.0,
+          "end": 115.9
+        }
+      ]
+    },
+    {
+      "id": "chaoskampf",
+      "term": "Chaoskampf",
+      "definition": "German for 'struggle against chaos,' a mythological motif where a god defeats a chaos monster, often leading to creation or enthronement.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 1310.759,
+          "end": 1330.4
+        }
+      ]
+    },
+    {
+      "id": "succession-myth",
+      "term": "Succession Myth",
+      "definition": "A mythological pattern where a younger god overthrows an older god to become supreme, often involving violence.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 1198.48,
+          "end": 1242.44
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "term": "Divine Council",
+      "definition": "The assembly of heavenly beings around God's throne, participating in judgment and governance.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 6418.0,
+          "end": 6435.72
+        }
+      ]
+    },
+    {
+      "id": "gigantomachy",
+      "term": "Gigantomachy",
+      "definition": "The battle between the Olympian gods and the giants, depicted on the Pergamon Altar.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 1716.839,
+          "end": 1739.42
+        }
+      ]
+    }
+  ]
+}

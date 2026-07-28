@@ -1,0 +1,423 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen De Young explore the biblical and historical origins of giants (Nephilim), focusing on Genesis 6:1-4. They argue that the 'sons of God' are fallen angels who engaged in ritual sexual acts with human women, producing demonized offspring known as giants. This interpretation is supported by ancient Near Eastern parallels, the Septuagint translation, and early church fathers like St. Irenaeus. The hosts trace the theme of 'Gigantomachy' (war against giants) throughout the Old Testament, from the flood to the conquest of Canaan, and into the New Testament, where Christ's exorcisms continue the battle. They address the later 'Sethite hypothesis' (that giants resulted from intermarriage between Seth's and Cain's lines), showing its weaknesses and explaining its rise due to the decline of paganism. The episode concludes with practical implications: giants represent the ultimate outcome of sin—dehumanization and demonization—and salvation in Christ rescues us from this fate.",
+  "entities": [
+    {
+      "id": "og-king-of-bashan",
+      "title": "Og, King of Bashan",
+      "category": "historical",
+      "summary": "A giant king, last of the Rephaim, defeated by Israel under Moses. His iron bed (9x4 cubits) was used in ritual sexual practices, symbolizing his demonic nature.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 6111.199,
+          "end": 6179.68
+        },
+        {
+          "episode": 7,
+          "start": 6415.68,
+          "end": 6496.64
+        }
+      ]
+    },
+    {
+      "id": "goliath",
+      "title": "Goliath",
+      "category": "historical",
+      "summary": "A Philistine giant from Gath, descendant of the Anakim, defeated by David. His bronze armor and height mark him as a remnant of the ancient giant clans.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 7766.72,
+          "end": 7834.439
+        },
+        {
+          "episode": 7,
+          "start": 7890.0,
+          "end": 7918.72
+        }
+      ]
+    },
+    {
+      "id": "amalekites",
+      "title": "Amalekites",
+      "category": "historical",
+      "summary": "A giant clan descended from Amalek, son of Eliphaz (Esau's son) and Timna, a Horite concubine and sister of Lotan (Leviathan). They attacked Israel at Sinai and were later destroyed by Saul and David.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 6518.479,
+          "end": 6583.39
+        },
+        {
+          "episode": 7,
+          "start": 6979.279,
+          "end": 7059.52
+        }
+      ]
+    },
+    {
+      "id": "timna",
+      "title": "Timna",
+      "category": "historical",
+      "summary": "A Horite concubine of Eliphaz, Esau's son, identified as the sister of Lotan (Leviathan). Her union with Eliphaz produced Amalek, founder of the Amalekites.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 6640.159,
+          "end": 6683.0
+        },
+        {
+          "episode": 7,
+          "start": 6711.39,
+          "end": 6760.96
+        }
+      ]
+    },
+    {
+      "id": "septuagint-translators",
+      "title": "Septuagint Translators",
+      "category": "historical",
+      "summary": "Jewish scholars in Alexandria (c. 250 BC) who translated the Hebrew Bible into Greek. They rendered 'sons of God' as 'angels of God' and 'Nephilim' as 'giants', indicating their understanding of the passage.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 660.0,
+          "end": 707.7
+        },
+        {
+          "episode": 7,
+          "start": 9250.0,
+          "end": 9275.36
+        }
+      ]
+    },
+    {
+      "id": "irenaeus-of-lyons",
+      "title": "Irenaeus of Lyons",
+      "category": "person",
+      "summary": "Second-century church father, disciple of Polycarp (who was disciple of John the Apostle). He taught that angels united with human women, producing giants and introducing forbidden knowledge.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 9709.76,
+          "end": 9793.6
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "nephilim-ritual",
+      "title": "Nephilim Ritual",
+      "summary": "The ritual practice involving a king (embodying a god) and a temple prostitute, resulting in a child considered two-thirds divine, one-third human. This is the mechanism behind the production of giants, not direct angel-human hybridization.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 2630.0,
+          "end": 2721.44
+        },
+        {
+          "episode": 7,
+          "start": 2819.119,
+          "end": 2900.8
+        }
+      ]
+    },
+    {
+      "id": "gigantomachy",
+      "title": "Gigantomachy",
+      "summary": "The war against giants, a major theme in the Old Testament where Israel, as God's instrument, destroys giant clans to eradicate demonic practices. This war continues in the New Testament through Christ's exorcisms.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 5037.159,
+          "end": 5069.5
+        },
+        {
+          "episode": 7,
+          "start": 5980.0,
+          "end": 6005.52
+        }
+      ]
+    },
+    {
+      "id": "anti-theosis",
+      "title": "Anti-Theosis (Demonization)",
+      "summary": "The process by which humans become like demons through sin and participation in demonic rituals, resulting in a state opposite to theosis (becoming like God). Giants are the ultimate example of this.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 3356.199,
+          "end": 3404.88
+        },
+        {
+          "episode": 7,
+          "start": 8163.76,
+          "end": 8225.44
+        }
+      ]
+    },
+    {
+      "id": "sethite-hypothesis",
+      "title": "Sethite Hypothesis",
+      "summary": "A later interpretation, adopted by some church fathers (e.g., Augustine, Chrysostom), that the 'sons of God' in Genesis 6 were descendants of Seth, not angels. This view arose as paganism declined and the original context was lost.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 10200.0,
+          "end": 10247.84
+        },
+        {
+          "episode": 7,
+          "start": 10464.79,
+          "end": 10548.7
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "nephilim-are-giants",
+      "text": "The Nephilim are giants, as confirmed by the Septuagint translation (using 'gigantes') and cognate languages (Aramaic 'nephilin' means giants).",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 615.59,
+          "end": 653.759
+        }
+      ]
+    },
+    {
+      "id": "sons-of-god-are-angels",
+      "text": "The 'sons of God' in Genesis 6:2 are fallen angels, not human descendants of Seth. This is supported by the Septuagint, New Testament (1 Peter, 2 Peter, Jude), and early church fathers.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 660.0,
+          "end": 707.7
+        },
+        {
+          "episode": 7,
+          "start": 9384.659,
+          "end": 9417.12
+        }
+      ]
+    },
+    {
+      "id": "giants-are-demonized-humans",
+      "text": "Giants are fully demonized humans, the result of anti-theosis, not a hybrid species. They are human beings who have become like demons through ritual participation and sin.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 3356.199,
+          "end": 3404.88
+        },
+        {
+          "episode": 7,
+          "start": 8163.76,
+          "end": 8225.44
+        }
+      ]
+    },
+    {
+      "id": "gigantomachy-continues-in-christ",
+      "text": "The war against giants (Gigantomachy) continues in the New Testament through Christ's exorcisms, which defeat the spirits of dead giants (unclean spirits).",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 8040.0,
+          "end": 8061.8
+        },
+        {
+          "episode": 7,
+          "start": 8280.0,
+          "end": 8323.0
+        }
+      ]
+    },
+    {
+      "id": "sethite-hypothesis-is-later",
+      "text": "The Sethite hypothesis (that 'sons of God' are Seth's descendants) arose in the late 4th/early 5th century due to the decline of paganism and loss of ritual context, and does not fit the biblical data.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 10200.0,
+          "end": 10247.84
+        },
+        {
+          "episode": 7,
+          "start": 10464.79,
+          "end": 10548.7
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-6-1-4",
+      "reference": "Genesis 6:1-4",
+      "summary": "The primary passage describing the sons of God, daughters of men, and the Nephilim. Discussed as the origin of giants.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 217.439,
+          "end": 269.839
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-3-11",
+      "reference": "Deuteronomy 3:11",
+      "summary": "Describes Og's iron bed, used as evidence for the Nephilim ritual and the size of giants.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 2488.96,
+          "end": 2523.36
+        }
+      ]
+    },
+    {
+      "id": "1-peter-3-19-20",
+      "reference": "1 Peter 3:19-20",
+      "summary": "Refers to Christ preaching to spirits imprisoned in the days of Noah, identified as the spirits of dead giants.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 9384.659,
+          "end": 9417.12
+        }
+      ]
+    },
+    {
+      "id": "2-peter-2-4-5",
+      "reference": "2 Peter 2:4-5",
+      "summary": "Mentions angels who sinned and were cast into Tartarus, linked to the Genesis 6 event and the flood.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 9483.6,
+          "end": 9538.639
+        }
+      ]
+    },
+    {
+      "id": "jude-6-7",
+      "reference": "Jude 6-7",
+      "summary": "Refers to angels who left their proper dwelling and are kept in chains, paralleling the Genesis 6 account.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 9618.479,
+          "end": 9636.34
+        }
+      ]
+    },
+    {
+      "id": "genesis-36-12",
+      "reference": "Genesis 36:12",
+      "summary": "Identifies Timna as a Horite concubine and sister of Lotan (Leviathan), linking the Amalekites to giant clans.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 6640.159,
+          "end": 6683.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "nephilim",
+      "term": "Nephilim",
+      "definition": "Hebrew term for giants, derived from Aramaic meaning 'giants'. In the Bible, they are the offspring of the sons of God (fallen angels) and human women, characterized by their tyrannical and demonic nature.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 615.59,
+          "end": 653.759
+        }
+      ]
+    },
+    {
+      "id": "gigantomachy",
+      "term": "Gigantomachy",
+      "definition": "Greek for 'war against giants'. Refers to the biblical theme of God's people, led by Yahweh, destroying giant clans to eradicate demonic practices.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 5037.159,
+          "end": 5069.5
+        }
+      ]
+    },
+    {
+      "id": "rephaim",
+      "term": "Rephaim",
+      "definition": "A specific group of giant kings, including Og of Bashan. The term is also used for their spirits in the underworld, as seen in Ugaritic texts and Isaiah 14.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 6210.0,
+          "end": 6269.72
+        },
+        {
+          "episode": 7,
+          "start": 6310.56,
+          "end": 6352.56
+        }
+      ]
+    },
+    {
+      "id": "horites",
+      "term": "Horites",
+      "definition": "A giant clan living in Seir, dispossessed by Esau's descendants. Timna, a Horite concubine, was the mother of Amalek.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 6640.159,
+          "end": 6683.0
+        },
+        {
+          "episode": 7,
+          "start": 7290.0,
+          "end": 7326.0
+        }
+      ]
+    },
+    {
+      "id": "anakim",
+      "term": "Anakim",
+      "definition": "A giant clan descended from Anak, living in Canaan. They were a primary target of Joshua's conquest.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 7260.0,
+          "end": 7279.359
+        },
+        {
+          "episode": 7,
+          "start": 7650.0,
+          "end": 7670.96
+        }
+      ]
+    },
+    {
+      "id": "sethite-hypothesis",
+      "term": "Sethite Hypothesis",
+      "definition": "The interpretation that the 'sons of God' in Genesis 6 are descendants of Seth, not angels. This view emerged in late 4th/early 5th century and was adopted by some church fathers.",
+      "segments": [
+        {
+          "episode": 7,
+          "start": 10200.0,
+          "end": 10247.84
+        }
+      ]
+    }
+  ]
+}

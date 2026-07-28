@@ -1,0 +1,313 @@
+{
+  "summary": "In this episode, the hosts trace the concept of sacred space from Eden through the Old Testament to Pentecost. They begin by defining Eden as the place where God dwells, a walled garden from which humanity was expelled not as punishment but as a merciful act to prevent eternal condemnation in a state of sin. This expulsion introduces the theme of 'death by holiness'—the danger of being in God's presence while impure. The narrative follows God's presence through the patriarchs, the tabernacle, and the temple, showing how God progressively withdraws or dwells among His people to protect them. The episode culminates in the New Testament, where Christ becomes the new temple, and at Pentecost, the Holy Spirit descends to indwell believers, making them living temples. The hosts emphasize that Christian asceticism and repentance are about purifying ourselves to safely dwell in God's presence and to extend Eden into the world.",
+  "entities": [
+    {
+      "id": "eden",
+      "title": "Eden",
+      "category": "place",
+      "summary": "The garden planted by God in the east, the first sacred space where God dwelt with humanity. It is a walled-off section of creation.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 144.56,
+          "end": 176.319
+        },
+        {
+          "episode": 21,
+          "start": 342.699,
+          "end": 384.22
+        }
+      ]
+    },
+    {
+      "id": "nimrod",
+      "title": "Nimrod",
+      "category": "person",
+      "summary": "A mighty hunter and founder of Babylon, associated with the Nephilim. His name is linked to the god Ninurta, showing the demonization of human spirits.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 1467.16,
+          "end": 1515.79
+        },
+        {
+          "episode": 21,
+          "start": 1680.0,
+          "end": 1711.279
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "title": "Theotokos (Virgin Mary)",
+      "category": "person",
+      "summary": "The mother of Jesus, who was purified by the Holy Spirit to become the dwelling place of God. She is the new temple, the ark of the new covenant.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 6060.0,
+          "end": 6078.39
+        },
+        {
+          "episode": 21,
+          "start": 6435.6,
+          "end": 6467.0
+        }
+      ]
+    },
+    {
+      "id": "nadab-and-abihu",
+      "title": "Nadab and Abihu",
+      "category": "person",
+      "summary": "Sons of Aaron who offered unauthorized incense and were consumed by fire from the Lord, exemplifying death by holiness.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 4557.119,
+          "end": 4679.859
+        }
+      ]
+    },
+    {
+      "id": "ananias-and-sapphira",
+      "title": "Ananias and Sapphira",
+      "category": "person",
+      "summary": "A couple in Acts who lied about their donation and were struck dead, serving as a New Testament example of death by holiness.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 7573.0,
+          "end": 7684.319
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "death-by-holiness",
+      "title": "Death by Holiness",
+      "summary": "The principle that being in God's presence while impure or sinful is dangerous, leading to destruction or death. It explains why God expels Adam and Eve, why the cherubim guard Eden, and why Nadab and Abihu die in the tabernacle.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 814.7,
+          "end": 830.419
+        },
+        {
+          "episode": 21,
+          "start": 198.68,
+          "end": 223.919
+        },
+        {
+          "episode": 21,
+          "start": 4666.68,
+          "end": 4679.859
+        }
+      ]
+    },
+    {
+      "id": "sacred-space",
+      "title": "Sacred Space",
+      "summary": "The idea that certain places are set apart for God's special presence, such as Eden, the tabernacle, and the temple. These spaces have concentric circles of holiness requiring increasing purity.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 223.919,
+          "end": 243.759
+        },
+        {
+          "episode": 21,
+          "start": 4001.199,
+          "end": 4033.96
+        },
+        {
+          "episode": 21,
+          "start": 4860.0,
+          "end": 4895.0
+        }
+      ]
+    },
+    {
+      "id": "theophanic-glory-cloud",
+      "title": "Theophanic Glory Cloud",
+      "summary": "The visible manifestation of God's presence, often described as a fiery cloud, that filled the tabernacle and temple. It represents the Holy Spirit's dwelling.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 4500.0,
+          "end": 4539.84
+        },
+        {
+          "episode": 21,
+          "start": 5303.199,
+          "end": 5321.0
+        }
+      ]
+    },
+    {
+      "id": "temple-of-the-holy-spirit",
+      "title": "Temple of the Holy Spirit",
+      "summary": "The New Testament teaching that believers' bodies are temples of the Holy Spirit, indwelt by God's presence through baptism and chrismation, fulfilling the Old Testament pattern.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 6959.119,
+          "end": 6977.359
+        },
+        {
+          "episode": 21,
+          "start": 7439.68,
+          "end": 7477.84
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "expulsion-as-mercy",
+      "text": "Adam and Eve's expulsion from Eden was an act of mercy to prevent them from living forever in a state of crystallized sin, giving them the opportunity to repent.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 569.639,
+          "end": 626.36
+        }
+      ]
+    },
+    {
+      "id": "death-by-holiness-explanation",
+      "text": "Death by holiness occurs when an impure person comes into God's presence; it is not because God is angry but because His holiness is like fire that burns away impurities or destroys the unprepared.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 814.7,
+          "end": 869.98
+        }
+      ]
+    },
+    {
+      "id": "pentecost-as-temple-dedication",
+      "text": "Pentecost is the dedication of the new temple—the Church—as the Holy Spirit descends on the apostles, fulfilling the pattern of the tabernacle and temple dedications.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 7456.159,
+          "end": 7477.84
+        },
+        {
+          "episode": 21,
+          "start": 7680.0,
+          "end": 7704.68
+        }
+      ]
+    },
+    {
+      "id": "christ-as-new-temple",
+      "text": "Jesus Christ is the new and final temple; His body replaces the physical temple, and through Him believers become temples of the Holy Spirit.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 6764.72,
+          "end": 6829.1
+        },
+        {
+          "episode": 21,
+          "start": 6899.3,
+          "end": 6927.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "gen-6-3",
+      "reference": "Genesis 6:3",
+      "summary": "God says His Spirit will not contend with humankind forever, leading to the flood as an act of death by holiness.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 964.98,
+          "end": 1014.5
+        }
+      ]
+    },
+    {
+      "id": "lev-10-1-2",
+      "reference": "Leviticus 10:1-2",
+      "summary": "Nadab and Abihu offer unauthorized fire and are consumed, illustrating death by holiness in the tabernacle.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 4557.119,
+          "end": 4679.859
+        }
+      ]
+    },
+    {
+      "id": "john-2-19-21",
+      "reference": "John 2:19-21",
+      "summary": "Jesus refers to His body as the temple, which will be raised in three days.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 6869.279,
+          "end": 6899.3
+        }
+      ]
+    },
+    {
+      "id": "acts-5-1-11",
+      "reference": "Acts 5:1-11",
+      "summary": "Ananias and Sapphira lie to the Holy Spirit and die, showing death by holiness in the early Church.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 7573.0,
+          "end": 7684.319
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "death-by-holiness-term",
+      "term": "Death by Holiness",
+      "definition": "The concept that coming into God's presence while impure results in destruction or death, as seen in the Old and New Testaments.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 814.7,
+          "end": 830.419
+        }
+      ]
+    },
+    {
+      "id": "theophanic-glory-cloud-term",
+      "term": "Theophanic Glory Cloud",
+      "definition": "The visible manifestation of God's presence, often depicted as a fiery cloud, that filled the tabernacle and temple.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 4500.0,
+          "end": 4539.84
+        }
+      ]
+    },
+    {
+      "id": "shasu",
+      "term": "Shasu",
+      "definition": "Egyptian term for Bedouin-like people, including Edomites and Midianites, who worshipped Yahweh before the Exodus.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 2817.28,
+          "end": 2870.199
+        }
+      ]
+    }
+  ]
+}
