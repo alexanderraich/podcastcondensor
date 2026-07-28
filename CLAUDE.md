@@ -1,183 +1,78 @@
-# podcastcondensor
+# podcastcondensor (archived)
 
 Condensing "Lord of Spirits" podcast episodes using DeepSeek LLM.
 
-**Playlist:** https://www.youtube.com/playlist?list=PLZxCUWw2kdo1vAsOOOa3RwzwYvHbybjHR
+**Status: Archived.** The show's conversational style is fundamentally
+uncuttable — the hosts meander, loop back, banter, and stretch ~5 min
+of content across 2 hours. No amount of LLM prompt engineering, segment
+filtering, or boundary snapping produces listenable audio cuts.
 
-## Architecture — cross-episode universe state → concept/claim audio cuts
+## What was built
 
-Two-phase approach:
+A cross-episode knowledge base (universe state) for eps 1-40, with
+whisper transcriptions, per-episode DeepSeek extractions, and a merged
+knowledge graph of concepts/entities/claims with timestamp segments.
 
-1. **Build universe state** — download SRTs, extract structured knowledge per episode via one DeepSeek call, merge into cross-episode knowledge base.
-2. **Audio cutting** — pick concepts/claims from the universe state, collect their timestamp segments across all episodes, assemble into a single audio file.
+This is useful as a **searchable reference** — you can find where a
+specific concept was discussed — but the audio cutting pipeline is a
+dead end.
 
-### Phase 1: Download SRTs
+## Universe state coverage
 
-Two sub-modes via `--yt-subs` flag:
+| Episodes | SRT source | In universe state |
+|----------|-----------|-------------------|
+| 1-28 | Whisper | ✅ |
+| 29-30 | YouTube subs + whisper | Partial (compressed.json only) |
+| 31-40 | Whisper | ✅ |
 
-| Mode | Flag | Speed | SRT Quality | Use case |
-|------|------|-------|-------------|----------|
-| YouTube subs | `--yt-subs` | ~30s/ep | Fragmented, overlapping chunks | Quick universe knowledge building |
-| Whisper | *(default)* | ~30-45min/ep | Clean sentence-level chunks | Clean audio cutting boundaries |
+Total: 64 concepts, 65 entities, 58 claims, 199 scriptural links, 48 glossary terms.
 
-YT subs are fine for LLM knowledge extraction (the model handles fragmentary text). Whisper is needed when cutting audio so segments land on clean boundaries.
+## Repository contents
 
-### Phase 2: LLM Extraction (one DeepSeek call per episode)
+- `src/podcastcondensor/` — Python package: downloader, transcriber, LLM extraction, universe state
+- `prompts/global_state.txt` — The working extraction prompt
+- `output/ep-NNN/` — Per-episode artifacts (SRT, global_state.json, decisions.json)
+- `output/universe_state.json` — Cross-episode knowledge base
 
-Receives the **full timestamped SRT transcript** — each entry shown as
-`[INDEX] START-END: TEXT` — and returns structured knowledge with
-direct timestamp segments:
+## Key files
 
-```json
-{
-  "summary": "2-3 paragraph narrative summary…",
-  "concepts": [
-    {"id": "divine-council", "title": "Divine Council", "summary": "…",
-     "segments": [{"episode": 5, "start": 620.0, "end": 850.0}]}
-  ],
-  "entities": [
-    {"id": "melchizedek", "title": "Melchizedek", "category": "person",
-     "summary": "…", "segments": […]}
-  ],
-  "claims": [ … ],
-  "scriptural_links": [ … ],
-  "glossary": [ … ]
-}
-```
+| File | Purpose |
+|------|---------|
+| `src/podcastcondensor/cli.py` | CLI entry point |
+| `src/podcastcondensor/playlist_pipeline.py` | `build-universe` orchestration |
+| `src/podcastcondensor/universe_state.py` | Cross-episode knowledge base |
+| `src/podcastcondensor/global_state.py` | Per-episode DeepSeek extraction |
+| `src/podcastcondensor/subtitles.py` | SRT parsing + cleaning |
+| `prompts/global_state.txt` | Extraction prompt |
 
-**Cost:** ~$0.03/episode. One call per episode.
+## Legacy (not maintained)
 
-### Phase 3: Merge into universe state
-
-Each episode's extracted knowledge is merged into `output/universe_state.json`.
-Items with the same `id` across episodes accumulate `segments` and
-`episode_numbers` arrays — building up a cross-episode audio position map.
-
-### Phase 4: Audio cutting
-
-Extract segments for selected concepts/claims from the universe state, download
-audio for those episodes, cut+concatenate with beep separators at 1.25× speed.
-
-## Q&A episodes
-
-Q&A episodes (detected by "Q&A" in the YouTube title) are **skipped by default**
-— they jump between unrelated caller questions rather than developing coherent
-themes. Use `--include-qa` to override.
-
-Episodes known as Q&A: 18, 34, 38 (and any others with "Q&A" in title).
-
-## Current status (July 2026)
-
-**Universe state:** built for eps 1-40 (eps 1-28 with whisper, eps 31-40 whisper rebuild in progress).
-
-**Audio cuts:** `build-minimal-theme` cuts one concept's clips. `build-master-cut`
-does multi-theme anthology. Custom scripts used for category-specific cuts.
-
-**Commands are the main workflow:**
-
-| Command | Purpose | Status |
-|---------|---------|--------|
-| `build-universe --yt-subs` | Fast universe state (YT subs, ~30s/ep) | ✅ Working |
-| `build-universe` | Full universe state (whisper, ~30min/ep) | ✅ Working |
-| `build-master-cut` | Multi-theme audio anthology | ✅ Working |
-| `build-minimal-theme` | Single-concept audio cut | ✅ Working |
-
-**Legacy (abandoned):** The per-episode compression pipeline
-(`process-playlist` compress mode, `prompts/compress_episode.txt`) is
-unmaintained. The old two-call classifier pipeline
-(`global_state.json` → `decisions.json`) is also legacy.
-
-## Output
-
-```
-output/
-  universe_state.json     # cross-episode knowledge base
-  ep-NNN/
-    source_subtitles.srt  # SRT (YT or whisper)
-    global_state.json     # per-episode DeepSeek extraction
-```
+- `process-playlist` — Per-episode one-shot compression
+- `build-master-cut` — Multi-theme audio anthology
+- `build-minimal-theme` — Single-concept audio cut
+- `prompts/compress_episode.txt`, `classify_raw.txt`, `extract_themes.txt`
 
 ## Commands
 
-### `build-universe`
-
 ```bash
-# Fast path (YT subs) — for knowledge building only
-python3 -m podcastcondensor build-universe [PLAYLIST_URL] \
-  --start N --end N --yt-subs
+# Build universe state with whisper (clean SRT, slow)
+python3 -m podcastcondensor build-universe [PLAYLIST_URL] --start N --end N
 
-# Full path (whisper) — for clean audio cutting
-python3 -m podcastcondensor build-universe [PLAYLIST_URL] \
-  --start N --end N
+# Build with YouTube subs (fragmented, fast, knowledge only)
+python3 -m podcastcondensor build-universe [PLAYLIST_URL] --start N --end N --yt-subs
+
+# Health check
+python3 -m podcastcondensor doctor --check
 ```
-
-Resumable: skips episodes with existing `global_state.json`. Runs Phase 1
-(download) + Phase 2 (DeepSeek extraction) per episode.
-
-### `build-master-cut`
-
-```bash
-python3 -m podcastcondensor build-master-cut [PLAYLIST_URL] \
-  --start N --end N \
-  --target-duration 3600 \
-  --output my_cut.mp3
-```
-
-Does: download → universe state → theme extraction → segment selection → audio cut.
-
-### `build-minimal-theme`
-
-```bash
-python3 -m podcastcondensor build-minimal-theme [THEME_ID] \
-  [PLAYLIST_URL]
-```
-
-Cuts all segments for one concept across all episodes.
-
-## Data sizes
-
-| Metric | Per episode | 10 eps | 140 eps |
-|--------|-------------|--------|---------|
-| Cleaned transcript | ~113K chars / ~28K tokens | 1.1M chars | 15.9 MB |
-| SRT entries | ~1500-2200 | 15-22K | ~250K entries |
-| Universe state items | ~30-50 concepts+claims | ~300-500 | ~4000-7000 |
 
 ## Required
 
 - DeepSeek API key in `ANTHROPIC_AUTH_TOKEN` or `DEEPSEEK_API_KEY`
-- ffmpeg
-- yt-dlp
-- faster-whisper (for whisper mode)
+- ffmpeg, yt-dlp, faster-whisper
 
-## Prompts
+## Git-tracked artifacts per episode
 
-| File | Used by | Description |
-|------|---------|-------------|
-| `prompts/global_state.txt` | Phase 2 (extraction) | Full transcript → structured knowledge with timestamp segments |
-| `prompts/compress_episode.txt` | *(legacy)* | Archived old per-episode compression prompt |
-| `prompts/classify_raw.txt` | *(legacy)* | Archived old classifier prompt |
-| `prompts/extract_themes.txt` | *(legacy)* | Archived theme extraction prompt |
-
-## Transcription (faster-whisper) — OOM prevention
-
-On the 8 GB RAM / 6 GB VRAM WSL2 machine, transcription is the most crash-prone
-phase. Defaults are set for memory-conservative operation:
-
-| Setting | Default | Why |
-|---------|---------|-----|
-| `whisper_beam_size` | `1` | Beam 3 keeps 3× decoder state |
-| `whisper_vad_filter` | `False` | VAD pre-scan doubles peak GPU memory on 2.75h audio |
-| `whisper_condition_on_prev` | `False` | Text cache grows unbounded on long audio |
-
-Environment: `OMP_NUM_THREADS=2` and `MKL_NUM_THREADS=2` are set before any
-C library import to prevent OpenMP thread explosion.
-
-All three are configurable via `config.py` under the `# Transcription` section.
-
-**Diagnostics:** Every `logger.info/warning/error` from `transcribe.py` is
-automatically tee'd to `output/ep-NNN/_transcribe_diag.log` with immediate
-fsync. A watchdog daemon heartbeats every 30s during `model.transcribe()`,
-with GPU memory snapshots every 60s and system memory every 120s.
-
-**DON'T** use `os.dup2` / fd redirection for diagnostics — it can corrupt
-the terminal state of the parent Claude session on crash.
+- `source_subtitles.srt` — Whisper or YT transcription
+- `global_state.json` — Per-episode DeepSeek extraction
+- `decisions.json` — Legacy per-entry classifier decisions (eps 1-28)
+- `stats.json` — Legacy compression stats (eps 23-29)
