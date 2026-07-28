@@ -1,0 +1,584 @@
+{
+  "summary": "In this episode, the hosts continue their exploration of the concept of 'body' in an ancient biblical sense, defined as a nexus of powers and potentialities. They recap and clarify the previous episode's discussion on God's body, emphasizing that anthropomorphic language in Scripture points to real divine attributes (e.g., God's 'right arm' signifies His power) rather than a physical form. The conversation then shifts to human bodies: Adam and Eve were created innocent but not perfect, tasked with expanding Eden and subduing chaos. Their trespass led to mortality, which God granted as a gift to enable repentance and prevent immortal evil. The hosts distinguish between Adam's trespass (transgression) and Cain's sin (a demonic force), arguing that sin entered the world as a power. They then discuss angelic bodies, citing St. Paul's teaching in 1 Corinthians 15 that angels have 'celestial bodies' differing in glory. Demons, particularly the spirits of the dead Nephilim, are bodiless and seek to possess material bodies. The hosts explain that angels cannot repent because they lack mortal, mutable bodies—a condition necessary for repentance. They caution against anthropomorphizing angelic consciousness, using the philosophical 'what is it like to be a bat?' analogy. Finally, they discuss Christ's two bodies (divine and human) in the ancient sense, His voluntary assumption of human limitations, and the Church as the Body of Christ—a living instrument through which God acts in the world. The episode concludes with an exhortation to live out this theology by actively participating in God's work.",
+  "entities": [
+    {
+      "id": "adam",
+      "title": "Adam",
+      "category": "person",
+      "summary": "First human, created from dust, placed in Eden to subdue and fill the earth. His trespass brought mortality, but he is not the first sinner—Cain is.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 1307.16,
+          "end": 1346.92
+        },
+        {
+          "episode": 11,
+          "start": 1812.39,
+          "end": 1865.92
+        },
+        {
+          "episode": 11,
+          "start": 3024.0,
+          "end": 3063.5
+        }
+      ]
+    },
+    {
+      "id": "eve",
+      "title": "Eve",
+      "category": "person",
+      "summary": "First woman, created from Adam to help fill the world with life. She participated in the trespass but is also seen as receiving life from God.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 1394.0,
+          "end": 1421.92
+        },
+        {
+          "episode": 11,
+          "start": 1560.0,
+          "end": 1589.0
+        }
+      ]
+    },
+    {
+      "id": "cain",
+      "title": "Cain",
+      "category": "person",
+      "summary": "Adam and Eve's firstborn, the first sinner and murderer. He was mastered by sin (a demonic force) and became the paradigmatic heretic and son of the devil.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3060.0,
+          "end": 3096.4
+        },
+        {
+          "episode": 11,
+          "start": 3270.0,
+          "end": 3322.239
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "person",
+      "summary": "The God-man, second Person of the Trinity, who took on human nature (body) voluntarily. He is the new Adam and the paradigm of humanity's telos.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 460.959,
+          "end": 484.319
+        },
+        {
+          "episode": 11,
+          "start": 6736.96,
+          "end": 6798.699
+        },
+        {
+          "episode": 11,
+          "start": 7410.0,
+          "end": 7453.0
+        }
+      ]
+    },
+    {
+      "id": "st-augustine",
+      "title": "St. Augustine",
+      "category": "person",
+      "summary": "Influential Latin father whose focus on the Fall as the primary event shaped Western theology. His concept of 'felix culpa' (happy fault) is noted.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 1613.759,
+          "end": 1718.16
+        },
+        {
+          "episode": 11,
+          "start": 5904.279,
+          "end": 5945.0
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "Apostle who taught about different kinds of bodies (celestial/terrestrial) and the resurrection body. He used 'body' in the ancient sense.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3983.92,
+          "end": 4050.39
+        },
+        {
+          "episode": 11,
+          "start": 5548.79,
+          "end": 5597.0
+        },
+        {
+          "episode": 11,
+          "start": 7731.96,
+          "end": 7806.159
+        }
+      ]
+    },
+    {
+      "id": "st-john-of-damascus",
+      "title": "St. John of Damascus",
+      "category": "person",
+      "summary": "Church father who taught that angels are bodiless relative to humans but have circumscribed, finite bodies. He stated angels cannot repent due to their incorporeal nature.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3825.28,
+          "end": 3871.79
+        },
+        {
+          "episode": 11,
+          "start": 4639.56,
+          "end": 4675.76
+        }
+      ]
+    },
+    {
+      "id": "nephilim",
+      "title": "Nephilim",
+      "category": "other",
+      "summary": "Offspring of fallen angels and human women; their dead spirits are bodiless demons that seek to possess humans. They are the 'giants' of Genesis.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 4290.0,
+          "end": 4341.239
+        },
+        {
+          "episode": 11,
+          "start": 5370.0,
+          "end": 5402.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "ancient-concept-of-body",
+      "title": "Ancient Concept of Body",
+      "summary": "Body understood as a nexus of powers and potentialities, not merely a material object. This concept applies to God, angels, humans, and the Church.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 270.0,
+          "end": 307.0
+        },
+        {
+          "episode": 11,
+          "start": 1237.4,
+          "end": 1279.24
+        },
+        {
+          "episode": 11,
+          "start": 5598.0,
+          "end": 5646.479
+        }
+      ]
+    },
+    {
+      "id": "theomorphism-vs-anthropomorphism",
+      "title": "Theomorphism vs. Anthropomorphism",
+      "summary": "The Bible uses human-like language for God not to reduce Him to a human, but to reveal that humans are made in God's image. God's 'face' and 'arm' refer to His real attributes (e.g., communication, power).",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 358.759,
+          "end": 437.0
+        },
+        {
+          "episode": 11,
+          "start": 476.72,
+          "end": 529.519
+        }
+      ]
+    },
+    {
+      "id": "mortality-as-gift",
+      "title": "Mortality as a Gift",
+      "summary": "After the Fall, God gave humans mortality to prevent immortal evil and to enable repentance. Death is a gift that allows change and healing.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 2790.0,
+          "end": 2846.0
+        },
+        {
+          "episode": 11,
+          "start": 2879.39,
+          "end": 2935.98
+        }
+      ]
+    },
+    {
+      "id": "sin-as-demonic-force",
+      "title": "Sin as a Demonic Force",
+      "summary": "Sin is not merely rule-breaking but a personified power (demon) that seeks to dominate humans. It entered the world through Adam's trespass and mastered Cain.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3024.0,
+          "end": 3096.4
+        },
+        {
+          "episode": 11,
+          "start": 3120.0,
+          "end": 3177.719
+        }
+      ]
+    },
+    {
+      "id": "angelic-bodies",
+      "title": "Angelic Bodies",
+      "summary": "Angels have bodies in the ancient sense—immaterial compared to humans but finite and circumscribed. They are 'celestial bodies' differing in glory (1 Cor 15).",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3825.28,
+          "end": 3917.88
+        },
+        {
+          "episode": 11,
+          "start": 3983.92,
+          "end": 4050.39
+        },
+        {
+          "episode": 11,
+          "start": 4099.84,
+          "end": 4169.88
+        }
+      ]
+    },
+    {
+      "id": "incarnation-as-plan-a",
+      "title": "Incarnation as Plan A",
+      "summary": "The incarnation was always God's plan for creation's fulfillment, not a response to sin. Christ would have become incarnate even without the Fall, though without dying.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 2100.0,
+          "end": 2196.719
+        },
+        {
+          "episode": 11,
+          "start": 2323.28,
+          "end": 2369.0
+        }
+      ]
+    },
+    {
+      "id": "church-as-body-of-christ",
+      "title": "Church as the Body of Christ",
+      "summary": "The Church is Christ's body in the ancient sense—the instrument through which He acts in the world. Believers are His hands, feet, and eyes, called to participate in His work.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 7731.96,
+          "end": 7806.159
+        },
+        {
+          "episode": 11,
+          "start": 7985.119,
+          "end": 8057.39
+        },
+        {
+          "episode": 11,
+          "start": 8340.0,
+          "end": 8405.6
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-gods-body-is-powers",
+      "text": "When Scripture speaks of God's body (e.g., face, arm), it refers to His real powers and attributes, not a material form. This is theomorphism, not anthropomorphism.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 358.759,
+          "end": 437.0
+        },
+        {
+          "episode": 11,
+          "start": 476.72,
+          "end": 529.519
+        }
+      ]
+    },
+    {
+      "id": "claim-mortality-enables-repentance",
+      "text": "God gave humanity mortality after the Fall to prevent immortal evil and to enable repentance. Death is a gift that allows change and healing.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 2790.0,
+          "end": 2846.0
+        },
+        {
+          "episode": 11,
+          "start": 2879.39,
+          "end": 2935.98
+        }
+      ]
+    },
+    {
+      "id": "claim-sin-is-a-demon",
+      "text": "Sin is a personified demonic force that entered the world through Adam's trespass and seeks to master humans. It is not merely rule-breaking.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3024.0,
+          "end": 3096.4
+        },
+        {
+          "episode": 11,
+          "start": 3120.0,
+          "end": 3177.719
+        }
+      ]
+    },
+    {
+      "id": "claim-angels-cannot-repent",
+      "text": "Angels cannot repent because they lack mortal, mutable bodies. Their consciousness is fundamentally different from human consciousness.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 4589.899,
+          "end": 4675.76
+        },
+        {
+          "episode": 11,
+          "start": 4815.359,
+          "end": 4866.56
+        }
+      ]
+    },
+    {
+      "id": "claim-incarnation-not-plan-b",
+      "text": "The incarnation was always God's plan for creation's fulfillment, not a response to sin. Christ would have become incarnate even without the Fall.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 2100.0,
+          "end": 2196.719
+        },
+        {
+          "episode": 11,
+          "start": 2323.28,
+          "end": 2369.0
+        }
+      ]
+    },
+    {
+      "id": "claim-resurrection-is-universal",
+      "text": "All human beings will be raised from the dead with incorruptible bodies. Resurrection is not a reward but a universal event, leading to either life or condemnation.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 5666.72,
+          "end": 5748.119
+        }
+      ]
+    },
+    {
+      "id": "claim-church-is-christs-body",
+      "text": "The Church is Christ's body in the ancient sense—the instrument through which He acts in the world. Believers are called to participate in His work actively.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 7731.96,
+          "end": 7806.159
+        },
+        {
+          "episode": 11,
+          "start": 7985.119,
+          "end": 8057.39
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-1-2-creation",
+      "reference": "Genesis 1-2",
+      "summary": "Used to describe creation as ordering chaos and filling spaces, with humans created to continue this work.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 1342.96,
+          "end": 1407.839
+        }
+      ]
+    },
+    {
+      "id": "genesis-3-fall",
+      "reference": "Genesis 3",
+      "summary": "The account of the Fall, where Adam and Eve eat from the tree of knowledge of good and evil, leading to mortality and expulsion from Eden.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 2526.719,
+          "end": 2627.719
+        },
+        {
+          "episode": 11,
+          "start": 2700.0,
+          "end": 2770.639
+        }
+      ]
+    },
+    {
+      "id": "genesis-4-cain-and-sin",
+      "reference": "Genesis 4:7",
+      "summary": "Sin is described as crouching at Cain's door, a demonic force seeking to master him. This is the first use of 'sin' in Scripture.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3060.0,
+          "end": 3096.4
+        },
+        {
+          "episode": 11,
+          "start": 3120.0,
+          "end": 3177.719
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-4-19",
+      "reference": "Deuteronomy 4:19",
+      "summary": "Warns against worshiping the sun, moon, and stars—the 'host of heaven' allotted to the nations, identified as angels.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 4093.48,
+          "end": 4129.0
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-15",
+      "reference": "1 Corinthians 15:38-54",
+      "summary": "Paul discusses different kinds of bodies (celestial/terrestrial) and the resurrection body, sown in weakness and raised in power.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3983.92,
+          "end": 4050.39
+        },
+        {
+          "episode": 11,
+          "start": 5548.79,
+          "end": 5597.0
+        },
+        {
+          "episode": 11,
+          "start": 5636.159,
+          "end": 5666.72
+        }
+      ]
+    },
+    {
+      "id": "john-5-28-29",
+      "reference": "John 5:28-29",
+      "summary": "Christ says all who are in the tombs will hear His voice and rise—some to life, some to condemnation.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 5721.76,
+          "end": 5743.239
+        }
+      ]
+    },
+    {
+      "id": "revelation-21",
+      "reference": "Revelation 21",
+      "summary": "Describes the new heavens and new earth, where the whole cosmos becomes Eden—God's dwelling place.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 6087.279,
+          "end": 6119.8
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "theomorphism",
+      "term": "Theomorphism",
+      "definition": "The view that humans are made in God's image, so human attributes reflect divine realities. Contrasts with anthropomorphism, which reduces God to human form.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 358.759,
+          "end": 437.0
+        }
+      ]
+    },
+    {
+      "id": "felix-culpa",
+      "term": "Felix Culpa",
+      "definition": "Latin for 'happy fault,' referring to Adam's sin as fortunate because it led to the greater good of redemption through Christ.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 5904.279,
+          "end": 5945.0
+        }
+      ]
+    },
+    {
+      "id": "kenosis",
+      "term": "Kenosis",
+      "definition": "Christ's self-emptying in the incarnation, but not a setting aside of divinity. He voluntarily took on human limitations without ceasing to be God.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 7353.68,
+          "end": 7399.84
+        }
+      ]
+    },
+    {
+      "id": "apophaticism",
+      "term": "Apophaticism",
+      "definition": "A theological approach that acknowledges the limits of human language and reason in describing God, emphasizing what God is not rather than what He is.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 5456.56,
+          "end": 5496.319
+        }
+      ]
+    },
+    {
+      "id": "telos",
+      "term": "Telos",
+      "definition": "The end, goal, or purpose of a thing; its final perfection. For humans, telos is maturity and union with God.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 2054.79,
+          "end": 2083.94
+        }
+      ]
+    }
+  ]
+}

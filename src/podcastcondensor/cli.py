@@ -66,6 +66,7 @@ def cmd_build_universe(args):
         dry_run=args.dry_run,
         prefer_yt_subs=args.yt_subs,
         skip_qa=not args.include_qa,
+        skip_reading=not args.include_reading,
     )
     print(f"\nUniverse state: {state.data['metadata'].get('last_built_episode', 0)} episodes")
     print(f"  Concepts: {len(state.data.get('concepts', []))}")
@@ -262,6 +263,8 @@ def main():
                        help="Download YouTube subtitles instead of whisper transcription (much faster)")
     build.add_argument("--include-qa", action="store_true",
                        help="Include Q&A episodes (default: skip them — they don't develop coherent themes)")
+    build.add_argument("--include-reading", action="store_true",
+                       help="Include reading episodes (default: skip them — they're scriptural readings, not discussion)")
     build.add_argument("--lang", default="en")
     build.set_defaults(func=cmd_build_universe)
 

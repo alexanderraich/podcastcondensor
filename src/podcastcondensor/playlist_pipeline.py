@@ -61,6 +61,7 @@ def build_universe_state(
     dry_run: bool = False,
     prefer_yt_subs: bool = False,
     skip_qa: bool = True,
+    skip_reading: bool = True,
 ) -> UniverseState:
     """Build a UniverseState from a range of episodes.
 
@@ -75,6 +76,8 @@ def build_universe_state(
 
     When *skip_qa* is True (default), episodes with "q&a" in their YouTube
     title are skipped — they don't develop coherent cross-episode themes.
+    When *skip_reading* is True (default), episodes with "read by" in their
+    YouTube title are skipped — they are scriptural readings, not discussion.
     """
     if state_path:
         state = UniverseState(state_path)
@@ -103,6 +106,17 @@ def build_universe_state(
                 [(s["episode_number"], s.get("title", "")[:60]) for s in qa_skipped],
             )
             sources = [s for s in sources if "q&a" not in s.get("title", "").lower()]
+
+    # ── Filter out Reading episodes ──────────────────────────────────────
+    if skip_reading:
+        reading_skipped = [s for s in sources if "read by" in s.get("title", "").lower()]
+        if reading_skipped:
+            logger.info(
+                "Skipping %d Reading episode(s): %s",
+                len(reading_skipped),
+                [(s["episode_number"], s.get("title", "")[:60]) for s in reading_skipped],
+            )
+            sources = [s for s in sources if "read by" not in s.get("title", "").lower()]
 
     for src in sources:
         episode_num = src["episode_number"]

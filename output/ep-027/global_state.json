@@ -1,0 +1,648 @@
+{
+  "summary": "In this episode, Fr. Andrew and Fr. Stephen explore the mysterious figure of Melchizedek, who appears briefly in Genesis 14, Psalm 110, and Hebrews. They contextualize his appearance within the war of the five kings, where Abram rescues Lot. Melchizedek, king of Salem (Jerusalem) and priest of God Most High, brings bread and wine and blesses Abram. The hosts discuss his pagan-sounding name (meaning 'my king is Zedek,' a hypostasis of the sun god Shemesh) and emphasize that the text repeatedly calls him a priest of God Most High to clarify he is not a pagan. They argue Melchizedek is a human, not a pre-incarnate Christ, and serves as a type of the Messiah who unites king and priest. The episode traces the messianic line from Judah through David, showing how Psalm 110 connects Melchizedek to the eternal priesthood of Christ. They conclude with a Dead Sea Scroll (11Q13) that interprets Melchizedek as a divine messianic figure who proclaims jubilee and defeats Belial, demonstrating that pre-Christian Judaism already saw Melchizedek as a messianic type fulfilled in Jesus.",
+  "entities": [
+    {
+      "id": "melchizedek",
+      "title": "Melchizedek",
+      "category": "person",
+      "summary": "King of Salem (Jerusalem) and priest of God Most High who meets Abram in Genesis 14. His name means 'my king is Zedek,' a pagan sun god, but he is depicted as a worshiper of the true God. He serves as a type of Christ.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 104.4,
+          "end": 135.639
+        },
+        {
+          "episode": 27,
+          "start": 214.949,
+          "end": 246.55
+        },
+        {
+          "episode": 27,
+          "start": 1294.2,
+          "end": 1307.2
+        },
+        {
+          "episode": 27,
+          "start": 1446.2,
+          "end": 1479.2
+        },
+        {
+          "episode": 27,
+          "start": 1639.2,
+          "end": 1676.2
+        },
+        {
+          "episode": 27,
+          "start": 3031.719,
+          "end": 3052.719
+        },
+        {
+          "episode": 27,
+          "start": 3536.309,
+          "end": 3561.309
+        },
+        {
+          "episode": 27,
+          "start": 6958.1,
+          "end": 7011.539
+        }
+      ]
+    },
+    {
+      "id": "abram",
+      "title": "Abram (Abraham)",
+      "category": "person",
+      "summary": "The patriarch called by God, who rescues Lot and meets Melchizedek. He refuses spoils from the king of Sodom and gives a tithe to Melchizedek.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 109.4,
+          "end": 128.24
+        },
+        {
+          "episode": 27,
+          "start": 736.75,
+          "end": 796.75
+        },
+        {
+          "episode": 27,
+          "start": 1127.569,
+          "end": 1133.569
+        },
+        {
+          "episode": 27,
+          "start": 3387.639,
+          "end": 3420.949
+        }
+      ]
+    },
+    {
+      "id": "shemesh",
+      "title": "Shemesh",
+      "category": "theological",
+      "summary": "The Canaanite sun god, of whom Zedek is a hypostasis. Worshiped in Jerusalem until Josiah's reforms. His chariot and horses were placed in the temple courts.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 2449.55,
+          "end": 2491.55
+        },
+        {
+          "episode": 27,
+          "start": 2695.92,
+          "end": 2720.92
+        },
+        {
+          "episode": 27,
+          "start": 2844.92,
+          "end": 2897.92
+        }
+      ]
+    },
+    {
+      "id": "zedek",
+      "title": "Zedek",
+      "category": "theological",
+      "summary": "A hypostasis of the sun god Shemesh, meaning 'justice' or 'righteousness.' The name appears in Melchizedek and Adoni-Zedek, indicating a cult in Jerusalem.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 1665.2,
+          "end": 1700.48
+        },
+        {
+          "episode": 27,
+          "start": 1734.519,
+          "end": 1757.519
+        },
+        {
+          "episode": 27,
+          "start": 2435.849,
+          "end": 2449.55
+        },
+        {
+          "episode": 27,
+          "start": 2491.55,
+          "end": 2513.92
+        }
+      ]
+    },
+    {
+      "id": "ketterlay-omer",
+      "title": "Chedorlaomer (Ketterlay Omer)",
+      "category": "person",
+      "summary": "Elamite king who leads a coalition against the cities of the plain, including Sodom and Gomorrah. He defeats the giant clans and takes Lot captive.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 318.75,
+          "end": 354.75
+        },
+        {
+          "episode": 27,
+          "start": 392.75,
+          "end": 425.75
+        },
+        {
+          "episode": 27,
+          "start": 460.75,
+          "end": 480.75
+        }
+      ]
+    },
+    {
+      "id": "david",
+      "title": "King David",
+      "category": "person",
+      "summary": "Second king of Israel, from the tribe of Judah. He receives a covenant promising an eternal dynasty, which is fulfilled in Christ. He is a 'prince' and a type of the Messiah.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 5584.199,
+          "end": 5623.199
+        },
+        {
+          "episode": 27,
+          "start": 5655.199,
+          "end": 5689.199
+        },
+        {
+          "episode": 27,
+          "start": 6244.939,
+          "end": 6261.939
+        }
+      ]
+    },
+    {
+      "id": "josiah",
+      "title": "King Josiah",
+      "category": "person",
+      "summary": "Righteous king of Judah who destroyed pagan shrines, including the chariot of Shemesh in the temple. He is one of the few righteous kings, often depicted in icons of the resurrection.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 2632.92,
+          "end": 2660.92
+        },
+        {
+          "episode": 27,
+          "start": 2679.92,
+          "end": 2695.92
+        },
+        {
+          "episode": 27,
+          "start": 2695.92,
+          "end": 2720.92
+        }
+      ]
+    },
+    {
+      "id": "belial",
+      "title": "Belial",
+      "category": "theological",
+      "summary": "A demonic figure or personification of evil, opposed to Melchizedek in the Dead Sea Scrolls. He is judged by Melchizedek and his captives are freed.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 8023.539,
+          "end": 8046.539
+        },
+        {
+          "episode": 27,
+          "start": 8041.539,
+          "end": 8058.539
+        },
+        {
+          "episode": 27,
+          "start": 8125.539,
+          "end": 8134.539
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "melchizedek-as-type",
+      "title": "Melchizedek as a Type of Christ",
+      "summary": "Melchizedek is a historical figure who serves as a prophetic pattern (type) of Christ, uniting the roles of king and priest. His priesthood is eternal and not based on genealogy, prefiguring Christ's eternal high priesthood.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 3792.809,
+          "end": 3820.809
+        },
+        {
+          "episode": 27,
+          "start": 4045.449,
+          "end": 4077.449
+        },
+        {
+          "episode": 27,
+          "start": 6958.1,
+          "end": 7011.539
+        }
+      ]
+    },
+    {
+      "id": "hypostasis-in-ancient-world",
+      "title": "Hypostasis in Ancient Pagan and Israelite Thought",
+      "summary": "In the ancient world, a god could have multiple 'hypostases' (local manifestations or bodies). Pagans believed they could create hypostases via idols, while Yahweh has exactly three eternal hypostases (Father, Son, Holy Spirit). This explains the golden calf incident and the nature of pagan gods like Shemesh.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 2035.869,
+          "end": 2097.869
+        },
+        {
+          "episode": 27,
+          "start": 2127.869,
+          "end": 2188.869
+        },
+        {
+          "episode": 27,
+          "start": 2332.849,
+          "end": 2385.849
+        }
+      ]
+    },
+    {
+      "id": "messianic-age",
+      "title": "The Messianic Age",
+      "summary": "The period between Christ's first and second coming, characterized by Christ ruling in the midst of his enemies. This age involves the spread of worship (the liturgy) and the gradual defeat of demonic powers, culminating in final judgment.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 6451.439,
+          "end": 6524.439
+        },
+        {
+          "episode": 27,
+          "start": 7544.539,
+          "end": 7629.539
+        }
+      ]
+    },
+    {
+      "id": "jubilee-and-melchizedek",
+      "title": "Jubilee and Melchizedek in 11Q13",
+      "summary": "The Dead Sea Scroll 11Q13 interprets the Jubilee year (Leviticus 25) as a prophecy about Melchizedek, who will proclaim release to captives, atone for sins, and defeat Belial. This shows pre-Christian Jewish expectation of a divine messianic figure.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 7908.539,
+          "end": 7986.539
+        },
+        {
+          "episode": 27,
+          "start": 8030.539,
+          "end": 8058.539
+        },
+        {
+          "episode": 27,
+          "start": 8075.539,
+          "end": 8108.539
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "melchizedek-not-preincarnate-christ",
+      "text": "Melchizedek is not a pre-incarnate appearance of Christ; he is a human priest-king who worships the same God as Abram. The text lacks markers of a theophany (e.g., no sacrifice, no divine name).",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 3526.309,
+          "end": 3561.309
+        },
+        {
+          "episode": 27,
+          "start": 3580.309,
+          "end": 3611.309
+        },
+        {
+          "episode": 27,
+          "start": 3628.309,
+          "end": 3661.309
+        }
+      ]
+    },
+    {
+      "id": "psalm-110-messianic",
+      "text": "Psalm 110 is the most quoted Old Testament text in the New Testament. It describes the Messiah as a priest-king after the order of Melchizedek, ruling in the midst of his enemies during the Messianic age.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 5954.939,
+          "end": 5984.939
+        },
+        {
+          "episode": 27,
+          "start": 6026.939,
+          "end": 6055.939
+        },
+        {
+          "episode": 27,
+          "start": 6425.439,
+          "end": 6460.439
+        },
+        {
+          "episode": 27,
+          "start": 6958.1,
+          "end": 7011.539
+        }
+      ]
+    },
+    {
+      "id": "bible-as-cohesive-unit",
+      "text": "The Bible is a cohesive whole, not a random collection. Its internal structures and themes all point to Jesus Christ, regardless of the canon used (Hebrew, Greek, Ethiopian).",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 8634.54,
+          "end": 8699.809
+        },
+        {
+          "episode": 27,
+          "start": 8765.44,
+          "end": 8841.44
+        },
+        {
+          "episode": 27,
+          "start": 8854.809,
+          "end": 8927.44
+        }
+      ]
+    },
+    {
+      "id": "giant-clans-worse-than-pagans",
+      "text": "In Genesis, the giant clans (e.g., Rephaim) are portrayed as worse than ordinary pagans, engaging in demonic practices like human sacrifice and cannibalism. Abram refuses their plunder because it is tainted.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 645.75,
+          "end": 660.75
+        },
+        {
+          "episode": 27,
+          "start": 1229.569,
+          "end": 1263.569
+        },
+        {
+          "episode": 27,
+          "start": 1269.569,
+          "end": 1288.2
+        }
+      ]
+    },
+    {
+      "id": "israel-rejected-god-for-king",
+      "text": "Israel's demand for a king in 1 Samuel 8 was a rejection of God's direct rule, not a rejection of monarchy per se. They wanted a human conqueror instead of relying on God's leadership in battle.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 5101.199,
+          "end": 5133.199
+        },
+        {
+          "episode": 27,
+          "start": 5317.199,
+          "end": 5352.199
+        },
+        {
+          "episode": 27,
+          "start": 5474.199,
+          "end": 5520.199
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-14-18-20",
+      "reference": "Genesis 14:18-20",
+      "summary": "Melchizedek brings bread and wine, blesses Abram, and receives a tithe. This is the primary Old Testament passage about Melchizedek.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 214.949,
+          "end": 246.55
+        }
+      ]
+    },
+    {
+      "id": "psalm-110-1-4",
+      "reference": "Psalm 110:1-4",
+      "summary": "The Lord says to my Lord, 'Sit at my right hand...' and 'You are a priest forever after the order of Melchizedek.' This psalm is messianic and connects Melchizedek to Christ.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 5954.939,
+          "end": 5984.939
+        },
+        {
+          "episode": 27,
+          "start": 6026.939,
+          "end": 6055.939
+        },
+        {
+          "episode": 27,
+          "start": 6958.1,
+          "end": 7011.539
+        }
+      ]
+    },
+    {
+      "id": "genesis-49-8-12",
+      "reference": "Genesis 49:8-12",
+      "summary": "Jacob's blessing to Judah: the scepter shall not depart from Judah until he comes to whom it belongs. This is a messianic prophecy about the Davidic line.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 4366.239,
+          "end": 4413.239
+        },
+        {
+          "episode": 27,
+          "start": 4450.239,
+          "end": 4470.239
+        }
+      ]
+    },
+    {
+      "id": "2-kings-23-11",
+      "reference": "2 Kings 23:11",
+      "summary": "Josiah removes the horses and chariot of Shemesh from the temple, showing that the sun god was worshiped in Jerusalem.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 2695.92,
+          "end": 2720.92
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-17-18-20",
+      "reference": "Deuteronomy 17:18-20",
+      "summary": "The king is commanded to make a copy of the Torah and study it, indicating that kingship is meant to be under God's law.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 5280.199,
+          "end": 5317.199
+        }
+      ]
+    },
+    {
+      "id": "daniel-7-13-14",
+      "reference": "Daniel 7:13-14",
+      "summary": "The Son of Man comes on clouds and is given dominion. This is linked to Psalm 110 and the enthronement of the Messiah.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 6317.939,
+          "end": 6344.939
+        },
+        {
+          "episode": 27,
+          "start": 7252.539,
+          "end": 7284.539
+        }
+      ]
+    },
+    {
+      "id": "leviticus-25-13",
+      "reference": "Leviticus 25:13",
+      "summary": "The Jubilee year: return to your possession. This is interpreted in 11Q13 as a prophecy about Melchizedek.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 7908.539,
+          "end": 7937.539
+        }
+      ]
+    },
+    {
+      "id": "isaiah-61-1-2",
+      "reference": "Isaiah 61:1-2",
+      "summary": "The Spirit of the Lord is upon me to proclaim liberty to captives. Quoted in 11Q13 and applied to Melchizedek.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 7937.539,
+          "end": 7960.539
+        },
+        {
+          "episode": 27,
+          "start": 8086.539,
+          "end": 8108.539
+        }
+      ]
+    },
+    {
+      "id": "psalm-82-1",
+      "reference": "Psalm 82:1",
+      "summary": "God stands in the divine council. 11Q13 interprets this as Melchizedek judging Belial and the fallen angels.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 7999.539,
+          "end": 8014.539
+        },
+        {
+          "episode": 27,
+          "start": 8166.539,
+          "end": 8193.54
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "hypostasis",
+      "term": "Hypostasis",
+      "definition": "In ancient pagan thought, a local manifestation or body of a god. In Christian theology, it refers to the three persons of the Trinity. The term is used to explain how pagans believed gods could have multiple local forms.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 2035.869,
+          "end": 2097.869
+        },
+        {
+          "episode": 27,
+          "start": 2127.869,
+          "end": 2188.869
+        }
+      ]
+    },
+    {
+      "id": "melchizedek-order",
+      "term": "Order of Melchizedek",
+      "definition": "A phrase from Psalm 110:4 meaning 'after the pattern/type of Melchizedek.' It refers to a priesthood that is eternal, not based on genealogy, and unites king and priest, as fulfilled in Christ.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 6958.1,
+          "end": 7011.539
+        }
+      ]
+    },
+    {
+      "id": "jubilee",
+      "term": "Jubilee",
+      "definition": "A year of remission and release commanded in Leviticus 25, where debts are forgiven and captives freed. In 11Q13, it is interpreted as a prophecy of Melchizedek's messianic work.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 7832.539,
+          "end": 7860.539
+        },
+        {
+          "episode": 27,
+          "start": 7908.539,
+          "end": 7937.539
+        }
+      ]
+    },
+    {
+      "id": "messianic-age",
+      "term": "Messianic Age",
+      "definition": "The period between Christ's first and second coming, during which he rules in the midst of his enemies. It is characterized by the spread of the liturgy and the gradual defeat of demonic powers.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 6451.439,
+          "end": 6524.439
+        },
+        {
+          "episode": 27,
+          "start": 7544.539,
+          "end": 7629.539
+        }
+      ]
+    },
+    {
+      "id": "giant-clans",
+      "term": "Giant Clans",
+      "definition": "Groups like the Rephaim, Zuzim, and Amalekites, described in Genesis 14 and Deuteronomy 2. They are portrayed as demonized, practicing human sacrifice and cannibalism, and their plunder is considered tainted.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 645.75,
+          "end": 660.75
+        },
+        {
+          "episode": 27,
+          "start": 1229.569,
+          "end": 1263.569
+        }
+      ]
+    }
+  ]
+}

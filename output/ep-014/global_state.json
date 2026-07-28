@@ -1,0 +1,431 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen DeYoung explore the biblical concept of atonement, focusing on the Day of Atonement (Yom Kippur) ritual from Leviticus 16. They explain that the English word 'atonement' was coined by Tyndale to translate Hebrew and Greek terms, and its root meaning is 'covering' (from the Hebrew root KFR). The ritual involves two goats: one for Yahweh, whose blood purifies the sanctuary, and one for Azazel (a desert demon), which carries the sins of Israel into the wilderness. The hosts emphasize that the goat for Yahweh is not a penal substitution; its death is not ritualized, and sins are not placed on it. The goat for Azazel, however, receives the sins via confession and is sent away, not sacrificed. They then connect this to the New Testament, showing that Christ fulfills both roles: as the goat for Yahweh, his blood purifies all creation, and as the scapegoat, he takes away the sin of the world. They also discuss Second Temple literature (1 Enoch, Apocalypse of Abraham) that anticipates an eschatological Day of Atonement, which is realized in Christ's work. The episode concludes with reflections on how this understanding transforms the Christian life from a mechanical system to a participatory experience of purification and cosmic renewal.",
+  "entities": [
+    {
+      "id": "william-tyndale",
+      "title": "William Tyndale",
+      "category": "person",
+      "summary": "16th-century Bible translator who coined the English word 'atonement' in his 1526 translation of the New Testament.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 268.279,
+          "end": 294.0
+        }
+      ]
+    },
+    {
+      "id": "azazel-entity",
+      "title": "Azazel",
+      "category": "theological",
+      "summary": "A demonic being, often identified as a leader of fallen angels, to whom the scapegoat is sent on Yom Kippur. In Second Temple literature, he is associated with teaching forbidden knowledge and is ultimately bound and destroyed.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 1941.48,
+          "end": 1977.72
+        },
+        {
+          "episode": 14,
+          "start": 2617.76,
+          "end": 2739.26
+        },
+        {
+          "episode": 14,
+          "start": 3660.0,
+          "end": 3702.96
+        }
+      ]
+    },
+    {
+      "id": "emmaus",
+      "title": "Emmaus",
+      "category": "place",
+      "summary": "A town mentioned in Luke 24, famous for the Battle of Emmaus during the Maccabean revolt, where the temple was rededicated. Luke uses this location to connect Christ's resurrection to the purification of sacred space.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 5553.68,
+          "end": 5622.52
+        }
+      ]
+    },
+    {
+      "id": "john-the-evangelist",
+      "title": "John the Evangelist",
+      "category": "person",
+      "summary": "Apostle and author of the Gospel of John, the Epistles of John, and Revelation. His writings heavily utilize Day of Atonement imagery, presenting Christ as the eschatological high priest and both goats.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 4020.0,
+          "end": 4069.559
+        },
+        {
+          "episode": 14,
+          "start": 4098.159,
+          "end": 4125.0
+        },
+        {
+          "episode": 14,
+          "start": 4213.359,
+          "end": 4267.319
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "atonement-etymology",
+      "title": "Etymology of Atonement",
+      "summary": "The English word 'atonement' was coined by William Tyndale in 1526 to translate Hebrew and Greek terms. It is a contraction of 'at one ment,' meaning to reconcile or bring together. The underlying Hebrew root KFR means 'to cover,' not 'to satisfy' or 'to punish.'",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 120.0,
+          "end": 300.0
+        }
+      ]
+    },
+    {
+      "id": "day-of-atonement-ritual",
+      "title": "Day of Atonement Ritual (Yom Kippur)",
+      "summary": "The annual ritual described in Leviticus 16 involves two goats: one sacrificed to Yahweh to purify the sanctuary, and one sent to Azazel bearing the sins of Israel. The ritual cleanses the sacred space from the taint of sin, not primarily the people themselves.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 945.36,
+          "end": 1049.98
+        },
+        {
+          "episode": 14,
+          "start": 1190.559,
+          "end": 1343.44
+        },
+        {
+          "episode": 14,
+          "start": 1556.4,
+          "end": 1749.759
+        },
+        {
+          "episode": 14,
+          "start": 1833.39,
+          "end": 1946.68
+        },
+        {
+          "episode": 14,
+          "start": 2029.48,
+          "end": 2110.239
+        },
+        {
+          "episode": 14,
+          "start": 2190.0,
+          "end": 2224.92
+        },
+        {
+          "episode": 14,
+          "start": 2287.76,
+          "end": 2445.0
+        },
+        {
+          "episode": 14,
+          "start": 2480.8,
+          "end": 2560.639
+        }
+      ]
+    },
+    {
+      "id": "azazel",
+      "title": "Azazel",
+      "summary": "Azazel is a demonic being associated with the wilderness, to whom the scapegoat is sent. In Second Temple literature, he is a leader of fallen angels who taught forbidden knowledge. The ritual sends sin back to its source, not as a sacrifice to Azazel.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 1941.48,
+          "end": 1977.72
+        },
+        {
+          "episode": 14,
+          "start": 2617.76,
+          "end": 2739.26
+        },
+        {
+          "episode": 14,
+          "start": 2839.48,
+          "end": 2857.0
+        },
+        {
+          "episode": 14,
+          "start": 3660.0,
+          "end": 3702.96
+        },
+        {
+          "episode": 14,
+          "start": 4500.0,
+          "end": 4529.6
+        }
+      ]
+    },
+    {
+      "id": "christ-as-both-goats",
+      "title": "Christ as Both Goats",
+      "summary": "In the New Testament, Christ fulfills the roles of both the goat for Yahweh (purifying sacred space with his blood) and the goat for Azazel (taking away sin). This is seen in Matthew's passion narrative and in Johannine theology.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 4795.76,
+          "end": 4829.76
+        },
+        {
+          "episode": 14,
+          "start": 4926.79,
+          "end": 5007.479
+        },
+        {
+          "episode": 14,
+          "start": 5257.399,
+          "end": 5334.0
+        },
+        {
+          "episode": 14,
+          "start": 5384.79,
+          "end": 5488.319
+        }
+      ]
+    },
+    {
+      "id": "eschatological-day-of-atonement",
+      "title": "Eschatological Day of Atonement",
+      "summary": "Second Temple literature (1 Enoch, Apocalypse of Abraham) anticipates a final Day of Atonement where Azazel is bound and destroyed, and creation is purified. The New Testament presents Christ's work as this eschatological event, defeating the devil and purifying the cosmos.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 3795.39,
+          "end": 3876.719
+        },
+        {
+          "episode": 14,
+          "start": 4500.0,
+          "end": 4566.46
+        },
+        {
+          "episode": 14,
+          "start": 4577.72,
+          "end": 4640.14
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "atonement-not-penal-substitution",
+      "text": "The Day of Atonement ritual does not involve penal substitution: sins are not placed on the sacrificed goat, and its death is not ritualized. The goat for Yahweh purifies space, not people; the goat for Azazel carries sins away but is not sacrificed.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 2029.48,
+          "end": 2110.239
+        },
+        {
+          "episode": 14,
+          "start": 2424.199,
+          "end": 2445.0
+        },
+        {
+          "episode": 14,
+          "start": 7134.199,
+          "end": 7178.0
+        }
+      ]
+    },
+    {
+      "id": "christ-fulfills-day-of-atonement",
+      "text": "Christ's death and resurrection fulfill the Day of Atonement ritual: he is both the goat for Yahweh (purifying all creation with his blood) and the goat for Azazel (taking away the sin of the world). This is the eschatological Day of Atonement anticipated in Second Temple literature.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 4795.76,
+          "end": 4829.76
+        },
+        {
+          "episode": 14,
+          "start": 5257.399,
+          "end": 5334.0
+        },
+        {
+          "episode": 14,
+          "start": 5384.79,
+          "end": 5488.319
+        }
+      ]
+    },
+    {
+      "id": "blood-purifies-space",
+      "text": "In the Old Testament, blood purifies sacred space, not people. The blood of the goat for Yahweh is used to cleanse the tabernacle and its furnishings from the taint of sin. This is the context for Hebrews 9:22: 'without shedding of blood there is no forgiveness of sins.'",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 2190.0,
+          "end": 2224.92
+        },
+        {
+          "episode": 14,
+          "start": 5938.88,
+          "end": 5956.439
+        }
+      ]
+    },
+    {
+      "id": "matthews-gospel-anti-anti-semitism",
+      "text": "Matthew 27:25 ('His blood be upon us and upon our children') is not anti-Semitic but a blessing: it invokes the Day of Atonement imagery where blood purifies. Matthew, a Jew, uses this to show that Christ's blood brings purification, not condemnation.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 5104.64,
+          "end": 5174.79
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "leviticus-16",
+      "reference": "Leviticus 16",
+      "summary": "The primary Old Testament passage describing the Day of Atonement ritual, including the two goats, the high priest's actions, and the purification of the sanctuary.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 1190.559,
+          "end": 1243.519
+        },
+        {
+          "episode": 14,
+          "start": 1556.4,
+          "end": 1627.0
+        },
+        {
+          "episode": 14,
+          "start": 1833.39,
+          "end": 1946.68
+        }
+      ]
+    },
+    {
+      "id": "matthew-27-25",
+      "reference": "Matthew 27:25",
+      "summary": "The crowd says, 'His blood be upon us and upon our children.' The hosts argue this is a blessing invoking Day of Atonement purification, not a curse.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 5104.64,
+          "end": 5174.79
+        }
+      ]
+    },
+    {
+      "id": "1-john-2-2",
+      "reference": "1 John 2:2",
+      "summary": "Christ is the atonement for our sins and for the whole world. The hosts clarify that 'whole world' refers to the cosmos, not just people, and that a common translation error has led to misunderstanding.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 5384.79,
+          "end": 5488.319
+        },
+        {
+          "episode": 14,
+          "start": 6135.96,
+          "end": 6234.0
+        }
+      ]
+    },
+    {
+      "id": "hebrews-9-11-14",
+      "reference": "Hebrews 9:11-14",
+      "summary": "Christ enters the heavenly sanctuary as high priest, purifying not just an earthly tabernacle but the whole creation with his own blood.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 6000.0,
+          "end": 6047.84
+        }
+      ]
+    },
+    {
+      "id": "isaiah-53-4-5",
+      "reference": "Isaiah 53:4-5",
+      "summary": "The suffering servant passage. Matthew 8:17 interprets it as fulfilled in Christ's healing ministry, not as a transfer of sin or punishment.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 6510.0,
+          "end": 6630.6
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "kfr-root",
+      "term": "KFR (Hebrew root)",
+      "definition": "The Semitic trilateral root meaning 'to cover.' It is the basis for words like kippur (atonement) and kapporet (mercy seat/cover).",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 540.0,
+          "end": 564.799
+        },
+        {
+          "episode": 14,
+          "start": 615.159,
+          "end": 625.36
+        }
+      ]
+    },
+    {
+      "id": "hilasterion",
+      "term": "Hilasterion (Greek)",
+      "definition": "Greek word translated as 'atonement' or 'propitiation.' It originally referred to a means of appeasing a deity, but in Jewish usage it translates the Hebrew concept of covering/purification.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 359.199,
+          "end": 388.319
+        }
+      ]
+    },
+    {
+      "id": "scapegoat",
+      "term": "Scapegoat",
+      "definition": "English term derived from Tyndale's translation of Azazel as 'escape goat.' It refers to the goat that carries away sins, not a sacrificial victim.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 2638.32,
+          "end": 2667.199
+        }
+      ]
+    },
+    {
+      "id": "yom-kippur",
+      "term": "Yom Kippur",
+      "definition": "Hebrew for 'Day of Atonement,' literally 'Day of Covering.' The annual ritual described in Leviticus 16.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 951.44,
+          "end": 966.32
+        },
+        {
+          "episode": 14,
+          "start": 1000.559,
+          "end": 1025.24
+        }
+      ]
+    }
+  ]
+}

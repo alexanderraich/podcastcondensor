@@ -1,0 +1,295 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen De Young explore the active ministry of angels and glorified saints in God's kingdom, emphasizing that the life to come is not static but involves ruling, reigning, and interceding. They discuss the twofold ministry of angels—combat and intercession—and how humans, as adopted sons of God, fill roles vacated by fallen angels. The hosts address objections to venerating saints and angels, clarifying the distinction between worship (offering sacrifice) and veneration (honor). They also tackle necromancy, arguing that asking saints to pray is not death magic but communion with the living. The episode concludes with reflections on the communal nature of the faith, where believers are never alone, surrounded by the communion of saints.",
+  "entities": [
+    {
+      "id": "jrr-tolkien",
+      "title": "J.R.R. Tolkien",
+      "category": "person",
+      "summary": "Author and Anglo-Saxon professor, quoted on heaven as continuation of good stories.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 100.159,
+          "end": 126.56
+        }
+      ]
+    },
+    {
+      "id": "job",
+      "title": "Job",
+      "category": "historical",
+      "summary": "Biblical figure tested by Satan; his story illustrates angelic intercession and suffering.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 919.519,
+          "end": 1012.519
+        },
+        {
+          "episode": 6,
+          "start": 4095.92,
+          "end": 4136.739
+        }
+      ]
+    },
+    {
+      "id": "first-enoch",
+      "title": "1 Enoch",
+      "category": "theological",
+      "summary": "Non-canonical Jewish text used to illustrate angelic intercession and fallen angels.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 1140.0,
+          "end": 1206.48
+        }
+      ]
+    },
+    {
+      "id": "greek-life-of-adam-and-eve",
+      "title": "Greek Life of Adam and Eve",
+      "category": "theological",
+      "summary": "First-century text describing angels interceding for Adam and Eve during repentance.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 1305.0,
+          "end": 1387.4
+        }
+      ]
+    },
+    {
+      "id": "nebuchadnezzar",
+      "title": "Nebuchadnezzar",
+      "category": "historical",
+      "summary": "Babylonian king who demanded worship, illustrating pagan practice of offering sacrifice to rulers.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 3167.79,
+          "end": 3203.119
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "twofold-ministry-of-angels",
+      "title": "Twofold Ministry of Angels",
+      "summary": "Angels have a dual role: combat against evil and intercession for humanity. Glorified humans share in this ministry.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 317.0,
+          "end": 349.92
+        },
+        {
+          "episode": 6,
+          "start": 106.96,
+          "end": 119.39
+        }
+      ]
+    },
+    {
+      "id": "veneration-vs-worship",
+      "title": "Veneration vs. Worship",
+      "summary": "Worship is offering sacrifice to God alone; veneration is honor given to saints and angels, distinct from worship.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 2811.76,
+          "end": 2931.619
+        },
+        {
+          "episode": 6,
+          "start": 2991.92,
+          "end": 3048.0
+        }
+      ]
+    },
+    {
+      "id": "intercession-of-saints-and-angels",
+      "title": "Intercession of Saints and Angels",
+      "summary": "Saints and angels pray alongside and for believers, not instead of them, as seen in Scripture and tradition.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 597.679,
+          "end": 673.919
+        },
+        {
+          "episode": 6,
+          "start": 1125.79,
+          "end": 1188.64
+        }
+      ]
+    },
+    {
+      "id": "necromancy-vs-communion",
+      "title": "Necromancy vs. Communion with Saints",
+      "summary": "Necromancy seeks control and forbidden knowledge; asking saints to pray is communion with the living in Christ.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 4582.88,
+          "end": 4649.939
+        },
+        {
+          "episode": 6,
+          "start": 4919.199,
+          "end": 5008.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "saints-reign-and-priest-now",
+      "text": "The souls of martyrs are currently reigning with Christ and serving as priests, interceding and offering worship.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 1890.0,
+          "end": 1983.839
+        }
+      ]
+    },
+    {
+      "id": "angels-intercede-for-humans",
+      "text": "Angels have an intercessory role, bringing prayers before God and praying alongside humans.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 1235.599,
+          "end": 1271.0
+        }
+      ]
+    },
+    {
+      "id": "worship-is-sacrifice",
+      "text": "True worship in Scripture and tradition is the offering of sacrifice (Eucharist, incense) to God alone.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 2811.76,
+          "end": 2931.619
+        }
+      ]
+    },
+    {
+      "id": "orthodox-christians-cannot-be-accidentally-possessed",
+      "text": "A baptized Orthodox Christian cannot be accidentally possessed; possession requires invitation and apostasy.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 5490.0,
+          "end": 5548.92
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "job-5-1",
+      "reference": "Job 5:1",
+      "summary": "Eliphaz asks Job to which holy one (angel) he will address his case, indicating angelic intercession.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 1019.24,
+          "end": 1069.2
+        }
+      ]
+    },
+    {
+      "id": "revelation-20-4-6",
+      "reference": "Revelation 20:4-6",
+      "summary": "Martyrs reign with Christ and serve as priests, showing the active role of saints in glory.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 1890.0,
+          "end": 1983.839
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-10-16-21",
+      "reference": "1 Corinthians 10:16-21",
+      "summary": "Paul contrasts communion with Christ via Eucharist with communion with demons via pagan sacrifices.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 5266.399,
+          "end": 5320.8
+        }
+      ]
+    },
+    {
+      "id": "psalm-104-4",
+      "reference": "Psalm 104:4",
+      "summary": "God makes His angels spirits and ministers flaming fire, used as episode title.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 5820.0,
+          "end": 5850.8
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "necromancy",
+      "term": "Necromancy",
+      "definition": "Death magic; attempting to contact the dead for control or forbidden knowledge, distinct from asking saints to pray.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 4582.88,
+          "end": 4649.939
+        }
+      ]
+    },
+    {
+      "id": "veneration",
+      "term": "Veneration",
+      "definition": "Honor given to saints and angels, distinct from worship which involves sacrifice to God alone.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 2811.76,
+          "end": 2931.619
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "term": "Divine Council",
+      "definition": "God's heavenly administration of angelic beings and glorified humans who govern creation under God.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 240.0,
+          "end": 269.899
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "term": "Theotokos",
+      "definition": "Greek for 'God-bearer,' title of the Virgin Mary; the Eucharist is offered especially for her, not to her.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 3026.119,
+          "end": 3055.0
+        }
+      ]
+    }
+  ]
+}

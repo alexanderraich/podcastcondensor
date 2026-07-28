@@ -1,0 +1,547 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen De Young explore the theological foundations for the veneration of the Virgin Mary, the Theotokos, by tracing the biblical theme of kingship and the role of the queen mother. They begin with Genesis, explaining that humanity was created as God's image in a temple-garden, tasked with expanding Eden. This kingly role is later embodied by the Davidic kings, who serve as icons of God's rule. The unique institution of the queen mother in Judah—the king's mother seated at his right hand—is highlighted through passages like 1 Kings 2:19 and Psalm 45. The hosts argue that Mary fulfills this role as the mother of the Messiah, Jesus Christ, who unites David's throne with God's throne. They cite early Christian witness, including the pagan critic Celsus (c. 150 AD), who attacked Mary's lowly status, proving that her identity as queen mother was central to the apostolic gospel. The episode concludes by emphasizing that Mary's exalted position is not ancillary but integral to the Christian proclamation of Christ's kingship and the believer's participation in the divine council.",
+  "entities": [
+    {
+      "id": "adam",
+      "title": "Adam",
+      "category": "person",
+      "summary": "First human, created as God's image in Eden, charged with subduing and filling the earth.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 346.279,
+          "end": 401.0
+        },
+        {
+          "episode": 8,
+          "start": 1506.24,
+          "end": 1594.0
+        }
+      ]
+    },
+    {
+      "id": "david",
+      "title": "David",
+      "category": "person",
+      "summary": "King of Israel, ideal human king in the Old Testament, icon of God's rule, recipient of the messianic covenant.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 2992.0,
+          "end": 3043.679
+        },
+        {
+          "episode": 8,
+          "start": 3180.0,
+          "end": 3221.119
+        }
+      ]
+    },
+    {
+      "id": "solomon",
+      "title": "Solomon",
+      "category": "person",
+      "summary": "Son of David, king of Israel, who established the queen mother office by seating Bathsheba at his right hand.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4279.96,
+          "end": 4344.5
+        }
+      ]
+    },
+    {
+      "id": "bathsheba",
+      "title": "Bathsheba",
+      "category": "person",
+      "summary": "Mother of Solomon, first queen mother of Judah, seated at the king's right hand.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4290.0,
+          "end": 4344.5
+        }
+      ]
+    },
+    {
+      "id": "mary-theotokos",
+      "title": "Mary, Theotokos",
+      "category": "person",
+      "summary": "Mother of Jesus Christ, the Queen Mother at the right hand of the Messiah, both mother and daughter of God.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4980.0,
+          "end": 5045.5
+        },
+        {
+          "episode": 8,
+          "start": 5639.399,
+          "end": 5725.39
+        },
+        {
+          "episode": 8,
+          "start": 5951.79,
+          "end": 6037.76
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "person",
+      "summary": "The Messiah, Son of David and Son of God, who unites David's throne with God's throne.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 3330.0,
+          "end": 3395.84
+        },
+        {
+          "episode": 8,
+          "start": 4980.0,
+          "end": 5045.5
+        }
+      ]
+    },
+    {
+      "id": "celsus",
+      "title": "Celsus",
+      "category": "person",
+      "summary": "Second-century pagan critic who attacked Christianity, revealing that Mary's role as queen mother was part of the public gospel proclamation.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 5150.56,
+          "end": 5211.0
+        },
+        {
+          "episode": 8,
+          "start": 5333.479,
+          "end": 5416.72
+        }
+      ]
+    },
+    {
+      "id": "eden",
+      "title": "Garden of Eden",
+      "category": "place",
+      "summary": "The garden-temple where God placed Adam, a mountain-garden paradise to be expanded throughout the earth.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 858.399,
+          "end": 879.679
+        },
+        {
+          "episode": 8,
+          "start": 1530.0,
+          "end": 1577.16
+        }
+      ]
+    },
+    {
+      "id": "judah",
+      "title": "Kingdom of Judah",
+      "category": "place",
+      "summary": "Southern kingdom of Israel, where the unique office of queen mother existed in the Davidic line.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4073.0,
+          "end": 4126.399
+        },
+        {
+          "episode": 8,
+          "start": 4557.0,
+          "end": 4590.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "image-of-god",
+      "title": "Image of God",
+      "summary": "Humanity created as God's living icon in the temple-garden of Eden, tasked with expanding God's order and filling the earth.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 315.759,
+          "end": 395.0
+        },
+        {
+          "episode": 8,
+          "start": 540.0,
+          "end": 602.159
+        }
+      ]
+    },
+    {
+      "id": "temple-creation",
+      "title": "Creation as Temple Building",
+      "summary": "Genesis 1 uses language of ancient Near Eastern temple construction, with man as the image of God placed in the garden-temple.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 570.0,
+          "end": 668.559
+        },
+        {
+          "episode": 8,
+          "start": 898.96,
+          "end": 951.0
+        }
+      ]
+    },
+    {
+      "id": "idolatry-as-inversion",
+      "title": "Idolatry as Inversion of Creation",
+      "summary": "Pagan idolatry reverses God's creation of man: humans build temples and trap gods in images, whereas God creates man as His image and breathes life into him.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 1020.0,
+          "end": 1113.519
+        }
+      ]
+    },
+    {
+      "id": "davidic-kingship",
+      "title": "Davidic Kingship as Icon of God's Rule",
+      "summary": "The Davidic king serves as an icon of God, tasked with establishing justice (order) and expanding God's reign, prefiguring the Messiah.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 2992.0,
+          "end": 3043.679
+        },
+        {
+          "episode": 8,
+          "start": 3082.88,
+          "end": 3129.239
+        }
+      ]
+    },
+    {
+      "id": "queen-mother",
+      "title": "Queen Mother (Gebirah)",
+      "summary": "In Judah, the king's mother held the office of queen mother, seated at his right hand, serving as intercessor and administrator of the kingdom.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4279.96,
+          "end": 4358.0
+        },
+        {
+          "episode": 8,
+          "start": 4465.0,
+          "end": 4554.0
+        },
+        {
+          "episode": 8,
+          "start": 4658.479,
+          "end": 4712.699
+        }
+      ]
+    },
+    {
+      "id": "mary-as-queen-mother",
+      "title": "Mary as Queen Mother",
+      "summary": "Mary fulfills the Old Testament queen mother role as the mother of the Messiah, seated at Christ's right hand in the divine council.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4980.0,
+          "end": 5045.5
+        },
+        {
+          "episode": 8,
+          "start": 5639.399,
+          "end": 5725.39
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "idolatry-inverts-genesis",
+      "text": "Pagan idolatry is an inversion of God's creation of man: humans build temples and trap gods in images, whereas God creates man as His image and breathes life into him.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 1020.0,
+          "end": 1113.519
+        }
+      ]
+    },
+    {
+      "id": "davidic-king-as-icon",
+      "text": "The Davidic king serves as an icon of God's rule, tasked with establishing justice (order) and expanding God's reign, prefiguring the Messiah.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 2992.0,
+          "end": 3043.679
+        }
+      ]
+    },
+    {
+      "id": "queen-mother-office",
+      "text": "In Judah, the king's mother held the office of queen mother, seated at his right hand, serving as intercessor and administrator of the kingdom.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4279.96,
+          "end": 4358.0
+        },
+        {
+          "episode": 8,
+          "start": 4465.0,
+          "end": 4554.0
+        }
+      ]
+    },
+    {
+      "id": "mary-fulfills-psalm45",
+      "text": "Psalm 45, which describes the queen standing at the king's right hand, is fulfilled in Mary as the mother of the Messiah, who is both her son and her Lord.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4980.0,
+          "end": 5045.5
+        }
+      ]
+    },
+    {
+      "id": "celsus-evidence",
+      "text": "The pagan critic Celsus (c. 150 AD) attacked Mary's lowly status, proving that her identity as queen mother was central to the apostolic gospel proclamation.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 5150.56,
+          "end": 5211.0
+        },
+        {
+          "episode": 8,
+          "start": 5333.479,
+          "end": 5416.72
+        }
+      ]
+    },
+    {
+      "id": "mary-not-ancillary",
+      "text": "Mary's role as queen mother is not ancillary but integral to the gospel of Christ's kingship and the believer's participation in the divine council.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 6196.39,
+          "end": 6251.84
+        },
+        {
+          "episode": 8,
+          "start": 6371.319,
+          "end": 6427.479
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-1-creation",
+      "reference": "Genesis 1:1-2:3",
+      "summary": "Creation as temple building, with man as God's image placed in the garden-temple.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 540.0,
+          "end": 602.159
+        },
+        {
+          "episode": 8,
+          "start": 898.96,
+          "end": 951.0
+        }
+      ]
+    },
+    {
+      "id": "genesis-2-adam",
+      "reference": "Genesis 2:7-25",
+      "summary": "God forms man from dust, breathes life into him, and creates woman as a helper for filling the earth.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 346.279,
+          "end": 401.0
+        },
+        {
+          "episode": 8,
+          "start": 1506.24,
+          "end": 1594.0
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-17-king",
+      "reference": "Deuteronomy 17:14-20",
+      "summary": "Commandments for a future king, including copying and studying the Torah.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 2595.519,
+          "end": 2631.34
+        }
+      ]
+    },
+    {
+      "id": "1-samuel-8-king",
+      "reference": "1 Samuel 8:1-22",
+      "summary": "Israel demands a king like other nations, rejecting God's direct rule.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 2467.199,
+          "end": 2525.519
+        }
+      ]
+    },
+    {
+      "id": "2-samuel-7-nathan",
+      "reference": "2 Samuel 7:16",
+      "summary": "Nathan's prophecy: David's house and throne established forever.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 3270.0,
+          "end": 3316.48
+        }
+      ]
+    },
+    {
+      "id": "1-chronicles-17-14",
+      "reference": "1 Chronicles 17:14",
+      "summary": "Parallel prophecy: David's descendant established in Yahweh's house and throne forever.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 3307.98,
+          "end": 3344.0
+        }
+      ]
+    },
+    {
+      "id": "1-kings-2-19",
+      "reference": "1 Kings 2:19",
+      "summary": "Bathsheba sits at Solomon's right hand, establishing the queen mother office.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4279.96,
+          "end": 4344.5
+        }
+      ]
+    },
+    {
+      "id": "psalm-45-queen",
+      "reference": "Psalm 45:9-13",
+      "summary": "The queen stands at the king's right hand in gold from Ophir.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4897.52,
+          "end": 4935.359
+        }
+      ]
+    },
+    {
+      "id": "psalm-110-lord",
+      "reference": "Psalm 110:1",
+      "summary": "The Lord said to my Lord, sit at my right hand.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 3395.84,
+          "end": 3427.32
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "theotokos",
+      "term": "Theotokos",
+      "definition": "Greek for 'God-bearer,' a title for the Virgin Mary as the mother of Jesus Christ, who is both God and man.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 99.76,
+          "end": 114.56
+        },
+        {
+          "episode": 8,
+          "start": 5951.79,
+          "end": 5973.0
+        }
+      ]
+    },
+    {
+      "id": "gebirah",
+      "term": "Gebirah",
+      "definition": "Hebrew term for 'great lady' or queen mother, the office held by the king's mother in Judah, seated at his right hand.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4887.319,
+          "end": 4893.399
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "term": "Divine Council",
+      "definition": "The heavenly court of God, consisting of angels and saints, with Christ enthroned at the center.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 2390.0,
+          "end": 2420.28
+        },
+        {
+          "episode": 8,
+          "start": 5687.6,
+          "end": 5712.8
+        }
+      ]
+    },
+    {
+      "id": "icon",
+      "term": "Icon",
+      "definition": "A representation that participates in the reality it depicts; used of humans as images of God and of sacred images in worship.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 3155.92,
+          "end": 3175.28
+        }
+      ]
+    },
+    {
+      "id": "messiah",
+      "term": "Messiah",
+      "definition": "Hebrew for 'anointed one,' referring to the promised king from David's line who would establish God's kingdom forever.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 3192.639,
+          "end": 3214.4
+        }
+      ]
+    }
+  ]
+}

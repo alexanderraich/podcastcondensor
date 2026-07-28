@@ -1,0 +1,500 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen De Young explore the figure of St. John the Forerunner and Baptist, connecting him to the paradigmatic prophet Elijah. They begin by examining Elijah's role as the model prophet, highlighting his confrontation with King Ahab and the prophets of Baal on Mount Carmel, his ascension in a chariot of fire, and his place in the divine council. The discussion then shifts to St. John, emphasizing his miraculous birth, his parents' martyrdom, and his upbringing in the wilderness by angels. The hosts draw parallels between Elijah and John, noting that John comes 'in the spirit and power of Elijah' and serves as the messenger who prepares the way for the Lord, fulfilling Malachi's prophecy. They also discuss John's role in the divine council, depicted in icons at Christ's left hand, and the concept of patron saints as guides in the spiritual life. The episode concludes with reflections on the communal nature of salvation and the importance of living as part of a Christian community.",
+  "entities": [
+    {
+      "id": "elijah",
+      "title": "Elijah (St. Elias)",
+      "category": "person",
+      "summary": "A 9th-century BC prophet of Israel, paradigmatic prophet who confronted Ahab and Jezebel, performed miracles, and was taken up to heaven in a chariot of fire.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 309.89,
+          "end": 417.81
+        },
+        {
+          "episode": 25,
+          "start": 1213.49,
+          "end": 1262.609
+        },
+        {
+          "episode": 25,
+          "start": 1531.89,
+          "end": 1697.329
+        },
+        {
+          "episode": 25,
+          "start": 2539.329,
+          "end": 2584.289
+        }
+      ]
+    },
+    {
+      "id": "john-the-baptist",
+      "title": "St. John the Forerunner and Baptist",
+      "category": "person",
+      "summary": "The last prophet of the Old Covenant, forerunner of Christ, who lived in the wilderness, preached repentance, and baptized Jesus. He is depicted in icons at Christ's left hand.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 221.009,
+          "end": 296.209
+        },
+        {
+          "episode": 25,
+          "start": 5200.56,
+          "end": 5316.479
+        },
+        {
+          "episode": 25,
+          "start": 6137.84,
+          "end": 6241.279
+        },
+        {
+          "episode": 25,
+          "start": 7993.9,
+          "end": 8072.529
+        }
+      ]
+    },
+    {
+      "id": "ahab",
+      "title": "King Ahab",
+      "category": "historical",
+      "summary": "King of the northern kingdom of Israel, husband of Jezebel, who promoted Baal worship and opposed Elijah.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 863.169,
+          "end": 900.69
+        },
+        {
+          "episode": 25,
+          "start": 1149.89,
+          "end": 1176.769
+        }
+      ]
+    },
+    {
+      "id": "jezebel",
+      "title": "Jezebel",
+      "category": "historical",
+      "summary": "Phoenician princess, wife of King Ahab, who promoted Baal worship and persecuted the prophets of Yahweh.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 880.45,
+          "end": 959.169
+        },
+        {
+          "episode": 25,
+          "start": 1073.65,
+          "end": 1095.25
+        }
+      ]
+    },
+    {
+      "id": "baal",
+      "title": "Baal",
+      "category": "theological",
+      "summary": "A Canaanite storm god, depicted as a usurper in the divine council, whose worship was opposed by Elijah.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 1176.769,
+          "end": 1220.13
+        },
+        {
+          "episode": 25,
+          "start": 1430.529,
+          "end": 1467.89
+        }
+      ]
+    },
+    {
+      "id": "elisha",
+      "title": "Elisha",
+      "category": "person",
+      "summary": "Prophet and successor of Elijah, who received a double portion of Elijah's spirit and continued his ministry.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 3009.65,
+          "end": 3032.69
+        },
+        {
+          "episode": 25,
+          "start": 3334.159,
+          "end": 3408.539
+        }
+      ]
+    },
+    {
+      "id": "zachariah",
+      "title": "Zachariah (father of John the Baptist)",
+      "category": "person",
+      "summary": "A priest, father of St. John the Forerunner, who was martyred in the temple for refusing to reveal John's location.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 5416.0,
+          "end": 5441.52
+        },
+        {
+          "episode": 25,
+          "start": 5500.159,
+          "end": 5554.0
+        }
+      ]
+    },
+    {
+      "id": "elizabeth",
+      "title": "St. Elizabeth",
+      "category": "person",
+      "summary": "Mother of St. John the Forerunner, who took him into the wilderness to escape Herod's massacre and died there 40 days later.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 5291.92,
+          "end": 5325.199
+        },
+        {
+          "episode": 25,
+          "start": 5434.159,
+          "end": 5466.56
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "paradigmatic-prophet",
+      "title": "Paradigmatic Prophet",
+      "summary": "Elijah is presented as the paradigmatic prophet, the standard by which other prophets are measured, due to his detailed narrative in Kings and his role in spiritual warfare.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 309.89,
+          "end": 417.81
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "title": "Divine Council",
+      "summary": "The divine council is the heavenly assembly where God presides with angelic beings and exalted humans; prophets stand in this council to receive and deliver God's messages.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2584.289,
+          "end": 2674.13
+        },
+        {
+          "episode": 25,
+          "start": 2703.57,
+          "end": 2773.25
+        }
+      ]
+    },
+    {
+      "id": "angelic-life",
+      "title": "Angelic Life",
+      "summary": "A way of life lived by prophets and saints, characterized by living in communion with angels, often in the wilderness, and participating in the divine council through worship.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2886.369,
+          "end": 2944.5
+        }
+      ]
+    },
+    {
+      "id": "remnant-theology",
+      "title": "Remnant Theology",
+      "summary": "The concept that God preserves a faithful remnant within Israel throughout history, which is refined and purified, and through which salvation is accomplished.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2108.5,
+          "end": 2205.619
+        },
+        {
+          "episode": 25,
+          "start": 2278.19,
+          "end": 2406.98
+        }
+      ]
+    },
+    {
+      "id": "patron-saint-relationship",
+      "title": "Patron Saint Relationship",
+      "summary": "The relationship between a Christian and their patron saint, modeled on Elijah and John the Forerunner, where the saint guides and intercedes for the believer.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 8438.67,
+          "end": 8561.709
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "elijah-paradigmatic-prophet",
+      "text": "Elijah is the paradigmatic prophet because the books of Kings change format to give his detailed narrative, setting the standard for prophethood.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 309.89,
+          "end": 417.81
+        }
+      ]
+    },
+    {
+      "id": "john-elijah-connection",
+      "text": "St. John the Forerunner comes in the spirit and power of Elijah, fulfilling Malachi's prophecy, and has a patron-client relationship with Elijah.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 6137.84,
+          "end": 6241.279
+        },
+        {
+          "episode": 25,
+          "start": 8438.67,
+          "end": 8561.709
+        }
+      ]
+    },
+    {
+      "id": "remnant-preservation",
+      "text": "Throughout the Old Testament, God preserves a faithful remnant, and this pattern continues in the New Testament with the Church.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2108.5,
+          "end": 2205.619
+        },
+        {
+          "episode": 25,
+          "start": 2278.19,
+          "end": 2406.98
+        }
+      ]
+    },
+    {
+      "id": "john-raised-by-angels",
+      "text": "St. John the Forerunner was raised by angels in the wilderness after his mother's death, living the angelic life from childhood.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 5458.56,
+          "end": 5483.439
+        },
+        {
+          "episode": 25,
+          "start": 6030.239,
+          "end": 6081.39
+        }
+      ]
+    },
+    {
+      "id": "john-in-divine-council",
+      "text": "St. John the Forerunner now stands at Christ's left hand in the divine council, replacing the fallen cherub and continuing his ministry of preparation.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 7993.9,
+          "end": 8072.529
+        },
+        {
+          "episode": 25,
+          "start": 8141.89,
+          "end": 8257.17
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "malachi-3-1",
+      "reference": "Malachi 3:1",
+      "summary": "Quoted as prophecy of the messenger who prepares the way before the Lord, applied to John the Baptist.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 6159.199,
+          "end": 6185.76
+        }
+      ]
+    },
+    {
+      "id": "malachi-4-5-6",
+      "reference": "Malachi 4:5-6",
+      "summary": "Prophecy of Elijah being sent before the great day of the Lord, applied to John the Baptist coming in the spirit of Elijah.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 6185.76,
+          "end": 6214.0
+        }
+      ]
+    },
+    {
+      "id": "isaiah-40-3",
+      "reference": "Isaiah 40:3",
+      "summary": "A voice crying in the wilderness to prepare the way of the Lord, quoted in all four gospels about John the Baptist.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 6368.319,
+          "end": 6403.84
+        }
+      ]
+    },
+    {
+      "id": "luke-1-13-17",
+      "reference": "Luke 1:13-17",
+      "summary": "Angel Gabriel's annunciation to Zechariah that John will go before the Lord in the spirit and power of Elijah.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 6780.479,
+          "end": 6835.52
+        }
+      ]
+    },
+    {
+      "id": "matthew-23-34-35",
+      "reference": "Matthew 23:34-35",
+      "summary": "Jesus refers to the murder of Zechariah between the sanctuary and the altar, traditionally identified as John's father.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 5500.159,
+          "end": 5554.0
+        }
+      ]
+    },
+    {
+      "id": "1-kings-17-1",
+      "reference": "1 Kings 17:1",
+      "summary": "Elijah's first announcement to Ahab that there will be no rain, demonstrating Yahweh's power over Baal.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 1390.45,
+          "end": 1414.609
+        }
+      ]
+    },
+    {
+      "id": "1-kings-18-20-40",
+      "reference": "1 Kings 18:20-40",
+      "summary": "The showdown on Mount Carmel where Elijah calls down fire from heaven, proving Yahweh is God.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 1531.89,
+          "end": 1697.329
+        }
+      ]
+    },
+    {
+      "id": "2-kings-2-1-14",
+      "reference": "2 Kings 2:1-14",
+      "summary": "Elijah's ascension in a chariot of fire and Elisha receiving his mantle.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2539.329,
+          "end": 2584.289
+        },
+        {
+          "episode": 25,
+          "start": 3334.159,
+          "end": 3451.739
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "paradigmatic-prophet",
+      "term": "Paradigmatic Prophet",
+      "definition": "A prophet who serves as the standard or model for all other prophets; Elijah is considered the paradigmatic prophet in Scripture.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 309.89,
+          "end": 417.81
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "term": "Divine Council",
+      "definition": "The heavenly assembly of God with angelic beings and exalted humans, where divine decisions are made and prophets receive their commission.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2584.289,
+          "end": 2674.13
+        }
+      ]
+    },
+    {
+      "id": "angelic-life",
+      "term": "Angelic Life",
+      "definition": "A way of life lived in communion with angels, often in the wilderness, characterized by constant worship and participation in the divine council.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2886.369,
+          "end": 2944.5
+        }
+      ]
+    },
+    {
+      "id": "remnant",
+      "term": "Remnant",
+      "definition": "The faithful minority within Israel that God preserves and purifies throughout history, through whom salvation is accomplished.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2108.5,
+          "end": 2205.619
+        }
+      ]
+    },
+    {
+      "id": "patron-saint",
+      "term": "Patron Saint",
+      "definition": "A saint who serves as a guide and intercessor for a Christian, modeled on the relationship between Elijah and John the Forerunner.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 8438.67,
+          "end": 8561.709
+        }
+      ]
+    },
+    {
+      "id": "spirit-and-power-of-elijah",
+      "term": "Spirit and Power of Elijah",
+      "definition": "The phrase describing John the Forerunner's relationship with Elijah, indicating a continuation of Elijah's prophetic ministry and guidance.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 6780.479,
+          "end": 6835.52
+        }
+      ]
+    }
+  ]
+}
