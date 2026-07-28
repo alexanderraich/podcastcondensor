@@ -1,0 +1,484 @@
+{
+  "summary": "In this episode, the hosts explore the biblical and theological foundations of priesthood, arguing that it is not merely a clerical office but a fundamental aspect of human nature and creation. They begin by examining Adam as the first priest, whose role was to represent God to creation and offer creation back to God, integrating it into paradise. This priestly function is tied to fatherhood and masculinity, with men called to channel their ordering energy through priesthood, while women participate through motherhood and spiritual motherhood. The discussion then traces the development of priesthood through the Old Testament, highlighting key moments such as the separation of priesthood from kingship after Moses' failure to circumcise his son, the restriction of priesthood to the Levites after the golden calf incident, and the corruption of the priesthood by the Sadducees in the Second Temple period. The hosts emphasize that Christ, as the great high priest, reunites priesthood and kingship, restoring humanity's original purpose. They apply this to the New Testament church, showing how bishops, presbyters, and deacons fulfill priestly roles in continuity with the Old Testament, and how all Christians are called to a royal priesthood, representing God to the world and the world to God. The episode concludes with practical applications for parenting, community life, and political engagement, urging Christians to approach the world as priests rather than through coercive power.",
+  "entities": [
+    {
+      "id": "adam",
+      "title": "Adam",
+      "category": "person",
+      "summary": "The first human, created as a priest and king in the Garden of Eden, tasked with ordering creation and offering it to God.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 44.0,
+          "end": 53.0
+        },
+        {
+          "episode": 35,
+          "start": 585.559,
+          "end": 632.799
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "Prophet and leader of Israel; his failure to circumcise his son led to the priesthood being taken from him and given to Aaron.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 710.879,
+          "end": 725.24
+        },
+        {
+          "episode": 35,
+          "start": 789.48,
+          "end": 830.559
+        }
+      ]
+    },
+    {
+      "id": "aaron",
+      "title": "Aaron",
+      "category": "person",
+      "summary": "Moses' brother, appointed as the first high priest after Moses' failure.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 784.2,
+          "end": 796.48
+        },
+        {
+          "episode": 35,
+          "start": 816.799,
+          "end": 830.559
+        }
+      ]
+    },
+    {
+      "id": "melchizedek",
+      "title": "Melchizedek",
+      "category": "person",
+      "summary": "Priest-king of Salem, a type of Christ who combines priesthood and kingship.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 456.12,
+          "end": 464.639
+        },
+        {
+          "episode": 35,
+          "start": 646.639,
+          "end": 654.72
+        }
+      ]
+    },
+    {
+      "id": "phineas",
+      "title": "Phineas",
+      "category": "person",
+      "summary": "Aaron's grandson, who zealously interceded at Baal Peor, leading to the high priesthood being established in his line.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 860.639,
+          "end": 879.12
+        }
+      ]
+    },
+    {
+      "id": "sadducees",
+      "title": "Sadducees",
+      "category": "historical",
+      "summary": "A priestly party in Second Temple Judaism, known for corruption and collaboration with Rome, controlling the temple and oppressing the people.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 1581.88,
+          "end": 1600.599
+        },
+        {
+          "episode": 35,
+          "start": 6960.0,
+          "end": 7012.34
+        }
+      ]
+    },
+    {
+      "id": "levites",
+      "title": "Levites",
+      "category": "historical",
+      "summary": "The tribe of Levi, set apart for priestly service after the golden calf incident, including priests, high priests, and supporting roles.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 934.559,
+          "end": 947.24
+        },
+        {
+          "episode": 35,
+          "start": 1170.0,
+          "end": 1196.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "priesthood-as-human-nature",
+      "title": "Priesthood as Human Nature",
+      "summary": "Priesthood is not a job but a way of relating to God and creation, built into what it means to be human. It involves representing God to creation and offering creation back to God.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 164.52,
+          "end": 200.759
+        },
+        {
+          "episode": 35,
+          "start": 900.0,
+          "end": 913.879
+        }
+      ]
+    },
+    {
+      "id": "adam-as-priest",
+      "title": "Adam as Priest",
+      "summary": "Adam was created as a priest in the Garden of Eden, tasked with ordering creation and offering it back to God, thereby expanding paradise.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 585.559,
+          "end": 632.799
+        },
+        {
+          "episode": 35,
+          "start": 117.2,
+          "end": 155.759
+        }
+      ]
+    },
+    {
+      "id": "priesthood-and-fatherhood",
+      "title": "Priesthood and Fatherhood",
+      "summary": "Priesthood is intrinsically linked to fatherhood; the father of a family acts as its priest, and this connection is rooted in the patriarchal narratives of Genesis.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 456.12,
+          "end": 470.839
+        },
+        {
+          "episode": 35,
+          "start": 1997.39,
+          "end": 2016.64
+        }
+      ]
+    },
+    {
+      "id": "priesthood-and-masculinity",
+      "title": "Priesthood and Masculinity",
+      "summary": "Masculine energy, which tends toward ordering and subduing, is channeled positively through priesthood, leading to theosis. Priesthood is the proper expression of masculinity.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 2187.4,
+          "end": 2212.0
+        },
+        {
+          "episode": 35,
+          "start": 487.839,
+          "end": 515.2
+        }
+      ]
+    },
+    {
+      "id": "spiritual-motherhood",
+      "title": "Spiritual Motherhood",
+      "summary": "Women participate in priesthood through spiritual motherhood, bringing life and nurturing into communities, not limited to biological motherhood.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 5562.56,
+          "end": 5600.68
+        },
+        {
+          "episode": 35,
+          "start": 5820.0,
+          "end": 5856.739
+        }
+      ]
+    },
+    {
+      "id": "concentric-circles-of-priesthood",
+      "title": "Concentric Circles of Priesthood",
+      "summary": "Priesthood is structured in concentric circles: high priest, priests, Levites, and the people of Israel, each serving as priests to the next outer circle. This pattern continues in the Church with bishops, presbyters, deacons, and laity.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 5197.92,
+          "end": 5228.0
+        },
+        {
+          "episode": 35,
+          "start": 8036.72,
+          "end": 8080.8
+        }
+      ]
+    },
+    {
+      "id": "fulfillment-not-abolition",
+      "title": "Fulfillment, Not Abolition",
+      "summary": "Christ's priesthood fulfills and fills to overflowing the Old Testament priesthood, not abolishing it. The New Testament church retains a structured priesthood in continuity with the Old.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 8428.799,
+          "end": 8473.299
+        },
+        {
+          "episode": 35,
+          "start": 8479.94,
+          "end": 8502.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "priesthood-baked-into-creation",
+      "text": "Priesthood is written into the very fabric of creation and especially into humanity, not merely a social role.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 195.639,
+          "end": 217.12
+        }
+      ]
+    },
+    {
+      "id": "adam-offering-expansion",
+      "text": "Adam's priestly work was to expand Eden by ordering creation and offering it back to God, integrating it into paradise.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 585.559,
+          "end": 632.799
+        }
+      ]
+    },
+    {
+      "id": "moses-lost-priesthood",
+      "text": "Moses lost the priesthood because he failed to circumcise his son, showing that a man must be a priest in his own family before leading the community.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 789.48,
+          "end": 842.559
+        }
+      ]
+    },
+    {
+      "id": "golden-calf-priesthood-transfer",
+      "text": "After the golden calf incident, the priesthood was taken from the elders and given to the Levites, who stood with Moses.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 940.62,
+          "end": 947.24
+        }
+      ]
+    },
+    {
+      "id": "korah-rebellion",
+      "text": "Korah's rebellion against Aaron's priesthood was punished by the earth swallowing him, showing that priesthood is not seized by violence but given by God.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 1121.319,
+          "end": 1165.39
+        }
+      ]
+    },
+    {
+      "id": "christ-reunites-priesthood-kingship",
+      "text": "Christ reunites priesthood and kingship, which were separated after Moses, restoring humanity's original purpose.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 7347.199,
+          "end": 7371.199
+        }
+      ]
+    },
+    {
+      "id": "church-as-royal-priesthood",
+      "text": "The Church, as a royal priesthood, has the same relationship to the world as Israel had to the nations: to represent God to the world and the world to God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 8133.0,
+          "end": 8169.359
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-1-2-temple",
+      "reference": "Genesis 1-2",
+      "summary": "The creation narrative parallels ancient Near Eastern temple construction, with Adam as the image of God placed in the garden-temple.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 66.439,
+          "end": 103.92
+        }
+      ]
+    },
+    {
+      "id": "exodus-4-circumcision",
+      "reference": "Exodus 4:24-26",
+      "summary": "The angel of the Lord seeks to kill Moses because he had not circumcised his son, leading to Zipporah's intervention.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 789.48,
+          "end": 824.32
+        }
+      ]
+    },
+    {
+      "id": "exodus-19-5-6",
+      "reference": "Exodus 19:5-6",
+      "summary": "Israel is called a kingdom of priests and a holy nation, indicating their priestly role among the nations.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 1440.0,
+          "end": 1456.0
+        }
+      ]
+    },
+    {
+      "id": "exodus-32-golden-calf",
+      "reference": "Exodus 32",
+      "summary": "The golden calf incident leads to the Levites being chosen for priestly service after they stand with Moses.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 909.6,
+          "end": 947.24
+        }
+      ]
+    },
+    {
+      "id": "numbers-16-korah",
+      "reference": "Numbers 16",
+      "summary": "Korah's rebellion against Aaron's priesthood results in the earth swallowing the rebels, affirming God's choice of Aaron.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 1121.319,
+          "end": 1165.39
+        }
+      ]
+    },
+    {
+      "id": "1-peter-2-9",
+      "reference": "1 Peter 2:9",
+      "summary": "Christians are described as a royal priesthood, echoing Exodus 19 and applying it to the Church.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 8099.319,
+          "end": 8112.0
+        }
+      ]
+    },
+    {
+      "id": "revelation-1-6",
+      "reference": "Revelation 1:6",
+      "summary": "Christ has made us a kingdom, priests to His God and Father, showing the fulfillment of the priestly calling.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 8280.0,
+          "end": 8303.78
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "presbyter",
+      "term": "Presbyter",
+      "definition": "Greek for 'elder'; in the New Testament, refers to church leaders who also serve a priestly function, reuniting eldership and priesthood in Christ.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 1724.0,
+          "end": 1749.0
+        },
+        {
+          "episode": 35,
+          "start": 7605.6,
+          "end": 7627.52
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God, the goal of Christian life; priesthood is a means of channeling human energy toward theosis.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 492.8,
+          "end": 502.879
+        }
+      ]
+    },
+    {
+      "id": "conduit",
+      "term": "Conduit",
+      "summary": "A metaphor for the priest as a transparent channel through which God's grace flows to the people and the people's worship flows to God.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 875.44,
+          "end": 891.32
+        },
+        {
+          "episode": 35,
+          "start": 2608.8,
+          "end": 2621.719
+        }
+      ]
+    },
+    {
+      "id": "imaging",
+      "term": "Imaging",
+      "definition": "The active function of representing God, as Adam imaged God in the garden; opposite of idolatry, which blocks the conduit.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 95.519,
+          "end": 103.92
+        },
+        {
+          "episode": 35,
+          "start": 600.0,
+          "end": 609.759
+        }
+      ]
+    }
+  ]
+}

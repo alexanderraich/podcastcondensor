@@ -1,0 +1,487 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen De Young explore the biblical pattern of worship spaces, starting from the Garden of Eden as a mountain garden paradise, through the Tabernacle and Temple, to Christian churches. They argue that the Tabernacle was a copy of the heavenly tent shown to Moses on Mount Sinai, representing God's dwelling among His people. The Temple of Solomon, while built with good intentions, was a concession to human desire for permanence and was influenced by pagan concepts, leading to problems like the worship of the sun god. The New Testament reorients Christian worship around the Tabernacle pattern, with Christ as the true Temple and believers as living stones. The episode concludes with a call to live as pilgrims, not settling into worldly comfort, and emphasizes that Christianity is a way of life, not just a set of beliefs.",
+  "entities": [
+    {
+      "id": "taj-mahal",
+      "title": "Taj Mahal",
+      "category": "place",
+      "summary": "A famous example of a walled garden (paradise) structure, used to illustrate the ancient pattern of paradise.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 90.0,
+          "end": 111.76
+        }
+      ]
+    },
+    {
+      "id": "baal-cycle",
+      "title": "Baal Cycle",
+      "category": "historical",
+      "summary": "Ugaritic mythological text describing the gods' tent and divine council, used to show parallels with Israelite concepts.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 498.8,
+          "end": 543.679
+        },
+        {
+          "episode": 37,
+          "start": 2280.0,
+          "end": 2333.28
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "Prophet who received the pattern of the Tabernacle on Mount Sinai and led Israel in the wilderness.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 669.679,
+          "end": 694.8
+        },
+        {
+          "episode": 37,
+          "start": 2910.0,
+          "end": 2969.0
+        }
+      ]
+    },
+    {
+      "id": "solomon",
+      "title": "Solomon",
+      "category": "person",
+      "summary": "King who built the Temple in Jerusalem, which was a concession to human desire for permanence and was influenced by pagan architecture.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 5052.0,
+          "end": 5120.239
+        },
+        {
+          "episode": 37,
+          "start": 5520.0,
+          "end": 5562.88
+        },
+        {
+          "episode": 37,
+          "start": 5949.64,
+          "end": 5999.42
+        }
+      ]
+    },
+    {
+      "id": "jeremiah",
+      "title": "Jeremiah",
+      "category": "person",
+      "summary": "Prophet who warned against trusting in the Temple as a talisman, emphasizing that God could leave it.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 5620.56,
+          "end": 5675.0
+        }
+      ]
+    },
+    {
+      "id": "julian-the-apostate",
+      "title": "Julian the Apostate",
+      "category": "person",
+      "summary": "Roman emperor who criticized Christians for venerating relics, providing evidence of early Christian practice.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 9178.159,
+          "end": 9213.219
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "paradise-as-garden-mountain",
+      "title": "Paradise as Garden on a Mountain",
+      "summary": "Paradise is depicted as a walled garden on a mountain, the dwelling place of God, with rivers flowing out. This pattern is seen in Eden and later in the Tabernacle and Temple.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 88.48,
+          "end": 136.0
+        },
+        {
+          "episode": 37,
+          "start": 228.0,
+          "end": 262.319
+        },
+        {
+          "episode": 37,
+          "start": 1129.48,
+          "end": 1179.319
+        }
+      ]
+    },
+    {
+      "id": "divine-council-tent",
+      "title": "Divine Council Tent",
+      "summary": "In ancient Near Eastern thought, gods dwell in a tent on a mountain, with the divine council meeting there. This concept underlies the Tabernacle as a copy of the heavenly tent.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 457.399,
+          "end": 527.0
+        },
+        {
+          "episode": 37,
+          "start": 1976.88,
+          "end": 2109.139
+        },
+        {
+          "episode": 37,
+          "start": 2526.639,
+          "end": 2612.39
+        }
+      ]
+    },
+    {
+      "id": "tabernacle-as-microcosm",
+      "title": "Tabernacle as Microcosm",
+      "summary": "The Tabernacle's structure and furnishings (e.g., seven-branched lampstand) represent the cosmos, with the Holy of Holies as God's throne room.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 4620.0,
+          "end": 4662.0
+        },
+        {
+          "episode": 37,
+          "start": 4698.239,
+          "end": 4716.79
+        }
+      ]
+    },
+    {
+      "id": "temple-as-condescension",
+      "title": "Temple as Condescension",
+      "summary": "God reluctantly allowed the Temple to be built, but it was a concession to human weakness, not His ideal. The Temple was prone to pagan influences and was not given detailed divine instructions like the Tabernacle.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 5052.0,
+          "end": 5120.239
+        },
+        {
+          "episode": 37,
+          "start": 5130.0,
+          "end": 5152.72
+        },
+        {
+          "episode": 37,
+          "start": 5279.119,
+          "end": 5315.6
+        }
+      ]
+    },
+    {
+      "id": "christ-as-true-temple",
+      "title": "Christ as the True Temple",
+      "summary": "Christ's body is the true Temple, and believers are living stones built into a spiritual house. The New Testament emphasizes the Tabernacle pattern over the Temple.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 5906.0,
+          "end": 5939.939
+        },
+        {
+          "episode": 37,
+          "start": 6804.76,
+          "end": 6837.239
+        }
+      ]
+    },
+    {
+      "id": "church-as-tabernacle",
+      "title": "Church as Tabernacle",
+      "summary": "Orthodox Christian worship spaces are patterned after the Tabernacle, not the Temple, with the altar as the Holy of Holies, the nave as the Holy Place, and the narthex as the outer court.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 7620.0,
+          "end": 7656.8
+        },
+        {
+          "episode": 37,
+          "start": 7681.6,
+          "end": 7721.199
+        },
+        {
+          "episode": 37,
+          "start": 7830.0,
+          "end": 7840.399
+        }
+      ]
+    },
+    {
+      "id": "faithfulness-over-belief",
+      "title": "Faithfulness Over Belief",
+      "summary": "Christianity is primarily a way of life (faithfulness) rather than a set of beliefs. True faith is demonstrated by actions, not just mental assent.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 10170.0,
+          "end": 10211.0
+        },
+        {
+          "episode": 37,
+          "start": 10229.799,
+          "end": 10274.239
+        },
+        {
+          "episode": 37,
+          "start": 10530.0,
+          "end": 10561.579
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "paradise-is-where-god-is",
+      "text": "Paradise is wherever God is present with humanity, not a specific location. The presence of God makes any place paradise.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 941.24,
+          "end": 968.58
+        },
+        {
+          "episode": 37,
+          "start": 1056.2,
+          "end": 1075.24
+        }
+      ]
+    },
+    {
+      "id": "tabernacle-copied-heavenly-tent",
+      "text": "The Tabernacle was made after the pattern of the heavenly tent that Moses saw on Mount Sinai, which is the dwelling place of God with the divine council.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 731.0,
+          "end": 757.0
+        },
+        {
+          "episode": 37,
+          "start": 3141.48,
+          "end": 3177.0
+        }
+      ]
+    },
+    {
+      "id": "temple-not-gods-ideal",
+      "text": "God did not originally want a permanent temple; it was a concession to human desire for stability, and it led to pagan influences and idolatry.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 5052.0,
+          "end": 5120.239
+        },
+        {
+          "episode": 37,
+          "start": 5130.0,
+          "end": 5152.72
+        }
+      ]
+    },
+    {
+      "id": "christianity-as-way-of-life",
+      "text": "Christianity is primarily a way of life (faithfulness) rather than a set of beliefs. True faith is demonstrated by actions, not just mental assent.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 10170.0,
+          "end": 10211.0
+        },
+        {
+          "episode": 37,
+          "start": 10229.799,
+          "end": 10274.239
+        }
+      ]
+    },
+    {
+      "id": "relics-testify-to-resurrection",
+      "text": "The veneration of relics is a testimony to the resurrection of the dead, as the bodies of saints are sanctified by the Holy Spirit and will be raised.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 10080.0,
+          "end": 10115.54
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "ezekiel-28-13-14",
+      "reference": "Ezekiel 28:13-14",
+      "summary": "Describes Eden as the garden of God on the holy mountain, used to show that Eden was a mountain.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 1321.68,
+          "end": 1379.24
+        }
+      ]
+    },
+    {
+      "id": "hebrews-8-1-6",
+      "reference": "Hebrews 8:1-6",
+      "summary": "States that the Tabernacle was a copy and shadow of the heavenly things, and that Christ serves in the true tent.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 3148.8,
+          "end": 3215.119
+        }
+      ]
+    },
+    {
+      "id": "john-14-2",
+      "reference": "John 14:2",
+      "summary": "Jesus says 'in my Father's house are many rooms' (or 'partitions'), referring to the tent of the divine council.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 2489.519,
+          "end": 2539.39
+        }
+      ]
+    },
+    {
+      "id": "revelation-15-5-8",
+      "reference": "Revelation 15:5-8",
+      "summary": "Describes the heavenly sanctuary as the 'tent of witness,' showing that heavenly worship follows the Tabernacle pattern.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 7488.119,
+          "end": 7544.0
+        }
+      ]
+    },
+    {
+      "id": "james-2-18",
+      "reference": "James 2:18",
+      "summary": "Faith is shown by works, emphasizing that Christianity is a way of life.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 10304.0,
+          "end": 10340.42
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "paradise",
+      "term": "Paradise",
+      "definition": "A Persian loan word meaning a walled garden; in Scripture, it refers to the Garden of Eden and the dwelling place of God.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 88.48,
+          "end": 136.0
+        },
+        {
+          "episode": 37,
+          "start": 605.96,
+          "end": 628.39
+        }
+      ]
+    },
+    {
+      "id": "tabernacle",
+      "term": "Tabernacle",
+      "definition": "The portable tent shrine built by Moses according to the pattern shown on Mount Sinai, serving as the dwelling place of God among Israel.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 731.0,
+          "end": 757.0
+        },
+        {
+          "episode": 37,
+          "start": 3422.0,
+          "end": 3435.519
+        }
+      ]
+    },
+    {
+      "id": "holy-of-holies",
+      "term": "Holy of Holies",
+      "definition": "The innermost part of the Tabernacle and Temple, where the Ark of the Covenant was kept, accessible only by the High Priest once a year.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 4780.6,
+          "end": 4796.52
+        },
+        {
+          "episode": 37,
+          "start": 4805.6,
+          "end": 4841.0
+        }
+      ]
+    },
+    {
+      "id": "ark-of-the-covenant",
+      "term": "Ark of the Covenant",
+      "definition": "A gold-covered wooden chest containing the tablets of the Law, representing the footstool of God's throne.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 4829.39,
+          "end": 4884.0
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God through participation in the divine nature, often associated with the saints.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 2587.79,
+          "end": 2604.59
+        }
+      ]
+    },
+    {
+      "id": "relics",
+      "term": "Relics",
+      "definition": "The physical remains of saints, venerated as holy because the body has been sanctified by the Holy Spirit and will be resurrected.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 8850.0,
+          "end": 8878.2
+        },
+        {
+          "episode": 37,
+          "start": 10080.0,
+          "end": 10115.54
+        }
+      ]
+    }
+  ]
+}

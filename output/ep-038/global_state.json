@@ -1,0 +1,318 @@
+{
+  "summary": "This Q&A episode of Lord of Spirits covers a wide range of topics submitted by listeners, including the meaning of liturgy, the nature of the soul, the identity of Cain's wife, the Kingdom of God, the Feast of Tabernacles, the evil eye, and more. The hosts, Fr. Andrew Stephen Damick and Fr. Stephen De Young, provide Orthodox Christian perspectives rooted in Scripture, patristics, and ancient Near Eastern context. Key themes include the rejection of modern materialist dichotomies (e.g., spiritual vs. physical), the importance of understanding Scripture within its ancient worldview, and the sacramental nature of reality. The episode emphasizes that liturgy is not merely 'work of the people' but a divine service where God acts through His people, and that the soul is the life of the body, not a separate immortal entity. The hosts also address misconceptions about Asherah, the serpent's seed, and the devil's fall, while encouraging a holistic, enchanted view of creation.",
+  "entities": [
+    {
+      "id": "cains-wife",
+      "title": "Cain's Wife",
+      "category": "theological",
+      "summary": "The Bible does not name Cain's wife. Theories include a sister (possible) or co-Adamism (other humans besides Adam and Eve), but the latter creates theological problems with death and Christ's victory. The safest answer is that we do not know.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1491.79,
+          "end": 1751.519
+        }
+      ]
+    },
+    {
+      "id": "asherah",
+      "title": "Asherah",
+      "category": "theological",
+      "summary": "Asherah is often claimed to be Yahweh's wife based on an inscription, but the inscription likely refers to a ritual pole (asherah), not the goddess. Even if it did, it would reflect syncretistic Israelite practice, not official religion. The Old Testament consistently condemns such worship.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 5049.96,
+          "end": 5237.359
+        }
+      ]
+    },
+    {
+      "id": "yam",
+      "title": "Yam (Sea God)",
+      "category": "theological",
+      "summary": "Yam is the Hebrew word for 'sea' and also the name of a Canaanite sea god. In Scripture, references to the sea often carry both literal and spiritual dimensions—calming the sea is also subduing the chaos deity. Ancient peoples did not separate the physical from the spiritual.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 8697.36,
+          "end": 8827.44
+        }
+      ]
+    },
+    {
+      "id": "ziz",
+      "title": "Ziz",
+      "category": "theological",
+      "summary": "Ziz is a giant griffin-like bird in Jewish tradition, mentioned in Psalms. It is not a monster but a magnificent creature belonging to God, similar to the Mesopotamian Anzu. It symbolizes divine power and is not portrayed negatively.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 10500.0,
+          "end": 10903.44
+        }
+      ]
+    },
+    {
+      "id": "samson",
+      "title": "Samson",
+      "category": "historical",
+      "summary": "Samson is a judge of Israel known for his strength and his death by pulling down the pillars of a Philistine temple. His burial under rubble is a sign of a cursed death, paralleling other biblical figures like Absalom and Job's family, and connecting to ancient practices of weighing down bodies with rocks.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 10168.799,
+          "end": 10457.79
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "meaning-of-liturgy",
+      "title": "Meaning of Liturgy",
+      "summary": "Liturgy (Greek leitourgia) originally meant 'public works' in ancient Greece, referring to civic duties like funding festivals or building temples. In the Septuagint, it was used for Levitical service within the covenant. In Christianity, it denotes the public work of the people of God, where God acts instrumentally through clergy and laity. It is not merely 'work of the people' but a divine-human synergy.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 240.0,
+          "end": 921.24
+        }
+      ]
+    },
+    {
+      "id": "soul-as-life-of-body",
+      "title": "Soul as Life of the Body",
+      "summary": "The soul (Hebrew nephesh) means 'life' and is not a separate immortal entity. In Scripture, animals and plants have souls (they are alive). Human death is the separation of soul (life) from body, but the soul continues contingently by God's preservation. The intermediate state is described analogically; the final resurrection reunites soul and body. This contrasts with Platonic immortality and reincarnation.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1858.48,
+          "end": 2167.599
+        }
+      ]
+    },
+    {
+      "id": "kingdom-of-god",
+      "title": "Kingdom of God",
+      "summary": "The Kingdom of God is not a territorial state but the extension of God's rule and influence. It refers to those who are obedient to God and under His order. Christ's enthronement is an eternal reality that plays out in time. The final judgment will establish this order for all creation.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 2611.599,
+          "end": 2804.32
+        }
+      ]
+    },
+    {
+      "id": "feast-of-tabernacles",
+      "title": "Feast of Tabernacles",
+      "summary": "The Feast of Tabernacles (Sukkot) commemorated Israel's wandering in the wilderness, reminding them of dependence on God. It involved living in booths to unsettle themselves at harvest time. In Christianity, its themes are fulfilled in the Transfiguration and Pentecost, not as a separate feast.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 2871.599,
+          "end": 3072.0
+        }
+      ]
+    },
+    {
+      "id": "evil-eye",
+      "title": "Evil Eye",
+      "summary": "The evil eye is an ancient concept involving envy and the directing of a malevolent gaze, often associated with demonic powers. It is real but should be countered by prayer (e.g., Psalm 91) and the cross, not amulets. The practice of using blue beads or other talismans is superstitious and forbidden.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 6817.76,
+          "end": 7145.979
+        }
+      ]
+    },
+    {
+      "id": "catechism-as-formation",
+      "title": "Catechism as Formation",
+      "summary": "Catechism should not be merely informational (transferring facts) but formational—teaching how to pray, fast, give alms, and live an Orthodox Christian life. It is about inculturating individuals into the community, akin to apprenticeship, and should be tailored to the repentance and growth needed by each person.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 8238.379,
+          "end": 8629.44
+        }
+      ]
+    },
+    {
+      "id": "revelation-and-discernment",
+      "title": "Revelation and Discernment",
+      "summary": "Revelation in Orthodoxy is primarily the self-revelation of Christ, not a series of logical propositions or micro-managing guidance. Discernment is about knowing Christ and making good choices based on that relationship, not trying to divine a single 'perfect' will. God's will is straightforward: repent, love God and neighbor, remain faithful.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 9059.239,
+          "end": 9690.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "liturgy-meaning",
+      "text": "Liturgy does not mean 'work of the people' in the sense of human activity alone; it is a public work where God acts instrumentally through the clergy and people, as seen in its original usage for public works and Levitical service.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 240.0,
+          "end": 921.24
+        }
+      ]
+    },
+    {
+      "id": "soul-not-immortal",
+      "text": "The soul is not an immortal entity in the Platonic sense; it is the life of the body. After death, life continues contingently by God's preservation until the resurrection.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1858.48,
+          "end": 2167.599
+        }
+      ]
+    },
+    {
+      "id": "death-penalty-church",
+      "text": "The Church does impose the death penalty through excommunication, which is a spiritual death intended to lead to repentance. Physical death is not the ultimate penalty; separation from God is.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 5812.64,
+          "end": 5978.119
+        }
+      ]
+    },
+    {
+      "id": "spontaneity-heresy",
+      "text": "Confusing spontaneity with the Holy Spirit is a heresy. The Holy Spirit brings order, not chaos. True creativity is about putting things in order, not breaking boundaries.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 6126.479,
+          "end": 6506.279
+        }
+      ]
+    },
+    {
+      "id": "devil-fell-after-creation",
+      "text": "The devil fell after the creation of the world, as affirmed by St. Andrew of Caesarea and the Church Fathers. He is part of creation and fell through pride.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 8021.84,
+          "end": 8151.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-3-serpent-seed",
+      "reference": "Genesis 3:15",
+      "summary": "The 'seed of the serpent' refers to those who bear the image of the serpent (i.e., are like him), not literal offspring. Sonship is about image-bearing, as seen in Christ calling opponents 'sons of the devil'.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 2486.28,
+          "end": 2592.8
+        }
+      ]
+    },
+    {
+      "id": "psalm-91-protection",
+      "reference": "Psalm 91 (90 LXX)",
+      "summary": "Psalm 91 is an ancient exorcism prayer that speaks of God's protection from evil, including the evil eye and demonic attacks. It is recommended as a defense instead of amulets.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 7119.64,
+          "end": 7145.979
+        }
+      ]
+    },
+    {
+      "id": "matthew-25-judgment",
+      "reference": "Matthew 25:31-46",
+      "summary": "The Last Judgment is about putting all things in their proper order, not merely rendering verdicts. It is the final establishment of God's kingdom.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 7829.76,
+          "end": 7890.0
+        }
+      ]
+    },
+    {
+      "id": "revelation-12-dragon",
+      "reference": "Revelation 12",
+      "summary": "St. Andrew of Caesarea interprets the dragon and the third of the stars as the fall of the devil after creation, consistent with patristic teaching.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 8070.0,
+          "end": 8151.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "leitourgia",
+      "term": "Leitourgia",
+      "definition": "Greek for 'public work'; originally referred to civic duties, then used in the Septuagint for Levitical service, and in Christianity for the Divine Liturgy where God acts through His people.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 240.0,
+          "end": 921.24
+        }
+      ]
+    },
+    {
+      "id": "nephesh",
+      "term": "Nephesh",
+      "definition": "Hebrew word for 'soul' meaning life; used for all living beings. The soul is not a separate entity but the life principle of the body.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1930.2,
+          "end": 2003.4
+        }
+      ]
+    },
+    {
+      "id": "pharmakeia",
+      "term": "Pharmakeia",
+      "definition": "Greek for 'sorcery' or 'witchcraft,' often involving psychoactive substances. In Galatians 5:20, it refers to magical practices that may include drug use.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 3126.8,
+          "end": 3427.0
+        }
+      ]
+    },
+    {
+      "id": "panagia",
+      "term": "Panagia",
+      "definition": "Greek for 'All-Holy,' a title of the Theotokos meaning she is set apart for God's special purpose, not necessarily sinless in a dogmatic sense.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 9979.0,
+          "end": 10147.12
+        }
+      ]
+    }
+  ]
+}

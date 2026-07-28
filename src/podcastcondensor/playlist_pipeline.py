@@ -22,7 +22,7 @@ from pathlib import Path
 from typing import List, Optional
 
 from podcastcondensor.config import Config
-from podcastcondensor.downloader import download_audio, resolve_episode_sources
+from podcastcondensor.downloader import download_audio, download_subtitles, resolve_episode_sources
 from podcastcondensor.transcribe import transcribe_audio
 from podcastcondensor.subtitles import load_subtitles
 from podcastcondensor.universe_state import UniverseState
@@ -59,6 +59,8 @@ def build_universe_state(
     end_episode: int = 20,
     state_path: Optional[str] = None,
     dry_run: bool = False,
+    prefer_yt_subs: bool = False,
+    skip_qa: bool = True,
 ) -> UniverseState:
     """Build a UniverseState from a range of episodes.
 
@@ -70,6 +72,9 @@ def build_universe_state(
       4. Merge into universe state.
 
     Fully resumable: skips episodes whose ``global_state.json`` already exists.
+
+    When *skip_qa* is True (default), episodes with "q&a" in their YouTube
+    title are skipped — they don't develop coherent cross-episode themes.
     """
     if state_path:
         state = UniverseState(state_path)
@@ -87,6 +92,17 @@ def build_universe_state(
         end_ep=end_episode,
     )
     logger.info("Resolved %d episode sources", len(sources))
+
+    # ── Filter out Q&A episodes ──────────────────────────────────────────
+    if skip_qa:
+        qa_skipped = [s for s in sources if "q&a" in s.get("title", "").lower()]
+        if qa_skipped:
+            logger.info(
+                "Skipping %d Q&A episode(s): %s",
+                len(qa_skipped),
+                [(s["episode_number"], s.get("title", "")[:60]) for s in qa_skipped],
+            )
+            sources = [s for s in sources if "q&a" not in s.get("title", "").lower()]
 
     for src in sources:
         episode_num = src["episode_number"]
@@ -106,29 +122,52 @@ def build_universe_state(
             with open(gs_path) as f:
                 global_data = json.load(f)
         else:
-            audio_path = download_audio(
-                url=video_url,
-                output_dir=ep_dir,
-                video_id=src["id"],
-                audio_format=cfg.audio_format,
-                audio_bitrate=cfg.audio_bitrate,
-            )
-
-            if not audio_path:
-                logger.warning("No audio for episode %d, skipping", episode_num)
-                continue
-
-            transcribe_audio(
-                audio_path, ep_dir,
-                model_size=cfg.whisper_model,
-                beam_size=cfg.whisper_beam_size,
-                vad_filter=cfg.whisper_vad_filter,
-                condition_on_previous_text=cfg.whisper_condition_on_prev,
-            )
-
             target_srt = os.path.join(ep_dir, "source_subtitles.srt")
+
+            if prefer_yt_subs:
+                # Fast path: download YouTube's own subtitles
+                logger.info("Downloading YouTube subtitles for episode %d...", episode_num)
+                sub_path = download_subtitles(
+                    url=video_url,
+                    output_dir=ep_dir,
+                    video_id=src["id"],
+                    lang=cfg.lang,
+                    prefer_auto=cfg.prefer_auto_subs,
+                )
+                if sub_path:
+                    import shutil
+                    if sub_path != target_srt:
+                        shutil.copy2(sub_path, target_srt)
+                    logger.info("Using YouTube subtitles for episode %d", episode_num)
+                else:
+                    logger.warning("No YouTube subtitles for episode %d, falling back to whisper", episode_num)
+                    # Fall through to whisper below
+                    prefer_yt_subs = False
+
+            if not prefer_yt_subs:
+                # Whisper path: download audio + transcribe
+                audio_path = download_audio(
+                    url=video_url,
+                    output_dir=ep_dir,
+                    video_id=src["id"],
+                    audio_format=cfg.audio_format,
+                    audio_bitrate=cfg.audio_bitrate,
+                )
+
+                if not audio_path:
+                    logger.warning("No audio for episode %d, skipping", episode_num)
+                    continue
+
+                transcribe_audio(
+                    audio_path, ep_dir,
+                    model_size=cfg.whisper_model,
+                    beam_size=cfg.whisper_beam_size,
+                    vad_filter=cfg.whisper_vad_filter,
+                    condition_on_previous_text=cfg.whisper_condition_on_prev,
+                )
+
             if not os.path.exists(target_srt):
-                logger.warning("Transcription failed for episode %d, skipping", episode_num)
+                logger.warning("No subtitles available for episode %d, skipping", episode_num)
                 continue
 
             cleaned = load_subtitles(target_srt)
