@@ -127,13 +127,19 @@ def _validate_segments(
     """Validate and snap LLM-returned segments to SRT entry boundaries.
 
     Mutates items in-place, replacing their ``segments`` with snapped +
-    filtered versions.
+    filtered + widened versions.
 
     Validation steps:
       1. Snap each segment's start/end to the containing SRT entry boundaries.
       2. Drop segments < 3 seconds (hallucination guard).
-      3. Log a warning for segments that start mid-sentence (entry text
-         begins with a lowercase letter — indicates bad boundary).
+      3. Widen start backward by 1 SRT entry if first word is lowercase
+         (mid-sentence continuation).
+      4. Widen end forward by 1 SRT entry if text starts with a continuation
+         prefix ("and ", "but ", "because ", etc.).
+      5. Extend to minimum 90s duration by absorbing subsequent SRT entries
+         within 5s gaps (prevents tiny useless segments).
+
+    Returns items list with ``segments`` attribute set on each.
 
     Each mutated segment::
 
@@ -141,6 +147,12 @@ def _validate_segments(
 
     Items without segments or with only filtered-out segments get ``[]``.
     """
+    _CONTINUATION_PREFIXES = ("and ", "but ", "so ", "or ", "for ",
+                              "nor ", "yet ", "because ", "if ", "when ",
+                              "which ", "that ", "though ", "although ",
+                              "while ", "since ", "unless ")
+    MIN_DURATION = 90.0
+
     for item in items:
         if not isinstance(item, dict):
             continue
@@ -195,11 +207,88 @@ def _validate_segments(
                              snapped_start, snapped_end, snapped_end - snapped_start)
                 continue
 
-            # Log warning for mid-sentence boundaries
+            # ── Widen start backward if first word is lowercase ─────────────
             first_word = start_entry["text"].strip().split()[0] if start_entry["text"].strip() else ""
             if first_word and first_word[0].islower():
-                logger.info("Segment %.1f-%.1f: starts mid-sentence ('%s...') — may need widening",
-                            snapped_start, snapped_end, start_entry["text"][:60])
+                start_idx = None
+                for i, e in enumerate(srt_entries):
+                    if e is start_entry:
+                        start_idx = i
+                        break
+                if start_idx is not None and start_idx > 0:
+                    prev_entry = srt_entries[start_idx - 1]
+                    gap = snapped_start - prev_entry["end"]
+                    if gap < 5.0:
+                        old_start = snapped_start
+                        snapped_start = prev_entry["start"]
+                        logger.info(
+                            "Segment %.1f-%.1f → %.1f-%.1f: widened start by 1 SRT entry "
+                            "('%s...' ← '%s...')",
+                            old_start, snapped_end, snapped_start, snapped_end,
+                            start_entry["text"][:60], prev_entry["text"][:60],
+                        )
+                        start_entry = prev_entry
+                else:
+                    logger.info(
+                        "Segment %.1f-%.1f: starts mid-sentence ('%s...') — cannot widen (first entry)",
+                        snapped_start, snapped_end, start_entry["text"][:80],
+                    )
+
+            # ── Widen end forward if last entry starts with continuation ────
+            end_text = end_entry["text"].strip()
+            end_first = end_text.split()[0] if end_text else ""
+            should_widen_end = (
+                end_first and (
+                    end_first[0].islower()
+                    or end_text.lower().startswith(_CONTINUATION_PREFIXES)
+                )
+            )
+            if should_widen_end:
+                end_idx = None
+                for i, e in enumerate(srt_entries):
+                    if e is end_entry:
+                        end_idx = i
+                        break
+                if end_idx is not None and end_idx + 1 < len(srt_entries):
+                    next_entry = srt_entries[end_idx + 1]
+                    gap = next_entry["start"] - snapped_end
+                    if gap < 10.0:
+                        old_end = snapped_end
+                        snapped_end = next_entry["end"]
+                        end_entry = next_entry
+                        logger.info(
+                            "Segment %.1f-%.1f → %.1f-%.1f: widened end by 1 SRT entry "
+                            "('%s...' → '%s...')",
+                            snapped_start, old_end, snapped_start, snapped_end,
+                            end_text[:60], next_entry["text"][:60],
+                        )
+
+            # ── Extend to minimum duration ──────────────────────────────────
+            duration = snapped_end - snapped_start
+            if duration < MIN_DURATION:
+                extend_idx = None
+                for i, e in enumerate(srt_entries):
+                    if e is end_entry:
+                        extend_idx = i
+                        break
+                if extend_idx is not None:
+                    _old = snapped_end
+                    while snapped_end - snapped_start < MIN_DURATION:
+                        if extend_idx + 1 >= len(srt_entries):
+                            break
+                        next_e = srt_entries[extend_idx + 1]
+                        gap = next_e["start"] - snapped_end
+                        if gap > 5.0:
+                            break
+                        snapped_end = next_e["end"]
+                        extend_idx += 1
+                    if snapped_end != _old:
+                        logger.info(
+                            "Segment %.1f-%.1f: extended to minimum duration "
+                            "(%.0fs, was %.0fs)",
+                            snapped_start, snapped_end,
+                            snapped_end - snapped_start, duration,
+                        )
 
             cleaned.append({
                 "episode": episode_number,

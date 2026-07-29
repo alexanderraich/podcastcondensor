@@ -8,16 +8,17 @@ build/
 *.whl
 venv/
 
-# Output artifacts — track transcription + LLM decisions, ignore everything else
+# Output artifacts — only source_subtitles.srt is version-controlled
 output/ep-*/*
 !output/ep-*/source_subtitles.srt
-!output/ep-*/compressed.json
-!output/ep-*/global_state.json
-!output/ep-*/decisions.json
-!output/ep-*/stats.json
 !output/.gitkeep
-# universe_state.json is explicitly ignored — commit it manually with -f
-output/universe.dump
+
+# Stale cache (removed from tracking Jul 2026)
+output/_themes.json
+
+# Other output — audio, universe state, stats — all derivable from SRTs
+output/master_cut*.mp3
+output/universe_state.json
 
 # Temp
 *.tmp

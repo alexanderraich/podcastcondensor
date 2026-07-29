@@ -44,7 +44,6 @@ class Config:
     skip_global_state: bool = True  # if True: one-shot compress instead of Phase 2 + Phase 3
 
     # Download
-    prefer_auto_subs: bool = False
     lang: str = "en"
 
     # Master cut
@@ -53,7 +52,6 @@ class Config:
     master_cut_parallel_downloads: int = 4
     master_cut_cluster_gap: float = 15.0
     master_cut_min_segment: float = 15.0
-    master_cut_prefer_yt_subs: bool = True
 
     def __post_init__(self):
         base = os.path.abspath(

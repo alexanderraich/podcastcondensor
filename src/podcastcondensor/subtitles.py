@@ -240,3 +240,65 @@ def load_subtitles(filepath: str, reindex: bool = True) -> List[dict]:
     logger.info("Loaded %s: %d entries after cleaning%s", filepath, len(cleaned),
                 " (original indices)" if not reindex else "")
     return cleaned
+
+
+def build_sentence_blocks(entries: List[dict]) -> List[dict]:
+    """Merge SRT entries into sentence-complete blocks.
+
+    Greedily absorbs consecutive entries until the merged text ends with
+    sentence-ending punctuation (. ! ?). Each block is a guaranteed complete
+    thought with clean timestamp boundaries.
+
+    Returns list of::
+
+        {"block_index": int, "start": float, "end": float,
+         "text": str, "entry_indices": List[int]}
+
+    Entries that end without sentence punctuation are absorbed into the
+    next block. A trailing block that never reaches sentence punctuation
+    is still returned as-is (don't drop content).
+    """
+    if not entries:
+        return []
+
+    blocks = []
+    current_texts: List[str] = []
+    current_entries: List[dict] = []
+
+    for e in entries:
+        if e.get("type") not in ("speech", None):
+            continue
+        text = e.get("text", "").strip()
+        if not text:
+            continue
+
+        current_texts.append(text)
+        current_entries.append(e)
+
+        # If this entry ends with sentence-ending punctuation, close the block
+        if text[-1] in (".", "!", "?"):
+            blocks.append({
+                "block_index": len(blocks) + 1,
+                "start": current_entries[0]["start"],
+                "end": current_entries[-1]["end"],
+                "text": " ".join(current_texts),
+                "entry_indices": [ce["index"] for ce in current_entries],
+            })
+            current_texts = []
+            current_entries = []
+
+    # Flush remaining (trailing text that never hit sentence punctuation)
+    if current_texts:
+        blocks.append({
+            "block_index": len(blocks) + 1,
+            "start": current_entries[0]["start"],
+            "end": current_entries[-1]["end"],
+            "text": " ".join(current_texts),
+            "entry_indices": [ce["index"] for ce in current_entries],
+        })
+
+    logger.info(
+        "Sentence blocks: %d entries → %d blocks",
+        len(entries), len(blocks),
+    )
+    return blocks

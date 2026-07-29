@@ -11,6 +11,8 @@ Phases:
   4. Assemble audio with beep separators
 """
 
+from __future__ import annotations
+
 import json
 import logging
 import os
@@ -126,6 +128,66 @@ def _load_episode_entries(output_root: str, ep_num: int,
     return cache[ep_num]
 
 
+def _snap_to_sentence_blocks(
+    selections: List[RefinedSelection],
+    srt_entries: List[dict],
+) -> List[RefinedSelection]:
+    """Snap segment boundaries to sentence-block boundaries.
+
+    Loads sentence blocks from the SRT entries and snaps each segment's
+    start to the nearest block start, end to the nearest block end.
+
+    This is a HARD CONSTRAINT — the snapped boundary is guaranteed to
+    be a complete sentence boundary.
+    """
+    from podcastcondensor.subtitles import build_sentence_blocks
+
+    blocks = build_sentence_blocks(srt_entries)
+    if not blocks:
+        return selections
+
+    snapped = []
+    for sel in selections:
+        # Find containing block for start
+        s_block = None
+        for b in blocks:
+            if b["start"] <= sel.start <= b["end"]:
+                s_block = b
+                break
+        if s_block is None:
+            # Start falls between blocks — snap to nearest
+            for b in blocks:
+                if b["start"] >= sel.start or abs(b["end"] - sel.start) < 5.0:
+                    s_block = b
+                    break
+
+        # Find containing block for end
+        e_block = None
+        for b in reversed(blocks):
+            if b["start"] <= sel.end <= b["end"]:
+                e_block = b
+                break
+        if e_block is None:
+            for b in reversed(blocks):
+                if abs(b["start"] - sel.end) < 5.0 or b["end"] >= sel.end:
+                    e_block = b
+                    break
+
+        if s_block and e_block:
+            snapped.append(RefinedSelection(
+                episode_number=sel.episode_number,
+                audio_path=sel.audio_path,
+                start=s_block["start"],
+                end=e_block["end"],
+                reason=sel.reason,
+            ))
+        else:
+            # Can't snap — keep original (shouldn't happen with valid SRT)
+            snapped.append(sel)
+
+    return snapped
+
+
 def _format_segment_with_context(
     seg: ThemeSegment,
     entries: List[dict],
@@ -134,6 +196,9 @@ def _format_segment_with_context(
     context_buffer: float = 30.0,
 ) -> Tuple[str, bool]:
     """Format one segment's transcript text with context for the prompt.
+
+    The candidate window is snapped to sentence-block boundaries so the
+    LLM only sees complete-sentence candidates.
 
     Returns (formatted_text, has_data) where has_data is False if
     the transcript couldn't be loaded.
@@ -147,8 +212,19 @@ def _format_segment_with_context(
             False,
         )
 
-    start_win = max(0, seg.start - context_buffer)
-    end_win = seg.end + context_buffer
+    # Snap candidate window to sentence-block boundaries
+    from podcastcondensor.subtitles import build_sentence_blocks
+    blocks = build_sentence_blocks(entries)
+    snapped_start = seg.start
+    snapped_end = seg.end
+    for b in blocks:
+        if b["start"] <= seg.start <= b["end"]:
+            snapped_start = b["start"]
+        if b["start"] <= seg.end <= b["end"]:
+            snapped_end = b["end"]
+
+    start_win = max(0, snapped_start - context_buffer)
+    end_win = snapped_end + context_buffer
 
     text_lines = []
     in_segment = False
@@ -157,8 +233,8 @@ def _format_segment_with_context(
             break
         if e["end"] <= start_win:
             continue
-        # Is this entry within the candidate window?
-        is_candidate = e["start"] >= seg.start and e["end"] <= seg.end
+        # Is this entry within the snapped candidate window?
+        is_candidate = e["start"] >= snapped_start and e["end"] <= snapped_end
         marker = "  >>>  " if is_candidate else "       "
         if is_candidate and not in_segment:
             text_lines.append("       ── candidate window ──")
@@ -168,7 +244,7 @@ def _format_segment_with_context(
     return (
         f"--- Segment {seg_index + 1} (seg_id: seg_{seg_index}) ---\n"
         f"Episode: {seg.episode_number} — {episode_title}\n"
-        f"Candidate: {seg.start:.1f}s - {seg.end:.1f}s ({seg.duration:.0f}s)\n"
+        f"Candidate: {snapped_start:.1f}s - {snapped_end:.1f}s ({snapped_end - snapped_start:.0f}s)\n"
         f"\nTranscript (>>> = candidate window, no marker = context):\n"
         + "\n".join(text_lines),
         True,
@@ -410,10 +486,16 @@ def apply_decisions(
     decisions: List[SegmentDecision],
     tws: ThemeWithSegments,
     manifests: List[EpisodeManifest],
+    output_root: str = "",
 ) -> List[RefinedSelection]:
     """Apply LLM decisions to build the final selection list.
 
-    Merges overlapping/adjacent kept segments from the same episode.
+    Merges overlapping/adjacent kept segments from the same episode,
+    then snaps boundaries to sentence-block completion points.
+
+    When *output_root* is provided, performs a final snap to sentence-
+    block boundaries — the returned segments are guaranteed to start
+    and end at complete-sentence boundaries.
     """
     # Map seg_id -> original ThemeSegment
     seg_map: Dict[str, ThemeSegment] = {}
@@ -492,6 +574,73 @@ def apply_decisions(
             mseg.episode_number, mseg.start, mseg.end, mseg.duration,
             mseg.reason[:80],
         )
+
+    # ── Snap to sentence-block boundaries (hard constraint) ────────────
+    if output_root and merged:
+        from podcastcondensor.subtitles import load_subtitles, build_sentence_blocks
+        loaded_eps: Dict[int, List[dict]] = {}
+        sentence_snapped: List[RefinedSelection] = []
+        for mseg in merged:
+            ep = mseg.episode_number
+            # Load SRT entries for this episode (cache)
+            if ep not in loaded_eps:
+                srt_path = os.path.join(
+                    output_root, f"ep-{ep:03d}", "source_subtitles.srt"
+                )
+                try:
+                    loaded_eps[ep] = load_subtitles(srt_path, reindex=False)
+                except FileNotFoundError:
+                    loaded_eps[ep] = []
+            entries = loaded_eps.get(ep, [])
+            if not entries:
+                continue
+
+            blocks = build_sentence_blocks(entries)
+            if not blocks:
+                continue
+
+            # Snap start to containing block start
+            s_block = None
+            for b in blocks:
+                if b["start"] <= mseg.start <= b["end"]:
+                    s_block = b
+                    break
+            if s_block is None:
+                s_block = blocks[0]
+                for b in blocks:
+                    if b["end"] >= mseg.start:
+                        s_block = b
+                        break
+
+            # Snap end to containing block end
+            e_block = None
+            for b in reversed(blocks):
+                if b["start"] <= mseg.end <= b["end"]:
+                    e_block = b
+                    break
+            if e_block is None:
+                e_block = blocks[-1]
+                for b in blocks:
+                    if b["start"] >= mseg.end:
+                        e_block = b
+                        break
+
+            snapped = RefinedSelection(
+                episode_number=mseg.episode_number,
+                audio_path=mseg.audio_path,
+                start=s_block["start"] if s_block else mseg.start,
+                end=e_block["end"] if e_block else mseg.end,
+                reason=mseg.reason,
+            )
+            sentence_snapped.append(snapped)
+
+        n_before = len(merged)
+        n_after = len(sentence_snapped)
+        logger.info(
+            "Sentence-block snap: %d/%d segments aligned to sentence boundaries",
+            n_after, n_before,
+        )
+        merged = sentence_snapped
 
     return merged
 
@@ -670,9 +819,6 @@ def build_minimal_theme_cut(
         output_path: Output audio path.
         start_episode: First episode to consider.
         end_episode: Last episode to consider.
-        parallel_downloads: Workers for audio extraction.
-        prefer_yt_subs: Prefer YouTube subtitles.
-        force_whisper: Force whisper transcription.
         context_buffer: Seconds of transcript context around each segment.
 
     Returns:
@@ -843,7 +989,7 @@ def build_minimal_theme_cut(
         return result
 
     # Apply decisions: refine boundaries + merge adjacent
-    selections = apply_decisions(decisions, tws, manifests)
+    selections = apply_decisions(decisions, tws, manifests, output_root=output_root)
 
     if not selections:
         result["errors"].append("LLM kept 0 segments — nothing to cut")

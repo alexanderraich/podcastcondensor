@@ -13,7 +13,6 @@ from typing import List, Optional
 
 from podcastcondensor.downloader import (
     download_audio,
-    download_subtitles,
     resolve_episode_sources,
 )
 from podcastcondensor.transcribe import transcribe_audio
@@ -34,7 +33,6 @@ class EpisodeManifest:
     title: str
     audio_path: str
     srt_path: str
-    is_transcribed: bool = False  # True = whisper, False = YT subs
 
 
 # ---------------------------------------------------------------------------
@@ -49,19 +47,15 @@ def _ensure_episode_artifacts(
     video_id: str,
     output_root: str,
     *,
-    prefer_yt_subs: bool = True,
     audio_format: str = "mp3",
     audio_bitrate: str = "64k",
     whisper_model: str = "base",
 ) -> Optional[EpisodeManifest]:
-    """Ensure one episode has audio + SRT downloaded.
+    """Ensure one episode has audio + SRT ready.
 
-    Strategy:
-      1. Download audio (skip if exists).
-      2. Download YT subtitles (skip if exists).
-      3. If YT subs missing or empty, fall back to whisper transcription.
+    Always uses whisper transcription — YouTube subtitles are unreliable.
 
-    Returns EpisodeManifest, or None if both YT subs and whisper fail.
+    Returns EpisodeManifest, or None if download/transcription fails.
     """
     ep_dir = os.path.join(output_root, f"ep-{episode_num:03d}")
     Path(ep_dir).mkdir(parents=True, exist_ok=True)
@@ -95,42 +89,9 @@ def _ensure_episode_artifacts(
             title=title,
             audio_path=audio_path,
             srt_path=srt_path,
-            is_transcribed=False,
         )
 
-    if prefer_yt_subs:
-        # Try YT subs first
-        sub_path = download_subtitles(
-            url=video_url,
-            output_dir=ep_dir,
-            video_id=video_id,
-            lang="en",
-            prefer_auto=True,
-        )
-        if sub_path and os.path.getsize(sub_path) > 50:
-            # Rename to canonical filename
-            if os.path.basename(sub_path) != "source_subtitles.srt":
-                dest = srt_path
-                # If it's a vtt, convert-ish (just copy; parsing handles both)
-                if sub_path.endswith(".vtt"):
-                    import shutil
-                    shutil.copy2(sub_path, dest)
-                else:
-                    import shutil
-                    shutil.move(sub_path, dest)
-            logger.info("Ep %d: using YouTube subtitles", episode_num)
-            return EpisodeManifest(
-                episode_number=episode_num,
-                video_id=video_id,
-                title=title,
-                audio_path=audio_path,
-                srt_path=srt_path,
-                is_transcribed=False,
-            )
-        else:
-            logger.info("Ep %d: YT subs unavailable, falling back to whisper", episode_num)
-
-    # Fallback: whisper transcription
+    # Whisper transcription
     logger.info("Ep %d: transcribing via whisper...", episode_num)
     try:
         transcribe_audio(
@@ -154,7 +115,6 @@ def _ensure_episode_artifacts(
         title=title,
         audio_path=audio_path,
         srt_path=srt_path,
-        is_transcribed=True,
     )
 
 
@@ -170,15 +130,13 @@ def ensure_all_episode_artifacts(
     end_episode: int = 140,
     *,
     parallel: int = 4,
-    prefer_yt_subs: bool = True,
     audio_format: str = "mp3",
     audio_bitrate: str = "64k",
     whisper_model: str = "base",
 ) -> List[EpisodeManifest]:
-    """Download audio + subs for a range of episodes in parallel.
+    """Download audio + SRT for a range of episodes in parallel.
 
-    Resolves episode sources from the playlist (with fallback search),
-    then downloads in a thread pool.
+    Always uses whisper transcription — YouTube subtitles are unreliable.
 
     Returns list of EpisodeManifest (successful downloads only).
     """
@@ -208,7 +166,6 @@ def ensure_all_episode_artifacts(
                 title=src.get("title", f"Episode {ep_num}"),
                 video_id=src["id"],
                 output_root=output_root,
-                prefer_yt_subs=prefer_yt_subs,
                 audio_format=audio_format,
                 audio_bitrate=audio_bitrate,
                 whisper_model=whisper_model,
@@ -221,13 +178,11 @@ def ensure_all_episode_artifacts(
                 manifest = future.result()
                 if manifest:
                     manifests.append(manifest)
-                    src_type = "YT subs" if not manifest.is_transcribed else "whisper"
                     logger.info(
-                        "✓ Ep %d: audio=%s srt=%s (%s)",
+                        "✓ Ep %d: audio=%s srt=%s",
                         ep_num,
                         os.path.basename(manifest.audio_path),
                         os.path.basename(manifest.srt_path),
-                        src_type,
                     )
                 else:
                     logger.warning("✗ Ep %d: download failed", ep_num)

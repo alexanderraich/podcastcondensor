@@ -196,49 +196,70 @@ def resolve_theme_segments_from_state(
 
 
 # ---------------------------------------------------------------------------
-# Phase 5: Duration-optimised segment selection
+# Phase 5 quality warnings
 # ---------------------------------------------------------------------------
 
 
-def _compute_min_segments(target_duration: float) -> tuple:
-    """Compute (min_segments_per_theme, max_themes) for a listenable result.
+def _compute_selection_warnings(
+    selections: List[Selection],
+    themes: list,
+) -> List[str]:
+    """Compute quality warnings for a master cut selection plan.
 
-    Target: each theme gets ~5-7 minutes of content (4-6 segments @~70s).
-    Number of themes scales with target:
-      - 42min (2520s): ~5-7 themes
-      - 3.5h  (12600s): ~10-12 themes
+    Flags:
+      - Segments within first 3 minutes of episode → likely intro/banter
+      - Segments shorter than 15 seconds → too short to convey meaning
+      - Segments longer than 600 seconds (10 min) → too broad, may include
+        unrelated content
 
-    Returns (min_seg, max_themes) where:
-      - min_seg: minimum segments per theme to include it
-      - max_themes: maximum themes allowed
+    Returns list of warning strings (empty = all clean).
     """
-    min_seg = max(3, min(10, int(target_duration / 500)))
-    max_themes = max(4, min(12, int(target_duration / 360)))
-    return min_seg, max_themes
+    warnings: List[str] = []
+    theme_lookup = {t.id: t for t in themes}
+
+    for i, sel in enumerate(selections):
+        ep = sel.segment.episode_number
+        start = sel.segment.start
+        dur = sel.segment.duration
+
+        if start < 180:
+            warnings.append(
+                f"Selection {i+1}: '{sel.theme_title}' ep {ep} "
+                f"starts at {start:.0f}s (<3min) — likely intro/banter"
+            )
+
+        if dur < 15:
+            warnings.append(
+                f"Selection {i+1}: '{sel.theme_title}' ep {ep} "
+                f"is {dur:.0f}s long — too short to convey meaning"
+            )
+
+        if dur > 600:
+            theme = theme_lookup.get(sel.theme_id)
+            tname = theme.title if theme else sel.theme_id
+            warnings.append(
+                f"Selection {i+1}: '{tname}' ep {ep} "
+                f"is {dur:.0f}s (>10 min) — likely too broad"
+            )
+
+    return warnings
 
 
-def select_segments_for_master_cut(
+# ---------------------------------------------------------------------------
+# Phase 5: Per-theme LLM segment selection
+# ---------------------------------------------------------------------------
+
+
+def _select_segments_knapsack(
     themes_with_segments: List[ThemeWithSegments],
-    target_duration: float = 12600,  # 3.5 hours in seconds
+    target_duration: float = 12600,
     min_segment: float = 15.0,
 ) -> MasterCutPlan:
-    """Select segments to fill target_duration with thematic depth.
+    """Fallback: select segments via knapsack (budget-filling).
 
-    Algorithm:
-      1. Sort themes by importance descending; sort segments chronologically
-         within each theme so they form coherent mini-narratives.
-      2. Round 1 — breadth pass: take MIN_SEGMENTS from each theme (most
-         important first) until we run out of time. This ensures every
-         included theme has enough depth to be listenable (≥2 segs).
-      3. Round 2 — depth pass: fill remaining time budget with more
-         segments from the already-included themes (chronological order).
-      4. Beep assignment: single within a theme, triple between themes.
-
-    MIN_SEGMENTS scales with target_duration:
-      - 600s (10 min):  min=2  →  top 3-4 themes, 2 segs each
-      - 12600s (3.5h):  min=8  →  all 15 themes, 8+ segs each
-
-    Returns a MasterCutPlan ready for audio assembly.
+    Used when LLM selection is unavailable or fails. Sorts by importance,
+    fills proportional time budget per theme. No narrative coherence or
+    boundary refinement.
     """
     if not themes_with_segments:
         return MasterCutPlan(
@@ -246,30 +267,25 @@ def select_segments_for_master_cut(
             theme_allocations={}, coverage={},
         )
 
-    # Sort themes by importance descending
     sorted_tws = sorted(
         themes_with_segments,
         key=lambda t: (-t.theme.importance, -len(t.segments)),
     )
-    # Sort each theme's segments chronologically
     for tws in sorted_tws:
         tws.segments.sort(key=lambda s: (s.episode_number, s.start))
 
     all_durations = [s.duration for tws in sorted_tws for s in tws.segments if s.duration > 0]
     avg_seg = sum(all_durations) / len(all_durations) if all_durations else 60.0
-    min_segs, max_themes = _compute_min_segments(target_duration)
-
+    min_segs = max(3, min(10, int(target_duration / 500)))
+    max_themes = max(4, min(12, int(target_duration / 360)))
     total_importance = sum(t.theme.importance for t in sorted_tws)
     if total_importance <= 0:
         total_importance = len(sorted_tws)
 
     selections: List[Selection] = []
     total_used = 0.0
-    prev_theme_id: Optional[str] = None
     themes_included = 0
 
-    # Single pass: each theme takes min_segs at minimum, then as many more
-    # as fit within its proportional budget, all in one contiguous block.
     for tws in sorted_tws:
         if not tws.segments:
             continue
@@ -300,36 +316,174 @@ def select_segments_for_master_cut(
             total_used -= theme_used
             continue
 
-        # Commit the theme's contiguous block
         theme_segs[0].beep_before = "none" if not selections else "triple"
         selections.extend(theme_segs)
-        prev_theme_id = tws.theme.id
         themes_included += 1
 
     total = sum(s.segment.duration for s in selections)
     included = len(set(s.theme_id for s in selections))
-
     logger.info(
-        "Master cut plan: %d selections from %d themes "
+        "Knapsack fallback: %d selections from %d themes "
         "(min %d/theme, avg seg %.0fs), total %.0fs (target %.0fs)",
         len(selections), included, min_segs, avg_seg, total, target_duration,
     )
-    by_theme: Dict[str, List[Selection]] = {}
-    for s in selections:
-        by_theme.setdefault(s.theme_id, []).append(s)
-    for tid, segs in by_theme.items():
-        used = sum(s.segment.duration for s in segs)
-        tws = next(t for t in sorted_tws if t.theme.id == tid)
-        available = sum(s.duration for s in tws.segments)
-        cov = (used / available * 100) if available > 0 else 0
-        logger.debug("  %s: %d segs, %.0fs (%.0f%% of available)",
-                     tws.theme.title, len(segs), used, cov)
+    return MasterCutPlan(
+        selections=selections,
+        total_duration=round(total, 1),
+        theme_allocations={}, coverage={},
+    )
+
+
+def select_segments_for_master_cut(
+    themes_with_segments: List[ThemeWithSegments],
+    manifests: List[EpisodeManifest],
+    output_root: str,
+    client=None,
+    model: str = "deepseek-chat",
+    timeout: int = 600,
+    target_duration: float = 12600,
+) -> MasterCutPlan:
+    """Select segments via per-theme LLM selection with transcript context.
+
+    For each theme (in importance order), sends a prompt showing each
+    candidate segment with ~30s of surrounding SRT transcript context.
+    The LLM decides keep/drop and refines boundaries (widening to capture
+    complete thoughts). Kept segments are merged across adjacent gaps.
+
+    Falls back to knapsack for any theme where the LLM call fails or
+    returns no valid decisions.
+
+    Returns a MasterCutPlan ready for audio assembly.
+    """
+    from podcastcondensor.minimal_theme_cut import (
+        build_selection_prompt,
+        parse_selection_response,
+        apply_decisions,
+    )
+
+    if not themes_with_segments:
+        return MasterCutPlan(
+            selections=[], total_duration=0,
+            theme_allocations={}, coverage={},
+        )
+
+    sorted_tws = sorted(
+        themes_with_segments,
+        key=lambda t: (-t.theme.importance, -len(t.segments)),
+    )
+
+    selections: List[Selection] = []
+    total_used = 0.0
+
+    for tws in sorted_tws:
+        if not tws.segments:
+            continue
+        if total_used >= target_duration:
+            break
+
+        logger.info(
+            "LLM selection for theme '%s' (%d candidates)...",
+            tws.theme.id, len(tws.segments),
+        )
+
+        # Build prompt with transcript context
+        prompt = build_selection_prompt(
+            theme=tws.theme,
+            tws=tws,
+            output_root=output_root,
+            manifests=manifests,
+            context_buffer=30.0,
+        )
+
+        # Call LLM
+        try:
+            raw = client.generate(
+                prompt=prompt,
+                model=model,
+                timeout=timeout,
+                temperature=0.3,
+                max_tokens=8192,
+                force_json=True,
+            )
+        except Exception as e:
+            logger.warning(
+                "LLM selection failed for '%s': %s — falling back to knapsack",
+                tws.theme.id, e,
+            )
+            continue
+
+        decisions = parse_selection_response(raw)
+        if not decisions:
+            logger.warning(
+                "No valid decisions for '%s' — falling back to knapsack",
+                tws.theme.id,
+            )
+            continue
+
+        refined = apply_decisions(decisions, tws, manifests, output_root=output_root)
+
+        if not refined:
+            logger.info("LLM kept 0 segments for '%s' — skipping theme", tws.theme.id)
+            continue
+
+        # Convert RefinedSelection -> Selection and enforce budget
+        theme_selections: List[Selection] = []
+        theme_used = 0.0
+        for rs in refined:
+            if total_used + rs.duration > target_duration:
+                break
+            ts = ThemeSegment(
+                theme_id=tws.theme.id,
+                episode_number=rs.episode_number,
+                audio_path=rs.audio_path,
+                start=rs.start,
+                end=rs.end,
+                text_preview=rs.reason[:120],
+                relevance_score=min(rs.duration / 30.0, 5.0),
+            )
+            theme_selections.append(Selection(
+                segment=ts,
+                theme_title=tws.theme.title,
+                theme_id=tws.theme.id,
+                beep_before="none",
+            ))
+            theme_used += rs.duration
+            total_used += rs.duration
+
+        # Assign beeps: triple before first segment of each new theme
+        if theme_selections:
+            if selections:
+                theme_selections[0].beep_before = "triple"
+            for sel in theme_selections[1:]:
+                sel.beep_before = "single"
+
+        selections.extend(theme_selections)
+        logger.info(
+            "  → %d segments, %.0fs (%.1f min)",
+            len(theme_selections), theme_used, theme_used / 60,
+        )
+
+    total = sum(s.segment.duration for s in selections)
+    included = len(set(s.theme_id for s in selections))
+
+    # Fallback: if LLM produced no selections, use knapsack
+    if not selections and themes_with_segments:
+        logger.warning("LLM selection produced no results — falling back to knapsack")
+        return _select_segments_knapsack(
+            themes_with_segments,
+            target_duration=target_duration,
+        )
+
+    logger.info(
+        "Master cut plan: %d segments from %d themes, "
+        "total %.0fs (target %.0fs)",
+        len(selections), included, total, target_duration,
+    )
 
     return MasterCutPlan(
         selections=selections,
         total_duration=round(total, 1),
-        theme_allocations={},
-        coverage={},
+        theme_allocations={}, coverage={},
     )
 
 
@@ -622,12 +776,10 @@ def build_master_cut(
     end_episode: int = 140,
     *,
     parallel_downloads: int = 4,
-    prefer_yt_subs: bool = True,
-    force_whisper: bool = False,
 ) -> dict:
     """Build a master cut across all episodes.
 
-    This is the top-level entry point, orchestrating all 6 phases.
+    Always uses whisper transcription — YouTube subtitles are unreliable.
 
     Args:
         playlist_url: YouTube playlist URL.
@@ -639,8 +791,6 @@ def build_master_cut(
         start_episode: First episode to include.
         end_episode: Last episode to include (0 = auto).
         parallel_downloads: Parallel download workers.
-        prefer_yt_subs: Use YouTube subtitles when available.
-        force_whisper: Skip YT subs, always use whisper.
 
     Returns:
         Dict with keys: phases (list), plan, output_path, errors.
@@ -672,7 +822,6 @@ def build_master_cut(
         start_episode=start_episode,
         end_episode=end_episode,
         parallel=parallel_downloads,
-        prefer_yt_subs=not force_whisper and prefer_yt_subs,
         audio_format=cfg.audio_format,
         audio_bitrate=cfg.audio_bitrate,
         whisper_model=cfg.whisper_model,
@@ -831,17 +980,21 @@ def build_master_cut(
         total_segments, total_available,
     )
 
-    # ── Phase 5: Select segments ────────────────────────────────────────
+    # ── Phase 5: Select segments via per-theme LLM ────────────────────────
     logger.info("=" * 60)
-    logger.info("PHASE 5: Select segments (target=%.0fs = %.1fh)",
+    logger.info("PHASE 5: Per-theme LLM segment selection (target=%.0fs = %.1fh)",
                 target_duration, target_duration / 3600)
     logger.info("=" * 60)
     t5 = time.time()
 
     plan = select_segments_for_master_cut(
         themes_with_segments,
+        manifests=manifests,
+        output_root=output_root,
+        client=ds_client,
+        model=cfg.deepseek_model,
+        timeout=cfg.deepseek_timeout,
         target_duration=float(target_duration),
-        min_segment=cfg.master_cut_min_segment,
     )
     result["phases"].append({
         "phase": "select_segments",
@@ -858,6 +1011,14 @@ def build_master_cut(
     if not plan.selections:
         result["errors"].append("No segments selected — cannot continue")
         return result
+
+    # ── Quality warnings ──────────────────────────────────────────────────
+    warnings = _compute_selection_warnings(plan.selections, themes)
+    result["warnings"] = warnings
+    if warnings:
+        logger.info("Selection warnings (%d):", len(warnings))
+        for w in warnings:
+            logger.info("  ⚠ %s", w)
 
     # Log final plan
     for s in plan.selections[:5]:
@@ -911,8 +1072,38 @@ def build_master_cut(
     logger.info("  Duration: %.0fs (%.1fh)", plan.total_duration, plan.total_duration / 3600)
     logger.info("  Themes: %d", len(themes))
     logger.info("  Segments: %d", len(plan.selections))
+
+    warnings = result.get("warnings", [])
+    if warnings:
+        logger.info("  Warnings: %d", len(warnings))
+        for w in warnings:
+            logger.info("    ⚠ %s", w)
+    else:
+        logger.info("  Warnings: none (clean)")
+
     if result["errors"]:
         logger.info("  Errors: %d", len(result["errors"]))
     logger.info("=" * 60)
+
+    # Write master_cut_stats.json alongside the audio output
+    if result["output_path"]:
+        stats_path = os.path.join(
+            os.path.dirname(os.path.abspath(result["output_path"])),
+            "master_cut_stats.json",
+        )
+        try:
+            with open(stats_path, "w") as f:
+                json.dump({
+                    "total_duration_sec": plan.total_duration,
+                    "target_duration_sec": target_duration,
+                    "themes": len(themes),
+                    "segments": len(plan.selections),
+                    "warnings": warnings,
+                    "errors": result.get("errors", []),
+                    "phases": result.get("phases", []),
+                }, f, indent=2)
+            logger.info("Stats written: %s", stats_path)
+        except OSError as e:
+            logger.warning("Failed to write stats: %s", e)
 
     return result
