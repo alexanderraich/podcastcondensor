@@ -297,7 +297,7 @@ def build_sentence_blocks(entries: List[dict]) -> List[dict]:
             "entry_indices": [ce["index"] for ce in current_entries],
         })
 
-    logger.info(
+    logger.debug(
         "Sentence blocks: %d entries → %d blocks",
         len(entries), len(blocks),
     )

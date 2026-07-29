@@ -2,6 +2,8 @@
 
 Condensing "Lord of Spirits" podcast episodes using DeepSeek LLM.
 
+**🚫 Must ask before any code change, pipeline run, or config change.** Do not implement, modify, or execute anything without describing the plan and getting explicit approval. This is a standing rule — I do not need to be reminded of it per-session.
+
 ## Core decisions (July 2026)
 
 - **Only whisper SRTs in git.** YouTube subtitles are unreliable (fragmented,
@@ -23,6 +25,9 @@ Condensing "Lord of Spirits" podcast episodes using DeepSeek LLM.
   contains the video ID). YouTube is only contacted for episodes missing
   from disk. This makes the pipeline fully offline for already-processed
   ranges.
+- **Master cut target: 90min at 1.25x (6750s at 1x).** Default in both
+  `config.py` and `build-master-cut` CLI. Pass `--target-duration` to
+  override. 6750s = 90 × 60 × 1.25.
 - **Playlist pagination via web client.** `list_playlist()` passes
   `--extractor-args youtube:player_client=web` to yt-dlp to force web
   client pagination. Without this, YouTube tab API caps at 100 entries
@@ -84,7 +89,7 @@ LLM decides keep/drop and refines boundaries. ~1 DeepSeek call per theme.
 
 ```bash
 python3 -m podcastcondensor build-master-cut <PLAYLIST_URL> \
-  --start N --end N --target-duration 12600 --output output/master_cut.mp3
+  --start N --end N --target-duration 6750 --output output/master_cut.mp3
 ```
 
 ### `build-minimal-theme` — single-theme dev tool
@@ -124,6 +129,13 @@ python3 -m podcastcondensor build-minimal-theme <THEME_ID>
 | `prompts/compress_episode.txt` | Compression prompt (classify_raw.py) |
 | `prompts/classify_raw.txt` | Legacy classification prompt |
 | `prompts/extract_themes.txt` | Theme extraction prompt |
+
+### Squelched: `build_sentence_blocks` info log → debug
+
+`subtitles.py::build_sentence_blocks()` was `logger.info(...)` — fires for
+every candidate segment in every theme selection prompt. In 10-episode
+batch, that's hundreds of identical "Sentence blocks: N entries → M blocks"
+lines. Changed to `logger.debug(...)`.
 
 ## Three segmentation fixes (July 2026)
 
@@ -180,7 +192,7 @@ and `build_selection_prompt` call site.
 
 | Batch | Status | Notes |
 |-------|--------|-------|
-| ep31-40 | 🔄 Rerunning | Rebuilding with segmentation fixes applied |
+| ep31-40 | ✅ Done (2nd pass) | Rebuilt with all fixes, 78 segments / 9 themes, 12418s |
 | ep41-50 | ⏳ Pending | Ask before running any pipeline |
 
 ## Universe state coverage (before cleanup)

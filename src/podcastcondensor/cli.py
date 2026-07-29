@@ -294,8 +294,8 @@ def main():
                     help="Path to universe state JSON (default: output/universe_state.json)")
     mc.add_argument("--output", default="master_cut.mp3",
                     help="Output master cut audio path (default: master_cut.mp3)")
-    mc.add_argument("--target-duration", type=int, default=12600,
-                    help="Target duration in seconds (default: 12600 = 3.5h)")
+    mc.add_argument("--target-duration", type=int, default=6750,
+                    help="Target duration in seconds (default: 6750 = 90min at 1.25x)")
     mc.add_argument("--start", type=int, default=1,
                     help="First episode to include (default: 1)")
     mc.add_argument("--end", type=int, default=0,
