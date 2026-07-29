@@ -17,6 +17,16 @@ Condensing "Lord of Spirits" podcast episodes using DeepSeek LLM.
 - **`_themes.json` is dead.** Was a stale cache from Jul 9 (eps 1-28 era).
   Removed from git, added to gitignore. All callers fall back to fresh
   DeepSeek extraction.
+- **On-disk scan first for episode resolution.** Before any YouTube call,
+  `ensure_all_episode_artifacts()` scans `output/ep-NNN/` for existing
+  MP3+SRT and builds manifests directly from filenames (the MP3 filename
+  contains the video ID). YouTube is only contacted for episodes missing
+  from disk. This makes the pipeline fully offline for already-processed
+  ranges.
+- **Playlist pagination via web client.** `list_playlist()` passes
+  `--extractor-args youtube:player_client=web` to yt-dlp to force web
+  client pagination. Without this, YouTube tab API caps at 100 entries
+  (one page). With it, `--playlist-end 999` reliably fetches all pages.
 
 ## Pipelines
 
@@ -170,7 +180,7 @@ and `build_selection_prompt` call site.
 
 | Batch | Status | Notes |
 |-------|--------|-------|
-| ep31-40 | ✅ Done | "Protestant friends" bug found — three fixes above |
+| ep31-40 | 🔄 Rerunning | Rebuilding with segmentation fixes applied |
 | ep41-50 | ⏳ Pending | Ask before running any pipeline |
 
 ## Universe state coverage (before cleanup)

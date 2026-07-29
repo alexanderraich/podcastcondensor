@@ -123,6 +123,43 @@ def _ensure_episode_artifacts(
 # ---------------------------------------------------------------------------
 
 
+def _scan_existing_episodes(
+    output_root: str, start_ep: int, end_ep: int,
+) -> List[EpisodeManifest]:
+    """Scan output/ for existing episode artefacts without YouTube calls.
+
+    Builds manifests from any ep-NNN directory that has both an MP3 and
+    source_subtitles.srt. The MP3 filename is the video ID (set by
+    download_audio). Fast — no network.
+    """
+    manifests = []
+    for ep_num in range(start_ep, end_ep + 1):
+        ep_dir = os.path.join(output_root, f"ep-{ep_num:03d}")
+        if not os.path.isdir(ep_dir):
+            continue
+        srt_path = os.path.join(ep_dir, "source_subtitles.srt")
+        if not os.path.exists(srt_path):
+            continue
+        # Find audio file (any mp3 except temp/checkpoint files)
+        audio = None
+        video_id = ""
+        for f in os.listdir(ep_dir):
+            if f.endswith(".mp3") and not f.startswith("_"):
+                audio = os.path.join(ep_dir, f)
+                video_id = os.path.splitext(f)[0]
+                break
+        if not audio:
+            continue
+        manifests.append(EpisodeManifest(
+            episode_number=ep_num,
+            video_id=video_id,
+            title=f"Episode {ep_num}",
+            audio_path=audio,
+            srt_path=srt_path,
+        ))
+    return manifests
+
+
 def ensure_all_episode_artifacts(
     playlist_url: str,
     output_root: str,
@@ -138,21 +175,44 @@ def ensure_all_episode_artifacts(
 
     Always uses whisper transcription — YouTube subtitles are unreliable.
 
+    Resolution strategy (in order):
+      1. Scan output/ep-NNN/ for existing MP3+SRT — no YouTube call.
+      2. For the remaining missing episodes, use playlist + YouTube search
+         fallback via resolve_episode_sources().
+
     Returns list of EpisodeManifest (successful downloads only).
     """
-    # Resolve all episode sources
+    # ── Step 1: Scan existing artefacts on disk (fast, no network) ──────
+    existing = _scan_existing_episodes(
+        output_root, start_episode, end_episode,
+    )
+    existing_by_ep = {m.episode_number: m for m in existing}
+    logger.info(
+        "On-disk scan: %d/%d episodes already have artefacts",
+        len(existing), end_episode - start_episode + 1,
+    )
+
+    missing = [ep for ep in range(start_episode, end_episode + 1)
+               if ep not in existing_by_ep]
+    if not missing:
+        logger.info("All episodes already on disk — skipping YouTube entirely")
+        existing.sort(key=lambda m: m.episode_number)
+        return existing
+
+    # ── Step 2: Resolve sources for missing episodes via YouTube ────────
     sources = resolve_episode_sources(
         playlist_url=playlist_url,
-        start_ep=start_episode,
-        end_ep=end_episode,
+        start_ep=min(missing),
+        end_ep=max(missing),
     )
+    missing_set = set(missing)
 
     logger.info(
-        "Download pool: %d episodes, %d parallel workers",
-        len(sources), parallel,
+        "Download pool: %d existing + %d from YouTube = %d total",
+        len(existing), len(sources), len(existing) + len(sources),
     )
 
-    manifests: List[EpisodeManifest] = []
+    manifests: List[EpisodeManifest] = list(existing)
 
     with ThreadPoolExecutor(max_workers=parallel) as pool:
         futures = {}

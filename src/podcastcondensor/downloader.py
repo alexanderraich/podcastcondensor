@@ -193,6 +193,7 @@ def list_playlist(playlist_url: str, max_entries: int = 999) -> list:
         "--flat-playlist",
         "--dump-json",
         "--playlist-end", str(max_entries),
+        "--extractor-args", "youtube:player_client=web",
         playlist_url,
     ], timeout=180)
     if code != 0:
