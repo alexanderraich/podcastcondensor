@@ -47,7 +47,7 @@ class Config:
     lang: str = "en"
 
     # Master cut
-    master_cut_target_duration: int = 12600
+    master_cut_target_duration: int = 6750
     master_cut_output: str = "master_cut.mp3"
     master_cut_parallel_downloads: int = 4
     master_cut_cluster_gap: float = 15.0

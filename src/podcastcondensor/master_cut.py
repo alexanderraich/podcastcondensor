@@ -255,7 +255,7 @@ def _compute_selection_warnings(
 
 def _select_segments_knapsack(
     themes_with_segments: List[ThemeWithSegments],
-    target_duration: float = 12600,
+    target_duration: float = 6750,
     min_segment: float = 15.0,
 ) -> MasterCutPlan:
     """Fallback: select segments via knapsack (budget-filling).
@@ -344,7 +344,7 @@ def select_segments_for_master_cut(
     client=None,
     model: str = "deepseek-chat",
     timeout: int = 600,
-    target_duration: float = 12600,
+    target_duration: float = 6750,
 ) -> MasterCutPlan:
     """Select segments via per-theme LLM selection with transcript context.
 
@@ -774,7 +774,7 @@ def build_master_cut(
     cfg: Config,
     state_file: str = "",
     output_path: str = "master_cut.mp3",
-    target_duration: int = 12600,
+    target_duration: int = 6750,
     start_episode: int = 1,
     end_episode: int = 140,
     *,
@@ -790,7 +790,7 @@ def build_master_cut(
         state_file: Path to existing/desired universe state file. If empty,
                     uses output/universe_state.json.
         output_path: Output master cut audio path.
-        target_duration: Target duration in seconds (default 3.5h = 12600).
+        target_duration: Target duration in seconds (default 6750 = 90min at 1.25x).
         start_episode: First episode to include.
         end_episode: Last episode to include (0 = auto).
         parallel_downloads: Parallel download workers.
