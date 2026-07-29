@@ -54,7 +54,6 @@ def cmd_build_universe(args):
         lang=args.lang,
         output_root=os.path.abspath(args.output_dir) if args.output_dir else "",
         deepseek_timeout=600,
-        prefer_auto_subs=args.prefer_auto_subs,
     )
     state_path = os.path.abspath(args.state_file) if args.state_file else ""
     state = build_universe_state(
@@ -64,7 +63,6 @@ def cmd_build_universe(args):
         end_episode=args.end,
         state_path=state_path or None,
         dry_run=args.dry_run,
-        prefer_yt_subs=args.yt_subs,
         skip_qa=not args.include_qa,
         skip_reading=not args.include_reading,
     )
@@ -80,7 +78,6 @@ def cmd_process_playlist(args):
     cfg = Config(
         lang=args.lang,
         output_root=os.path.abspath(args.output_dir) if args.output_dir else "",
-        prefer_auto_subs=args.prefer_auto_subs,
         deepseek_timeout=600,
         skip_audio=getattr(args, 'skip_audio', False),
         skip_global_state=not args.use_global_state,
@@ -115,22 +112,20 @@ def cmd_build_master_cut(args):
     """Build a master cut across all episodes.
 
     6 phases:
-      1. Parallel download audio + subs (YT subs first)
+      1. Parallel download audio + whisper transcription
       2. Build complete universe state (Phase 2 DeepSeek for new episodes)
       3. Extract core themes (one DeepSeek call over universe state)
-      4. Map themes to SRT segments (keyword search)
-      5. Select segments within time budget
-      6. Assemble audio with dual beeps (single=within-theme, triple=between-themes)
+      4. Resolve segments from universe state
+      5. Select segments via per-theme LLM selection (with transcript context)
+      6. Assemble audio with beeps (single=within-theme, triple=between-themes)
     """
     cfg = Config(
         lang=args.lang,
         output_root=os.path.abspath(args.output_dir) if args.output_dir else "",
         deepseek_timeout=600,
-        prefer_auto_subs=args.prefer_auto_subs,
         master_cut_target_duration=args.target_duration,
         master_cut_output=args.output,
         master_cut_parallel_downloads=args.parallel_downloads,
-        master_cut_prefer_yt_subs=not args.force_whisper,
         keep_temp=args.keep_temp,
         whisper_model=args.whisper_model,
     )
@@ -150,8 +145,6 @@ def cmd_build_master_cut(args):
         start_episode=args.start,
         end_episode=end_ep,
         parallel_downloads=args.parallel_downloads,
-        prefer_yt_subs=not args.force_whisper,
-        force_whisper=args.force_whisper,
     )
 
     # Print results
@@ -184,6 +177,14 @@ def cmd_build_master_cut(args):
             print(f"    - {e}")
     else:
         print(f"  Errors:   0 (success)")
+
+    warnings = result.get("warnings", [])
+    if warnings:
+        print(f"  Warnings: {len(warnings)}")
+        for w in warnings[:10]:
+            print(f"    ⚠ {w}")
+    else:
+        print(f"  Warnings: 0 (clean)")
     print("")
 
 
@@ -258,9 +259,6 @@ def main():
     build.add_argument("--state-file", default="", help="Output path for universe state JSON")
     build.add_argument("--output-dir", default="")
     build.add_argument("--dry-run", action="store_true")
-    build.add_argument("--prefer-auto-subs", action="store_true")
-    build.add_argument("--yt-subs", action="store_true",
-                       help="Download YouTube subtitles instead of whisper transcription (much faster)")
     build.add_argument("--include-qa", action="store_true",
                        help="Include Q&A episodes (default: skip them — they don't develop coherent themes)")
     build.add_argument("--include-reading", action="store_true",
@@ -277,7 +275,6 @@ def main():
     proc.add_argument("--end", type=int, default=0, help="0 = until end")
     proc.add_argument("--output-dir", default="")
     proc.add_argument("--dry-run", action="store_true")
-    proc.add_argument("--prefer-auto-subs", action="store_true")
     proc.add_argument("--lang", default="en")
     proc.add_argument("--debug-max-intervals", type=int, default=0,
                       help="DEBUG: cap at N intervals for quick test listen")
@@ -305,15 +302,12 @@ def main():
                     help="Last episode to include (default: 0 = 140)")
     mc.add_argument("--parallel-downloads", type=int, default=4,
                     help="Parallel download workers (default: 4)")
-    mc.add_argument("--force-whisper", action="store_true",
-                    help="Skip YT subs, always transcribe with whisper")
     mc.add_argument("--keep-temp", action="store_true",
                     help="Keep temporary files (debug)")
     mc.add_argument("--whisper-model", default="base",
-                    help="Whisper model size when YT subs unavailable (default: base)")
+                    help="Whisper model size (default: base)")
     mc.add_argument("--output-dir", default="")
     mc.add_argument("--lang", default="en")
-    mc.add_argument("--prefer-auto-subs", action="store_true")
     mc.set_defaults(func=cmd_build_master_cut)
 
     # build-minimal-theme

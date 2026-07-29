@@ -22,7 +22,7 @@ from pathlib import Path
 from typing import List, Optional
 
 from podcastcondensor.config import Config
-from podcastcondensor.downloader import download_audio, download_subtitles, resolve_episode_sources
+from podcastcondensor.downloader import download_audio, resolve_episode_sources
 from podcastcondensor.transcribe import transcribe_audio
 from podcastcondensor.subtitles import load_subtitles
 from podcastcondensor.universe_state import UniverseState
@@ -59,14 +59,15 @@ def build_universe_state(
     end_episode: int = 20,
     state_path: Optional[str] = None,
     dry_run: bool = False,
-    prefer_yt_subs: bool = False,
     skip_qa: bool = True,
     skip_reading: bool = True,
 ) -> UniverseState:
     """Build a UniverseState from a range of episodes.
 
+    Always uses whisper transcription — YouTube subtitles are unreliable.
+
     Per episode:
-      1. Download SRT.
+      1. Download audio, transcribe with whisper.
       2. Parse and clean programmatically.
       3. **Phase 2 call** — single DeepSeek: full transcript → outline +
          structured knowledge (entities, concepts, claims, etc.).
@@ -138,28 +139,8 @@ def build_universe_state(
         else:
             target_srt = os.path.join(ep_dir, "source_subtitles.srt")
 
-            if prefer_yt_subs:
-                # Fast path: download YouTube's own subtitles
-                logger.info("Downloading YouTube subtitles for episode %d...", episode_num)
-                sub_path = download_subtitles(
-                    url=video_url,
-                    output_dir=ep_dir,
-                    video_id=src["id"],
-                    lang=cfg.lang,
-                    prefer_auto=cfg.prefer_auto_subs,
-                )
-                if sub_path:
-                    import shutil
-                    if sub_path != target_srt:
-                        shutil.copy2(sub_path, target_srt)
-                    logger.info("Using YouTube subtitles for episode %d", episode_num)
-                else:
-                    logger.warning("No YouTube subtitles for episode %d, falling back to whisper", episode_num)
-                    # Fall through to whisper below
-                    prefer_yt_subs = False
-
-            if not prefer_yt_subs:
-                # Whisper path: download audio + transcribe
+            # Whisper path: download audio + transcribe
+            if not os.path.exists(target_srt):
                 audio_path = download_audio(
                     url=video_url,
                     output_dir=ep_dir,
