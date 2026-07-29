@@ -124,16 +124,19 @@ def resolve_theme_segments_from_state(
     Returns a ``ThemeWithSegments`` per theme (empty segments list if
     the theme's items have no segment data).
     """
-    # Build lookup: item_id -> item from universe state categories.
-    # Only use concepts for segment resolution — entities include the hosts
-    # themselves (0-84s intros), claims are too granular, scriptural_links
-    # are reference citations. Concepts are the actual theological topics
-    # with grounded audio position data.
+    # Build lookup: item_id -> item from all universe state categories.
+    # DeepSeek sometimes classifies the same content under different
+    # categories (e.g. a theological argument as a "concept" in one
+    # episode and as a "claim" in another, or the same segment appearing
+    # in both). Including all categories guarantees we never miss a
+    # candidate segment. The ep:start:end dedup below handles overlap.
     items_by_id: Dict[str, dict] = {}
-    for item in universe_data.get("concepts", []):
-        iid = item.get("id")
-        if iid:
-            items_by_id[iid] = item
+    for category in ("concepts", "claims", "entities",
+                     "scriptural_links", "glossary"):
+        for item in universe_data.get(category, []):
+            iid = item.get("id")
+            if iid:
+                items_by_id[iid] = item
 
     # Build lookup: episode_number -> audio_path from manifests
     ep_to_audio: Dict[int, str] = {}

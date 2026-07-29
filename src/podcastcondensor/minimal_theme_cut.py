@@ -194,11 +194,24 @@ def _format_segment_with_context(
     seg_index: int,
     episode_title: str,
     context_buffer: float = 30.0,
+    *,
+    next_seg_start: Optional[float] = None,
+    prev_seg_end: Optional[float] = None,
 ) -> Tuple[str, bool]:
     """Format one segment's transcript text with context for the prompt.
 
     The candidate window is snapped to sentence-block boundaries so the
     LLM only sees complete-sentence candidates.
+
+    The context window extends dynamically:
+    - **End boundary:** extends to the next candidate segment's start
+      in the same episode (+ small overlap), capped at snapped_end + 120s.
+      Without a next segment, uses the fixed *context_buffer*.
+    - **Start boundary:** extends backward to the previous segment's end
+      (+ small overlap), or uses the fixed backward buffer.
+
+    This ensures the LLM can see enough context to determine whether a
+    thought continues into an adjacent segment — without arbitrary tuning.
 
     Returns (formatted_text, has_data) where has_data is False if
     the transcript couldn't be loaded.
@@ -223,8 +236,21 @@ def _format_segment_with_context(
         if b["start"] <= seg.end <= b["end"]:
             snapped_end = b["end"]
 
-    start_win = max(0, snapped_start - context_buffer)
+    # ── Dynamic context window ────────────────────────────────────────
+    # End: extend to next segment's start (+ small overlap), capped at 120s
+    MAX_CONTEXT = 120.0
     end_win = snapped_end + context_buffer
+    if next_seg_start is not None:
+        # Peek a few seconds into the next segment so the LLM can see
+        # whether the current thought continues past the boundary
+        end_win = min(next_seg_start + 10, snapped_end + MAX_CONTEXT)
+    else:
+        end_win = snapped_end + context_buffer
+
+    # Start: extend backward to previous segment's end (+ small overlap)
+    start_win = max(0, snapped_start - context_buffer)
+    if prev_seg_end is not None:
+        start_win = max(0, min(start_win, prev_seg_end + 5))
 
     text_lines = []
     in_segment = False
@@ -269,6 +295,17 @@ def build_selection_prompt(
     # Pre-load all needed SRT files
     for seg in tws.segments:
         _load_episode_entries(output_root, seg.episode_number, entries_cache)
+
+    # Build per-episode segment lists for dynamic context windows
+    # Grouped by episode so we can find the next/previous candidate
+    # segment for each candidate within the same episode.
+    ep_segments: Dict[int, List[Tuple[int, ThemeSegment]]] = {}
+    for i, seg in enumerate(tws.segments):
+        ep_segments.setdefault(seg.episode_number, []).append((i, seg))
+
+    # Sort each episode's segments chronologically
+    for ep in ep_segments:
+        ep_segments[ep].sort(key=lambda x: x[1].start)
 
     parts = [
         f"You are editing a podcast anthology. The theme is \"{theme.title}\".",
@@ -351,8 +388,23 @@ def build_selection_prompt(
     for i, seg in enumerate(tws.segments):
         entries = entries_cache.get(seg.episode_number, [])
         title = ep_titles.get(seg.episode_number, f"Episode {seg.episode_number}")
+
+        # Find next/prev segment in the same episode for dynamic context
+        prev_seg_end = None
+        next_seg_start = None
+        ep_list = ep_segments.get(seg.episode_number, [])
+        for j, (idx, s) in enumerate(ep_list):
+            if idx == i:
+                if j > 0:
+                    prev_seg_end = ep_list[j - 1][1].end
+                if j + 1 < len(ep_list):
+                    next_seg_start = ep_list[j + 1][1].start
+                break
+
         formatted, _ = _format_segment_with_context(
             seg, entries, i, title, context_buffer,
+            prev_seg_end=prev_seg_end,
+            next_seg_start=next_seg_start,
         )
         parts.append(formatted)
         parts.append("")

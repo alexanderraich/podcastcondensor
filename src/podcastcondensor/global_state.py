@@ -15,6 +15,7 @@ import json
 import logging
 import os
 import re
+import string
 from typing import List, Optional
 
 logger = logging.getLogger(__name__)
@@ -147,10 +148,12 @@ def _validate_segments(
 
     Items without segments or with only filtered-out segments get ``[]``.
     """
-    _CONTINUATION_PREFIXES = ("and ", "but ", "so ", "or ", "for ",
-                              "nor ", "yet ", "because ", "if ", "when ",
-                              "which ", "that ", "though ", "although ",
-                              "while ", "since ", "unless ")
+    _CONTINUATION_WORDS = frozenset((
+        "and", "but", "so", "or", "for",
+        "nor", "yet", "because", "if", "when",
+        "which", "that", "though", "although",
+        "while", "since", "unless",
+    ))
     MIN_DURATION = 90.0
 
     for item in items:
@@ -237,10 +240,18 @@ def _validate_segments(
             # ── Widen end forward if last entry starts with continuation ────
             end_text = end_entry["text"].strip()
             end_first = end_text.split()[0] if end_text else ""
+            end_first_stripped = (
+                end_first.strip(string.punctuation).lower()
+                if end_first else ""
+            )
+            # Check if first word (stripped of punctuation) is a continuation
+            # word like "and", "but", "so", "because". Catches variants like
+            # "So," (comma after capitalized word) that str.startswith("so ")
+            # would miss.
             should_widen_end = (
                 end_first and (
                     end_first[0].islower()
-                    or end_text.lower().startswith(_CONTINUATION_PREFIXES)
+                    or end_first_stripped in _CONTINUATION_WORDS
                 )
             )
             if should_widen_end:

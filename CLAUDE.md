@@ -115,94 +115,63 @@ python3 -m podcastcondensor build-minimal-theme <THEME_ID>
 | `prompts/classify_raw.txt` | Legacy classification prompt |
 | `prompts/extract_themes.txt` | Theme extraction prompt |
 
-## Sentence-block preprocessing — highest priority fix
+## Three segmentation fixes (July 2026)
 
-**Guarantee**: no mid-sentence or mid-thought cuts in the final audio.
+Three bugs found in the ep31-40 master cut caused a setup-heavy segment
+("Protestant friends, let's have a talk...") to be included without the
+actual theological argument that followed. Fixed in order:
 
-SRT entries are timed silence/pause chunks — they routinely split sentences
-mid-thought. Using them as-is guarantees choppy output.
+### Fixed #1: Comma defeats continuation-prefix check in `_validate_segments`
 
-**How it works:**
-1. `subtitles.py::build_sentence_blocks()` merges consecutive SRT entries
-   until the combined text ends with `.`, `!`, or `?`. Each block has
-   `{start, end, text}` — guaranteed complete-sentence boundaries.
-2. In `minimal_theme_cut.py::_format_segment_with_context()`, the candidate
-   window displayed to the LLM is snapped to sentence-block boundaries so
-   the LLM only sees complete-sentence candidates.
-3. In `minimal_theme_cut.py::apply_decisions()`, after the LLM returns its
-   refined boundaries, a HARD CONSTRAINT snap aligns them to sentence-block
-   boundaries. No LLM prompt request — this is deterministic code.
+**Root cause:** `global_state.py` uses `end_text.lower().startswith(("so ",
+...))` to detect mid-thought cuts at segment end. Text like `"So, and the
+reason..."` has a comma after "So" → `startswith("so ")` is False → widening
+never fires → segment ends mid-setup.
 
-**This is the highest-value item because:**
-- It's a hard constraint, not a soft prompt request
-- It applies to both master cut and minimal theme cut
-- Zero LLM cost (purely algorithmic, runs in milliseconds)
+**Fix:** Instead of `startswith(prefix)` on full text, extract the first word,
+strip punctuation, and check against a set of continuation words ("and",
+"but", "so", "because", ...). This catches comma variants (e.g. `"So,` →
+stripped to `"so"` → matches).
 
-### #1: Replace knapsack budget-filling with per-theme LLM selection
+**File:** `global_state.py:237-244`
 
-**Problem:** `master_cut.py::select_segments_for_master_cut()` is a pure
-time-budget algorithm — sorts by importance, fills proportionally. No
-narrative coherence, no context awareness, no boundary refinement.
+### Fixed #2: Claims (and all categories) included in theme segment resolution
 
-**Solution:** For each theme, run the selection logic from
-`minimal_theme_cut.py`:
-1. Build a prompt showing each candidate segment with ~30s of surrounding
-   SRT transcript context
-2. One DeepSeek call per theme: decide keep/drop + refine boundaries
-3. Merge overlapping/adjacent kept segments
-4. Concatenate all kept theme segments with beep transitions
+**Root cause:** `master_cut.py::resolve_theme_segments_from_state()` only
+iterates `universe_data["concepts"]`. DeepSeek classified the substantive
+theological argument for `royal-priesthood-of-believers` as a **claim**
+(`priesthood-not-abolished`) — making it invisible to the selection LLM.
 
-**Changes:** `master_cut.py` Phase 5 — replace
-`select_segments_for_master_cut()` with per-theme LLM selection.
-Factor `build_selection_prompt()` and `apply_decisions()` for import.
+**Fix:** Iterate all categories (concepts, claims, entities,
+scriptural_links, glossary) into the `items_by_id` lookup. The existing
+`ep:start:end` dedup in `segments_map` prevents duplicate segments across
+categories.
 
-**Cost:** ~1 DeepSeek call per theme × ~12 themes ≈ $0.12
+**File:** `master_cut.py:130-136`
 
-### #2: Port segment boundary widening to `_validate_segments()`
+### Fixed #3: Dynamic context window replacing fixed 30s buffer
 
-**Problem:** `global_state.py::_validate_segments()` snaps to SRT
-boundaries and logs mid-sentence warnings — but never widens.
-`classify_raw.py::_snap_segment()` already has working widening logic.
+**Root cause:** `minimal_theme_cut.py` hardcodes `context_buffer=30.0`
+for transcript context around each candidate segment. The snapped end was
+8361s → context extends to 8391s. The `priesthood-not-abolished` claim
+segment starts at 8395s — 4s beyond the LLM's view, so it can't see
+the thought continues and widens.
 
-**Solution:** Port from `_snap_segment()`:
-- Widen start backward by 1 SRT entry if first word is lowercase
-- Widen end forward by 1 SRT entry if text continues mid-thought
-- Extend to minimum duration by absorbing subsequent entries within gaps
+**Fix:** Instead of fixed `end + 30s`, extend the end window to the start
+of the *next* candidate segment in the same episode (+ small overlap),
+capped at 120s. Similarly, extend the start backward to the *previous*
+segment's end. This is naturally bounded and doesn't rely on arbitrary
+tuning.
 
-**Changes:** `global_state.py::_validate_segments()` — add widening.
+**File:** `minimal_theme_cut.py:226-228` (`_format_segment_with_context`)
+and `build_selection_prompt` call site.
 
-### #3: Quality warnings at master cut completion
+## Master cut status (2026-07-29)
 
-**Problem:** Master cut produces no quality report. Bad segments
-(intro-adjacent, too short, too long) are invisible.
-
-**Solution:** After Phase 5 selection, compute warnings:
-- Segments within first 3 minutes of episode → likely intro/banter
-- Segments <15s → too short to convey meaning
-- Segments >600s → likely too broad
-- Write warnings to result dict, display at end
-
-### #4: Remove YT sub path from all pipelines
-
-**Problem:** Multiple code paths check `prefer_yt_subs` and fall back to
-whisper. YouTube subs are unreliable — there's no reason to try them.
-
-**Solution:**
-- `download_pool.py::_ensure_episode_artifacts()` — remove YT sub download
-- `master_cut.py::build_master_cut()` — remove `prefer_yt_subs` param,
-  always transcribe
-- `playlist_pipeline.py::build_universe_state()` — remove YT sub path
-- `cli.py` — remove `--yt-subs` and `--force-whisper` flags
-
-### #5: Remove non-SRT artifacts from git
-
-- `git rm --cached` all `output/ep-*/global_state.json`,
-  `output/ep-*/decisions.json`, `output/ep-*/stats.json`,
-  `output/ep-*/compressed.json`
-- `git rm output/_themes.json`
-- `git rm output/universe_state.json`
-- Update `.gitignore` to only allow `source_subtitles.srt`
-- Remove local unversioned intermediates (keep downloaded MP3s)
+| Batch | Status | Notes |
+|-------|--------|-------|
+| ep31-40 | ✅ Done | "Protestant friends" bug found — three fixes above |
+| ep41-50 | ⏳ Pending | Ask before running any pipeline |
 
 ## Universe state coverage (before cleanup)
 
