@@ -9,16 +9,12 @@ build/
 venv/
 
 # Output artifacts — only source_subtitles.srt is version-controlled
+output/*
+!output/*.gitkeep
+
+# Per-episode: only the whisper SRT
 output/ep-*/*
 !output/ep-*/source_subtitles.srt
-!output/.gitkeep
-
-# Stale cache (removed from tracking Jul 2026)
-output/_themes.json
-
-# Other output — audio, universe state, stats — all derivable from SRTs
-output/master_cut*.mp3
-output/universe_state.json
 
 # Temp
 *.tmp
