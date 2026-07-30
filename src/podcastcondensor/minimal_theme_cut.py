@@ -30,6 +30,7 @@ from podcastcondensor.audio_strategies import _ionice_cmd, _atempo_filters, _con
 from podcastcondensor.config import Config
 from podcastcondensor.download_pool import EpisodeManifest
 from podcastcondensor.llm.deepseek import DeepSeekClient
+from podcastcondensor.universe_state import UniverseState
 from podcastcondensor.master_cut import (
     resolve_theme_segments_from_state,
     ThemeSegment,
@@ -916,12 +917,39 @@ def build_minimal_theme_cut(
     if not state_file:
         state_file = os.path.join(output_root, "universe_state.json")
 
-    if not os.path.exists(state_file):
-        result["errors"].append(f"Universe state not found: {state_file}")
-        return result
+    # Build universe data from per-episode global_state.json on disk,
+    # scoped to the scanned manifest range. The state file is disposable
+    # and gets overwritten with the range-scoped data — downstream callers
+    # (resolve_theme_segments_from_state, extract_themes) only see this
+    # range's content.
+    state = UniverseState(state_file)
+    state.data = {
+        "metadata": {},
+        "episode_summaries": [],
+        "entities": [], "concepts": [], "claims": [],
+        "scriptural_links": [], "glossary": [],
+    }
+    for m in manifests:
+        gs_path = os.path.join(
+            output_root, f"ep-{m.episode_number:03d}", "global_state.json",
+        )
+        if not os.path.exists(gs_path):
+            logger.warning("No global_state.json for ep %d — skipping", m.episode_number)
+            continue
+        with open(gs_path) as f:
+            global_data = json.load(f)
+        knowledge = {
+            "summary": global_data.get("summary", ""),
+            "entities": global_data.get("entities", []),
+            "concepts": global_data.get("concepts", []),
+            "claims": global_data.get("claims", []),
+            "scriptural_links": global_data.get("scriptural_links", []),
+            "glossary": global_data.get("glossary", []),
+        }
+        state.add_episode_knowledge(m.episode_number, knowledge)
 
-    with open(state_file, "r", encoding="utf-8") as f:
-        universe_data = json.load(f)
+    # Range-scoped universe data now in `universe_data`
+    universe_data = state.data
 
     api_key = None
     client = None

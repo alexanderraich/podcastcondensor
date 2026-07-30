@@ -2,7 +2,9 @@
 
 Condensing "Lord of Spirits" podcast episodes using DeepSeek LLM.
 
-**🚫 Must ask before any code change, pipeline run, or config change.** Do not implement, modify, or execute anything without describing the plan and getting explicit approval. This is a standing rule — I do not need to be reminded of it per-session.
+**🚫 Must ask before any code change, pipeline run, config change, or architectural decision.** Do not implement, modify, or execute anything without describing the plan and getting explicit approval. This is a standing rule — I do not need to be reminded of it per-session.
+
+**Document architectural decisions in CLAUDE.md.** Any substantive architectural change (data flow, pipeline design, scoping strategy, state management) is recorded here with rationale. This documents the decision's context and reasoning for future reference.
 
 ## Core decisions (July 2026)
 
@@ -13,9 +15,15 @@ Condensing "Lord of Spirits" podcast episodes using DeepSeek LLM.
   (`global_state.json`, `compressed.json`, `decisions.json`, `stats.json`,
   `universe_state.json`, `_themes.json`) is derivable from the SRT + LLM
   calls and is NOT version-controlled.
-- **`universe_state.json` is disposable.** It can be reconstructed from
-  scratch with `build-universe` using the version-controlled SRTs. Not
-  tracked in git after July 2026 cleanup.
+- **`universe_state.json` is disposable and ephemeral per range cut.** It can be
+  reconstructed from scratch with `build-universe` using the version-controlled
+  SRTs. Not tracked in git after July 2026 cleanup. `build-master-cut` and
+  `build-minimal-theme` delete the stale file at the start of each run and
+  rebuild it fresh from existing per-episode `global_state.json` on disk for
+  the target episode range only. This guarantees theme extraction and segment
+  resolution only see content from the target window — no leakage from older
+  episodes. The cumulative state is only produced by the dedicated
+  `build-universe` pipeline.
 - **`_themes.json` is dead.** Was a stale cache from Jul 9 (eps 1-28 era).
   Removed from git, added to gitignore. All callers fall back to fresh
   DeepSeek extraction.
@@ -187,6 +195,22 @@ tuning.
 
 **File:** `minimal_theme_cut.py:226-228` (`_format_segment_with_context`)
 and `build_selection_prompt` call site.
+
+### Fixed #4: Ephemeral universe state per range cut
+
+**Root cause:** `build-master-cut --start N --end M` loaded the cumulative
+`universe_state.json` on disk, which contained concepts/claims/entities from
+*all* previously processed episodes (not just the target range). Theme
+extraction and segment resolution saw out-of-range content, so the time
+budget could be allocated to concepts from older episodes.
+
+**Fix:** `universe_state.json` is now ephemeral per range cut. Both
+`build-master-cut` and `build-minimal-theme` delete the stale file and
+rebuild fresh from per-episode `global_state.json` on disk, scoped to
+the manifest range. Zero extra API calls — already-processed episodes
+have their `global_state.json` on disk.
+
+**Files:** `master_cut.py:848-926`, `minimal_theme_cut.py:917-952`
 
 ## Master cut status (2026-07-29)
 
