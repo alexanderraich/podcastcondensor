@@ -841,36 +841,36 @@ def build_master_cut(
 
     # ── Phase 2: Build / ensure universe state ─────────────────────────
     logger.info("=" * 60)
-    logger.info("PHASE 2: Build complete universe state")
+    logger.info("PHASE 2: Build universe state (ephemeral, range-scoped)")
     logger.info("=" * 60)
     t2 = time.time()
 
-    # Load or create universe state
+    # Ephemeral universe state: delete stale cumulative file and rebuild
+    # fresh from existing global_state.json on disk for the episode range
+    # only. This guarantees theme extraction and segment resolution only
+    # see content from the target window — no leakage from older episodes.
     if not state_file:
         state_file = os.path.join(output_root, "universe_state.json")
-    state = UniverseState(state_file)
-    existing_eps = set(state.data.get("metadata", {}).get("episodes_built_from", []))
+    if os.path.exists(state_file):
+        os.remove(state_file)
+        logger.info("Removed stale cumulative universe state (ephemeral per range)")
+    state = UniverseState(state_file)  # fresh empty state
 
-    # Run Phase 2 for episodes that aren't in the state yet
     api_key = resolve_api_key()
     if not api_key:
         result["errors"].append("DeepSeek API key not set")
         return result
     ds_client = DeepSeekClient(api_key=api_key)
 
-    new_global_states = 0
-    skipped_existing = 0
+    loaded_from_disk = 0
+    deepseek_calls = 0
 
     for m in manifests:
-        if m.episode_number in existing_eps:
-            skipped_existing += 1
-            continue
-
         ep_dir = os.path.join(output_root, f"ep-{m.episode_number:03d}")
         gs_path = os.path.join(ep_dir, "global_state.json")
 
         if os.path.exists(gs_path):
-            # Already has global state from a previous run
+            # Already has global state from a previous run — re-read from disk
             with open(gs_path) as f:
                 global_data = json.load(f)
         else:
@@ -896,6 +896,7 @@ def build_master_cut(
                 # Write checkpoint
                 with open(gs_path, "w") as f:
                     json.dump(global_data, f, ensure_ascii=False, indent=2)
+                deepseek_calls += 1
             except Exception as e:
                 logger.error("Phase 2 failed for ep %d: %s", m.episode_number, e)
                 global_data = None
@@ -910,7 +911,7 @@ def build_master_cut(
                 "glossary": global_data.get("glossary", []),
             }
             state.add_episode_knowledge(m.episode_number, knowledge)
-            new_global_states += 1
+            loaded_from_disk += 1
 
     # Force-save state (should already be saved by add_episode_knowledge)
     state.save()
@@ -921,8 +922,8 @@ def build_master_cut(
     result["phases"].append({
         "phase": "build_universe",
         "elapsed_sec": round(time.time() - t2, 1),
-        "new_episodes": new_global_states,
-        "existing_skipped": skipped_existing,
+        "loaded_from_disk": loaded_from_disk,
+        "deepseek_calls": deepseek_calls,
         "total_episodes_in_state": len(state.data.get("episode_summaries", [])),
     })
     logger.info(
