@@ -372,13 +372,34 @@ def build_global_state(
         ep_display, len(srt_entries), len(full_prompt),
     )
 
-    raw = client.generate(
-        prompt=full_prompt, model=model,
-        timeout=timeout, temperature=0.1,
-        max_tokens=8192, force_json=True,
-    )
+    # Single transient DeepSeek failure (truncated/partial JSON, network blip)
+    # must not kill a whole multi-hour batch run. Retry the call a couple of
+    # times before giving up. max_tokens bumped to 16000 — for very long
+    # transcripts (200k+ chars) the old 8192 cap could truncate the structured
+    # JSON mid-object, which is exactly the "unparseable response" failure.
+    data = None
+    for attempt in range(1, 3):
+        try:
+            raw = client.generate(
+                prompt=full_prompt, model=model,
+                timeout=timeout, temperature=0.1,
+                max_tokens=16000, force_json=True,
+            )
+        except Exception as e:
+            logger.warning(
+                "Global state LLM call failed for '%s' (attempt %d/2): %s — retrying",
+                ep_display, attempt, e,
+            )
+            continue
 
-    data = _parse_json_response(raw)
+        data = _parse_json_response(raw)
+        if data:
+            break
+        logger.warning(
+            "Global state unparseable for '%s' (attempt %d/2, first 200: %r) — retrying",
+            ep_display, attempt, raw[:200] if raw else "",
+        )
+
     if not data:
         raise RuntimeError("Global state: empty or unparseable LLM response")
 
