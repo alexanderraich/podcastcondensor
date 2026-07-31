@@ -256,8 +256,47 @@ have their `global_state.json` on disk.
 
 | Batch | Status | Notes |
 |-------|--------|-------|
-| ep31-40 | ✅ Done (2nd pass) | 10 themes / 35 segments, 6704.9s vs 6750 target, 3 warnings, 0 errors |
-| ep41-50 | 🔄 Recutting (LLM-volume archive) | First pass (global cap): 6730s/11 themes/46 segs but concentrated (3/11 themes). Pure-LLM passes kept 13-15 themes / 129 segments / ~6h (20.5% of 29.5h source) — confirming archive decision. Recutting to completion |
+| ep31-40 | ✅ Done (2nd pass) | 10 themes / 35 segments, 6704.9s vs 6750 target, 3 warnings, 0 errors. 31-40 archive comparison run was killed mid-assembly (2026-07-31) — deprioritized in favor of the 51-140 transcription effort. |
+| ep41-50 | ✅ Archive done | LLM-volume archive: 9.13h / 20 themes / 185 segments / 31% of 29.5h source, 0 errors, 3 "too broad" warnings. |
+
+## Roadmap — 140-episode super master cut (2026-07-31, TO BE DONE)
+
+**End goal:** a true cross-episode thematic anthology — "the most important
+insights over all 140 episodes" — built from the full audio database.
+
+**Why the current per-theme master cut is NOT the end goal:** it is effectively
+per-episode curation. The show is organized episode-per-topic, so each theme's
+content is concentrated in its dedicated episode (ep42 = afterlife, ep43 =
+prophecy, ep44 = scripture). Per-theme selection therefore keeps ~one episode's
+content per theme. Verified in the ep41-50 archive: 20/20 "Afterlife" segments
+were all from ep 42. The result is a labeled episode-cores anthology, not
+cross-episode synthesis.
+
+**Planned pipeline (to be built):**
+1. **Full data** — whisper SRT + `global_state.json` for all 140 episodes
+   (eps 1-50 done; **51-140 transcription in progress**, `build-universe`).
+2. **Universe state merge** — build a real cumulative `universe_state.json`
+   across all 140 (currently range-scoped per batch; needs a merge step over
+   the per-episode `global_state.json` files).
+3. **Theme identification** across the full 140 (one DeepSeek call).
+4. **Cross-episode insight synthesis (the missing core step)** — per theme,
+   ONE DeepSeek call over all episodes' claims/segments producing the ~8-15
+   most important insights ordered narratively, **required to span different
+   episodes** (traces how understanding deepens across the arc). This is what
+   makes it overarching instead of per-episode.
+5. **Resolve each insight to audio** + assemble per-theme insight tracks
+   (or a combined cut). Optional future enhancement: LLM-written narrator
+   intros between insights (undecided).
+
+**Decisions taken 2026-07-31:**
+- Master cut volume is LLM-owned (archive, not forced 90-min). Both the greedy
+  global Python cap and pure-prompt budgets failed (see history in the
+  `build-master-cut` section); volume enforcement is deferred until the
+  insight-synthesis design lands.
+- Q&A and Reading episodes are excluded from `build-universe` (default) — they
+  don't develop coherent themes.
+- The 90-min target is informational for master cut; the archive is typically
+  9h+ per 10-episode batch.
 
 ## Universe state coverage (before cleanup)
 
