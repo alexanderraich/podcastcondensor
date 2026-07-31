@@ -282,18 +282,22 @@ def _volume_guide(time_budget: Optional[float]) -> List[str]:
     """Volume guidance lines for the selection prompt.
 
     Without a budget: generic 4-8 segments / 8-20 minutes guidance (single-theme
-    dev tool). With a budget: the theme's allotted share of the master cut, so
-    the LLM self-regulates volume instead of a Python budget loop truncating it.
+    dev tool). With a budget: the theme's allotted share of the master cut, as a
+    HARD CAP. The LLM keeps only its best segments under the cap — volume is
+    enforced in-prompt (DeepSeek ignores Python-side truncation if told to keep
+    "everything relevant", so the cap must be explicit and non-negotiable).
     """
     if time_budget is not None:
         mins = time_budget / 60.0
         return [
-            f"  This theme's share of the anthology is about {mins:.0f} minutes",
-            f"  (roughly {mins:.0f} minutes of audio). Aim for 4-8 segments totalling",
-            "  close to that amount: a definition segment, a development/argument",
-            "  segment, a couple of examples, and a connection-to-broader-theology",
-            "  segment. Keep the content that best explains the theme — prefer",
-            "  substance over hitting the exact number.",
+            f"  HARD CAP: your kept segments must total AT MOST {mins:.1f} minutes",
+            f"  ({time_budget:.0f} seconds) of audio. This is non-negotiable —",
+            "  the editor will cut anything past the cap, so do not keep",
+            "  segments you would not want to lose.",
+            "  Choose the 2-6 BEST segments that explain the theme from scratch.",
+            "  Strongly prefer quality over coverage: it is better to keep 3",
+            "  excellent segments that fit the cap than 8 mediocre ones that",
+            "  overflow it.",
         ]
     return [
         "  A thorough treatment of this theme probably needs 4-8 segments",
@@ -302,6 +306,32 @@ def _volume_guide(time_budget: Optional[float]) -> List[str]:
         "  connection-to-broader-theology segment. Fewer than 4 segments",
         "  is unlikely to be self-contained; more than 10 is probably",
         "  too repetitive.",
+    ]
+
+
+def _budget_block(time_budget: Optional[float]) -> List[str]:
+    """Prominent, non-negotiable budget statement placed near the top of the
+    selection prompt when a master-cut time budget applies.
+
+    DeepSeek ignores soft volume guidance (keeps ~all candidates regardless),
+    so the cap must be stated as an explicit hard constraint up front, with a
+    concrete segment-count target the model can reason about.
+    """
+    if time_budget is None:
+        return []
+    mins = time_budget / 60.0
+    # ~3 min per segment is a reasonable planning granularity for these long
+    # podcast segments; gives a concrete "keep about N" target.
+    target_count = max(2, int(round(time_budget / 180)))
+    return [
+        "HARD BUDGET:",
+        f"  Your kept segments must total AT MOST {mins:.0f} minutes"
+        f" ({time_budget:.0f}s) of audio — a firm cap, not a target to aim at.",
+        f"  Keep roughly {target_count} segments (2-{target_count + 2}),"
+        " prioritizing the very best explanations of the theme.",
+        "  If a segment is good but the theme is already well covered without it,",
+        "  DROP it. Do not keep segments merely because they are relevant — keep",
+        "  only what a complete beginner needs to understand this theme.",
     ]
 
 
@@ -355,6 +385,7 @@ def build_selection_prompt(
         "explanation of this theme from scratch. Think of it like a mini-",
         "documentary segment on this one topic — it needs enough context to",
         "stand on its own.",
+        *_budget_block(time_budget),
         "",
         "WHAT TO KEEP:",
         "  - Definitions of key terms (start from zero, build up)",
