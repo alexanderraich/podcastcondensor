@@ -119,67 +119,75 @@ def build_universe_state(
             )
             sources = [s for s in sources if "read by" not in s.get("title", "").lower()]
 
-    for src in sources:
-        episode_num = src["episode_number"]
-        video_url = src["video_url"]
+    # Pipelined processing: downloads run AHEAD in a small thread pool (network
+    # I/O, low memory), while whisper runs strictly ONE-AT-A-TIME in the main
+    # thread (GPU/RAM — this machine has 8GB RAM / 6GB GPU; concurrent whisper
+    # instances risk OOM). The overlap hides download time behind whisper time
+    # (~30-40% faster). Global_state extraction stays sequential after each
+    # episode's whisper. Episodes already on disk fast-skip both steps.
+    def _download_audio_only(episode_num: int, src: dict) -> Optional[str]:
+        """Download one episode's audio (I/O — safe to parallelize)."""
+        ep_dir = os.path.join(cfg.output_root, f"ep-{episode_num:03d}")
+        Path(ep_dir).mkdir(parents=True, exist_ok=True)
+        target_srt = os.path.join(ep_dir, "source_subtitles.srt")
+        if os.path.exists(target_srt):
+            return None  # already transcribed — no download needed
+        return download_audio(
+            url=src["video_url"],
+            output_dir=ep_dir,
+            video_id=src["id"],
+            audio_format=cfg.audio_format,
+            audio_bitrate=cfg.audio_bitrate,
+        )
+
+    def _transcribe_serial(episode_num: int, src: dict, audio_path: Optional[str]) -> Optional[str]:
+        """Whisper one episode (serial — GPU). Returns SRT path or None."""
+        ep_dir = os.path.join(cfg.output_root, f"ep-{episode_num:03d}")
+        target_srt = os.path.join(ep_dir, "source_subtitles.srt")
+        if os.path.exists(target_srt):
+            return target_srt
+        if not audio_path:
+            logger.warning("No audio for episode %d, skipping", episode_num)
+            return None
+        transcribe_audio(
+            audio_path, ep_dir,
+            model_size=cfg.whisper_model,
+            beam_size=cfg.whisper_beam_size,
+            vad_filter=cfg.whisper_vad_filter,
+            condition_on_previous_text=cfg.whisper_condition_on_prev,
+        )
+        return target_srt if os.path.exists(target_srt) else None
+
+    def _process_episode(episode_num: int, src: dict, srt_path: Optional[str], state: UniverseState) -> None:
+        """Extract + merge global state for one episode (runs after its prep)."""
         title = src.get("title", f"Episode {episode_num}")
+        ep_dir = os.path.join(cfg.output_root, f"ep-{episode_num:03d}")
+        gs_path = os.path.join(ep_dir, "global_state.json")
 
         logger.info("=" * 60)
         logger.info("Episode %d: %s", episode_num, title)
         logger.info("=" * 60)
 
-        ep_dir = os.path.join(cfg.output_root, f"ep-{episode_num:03d}")
-        Path(ep_dir).mkdir(parents=True, exist_ok=True)
-        gs_path = os.path.join(ep_dir, "global_state.json")
-
         if os.path.exists(gs_path):
             logger.info("Checkpoint HIT — global_state.json exists for episode %d", episode_num)
             with open(gs_path) as f:
                 global_data = json.load(f)
+        elif not srt_path:
+            logger.warning("No SRT for episode %d — skipping", episode_num)
+            return
+        elif dry_run:
+            logger.info("Dry-run: skipping extraction")
+            return
         else:
-            target_srt = os.path.join(ep_dir, "source_subtitles.srt")
-
-            # Whisper path: download audio + transcribe
-            if not os.path.exists(target_srt):
-                audio_path = download_audio(
-                    url=video_url,
-                    output_dir=ep_dir,
-                    video_id=src["id"],
-                    audio_format=cfg.audio_format,
-                    audio_bitrate=cfg.audio_bitrate,
-                )
-
-                if not audio_path:
-                    logger.warning("No audio for episode %d, skipping", episode_num)
-                    continue
-
-                transcribe_audio(
-                    audio_path, ep_dir,
-                    model_size=cfg.whisper_model,
-                    beam_size=cfg.whisper_beam_size,
-                    vad_filter=cfg.whisper_vad_filter,
-                    condition_on_previous_text=cfg.whisper_condition_on_prev,
-                )
-
-            if not os.path.exists(target_srt):
-                logger.warning("No subtitles available for episode %d, skipping", episode_num)
-                continue
-
-            cleaned = load_subtitles(target_srt)
+            cleaned = load_subtitles(srt_path)
             logger.info("Cleaned %d subtitle entries", len(cleaned))
-
-            if dry_run:
-                logger.info("Dry-run: skipping extraction")
-                continue
-
             from podcastcondensor.segmentation.sentence_units import build_transcript_from_entries
             transcript_text = build_transcript_from_entries(cleaned)
 
             api_key = resolve_api_key()
             if not api_key:
                 logger.error("DeepSeek API key not set — skipping")
-                continue
-
+                return
             ds_client = DeepSeekClient(api_key=api_key)
             global_data = build_global_state(
                 transcript_text=transcript_text,
@@ -191,23 +199,54 @@ def build_universe_state(
                 timeout=cfg.deepseek_timeout,
                 srt_entries=cleaned,
             )
-
             with open(gs_path, "w", encoding="utf-8") as f:
                 json.dump(global_data, f, ensure_ascii=False, indent=2)
             logger.info("Wrote %s", gs_path)
 
-            knowledge = {
-                "summary": global_data.get("summary", ""),
-                "entities": global_data.get("entities", []),
-                "concepts": global_data.get("concepts", []),
-                "claims": global_data.get("claims", []),
-                "scriptural_links": global_data.get("scriptural_links", []),
-                "glossary": global_data.get("glossary", []),
-            }
-            state.add_episode_knowledge(episode_num, knowledge)
-            kc = len(knowledge.get("concepts", []))
-            ke = len(knowledge.get("entities", []))
-            logger.info("  → Added %d concepts, %d entities", kc, ke)
+        knowledge = {
+            "summary": global_data.get("summary", ""),
+            "entities": global_data.get("entities", []),
+            "concepts": global_data.get("concepts", []),
+            "claims": global_data.get("claims", []),
+            "scriptural_links": global_data.get("scriptural_links", []),
+            "glossary": global_data.get("glossary", []),
+        }
+        state.add_episode_knowledge(episode_num, knowledge)
+        kc = len(knowledge.get("concepts", []))
+        ke = len(knowledge.get("entities", []))
+        logger.info("  → Added %d concepts, %d entities", kc, ke)
+
+    from concurrent.futures import ThreadPoolExecutor
+
+    PREP_AHEAD = 3  # downloads that run ahead of whisper
+    sources_list = list(sources)
+    n = len(sources_list)
+
+    with ThreadPoolExecutor(max_workers=PREP_AHEAD) as dl_pool:
+        # Prime the download window with the first PREP_AHEAD episodes.
+        dl_futures = {}
+        for i in range(min(PREP_AHEAD, n)):
+            s = sources_list[i]
+            dl_futures[s["episode_number"]] = (
+                dl_pool.submit(_download_audio_only, s["episode_number"], s), s
+            )
+
+        for i in range(n):
+            s = sources_list[i]
+            future, cur_src = dl_futures.pop(s["episode_number"])
+            audio_path = future.result()
+
+            # Keep the window full: submit download i + PREP_AHEAD.
+            j = i + PREP_AHEAD
+            if j < n:
+                ns = sources_list[j]
+                dl_futures[ns["episode_number"]] = (
+                    dl_pool.submit(_download_audio_only, ns["episode_number"], ns), ns
+                )
+
+            # Whisper (serial) + extract global state.
+            srt_path = _transcribe_serial(s["episode_number"], cur_src, audio_path)
+            _process_episode(s["episode_number"], cur_src, srt_path, state)
 
     meta = state.data["metadata"]
     logger.info("=" * 60)
