@@ -256,8 +256,26 @@ have their `global_state.json` on disk.
 
 | Batch | Status | Notes |
 |-------|--------|-------|
-| ep31-40 | ✅ Done (2nd pass) | 10 themes / 35 segments, 6704.9s vs 6750 target, 3 warnings, 0 errors. 31-40 archive comparison run was killed mid-assembly (2026-07-31) — deprioritized in favor of the 51-140 transcription effort. |
+| ep31-40 | ✅ Done (2nd pass) | 10 themes / 35 segments, 6704.9s vs 6750 target, 3 warnings, 0 errors. 31-40 archive comparison run was killed mid-assembly (2026-07-31) — deprioritized in favor of the transcription effort. |
 | ep41-50 | ✅ Archive done | LLM-volume archive: 9.13h / 20 themes / 185 segments / 31% of 29.5h source, 0 errors, 3 "too broad" warnings. |
+
+## Episode data (2026-07-31 — COMPLETE)
+
+**All 126 non-Q&A episodes have whisper SRTs + `global_state.json` on disk, and
+all 126 SRTs are committed to git.** Coverage = eps 1-144 minus 18 Q&A episodes.
+
+**Why 126, not 144:** the 18 missing episodes are all Q&A / "Pantheon &
+Pandemonium Live Q&A" specials (66, 67, 74, 78, 80, 89, 90, 98, 104, 106, 111,
+117, 121, 122, 126, 134, 135, 141). They don't develop coherent themes, so
+`build-universe` skips them by default (`--include-qa` to include). They are
+the ONLY episodes without SRTs; every non-Q&A episode has one.
+
+| Episodes | SRT | global_state |
+|----------|-----|--------------|
+| 1-50 | ✅ all | ✅ all |
+| 51-98 | ✅ all (minus Q&A 66,67,74,78,80,89,90) | ✅ all |
+| 99-144 | ✅ all (minus Q&A 98,104,106,111,117,121,122,126,134,135,141) | ✅ all |
+| Q&A (18) | ❌ intentionally skipped | ❌ |
 
 ## Roadmap — 144-episode super master cut (2026-07-31, TO BE DONE)
 
@@ -273,11 +291,8 @@ were all from ep 42. The result is a labeled episode-cores anthology, not
 cross-episode synthesis.
 
 **Planned pipeline (to be built):**
-1. **Full data** — whisper SRT + `global_state.json` for all ~144 episodes
-   (eps 1-50 done; **51-140 transcription in progress**, `build-universe`).
-   **Tail 141-144:** ep 141 is Q&A (auto-skipped); eps 142-144 are regular
-   ("Commander Shepherd", "Convert Surge", "We Are the Aliens") and need a
-   follow-up `build-universe --start 141 --end 144` run after 51-140.
+1. **Full data** — ✅ **DONE (2026-07-31).** Whisper SRT + `global_state.json`
+   for all 126 non-Q&A episodes (1-144 minus 18 Q&A). All SRTs committed.
 2. **Universe state merge** — build a real cumulative `universe_state.json`
    across all ~144 (currently range-scoped per batch; needs a merge step over
    the per-episode `global_state.json` files).
@@ -301,14 +316,18 @@ cross-episode synthesis.
 - The 90-min target is informational for master cut; the archive is typically
   9h+ per 10-episode batch.
 
-## Universe state coverage (before cleanup)
+## Universe state coverage (2026-07-31 — current)
 
 | Episodes | SRT source | In universe state |
 |----------|-----------|-------------------|
-| 1-28 | Whisper | ✅ |
-| 29-30 | YouTube subs + whisper | Partial |
-| 31-40 | Whisper | ✅ |
-| 41-50 | Whisper | ✅ (per-episode `global_state.json` on disk; range-scoped state ephemeral per run) |
+| 1-28 | Whisper | ✅ (per-episode `global_state.json`) |
+| 29-30 | YouTube subs + whisper | ✅ (per-episode `global_state.json`) |
+| 31-50 | Whisper | ✅ (per-episode `global_state.json`) |
+| 51-144 | Whisper | ✅ (per-episode `global_state.json`) |
+
+All 126 non-Q&A episodes have per-episode `global_state.json` on disk. The
+**cumulative 1-144 universe state is NOT yet built** — it's the next step
+(task #15).
 
 ## Required
 
