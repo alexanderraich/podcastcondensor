@@ -13,6 +13,9 @@ output/*
 !output/*.gitkeep
 
 # Per-episode: only the whisper SRT
+# NOTE: must un-ignore the ep dirs BEFORE re-ignoring their contents, else
+# git never descends into them and the SRT negation below never fires.
+!output/ep-*/
 output/ep-*/*
 !output/ep-*/source_subtitles.srt
 
