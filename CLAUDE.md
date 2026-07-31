@@ -259,10 +259,10 @@ have their `global_state.json` on disk.
 | ep31-40 | ✅ Done (2nd pass) | 10 themes / 35 segments, 6704.9s vs 6750 target, 3 warnings, 0 errors. 31-40 archive comparison run was killed mid-assembly (2026-07-31) — deprioritized in favor of the 51-140 transcription effort. |
 | ep41-50 | ✅ Archive done | LLM-volume archive: 9.13h / 20 themes / 185 segments / 31% of 29.5h source, 0 errors, 3 "too broad" warnings. |
 
-## Roadmap — 140-episode super master cut (2026-07-31, TO BE DONE)
+## Roadmap — 144-episode super master cut (2026-07-31, TO BE DONE)
 
 **End goal:** a true cross-episode thematic anthology — "the most important
-insights over all 140 episodes" — built from the full audio database.
+insights over all ~144 episodes" — built from the full audio database.
 
 **Why the current per-theme master cut is NOT the end goal:** it is effectively
 per-episode curation. The show is organized episode-per-topic, so each theme's
@@ -273,12 +273,15 @@ were all from ep 42. The result is a labeled episode-cores anthology, not
 cross-episode synthesis.
 
 **Planned pipeline (to be built):**
-1. **Full data** — whisper SRT + `global_state.json` for all 140 episodes
+1. **Full data** — whisper SRT + `global_state.json` for all ~144 episodes
    (eps 1-50 done; **51-140 transcription in progress**, `build-universe`).
+   **Tail 141-144:** ep 141 is Q&A (auto-skipped); eps 142-144 are regular
+   ("Commander Shepherd", "Convert Surge", "We Are the Aliens") and need a
+   follow-up `build-universe --start 141 --end 144` run after 51-140.
 2. **Universe state merge** — build a real cumulative `universe_state.json`
-   across all 140 (currently range-scoped per batch; needs a merge step over
+   across all ~144 (currently range-scoped per batch; needs a merge step over
    the per-episode `global_state.json` files).
-3. **Theme identification** across the full 140 (one DeepSeek call).
+3. **Theme identification** across the full ~144 (one DeepSeek call).
 4. **Cross-episode insight synthesis (the missing core step)** — per theme,
    ONE DeepSeek call over all episodes' claims/segments producing the ~8-15
    most important insights ordered narratively, **required to span different
