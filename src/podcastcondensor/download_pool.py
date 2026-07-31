@@ -213,6 +213,7 @@ def ensure_all_episode_artifacts(
     )
 
     manifests: List[EpisodeManifest] = list(existing)
+    failed: List[int] = []
 
     with ThreadPoolExecutor(max_workers=parallel) as pool:
         futures = {}
@@ -246,8 +247,10 @@ def ensure_all_episode_artifacts(
                     )
                 else:
                     logger.warning("✗ Ep %d: download failed", ep_num)
+                    failed.append(ep_num)
             except Exception as e:
                 logger.error("Ep %d download raised: %s", ep_num, e)
+                failed.append(ep_num)
 
     # Sort by episode number for deterministic ordering
     manifests.sort(key=lambda m: m.episode_number)
@@ -256,4 +259,13 @@ def ensure_all_episode_artifacts(
         "Download pool complete: %d/%d episodes ready",
         success_count, len(sources),
     )
+
+    # Fail loudly on partial download — a master cut with a silently missing
+    # episode must not be treated as complete.
+    if failed:
+        missing = ", ".join(f"ep-{n:03d}" for n in sorted(failed))
+        raise RuntimeError(
+            f"Download failed for {len(failed)} episode(s): {missing}. "
+            "Aborting — no partial master cut."
+        )
     return manifests

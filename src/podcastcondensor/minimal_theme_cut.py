@@ -278,17 +278,49 @@ def _format_segment_with_context(
     )
 
 
+def _volume_guide(time_budget: Optional[float]) -> List[str]:
+    """Volume guidance lines for the selection prompt.
+
+    Without a budget: generic 4-8 segments / 8-20 minutes guidance (single-theme
+    dev tool). With a budget: the theme's allotted share of the master cut, so
+    the LLM self-regulates volume instead of a Python budget loop truncating it.
+    """
+    if time_budget is not None:
+        mins = time_budget / 60.0
+        return [
+            f"  This theme's share of the anthology is about {mins:.0f} minutes",
+            f"  (roughly {mins:.0f} minutes of audio). Aim for 4-8 segments totalling",
+            "  close to that amount: a definition segment, a development/argument",
+            "  segment, a couple of examples, and a connection-to-broader-theology",
+            "  segment. Keep the content that best explains the theme — prefer",
+            "  substance over hitting the exact number.",
+        ]
+    return [
+        "  A thorough treatment of this theme probably needs 4-8 segments",
+        "  totalling 8-20 minutes. That gives room for: a definition segment,",
+        "  a development/argument segment, a couple examples, and a",
+        "  connection-to-broader-theology segment. Fewer than 4 segments",
+        "  is unlikely to be self-contained; more than 10 is probably",
+        "  too repetitive.",
+    ]
+
+
 def build_selection_prompt(
     theme: Theme,
     tws: ThemeWithSegments,
     output_root: str,
     manifests: List[EpisodeManifest],
     context_buffer: float = 30.0,
+    time_budget: Optional[float] = None,
 ) -> str:
     """Build the prompt asking the LLM to select minimal viable segments.
 
     Each candidate segment is shown with ~30s of surrounding transcript
     context so the LLM can determine complete-thought boundaries.
+
+    If ``time_budget`` is given (seconds), it is stated in the prompt as the
+    allotted share of the master cut for this theme. The LLM owns the volume
+    — this is guidance, not a hard truncation.
     """
     ep_titles = {m.episode_number: m.title for m in manifests}
     entries_cache: Dict[int, List[dict]] = {}
@@ -356,13 +388,7 @@ def build_selection_prompt(
         "    it. No mid-thought cuts.",
         "",
         "GUIDE ON VOLUME:",
-        "  A thorough treatment of this theme probably needs 4-8 segments",
-        "  totalling 8-20 minutes. That gives room for: a definition segment,",
-        "  a development/argument segment, a couple examples, and a",
-        "  connection-to-broader-theology segment. Fewer than 4 segments",
-        "  is unlikely to be self-contained; more than 10 is probably",
-        "  too repetitive.",
-        "",
+        *_volume_guide(time_budget),
         "OUTPUT FORMAT — valid JSON only, no extra text:",
         """{{"segments": [
   {{
@@ -867,7 +893,8 @@ def build_minimal_theme_cut(
         theme_id: Kebab-case theme ID (e.g. "theosis-and-deification").
         playlist_url: YouTube playlist URL.
         cfg: Pipeline configuration.
-        state_file: Path to universe_state.json.
+        state_file: Path to universe state JSON. If empty, uses a range-scoped
+                    output/universe_state_{START}_{END}.json.
         themes_file: Path to cached themes JSON (from a prior run).
         output_path: Output audio path.
         start_episode: First episode to consider.
@@ -915,7 +942,10 @@ def build_minimal_theme_cut(
     t2 = time.time()
 
     if not state_file:
-        state_file = os.path.join(output_root, "universe_state.json")
+        state_file = os.path.join(
+            output_root,
+            f"universe_state_{start_episode:03d}_{end_episode:03d}.json",
+        )
 
     # Build universe data from per-episode global_state.json on disk,
     # scoped to the scanned manifest range. The state file is disposable

@@ -158,7 +158,7 @@ def cmd_build_master_cut(args):
         if name == "download":
             extra = f", {phase.get('episodes_downloaded', 0)} episodes"
         elif name == "build_universe":
-            extra = f", {phase.get('new_episodes', 0)} new + {phase.get('existing_skipped', 0)} existing"
+            extra = f", {phase.get('deepseek_calls', 0)} new + {phase.get('loaded_from_disk', 0)} existing"
         elif name == "extract_themes":
             extra = f", {phase.get('theme_count', 0)} themes"
         elif name == "map_themes":
@@ -291,7 +291,7 @@ def main():
     )
     mc.add_argument("playlist_url", help="YouTube playlist URL")
     mc.add_argument("--state-file", default="",
-                    help="Path to universe state JSON (default: output/universe_state.json)")
+                    help="Path to universe state JSON (default: auto, range-scoped output/universe_state_{START}_{END}.json)")
     mc.add_argument("--output", default="master_cut.mp3",
                     help="Output master cut audio path (default: master_cut.mp3)")
     mc.add_argument("--target-duration", type=int, default=6750,
@@ -319,7 +319,7 @@ def main():
     mt.add_argument("playlist_url",
                     help="YouTube playlist URL (unused; kept for backwards compatibility)")
     mt.add_argument("--state-file", default="",
-                    help="Path to universe state JSON (default: output/universe_state.json)")
+                    help="Path to universe state JSON (default: auto, range-scoped output/universe_state_{START}_{END}.json)")
     mt.add_argument("--themes-file", default="output/_themes.json",
                     help="Path to cached themes JSON (default: output/_themes.json)")
     mt.add_argument("--output", default="output/minimal_theme_cut.mp3",

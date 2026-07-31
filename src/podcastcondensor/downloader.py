@@ -8,6 +8,7 @@ import logging
 import os
 import re
 import subprocess
+import time
 from pathlib import Path
 from typing import List, Optional
 
@@ -91,19 +92,35 @@ def download_audio(
 
     Path(output_dir).mkdir(parents=True, exist_ok=True)
     outtmpl = os.path.join(output_dir, "%(id)s.%(ext)s")
-    code, _, err = _run_ytdlp([
-        "-x",
-        "--js-runtimes", "node",
-        "--audio-format", audio_format,
-        "--audio-quality", audio_bitrate,
-        "--no-playlist",
-        "--embed-thumbnail",
-        "--add-metadata",
-        "-o", outtmpl,
-        url,
-    ])
-    if code != 0:
-        raise RuntimeError(f"Audio download failed: {err.strip()}")
+
+    # yt-dlp can fail fast with a transient 403/429 when several downloads
+    # hit YouTube concurrently (rate limiting). Retry the whole command with
+    # exponential backoff; --retries covers mid-download HTTP errors.
+    max_attempts = 3
+    for attempt in range(1, max_attempts + 1):
+        code, _, err = _run_ytdlp([
+            "-x",
+            "--js-runtimes", "node",
+            "--audio-format", audio_format,
+            "--audio-quality", audio_bitrate,
+            "--no-playlist",
+            "--embed-thumbnail",
+            "--add-metadata",
+            "--retries", "3",
+            "--retry-sleep", "linear=2:15",
+            "-o", outtmpl,
+            url,
+        ])
+        if code == 0:
+            break
+        if attempt >= max_attempts:
+            raise RuntimeError(f"Audio download failed: {err.strip()}")
+        wait = 5 * (2 ** (attempt - 1))
+        logger.warning(
+            "Audio download for %s failed (attempt %d/%d): %s — retrying in %ds",
+            video_id, attempt, max_attempts, err.strip()[-200:], wait,
+        )
+        time.sleep(wait)
 
     expected = os.path.join(output_dir, f"{video_id}.{audio_format}")
     if os.path.exists(expected):

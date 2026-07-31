@@ -24,6 +24,15 @@ Condensing "Lord of Spirits" podcast episodes using DeepSeek LLM.
   resolution only see content from the target window — no leakage from older
   episodes. The cumulative state is only produced by the dedicated
   `build-universe` pipeline.
+- **Range-scoped artifact filenames (July 2026).** Since the per-range state is
+  ephemeral, `build-master-cut` and `build-minimal-theme` write
+  `universe_state_{START:03d}_{END:03d}.json` (e.g. `universe_state_041_050.json`)
+  instead of a fixed `universe_state.json`, and `build-master-cut` writes
+  `master_cut_stats_{START:03d}_{END:03d}.json` containing a full `selections`
+  array (theme, episode, start, end, duration, beep) so each batch keeps a
+  trace of exactly what was kept. Fixed-name `universe_state.json` /
+  `master_cut_stats.json` files left on disk are stale leftovers from before
+  this convention.
 - **`_themes.json` is dead.** Was a stale cache from Jul 9 (eps 1-28 era).
   Removed from git, added to gitignore. All callers fall back to fresh
   DeepSeek extraction.
@@ -39,7 +48,19 @@ Condensing "Lord of Spirits" podcast episodes using DeepSeek LLM.
 - **Playlist pagination via web client.** `list_playlist()` passes
   `--extractor-args youtube:player_client=web` to yt-dlp to force web
   client pagination. Without this, YouTube tab API caps at 100 entries
-  (one page). With it, `--playlist-end 999` reliably fetches all pages.
+  (one page). **Caveat (verified 2026-07-31):** even with the web client,
+  this playlist caps at 100 entries (the newest 100, episodes 45-144).
+  Older episodes are resolved via the direct-search fallback in
+  `resolve_episode_sources()` — that's what covers eps < 45.
+- **Download resilience.** `download_audio()` retries transient yt-dlp
+  failures (403/429 rate limiting) with 3 attempts + backoff, plus
+  `--retries 3 --retry-sleep linear=2:15` inside yt-dlp. In parallel
+  downloads, YouTube can 403 individual workers; without retry a transient
+  error silently dropped an episode from the batch.
+- **Fail-loud on partial download.** `ensure_all_episode_artifacts()` raises
+  `RuntimeError` listing any episodes whose download/transcription failed;
+  `build-master-cut` aborts instead of assembling a master cut with missing
+  episodes. A partial anthology must never be reported as a clean success.
 
 ## Pipelines
 
@@ -90,6 +111,14 @@ resolve segments → select segments → assemble audio.
 **Phase 5 uses per-theme LLM selection** (not a budget-filling algorithm).
 Each theme's candidate segments are shown with transcript context, the
 LLM decides keep/drop and refines boundaries. ~1 DeepSeek call per theme.
+
+**Volume is LLM-owned, not Python-truncated.** Each theme's proportional
+share of the target (`target × importance / Σimportance`) is stated in the
+selection prompt as a time budget, and the LLM self-regulates volume. All
+kept segments across ALL themes are concatenated — there is NO Python
+truncation loop. (A previous iteration capped the cut in Python at the
+global target, which starved themes 4-11 to zero in the ep41-50 batch; the
+greedy cap was removed 2026-07-31.)
 
 | Produces | Tracked? |
 |---|---|
@@ -212,12 +241,12 @@ have their `global_state.json` on disk.
 
 **Files:** `master_cut.py:848-926`, `minimal_theme_cut.py:917-952`
 
-## Master cut status (2026-07-29)
+## Master cut status
 
 | Batch | Status | Notes |
 |-------|--------|-------|
-| ep31-40 | ✅ Done (2nd pass) | Rebuilt with all fixes, 78 segments / 9 themes, 12418s |
-| ep41-50 | ⏳ Pending | Ask before running any pipeline |
+| ep31-40 | ✅ Done (2nd pass) | 10 themes / 35 segments, 6704.9s vs 6750 target, 3 warnings, 0 errors |
+| ep41-50 | 🔄 Recut in progress | First run: 6730s/11 themes/46 segs/0 warn/0 err but concentrated (3/11 themes, 43% ep42) → greedy Python cap removed, budget moved into prompt → recutting |
 
 ## Universe state coverage (before cleanup)
 
@@ -226,6 +255,7 @@ have their `global_state.json` on disk.
 | 1-28 | Whisper | ✅ |
 | 29-30 | YouTube subs + whisper | Partial |
 | 31-40 | Whisper | ✅ |
+| 41-50 | Whisper | ✅ (per-episode `global_state.json` on disk; range-scoped state ephemeral per run) |
 
 ## Required
 

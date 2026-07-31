@@ -353,6 +353,10 @@ def select_segments_for_master_cut(
     The LLM decides keep/drop and refines boundaries (widening to capture
     complete thoughts). Kept segments are merged across adjacent gaps.
 
+    Each theme's proportional share of the target duration is stated in the
+    prompt (time_budget) so the LLM self-regulates volume. All kept segments
+    across all themes are concatenated — there is no Python truncation loop.
+
     Falls back to knapsack for any theme where the LLM call fails or
     returns no valid decisions.
 
@@ -376,26 +380,37 @@ def select_segments_for_master_cut(
     )
 
     selections: List[Selection] = []
-    total_used = 0.0
+
+    # Per-theme proportional time budget, enforced by the LLM (in the prompt)
+    # rather than by a Python truncation loop. Each theme's share of the master
+    # cut is target × importance/total_importance; the prompt states it and the
+    # LLM decides volume. Every theme's kept segments are concatenated — no
+    # greedy global cap that starves later themes.
+    active_tws = [t for t in sorted_tws if t.segments]
+    total_importance = sum(t.theme.importance for t in active_tws) or len(active_tws)
+    budgets = {
+        t.theme.id: target_duration * t.theme.importance / total_importance
+        for t in active_tws
+    }
 
     for tws in sorted_tws:
         if not tws.segments:
             continue
-        if total_used >= target_duration:
-            break
 
+        budget = budgets.get(tws.theme.id, 0.0)
         logger.info(
-            "LLM selection for theme '%s' (%d candidates)...",
-            tws.theme.id, len(tws.segments),
+            "LLM selection for theme '%s' (%d candidates, budget %.0fs)...",
+            tws.theme.id, len(tws.segments), budget,
         )
 
-        # Build prompt with transcript context
+        # Build prompt with transcript context + proportional time budget
         prompt = build_selection_prompt(
             theme=tws.theme,
             tws=tws,
             output_root=output_root,
             manifests=manifests,
             context_buffer=30.0,
+            time_budget=budget,
         )
 
         # Call LLM
@@ -429,12 +444,12 @@ def select_segments_for_master_cut(
             logger.info("LLM kept 0 segments for '%s' — skipping theme", tws.theme.id)
             continue
 
-        # Convert RefinedSelection -> Selection and enforce budget
+        # Convert RefinedSelection -> Selection. No global truncation — the
+        # per-theme budget was given to the LLM in the prompt; keep whatever
+        # the LLM deemed worthy for this theme.
         theme_selections: List[Selection] = []
         theme_used = 0.0
         for rs in refined:
-            if total_used + rs.duration > target_duration:
-                break
             ts = ThemeSegment(
                 theme_id=tws.theme.id,
                 episode_number=rs.episode_number,
@@ -451,7 +466,6 @@ def select_segments_for_master_cut(
                 beep_before="none",
             ))
             theme_used += rs.duration
-            total_used += rs.duration
 
         # Assign beeps: triple before first segment of each new theme
         if theme_selections:
@@ -788,7 +802,7 @@ def build_master_cut(
         playlist_url: YouTube playlist URL.
         cfg: Pipeline configuration.
         state_file: Path to existing/desired universe state file. If empty,
-                    uses output/universe_state.json.
+                    uses output/universe_state_{START}_{END}.json (range-scoped).
         output_path: Output master cut audio path.
         target_duration: Target duration in seconds (default 6750 = 90min at 1.25x).
         start_episode: First episode to include.
@@ -819,16 +833,27 @@ def build_master_cut(
     logger.info("=" * 60)
     t1 = time.time()
 
-    manifests = ensure_all_episode_artifacts(
-        playlist_url=playlist_url,
-        output_root=output_root,
-        start_episode=start_episode,
-        end_episode=end_episode,
-        parallel=parallel_downloads,
-        audio_format=cfg.audio_format,
-        audio_bitrate=cfg.audio_bitrate,
-        whisper_model=cfg.whisper_model,
-    )
+    try:
+        manifests = ensure_all_episode_artifacts(
+            playlist_url=playlist_url,
+            output_root=output_root,
+            start_episode=start_episode,
+            end_episode=end_episode,
+            parallel=parallel_downloads,
+            audio_format=cfg.audio_format,
+            audio_bitrate=cfg.audio_bitrate,
+            whisper_model=cfg.whisper_model,
+        )
+    except RuntimeError as e:
+        result["errors"].append(str(e))
+        result["phases"].append({
+            "phase": "download",
+            "elapsed_sec": round(time.time() - t1, 1),
+            "episodes_downloaded": 0,
+            "error": str(e),
+        })
+        logger.error("Download phase aborted: %s", e)
+        return result
     result["phases"].append({
         "phase": "download",
         "elapsed_sec": round(time.time() - t1, 1),
@@ -850,7 +875,10 @@ def build_master_cut(
     # only. This guarantees theme extraction and segment resolution only
     # see content from the target window — no leakage from older episodes.
     if not state_file:
-        state_file = os.path.join(output_root, "universe_state.json")
+        state_file = os.path.join(
+            output_root,
+            f"universe_state_{start_episode:03d}_{end_episode:03d}.json",
+        )
     if os.path.exists(state_file):
         os.remove(state_file)
         logger.info("Removed stale cumulative universe state (ephemeral per range)")
@@ -1089,11 +1117,12 @@ def build_master_cut(
         logger.info("  Errors: %d", len(result["errors"]))
     logger.info("=" * 60)
 
-    # Write master_cut_stats.json alongside the audio output
+    # Write range-scoped master_cut_stats JSON alongside the audio output,
+    # with the full selection trace so each batch's kept segments are recorded.
     if result["output_path"]:
         stats_path = os.path.join(
             os.path.dirname(os.path.abspath(result["output_path"])),
-            "master_cut_stats.json",
+            f"master_cut_stats_{start_episode:03d}_{end_episode:03d}.json",
         )
         try:
             with open(stats_path, "w") as f:
@@ -1105,6 +1134,18 @@ def build_master_cut(
                     "warnings": warnings,
                     "errors": result.get("errors", []),
                     "phases": result.get("phases", []),
+                    "selections": [
+                        {
+                            "theme_title": s.theme_title,
+                            "theme_id": s.theme_id,
+                            "episode": s.segment.episode_number,
+                            "start": round(s.segment.start, 1),
+                            "end": round(s.segment.end, 1),
+                            "duration": round(s.segment.duration, 1),
+                            "beep_before": s.beep_before,
+                        }
+                        for s in plan.selections
+                    ],
                 }, f, indent=2)
             logger.info("Stats written: %s", stats_path)
         except OSError as e:
