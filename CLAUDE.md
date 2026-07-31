@@ -44,7 +44,9 @@ Condensing "Lord of Spirits" podcast episodes using DeepSeek LLM.
   ranges.
 - **Master cut target: 90min at 1.25x (6750s at 1x).** Default in both
   `config.py` and `build-master-cut` CLI. Pass `--target-duration` to
-  override. 6750s = 90 × 60 × 1.25.
+  override. 6750s = 90 × 60 × 1.25. **NOTE (2026-07-31):** since the master
+  cut is now an LLM-volume archive, this target is informational only — the
+  LLM decides volume and the actual output is typically 5-6h.
 - **Playlist pagination via web client.** `list_playlist()` passes
   `--extractor-args youtube:player_client=web` to yt-dlp to force web
   client pagination. Without this, YouTube tab API caps at 100 entries
@@ -103,7 +105,7 @@ Two sub-modes:
 python3 -m podcastcondensor process-playlist <PLAYLIST_URL> --start N --end N
 ```
 
-### `build-master-cut` — cross-episode thematic anthology
+### `build-master-cut` — cross-episode thematic archive
 
 6 phases: download → build/ensure universe state → extract themes →
 resolve segments → select segments → assemble audio.
@@ -112,13 +114,22 @@ resolve segments → select segments → assemble audio.
 Each theme's candidate segments are shown with transcript context, the
 LLM decides keep/drop and refines boundaries. ~1 DeepSeek call per theme.
 
-**Volume is LLM-owned, not Python-truncated.** Each theme's proportional
-share of the target (`target × importance / Σimportance`) is stated in the
-selection prompt as a time budget, and the LLM self-regulates volume. All
-kept segments across ALL themes are concatenated — there is NO Python
-truncation loop. (A previous iteration capped the cut in Python at the
-global target, which starved themes 4-11 to zero in the ep41-50 batch; the
-greedy cap was removed 2026-07-31.)
+**Volume is fully LLM-owned — the master cut is an archive, not a forced
+digest.** The LLM keeps the segments that best explain each theme, and
+everything it keeps across ALL themes is concatenated. There is NO time
+budget in the prompt and NO Python truncation loop. The result is the LLM's
+full editorial judgment: a ~6h archive from a ~30h batch (~20-30% of source),
+covering every theme that survives extraction. The `--target-duration` flag
+is informational only (used by the knapsack fallback).
+
+**Why (history, 2026-07-31):** three budget approaches failed in the ep41-50
+batch. A greedy global Python cap hit the 6750s target but starved themes
+4-11 to zero (3/13 themes in the cut). A per-theme time budget *in the
+prompt* was ignored by DeepSeek — it kept 2-7x every stated budget (6h total).
+A hardened "HARD BUDGET / non-negotiable" prompt did the same. Conclusion:
+DeepSeek does not honor volume constraints, and a 90-min cut would discard
+3/4 of the content the LLM judged worth keeping. The product is therefore
+the full LLM-volume archive.
 
 | Produces | Tracked? |
 |---|---|
@@ -246,7 +257,7 @@ have their `global_state.json` on disk.
 | Batch | Status | Notes |
 |-------|--------|-------|
 | ep31-40 | ✅ Done (2nd pass) | 10 themes / 35 segments, 6704.9s vs 6750 target, 3 warnings, 0 errors |
-| ep41-50 | 🔄 Recut in progress | First run: 6730s/11 themes/46 segs/0 warn/0 err but concentrated (3/11 themes, 43% ep42) → greedy Python cap removed, budget moved into prompt → recutting |
+| ep41-50 | 🔄 Recutting (LLM-volume archive) | First pass (global cap): 6730s/11 themes/46 segs but concentrated (3/11 themes). Pure-LLM passes kept 13-15 themes / 129 segments / ~6h (20.5% of 29.5h source) — confirming archive decision. Recutting to completion |
 
 ## Universe state coverage (before cleanup)
 

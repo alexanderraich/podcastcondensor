@@ -5,7 +5,7 @@ Phases (within the master-cut pipeline):
   2. Build / ensure universe state with word_ranges → timestamp segments
   3. Extract themes from universe state (delegated to theme_extraction)
   4. Resolve segments from universe state (Phase 2 word_ranges → timestamps)
-  5. Select segments within time budget (knapsack, this module)
+  5. Select segments via per-theme LLM selection (volume is LLM-owned)
   6. Assemble master cut audio with dual beeps (this module)
 
 The top-level ``build_master_cut()`` orchestrates all phases.
@@ -353,12 +353,12 @@ def select_segments_for_master_cut(
     The LLM decides keep/drop and refines boundaries (widening to capture
     complete thoughts). Kept segments are merged across adjacent gaps.
 
-    Each theme's proportional share of the target duration is stated in the
-    prompt (time_budget) so the LLM self-regulates volume. All kept segments
-    across all themes are concatenated — there is no Python truncation loop.
+    Volume is fully LLM-owned: all kept segments across all themes are
+    concatenated, with no Python budget enforcement and no per-theme time
+    budget in the prompt. The result is the LLM's full editorial judgment —
+    a multi-hour archive, not a forced 90-min digest.
 
-    Falls back to knapsack for any theme where the LLM call fails or
-    returns no valid decisions.
+    Falls back to knapsack only if the LLM produces no selections at all.
 
     Returns a MasterCutPlan ready for audio assembly.
     """
@@ -381,36 +381,30 @@ def select_segments_for_master_cut(
 
     selections: List[Selection] = []
 
-    # Per-theme proportional time budget, enforced by the LLM (in the prompt)
-    # rather than by a Python truncation loop. Each theme's share of the master
-    # cut is target × importance/total_importance; the prompt states it and the
-    # LLM decides volume. Every theme's kept segments are concatenated — no
-    # greedy global cap that starves later themes.
-    active_tws = [t for t in sorted_tws if t.segments]
-    total_importance = sum(t.theme.importance for t in active_tws) or len(active_tws)
-    budgets = {
-        t.theme.id: target_duration * t.theme.importance / total_importance
-        for t in active_tws
-    }
-
+    # Volume is LLM-owned. No Python budget enforcement and no per-theme time
+    # budget in the prompt: the LLM keeps the segments that best explain each
+    # theme, and everything it keeps across all themes is concatenated. The
+    # master cut is the LLM's full editorial judgment (a ~6h archive from a
+    # ~30h batch), NOT a forced 90-min digest. (Prior attempts to cap volume —
+    # greedy global cap, prompt budgets — either starved whole themes to zero
+    # or were ignored by the model; see CLAUDE.md.)
     for tws in sorted_tws:
         if not tws.segments:
             continue
 
-        budget = budgets.get(tws.theme.id, 0.0)
         logger.info(
-            "LLM selection for theme '%s' (%d candidates, budget %.0fs)...",
-            tws.theme.id, len(tws.segments), budget,
+            "LLM selection for theme '%s' (%d candidates)...",
+            tws.theme.id, len(tws.segments),
         )
 
-        # Build prompt with transcript context + proportional time budget
+        # Build prompt with transcript context. No time_budget — the model
+        # decides volume.
         prompt = build_selection_prompt(
             theme=tws.theme,
             tws=tws,
             output_root=output_root,
             manifests=manifests,
             context_buffer=30.0,
-            time_budget=budget,
         )
 
         # Call LLM
@@ -493,8 +487,8 @@ def select_segments_for_master_cut(
 
     logger.info(
         "Master cut plan: %d segments from %d themes, "
-        "total %.0fs (target %.0fs)",
-        len(selections), included, total, target_duration,
+        "total %.0fs (%.1fh) — volume is LLM-owned, no target cap",
+        len(selections), included, total, total / 3600,
     )
 
     return MasterCutPlan(
@@ -1014,8 +1008,7 @@ def build_master_cut(
 
     # ── Phase 5: Select segments via per-theme LLM ────────────────────────
     logger.info("=" * 60)
-    logger.info("PHASE 5: Per-theme LLM segment selection (target=%.0fs = %.1fh)",
-                target_duration, target_duration / 3600)
+    logger.info("PHASE 5: Per-theme LLM segment selection (volume is LLM-owned)")
     logger.info("=" * 60)
     t5 = time.time()
 
