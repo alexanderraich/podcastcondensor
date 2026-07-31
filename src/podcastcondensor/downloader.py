@@ -238,7 +238,12 @@ def list_playlist(playlist_url: str, max_entries: int = 999) -> list:
     return entries
 
 
-_EP_NUM_RE = re.compile(r"\[Ep\.?\s*(\d+)\]", re.IGNORECASE)
+# Matches "[Ep. 121]" / "[Ep 121]" AND ordinal forms like "[100th Episode!]"
+# (ep 100's title is "Mutatis Mutandis [100th Episode!]" — no "[Ep. 100]").
+_EP_NUM_RE = re.compile(
+    r"\[(?:Ep\.?\s*)?(\d+)(?:st|nd|rd|th)?\s*(?:[Ee]pisode)?[!]?\]",
+    re.IGNORECASE,
+)
 
 
 def extract_episode_number(title: str) -> Optional[int]:
