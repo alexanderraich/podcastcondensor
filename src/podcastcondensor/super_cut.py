@@ -716,6 +716,11 @@ def run_super_cut_brackets(
     Defaults to 40-80 / 81-120 / rest. Requires the discovery + candidates
     caches on disk (built by one ``build-super-cut`` run or ``--dry-run``).
     """
+    if not output_root:
+        output_root = os.path.join(
+            os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+            "output",
+        )
     discovery_path = _discovery_cache_path(output_root, start_episode, end_episode)
     candidates_path = _candidates_cache_path(output_root, start_episode, end_episode)
     cache = _load_discovery_cache(discovery_path)
