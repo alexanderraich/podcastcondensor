@@ -536,6 +536,41 @@ def _load_discovery_cache(
 # ---------------------------------------------------------------------------
 
 
+def _retry_empty_chunks(
+    chunk_episodes: Dict[int, List[int]],
+    all_records: List[ChunkThemeRecord],
+    output_root: str,
+    client,
+    cfg: Config,
+) -> int:
+    """Re-attempt extraction ONLY for chunks that produced 0 themes.
+
+    `extract_themes` returns [] when its DeepSeek JSON fails to parse, so a
+    chunk can silently contribute nothing (eps missing from coalesce). This
+    retries just those chunks — a targeted recovery, NOT a full re-run.
+
+    Mutates ``all_records`` in place (appends recovered chunk themes).
+    Returns the number of chunks retried.
+    """
+    counts: Dict[int, int] = defaultdict(int)
+    for r in all_records:
+        counts[r.chunk_index] += 1
+    empty = sorted(ci for ci in chunk_episodes if counts[ci] == 0)
+    for ci in empty:
+        ep_list = chunk_episodes[ci]
+        logger.info(
+            "Retrying empty chunk %d (eps %d-%d)...",
+            ci, ep_list[0], ep_list[-1],
+        )
+        records = extract_chunk_themes(ep_list, output_root, client, cfg, ci)
+        if records:
+            all_records.extend(records)
+            logger.info("  → chunk %d retry: %d themes", ci, len(records))
+        else:
+            logger.warning("  → chunk %d retry still empty (will be skipped)", ci)
+    return len(empty)
+
+
 def _candidates_cache_path(output_root: str, start_ep: int, end_ep: int) -> str:
     return os.path.join(
         output_root, f"super_cut_candidates_{start_ep:03d}_{end_ep:03d}.json"
@@ -1035,6 +1070,7 @@ def build_super_cut(
     chunk_size: int = 12,
     max_themes: int = 25,
     theme_ids: Optional[List[str]] = None,
+    retry_empty_chunks: bool = False,
     output_dir: str = "",
     dry_run: bool = False,
 ) -> dict:
@@ -1120,6 +1156,27 @@ def build_super_cut(
             "(0 LLM calls)",
             len(chunk_episodes), len(all_records), len(global_themes),
         )
+
+        # Targeted recovery: re-attempt ONLY chunks that produced 0 themes,
+        # then re-coalesce. Avoids a full discovery re-run.
+        if retry_empty_chunks:
+            retried = _retry_empty_chunks(
+                chunk_episodes, all_records, output_root, ds_client, cfg,
+            )
+            if retried:
+                global_themes = coalesce_themes(
+                    all_records, chunk_episodes, ds_client, cfg,
+                    max_themes=max_themes,
+                )
+                _save_discovery_cache(
+                    discovery_path, chunk_episodes, all_records, global_themes,
+                )
+                logger.info(
+                    "Re-coalesced after retrying %d empty chunk(s): %d global themes",
+                    retried, len(global_themes),
+                )
+            else:
+                logger.info("No empty chunks to retry")
     else:
         t2 = time.time()
         chunks = build_chunks(output_root, start_episode, end_episode, chunk_size)

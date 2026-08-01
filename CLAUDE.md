@@ -146,11 +146,22 @@ python3 -m podcastcondensor build-master-cut <PLAYLIST_URL> \
   --start N --end N --target-duration 6750 --output output/master_cut.mp3
 ```
 
+### `super-cut-brackets` — top theme per episode bracket (read-only, 0 LLM calls)
+
+Reads the persisted super-cut discovery + candidates caches (seeded by one
+`build-super-cut --dry-run`) and prints the top themes whose candidates fall
+inside each episode bracket. "rest" = all episodes not covered by a specified
+bracket. Requires the caches on disk; errors clearly if missing.
+
+```bash
+python3 -m podcastcondensor super-cut-brackets --bracket 40-80 --bracket 81-120 --top 8
+```
+
 ## Source modules
 
 | File | Purpose |
 |------|---------|
-| `src/podcastcondensor/cli.py` | CLI entry point, all 4 subcommands |
+| `src/podcastcondensor/cli.py` | CLI entry point, all 5 subcommands |
 | `src/podcastcondensor/super_cut.py` | `build-super-cut` orchestration (offline: merge → chunk → coalesce → resolve → select → assemble) |
 | `src/podcastcondensor/pipeline.py` | `process-playlist` single-ep orchestration |
 | `src/podcastcondensor/playlist_pipeline.py` | `build-universe` + re-exports `build_master_cut` |
@@ -361,7 +372,7 @@ pilot cut ran (8 segments / 7 eps / 26 min) then was deleted on request.
 superseded by `build-super-cut --theme <id>` for single-theme cuts; its
 per-theme selection engine survives as the shared `minimal_theme_cut.py`.
 
-### Intermediate artefacts on disk (plan, 2026-08-01 — TO BE IMPLEMENTED)
+### Intermediate artefacts on disk (2026-08-01 — DONE)
 
 **Principle: the only expensive work is theme discovery (~12 DeepSeek calls),
 and it runs ONCE and is persisted. Everything downstream is deterministic from
@@ -396,10 +407,26 @@ candidates cache (`_save/load`), selections cache (`_merge/load` +
 candidates/report/brackets are complete regardless of `--theme`; the full
 themes report is always written from the full theme list (a `--theme` run no
 longer overwrites it); selection skips already-cached themes (0 calls → pure
-audio re-cut); `super-cut-brackets` subcommand (read-only). Unit-tested (30
-tests). NOT yet seeded: caches need ONE `build-super-cut --dry-run` run
-(~12 discovery calls) to populate `super_cut_discovery_001_144.json` +
-`super_cut_candidates_001_144.json`.
+audio re-cut); `super-cut-brackets` subcommand (read-only); targeted chunk
+retry via `--retry-empty-chunks` (re-attempts ONLY chunks that produced 0
+themes, then re-coalesces — no full re-run needed). Unit-tested (30 tests).
+Caches SEEDED (2026-08-01) — `super_cut_discovery_001_144.json` +
+`super_cut_candidates_001_144.json` on disk.
+
+**Resilience gap + recovery (2026-08-01):** `extract_themes` returns `[]` when
+its DeepSeek JSON fails to parse (truncated/over-long responses), so a chunk
+silently contributes 0 themes. The first discovery run hit this on 2 chunks
+(eps 13-25, 62-76 → 141 chunk themes). Recovered by a full discovery re-run
+(cache deleted — the earlier mistake; later superseded by `--retry-empty-chunks`
+which needs no cache deletion) → **all 11 chunks succeeded, 281 chunk themes →
+25 global themes → 1180 candidates** (Scripture and Hermeneutics now spans 43
+eps incl. 72-73, 76, 114-115).
+
+**Git-tracking decision (2026-08-01):** per-episode `global_state.json` AND the
+universe/super-cut cache JSONs (`universe_state_*`, `super_cut_*`) are now
+version-controlled (`.gitignore` updated to un-ignore them). Rationale: they
+are LLM-generated and expensive to regenerate; a prompt change shows up as a
+git diff. Audio (`.mp3`) and `_transcribe_diag.log` remain gitignored.
 
 ## Universe state coverage (2026-08-01 — current)
 
