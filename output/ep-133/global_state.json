@@ -1,0 +1,461 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen DeYoung explore the history and development of Latin theology, contrasting it with Orthodox theology. They argue that Latin theology began with translations of Greek concepts into Latin, which led to a gradual slippage in meaning over centuries. This slippage, combined with the influence of Platonic metaphysics and the loss of Greek fluency in the West, resulted in a theology that became increasingly transactional and mechanistic, particularly in its understanding of salvation, merit, and grace. The episode traces this trajectory from the early Latin fathers like Tertullian and Augustine, through the medieval scholastics like Peter Lombard and Thomas Aquinas, to the Protestant Reformation and its aftermath, including the rise of evangelicalism and liberal Protestantism. The hosts contend that the modern crises in Western Christianity are the logical outcomes of this historical development, and they present Orthodox Christianity as a stable alternative that preserves the original Christian faith.",
+  "entities": [
+    {
+      "id": "st-augustine",
+      "title": "St. Augustine",
+      "category": "person",
+      "summary": "Bishop of Hippo and a Church Father, whose writings shaped Latin theology, though later interpretations often diverged from his original intent.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 3143.679,
+          "end": 3366.88
+        },
+        {
+          "episode": 133,
+          "start": 3847.32,
+          "end": 4407.52
+        }
+      ]
+    },
+    {
+      "id": "tertullian",
+      "title": "Tertullian",
+      "category": "person",
+      "summary": "Early Latin theologian who coined the term 'Trinitas' and later became a Montanist.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 3037.0,
+          "end": 3134.4
+        }
+      ]
+    },
+    {
+      "id": "peter-lombard",
+      "title": "Peter Lombard",
+      "category": "person",
+      "summary": "12th-century theologian whose 'Sentences' became a standard theological textbook, introducing the distinction between sufficiency and efficiency of Christ's work.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 7859.8,
+          "end": 8046.619
+        }
+      ]
+    },
+    {
+      "id": "thomas-aquinas",
+      "title": "Thomas Aquinas",
+      "category": "person",
+      "summary": "13th-century Dominican theologian whose synthesis of Aristotelian philosophy and Christian theology became normative in Roman Catholicism.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 9021.12,
+          "end": 9112.299
+        }
+      ]
+    },
+    {
+      "id": "martin-luther",
+      "title": "Martin Luther",
+      "category": "person",
+      "summary": "16th-century reformer whose doctrine of justification by faith alone and imputed righteousness shaped Protestantism.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 9641.76,
+          "end": 9732.79
+        }
+      ]
+    },
+    {
+      "id": "john-calvin",
+      "title": "John Calvin",
+      "category": "person",
+      "summary": "16th-century reformer known for his doctrines of predestination and penal substitutionary atonement.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 10147.36,
+          "end": 10237.79
+        }
+      ]
+    },
+    {
+      "id": "charles-finney",
+      "title": "Charles Finney",
+      "category": "person",
+      "summary": "19th-century revivalist associated with the Second Great Awakening, who emphasized emotional conversion techniques.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 10458.54,
+          "end": 10551.36
+        }
+      ]
+    },
+    {
+      "id": "karl-rahner",
+      "title": "Karl Rahner",
+      "category": "person",
+      "summary": "20th-century Jesuit theologian whose transcendental Thomism influenced Vatican II, often seen as a Hegelianizing of Catholic theology.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 11808.159,
+          "end": 11901.719
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "latin-theology",
+      "title": "Latin Theology",
+      "summary": "The theological tradition that developed in the Latin-speaking West, characterized by the translation of Greek concepts into Latin and subsequent shifts in meaning.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 279.0,
+          "end": 837.36
+        },
+        {
+          "episode": 133,
+          "start": 6854.6,
+          "end": 6950.359
+        }
+      ]
+    },
+    {
+      "id": "translation-slippage",
+      "title": "Translation Slippage",
+      "summary": "The phenomenon where the meaning of theological terms shifts over time as they are translated from one language to another, leading to a loss of original concepts.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 1230.0,
+          "end": 1407.279
+        },
+        {
+          "episode": 133,
+          "start": 1590.0,
+          "end": 1681.0
+        }
+      ]
+    },
+    {
+      "id": "essence-energies-distinction",
+      "title": "Essence-Energies Distinction",
+      "summary": "The Orthodox theological distinction between God's essence (ousia) and His energies (energeia), which are His active presence in the world.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 2340.0,
+          "end": 2567.519
+        }
+      ]
+    },
+    {
+      "id": "merit",
+      "title": "Merit",
+      "summary": "In Latin theology, the concept of merit as a quantifiable spiritual credit earned through good works or Christ's work, which became central to soteriology.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 7620.0,
+          "end": 7713.0
+        },
+        {
+          "episode": 133,
+          "start": 8217.6,
+          "end": 8309.799
+        }
+      ]
+    },
+    {
+      "id": "penal-substitutionary-atonement",
+      "title": "Penal Substitutionary Atonement",
+      "summary": "A theory of atonement, developed during the Reformation, that Christ took the penal punishment for sin in place of humanity.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 10118.319,
+          "end": 10208.78
+        }
+      ]
+    },
+    {
+      "id": "nominalism",
+      "title": "Nominalism",
+      "summary": "A philosophical view that universals are mere names without corresponding reality, which influenced later Protestant theology.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 9371.559,
+          "end": 9465.379
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "west-is-false-construct",
+      "text": "The concept of 'the West' is a false construct, as it arbitrarily includes and excludes different cultures and periods, making it unhelpful for theological analysis.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 412.24,
+          "end": 684.0
+        }
+      ]
+    },
+    {
+      "id": "latin-theology-slippage",
+      "text": "Latin theology experienced a gradual slippage in meaning as Greek concepts were translated into Latin and later generations lost access to the original Greek, leading to distorted theology.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 1333.0,
+          "end": 1423.759
+        }
+      ]
+    },
+    {
+      "id": "augustine-misread",
+      "text": "St. Augustine's teachings on original sin and grace were later misread by both Roman Catholics and Protestants, who projected their own concepts onto his writings.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 3847.32,
+          "end": 4407.52
+        }
+      ]
+    },
+    {
+      "id": "protestantism-continuity",
+      "text": "Protestantism did not break from Latin theology but continued its trajectory, particularly in its transactional view of salvation and forensic understanding of guilt.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 9432.79,
+          "end": 9525.0
+        }
+      ]
+    },
+    {
+      "id": "evangelicalism-political",
+      "text": "Modern evangelicalism has become more of a political movement than a religious one, held together by political allegiances rather than shared theology.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 11566.26,
+          "end": 11663.68
+        }
+      ]
+    },
+    {
+      "id": "orthodox-preservation",
+      "text": "The Orthodox Church has preserved the original Christian faith without the radical changes seen in Latin theology, making it a stable alternative.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 12150.0,
+          "end": 12240.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "john-1-1",
+      "reference": "John 1:1",
+      "summary": "Discussed as an example of how the Greek term 'Logos' is translated as 'Word', and how later English usage can distort the original meaning.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 1506.24,
+          "end": 1596.72
+        }
+      ]
+    },
+    {
+      "id": "genesis-3-serpent",
+      "reference": "Genesis 3:1",
+      "summary": "Mentioned in a caller's question about the Greek word for 'serpent' (ophis) and a textual variant that reads 'drakon'.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 5232.399,
+          "end": 5323.119
+        }
+      ]
+    },
+    {
+      "id": "revelation-5-11-13",
+      "reference": "Revelation 5:11-13",
+      "summary": "Quoted at the end of the episode, describing the worship of the Lamb by angels and elders.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 13256.799,
+          "end": 13289.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "ousia",
+      "term": "Ousia",
+      "definition": "Greek term for essence or substance, used in Trinitarian theology to denote the one essence of God.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 2220.0,
+          "end": 2315.579
+        }
+      ]
+    },
+    {
+      "id": "hypostasis",
+      "term": "Hypostasis",
+      "definition": "Greek term for person or subsistence, used in Trinitarian theology to denote the three persons of the Godhead.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 2160.0,
+          "end": 2250.96
+        }
+      ]
+    },
+    {
+      "id": "energeia",
+      "term": "Energeia",
+      "definition": "Greek term for energy or activity, used in Orthodox theology to describe God's active presence in the world.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 2340.0,
+          "end": 2567.519
+        }
+      ]
+    },
+    {
+      "id": "dynamis",
+      "term": "Dynamis",
+      "definition": "Greek term for power or potentiality, contrasted with energeia in Aristotelian metaphysics.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 2340.0,
+          "end": 2567.519
+        }
+      ]
+    },
+    {
+      "id": "actus",
+      "term": "Actus",
+      "definition": "Latin term for act or actuality, used in Latin theology to translate energeia, but with a different connotation.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 2572.639,
+          "end": 2669.8
+        }
+      ]
+    },
+    {
+      "id": "substantia",
+      "term": "Substantia",
+      "definition": "Latin term for substance, used in Latin Trinitarian theology to denote the one substance of God.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 2138.79,
+          "end": 2262.719
+        }
+      ]
+    },
+    {
+      "id": "persona",
+      "term": "Persona",
+      "definition": "Latin term for person, used in Latin Trinitarian theology to denote the three persons of the Godhead.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 2235.39,
+          "end": 2326.46
+        }
+      ]
+    },
+    {
+      "id": "latria",
+      "term": "Latria",
+      "definition": "Greek term for worship, specifically the service due to God alone.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 1854.0,
+          "end": 1945.16
+        }
+      ]
+    },
+    {
+      "id": "dulia",
+      "term": "Dulia",
+      "definition": "Greek term for veneration or service, often used for the honor given to saints.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 4964.2,
+          "end": 5056.399
+        }
+      ]
+    },
+    {
+      "id": "proskinesis",
+      "term": "Proskinesis",
+      "definition": "Greek term for bowing or veneration, used in Orthodox theology for the honor given to icons and saints.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 1854.0,
+          "end": 1945.16
+        }
+      ]
+    },
+    {
+      "id": "sola-fide",
+      "term": "Sola Fide",
+      "definition": "Latin phrase meaning 'faith alone', a key principle of the Protestant Reformation.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 10248.799,
+          "end": 10343.0
+        }
+      ]
+    },
+    {
+      "id": "imputation",
+      "term": "Imputation",
+      "definition": "The Protestant doctrine that Christ's righteousness is credited to the believer and the believer's sin is credited to Christ.",
+      "segments": [
+        {
+          "episode": 133,
+          "start": 9708.2,
+          "end": 9802.879
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,509 @@
+{
+  "summary": "In this episode, the hosts continue their series on the Torah, focusing on three major themes: clean and unclean, worship, and the Torah's death penalty. They argue that the Torah's laws on clean and unclean are not arbitrary but teach discernment between moral and ceremonial purity, which remains relevant for Christians. They discuss how worship in the Torah centered on the tabernacle and temple, with incense offered morning and evening, and how this pattern continues in Orthodox Christian worship. The death penalty in the Torah is interpreted not as a literal call for execution but as a spiritual threat of being cut off from the community, which is fulfilled in excommunication. The episode includes listener calls on topics like Jewish Christianity, ritual sacrifice, and fasting.",
+  "entities": [
+    {
+      "id": "azazel",
+      "title": "Azazel",
+      "category": "theological",
+      "summary": "A demonic figure associated with the wilderness and the scapegoat ritual on the Day of Atonement. In later Jewish literature, he is bound and punished, prefiguring Christ's defeat of the devil.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 2554.86,
+          "end": 2646.44
+        },
+        {
+          "episode": 88,
+          "start": 2660.84,
+          "end": 2752.639
+        },
+        {
+          "episode": 88,
+          "start": 2915.0,
+          "end": 3042.79
+        },
+        {
+          "episode": 88,
+          "start": 3032.0,
+          "end": 3127.92
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "theological",
+      "summary": "The Messiah who fulfills the Torah, particularly as both the sacrificial goat and the scapegoat on the Day of Atonement, purifying the whole world and defeating the devil.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 3306.88,
+          "end": 3398.559
+        },
+        {
+          "episode": 88,
+          "start": 3372.39,
+          "end": 3468.559
+        },
+        {
+          "episode": 88,
+          "start": 7431.76,
+          "end": 7525.72
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "Apostle who explains the application of Torah principles to the Church, including clean/unclean, the Eucharist as sacrifice, and excommunication as a means of repentance.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 3547.639,
+          "end": 3641.719
+        },
+        {
+          "episode": 88,
+          "start": 3708.0,
+          "end": 3878.79
+        },
+        {
+          "episode": 88,
+          "start": 4218.479,
+          "end": 4310.359
+        },
+        {
+          "episode": 88,
+          "start": 10187.44,
+          "end": 10305.319
+        }
+      ]
+    },
+    {
+      "id": "st-james",
+      "title": "St. James",
+      "category": "person",
+      "summary": "Brother of Jesus and first bishop of Jerusalem, who led the early Jewish Christian community and whose martyrdom was seen by some as a cause of the destruction of Jerusalem.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 4860.0,
+          "end": 4951.64
+        },
+        {
+          "episode": 88,
+          "start": 5168.0,
+          "end": 5260.0
+        },
+        {
+          "episode": 88,
+          "start": 5226.0,
+          "end": 5316.479
+        }
+      ]
+    },
+    {
+      "id": "socrates",
+      "title": "Socrates",
+      "category": "historical",
+      "summary": "Greek philosopher who chose death by hemlock over exile, illustrating the ancient view that exile from one's community was equivalent to death.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 9458.6,
+          "end": 9549.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "clean-and-unclean",
+      "title": "Clean and Unclean",
+      "summary": "The Torah's distinction between clean and unclean is not arbitrary but teaches discernment between moral and ceremonial purity. It is a practical way to cultivate a mindset of distinguishing between what is holy and what is not, which remains relevant for Christians.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 240.0,
+          "end": 450.4
+        },
+        {
+          "episode": 88,
+          "start": 510.0,
+          "end": 697.44
+        },
+        {
+          "episode": 88,
+          "start": 818.39,
+          "end": 912.48
+        },
+        {
+          "episode": 88,
+          "start": 990.0,
+          "end": 1134.96
+        },
+        {
+          "episode": 88,
+          "start": 1255.79,
+          "end": 1349.839
+        },
+        {
+          "episode": 88,
+          "start": 4497.0,
+          "end": 4588.479
+        }
+      ]
+    },
+    {
+      "id": "death-by-holiness",
+      "title": "Death by Holiness",
+      "summary": "The concept that approaching God's holiness without proper purification can result in death. This is a key reason for the Torah's purity laws and the sacrificial system, and it is resolved in Christ's atonement.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 1290.0,
+          "end": 1381.0
+        },
+        {
+          "episode": 88,
+          "start": 1884.599,
+          "end": 1926.24
+        },
+        {
+          "episode": 88,
+          "start": 2503.39,
+          "end": 2596.8
+        },
+        {
+          "episode": 88,
+          "start": 6137.0,
+          "end": 6268.39
+        }
+      ]
+    },
+    {
+      "id": "day-of-atonement",
+      "title": "Day of Atonement",
+      "summary": "The annual ritual described in Leviticus 16 that purifies the sanctuary from the taint of sin. It involves two goats: one sacrificed and one sent into the wilderness to Azazel, symbolically removing sin. This ritual points to Christ's atonement for the whole world.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 2300.44,
+          "end": 2392.719
+        },
+        {
+          "episode": 88,
+          "start": 2482.599,
+          "end": 2575.739
+        },
+        {
+          "episode": 88,
+          "start": 2537.44,
+          "end": 2633.28
+        },
+        {
+          "episode": 88,
+          "start": 2806.0,
+          "end": 2896.84
+        },
+        {
+          "episode": 88,
+          "start": 2891.79,
+          "end": 2986.719
+        }
+      ]
+    },
+    {
+      "id": "worship-in-the-torah",
+      "title": "Worship in the Torah",
+      "summary": "Worship in the Torah is centered on dedicated places (tabernacle/temple) and specific practices, especially the offering of incense with prayers at morning and evening. This pattern continues in Orthodox Christian worship, particularly in Matins and Vespers.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 6546.96,
+          "end": 6638.0
+        },
+        {
+          "episode": 88,
+          "start": 6780.0,
+          "end": 6950.319
+        },
+        {
+          "episode": 88,
+          "start": 6941.199,
+          "end": 7049.68
+        },
+        {
+          "episode": 88,
+          "start": 7182.0,
+          "end": 7280.239
+        }
+      ]
+    },
+    {
+      "id": "eucharist-as-sacrifice",
+      "title": "Eucharist as Sacrifice",
+      "summary": "The Eucharist is understood as a sacrificial offering, fulfilling and summing up the Old Testament sacrifices. St. Paul in 1 Corinthians 10 explicitly compares the Eucharist to both Jewish and pagan sacrifices, emphasizing that it is a participation in Christ's sacrifice.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 7350.0,
+          "end": 7452.359
+        },
+        {
+          "episode": 88,
+          "start": 7594.479,
+          "end": 7769.979
+        },
+        {
+          "episode": 88,
+          "start": 7769.479,
+          "end": 7859.76
+        }
+      ]
+    },
+    {
+      "id": "excommunication-as-death",
+      "title": "Excommunication as Death",
+      "summary": "The Torah's death penalty is interpreted as being 'cut off from among the people,' which is a spiritual death. In the New Testament, this is fulfilled in excommunication, which is meant to promote repentance and restore the sinner to the community.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 9101.76,
+          "end": 9192.799
+        },
+        {
+          "episode": 88,
+          "start": 10050.0,
+          "end": 10185.239
+        },
+        {
+          "episode": 88,
+          "start": 10165.0,
+          "end": 10305.319
+        },
+        {
+          "episode": 88,
+          "start": 10403.879,
+          "end": 10498.719
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "clean-unclean-teaches-discernment",
+      "text": "The Torah's clean/unclean distinctions are not arbitrary but teach moral and spiritual discernment, which remains relevant for Christians.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 510.0,
+          "end": 697.44
+        },
+        {
+          "episode": 88,
+          "start": 4497.0,
+          "end": 4588.479
+        }
+      ]
+    },
+    {
+      "id": "christ-atonement-for-world",
+      "text": "Christ's atonement purifies the whole world, not just individual sins, fulfilling the Day of Atonement and making the entire creation holy.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 3306.88,
+          "end": 3437.4
+        }
+      ]
+    },
+    {
+      "id": "eucharist-is-sacrifice",
+      "text": "The Eucharist is a sacrificial offering, as St. Paul teaches in 1 Corinthians 10, and it fulfills the Old Testament sacrificial system.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 7594.479,
+          "end": 7769.979
+        }
+      ]
+    },
+    {
+      "id": "excommunication-for-repentance",
+      "text": "Excommunication in the Church is the New Testament equivalent of the Torah's death penalty, intended to promote repentance and restore the sinner.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 10050.0,
+          "end": 10305.319
+        }
+      ]
+    },
+    {
+      "id": "incense-worship-continues",
+      "text": "The offering of incense with prayers at morning and evening is a Torah commandment that continues in Orthodox Christian worship, as it is never abrogated in the New Testament.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 6941.199,
+          "end": 7049.68
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "leviticus-20-25",
+      "reference": "Leviticus 20:25",
+      "summary": "Used to show that the clean/unclean laws are meant to teach discernment between clean and unclean, both literally and morally.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 510.0,
+          "end": 600.0
+        }
+      ]
+    },
+    {
+      "id": "numbers-19-13-20",
+      "reference": "Numbers 19:13,20",
+      "summary": "Used to illustrate that failing to cleanse from ceremonial uncleanness defiles the sanctuary and results in being cut off from Israel.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 1639.279,
+          "end": 1729.44
+        }
+      ]
+    },
+    {
+      "id": "leviticus-16",
+      "reference": "Leviticus 16",
+      "summary": "The Day of Atonement ritual, including the scapegoat sent to Azazel, is discussed as a type of Christ's atonement.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 2333.8,
+          "end": 2549.88
+        }
+      ]
+    },
+    {
+      "id": "1-john-2-2",
+      "reference": "1 John 2:2",
+      "summary": "Used to show that Christ's atonement is for the whole world, not just believers, aligning with the Day of Atonement's purification of the sanctuary.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 3351.0,
+          "end": 3443.0
+        }
+      ]
+    },
+    {
+      "id": "romans-14-14",
+      "reference": "Romans 14:14",
+      "summary": "Used to explain that nothing is inherently unclean, but actions can make things unclean, shifting the focus from things to actions.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 3547.639,
+          "end": 3641.719
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-7-14",
+      "reference": "1 Corinthians 7:14",
+      "summary": "Used to show that a believing spouse sanctifies the family, analogous to the way circumcision included the household in Israel.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 3708.0,
+          "end": 3878.79
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-10-14-22",
+      "reference": "1 Corinthians 10:14-22",
+      "summary": "Used to demonstrate that the Eucharist is a sacrifice, parallel to Jewish and pagan sacrifices, and that participating in it is communion with Christ.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 7631.319,
+          "end": 7769.979
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-5-5",
+      "reference": "1 Corinthians 5:5",
+      "summary": "Used to show that excommunication is for the destruction of the flesh so that the spirit may be saved, i.e., for repentance.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 10187.44,
+          "end": 10305.319
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "azazel",
+      "term": "Azazel",
+      "definition": "A demonic figure associated with the wilderness, to whom the scapegoat was sent on the Day of Atonement, symbolically carrying away the sins of the people.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 2554.86,
+          "end": 2646.44
+        }
+      ]
+    },
+    {
+      "id": "cut-off",
+      "term": "Cut off from among the people",
+      "definition": "A phrase in the Torah indicating exclusion from the community, which can mean exile or death, and is fulfilled in excommunication.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 9358.0,
+          "end": 9450.0
+        }
+      ]
+    },
+    {
+      "id": "excommunication",
+      "term": "Excommunication",
+      "definition": "The act of excluding a person from the Church community, seen as a spiritual death intended to promote repentance and restoration.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 10050.0,
+          "end": 10185.239
+        }
+      ]
+    },
+    {
+      "id": "matins-and-vespers",
+      "term": "Matins and Vespers",
+      "definition": "Morning and evening prayer services in the Orthodox Church, which continue the Torah's pattern of offering incense with prayers at sunrise and sunset.",
+      "segments": [
+        {
+          "episode": 88,
+          "start": 6917.0,
+          "end": 7007.0
+        }
+      ]
+    }
+  ]
+}

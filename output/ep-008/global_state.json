@@ -1,0 +1,542 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen De Young explore the theological foundations for the veneration of the Virgin Mary, the Theotokos, by tracing the biblical theme of humanity as the image of God and the role of the Davidic king and queen mother. They begin by examining Genesis, where man is created as God's image in a temple-garden, tasked with expanding Eden by subduing the earth. This role is then seen in the institution of kingship in Israel, particularly in the Davidic line, where the king serves as an icon of God. The episode highlights the unique office of the queen mother in Judah, who sits at the king's right hand and acts as an intercessor. This office is seen as a type of Mary, who as the mother of Jesus, the Messiah and Son of God, becomes the Queen Mother at Christ's right hand. The hosts argue that Mary's role is deeply rooted in the Old Testament and was part of the early Christian proclamation, as evidenced by the pagan critic Celsus's attacks. They conclude by emphasizing that Mary's exalted position is central to the gospel and exemplifies the Christian calling to become fully human in the image of God.",
+  "entities": [
+    {
+      "id": "adam",
+      "title": "Adam",
+      "category": "person",
+      "summary": "The first man, created as God's image in the Garden of Eden, charged with expanding Eden by subduing the earth. His naming of the animals is seen as an act of kingly authority.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 346.279,
+          "end": 437.519
+        },
+        {
+          "episode": 8,
+          "start": 1650.0,
+          "end": 1769.92
+        }
+      ]
+    },
+    {
+      "id": "david",
+      "title": "David",
+      "category": "person",
+      "summary": "The second king of Israel, considered the ideal human king in the Old Testament. He serves as an icon of God and receives the promise of a descendant who will sit on both David's and Yahweh's thrones.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 2992.0,
+          "end": 3082.88
+        },
+        {
+          "episode": 8,
+          "start": 3180.0,
+          "end": 3344.0
+        }
+      ]
+    },
+    {
+      "id": "solomon",
+      "title": "Solomon",
+      "category": "person",
+      "summary": "Son of David and Bathsheba, who becomes king of Israel. He establishes the office of the queen mother by seating his mother Bathsheba at his right hand.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4273.96,
+          "end": 4366.159
+        }
+      ]
+    },
+    {
+      "id": "bathsheba",
+      "title": "Bathsheba",
+      "category": "person",
+      "summary": "Wife of Uriah, later wife of David, and mother of Solomon. She is the first queen mother in Judah, seated at Solomon's right hand.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4273.96,
+          "end": 4366.159
+        }
+      ]
+    },
+    {
+      "id": "mary",
+      "title": "Mary, the Theotokos",
+      "category": "person",
+      "summary": "The mother of Jesus Christ, venerated as the Theotokos (Mother of God). Her role as Queen Mother is seen as the fulfillment of the Old Testament office, and she is honored as the highest of saints.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4965.52,
+          "end": 5056.899
+        },
+        {
+          "episode": 8,
+          "start": 5644.56,
+          "end": 5735.76
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "person",
+      "summary": "The Son of God and Messiah, who fulfills the Davidic kingship by sitting on both David's and Yahweh's thrones. He is both God and man, and his mother is Mary.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 3330.0,
+          "end": 3450.139
+        },
+        {
+          "episode": 8,
+          "start": 4965.52,
+          "end": 5056.899
+        }
+      ]
+    },
+    {
+      "id": "celsus",
+      "title": "Celsus",
+      "category": "person",
+      "summary": "A second-century pagan philosopher who wrote a scathing attack on Christianity. His criticisms reveal that the role of Mary was a central part of the early Christian proclamation.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 5150.56,
+          "end": 5301.39
+        },
+        {
+          "episode": 8,
+          "start": 5335.479,
+          "end": 5469.14
+        }
+      ]
+    },
+    {
+      "id": "eden",
+      "title": "Eden",
+      "category": "place",
+      "summary": "The garden of paradise where God placed Adam and Eve. It is depicted as a temple-garden on a mountain, and humanity is charged with expanding it to the whole earth.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 570.0,
+          "end": 703.0
+        },
+        {
+          "episode": 8,
+          "start": 1530.0,
+          "end": 1621.0
+        }
+      ]
+    },
+    {
+      "id": "judah",
+      "title": "Judah",
+      "category": "place",
+      "summary": "The southern kingdom of Israel, where the Davidic line ruled. The office of the queen mother was unique to Judah.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4073.0,
+          "end": 4166.0
+        },
+        {
+          "episode": 8,
+          "start": 4212.0,
+          "end": 4308.5
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "image-of-god",
+      "title": "Image of God",
+      "summary": "The concept that humanity is created as God's image, not based on attributes like reason or language, but as a relational and functional role to represent God and participate in His work of bringing order and life to creation.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 268.199,
+          "end": 395.0
+        },
+        {
+          "episode": 8,
+          "start": 1350.0,
+          "end": 1440.39
+        }
+      ]
+    },
+    {
+      "id": "temple-garden",
+      "title": "Temple-Garden",
+      "summary": "The ancient Near Eastern understanding that gods dwell on mountains and in gardens, and that temples are built as man-made mountains. Genesis presents Eden as a temple-garden where God places His image (man) to dwell with Him.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 570.0,
+          "end": 703.0
+        },
+        {
+          "episode": 8,
+          "start": 898.96,
+          "end": 989.159
+        }
+      ]
+    },
+    {
+      "id": "idolatry-as-inversion",
+      "title": "Idolatry as Inversion",
+      "summary": "Idolatry is seen as a reversal of God's creation of man: instead of God creating an image for Himself, man creates an image to trap a god for his own benefit. This inversion is critiqued throughout the Old Testament.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 1014.44,
+          "end": 1113.519
+        },
+        {
+          "episode": 8,
+          "start": 1212.0,
+          "end": 1310.24
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "title": "Divine Council",
+      "summary": "The heavenly court of God, consisting of angelic beings and saints, who surround God's throne and participate in His rule. The earthly structures of leadership in Israel, such as the 70 elders and the king's court, are seen as icons of this divine council.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 2367.79,
+          "end": 2459.679
+        },
+        {
+          "episode": 8,
+          "start": 5665.92,
+          "end": 5756.68
+        }
+      ]
+    },
+    {
+      "id": "davidic-kingship",
+      "title": "Davidic Kingship",
+      "summary": "The institution of kingship in Israel, particularly in the line of David, where the king serves as an icon of God, establishing justice and order. The promise to David includes a future king who will sit on both David's throne and Yahweh's throne, fulfilled in Christ.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 2992.0,
+          "end": 3082.88
+        },
+        {
+          "episode": 8,
+          "start": 3180.0,
+          "end": 3344.0
+        }
+      ]
+    },
+    {
+      "id": "queen-mother",
+      "title": "Queen Mother",
+      "summary": "A unique office in the kingdom of Judah where the mother of the king holds a position of honor and authority, sitting at the king's right hand and acting as an intercessor. This office is seen as a type of Mary, the mother of Jesus.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4212.0,
+          "end": 4351.0
+        },
+        {
+          "episode": 8,
+          "start": 4574.0,
+          "end": 4674.359
+        },
+        {
+          "episode": 8,
+          "start": 4879.88,
+          "end": 4973.119
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "title": "Theotokos",
+      "summary": "The title of Mary as the Mother of God, emphasizing that she gave birth to Jesus Christ, who is both fully God and fully man. Her role as Queen Mother is rooted in the Old Testament and is central to the gospel proclamation.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4965.52,
+          "end": 5056.899
+        },
+        {
+          "episode": 8,
+          "start": 5644.56,
+          "end": 5735.76
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "man-created-as-image",
+      "text": "Humanity is created as God's image, not based on attributes like reason or language, but as a relational and functional role to represent God and participate in His work.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 268.199,
+          "end": 395.0
+        }
+      ]
+    },
+    {
+      "id": "idolatry-inverts-creation",
+      "text": "Idolatry is an inversion of God's creation of man: instead of God creating an image for Himself, man creates an image to trap a god for his own benefit.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 1014.44,
+          "end": 1113.519
+        }
+      ]
+    },
+    {
+      "id": "davidic-king-icon",
+      "text": "The Davidic king serves as an icon of God, establishing justice and order, and is the image of the future Messiah who will sit on both David's and Yahweh's thrones.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 2992.0,
+          "end": 3082.88
+        },
+        {
+          "episode": 8,
+          "start": 3180.0,
+          "end": 3344.0
+        }
+      ]
+    },
+    {
+      "id": "queen-mother-type",
+      "text": "The office of the queen mother in Judah, who sits at the king's right hand and intercedes, is a type of Mary, the mother of Jesus, who is the Queen Mother at Christ's right hand.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4212.0,
+          "end": 4351.0
+        },
+        {
+          "episode": 8,
+          "start": 4965.52,
+          "end": 5056.899
+        }
+      ]
+    },
+    {
+      "id": "mary-central-to-gospel",
+      "text": "The role of Mary as the Mother of God and Queen Mother was a central part of the early Christian gospel proclamation, as evidenced by the attacks of the pagan critic Celsus.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 5150.56,
+          "end": 5301.39
+        },
+        {
+          "episode": 8,
+          "start": 5335.479,
+          "end": 5469.14
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-1-creation",
+      "reference": "Genesis 1:1-2:3",
+      "summary": "The creation account is interpreted as the construction of a temple, with man created as God's image and placed in the garden to expand it.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 570.0,
+          "end": 703.0
+        },
+        {
+          "episode": 8,
+          "start": 1350.0,
+          "end": 1440.39
+        }
+      ]
+    },
+    {
+      "id": "genesis-2-eden",
+      "reference": "Genesis 2:4-25",
+      "summary": "The Garden of Eden is described as a temple-garden, and Adam's naming of the animals is seen as an act of kingly authority.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 1530.0,
+          "end": 1621.0
+        },
+        {
+          "episode": 8,
+          "start": 1650.0,
+          "end": 1769.92
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-17-king",
+      "reference": "Deuteronomy 17:14-20",
+      "summary": "God gives commandments for when Israel has a king, indicating that kingship is part of God's plan, but the people's demand for a king in 1 Samuel is premature and wrong.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 2595.519,
+          "end": 2698.599
+        }
+      ]
+    },
+    {
+      "id": "1-samuel-8-king",
+      "reference": "1 Samuel 8:1-22",
+      "summary": "The people's demand for a king is seen as a rejection of God's rule, but it is not a rejection of kingship itself, as God had already provided for it in Deuteronomy.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 2567.84,
+          "end": 2698.599
+        }
+      ]
+    },
+    {
+      "id": "2-samuel-7-16",
+      "reference": "2 Samuel 7:16",
+      "summary": "God promises David that his house, kingdom, and throne will be established forever, which is interpreted as a messianic promise.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 3270.0,
+          "end": 3365.0
+        }
+      ]
+    },
+    {
+      "id": "1-chronicles-17-14",
+      "reference": "1 Chronicles 17:14",
+      "summary": "The parallel promise to David says his descendants will be established in God's house, kingdom, and throne, indicating the Messiah will sit on both David's and God's thrones.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 3270.0,
+          "end": 3365.0
+        }
+      ]
+    },
+    {
+      "id": "psalm-45",
+      "reference": "Psalm 45:9-13",
+      "summary": "The psalm praises the king and the queen mother, who stands at his right hand. This is seen as a prophecy of Christ and Mary.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4879.88,
+          "end": 4973.119
+        }
+      ]
+    },
+    {
+      "id": "psalm-110",
+      "reference": "Psalm 110:1",
+      "summary": "Jesus quotes this psalm to show that the Messiah is both David's son and his Lord, indicating his divinity.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 3390.0,
+          "end": 3480.26
+        }
+      ]
+    },
+    {
+      "id": "1-kings-2-19",
+      "reference": "1 Kings 2:19",
+      "summary": "Solomon seats his mother Bathsheba at his right hand, establishing the office of the queen mother.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4273.96,
+          "end": 4366.159
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "theotokos",
+      "term": "Theotokos",
+      "definition": "A Greek title for the Virgin Mary, meaning 'God-bearer' or 'Mother of God', affirming that she gave birth to Jesus Christ, who is fully God.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4965.52,
+          "end": 5056.899
+        }
+      ]
+    },
+    {
+      "id": "queen-mother",
+      "term": "Queen Mother",
+      "definition": "The mother of the king in the kingdom of Judah, who held a position of honor and authority, sitting at the king's right hand and acting as an intercessor.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 4212.0,
+          "end": 4351.0
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "term": "Divine Council",
+      "definition": "The heavenly court of God, consisting of angelic beings and saints, who surround God's throne and participate in His rule.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 2367.79,
+          "end": 2459.679
+        }
+      ]
+    },
+    {
+      "id": "icon",
+      "term": "Icon",
+      "definition": "In this context, a person or thing that serves as a visible representation of something else, particularly as a means of participation and continuation of the thing imaged.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 3150.0,
+          "end": 3240.48
+        }
+      ]
+    },
+    {
+      "id": "messiah",
+      "term": "Messiah",
+      "definition": "The anointed one, a title for the expected king from the line of David who would deliver Israel and rule on God's behalf.",
+      "segments": [
+        {
+          "episode": 8,
+          "start": 3192.639,
+          "end": 3285.0
+        }
+      ]
+    }
+  ]
+}

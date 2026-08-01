@@ -1,0 +1,559 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young address the Orthodox Christian practice of patron saints, defending it against charges of paganism and lack of biblical basis. They argue that the Bible reflects a robust spiritual reality where angelic beings are assigned to elements of nature, peoples, and persons, and that human saints, through theosis, come to fill the vacancies left by fallen angels. The discussion traces this theme from the Old Testament divine council, through the New Testament and early church, to contemporary application in spiritual warfare and the transformation of communities.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of the Lord of Spirits podcast, an Orthodox Christian priest, and author.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 38.799,
+          "end": 129.439
+        },
+        {
+          "episode": 82,
+          "start": 109.68,
+          "end": 200.0
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "Co-host of the Lord of Spirits podcast, an Orthodox Christian priest, and author.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 43.2,
+          "end": 136.56
+        },
+        {
+          "episode": 82,
+          "start": 105.4,
+          "end": 196.0
+        }
+      ]
+    },
+    {
+      "id": "philo-of-alexandria",
+      "title": "Philo of Alexandria",
+      "category": "person",
+      "summary": "First-century Jewish philosopher who wrote about the divine administration and the subordinate role of heavenly bodies as 'gods' under the one supreme God.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 2520.0,
+          "end": 2615.679
+        },
+        {
+          "episode": 82,
+          "start": 2572.639,
+          "end": 2789.98
+        }
+      ]
+    },
+    {
+      "id": "saint-john-chrysostom",
+      "title": "Saint John Chrysostom",
+      "category": "person",
+      "summary": "Major Church Father quoted on how people become like demons through sin, not through violent death.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 5757.239,
+          "end": 5849.359
+        },
+        {
+          "episode": 82,
+          "start": 5838.96,
+          "end": 5929.739
+        }
+      ]
+    },
+    {
+      "id": "saint-demetrius",
+      "title": "Saint Demetrius",
+      "category": "person",
+      "summary": "Patron saint of Thessaloniki, who replaced Aphrodite as the spirit of the city through the people's realignment with Christ.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 10433.159,
+          "end": 10523.36
+        },
+        {
+          "episode": 82,
+          "start": 10464.799,
+          "end": 10556.0
+        }
+      ]
+    },
+    {
+      "id": "aphrodite",
+      "title": "Aphrodite",
+      "category": "other",
+      "summary": "Pagan goddess formerly associated with Thessaloniki, replaced by Saint Demetrius as the city's patron.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 10433.159,
+          "end": 10523.36
+        },
+        {
+          "episode": 82,
+          "start": 10464.799,
+          "end": 10556.0
+        }
+      ]
+    },
+    {
+      "id": "hegel",
+      "title": "Georg Wilhelm Friedrich Hegel",
+      "category": "person",
+      "summary": "19th-century German philosopher whose view of history as the unfolding of the Holy Spirit influenced liberal theology.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 9540.0,
+          "end": 9631.12
+        },
+        {
+          "episode": 82,
+          "start": 9580.559,
+          "end": 9672.44
+        },
+        {
+          "episode": 82,
+          "start": 9679.399,
+          "end": 9775.79
+        }
+      ]
+    },
+    {
+      "id": "saint-augustine",
+      "title": "Saint Augustine",
+      "category": "person",
+      "summary": "Church Father and saint, noted for his life and confessions, despite some theological errors that he himself retracted.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 4612.96,
+          "end": 4703.88
+        },
+        {
+          "episode": 82,
+          "start": 4688.88,
+          "end": 4779.92
+        }
+      ]
+    },
+    {
+      "id": "arius",
+      "title": "Arius",
+      "category": "person",
+      "summary": "Heretic who refused correction from the Church, leading to his condemnation at the Council of Nicaea.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 4740.0,
+          "end": 4830.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "patron-saints",
+      "title": "Patron Saints",
+      "summary": "The practice of having particular saints as patrons for individuals, places, churches, and groups, rooted in the biblical and early Christian understanding of holy ones (angels and humans) assigned to guide and intercede.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 306.839,
+          "end": 399.36
+        },
+        {
+          "episode": 82,
+          "start": 6644.6,
+          "end": 6748.0
+        },
+        {
+          "episode": 82,
+          "start": 10583.12,
+          "end": 10807.159
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "title": "Divine Council",
+      "summary": "The biblical and Second Temple Jewish concept of a council of divine beings (angels, 'gods') who serve as administrators under God, governing creation and nations. This council is renewed in Christ, with human saints joining it.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 2940.0,
+          "end": 3030.96
+        },
+        {
+          "episode": 82,
+          "start": 6480.0,
+          "end": 6570.2
+        },
+        {
+          "episode": 82,
+          "start": 10691.6,
+          "end": 10788.719
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "title": "Theosis (Deification)",
+      "summary": "The process of becoming like God through participation in His divine life, aligning one's will with God's, and ultimately becoming 'equal to the angels' and sharing in God's stewardship of creation.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 5911.699,
+          "end": 6001.96
+        },
+        {
+          "episode": 82,
+          "start": 9145.6,
+          "end": 9238.0
+        },
+        {
+          "episode": 82,
+          "start": 10710.0,
+          "end": 10800.0
+        }
+      ]
+    },
+    {
+      "id": "spirit-as-phenomenological",
+      "title": "Spirit as Phenomenological",
+      "summary": "Understanding 'spirit' not as a material or metaphysical entity but as a relational and experiential reality—how a being (angelic or human) relates to and influences a group, place, or person.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 8880.0,
+          "end": 8972.0
+        },
+        {
+          "episode": 82,
+          "start": 8917.239,
+          "end": 9015.0
+        },
+        {
+          "episode": 82,
+          "start": 9007.399,
+          "end": 9098.639
+        }
+      ]
+    },
+    {
+      "id": "kenonia",
+      "title": "Koinonia (Participation)",
+      "summary": "The Greek term for fellowship/participation, used to describe the synergistic relationship between humans and spiritual beings (God, angels, demons) through alignment of wills and activities.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 9023.6,
+          "end": 9115.68
+        },
+        {
+          "episode": 82,
+          "start": 9090.0,
+          "end": 9187.319
+        },
+        {
+          "episode": 82,
+          "start": 9154.559,
+          "end": 9248.92
+        }
+      ]
+    },
+    {
+      "id": "holy-tradition",
+      "title": "Holy Tradition",
+      "summary": "The life of the Holy Spirit in the Church, understood as the historical instances where humans synergized with the Holy Spirit, which serve as authoritative guides for the Church.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 9330.0,
+          "end": 9427.0
+        },
+        {
+          "episode": 82,
+          "start": 9404.52,
+          "end": 9498.68
+        },
+        {
+          "episode": 82,
+          "start": 9503.28,
+          "end": 9597.68
+        }
+      ]
+    },
+    {
+      "id": "liberal-theology",
+      "title": "Liberal Theology",
+      "summary": "A post-Enlightenment theological approach that sees history as progressing toward a pinnacle (often the present culture) and interprets that development as the work of the Holy Spirit, leading to a rejection of tradition.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 9838.6,
+          "end": 9929.92
+        },
+        {
+          "episode": 82,
+          "start": 9920.959,
+          "end": 10019.6
+        },
+        {
+          "episode": 82,
+          "start": 10161.86,
+          "end": 10253.92
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "patron-saints-not-paganism",
+      "text": "The practice of patron saints is not thinly veiled paganism; it is rooted in the biblical understanding of holy ones (angels and humans) assigned to guide and intercede, and it is distinct from polytheism because these beings are created and subordinate to God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 357.0,
+          "end": 448.199
+        },
+        {
+          "episode": 82,
+          "start": 3369.199,
+          "end": 3459.79
+        }
+      ]
+    },
+    {
+      "id": "saints-fill-vacancies",
+      "text": "Human saints in glory fill the vacancies left by fallen angelic beings, becoming 'equal to the angels' and participating in the divine council, as seen in Scripture and church tradition.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 6480.0,
+          "end": 6570.2
+        },
+        {
+          "episode": 82,
+          "start": 6620.68,
+          "end": 6639.119
+        },
+        {
+          "episode": 82,
+          "start": 10691.6,
+          "end": 10788.719
+        }
+      ]
+    },
+    {
+      "id": "salvation-is-participation-in-divine-council",
+      "text": "Salvation is not merely about escaping hell but about becoming part of the divine council, sharing in God's stewardship of creation, and being co-enthroned with Christ.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 10603.159,
+          "end": 10732.399
+        },
+        {
+          "episode": 82,
+          "start": 10916.0,
+          "end": 11008.92
+        }
+      ]
+    },
+    {
+      "id": "heresy-is-refusing-correction",
+      "text": "A heretic is not simply someone who is wrong, but someone who, after being corrected by the Church, refuses to repent and persists in teaching error, often leading to schism.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 4740.0,
+          "end": 4830.0
+        }
+      ]
+    },
+    {
+      "id": "liberal-theology-is-chauvinist",
+      "text": "Liberal theology, by viewing the present culture as the apex of history and the work of the Holy Spirit, is inherently chauvinist, racist, and colonial, as it dismisses other cultures and traditions as backward.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 9920.959,
+          "end": 10019.6
+        },
+        {
+          "episode": 82,
+          "start": 10161.86,
+          "end": 10253.92
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "deuteronomy-4-19",
+      "reference": "Deuteronomy 4:19",
+      "summary": "Used to show that God allotted the sun, moon, and stars (heavenly host) to the nations, indicating angelic beings assigned to peoples.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 2542.559,
+          "end": 2633.679
+        },
+        {
+          "episode": 82,
+          "start": 3769.28,
+          "end": 3860.48
+        }
+      ]
+    },
+    {
+      "id": "psalm-82",
+      "reference": "Psalm 82",
+      "summary": "Interpreted as God judging the 'gods' (angelic beings) who failed to administer justice, and as a prophecy of Christ's authority over the nations.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 6090.0,
+          "end": 6184.619
+        },
+        {
+          "episode": 82,
+          "start": 6334.92,
+          "end": 6428.739
+        }
+      ]
+    },
+    {
+      "id": "matthew-28-18",
+      "reference": "Matthew 28:18",
+      "summary": "Christ's declaration that all authority in heaven and on earth has been given to Him, fulfilling Psalm 82 and commissioning the apostles to make disciples of all nations.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 6405.76,
+          "end": 6498.0
+        }
+      ]
+    },
+    {
+      "id": "luke-20-36",
+      "reference": "Luke 20:36",
+      "summary": "Jesus says that those who are sons of the resurrection are equal to the angels, supporting the idea that glorified humans share in angelic roles.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 6715.39,
+          "end": 6808.96
+        },
+        {
+          "episode": 82,
+          "start": 10710.0,
+          "end": 10800.0
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-15-29",
+      "reference": "1 Corinthians 15:29",
+      "summary": "Baptism for the dead is interpreted as a patron relationship, where living believers act on behalf of departed saints, reflecting the practice of taking a saint's name.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 6860.399,
+          "end": 7002.96
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "holy-ones",
+      "term": "Holy Ones",
+      "definition": "A term used in the Old Testament for angelic beings who surround God's throne; later applied to human saints.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 1282.79,
+          "end": 1376.119
+        },
+        {
+          "episode": 82,
+          "start": 1500.0,
+          "end": 1534.319
+        }
+      ]
+    },
+    {
+      "id": "elohim",
+      "term": "Elohim",
+      "definition": "Hebrew word for 'gods' or 'rulers,' used in the Old Testament to refer to angelic beings and human judges, not just the one true God.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 1569.0,
+          "end": 1660.799
+        },
+        {
+          "episode": 82,
+          "start": 2794.96,
+          "end": 2886.0
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "term": "Theotokos",
+      "definition": "Greek title for the Virgin Mary, meaning 'God-bearer' or 'Mother of God.'",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 2348.0,
+          "end": 2442.719
+        }
+      ]
+    },
+    {
+      "id": "agrégors",
+      "term": "Agrégors",
+      "definition": "A term from Second Temple Jewish literature for the 'Watchers,' a class of angels, sometimes used to refer to the spirits of nations.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 8454.12,
+          "end": 8547.44
+        }
+      ]
+    },
+    {
+      "id": "zeitgeist",
+      "term": "Zeitgeist",
+      "definition": "German for 'spirit of the age,' used to describe the collective spirit or mood of a particular era.",
+      "segments": [
+        {
+          "episode": 82,
+          "start": 9307.76,
+          "end": 9400.28
+        }
+      ]
+    }
+  ]
+}

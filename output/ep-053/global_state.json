@@ -1,0 +1,482 @@
+{
+  "summary": "In this Halloween special episode of the Lord of Spirits podcast, hosts Father Andrew Stephen Damick and Father Stephen De Young explore the concept of madness from ancient to modern times. They discuss how madness has been perceived as a connection to the divine in ancient cultures, using examples like Gilgamesh and Enkidu, and how this understanding shifted through the medieval period into a sociopolitical tool for labeling dissidents, eventually becoming medicalized as mental illness. The episode then examines biblical accounts of madness, particularly the story of Nebuchadnezzar, who was driven mad to learn humility and the sovereignty of God. The hosts also distinguish between divine madness (holy fools), demonic possession, and mental illness, offering pastoral guidance on how to discern these states. They conclude by challenging Christians to live as counter-cultural communities that embody the sanity of God's kingdom, even if it means being seen as insane by the world.",
+  "entities": [
+    {
+      "id": "nebuchadnezzar",
+      "title": "Nebuchadnezzar",
+      "category": "historical",
+      "summary": "The Babylonian king who was driven mad by God to learn humility and the sovereignty of the Most High, as described in Daniel 4.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 2539.679,
+          "end": 2634.639
+        },
+        {
+          "episode": 53,
+          "start": 2725.159,
+          "end": 2824.8
+        },
+        {
+          "episode": 53,
+          "start": 3231.599,
+          "end": 3338.159
+        },
+        {
+          "episode": 53,
+          "start": 3442.559,
+          "end": 3535.679
+        },
+        {
+          "episode": 53,
+          "start": 3695.76,
+          "end": 3786.8
+        }
+      ]
+    },
+    {
+      "id": "daniel",
+      "title": "Daniel",
+      "category": "biblical",
+      "summary": "The Jewish prophet who interpreted Nebuchadnezzar's dream and served as a wise counselor in the Babylonian court.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 2733.739,
+          "end": 2824.8
+        },
+        {
+          "episode": 53,
+          "start": 3231.599,
+          "end": 3338.159
+        }
+      ]
+    },
+    {
+      "id": "gilgamesh",
+      "title": "Gilgamesh",
+      "category": "historical",
+      "summary": "The legendary king of Uruk, two-thirds divine, who stood above the social order, as referenced in the Epic of Gilgamesh.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 546.759,
+          "end": 643.919
+        }
+      ]
+    },
+    {
+      "id": "enkidu",
+      "title": "Enkidu",
+      "category": "historical",
+      "summary": "The wild man in the Epic of Gilgamesh, who lived outside society and was seen as touched by the gods.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 599.659,
+          "end": 689.759
+        },
+        {
+          "episode": 53,
+          "start": 935.0,
+          "end": 1030.16
+        }
+      ]
+    },
+    {
+      "id": "socrates",
+      "title": "Socrates",
+      "category": "historical",
+      "summary": "Greek philosopher who claimed a divine spirit (daimon) guided him, allowing him to stand outside Athenian society and critique it.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 744.0,
+          "end": 837.72
+        }
+      ]
+    },
+    {
+      "id": "michel-foucault",
+      "title": "Michel Foucault",
+      "category": "historical",
+      "summary": "French philosopher whose work 'Madness and Civilization' traced the changing concept of madness in Western history.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 1080.0,
+          "end": 1178.0
+        },
+        {
+          "episode": 53,
+          "start": 1170.0,
+          "end": 1260.279
+        }
+      ]
+    },
+    {
+      "id": "basil-the-fool-for-christ",
+      "title": "Basil the Fool for Christ",
+      "category": "saint",
+      "summary": "A Russian holy fool who confronted Ivan the Terrible, embodying the prophetic role of divine madness.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 4829.42,
+          "end": 4920.39
+        }
+      ]
+    },
+    {
+      "id": "the-gadarene-demoniac",
+      "title": "The Gadarene Demoniac",
+      "category": "biblical",
+      "summary": "A man possessed by a legion of demons, healed by Jesus, and then sent to testify to his community.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 4910.279,
+          "end": 5195.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "madness-as-divine-connection",
+      "title": "Madness as Divine Connection",
+      "summary": "In ancient cultures, madness was often seen as a sign of contact with the divine, setting individuals outside the social order and giving them special wisdom or insight.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 501.839,
+          "end": 595.679
+        },
+        {
+          "episode": 53,
+          "start": 690.0,
+          "end": 785.0
+        },
+        {
+          "episode": 53,
+          "start": 908.0,
+          "end": 1012.6
+        }
+      ]
+    },
+    {
+      "id": "social-construction-of-madness",
+      "title": "Social Construction of Madness",
+      "summary": "The category of madness is fluid and defined by what a society considers outside its norms. It has been used to label political dissidents, women, and others who do not conform.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 1170.0,
+          "end": 1260.279
+        },
+        {
+          "episode": 53,
+          "start": 1245.18,
+          "end": 1338.68
+        },
+        {
+          "episode": 53,
+          "start": 1476.4,
+          "end": 1582.96
+        },
+        {
+          "episode": 53,
+          "start": 1655.0,
+          "end": 1746.72
+        }
+      ]
+    },
+    {
+      "id": "divine-madness",
+      "title": "Divine Madness",
+      "summary": "A state where an individual is set apart from society due to an encounter with God, enabling them to speak truth and call people to repentance, as seen in holy fools and prophets.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 4620.0,
+          "end": 4716.88
+        },
+        {
+          "episode": 53,
+          "start": 4703.239,
+          "end": 4799.68
+        },
+        {
+          "episode": 53,
+          "start": 4829.42,
+          "end": 4920.39
+        }
+      ]
+    },
+    {
+      "id": "demonic-possession",
+      "title": "Demonic Possession",
+      "summary": "A state where a person is controlled by an anti-human spiritual force, leading to behavior that is destructive and outside societal norms, but without any prophetic testimony.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 4649.0,
+          "end": 4740.39
+        },
+        {
+          "episode": 53,
+          "start": 4950.0,
+          "end": 5047.279
+        },
+        {
+          "episode": 53,
+          "start": 5060.39,
+          "end": 5155.119
+        }
+      ]
+    },
+    {
+      "id": "mental-illness",
+      "title": "Mental Illness",
+      "summary": "A broad category in modern times for those who cannot or will not function within society, often medicalized and treated with therapy and medication, but with limits in addressing spiritual or societal issues.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 1590.0,
+          "end": 1680.2
+        },
+        {
+          "episode": 53,
+          "start": 2214.639,
+          "end": 2339.4
+        },
+        {
+          "episode": 53,
+          "start": 5208.279,
+          "end": 5300.84
+        }
+      ]
+    },
+    {
+      "id": "the-world-as-social-order",
+      "title": "The World as Social Order",
+      "summary": "In Scripture, 'the world' often refers to the oppressive social structures that pressure conformity and are animated by demonic spirits, standing in opposition to the Kingdom of God.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 5250.0,
+          "end": 5350.479
+        },
+        {
+          "episode": 53,
+          "start": 5313.439,
+          "end": 5406.64
+        },
+        {
+          "episode": 53,
+          "start": 5464.359,
+          "end": 5557.72
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "madness-is-fluid",
+      "text": "The category of madness is fluid and defined by what a society considers outside its norms, not a fixed medical or spiritual condition.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 1655.0,
+          "end": 1746.72
+        }
+      ]
+    },
+    {
+      "id": "nebuchadnezzar-madness",
+      "text": "Nebuchadnezzar's madness was a divine judgment to teach him that the Most High rules over all kingdoms and that his power was delegated and temporary.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 3442.559,
+          "end": 3535.679
+        },
+        {
+          "episode": 53,
+          "start": 3695.76,
+          "end": 3786.8
+        }
+      ]
+    },
+    {
+      "id": "holy-fools-vs-mentally-ill",
+      "text": "A fool for Christ is distinguished from a mentally ill person by the prophetic and repentance-oriented nature of their testimony, even if their behavior appears odd.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 4793.319,
+          "end": 4888.159
+        }
+      ]
+    },
+    {
+      "id": "demonic-possession-not-accidental",
+      "text": "People do not accidentally become demon-possessed; it results from a long period of living in a demonic way, and even the most possessed can be healed by Christ.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 4988.18,
+          "end": 5086.56
+        }
+      ]
+    },
+    {
+      "id": "world-is-demonic",
+      "text": "The 'world' in Scripture often refers to oppressive social structures that are animated by demonic spirits and pressure conformity, opposing the Kingdom of God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 5250.0,
+          "end": 5350.479
+        },
+        {
+          "episode": 53,
+          "start": 5464.359,
+          "end": 5557.72
+        }
+      ]
+    },
+    {
+      "id": "christian-community-alternative",
+      "text": "Christian communities can offer an alternative to the world's social structures by becoming actual families in Christ, providing a place for all people and freeing them from conformity.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 6575.39,
+          "end": 6698.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "daniel-4",
+      "reference": "Daniel 4",
+      "summary": "The story of Nebuchadnezzar's dream of the great tree, his madness, and his restoration, illustrating God's sovereignty over human kingdoms.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 2725.159,
+          "end": 3338.159
+        },
+        {
+          "episode": 53,
+          "start": 3442.559,
+          "end": 3769.44
+        }
+      ]
+    },
+    {
+      "id": "mark-5",
+      "reference": "Mark 5",
+      "summary": "The healing of the Gadarene demoniac, showing Jesus' power over demons and the man's subsequent mission to testify.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 4910.279,
+          "end": 5195.0
+        }
+      ]
+    },
+    {
+      "id": "genesis-4",
+      "reference": "Genesis 4",
+      "summary": "Cain's murder of Abel, referenced as an example of the righteous being a threat to the unrighteous social order.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 6711.0,
+          "end": 6805.819
+        }
+      ]
+    },
+    {
+      "id": "1-peter-2",
+      "reference": "1 Peter 2",
+      "summary": "Christians are called aliens and strangers in the world, which aligns with the idea of being set apart from societal norms.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 6685.6,
+          "end": 6775.68
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "holy-fool",
+      "term": "Holy Fool",
+      "definition": "A person who appears mad or foolish to the world but is actually set apart by God to speak truth and call people to repentance.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 4620.0,
+          "end": 4716.88
+        },
+        {
+          "episode": 53,
+          "start": 4829.42,
+          "end": 4920.39
+        }
+      ]
+    },
+    {
+      "id": "watcher",
+      "term": "Watcher",
+      "definition": "A class of angelic beings mentioned in the Book of Daniel and Enoch, who serve as heavenly council members and messengers of judgment.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 2900.79,
+          "end": 2993.239
+        },
+        {
+          "episode": 53,
+          "start": 3093.28,
+          "end": 3185.36
+        }
+      ]
+    },
+    {
+      "id": "genius",
+      "term": "Genius",
+      "definition": "In ancient Roman religion, a guardian spirit that was believed to guide a person, especially the emperor, and was associated with exceptional ability.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 773.6,
+          "end": 868.44
+        }
+      ]
+    },
+    {
+      "id": "hysteria",
+      "term": "Hysteria",
+      "definition": "A historical medical diagnosis, derived from the Greek word for womb, used to label women who did not conform to societal expectations.",
+      "segments": [
+        {
+          "episode": 53,
+          "start": 1476.4,
+          "end": 1570.4
+        }
+      ]
+    }
+  ]
+}

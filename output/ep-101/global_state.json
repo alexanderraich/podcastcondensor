@@ -1,0 +1,547 @@
+{
+  "summary": "In this episode, the hosts continue their discussion on modernism and its relationship to Christianity, building on the previous episode's framework. They define modernism as a cultural movement emphasizing the individual, egalitarianism, and theories of development, and contrast it with traditional Christianity. They explore how modernist Christianity reshapes worship, scripture, and ethics, and then introduce postmodernism, which they argue is better understood as post-structuralism, a critique of modernism's claims to objectivity and universal truth. The hosts analyze how postmodernism influences Christianity, leading to a focus on subjective experience and identity. They conclude by discussing the dangers of reactionary responses and emphasize the importance of grounding oneself in the living tradition of the Orthodox Church, which bridges the universal and the particular, and offers a correctable, communal experience of Christ.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox priest from Pennsylvania.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 4.24,
+          "end": 96.319
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox priest from Louisiana.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 4.24,
+          "end": 96.319
+        }
+      ]
+    },
+    {
+      "id": "karl-marx",
+      "title": "Karl Marx",
+      "category": "person",
+      "summary": "Philosopher and economist, considered a peak modernist for his theory of historical development.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 2110.199,
+          "end": 2203.119
+        },
+        {
+          "episode": 101,
+          "start": 2146.559,
+          "end": 2237.76
+        }
+      ]
+    },
+    {
+      "id": "jacques-derrida",
+      "title": "Jacques Derrida",
+      "category": "person",
+      "summary": "French philosopher, a key figure in post-structuralism, known for deconstruction.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 5008.56,
+          "end": 5100.0
+        },
+        {
+          "episode": 101,
+          "start": 5451.0,
+          "end": 5541.8
+        }
+      ]
+    },
+    {
+      "id": "michel-foucault",
+      "title": "Michel Foucault",
+      "category": "person",
+      "summary": "French philosopher, known for his work on power and the social construction of categories like madness.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 6915.68,
+          "end": 7012.8
+        },
+        {
+          "episode": 101,
+          "start": 7148.159,
+          "end": 7238.479
+        }
+      ]
+    },
+    {
+      "id": "friedrich-nietzsche",
+      "title": "Friedrich Nietzsche",
+      "category": "person",
+      "summary": "German philosopher, critiqued modernism and proposed perspectivism and the great man theory of history.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 5242.8,
+          "end": 5339.0
+        },
+        {
+          "episode": 101,
+          "start": 6939.92,
+          "end": 7032.64
+        }
+      ]
+    },
+    {
+      "id": "edmund-burke",
+      "title": "Edmund Burke",
+      "category": "person",
+      "summary": "Irish statesman and philosopher, founding father of traditional conservatism, critiqued the French Revolution.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 6705.92,
+          "end": 6798.0
+        }
+      ]
+    },
+    {
+      "id": "terry-eagleton",
+      "title": "Terry Eagleton",
+      "category": "person",
+      "summary": "Marxist literary theorist, author of 'The Illusions of Postmodernism'.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 5038.92,
+          "end": 5129.84
+        }
+      ]
+    },
+    {
+      "id": "orthodox-church",
+      "title": "Orthodox Church",
+      "category": "theological",
+      "summary": "The Christian church that the hosts belong to, which they argue bridges universal and particular, and offers a correctable experience of Christ.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 10817.12,
+          "end": 10912.6
+        },
+        {
+          "episode": 101,
+          "start": 10907.28,
+          "end": 10998.76
+        }
+      ]
+    },
+    {
+      "id": "gnosticism",
+      "title": "Gnosticism",
+      "category": "historical",
+      "summary": "An ancient heresy with Christian trappings but foreign elements, used as a benchmark for comparison.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 544.6,
+          "end": 635.559
+        },
+        {
+          "episode": 101,
+          "start": 679.36,
+          "end": 774.36
+        }
+      ]
+    },
+    {
+      "id": "neoplatonism",
+      "title": "Neoplatonism",
+      "category": "historical",
+      "summary": "A philosophical system with Christian elements but foreign to Christianity, used as a benchmark.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 544.6,
+          "end": 635.559
+        },
+        {
+          "episode": 101,
+          "start": 679.36,
+          "end": 774.36
+        }
+      ]
+    },
+    {
+      "id": "arianism",
+      "title": "Arianism",
+      "category": "historical",
+      "summary": "A false Christianity that used the same scriptures and authority structures but believed in a different Christ.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 768.24,
+          "end": 860.419
+        },
+        {
+          "episode": 101,
+          "start": 778.74,
+          "end": 879.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "modernism",
+      "title": "Modernism",
+      "summary": "A cultural movement emphasizing the individual, egalitarianism, and theories of development, often seen as a rejection of Christianity.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 1316.799,
+          "end": 2364.48
+        },
+        {
+          "episode": 101,
+          "start": 2400.0,
+          "end": 2495.8
+        }
+      ]
+    },
+    {
+      "id": "postmodernism",
+      "title": "Postmodernism",
+      "summary": "A critique of modernism, often identified with post-structuralism, rejecting objectivity and universal truth, and emphasizing subjectivity and particularity.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 4791.479,
+          "end": 4882.64
+        },
+        {
+          "episode": 101,
+          "start": 5073.6,
+          "end": 5169.119
+        },
+        {
+          "episode": 101,
+          "start": 6129.479,
+          "end": 6404.439
+        }
+      ]
+    },
+    {
+      "id": "individualism",
+      "title": "Individualism",
+      "summary": "The idea that the basic unit of humans is the individual, abstracted from all relationships, leading to egalitarianism and a focus on personal identity.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 1316.799,
+          "end": 1407.72
+        },
+        {
+          "episode": 101,
+          "start": 1391.319,
+          "end": 1481.339
+        }
+      ]
+    },
+    {
+      "id": "egalitarianism",
+      "title": "Egalitarianism",
+      "summary": "The belief that all individuals are fundamentally equal and the same, leading to democracy and the idea that everyone's opinion is of equal value.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 1491.66,
+          "end": 1583.0
+        },
+        {
+          "episode": 101,
+          "start": 1620.0,
+          "end": 1710.0
+        }
+      ]
+    },
+    {
+      "id": "theories-of-development",
+      "title": "Theories of Development",
+      "summary": "The idea that history progresses through stages and that we can understand and steer this development, often leading to chronological arrogance.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 2040.0,
+          "end": 2130.32
+        },
+        {
+          "episode": 101,
+          "start": 2265.559,
+          "end": 2357.599
+        }
+      ]
+    },
+    {
+      "id": "structuralism",
+      "title": "Structuralism",
+      "summary": "A school of thought that attempts to salvage objectivity by locating meaning in language itself, rather than in the author's or reader's mind.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 5640.0,
+          "end": 5744.479
+        },
+        {
+          "episode": 101,
+          "start": 5810.159,
+          "end": 5907.56
+        }
+      ]
+    },
+    {
+      "id": "post-structuralism",
+      "title": "Post-structuralism",
+      "summary": "A critique of structuralism, arguing that language cannot convey meaning objectively and that all signs are arbitrary, leading to a focus on subjectivity.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 5163.279,
+          "end": 5255.119
+        },
+        {
+          "episode": 101,
+          "start": 5359.979,
+          "end": 5516.56
+        }
+      ]
+    },
+    {
+      "id": "tradition-vs-traditionalism",
+      "title": "Tradition vs. Traditionalism",
+      "summary": "Tradition is the living faith of the dead, formed in community, while traditionalism is the dead faith of the living, an individual's reconstruction.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 2760.0,
+          "end": 2850.0
+        },
+        {
+          "episode": 101,
+          "start": 2834.0,
+          "end": 2932.0
+        }
+      ]
+    },
+    {
+      "id": "reactionary",
+      "title": "Reactionary",
+      "summary": "A response to modernism that often ends up assuming the very things it claims to hate, leading to a postmodern conservatism.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 10150.0,
+          "end": 10241.4
+        },
+        {
+          "episode": 101,
+          "start": 10417.979,
+          "end": 10512.84
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "modernism-is-a-rejection-of-christianity",
+      "text": "Modernity and modernism arose out of a rejection of Christianity, an attempt to find a basis for civilization apart from the Christian religion.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 2437.559,
+          "end": 2529.44
+        }
+      ]
+    },
+    {
+      "id": "postmodernism-is-post-structuralism",
+      "text": "What we call postmodernism is actually post-structuralism, a critique of structuralism and modernism's claims to objectivity.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 5163.279,
+          "end": 5255.119
+        }
+      ]
+    },
+    {
+      "id": "modernist-christianity-is-foreign",
+      "text": "When Christianity gets reshaped by modernism, it becomes something other than Christianity, not just a false form.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 2477.84,
+          "end": 2571.44
+        }
+      ]
+    },
+    {
+      "id": "traditionalism-is-modern",
+      "text": "The traditionalist response to modernism is just as modern as modernism itself, being a reconstruction based on personal preference.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 2590.0,
+          "end": 2686.719
+        }
+      ]
+    },
+    {
+      "id": "postmodern-christianity-has-no-authority",
+      "text": "Postmodern Christianity lacks authority structures, functioning instead on charisma and personality cults.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 8224.719,
+          "end": 8352.0
+        }
+      ]
+    },
+    {
+      "id": "orthodox-church-bridges-universal-particular",
+      "text": "The Orthodox Church bridges the universal and the particular, being both the one holy catholic and apostolic church and constituted by particular local churches.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 10817.12,
+          "end": 10912.6
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "psalm-82",
+      "reference": "Psalm 82:6-7",
+      "summary": "Used to explain that angels and demons can die spiritually, being separated from God.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 4036.84,
+          "end": 4128.0
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-15",
+      "reference": "1 Corinthians 15:3",
+      "summary": "Discussed in relation to whether Christ's death was necessary, with the concept of consequent necessity.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 9150.0,
+          "end": 9240.479
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "individual",
+      "term": "Individual",
+      "definition": "A person abstracted from all relationships, the basic unit of modernism.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 1316.799,
+          "end": 1407.72
+        }
+      ]
+    },
+    {
+      "id": "egalitarianism",
+      "term": "Egalitarianism",
+      "definition": "The belief that all individuals are fundamentally equal and the same.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 1491.66,
+          "end": 1583.0
+        }
+      ]
+    },
+    {
+      "id": "positivism",
+      "term": "Positivism",
+      "definition": "The idea that we can know things for certain using scientific methodology, and eventually know everything.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 6139.399,
+          "end": 6230.92
+        }
+      ]
+    },
+    {
+      "id": "structuralism",
+      "term": "Structuralism",
+      "definition": "A school of thought that locates meaning in language itself, objectively.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 5640.0,
+          "end": 5744.479
+        }
+      ]
+    },
+    {
+      "id": "post-structuralism",
+      "term": "Post-structuralism",
+      "definition": "A critique of structuralism, arguing that language cannot convey meaning objectively.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 5163.279,
+          "end": 5255.119
+        }
+      ]
+    },
+    {
+      "id": "traditionalism",
+      "term": "Traditionalism",
+      "definition": "The dead faith of the living, an individual's reconstruction of tradition.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 2760.0,
+          "end": 2850.0
+        }
+      ]
+    },
+    {
+      "id": "consequent-necessity",
+      "term": "Consequent Necessity",
+      "definition": "A theological term meaning that given the way the world actually is, a certain event was necessary, but it would not have been if the world were different.",
+      "segments": [
+        {
+          "episode": 101,
+          "start": 9166.639,
+          "end": 9258.559
+        }
+      ]
+    }
+  ]
+}

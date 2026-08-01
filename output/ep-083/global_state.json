@@ -1,0 +1,401 @@
+{
+  "summary": "In this episode, the hosts explore the Feast of Theophany (Epiphany), focusing on its connections to the Canaanite storm god Baal and the figure of Adam. They begin by discussing the name 'Baal,' its general meaning as 'lord' or 'master,' and its specific reference to the Phoenician god who was considered the rebellious son of El. They explain how the Old Testament prophets, particularly in Ezekiel 28 and Isaiah 14, identify Baal with the devil, and how the worship of Baal was a persistent problem for Israel, especially during the Omride dynasty. The hosts then connect this to Adam, noting that the devil's envy of Adam's destiny led to the fall, and that Adam's repentance, as depicted in the Life of Adam and Eve, involved standing in the Jordan River. This sets the stage for understanding Christ's baptism as the moment when humanity, in the person of Christ, wins its first victory over the devil, undoing Adam's failure.",
+  "entities": [
+    {
+      "id": "baal",
+      "title": "Baal",
+      "category": "theological",
+      "summary": "The Canaanite storm god, son of El, who was worshiped in Phoenicia and often opposed by the prophets of Israel. The episode identifies Baal with the devil and discusses his role in the Old Testament.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 555.36,
+          "end": 826.159
+        },
+        {
+          "episode": 83,
+          "start": 1854.539,
+          "end": 1947.0
+        }
+      ]
+    },
+    {
+      "id": "adam",
+      "title": "Adam",
+      "category": "historical",
+      "summary": "The first man, whose fall and repentance are central to the episode's theme. Adam's failure in the Garden of Eden is contrasted with Christ's victory at the Jordan.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 3660.0,
+          "end": 3767.0
+        },
+        {
+          "episode": 83,
+          "start": 4100.79,
+          "end": 4470.0
+        }
+      ]
+    },
+    {
+      "id": "elijah",
+      "title": "Elijah",
+      "category": "historical",
+      "summary": "The Old Testament prophet who opposed Baal worship, particularly in the showdown on Mount Carmel. His role is seen as a type of St. John the Forerunner.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 3438.179,
+          "end": 3530.88
+        },
+        {
+          "episode": 83,
+          "start": 6360.0,
+          "end": 6451.6
+        }
+      ]
+    },
+    {
+      "id": "jezebel",
+      "title": "Jezebel",
+      "category": "historical",
+      "summary": "The Phoenician princess who married King Ahab and promoted Baal worship in Israel. Her name is discussed as a Hebrew pun meaning 'Where is Baal?'",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 2634.119,
+          "end": 2908.4
+        },
+        {
+          "episode": 83,
+          "start": 3030.0,
+          "end": 3122.519
+        }
+      ]
+    },
+    {
+      "id": "jordan-river",
+      "title": "Jordan River",
+      "category": "place",
+      "summary": "The river where Christ was baptized and where Adam was said to have repented. It symbolizes the place of purification and victory over chaos.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 4247.199,
+          "end": 4340.439
+        },
+        {
+          "episode": 83,
+          "start": 6840.0,
+          "end": 6931.359
+        }
+      ]
+    },
+    {
+      "id": "devil",
+      "title": "Devil",
+      "category": "theological",
+      "summary": "The fallen angel who tempted Adam and is identified with Baal in the Old Testament. His defeat at Christ's baptism is a key theme.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 898.96,
+          "end": 989.919
+        },
+        {
+          "episode": 83,
+          "start": 3773.32,
+          "end": 3865.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "baal-worship",
+      "title": "Baal Worship",
+      "summary": "The worship of the Canaanite storm god Baal, which was a persistent temptation for Israel and was often intertwined with political and economic life. The episode discusses how Baal worship was practiced, its connection to the Phoenician trade empire, and how it was opposed by prophets like Elijah.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 1196.88,
+          "end": 1288.92
+        },
+        {
+          "episode": 83,
+          "start": 2004.799,
+          "end": 2100.0
+        },
+        {
+          "episode": 83,
+          "start": 3438.179,
+          "end": 3530.88
+        }
+      ]
+    },
+    {
+      "id": "theophany-as-feast-of-incarnation",
+      "title": "Theophany as Feast of the Incarnation",
+      "summary": "The episode argues that Theophany, not Christmas, was originally celebrated as the primary feast of the Incarnation. This is based on early Christian evidence and the theological significance of Christ's baptism as the manifestation of God in the flesh.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 4940.52,
+          "end": 5040.0
+        },
+        {
+          "episode": 83,
+          "start": 5880.0,
+          "end": 5970.0
+        }
+      ]
+    },
+    {
+      "id": "adam-repentance",
+      "title": "Adam's Repentance",
+      "summary": "The tradition that Adam repented after the fall, often depicted as standing in the Jordan River for 40 days. This is seen as a type of Christ's baptism and highlights the theme of repentance and restoration.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 4100.79,
+          "end": 4470.0
+        }
+      ]
+    },
+    {
+      "id": "christ-victory-over-devil",
+      "title": "Christ's Victory over the Devil",
+      "summary": "The episode presents Christ's baptism as a cosmic battle where Christ, as the new Adam, defeats the devil (identified with Baal) and wins the first victory for humanity. This victory is shared with believers through baptism and participation in Christ.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 6138.92,
+          "end": 6373.84
+        },
+        {
+          "episode": 83,
+          "start": 8924.0,
+          "end": 9116.879
+        }
+      ]
+    },
+    {
+      "id": "incarnation-identity",
+      "title": "Incarnation and Identity",
+      "summary": "The hosts discuss how the Incarnation affects our understanding of identity, both for Christ and for humans. Christ's identity is his entire existence, and through baptism, we put on Christ and find our true identity in him.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 8240.84,
+          "end": 8618.84
+        },
+        {
+          "episode": 83,
+          "start": 9780.0,
+          "end": 10002.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "baal-identified-with-devil",
+      "text": "The Old Testament prophets, particularly in Ezekiel 28 and Isaiah 14, identify the Canaanite god Baal with the devil, the rebellious son of El.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 855.84,
+          "end": 947.519
+        }
+      ]
+    },
+    {
+      "id": "theophany-second-oldest-feast",
+      "text": "Theophany is the second oldest Christian feast, celebrated since at least the early second century, and was originally the primary feast of the Incarnation.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 4778.96,
+          "end": 4874.199
+        },
+        {
+          "episode": 83,
+          "start": 4853.72,
+          "end": 4950.2
+        }
+      ]
+    },
+    {
+      "id": "adam-repentance-in-jordan",
+      "text": "According to the Life of Adam and Eve, Adam repented by standing in the Jordan River for 40 days, and the water stopped flowing as a sign of creation's mourning.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 4247.199,
+          "end": 4340.439
+        }
+      ]
+    },
+    {
+      "id": "christ-baptism-victory",
+      "text": "Christ's baptism is a cosmic victory over the devil, where Christ, as the new Adam, wins the first victory for humanity, undoing Adam's failure.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 6138.92,
+          "end": 6373.84
+        },
+        {
+          "episode": 83,
+          "start": 8924.0,
+          "end": 9116.879
+        }
+      ]
+    },
+    {
+      "id": "incarnation-identity",
+      "text": "Christ's identity is his entire existence, and through baptism, we put on Christ and find our true identity in him, becoming theophanic persons.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 8240.84,
+          "end": 8618.84
+        },
+        {
+          "episode": 83,
+          "start": 9780.0,
+          "end": 10002.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "ezekiel-28",
+      "reference": "Ezekiel 28",
+      "summary": "The oracle against the King of Tyre, which identifies the spiritual power behind Tyre as Baal, the devil, and contrasts the human king with the divine figure who fell from Eden.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 1274.0,
+          "end": 1415.44
+        }
+      ]
+    },
+    {
+      "id": "isaiah-14",
+      "reference": "Isaiah 14",
+      "summary": "The passage about the fall of the 'Lucifer' figure, which is another Old Testament text that connects Baal with the devil.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 1977.9,
+          "end": 2069.76
+        }
+      ]
+    },
+    {
+      "id": "genesis-3",
+      "reference": "Genesis 3",
+      "summary": "The account of the fall of Adam and Eve, which is seen as the first battle between humanity and the devil, and is paralleled with Christ's victory at the Jordan.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 3660.0,
+          "end": 3767.0
+        }
+      ]
+    },
+    {
+      "id": "life-of-adam-and-eve",
+      "reference": "Life of Adam and Eve",
+      "summary": "An apocryphal text that describes Adam's repentance in the Jordan River, which is read as a type of Christ's baptism.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 4185.359,
+          "end": 4470.0
+        }
+      ]
+    },
+    {
+      "id": "luke-12",
+      "reference": "Luke 12:49-50",
+      "summary": "Christ's saying about casting fire on the earth and having a baptism to be baptized with, which is connected to the showdown with Baal and the fire from heaven at Mount Carmel.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 6592.0,
+          "end": 6682.72
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "baal",
+      "term": "Baal",
+      "definition": "A Semitic word meaning 'lord' or 'master,' used as a title for various deities, but specifically referring to the Canaanite storm god, son of El, who was worshiped in Phoenicia.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 555.36,
+          "end": 826.159
+        }
+      ]
+    },
+    {
+      "id": "theophany",
+      "term": "Theophany",
+      "definition": "A Greek word meaning 'appearance of God,' used to refer to the Feast of the Baptism of Christ, when God is manifested as Trinity.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 4778.96,
+          "end": 4874.199
+        }
+      ]
+    },
+    {
+      "id": "incarnation",
+      "term": "Incarnation",
+      "definition": "The doctrine that the Son of God took on human nature, becoming fully God and fully man, without ceasing to be God.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 7470.0,
+          "end": 7595.439
+        }
+      ]
+    },
+    {
+      "id": "garments-of-skin",
+      "term": "Garments of Skin",
+      "definition": "A term from Genesis 3, interpreted as mortal flesh, which provides the capacity for repentance and is contrasted with the new garments of immortality in Christ.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 4020.0,
+          "end": 4110.5
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God, participating in the divine nature, which was the destiny of humanity and the cause of the devil's envy.",
+      "segments": [
+        {
+          "episode": 83,
+          "start": 3743.28,
+          "end": 3839.199
+        }
+      ]
+    }
+  ]
+}

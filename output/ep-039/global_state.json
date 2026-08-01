@@ -1,0 +1,323 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen De Young discuss the methodology of reading the Bible, contrasting pre-modern and modern approaches to history. They argue that pre-modern history was a purposeful narrative woven from Scripture, extrabiblical literature, and classics, serving to form a people's identity. The modern shift, influenced by 19th-century German academia, treats history as a science (Wissenschaft) and the Bible as evidence, leading to the modernist-fundamentalist debate. Both sides share a flawed presupposition: the Bible makes objective truth claims. The hosts propose reading forward from the Old Testament through the New Testament to the Fathers, seeing Scripture as a growing organism (using Hegel's analogy). Meaning is not a single essence behind the text but is encountered in application—God's energies working through Scripture in the liturgical life of the Church. The episode concludes with practical steps: apply Scripture to oneself first, then to those under one's spiritual care, and encounter Christ through obedience and acts of mercy.",
+  "entities": [
+    {
+      "id": "george-wilhelm-friedrich-hegel",
+      "title": "George Wilhelm Friedrich Hegel",
+      "category": "person",
+      "summary": "19th-century German philosopher; the hosts say something nice about him for introducing organic development of concepts through history, used as an analogy for Scripture.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 5988.72,
+          "end": 6079.96
+        },
+        {
+          "episode": 39,
+          "start": 6091.68,
+          "end": 6181.8
+        }
+      ]
+    },
+    {
+      "id": "aristotle",
+      "title": "Aristotle",
+      "category": "person",
+      "summary": "Ancient Greek philosopher who said history is a matter of doxa (opinion), not episteme (demonstrable knowledge).",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 1888.759,
+          "end": 1979.96
+        }
+      ]
+    },
+    {
+      "id": "thomas-aquinas",
+      "title": "Thomas Aquinas",
+      "category": "person",
+      "summary": "Medieval theologian who used Aristotle's epistemology to argue theology is a science (episteme), not opinion.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 2067.599,
+          "end": 2159.719
+        }
+      ]
+    },
+    {
+      "id": "donatists",
+      "title": "Donatists",
+      "category": "historical",
+      "summary": "4th-century North African Christian sect that restricted salvation to their group; Fathers applied 1 John 2:2 to refute them.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 8927.36,
+          "end": 9020.2
+        }
+      ]
+    },
+    {
+      "id": "marcian",
+      "title": "Marcian",
+      "category": "historical",
+      "summary": "Early heretic who rejected the Old Testament; the hosts note many Christians are functionally Marcianists.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 7800.0,
+          "end": 7895.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "pre-modern-history",
+      "title": "Pre-Modern History",
+      "summary": "History as a purposeful narrative woven from Scripture, extrabiblical literature, and classics to form a people's identity, not an objective account.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 330.0,
+          "end": 510.0
+        }
+      ]
+    },
+    {
+      "id": "modernist-history",
+      "title": "Modernist History (Wissenschaft)",
+      "summary": "History as a science (Wissenschaft) that treats the Bible as evidence to be weighed objectively, leading to a pretense of objectivity.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 1545.0,
+          "end": 1691.839
+        }
+      ]
+    },
+    {
+      "id": "reading-forward",
+      "title": "Reading Forward",
+      "summary": "A methodology of reading the Old Testament first, then the New Testament, then the Fathers, seeing Scripture as an organic growth culminating in Christ.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 5861.199,
+          "end": 5952.92
+        }
+      ]
+    },
+    {
+      "id": "essence-vs-energy",
+      "title": "Essence vs. Energy in Scripture",
+      "summary": "Applying the theological distinction between God's essence and energies to Scripture: meaning is encountered in God's action through the text, not as a static essence.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 8098.279,
+          "end": 8189.92
+        }
+      ]
+    },
+    {
+      "id": "application-vs-interpretation",
+      "title": "Application vs. Interpretation",
+      "summary": "The Fathers apply Scripture to their context rather than extracting a single meaning; application is a form of participation in God's work.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 8049.0,
+          "end": 8142.79
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "bible-not-modern-history",
+      "text": "The Bible is not a modern history book making objective truth claims; it is a story of a people to which you are invited to belong.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 4481.22,
+          "end": 4571.8
+        }
+      ]
+    },
+    {
+      "id": "both-modernism-and-fundamentalism-are-modernist",
+      "text": "Both liberal and conservative biblical scholarship share the modernist presupposition that the Bible makes truth claims that must be verified.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 2820.0,
+          "end": 2911.0
+        }
+      ]
+    },
+    {
+      "id": "meaning-in-application",
+      "text": "The meaning of Scripture is not a single essence behind the text but is encountered in God's action through the text, applied in the liturgical life of the Church.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 8098.279,
+          "end": 8189.92
+        }
+      ]
+    },
+    {
+      "id": "fathers-apply-not-interpret",
+      "text": "The Church Fathers do not interpret Scripture to find a single meaning; they apply it to their context, participating in God's work.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 8049.0,
+          "end": 8142.79
+        }
+      ]
+    },
+    {
+      "id": "encounter-christ-in-obedience",
+      "text": "Encountering Christ comes through obedience to His commandments and acts of mercy, not merely intellectual study.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 9900.0,
+          "end": 9993.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "john-20-30-31",
+      "reference": "John 20:30-31",
+      "summary": "Cited as the purpose of Scripture: that we may believe and have life in Christ's name.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 816.799,
+          "end": 907.759
+        }
+      ]
+    },
+    {
+      "id": "genesis-6-1-4",
+      "reference": "Genesis 6:1-4",
+      "summary": "Used as a test case for reading forward: how first readers would have understood the Nephilim.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 6540.0,
+          "end": 6637.119
+        }
+      ]
+    },
+    {
+      "id": "isaiah-7-14",
+      "reference": "Isaiah 7:14",
+      "summary": "Discussed in relation to Matthew 1:23; the original context is the Syro-Ephraimite war, not a prediction of virgin birth.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 6926.0,
+          "end": 7052.72
+        }
+      ]
+    },
+    {
+      "id": "matthew-1-23",
+      "reference": "Matthew 1:23",
+      "summary": "Matthew applies Isaiah 7:14 to Christ's birth, not as a prediction but as a fulfillment that echoes the original deliverance.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 7080.0,
+          "end": 7172.96
+        }
+      ]
+    },
+    {
+      "id": "1-john-2-2",
+      "reference": "1 John 2:2",
+      "summary": "Christ died for the whole world; Fathers applied this to refute Donatists who restricted salvation.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 8905.6,
+          "end": 9001.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "wissenschaft",
+      "term": "Wissenschaft",
+      "definition": "German for 'science'; in 19th-century German academia, the idea that history should be a scientific discipline.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 1545.0,
+          "end": 1691.839
+        }
+      ]
+    },
+    {
+      "id": "doxa",
+      "term": "Doxa",
+      "definition": "Greek for 'opinion' or 'glory'; Aristotle said history is a matter of doxa, not episteme.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 1888.759,
+          "end": 1979.96
+        }
+      ]
+    },
+    {
+      "id": "episteme",
+      "term": "Episteme",
+      "definition": "Greek for 'knowledge' that can be demonstrated, like mathematics; contrasted with doxa.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 1988.79,
+          "end": 2080.519
+        }
+      ]
+    },
+    {
+      "id": "phronema",
+      "term": "Phronema",
+      "definition": "Greek for 'mindset' or 'way of thinking'; the patristic mindset for reading Scripture.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 7970.0,
+          "end": 8061.899
+        }
+      ]
+    },
+    {
+      "id": "consensus-patrum",
+      "term": "Consensus Patrum",
+      "definition": "Latin for 'consensus of the Fathers'; the idea that the Fathers' collective interpretation gives the meaning of Scripture.",
+      "segments": [
+        {
+          "episode": 39,
+          "start": 5324.359,
+          "end": 5419.779
+        }
+      ]
+    }
+  ]
+}

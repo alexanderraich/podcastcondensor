@@ -1,0 +1,468 @@
+{
+  "summary": "In this episode, the hosts explore the title 'Son of Man' as it appears in the Old Testament, Second Temple Judaism, and the New Testament. They begin by noting that 'Son of Man' is the primary self-designation of Jesus in the Gospels, appearing over 80 times. They examine the Hebrew and Greek terms behind the phrase, showing that it can mean 'son of a man' or 'son of humanity,' and that in the Old Testament it often emphasizes human mortality and weakness, as seen in Ezekiel and Job. The discussion then moves to Daniel 7, where 'one like a son of man' comes on the clouds to the Ancient of Days and receives dominion, glory, and a kingdom—a passage that became foundational for Second Temple Jewish speculation about a second divine figure. The hosts explain how this 'two powers in heaven' tradition was widespread, with various interpretations: some saw the Son of Man as a divinized human (e.g., Enoch, Moses), others as a created divine being (e.g., Metatron), and still others as an eternal hypostasis of Yahweh. They then show how Jesus, in his trial before the high priest, explicitly identifies himself with this Danielic Son of Man, leading to the charge of blasphemy. The episode also covers the reception of these ideas in rabbinic Judaism, which later rejected two powers theology as heresy. Finally, the hosts reflect on the implications for understanding Christmas: the infant Jesus is not merely a gentle baby but the divine warrior who comes to defeat the demonic powers and be enthroned as Lord of all.",
+  "entities": [
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "person",
+      "summary": "The central figure of Christianity, identified as the Son of Man from Daniel 7. He uses this title for himself in the Gospels and claims to be the divine figure who will come on the clouds.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 280.0,
+          "end": 403.839
+        },
+        {
+          "episode": 32,
+          "start": 7800.0,
+          "end": 7890.52
+        }
+      ]
+    },
+    {
+      "id": "daniel",
+      "title": "Daniel",
+      "category": "person",
+      "summary": "A prophet in the Old Testament who receives visions, including the vision of the Son of Man in Daniel 7. He is also called 'son of man' in Daniel 8:17.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 1851.0,
+          "end": 1944.0
+        },
+        {
+          "episode": 32,
+          "start": 2472.88,
+          "end": 2578.38
+        }
+      ]
+    },
+    {
+      "id": "ezekiel",
+      "title": "Ezekiel",
+      "category": "person",
+      "summary": "A prophet in exile who is repeatedly addressed as 'son of man' (93 times in the book of Ezekiel), emphasizing his mortality and role as a prophet to the 'undead' in exile.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 1557.96,
+          "end": 1649.759
+        },
+        {
+          "episode": 32,
+          "start": 1826.79,
+          "end": 1920.19
+        }
+      ]
+    },
+    {
+      "id": "ancient-of-days-entity",
+      "title": "Ancient of Days",
+      "category": "theological",
+      "summary": "A title for God the Father in Daniel 7, depicted as an elderly figure with white hair. This imagery is later applied to Christ in Revelation 1.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 2086.88,
+          "end": 2205.42
+        },
+        {
+          "episode": 32,
+          "start": 3073.76,
+          "end": 3165.0
+        }
+      ]
+    },
+    {
+      "id": "first-enoch",
+      "title": "First Enoch (1 Enoch)",
+      "category": "other",
+      "summary": "A Second Temple Jewish text that expands on the Son of Man figure from Daniel 7. It was influential in early Christianity and is quoted in the New Testament (Jude 14-15). It is considered canonical in the Ethiopian Orthodox Church and was preserved by Orthodox Christians.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 5478.46,
+          "end": 5574.159
+        },
+        {
+          "episode": 32,
+          "start": 7101.279,
+          "end": 7218.39
+        },
+        {
+          "episode": 32,
+          "start": 7242.79,
+          "end": 7373.76
+        }
+      ]
+    },
+    {
+      "id": "elisha-ben-avuya",
+      "title": "Elisha ben Avuya (Aher)",
+      "category": "person",
+      "summary": "A rabbinic figure in the Talmud who is portrayed as a heretic for believing in two powers in heaven. His story in Tractate Hagiga warns against this belief.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 8549.1,
+          "end": 8639.84
+        },
+        {
+          "episode": 32,
+          "start": 8676.4,
+          "end": 8766.479
+        }
+      ]
+    },
+    {
+      "id": "rabbi-akiva",
+      "title": "Rabbi Akiva",
+      "category": "person",
+      "summary": "A prominent early second-century rabbi who initially believed in two powers in heaven (interpreting the two thrones in Daniel 7 as one for God and one for David), but was later corrected in the Talmud.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 8747.799,
+          "end": 8840.0
+        },
+        {
+          "episode": 32,
+          "start": 8829.2,
+          "end": 8920.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "son-of-man-as-title",
+      "title": "Son of Man as a Title",
+      "summary": "The phrase 'Son of Man' is the primary term Jesus uses to refer to himself in all four Gospels, appearing over 80 times. It is rooted in Old Testament usage, where it can denote a mortal human or a specific divine figure from Daniel 7.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 280.0,
+          "end": 403.839
+        },
+        {
+          "episode": 32,
+          "start": 591.399,
+          "end": 684.139
+        },
+        {
+          "episode": 32,
+          "start": 7607.0,
+          "end": 7705.0
+        }
+      ]
+    },
+    {
+      "id": "two-powers-in-heaven",
+      "title": "Two Powers in Heaven",
+      "summary": "A Second Temple Jewish concept that there are two divine figures in heaven, both identified as Yahweh. This is derived from Daniel 7 and other passages, and it underlies early Christology. Rabbinic Judaism later rejected this as heresy.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 4464.279,
+          "end": 4554.479
+        },
+        {
+          "episode": 32,
+          "start": 8116.239,
+          "end": 8218.159
+        },
+        {
+          "episode": 32,
+          "start": 8484.879,
+          "end": 8576.0
+        }
+      ]
+    },
+    {
+      "id": "ancient-of-days",
+      "title": "Ancient of Days",
+      "summary": "A title for God the Father in Daniel 7, depicting him as an elderly figure with white hair, sitting on a fiery throne. This imagery is later applied to Christ in Revelation 1.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 2086.88,
+          "end": 2205.42
+        },
+        {
+          "episode": 32,
+          "start": 3073.76,
+          "end": 3165.0
+        }
+      ]
+    },
+    {
+      "id": "son-of-man-in-daniel-7",
+      "title": "Son of Man in Daniel 7",
+      "summary": "In Daniel 7:13-14, 'one like a son of man' comes on the clouds to the Ancient of Days and receives everlasting dominion. This figure is both human and divine, and is identified by Jesus as himself.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 2472.88,
+          "end": 2578.38
+        },
+        {
+          "episode": 32,
+          "start": 2747.679,
+          "end": 2838.239
+        }
+      ]
+    },
+    {
+      "id": "first-enoch-and-son-of-man",
+      "title": "First Enoch and the Son of Man",
+      "summary": "The Book of First Enoch (1 Enoch) develops the Son of Man figure from Daniel 7, portraying him as a pre-existent, divine being who will execute judgment and save the righteous. It was influential in Second Temple Judaism and is quoted in the New Testament (e.g., Jude 14-15).",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 5478.46,
+          "end": 5574.159
+        },
+        {
+          "episode": 32,
+          "start": 7101.279,
+          "end": 7218.39
+        },
+        {
+          "episode": 32,
+          "start": 7242.79,
+          "end": 7373.76
+        }
+      ]
+    },
+    {
+      "id": "rabbinic-rejection-of-two-powers",
+      "title": "Rabbinic Rejection of Two Powers",
+      "summary": "After the second century, rabbinic Judaism labeled belief in two powers in heaven as heresy, expelling Christians from synagogues. The Talmud contains stories (e.g., about Elisha ben Avuya and Rabbi Akiva) that correct or condemn this view.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 8116.239,
+          "end": 8218.159
+        },
+        {
+          "episode": 32,
+          "start": 8484.879,
+          "end": 8576.0
+        },
+        {
+          "episode": 32,
+          "start": 8735.0,
+          "end": 8829.2
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "son-of-man-primary-title",
+      "text": "The title 'Son of Man' is the primary term Jesus uses to refer to himself in all four Gospels, appearing over 80 times.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 280.0,
+          "end": 403.839
+        }
+      ]
+    },
+    {
+      "id": "son-of-man-not-always-jesus",
+      "text": "In the Old Testament, 'son of man' is not always a reference to Jesus; it often simply means a mortal human, as in Ezekiel and Job.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 1350.0,
+          "end": 1457.92
+        }
+      ]
+    },
+    {
+      "id": "daniel-7-two-figures",
+      "text": "Daniel 7 presents two divine figures: the Ancient of Days (God the Father) and the Son of Man (God the Son), both identified as Yahweh.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 2472.88,
+          "end": 2578.38
+        },
+        {
+          "episode": 32,
+          "start": 2747.679,
+          "end": 2838.239
+        }
+      ]
+    },
+    {
+      "id": "jesus-claims-son-of-man-at-trial",
+      "text": "At his trial before the high priest, Jesus explicitly identifies himself as the Son of Man from Daniel 7, leading to the charge of blasphemy.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 7800.0,
+          "end": 7890.52
+        }
+      ]
+    },
+    {
+      "id": "first-enoch-son-of-man-pre-existent",
+      "text": "First Enoch portrays the Son of Man as pre-existent, chosen before creation, and coming to execute judgment—a view that influenced New Testament Christology.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 7242.79,
+          "end": 7373.76
+        }
+      ]
+    },
+    {
+      "id": "rabbinic-rejection-of-two-powers-claim",
+      "text": "After the second century, rabbinic Judaism labeled belief in two powers in heaven as heresy, expelling Christians from synagogues and suppressing related texts.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 8116.239,
+          "end": 8218.159
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "daniel-7-13-14",
+      "reference": "Daniel 7:13-14",
+      "summary": "The vision of one like a son of man coming on the clouds to the Ancient of Days, receiving dominion, glory, and a kingdom. This is the key Old Testament passage for the Son of Man title.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 2472.88,
+          "end": 2578.38
+        }
+      ]
+    },
+    {
+      "id": "mark-14-61-64",
+      "reference": "Mark 14:61-64",
+      "summary": "Jesus before the high priest, identifying himself as the Son of Man seated at the right hand of power and coming with the clouds, leading to the charge of blasphemy.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 7800.0,
+          "end": 7890.52
+        }
+      ]
+    },
+    {
+      "id": "jude-14-15",
+      "reference": "Jude 14-15",
+      "summary": "Quotes First Enoch 1:9, showing that the New Testament treats Enoch as authoritative prophecy about the Lord coming with his holy ones for judgment.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 6142.359,
+          "end": 6237.119
+        }
+      ]
+    },
+    {
+      "id": "revelation-1-12-15",
+      "reference": "Revelation 1:12-15",
+      "summary": "Describes the risen Christ with white hair like wool, echoing the Ancient of Days from Daniel 7, indicating that Christ shares the Father's divine attributes.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 3025.4,
+          "end": 3120.0
+        }
+      ]
+    },
+    {
+      "id": "psalm-104-3-4",
+      "reference": "Psalm 104:3-4",
+      "summary": "Describes Yahweh riding on the clouds, a motif applied to the Son of Man in Daniel 7, showing that the Son of Man is identified with Yahweh.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 2627.0,
+          "end": 2719.32
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "son-of-man",
+      "term": "Son of Man",
+      "definition": "A title used in the Old Testament and Second Temple Judaism, referring both to a mortal human and to a divine figure in Daniel 7. Jesus uses it as his primary self-designation.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 280.0,
+          "end": 403.839
+        },
+        {
+          "episode": 32,
+          "start": 591.399,
+          "end": 684.139
+        }
+      ]
+    },
+    {
+      "id": "ancient-of-days-glossary",
+      "term": "Ancient of Days",
+      "definition": "A title for God the Father in Daniel 7, depicted as an elderly figure with white hair, sitting on a fiery throne.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 2086.88,
+          "end": 2205.42
+        }
+      ]
+    },
+    {
+      "id": "two-powers-in-heaven-glossary",
+      "term": "Two Powers in Heaven",
+      "definition": "A Second Temple Jewish belief that there are two divine figures in heaven, both identified as Yahweh. This concept underlies early Christology but was later rejected by rabbinic Judaism.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 4464.279,
+          "end": 4554.479
+        }
+      ]
+    },
+    {
+      "id": "first-enoch-glossary",
+      "term": "First Enoch (1 Enoch)",
+      "definition": "A Second Temple Jewish apocalyptic text, preserved by Orthodox Christians, that develops the Son of Man figure and is quoted in the New Testament.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 5478.46,
+          "end": 5574.159
+        }
+      ]
+    },
+    {
+      "id": "exousia",
+      "term": "Exousia",
+      "definition": "A Greek word meaning 'authority' or 'freedom to act,' used in the context of 'second power in heaven' to denote a divine being with the same freedom as God.",
+      "segments": [
+        {
+          "episode": 32,
+          "start": 4588.579,
+          "end": 4678.79
+        }
+      ]
+    }
+  ]
+}

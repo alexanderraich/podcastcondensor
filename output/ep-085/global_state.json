@@ -1,0 +1,414 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young explore how the first disciples recognized Jesus as the Messiah, not primarily through fulfilled prophecies but through their direct encounters with Him. They argue that Jesus embodied Israel, the Torah, and the God of Israel, which led people to identify Him as the Christ. The discussion emphasizes that Jesus recapitulates Israel's history, fulfills the Torah as a way of life, and reveals the humility of God. The episode also addresses modern misunderstandings, such as the tendency to de-Judaize Christianity, and calls for a re-embrace of the Jewish heritage of the faith.",
+  "entities": [
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "person",
+      "summary": "The central figure of Christianity, recognized as the Messiah by His disciples through His embodiment of Israel, Torah, and God.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 352.639,
+          "end": 513.399
+        },
+        {
+          "episode": 85,
+          "start": 1018.559,
+          "end": 1374.0
+        },
+        {
+          "episode": 85,
+          "start": 3141.239,
+          "end": 3426.719
+        },
+        {
+          "episode": 85,
+          "start": 5706.96,
+          "end": 5872.399
+        }
+      ]
+    },
+    {
+      "id": "israel",
+      "title": "Israel",
+      "category": "theological",
+      "summary": "The people of God in the Old Testament, whose history and experience Jesus embodies and recapitulates.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 1018.559,
+          "end": 1374.0
+        },
+        {
+          "episode": 85,
+          "start": 2283.48,
+          "end": 2375.44
+        }
+      ]
+    },
+    {
+      "id": "torah",
+      "title": "Torah",
+      "category": "theological",
+      "summary": "The first five books of the Bible, understood as a way of life, not just law, which Jesus embodies and fulfills.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 3141.239,
+          "end": 3426.719
+        },
+        {
+          "episode": 85,
+          "start": 3908.159,
+          "end": 3951.679
+        }
+      ]
+    },
+    {
+      "id": "god-of-israel",
+      "title": "God of Israel",
+      "category": "theological",
+      "summary": "The particular God revealed in the Hebrew Scriptures, characterized by humility and covenant faithfulness, embodied by Jesus.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 5706.96,
+          "end": 5872.399
+        },
+        {
+          "episode": 85,
+          "start": 6113.199,
+          "end": 6203.319
+        }
+      ]
+    },
+    {
+      "id": "st-peter",
+      "title": "St. Peter",
+      "category": "person",
+      "summary": "One of Jesus' disciples who first confessed Him as the Messiah, as recounted in the Gospels.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 880.399,
+          "end": 973.84
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "Apostle who taught that Jesus embodies the Torah and that Christians walk according to the Spirit, fulfilling the Torah.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 4777.399,
+          "end": 4869.79
+        },
+        {
+          "episode": 85,
+          "start": 4913.199,
+          "end": 5046.479
+        }
+      ]
+    },
+    {
+      "id": "ezekiel",
+      "title": "Ezekiel",
+      "category": "person",
+      "summary": "Old Testament prophet whose vision of the dry bones symbolizes the death and resurrection of Israel, which Jesus embodies.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 1877.39,
+          "end": 2007.64
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "jesus-embodies-israel",
+      "title": "Jesus Embodies Israel",
+      "summary": "Jesus recapitulates the history and experience of Israel, succeeding where Israel failed, and thus is recognized as the Messiah.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 1018.559,
+          "end": 1374.0
+        },
+        {
+          "episode": 85,
+          "start": 2283.48,
+          "end": 2375.44
+        }
+      ]
+    },
+    {
+      "id": "jesus-embodies-the-torah",
+      "title": "Jesus Embodies the Torah",
+      "summary": "Jesus embodies the Torah as a way of life, teaching and living it perfectly, and fulfilling it by filling it full.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 3141.239,
+          "end": 3426.719
+        },
+        {
+          "episode": 85,
+          "start": 3908.159,
+          "end": 3951.679
+        },
+        {
+          "episode": 85,
+          "start": 4218.64,
+          "end": 4535.319
+        }
+      ]
+    },
+    {
+      "id": "jesus-embodies-the-god-of-israel",
+      "title": "Jesus Embodies the God of Israel",
+      "summary": "Jesus reveals the character of the God of Israel, particularly His humility, and embodies His relationship with His people.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 5706.96,
+          "end": 5872.399
+        },
+        {
+          "episode": 85,
+          "start": 6113.199,
+          "end": 6203.319
+        },
+        {
+          "episode": 85,
+          "start": 6570.0,
+          "end": 6754.6
+        }
+      ]
+    },
+    {
+      "id": "messiah-identity",
+      "title": "Messiah as Identity",
+      "summary": "The New Testament claim that Jesus is the Messiah is not about a checklist of fulfilled prophecies but about His identity, which is revealed through His embodiment of Israel, Torah, and God.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 352.639,
+          "end": 513.399
+        },
+        {
+          "episode": 85,
+          "start": 949.48,
+          "end": 1041.0
+        }
+      ]
+    },
+    {
+      "id": "fulfillment-of-prophecy",
+      "title": "Fulfillment of Prophecy",
+      "summary": "Prophecy is not a list of specific predictions but a pattern that Jesus embodies, and He fulfills all prophecies in a deeper sense.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 600.0,
+          "end": 746.32
+        },
+        {
+          "episode": 85,
+          "start": 1770.0,
+          "end": 1860.119
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "jesus-is-israel",
+      "text": "Jesus embodies Israel, succeeding where Israel failed, and thus is recognized as the Messiah.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 1018.559,
+          "end": 1374.0
+        }
+      ]
+    },
+    {
+      "id": "jesus-fulfills-torah",
+      "text": "Jesus fulfills the Torah not by abolishing it but by embodying it as a way of life, filling it full.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 3141.239,
+          "end": 3426.719
+        }
+      ]
+    },
+    {
+      "id": "jesus-reveals-gods-humility",
+      "text": "Jesus reveals the humility of God, who identifies with the weak and powerless, as seen throughout the Old Testament.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 6113.199,
+          "end": 6203.319
+        }
+      ]
+    },
+    {
+      "id": "prophecy-not-checklist",
+      "text": "Old Testament prophecy is not a checklist of specific predictions but a pattern that Jesus embodies, and He fulfills all prophecies in a deeper sense.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 600.0,
+          "end": 746.32
+        }
+      ]
+    },
+    {
+      "id": "christianity-is-judaism",
+      "text": "Christianity is a form of Judaism, and de-Judaizing Christianity warps its true nature.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 8693.0,
+          "end": 8785.68
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "hosea-11-1",
+      "reference": "Hosea 11:1",
+      "summary": "Quoted by Matthew to show Jesus as embodying Israel's experience of being called out of Egypt.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 1101.799,
+          "end": 1196.0
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-37-1-14",
+      "reference": "Ezekiel 37:1-14",
+      "summary": "Vision of dry bones symbolizing Israel's death and resurrection, which Jesus embodies.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 1877.39,
+          "end": 2007.64
+        }
+      ]
+    },
+    {
+      "id": "psalm-110-1",
+      "reference": "Psalm 110:1",
+      "summary": "Messiah reigning in the midst of enemies, indicating a period between first and second coming.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 810.0,
+          "end": 900.2
+        }
+      ]
+    },
+    {
+      "id": "jeremiah-3-19-21",
+      "reference": "Jeremiah 3:19-21",
+      "summary": "God's lament over Israel's faithlessness, paralleling Jesus' lament over Jerusalem.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 7068.479,
+          "end": 7159.439
+        }
+      ]
+    },
+    {
+      "id": "matthew-5-17",
+      "reference": "Matthew 5:17",
+      "summary": "Jesus came not to abolish the law but to fulfill it, understood as filling it full.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 3330.0,
+          "end": 3431.239
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "messiah",
+      "term": "Messiah",
+      "definition": "The anointed one, a title for Jesus, meaning the Christ, who embodies Israel, Torah, and God.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 272.56,
+          "end": 371.4
+        }
+      ]
+    },
+    {
+      "id": "torah",
+      "term": "Torah",
+      "definition": "The first five books of the Bible, meaning 'teaching' or 'way of life', not just law.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 3176.36,
+          "end": 3270.0
+        }
+      ]
+    },
+    {
+      "id": "nomos",
+      "term": "Nomos",
+      "definition": "Greek translation of Torah, meaning 'way of life' or 'custom', broader than law.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 3196.0,
+          "end": 3288.159
+        }
+      ]
+    },
+    {
+      "id": "halakha",
+      "term": "Halakha",
+      "definition": "Jewish way of walking or living according to Torah, used by St. Paul in his epistles.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 4883.6,
+          "end": 4978.399
+        }
+      ]
+    },
+    {
+      "id": "veil",
+      "term": "Veil",
+      "definition": "Christ's humanity as a protective veil, like the temple veil, revealing God's presence without causing death.",
+      "segments": [
+        {
+          "episode": 85,
+          "start": 5862.399,
+          "end": 5956.52
+        }
+      ]
+    }
+  ]
+}

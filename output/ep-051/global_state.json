@@ -1,0 +1,174 @@
+{
+  "summary": "In this special episode of the Lord of Spirits podcast, Father Stephen De Young presents a solo reading and analysis of the ancient Sumerian epic 'Enmerkar and Ensuhgirana', focusing on the wizard duel between the sorcerer of Arata and the wise woman Sagburu. The episode begins with an announcement about an upcoming lecture, then Father Stephen explains that he is filling in for the regular hosts who are away. He introduces the text, dating it to the 18th century BC, between the times of Abraham and Moses, and sets the stage: Enmerkar, king of Uruk, seeks to subjugate the city of Arata. After a letter exchange fails, the king of Arata sends a sorcerer to curse the city of Eresh, causing its cows and goats to stop producing milk. Enmerkar responds by sending his own wise woman, Sagburu, to confront the sorcerer. The duel takes place on the banks of the Euphrates, where they magically create animals from fish eggs, each summoning a predator to defeat the other's creature. Sagburu ultimately prevails, kills the sorcerer, and Arata submits to Enmerkar. Father Stephen then draws parallels to the biblical contest between Moses and the Egyptian magicians, noting the shared motif of summoning animals in magical combat. He concludes by promising a return to regular programming in October.",
+  "entities": [
+    {
+      "id": "enmerkar",
+      "title": "Enmerkar",
+      "category": "historical",
+      "summary": "King of Uruk in Sumerian legend, grandfather of Gilgamesh, who seeks to subjugate other cities through various means, including magical contests.",
+      "segments": [
+        {
+          "episode": 51,
+          "start": 132.0,
+          "end": 224.719
+        }
+      ]
+    },
+    {
+      "id": "sagburu",
+      "title": "Sagburu",
+      "category": "historical",
+      "summary": "A wise woman or witch who serves Enmerkar and defeats the sorcerer of Arata in a wizard duel.",
+      "segments": [
+        {
+          "episode": 51,
+          "start": 600.0,
+          "end": 816.48
+        }
+      ]
+    },
+    {
+      "id": "sorcerer-of-arata",
+      "title": "Sorcerer of Arata",
+      "category": "historical",
+      "summary": "A sorcerer sent by the king of Arata to curse the city of Eresh, ultimately defeated and killed by Sagburu.",
+      "segments": [
+        {
+          "episode": 51,
+          "start": 268.519,
+          "end": 816.48
+        }
+      ]
+    },
+    {
+      "id": "nisaba",
+      "title": "Nisaba",
+      "category": "theological",
+      "summary": "Sumerian goddess of grain, writing, and accounting, daughter of Enlil, associated with cows and the city of Eresh.",
+      "segments": [
+        {
+          "episode": 51,
+          "start": 359.0,
+          "end": 449.139
+        }
+      ]
+    },
+    {
+      "id": "euphrates",
+      "title": "Euphrates",
+      "category": "place",
+      "summary": "A major river in Mesopotamia, called the 'river of the gods' in the epic, where the wizard duel takes place.",
+      "segments": [
+        {
+          "episode": 51,
+          "start": 624.8,
+          "end": 719.32
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "wizard-duel",
+      "title": "Wizard Duel",
+      "summary": "A magical contest between two practitioners, often involving the summoning of creatures or other displays of power, as seen in the Sumerian epic and paralleled in the Bible.",
+      "segments": [
+        {
+          "episode": 51,
+          "start": 638.159,
+          "end": 816.48
+        }
+      ]
+    },
+    {
+      "id": "sumerian-epic",
+      "title": "Sumerian Epic",
+      "summary": "A genre of ancient Mesopotamian literature that tells stories of heroes, gods, and mythical events, often used to explain cultural or political realities.",
+      "segments": [
+        {
+          "episode": 51,
+          "start": 120.0,
+          "end": 210.99
+        }
+      ]
+    },
+    {
+      "id": "magical-animal-summoning",
+      "title": "Magical Animal Summoning",
+      "summary": "A motif in ancient magical practice where practitioners create or summon animals to do battle, symbolizing power and divine favor.",
+      "segments": [
+        {
+          "episode": 51,
+          "start": 647.279,
+          "end": 741.159
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "sumerian-text-dating",
+      "text": "The Sumerian text 'Enmerkar and Ensuhgirana' was written between the time of Abraham and Moses, around the 18th century BC.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 51,
+          "start": 120.0,
+          "end": 210.99
+        }
+      ]
+    },
+    {
+      "id": "biblical-parallel",
+      "text": "The wizard duel in the Sumerian epic parallels the contest between Moses and the Egyptian magicians, both involving the summoning of animals.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 51,
+          "start": 840.0,
+          "end": 969.639
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "moses-and-magicians",
+      "reference": "Exodus 7:8-12",
+      "summary": "The contest between Moses and Pharaoh's magicians, where Aaron's staff becomes a serpent and devours the others, mirrors the animal summoning in the Sumerian duel.",
+      "segments": [
+        {
+          "episode": 51,
+          "start": 852.879,
+          "end": 943.2
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "wise-woman",
+      "term": "Wise Woman",
+      "definition": "A female practitioner of magic or divination, often serving as a counselor or healer; in this context, a magical champion.",
+      "segments": [
+        {
+          "episode": 51,
+          "start": 578.0,
+          "end": 672.84
+        }
+      ]
+    },
+    {
+      "id": "vital-force",
+      "term": "Vital Force",
+      "definition": "A translation of the Sumerian word for soul or life force, which Sagburu removes from the sorcerer, killing him.",
+      "segments": [
+        {
+          "episode": 51,
+          "start": 816.48,
+          "end": 909.8
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,504 @@
+{
+  "summary": "In this episode, Fr. Andrew and Fr. Stephen explore the ancient mystery cults, contrasting them with Christianity. They define mystery cults as private, individualistic, and focused on inducing a near-death experience, in contrast to public, communal pagan worship. They discuss specific cults like the Eleusinian Mysteries, the Dionysian Mysteries, and the cult of Antinous, highlighting their lurid details and ritual practices. The hosts then address the claim that Christianity is derived from mystery cults, arguing that while there are superficial similarities, the core differences are profound: Christianity is communal, open to all, and not centered on subjective experience. They also critique modern evangelicalism for resembling mystery cults in its focus on individual experience and techniques to induce altered states. The episode concludes with reflections on the Christian calling to engage with the world, particularly the role of women in nurturing and bringing forth goodness.",
+  "entities": [
+    {
+      "id": "demeter",
+      "title": "Demeter",
+      "category": "theological",
+      "summary": "Greek goddess of harvest and fertility, central to the Eleusinian Mysteries, which reenacted the abduction of her daughter Persephone.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 660.0,
+          "end": 755.759
+        },
+        {
+          "episode": 128,
+          "start": 3914.96,
+          "end": 4006.239
+        }
+      ]
+    },
+    {
+      "id": "persephone",
+      "title": "Persephone",
+      "category": "theological",
+      "summary": "Daughter of Demeter, abducted by Hades, her journey to the underworld and return symbolized death and rebirth in the Eleusinian Mysteries.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 3930.0,
+          "end": 4020.88
+        },
+        {
+          "episode": 128,
+          "start": 4027.4,
+          "end": 4121.319
+        }
+      ]
+    },
+    {
+      "id": "dionysus",
+      "title": "Dionysus",
+      "category": "theological",
+      "summary": "Greek god of wine, fertility, and ecstasy, associated with the Dionysian Mysteries, which involved intoxication, frenzy, and ritual violence.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 5677.0,
+          "end": 5767.6
+        },
+        {
+          "episode": 128,
+          "start": 5982.399,
+          "end": 6076.739
+        },
+        {
+          "episode": 128,
+          "start": 1572.64,
+          "end": 1664.79
+        }
+      ]
+    },
+    {
+      "id": "hadrian",
+      "title": "Hadrian",
+      "category": "historical",
+      "summary": "Roman emperor who founded a mystery cult for his deceased lover Antinous, building temples and establishing the city of Antinoöpolis.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 6627.52,
+          "end": 6719.96
+        },
+        {
+          "episode": 128,
+          "start": 6728.0,
+          "end": 6818.84
+        },
+        {
+          "episode": 128,
+          "start": 6792.439,
+          "end": 6886.479
+        }
+      ]
+    },
+    {
+      "id": "antinous",
+      "title": "Antinous",
+      "category": "historical",
+      "summary": "Teenage favorite of Emperor Hadrian, deified after his death, leading to a mystery cult and widespread veneration.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 6672.0,
+          "end": 6766.479
+        },
+        {
+          "episode": 128,
+          "start": 6760.88,
+          "end": 6860.239
+        },
+        {
+          "episode": 128,
+          "start": 6826.119,
+          "end": 6919.39
+        }
+      ]
+    },
+    {
+      "id": "apuleius",
+      "title": "Apuleius",
+      "category": "historical",
+      "summary": "Roman author of 'The Golden Ass', which provides detailed descriptions of mystery cult initiations, particularly those of Isis and Osiris.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 3080.0,
+          "end": 3173.36
+        },
+        {
+          "episode": 128,
+          "start": 3300.0,
+          "end": 3393.699
+        }
+      ]
+    },
+    {
+      "id": "josephus",
+      "title": "Josephus",
+      "category": "historical",
+      "summary": "First-century Jewish historian who recounted a scandal involving the mysteries of Osiris, used to criticize pagan morality.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 3590.599,
+          "end": 3681.0
+        },
+        {
+          "episode": 128,
+          "start": 3618.98,
+          "end": 3711.519
+        },
+        {
+          "episode": 128,
+          "start": 3789.78,
+          "end": 3881.0
+        }
+      ]
+    },
+    {
+      "id": "charles-finney",
+      "title": "Charles Finney",
+      "category": "historical",
+      "summary": "19th-century revivalist who believed conversion could be achieved through techniques, a precursor to modern evangelical practices.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 11002.479,
+          "end": 11097.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "mystery-cult",
+      "title": "Mystery Cult",
+      "summary": "A private, individualistic religious group in the ancient world focused on inducing a personal, transformative experience, often involving death and rebirth themes, in contrast to public communal worship.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 612.96,
+          "end": 755.759
+        },
+        {
+          "episode": 128,
+          "start": 1796.16,
+          "end": 1890.96
+        },
+        {
+          "episode": 128,
+          "start": 2527.76,
+          "end": 2585.39
+        }
+      ]
+    },
+    {
+      "id": "ritual-and-perception",
+      "title": "Ritual and Perception",
+      "summary": "Ritual, as repeated ordered activity, shapes how individuals perceive and interact with the world. It can be used deliberately to reshape perceptions, as seen in both Orthodox liturgy and mystery cults.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 1260.0,
+          "end": 1350.0
+        },
+        {
+          "episode": 128,
+          "start": 1578.819,
+          "end": 1671.519
+        },
+        {
+          "episode": 128,
+          "start": 1675.599,
+          "end": 1768.64
+        }
+      ]
+    },
+    {
+      "id": "near-death-experience",
+      "title": "Near-Death Experience",
+      "summary": "An experience of coming close to death and pulling back, which reframes one's perspective on life. Mystery cults aimed to induce this artificially through rituals, darkness, and substances.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 1895.119,
+          "end": 1989.759
+        },
+        {
+          "episode": 128,
+          "start": 2031.24,
+          "end": 2126.76
+        },
+        {
+          "episode": 128,
+          "start": 2591.199,
+          "end": 2681.719
+        }
+      ]
+    },
+    {
+      "id": "individual-vs-community",
+      "title": "Individual vs. Community",
+      "summary": "Mystery cults were oriented toward individual experience and achievement, while Christianity is communal, emphasizing shared life and collective transformation.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 933.0,
+          "end": 1023.46
+        },
+        {
+          "episode": 128,
+          "start": 1843.0,
+          "end": 1937.799
+        },
+        {
+          "episode": 128,
+          "start": 8520.0,
+          "end": 8610.4
+        }
+      ]
+    },
+    {
+      "id": "experience-as-epiphenomenal",
+      "title": "Experience as Epiphenomenal",
+      "summary": "In Christianity, spiritual experiences are not the goal but byproducts of participating in the sacramental life. They are not required for the validity of the ritual.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 8130.0,
+          "end": 8221.719
+        },
+        {
+          "episode": 128,
+          "start": 8471.2,
+          "end": 8562.86
+        }
+      ]
+    },
+    {
+      "id": "evangelicalism-as-mystery-cult",
+      "title": "Evangelicalism as Mystery Cult",
+      "summary": "American evangelicalism, with its focus on individual experience and techniques to induce altered states, parallels ancient mystery cults more than historic Christianity.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 10297.0,
+          "end": 10390.399
+        },
+        {
+          "episode": 128,
+          "start": 10405.959,
+          "end": 10497.84
+        },
+        {
+          "episode": 128,
+          "start": 11120.479,
+          "end": 11212.4
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "mystery-cults-individualistic",
+      "text": "Mystery cults were oriented toward individual experience and achievement, unlike public pagan worship which was communal.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 933.0,
+          "end": 1023.46
+        }
+      ]
+    },
+    {
+      "id": "christianity-not-derived-from-mystery-cults",
+      "text": "Christianity is not derived from mystery cults; the similarities are superficial, and the core differences are profound.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 7662.39,
+          "end": 7755.5
+        },
+        {
+          "episode": 128,
+          "start": 8873.76,
+          "end": 8966.879
+        }
+      ]
+    },
+    {
+      "id": "experience-not-the-goal",
+      "text": "In historic Christianity, spiritual experience is not the goal; it is epiphenomenal and not required for the validity of sacraments.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 7944.79,
+          "end": 8034.96
+        },
+        {
+          "episode": 128,
+          "start": 8130.0,
+          "end": 8221.719
+        }
+      ]
+    },
+    {
+      "id": "evangelicalism-resembles-mystery-cults",
+      "text": "American evangelicalism, with its focus on individual experience and techniques to induce altered states, parallels ancient mystery cults.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 10297.0,
+          "end": 10390.399
+        },
+        {
+          "episode": 128,
+          "start": 11120.479,
+          "end": 11212.4
+        }
+      ]
+    },
+    {
+      "id": "mystery-cults-involve-death-and-rebirth",
+      "text": "Mystery cults fundamentally aimed to induce a near-death experience, symbolizing death and rebirth.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 1895.119,
+          "end": 1989.759
+        },
+        {
+          "episode": 128,
+          "start": 2031.24,
+          "end": 2126.76
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "jephthah-daughter",
+      "reference": "Judges 11:30-40",
+      "summary": "The story of Jephthah's daughter is presented as an alternate origin for the Eleusinian Mysteries, with the festival of torchbearers paralleling the search for Persephone.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 4288.38,
+          "end": 4506.239
+        }
+      ]
+    },
+    {
+      "id": "baptism-into-christs-death",
+      "reference": "Romans 6:3-4",
+      "summary": "Baptism is described as participation in Christ's death and resurrection, contrasting with mystery cult initiations.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 7854.359,
+          "end": 7944.79
+        },
+        {
+          "episode": 128,
+          "start": 9060.0,
+          "end": 9156.399
+        }
+      ]
+    },
+    {
+      "id": "mystery-revealed",
+      "reference": "Ephesians 3:3-6",
+      "summary": "The 'mystery' in the New Testament refers to God's plan revealed in Christ, not secret knowledge for an elite.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 8976.879,
+          "end": 9080.0
+        }
+      ]
+    },
+    {
+      "id": "whatever-is-true",
+      "reference": "Philippians 4:8",
+      "summary": "St. Paul's exhortation to think on what is true, noble, and pure is applied to the Christian calling to engage with the world.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 12044.28,
+          "end": 12138.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "mysterion",
+      "term": "Mysterion",
+      "definition": "Greek word for 'mystery', meaning a hidden thing that is later revealed, used in the New Testament for God's plan of salvation.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 8910.0,
+          "end": 9009.4
+        }
+      ]
+    },
+    {
+      "id": "homophagy",
+      "term": "Homophagy",
+      "definition": "The ritual act of eating a live animal, practiced in the Dionysian Mysteries.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 6205.6,
+          "end": 6297.79
+        }
+      ]
+    },
+    {
+      "id": "kykeon",
+      "term": "Kykeon",
+      "definition": "A spiced wine or drink given to initiates in the Eleusinian Mysteries, likely containing psychoactive substances.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 5201.64,
+          "end": 5293.739
+        }
+      ]
+    },
+    {
+      "id": "hierophant",
+      "term": "Hierophant",
+      "definition": "The high priest in the Eleusinian Mysteries, an inherited office within a specific Athenian family.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 5550.0,
+          "end": 5640.0
+        }
+      ]
+    },
+    {
+      "id": "panathenaea",
+      "term": "Panathenaea",
+      "definition": "A group of women permanently attached to the shrine at Eleusis, meaning 'all holy ones' or 'completely separated ones'.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 5573.52,
+          "end": 5664.399
+        }
+      ]
+    },
+    {
+      "id": "epiphenomenal",
+      "term": "Epiphenomenal",
+      "definition": "A secondary effect that often accompanies a primary phenomenon but is not essential to it; used to describe spiritual experiences in Christianity.",
+      "segments": [
+        {
+          "episode": 128,
+          "start": 8130.0,
+          "end": 8221.719
+        }
+      ]
+    }
+  ]
+}

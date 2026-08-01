@@ -1,0 +1,493 @@
+{
+  "summary": "In this episode, the hosts discuss the Apocalypse of Abraham, a non-canonical Jewish apocalyptic text from the late first century AD. They explore its origins, its preservation by the medieval Bogomil sect, and its content, which includes Abraham's rejection of idolatry, a cosmic Day of Atonement ritual involving the angel Yehoel and the demon Azazel, and a vision of history culminating in the destruction of the Second Temple and the coming of a messianic figure. The episode then connects these themes to Christian atonement theology, contrasting the Orthodox understanding of cosmic atonement with penal substitutionary atonement, and emphasizes the hope and spiritual warfare inherent in the Christian message.",
+  "entities": [
+    {
+      "id": "abraham",
+      "title": "Abraham",
+      "category": "person",
+      "summary": "Biblical patriarch, central figure of the Apocalypse of Abraham, who rejects idolatry and performs a cosmic atonement ritual.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 2098.559,
+          "end": 2189.48
+        },
+        {
+          "episode": 112,
+          "start": 2918.28,
+          "end": 3016.44
+        },
+        {
+          "episode": 112,
+          "start": 9630.0,
+          "end": 9720.59
+        }
+      ]
+    },
+    {
+      "id": "azazel",
+      "title": "Azazel",
+      "category": "theological",
+      "summary": "A demonic being in Jewish tradition, associated with the scapegoat on the Day of Atonement, appearing as a raven and dragon in the Apocalypse of Abraham.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 3150.0,
+          "end": 3244.32
+        },
+        {
+          "episode": 112,
+          "start": 3386.88,
+          "end": 3477.239
+        },
+        {
+          "episode": 112,
+          "start": 3870.0,
+          "end": 3960.639
+        }
+      ]
+    },
+    {
+      "id": "yehoel",
+      "title": "Yehoel",
+      "category": "theological",
+      "summary": "An angelic being in the Apocalypse of Abraham, bearing the name of God, acting as a priest and guide, representing a second power in heaven.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 2998.19,
+          "end": 3088.96
+        },
+        {
+          "episode": 112,
+          "start": 3060.0,
+          "end": 3150.599
+        },
+        {
+          "episode": 112,
+          "start": 3732.719,
+          "end": 3823.0
+        }
+      ]
+    },
+    {
+      "id": "bogomils",
+      "title": "Bogomils",
+      "category": "historical",
+      "summary": "Medieval dualist sect in the Balkans that preserved the Apocalypse of Abraham, holding Gnostic-like beliefs.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 1190.759,
+          "end": 1286.88
+        },
+        {
+          "episode": 112,
+          "start": 1437.68,
+          "end": 1529.0
+        },
+        {
+          "episode": 112,
+          "start": 1500.0,
+          "end": 1595.0
+        }
+      ]
+    },
+    {
+      "id": "st-epiphanius",
+      "title": "St. Epiphanius of Salamis",
+      "category": "person",
+      "summary": "Church Father who mentioned a Gnostic text called the Apocalypse of Abraham, likely different from the Slavonic text.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 1710.0,
+          "end": 1805.39
+        },
+        {
+          "episode": 112,
+          "start": 1776.48,
+          "end": 1866.799
+        }
+      ]
+    },
+    {
+      "id": "john-calvin",
+      "title": "John Calvin",
+      "category": "person",
+      "summary": "Reformation theologian whose doctrine of penal substitutionary atonement is critiqued in this episode.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 7714.96,
+          "end": 7806.96
+        },
+        {
+          "episode": 112,
+          "start": 8393.979,
+          "end": 8487.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "apocalypse-of-abraham",
+      "title": "Apocalypse of Abraham",
+      "summary": "A Jewish apocalyptic text from the late first century AD, preserved in Slavonic by the Bogomils, depicting Abraham's rejection of idolatry, a cosmic Day of Atonement, and a vision of history.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 330.0,
+          "end": 433.0
+        },
+        {
+          "episode": 112,
+          "start": 1693.119,
+          "end": 1784.64
+        },
+        {
+          "episode": 112,
+          "start": 4789.2,
+          "end": 4821.399
+        }
+      ]
+    },
+    {
+      "id": "bogomilism",
+      "title": "Bogomilism",
+      "summary": "A medieval dualist sect in the Balkans that preserved the Apocalypse of Abraham, holding Gnostic-like beliefs that the material world was created by the devil.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 1190.759,
+          "end": 1286.88
+        },
+        {
+          "episode": 112,
+          "start": 1437.68,
+          "end": 1529.0
+        },
+        {
+          "episode": 112,
+          "start": 1500.0,
+          "end": 1595.0
+        }
+      ]
+    },
+    {
+      "id": "cosmic-atonement",
+      "title": "Cosmic Atonement",
+      "summary": "The expectation of a final, all-encompassing purification of the cosmos, fulfilling the Day of Atonement, involving the defeat of evil and the restoration of creation.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 6082.279,
+          "end": 6174.92
+        },
+        {
+          "episode": 112,
+          "start": 6941.0,
+          "end": 7033.199
+        },
+        {
+          "episode": 112,
+          "start": 9081.76,
+          "end": 9174.92
+        }
+      ]
+    },
+    {
+      "id": "penal-substitutionary-atonement",
+      "title": "Penal Substitutionary Atonement",
+      "summary": "A Protestant doctrine, particularly Calvinist, that Christ took the punishment for the sins of the elect, requiring his spiritual death and separation from God, which Orthodoxy rejects.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 7345.68,
+          "end": 7438.8
+        },
+        {
+          "episode": 112,
+          "start": 7450.0,
+          "end": 7547.84
+        },
+        {
+          "episode": 112,
+          "start": 8640.0,
+          "end": 8736.959
+        }
+      ]
+    },
+    {
+      "id": "second-power-in-heaven",
+      "title": "Second Power in Heaven",
+      "summary": "A Jewish theological concept of a visible divine being, distinct from God yet bearing His name, seen in figures like the angel Yehoel, later identified by Christians as Jesus.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 3060.0,
+          "end": 3150.599
+        },
+        {
+          "episode": 112,
+          "start": 3732.719,
+          "end": 3823.0
+        }
+      ]
+    },
+    {
+      "id": "messiah-ben-joseph",
+      "title": "Messiah ben Joseph",
+      "summary": "A Jewish messianic figure associated with the northern tribes, who gathers Gentiles to worship God and suffers persecution, sometimes applied to Jesus by non-Christian Jews.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 4555.439,
+          "end": 4647.6
+        },
+        {
+          "episode": 112,
+          "start": 4614.88,
+          "end": 4716.38
+        },
+        {
+          "episode": 112,
+          "start": 4728.159,
+          "end": 4818.439
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "apocalypse-of-abraham-dating",
+      "text": "The Apocalypse of Abraham was written around AD 80 by a non-Christian Jewish writer, shortly after the destruction of the Second Temple.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 1148.96,
+          "end": 1243.599
+        },
+        {
+          "episode": 112,
+          "start": 4120.0,
+          "end": 4210.0
+        }
+      ]
+    },
+    {
+      "id": "bogomils-preserved-text",
+      "text": "The Apocalypse of Abraham was preserved by the Bogomils, a medieval dualist sect, but it was not written by them.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 1190.759,
+          "end": 1286.88
+        },
+        {
+          "episode": 112,
+          "start": 1378.92,
+          "end": 1469.92
+        }
+      ]
+    },
+    {
+      "id": "cosmic-atonement-expected",
+      "text": "Second Temple Jews expected a cosmic Day of Atonement that would purify the entire creation and defeat evil once and for all.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 6082.279,
+          "end": 6174.92
+        },
+        {
+          "episode": 112,
+          "start": 6941.0,
+          "end": 7033.199
+        }
+      ]
+    },
+    {
+      "id": "psa-not-orthodox",
+      "text": "Penal substitutionary atonement is not and has never been taught by the Orthodox Church, as it requires Christ's spiritual death and separation from God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 8243.6,
+          "end": 8335.36
+        },
+        {
+          "episode": 112,
+          "start": 8640.0,
+          "end": 8736.959
+        }
+      ]
+    },
+    {
+      "id": "messiah-ben-joseph-applied-to-jesus",
+      "text": "The Apocalypse of Abraham is the earliest testimony of a non-Christian Jewish author applying the Messiah ben Joseph tradition to Jesus of Nazareth.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 4555.439,
+          "end": 4647.6
+        },
+        {
+          "episode": 112,
+          "start": 4728.159,
+          "end": 4818.439
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "leviticus-16",
+      "reference": "Leviticus 16",
+      "summary": "The Day of Atonement ritual, including the two goats, one for Yahweh and one for Azazel, is the basis for the cosmic atonement imagery in the Apocalypse of Abraham.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 2940.0,
+          "end": 3035.94
+        },
+        {
+          "episode": 112,
+          "start": 3150.0,
+          "end": 3244.32
+        },
+        {
+          "episode": 112,
+          "start": 9068.219,
+          "end": 9159.0
+        }
+      ]
+    },
+    {
+      "id": "genesis-15",
+      "reference": "Genesis 15",
+      "summary": "Abraham's covenant ritual, where birds of prey descend on the carcasses, is referenced in the Apocalypse of Abraham's depiction of Azazel as a raven.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 3198.0,
+          "end": 3288.579
+        }
+      ]
+    },
+    {
+      "id": "genesis-4",
+      "reference": "Genesis 4",
+      "summary": "The story of Cain and Abel, with sin crouching at the door, is interpreted in the Apocalypse of Abraham as Cain being possessed by Azazel.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 4015.599,
+          "end": 4109.96
+        },
+        {
+          "episode": 112,
+          "start": 4084.639,
+          "end": 4175.359
+        }
+      ]
+    },
+    {
+      "id": "john-1-29",
+      "reference": "John 1:29",
+      "summary": "John the Baptist's declaration 'Behold the Lamb of God who takes away the sin of the world' combines Passover and Day of Atonement imagery, fulfilled in Christ.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 9120.0,
+          "end": 9211.479
+        }
+      ]
+    },
+    {
+      "id": "romans-5",
+      "reference": "Romans 5",
+      "summary": "Paul's teaching that sin entered the world through one man is used to explain the need for cosmic atonement.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 6985.88,
+          "end": 7079.96
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "azazel",
+      "term": "Azazel",
+      "definition": "A demonic being in Jewish tradition, associated with the scapegoat on the Day of Atonement, often identified with the devil.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 3150.0,
+          "end": 3244.32
+        },
+        {
+          "episode": 112,
+          "start": 3870.0,
+          "end": 3960.639
+        }
+      ]
+    },
+    {
+      "id": "yehoel",
+      "term": "Yehoel",
+      "definition": "An angelic being in the Apocalypse of Abraham, bearing the name of God, acting as a priest and guide.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 2998.19,
+          "end": 3088.96
+        }
+      ]
+    },
+    {
+      "id": "bogomil",
+      "term": "Bogomil",
+      "definition": "A member of a medieval dualist sect in the Balkans that held Gnostic-like beliefs and preserved the Apocalypse of Abraham.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 1190.759,
+          "end": 1286.88
+        }
+      ]
+    },
+    {
+      "id": "messiah-ben-joseph",
+      "term": "Messiah ben Joseph",
+      "definition": "A Jewish messianic figure associated with the northern tribes, who gathers Gentiles and suffers persecution.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 4555.439,
+          "end": 4647.6
+        }
+      ]
+    },
+    {
+      "id": "penal-substitution",
+      "term": "Penal Substitution",
+      "definition": "A doctrine that Christ took the punishment for the sins of the elect, requiring his spiritual death and separation from God.",
+      "segments": [
+        {
+          "episode": 112,
+          "start": 8640.0,
+          "end": 8736.959
+        }
+      ]
+    }
+  ]
+}

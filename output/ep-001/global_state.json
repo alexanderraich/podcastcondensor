@@ -1,0 +1,298 @@
+{
+  "summary": "In this inaugural episode of the Lord of Spirits podcast, hosts Father Andrew Stephen Damick and Father Stephen De Young introduce the show's purpose: to explore the spiritual reality that modern Christians often overlook due to a materialist mindset. They discuss the problem of materialism, the biblical use of the term 'gods' for spiritual beings, and the concept of the Divine Council. The episode includes listener calls on topics such as guardian angels, the significance of Mount Hermon, and the nature of monotheism versus monolatry. The hosts emphasize the importance of recognizing the union of the seen and unseen worlds and encourage a more enchanted, spiritually aware Christian life.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of the podcast, Chief Content Officer at Ancient Faith Ministries, former pastor, and author.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 75.599,
+          "end": 168.0
+        },
+        {
+          "episode": 1,
+          "start": 230.719,
+          "end": 323.959
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "Co-host, pastor of Archangel Gabriel Orthodox Church, biblical scholar with a PhD in Biblical Studies.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 136.24,
+          "end": 226.719
+        },
+        {
+          "episode": 1,
+          "start": 392.699,
+          "end": 484.12
+        }
+      ]
+    },
+    {
+      "id": "john-the-baptist",
+      "title": "John the Baptist",
+      "category": "person",
+      "summary": "Saint John the Forerunner, who according to Orthodox tradition preached in Hades after his death.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 552.36,
+          "end": 645.299
+        },
+        {
+          "episode": 1,
+          "start": 570.0,
+          "end": 660.12
+        }
+      ]
+    },
+    {
+      "id": "mount-hermon",
+      "title": "Mount Hermon",
+      "category": "place",
+      "summary": "A mountain associated with divine council, pagan worship, and the site of the Transfiguration tradition.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 4262.92,
+          "end": 4357.279
+        },
+        {
+          "episode": 1,
+          "start": 4287.399,
+          "end": 4380.159
+        }
+      ]
+    },
+    {
+      "id": "psalm-82",
+      "title": "Psalm 82",
+      "category": "scriptural",
+      "summary": "A psalm depicting God standing in the assembly of gods, used to illustrate the biblical concept of 'gods'.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 2333.4,
+          "end": 2425.519
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "materialism",
+      "title": "Materialism",
+      "summary": "The belief that matter and energy are all that exists, leading to a worldview that excludes the spiritual. The hosts argue that modern Christians are often materialists by habit, living as if the physical world is all there is, which hinders their spiritual life.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 945.39,
+          "end": 1304.519
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "title": "Divine Council",
+      "summary": "The heavenly assembly of spiritual beings (angels, 'gods') over which God presides. This concept is central to understanding the biblical use of 'gods' and the spiritual hierarchy.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 1703.98,
+          "end": 1795.0
+        },
+        {
+          "episode": 1,
+          "start": 2427.84,
+          "end": 2519.5
+        }
+      ]
+    },
+    {
+      "id": "monolatry",
+      "title": "Monolatry",
+      "summary": "The worship of one God while acknowledging the existence of other spiritual beings that can be called 'gods'. The hosts argue this is a more accurate description of biblical faith than monotheism.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 4749.159,
+          "end": 4842.0
+        }
+      ]
+    },
+    {
+      "id": "spiritual-geography",
+      "title": "Spiritual Geography",
+      "summary": "The idea that spiritual realities are tied to physical locations, such as mountains, springs, and caves, which serve as gateways or dwelling places for spiritual beings.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 517.379,
+          "end": 613.84
+        },
+        {
+          "episode": 1,
+          "start": 4494.79,
+          "end": 4585.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "modern-christians-materialists",
+      "text": "Modern Christians are often materialists by habit, living as if the physical world is all there is, which hinders their spiritual life.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 1034.79,
+          "end": 1127.2
+        }
+      ]
+    },
+    {
+      "id": "bible-uses-gods-for-spiritual-beings",
+      "text": "The Bible uses the word 'gods' to refer to angels, demons, and deceased humans, not just the one true God.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 2132.34,
+          "end": 2222.699
+        },
+        {
+          "episode": 1,
+          "start": 3345.0,
+          "end": 3435.239
+        }
+      ]
+    },
+    {
+      "id": "monotheism-is-modern-category",
+      "text": "The term 'monotheism' is a modern invention, and the biblical faith is better described as monolatry: worship of one God while acknowledging other spiritual beings.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 4633.359,
+          "end": 4725.0
+        },
+        {
+          "episode": 1,
+          "start": 4796.399,
+          "end": 4887.659
+        }
+      ]
+    },
+    {
+      "id": "angels-cannot-be-killed",
+      "text": "Good angels cannot be killed by bad angels because they do not have mortal bodies, but evil angels can die spiritually.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 3461.28,
+          "end": 3551.599
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "psalm-82-1",
+      "reference": "Psalm 82:1",
+      "summary": "Used to show that God stands in the assembly of gods, indicating the existence of other spiritual beings.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 2333.4,
+          "end": 2425.519
+        }
+      ]
+    },
+    {
+      "id": "exodus-21-6",
+      "reference": "Exodus 21:6",
+      "summary": "Mentions bringing a slave before 'the gods', interpreted as the household gods or ancestors, showing the term 'gods' applied to deceased humans.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 3090.0,
+          "end": 3269.32
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-11-10",
+      "reference": "1 Corinthians 11:10",
+      "summary": "Discussed in relation to head coverings 'because of the angels', linked to the need for modesty and avoidance of ritual sexual immorality.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 3853.88,
+          "end": 4111.0
+        }
+      ]
+    },
+    {
+      "id": "genesis-6-1-4",
+      "reference": "Genesis 6:1-4",
+      "summary": "Referenced as the origin of giants and the sin of angels mixing with humans, used to explain Paul's warning about angels.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 4029.239,
+          "end": 4120.68
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "elohim",
+      "term": "Elohim",
+      "definition": "Hebrew word for 'God' or 'gods', used in the Old Testament to refer to the true God, angels, and even deceased humans.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 2922.32,
+          "end": 3013.96
+        }
+      ]
+    },
+    {
+      "id": "sabaoth",
+      "term": "Sabaoth",
+      "definition": "Hebrew term meaning 'hosts' or 'armies', used in the title 'Lord of Hosts' (Yahweh Sabaoth), referring to God's command over the heavenly host.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 1719.0,
+          "end": 1817.0
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God through participation in His divine life, often connected to the idea of becoming 'gods' by grace.",
+      "segments": [
+        {
+          "episode": 1,
+          "start": 2885.599,
+          "end": 2979.199
+        }
+      ]
+    }
+  ]
+}

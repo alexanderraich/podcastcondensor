@@ -1,0 +1,498 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen De Young continue their series on the history of Israel, focusing on the period from Joshua's conquest through the divided monarchy and the exile. They begin by refuting the common Protestant notion that the Torah was given to show that humans cannot keep it, arguing instead that God's commandments are keepable and that the Torah was a gift for life in the land. They then discuss the conquest of Canaan, emphasizing that it was not a genocide but a judgment against specific giant clans engaged in abhorrent practices, and that individuals could leave these groups and join Israel, as exemplified by Caleb and Rahab. The hosts trace the failure of the tribes to fully possess their allotted lands, the period of the judges, the establishment of the monarchy with Saul and David, and the division of the kingdom after Solomon. They highlight the conditional nature of God's promises, the distinction between God's giving and human receiving, and the role of the faithful remnant. The episode concludes with the Assyrian destruction of the Northern Kingdom and the Babylonian exile of Judah, framing these events as the fulfillment of the curses of the Torah and setting the stage for the coming Messiah.",
+  "entities": [
+    {
+      "id": "joshua",
+      "title": "Joshua",
+      "category": "person",
+      "summary": "Joshua, son of Nun, led Israel into the Promised Land after Moses. His conquest fulfilled the land promises, but not all tribes took possession. He is a type of Jesus, as his name in Greek is Jesus.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 612.879,
+          "end": 705.84
+        },
+        {
+          "episode": 115,
+          "start": 2910.0,
+          "end": 3105.199
+        }
+      ]
+    },
+    {
+      "id": "david",
+      "title": "King David",
+      "category": "person",
+      "summary": "David was the second king of Israel, a man after God's own heart. He completed the conquest by killing the remaining giants, received the Davidic covenant, and is an ancestor of the Messiah. He kept the Torah perfectly through repentance.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 6342.56,
+          "end": 6434.479
+        },
+        {
+          "episode": 115,
+          "start": 6647.0,
+          "end": 7123.279
+        }
+      ]
+    },
+    {
+      "id": "saul",
+      "title": "King Saul",
+      "category": "person",
+      "summary": "Saul was the first king of Israel, chosen because the people wanted a king like other nations. He was a war chief, not a medieval king, and failed to execute God's judgment on the Amalekites, leading to his rejection.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 6067.6,
+          "end": 6158.0
+        },
+        {
+          "episode": 115,
+          "start": 6318.92,
+          "end": 6410.79
+        }
+      ]
+    },
+    {
+      "id": "solomon",
+      "title": "King Solomon",
+      "category": "person",
+      "summary": "Solomon, David's son, built the Temple but fell into idolatry and polygamy. He repented at the end of his life, as reflected in Ecclesiastes, and is considered a saint. His sins led to the division of the kingdom.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 7191.0,
+          "end": 7408.84
+        }
+      ]
+    },
+    {
+      "id": "jeroboam",
+      "title": "Jeroboam",
+      "category": "person",
+      "summary": "Jeroboam, son of Nebat, was the first king of the Northern Kingdom of Israel. He set up golden calves at Dan and Bethel, establishing a state religion of idolatry that persisted throughout the kingdom's history.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 7376.96,
+          "end": 7726.64
+        }
+      ]
+    },
+    {
+      "id": "assyrians",
+      "title": "Assyrians",
+      "category": "historical",
+      "summary": "The Assyrian Empire destroyed the Northern Kingdom of Israel in 722 BC. They were known for extreme brutality, including mass executions and deportations, and their capital was Nineveh.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 8670.0,
+          "end": 8937.479
+        }
+      ]
+    },
+    {
+      "id": "babylon",
+      "title": "Babylon",
+      "category": "historical",
+      "summary": "The Neo-Babylonian Empire, under Nebuchadnezzar, conquered Judah and destroyed the Temple in 586 BC, leading to the Babylonian exile. Babylon was used by God as a tool of judgment but was also judged for its own wickedness.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 9600.0,
+          "end": 9696.18
+        }
+      ]
+    },
+    {
+      "id": "amalekites",
+      "title": "Amalekites",
+      "category": "historical",
+      "summary": "The Amalekites were a giant clan descended from Esau, uniquely belligerent toward Israel. They attacked Israel at Mount Sinai, and God commanded their destruction. Saul's failure to fully execute this command led to his rejection.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 4865.0,
+          "end": 5169.39
+        }
+      ]
+    },
+    {
+      "id": "dispensationalism",
+      "title": "Dispensationalism",
+      "category": "theological",
+      "summary": "A theological system that divides history into distinct dispensations and often separates God's plans for Israel and the Church. The hosts argue it contradicts Scripture, particularly Joshua 21, and leads to a fragmented reading of the Bible.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 2887.44,
+          "end": 3105.199
+        },
+        {
+          "episode": 115,
+          "start": 10124.879,
+          "end": 10505.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "torah-keepable",
+      "title": "The Torah is Keepable",
+      "summary": "The hosts argue that the Torah was not given to show that humans cannot keep it, but rather as a guide for life in the land. They cite Deuteronomy 30:11 where God says the commandment is not too difficult, and point to biblical figures like David who kept the Torah perfectly through repentance.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 260.879,
+          "end": 599.72
+        }
+      ]
+    },
+    {
+      "id": "giant-clans-judgment",
+      "title": "Judgment on Giant Clans",
+      "summary": "The conquest of Canaan is framed as a judgment against specific giant clans (e.g., Anakim, Rephaim) who practiced human sacrifice, cannibalism, and sexual immorality. The goal was to end these practices, not to commit genocide, as individuals could leave these groups and join Israel.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 735.0,
+          "end": 1564.819
+        }
+      ]
+    },
+    {
+      "id": "god-giving-vs-human-receiving",
+      "title": "God's Giving vs. Human Receiving",
+      "summary": "The hosts emphasize a distinction between God giving a gift and humans receiving it. This is illustrated in Joshua where God gave the land, but not all tribes took possession. This concept is crucial for understanding St. Paul's arguments about faith and works.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 3318.48,
+          "end": 3741.0
+        }
+      ]
+    },
+    {
+      "id": "land-promises-fulfilled",
+      "title": "Land Promises Fulfilled",
+      "summary": "The hosts argue that all land promises to Israel were fulfilled in Joshua's time, citing Joshua 21:43-45. This contradicts dispensationalist claims that some land promises remain unfulfilled, and it underscores the conditional nature of the covenant.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 2910.0,
+          "end": 3105.199
+        }
+      ]
+    },
+    {
+      "id": "faithful-remnant",
+      "title": "The Faithful Remnant",
+      "summary": "Despite the collective disobedience of Israel and Judah, there was always a faithful remnant of individuals who kept the Torah. This concept is important for understanding St. Paul's collective language about the curse of the law.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 9163.68,
+          "end": 9253.92
+        }
+      ]
+    },
+    {
+      "id": "sabbath-years-exile",
+      "title": "Sabbath Years and the Exile",
+      "summary": "The 70-year exile is explained as repayment for 70 missed Sabbath years, as Israel never observed the Sabbath year or Jubilee. This shows that God acts to establish the order prescribed by the Torah, even through judgment.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 9687.0,
+          "end": 9975.84
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "torah-not-impossible",
+      "text": "The Torah was not given to show that humans cannot keep it; God explicitly says it is not too difficult, and biblical figures like David kept it perfectly through repentance.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 260.879,
+          "end": 599.72
+        }
+      ]
+    },
+    {
+      "id": "conquest-not-genocide",
+      "text": "Joshua's conquest was not a genocide but a judgment against specific giant clans practicing human sacrifice and other abominations; individuals could leave these groups and join Israel.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 735.0,
+          "end": 1564.819
+        }
+      ]
+    },
+    {
+      "id": "land-promises-fulfilled",
+      "text": "All land promises to Israel were fulfilled in Joshua's time (Joshua 21:43-45), contradicting dispensationalist claims of unfulfilled land promises.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 2910.0,
+          "end": 3105.199
+        }
+      ]
+    },
+    {
+      "id": "god-gives-but-people-must-receive",
+      "text": "God gives gifts and inheritance, but people must faithfully receive them; this distinction is crucial for understanding St. Paul's theology of faith and works.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 3318.48,
+          "end": 3741.0
+        }
+      ]
+    },
+    {
+      "id": "david-kept-torah",
+      "text": "David kept the Torah perfectly, not by never sinning, but by repenting when he sinned, as the Torah prescribes.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 7579.279,
+          "end": 7672.319
+        }
+      ]
+    },
+    {
+      "id": "exile-for-sabbath-years",
+      "text": "The 70-year exile was a repayment for 70 missed Sabbath years, showing that God acts to establish the order prescribed by the Torah.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 9687.0,
+          "end": 9975.84
+        }
+      ]
+    },
+    {
+      "id": "third-temple-antichrist",
+      "text": "Church fathers traditionally taught that a third temple would be built by the Antichrist, not as a positive eschatological event.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 5454.88,
+          "end": 5567.159
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "deut-30-11",
+      "reference": "Deuteronomy 30:11",
+      "summary": "Used to argue that the Torah is not too difficult to keep, contradicting the idea that it was given to show human inability.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 333.6,
+          "end": 430.24
+        }
+      ]
+    },
+    {
+      "id": "gen-15-18-21",
+      "reference": "Genesis 15:18-21",
+      "summary": "Lists the giant clans that Israel would displace, showing that the conquest was targeted at specific groups.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 974.24,
+          "end": 1068.72
+        }
+      ]
+    },
+    {
+      "id": "josh-21-43-45",
+      "reference": "Joshua 21:43-45",
+      "summary": "States that all land promises were fulfilled, used to refute dispensationalist claims of unfulfilled promises.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 2940.0,
+          "end": 3069.44
+        }
+      ]
+    },
+    {
+      "id": "josh-11-21-23",
+      "reference": "Joshua 11:21-23",
+      "summary": "Describes the cutting off of the Anakim and the taking of the whole land, linking the conquest to the giant clans.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 3119.44,
+          "end": 3210.8
+        }
+      ]
+    },
+    {
+      "id": "2-sam-7-8-16",
+      "reference": "2 Samuel 7:8-16",
+      "summary": "The Davidic covenant, promising an eternal throne, but with conditionality and discipline for sin.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 6825.26,
+          "end": 6915.76
+        }
+      ]
+    },
+    {
+      "id": "1-chron-17-13-14",
+      "reference": "1 Chronicles 17:13-14",
+      "summary": "Parallel to 2 Samuel 7, but emphasizes the son's eternal throne in God's house, pointing to the Messiah.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 7019.279,
+          "end": 7109.56
+        }
+      ]
+    },
+    {
+      "id": "1-kings-11-31-39",
+      "reference": "1 Kings 11:31-39",
+      "summary": "God tears the kingdom from Solomon and gives ten tribes to Jeroboam, but preserves one tribe for David's sake.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 7408.84,
+          "end": 7503.439
+        }
+      ]
+    },
+    {
+      "id": "gal-3-10-14",
+      "reference": "Galatians 3:10-14",
+      "summary": "St. Paul speaks of the curse of the law, which the hosts interpret as the collective exile of Israel, not a metaphysical curse.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 9278.28,
+          "end": 9369.299
+        }
+      ]
+    },
+    {
+      "id": "jer-25-8-11",
+      "reference": "Jeremiah 25:8-11",
+      "summary": "Prophecy of 70 years of Babylonian exile, used to explain the Sabbath year repayment.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 9591.34,
+          "end": 9683.0
+        }
+      ]
+    },
+    {
+      "id": "2-chron-36-21",
+      "reference": "2 Chronicles 36:21",
+      "summary": "Explains the 70 years as the land enjoying its Sabbaths, linking the exile to the neglected Sabbath years.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 9696.18,
+          "end": 9790.299
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "dispensationalism",
+      "term": "Dispensationalism",
+      "definition": "A theological system that divides history into distinct eras (dispensations) and often separates God's plans for Israel and the Church, which the hosts argue is unbiblical.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 2887.44,
+          "end": 3105.199
+        }
+      ]
+    },
+    {
+      "id": "anakim",
+      "term": "Anakim",
+      "definition": "A giant clan mentioned in the Bible, descendants of the Nephilim, who were driven out by Joshua but some fled to Philistine cities.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 3119.44,
+          "end": 3210.8
+        }
+      ]
+    },
+    {
+      "id": "amalekites",
+      "term": "Amalekites",
+      "definition": "A giant clan descended from Esau, uniquely belligerent toward Israel, and commanded by God to be destroyed.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 4865.0,
+          "end": 5169.39
+        }
+      ]
+    },
+    {
+      "id": "sabbath-year",
+      "term": "Sabbath Year",
+      "definition": "Every seventh year, the land was to rest, and debts were to be forgiven. Israel never observed this, leading to the 70-year exile.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 9687.0,
+          "end": 9975.84
+        }
+      ]
+    },
+    {
+      "id": "jubilee",
+      "term": "Jubilee",
+      "definition": "Every 50th year, all land was to revert to its original family ownership, a reset of economic order. Israel never celebrated it.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 1960.319,
+          "end": 2060.8
+        }
+      ]
+    },
+    {
+      "id": "ephod",
+      "term": "Ephod",
+      "definition": "A priestly garment, but in the context of Micah's house, it was part of an idolatrous shrine used for divination.",
+      "segments": [
+        {
+          "episode": 115,
+          "start": 2545.76,
+          "end": 2636.559
+        }
+      ]
+    }
+  ]
+}

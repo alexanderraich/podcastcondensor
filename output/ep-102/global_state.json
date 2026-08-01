@@ -1,0 +1,462 @@
+{
+  "summary": "In this Halloween special episode of the Lord of Spirits, Fathers Andrew Stephen Damick and Stephen DeYoung explore the origins and nature of demons as understood in the ancient Greek, Roman, and Second Temple Jewish worlds, and how these views were adopted and transformed by early Christianity. The episode begins with a discussion of the Greek concept of the daemon, which originally referred to the spirits of deceased heroes who were venerated at shrines, and the Roman concept of the genius, a guardian spirit associated with individuals, places, and peoples. The hosts emphasize that in antiquity, demons were not inherently evil but were seen as intermediaries between gods and humans, and that the idea of a guardian demon was a positive one. They then transition to the Second Temple Jewish perspective, where demons are identified as the disembodied spirits of the Nephilim, the offspring of fallen angels and human women, as described in texts like 1 Enoch and Jubilees. The early Church Fathers, including Justin Martyr, Athenagoras, and Clementine literature, connected these demons to the Greek gods and Titans, arguing that pagan myths were distorted accounts of the Watchers and their offspring. The episode also addresses the later shift in interpretation by figures like St. John Chrysostom and St. Augustine, who rejected the literal angel-human hybrid view and instead emphasized that demons are the souls of wicked humans who imitate demonic behavior. Throughout, the hosts stress the reality of the spiritual world and the Christian response to demonic influence, including the role of guardian angels and the exorcisms in baptism.",
+  "entities": [
+    {
+      "id": "hesiod",
+      "title": "Hesiod",
+      "category": "person",
+      "summary": "Ancient Greek poet, author of the Theogony and Works and Days, which describe the origins of the gods and the daemons.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 593.799,
+          "end": 686.44
+        },
+        {
+          "episode": 102,
+          "start": 690.0,
+          "end": 780.0
+        }
+      ]
+    },
+    {
+      "id": "socrates",
+      "title": "Socrates",
+      "category": "person",
+      "summary": "Greek philosopher who spoke of his daimonion, a divine sign or guardian spirit that guided him.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 1410.0,
+          "end": 1500.319
+        },
+        {
+          "episode": 102,
+          "start": 1559.68,
+          "end": 1642.24
+        }
+      ]
+    },
+    {
+      "id": "zeus",
+      "title": "Zeus",
+      "category": "theological",
+      "summary": "King of the Greek gods, sometimes referred to as a daemon, and associated with the Olympian gods who were later equated with demons by early Christians.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 1706.64,
+          "end": 1799.519
+        },
+        {
+          "episode": 102,
+          "start": 5417.68,
+          "end": 5507.84
+        }
+      ]
+    },
+    {
+      "id": "josephus",
+      "title": "Josephus",
+      "category": "person",
+      "summary": "First-century Jewish historian and Pharisee who wrote about the angels who mated with women and produced giants, connecting them to Greek myths.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 4795.88,
+          "end": 4888.79
+        },
+        {
+          "episode": 102,
+          "start": 4888.79,
+          "end": 4980.39
+        }
+      ]
+    },
+    {
+      "id": "justin-martyr",
+      "title": "Justin Martyr",
+      "category": "person",
+      "summary": "Second-century Christian apologist who identified the Greek gods as demons, the offspring of fallen angels and women.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 5372.439,
+          "end": 5468.239
+        },
+        {
+          "episode": 102,
+          "start": 5430.0,
+          "end": 5520.239
+        }
+      ]
+    },
+    {
+      "id": "athenagoras",
+      "title": "Athenagoras",
+      "category": "person",
+      "summary": "Second-century Christian apologist who wrote that demons are the souls of the giants, the offspring of fallen angels.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 5490.0,
+          "end": 5580.399
+        }
+      ]
+    },
+    {
+      "id": "john-chrysostom",
+      "title": "John Chrysostom",
+      "category": "person",
+      "summary": "Fourth-century Church Father who argued that demons are not the souls of the violently dead but of those who live in sin, imitating demons.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 5940.0,
+          "end": 6030.439
+        },
+        {
+          "episode": 102,
+          "start": 5954.399,
+          "end": 6034.0
+        }
+      ]
+    },
+    {
+      "id": "augustine",
+      "title": "Augustine",
+      "category": "person",
+      "summary": "Fourth/fifth-century Church Father who rejected the literal view of angels mating with women, but his arguments contain pieces of the earlier view.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 6170.159,
+          "end": 6262.119
+        },
+        {
+          "episode": 102,
+          "start": 6395.52,
+          "end": 6480.79
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "daemon",
+      "title": "Daemon (Greek)",
+      "summary": "In ancient Greek religion, a daemon was a spirit that occupied the realm between gods and humans. They were often the spirits of deceased heroes, who were venerated at shrines and could influence the living. The term later evolved to refer to guardian spirits or even gods themselves.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 438.16,
+          "end": 535.0
+        },
+        {
+          "episode": 102,
+          "start": 891.0,
+          "end": 986.36
+        },
+        {
+          "episode": 102,
+          "start": 1830.0,
+          "end": 1920.0
+        }
+      ]
+    },
+    {
+      "id": "genius",
+      "title": "Genius (Roman)",
+      "summary": "In Roman religion, a genius was a guardian spirit associated with a person, place, or people group. It was believed to share traits with its associated entity and could influence their fate. The genius of the emperor was a focus of imperial cult worship.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 2100.0,
+          "end": 2198.94
+        },
+        {
+          "episode": 102,
+          "start": 2436.88,
+          "end": 2529.639
+        }
+      ]
+    },
+    {
+      "id": "guardian-demon",
+      "title": "Guardian Demon",
+      "summary": "The concept of a guardian demon was prevalent in Greek and Roman paganism, where each person was believed to have a spirit that guided and protected them. This was seen as a positive thing, unlike the Christian view of demons as evil.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 1618.72,
+          "end": 1642.24
+        },
+        {
+          "episode": 102,
+          "start": 2543.44,
+          "end": 2637.0
+        },
+        {
+          "episode": 102,
+          "start": 2878.44,
+          "end": 2975.679
+        }
+      ]
+    },
+    {
+      "id": "nephilim-demons",
+      "title": "Nephilim as Demons",
+      "summary": "In Second Temple Jewish literature and early Christian thought, demons were identified as the disembodied spirits of the Nephilim, the offspring of fallen angels and human women. This view was held by many early Church Fathers.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 4620.0,
+          "end": 4710.0
+        },
+        {
+          "episode": 102,
+          "start": 5382.68,
+          "end": 5480.39
+        },
+        {
+          "episode": 102,
+          "start": 5490.0,
+          "end": 5580.399
+        }
+      ]
+    },
+    {
+      "id": "guardian-angel",
+      "title": "Guardian Angel",
+      "summary": "In Christian tradition, guardian angels are assigned to individuals to guide and protect them, replacing the pagan guardian demon. This is reflected in baptismal services and prayers to one's guardian angel.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 2949.36,
+          "end": 3042.48
+        },
+        {
+          "episode": 102,
+          "start": 3973.199,
+          "end": 4065.44
+        },
+        {
+          "episode": 102,
+          "start": 4149.199,
+          "end": 4243.68
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "demons-origin-heroes",
+      "text": "In Greek tradition, daemons were originally the spirits of deceased heroes, who were venerated at shrines and could influence the living.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 891.0,
+          "end": 986.36
+        },
+        {
+          "episode": 102,
+          "start": 986.36,
+          "end": 1078.599
+        }
+      ]
+    },
+    {
+      "id": "guardian-demon-positive",
+      "text": "In paganism, having a guardian demon was seen as a positive good, unlike the Christian view of demons as evil.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 2878.44,
+          "end": 2975.679
+        }
+      ]
+    },
+    {
+      "id": "demons-nephilim-spirits",
+      "text": "In Second Temple Judaism and early Christianity, demons were identified as the disembodied spirits of the Nephilim, the offspring of fallen angels and women.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 4620.0,
+          "end": 4710.0
+        },
+        {
+          "episode": 102,
+          "start": 5382.68,
+          "end": 5480.39
+        }
+      ]
+    },
+    {
+      "id": "greek-gods-demons",
+      "text": "Early Christian writers like Justin Martyr and Athenagoras equated the Greek gods with demons, the offspring of fallen angels, and argued that pagan myths were distorted accounts of these beings.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 5372.439,
+          "end": 5468.239
+        },
+        {
+          "episode": 102,
+          "start": 5490.0,
+          "end": 5580.399
+        }
+      ]
+    },
+    {
+      "id": "chrysostom-demons-sinners",
+      "text": "St. John Chrysostom argued that demons are not the souls of the violently dead but of those who live in sin, imitating demonic behavior.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 5954.399,
+          "end": 6034.0
+        }
+      ]
+    },
+    {
+      "id": "angels-cannot-reproduce",
+      "text": "The Church Fathers generally held that angels cannot reproduce, so the Nephilim were not literal hybrids but the result of spiritual corruption and ritual practices.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 6203.72,
+          "end": 6296.119
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-6",
+      "reference": "Genesis 6:1-4",
+      "summary": "The passage about the sons of God and daughters of men, which is the basis for the Nephilim and the Watcher tradition.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 5305.899,
+          "end": 5396.479
+        },
+        {
+          "episode": 102,
+          "start": 6283.68,
+          "end": 6374.199
+        }
+      ]
+    },
+    {
+      "id": "tobit-raphael",
+      "reference": "Tobit 12:15",
+      "summary": "The Archangel Raphael acts as a guardian angel, guiding and protecting Tobias, illustrating the guiding function of angels.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 4117.239,
+          "end": 4210.199
+        },
+        {
+          "episode": 102,
+          "start": 4149.199,
+          "end": 4243.68
+        }
+      ]
+    },
+    {
+      "id": "2-peter-tartarus",
+      "reference": "2 Peter 2:4",
+      "summary": "Peter uses the Greek term Tartarus to describe the place of imprisonment for the fallen angels, connecting to Greek mythology.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 5135.199,
+          "end": 5227.0
+        }
+      ]
+    },
+    {
+      "id": "matthew-18-10",
+      "reference": "Matthew 18:10",
+      "summary": "Jesus speaks of the angels of little ones who always behold the Father's face, a basis for guardian angels.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 2951.84,
+          "end": 3042.48
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "daemon",
+      "term": "Daemon",
+      "definition": "Greek term for a spirit, often a deceased hero, that acted as an intermediary between gods and humans.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 438.16,
+          "end": 535.0
+        }
+      ]
+    },
+    {
+      "id": "genius",
+      "term": "Genius",
+      "definition": "Roman guardian spirit associated with a person, place, or people group.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 2100.0,
+          "end": 2198.94
+        }
+      ]
+    },
+    {
+      "id": "nephilim",
+      "term": "Nephilim",
+      "definition": "Offspring of the 'sons of God' and 'daughters of men' in Genesis 6, often identified as giants or heroes.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 4620.0,
+          "end": 4710.0
+        }
+      ]
+    },
+    {
+      "id": "watchers",
+      "term": "Watchers",
+      "definition": "Angels who descended to earth and mated with women, according to Second Temple Jewish texts like 1 Enoch.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 5366.479,
+          "end": 5460.2
+        }
+      ]
+    },
+    {
+      "id": "tartarus",
+      "term": "Tartarus",
+      "definition": "In Greek mythology, the deepest abyss used as a dungeon for the Titans; used in 2 Peter to describe the prison of fallen angels.",
+      "segments": [
+        {
+          "episode": 102,
+          "start": 5135.199,
+          "end": 5227.0
+        }
+      ]
+    }
+  ]
+}

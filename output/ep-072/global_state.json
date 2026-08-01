@@ -1,0 +1,791 @@
+{
+  "summary": "In this episode, the hosts discuss the Second Coming of Christ, challenging common misconceptions and exploring the biblical and theological foundations for this event. They argue that the Second Coming is not a 'cope' invented by early Christians to explain Jesus' failure to establish the Messianic kingdom, but rather a concept deeply rooted in the Old Testament and the New Testament's interpretation of it. They emphasize that Christ's ascension did not mean His absence; rather, He is present through the Holy Spirit and actively ruling in the midst of His enemies. The episode also connects the Second Coming to the Transfiguration, the resurrection of the dead, and the transformation of the entire cosmos, highlighting the positive, hopeful aspects of this eschatological event.",
+  "entities": [
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "theological",
+      "summary": "The central figure of Christianity, whose second coming is the topic of this episode.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 127.79,
+          "end": 222.719
+        },
+        {
+          "episode": 72,
+          "start": 428.0,
+          "end": 518.639
+        },
+        {
+          "episode": 72,
+          "start": 1080.0,
+          "end": 1172.559
+        }
+      ]
+    },
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "One of the hosts of the podcast, an Orthodox Christian priest.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 9.839,
+          "end": 101.64
+        },
+        {
+          "episode": 72,
+          "start": 19.46,
+          "end": 110.659
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-deyoung",
+      "title": "Father Stephen DeYoung",
+      "category": "person",
+      "summary": "One of the hosts of the podcast, an Orthodox Christian priest.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 9.839,
+          "end": 101.64
+        }
+      ]
+    },
+    {
+      "id": "hal-lindsey",
+      "title": "Hal Lindsey",
+      "category": "person",
+      "summary": "Author of 'The Late Great Planet Earth', a popular dispensationalist book on prophecy.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 176.2,
+          "end": 267.879
+        },
+        {
+          "episode": 72,
+          "start": 7150.359,
+          "end": 7241.92
+        }
+      ]
+    },
+    {
+      "id": "bart-ehrman",
+      "title": "Bart Ehrman",
+      "category": "person",
+      "summary": "A New Testament scholar and friend of the show, whose views on the Son of Man are discussed.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 5279.199,
+          "end": 5369.239
+        },
+        {
+          "episode": 72,
+          "start": 5350.56,
+          "end": 5443.5
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "historical",
+      "summary": "Old Testament prophet who appears at the Transfiguration, representing the Law.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 7193.199,
+          "end": 7286.439
+        },
+        {
+          "episode": 72,
+          "start": 7257.39,
+          "end": 7350.0
+        }
+      ]
+    },
+    {
+      "id": "elijah",
+      "title": "Elijah",
+      "category": "historical",
+      "summary": "Old Testament prophet who appears at the Transfiguration, representing the Prophets.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 7193.199,
+          "end": 7286.439
+        },
+        {
+          "episode": 72,
+          "start": 7304.319,
+          "end": 7401.0
+        }
+      ]
+    },
+    {
+      "id": "john-the-baptist",
+      "title": "John the Baptist",
+      "category": "historical",
+      "summary": "The forerunner of Christ, who came in the spirit of Elijah, but is not Elijah reincarnated.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 997.799,
+          "end": 1087.839
+        },
+        {
+          "episode": 72,
+          "start": 4302.479,
+          "end": 4399.939
+        }
+      ]
+    },
+    {
+      "id": "enoch",
+      "title": "Enoch",
+      "category": "historical",
+      "summary": "Old Testament figure who did not die, and is sometimes identified as one of the two witnesses in Revelation.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 1001.279,
+          "end": 1094.2
+        },
+        {
+          "episode": 72,
+          "start": 4367.68,
+          "end": 4460.539
+        }
+      ]
+    },
+    {
+      "id": "david",
+      "title": "David",
+      "category": "historical",
+      "summary": "King of Israel, ancestor of the Messiah, and author of many Psalms.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 5022.72,
+          "end": 5114.56
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "Apostle who wrote many New Testament letters, using terms like 'parousia' and 'first fruits'.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 2844.159,
+          "end": 2938.32
+        },
+        {
+          "episode": 72,
+          "start": 5901.0,
+          "end": 5997.52
+        }
+      ]
+    },
+    {
+      "id": "st-john",
+      "title": "St. John",
+      "category": "person",
+      "summary": "Apostle and author of the Gospel of John, Revelation, and epistles.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 6373.439,
+          "end": 6428.0
+        }
+      ]
+    },
+    {
+      "id": "st-gregory-palamas",
+      "title": "St. Gregory Palamas",
+      "category": "person",
+      "summary": "Orthodox theologian who wrote about the vision of uncreated light and the divine energies.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 3705.48,
+          "end": 3797.639
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "title": "Theotokos",
+      "category": "theological",
+      "summary": "The Virgin Mary, Mother of God, whose conception of Christ is paralleled to the Eucharist.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 2549.599,
+          "end": 2639.96
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "second-coming",
+      "title": "Second Coming of Christ",
+      "summary": "The anticipated return of Christ at the end of the age, which is not a mere 'second coming' but a unique event of His appearing in glory to judge and transform creation.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 127.79,
+          "end": 222.719
+        },
+        {
+          "episode": 72,
+          "start": 428.0,
+          "end": 518.639
+        },
+        {
+          "episode": 72,
+          "start": 1080.0,
+          "end": 1172.559
+        },
+        {
+          "episode": 72,
+          "start": 2631.32,
+          "end": 2725.36
+        },
+        {
+          "episode": 72,
+          "start": 3727.0,
+          "end": 3824.48
+        }
+      ]
+    },
+    {
+      "id": "parousia",
+      "title": "Parousia",
+      "summary": "A Greek term used in the New Testament for Christ's coming, meaning 'being present in person' or 'arrival', emphasizing that Christ is not absent but will be present in a new way.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 2700.0,
+          "end": 2791.76
+        },
+        {
+          "episode": 72,
+          "start": 3243.28,
+          "end": 3340.0
+        },
+        {
+          "episode": 72,
+          "start": 3330.0,
+          "end": 3420.88
+        }
+      ]
+    },
+    {
+      "id": "epiphany",
+      "title": "Epiphany (Epiphaneia)",
+      "summary": "A Greek term meaning 'appearing' or 'manifestation', used in the New Testament to describe Christ's glorious appearing, drawing on Old Testament theophanies.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 3403.199,
+          "end": 3496.199
+        },
+        {
+          "episode": 72,
+          "start": 3458.0,
+          "end": 3552.96
+        },
+        {
+          "episode": 72,
+          "start": 3496.199,
+          "end": 3591.0
+        }
+      ]
+    },
+    {
+      "id": "apocalypse",
+      "title": "Apocalypse (Apokalypsis)",
+      "summary": "A Greek term meaning 'revelation' or 'unveiling', used to describe Christ's revealing at the end of days, connecting to prophetic visions in the Old Testament.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 3538.48,
+          "end": 3629.88
+        },
+        {
+          "episode": 72,
+          "start": 3606.659,
+          "end": 3697.28
+        }
+      ]
+    },
+    {
+      "id": "ascension",
+      "title": "Ascension",
+      "summary": "The event where Christ was taken up into heaven, not as a departure but as His enthronement at the right hand of God, signifying His ongoing presence and rule.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 1355.799,
+          "end": 1446.279
+        },
+        {
+          "episode": 72,
+          "start": 1415.0,
+          "end": 1511.759
+        },
+        {
+          "episode": 72,
+          "start": 1662.839,
+          "end": 1757.0
+        },
+        {
+          "episode": 72,
+          "start": 1720.96,
+          "end": 1812.16
+        }
+      ]
+    },
+    {
+      "id": "transfiguration",
+      "title": "Transfiguration",
+      "summary": "The event where Christ revealed His divine glory to Peter, James, and John, serving as a glimpse of the resurrection and the world to come.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 6634.199,
+          "end": 6732.199
+        },
+        {
+          "episode": 72,
+          "start": 6868.319,
+          "end": 6958.96
+        },
+        {
+          "episode": 72,
+          "start": 7404.88,
+          "end": 7495.159
+        },
+        {
+          "episode": 72,
+          "start": 7490.0,
+          "end": 7581.88
+        }
+      ]
+    },
+    {
+      "id": "first-fruits",
+      "title": "First Fruits",
+      "summary": "An agricultural metaphor used by St. Paul to describe Christ's resurrection as the guarantee of the future resurrection of believers and the transformation of creation.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 5901.0,
+          "end": 5997.52
+        },
+        {
+          "episode": 72,
+          "start": 6088.79,
+          "end": 6179.68
+        },
+        {
+          "episode": 72,
+          "start": 6204.399,
+          "end": 6296.72
+        },
+        {
+          "episode": 72,
+          "start": 6312.68,
+          "end": 6408.6
+        }
+      ]
+    },
+    {
+      "id": "spiritual-body",
+      "title": "Spiritual Body",
+      "summary": "The resurrected body that is permeated by the Holy Spirit, not a non-physical or ephemeral body, but a transformed physical body.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 6566.68,
+          "end": 6658.479
+        },
+        {
+          "episode": 72,
+          "start": 6600.0,
+          "end": 6690.0
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "title": "Divine Council",
+      "summary": "The heavenly assembly of divine beings, over which Christ rules, as depicted in the Transfiguration and Psalm 82.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 7404.88,
+          "end": 7495.159
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "second-coming-not-cope",
+      "text": "The Second Coming is not a 'cope' invented by early Christians to explain Jesus' failure to establish the kingdom; it is rooted in Old Testament expectations.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 210.0,
+          "end": 302.56
+        },
+        {
+          "episode": 72,
+          "start": 1033.2,
+          "end": 1123.359
+        }
+      ]
+    },
+    {
+      "id": "christ-present-not-absent",
+      "text": "Christ's ascension did not mean His absence; He is present through the Holy Spirit and actively ruling in the midst of His enemies.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 1355.799,
+          "end": 1446.279
+        },
+        {
+          "episode": 72,
+          "start": 1950.0,
+          "end": 2046.0
+        },
+        {
+          "episode": 72,
+          "start": 2245.28,
+          "end": 2336.679
+        }
+      ]
+    },
+    {
+      "id": "parousia-meaning",
+      "text": "The Greek term 'parousia' means 'being present in person', used for the visit of an emperor, and is applied to Christ's coming.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 3243.28,
+          "end": 3340.0
+        },
+        {
+          "episode": 72,
+          "start": 3330.0,
+          "end": 3420.88
+        }
+      ]
+    },
+    {
+      "id": "transfiguration-glimpse-resurrection",
+      "text": "The Transfiguration is a glimpse of the resurrected Christ and the world to come, showing the kingdom of God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 6868.319,
+          "end": 6958.96
+        },
+        {
+          "episode": 72,
+          "start": 7490.0,
+          "end": 7581.88
+        }
+      ]
+    },
+    {
+      "id": "first-fruits-guarantee",
+      "text": "Christ's resurrection is the 'first fruits' guaranteeing the future resurrection of believers and the transformation of creation.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 6088.79,
+          "end": 6179.68
+        },
+        {
+          "episode": 72,
+          "start": 6312.68,
+          "end": 6408.6
+        }
+      ]
+    },
+    {
+      "id": "spiritual-body-not-ephemeral",
+      "text": "The 'spiritual body' in the resurrection is not ephemeral but a body permeated by the Holy Spirit.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 6566.68,
+          "end": 6658.479
+        }
+      ]
+    },
+    {
+      "id": "christ-ruling-in-midst-of-enemies",
+      "text": "Christ is currently ruling in the midst of His enemies, as described in Psalm 110, and this period is not a pause but part of His messianic work.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 4878.72,
+          "end": 4979.0
+        },
+        {
+          "episode": 72,
+          "start": 5520.0,
+          "end": 5610.64
+        }
+      ]
+    },
+    {
+      "id": "john-baptist-not-elijah-reincarnated",
+      "text": "John the Baptist came in the spirit of Elijah, but he is not Elijah reincarnated; the two witnesses in Revelation may be Enoch and Elijah, but not literally.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 4302.479,
+          "end": 4399.939
+        },
+        {
+          "episode": 72,
+          "start": 4484.56,
+          "end": 4581.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "psalm-110",
+      "reference": "Psalm 110:1",
+      "summary": "Used to show the Messiah is enthroned at God's right hand, ruling in the midst of His enemies until the final judgment.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 4795.439,
+          "end": 4888.319
+        },
+        {
+          "episode": 72,
+          "start": 4876.52,
+          "end": 4979.0
+        }
+      ]
+    },
+    {
+      "id": "psalm-2",
+      "reference": "Psalm 2:1-9",
+      "summary": "Describes the Messiah's reign over the nations and the final defeat of His enemies.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 4994.279,
+          "end": 5087.64
+        },
+        {
+          "episode": 72,
+          "start": 5078.39,
+          "end": 5175.199
+        }
+      ]
+    },
+    {
+      "id": "daniel-7",
+      "reference": "Daniel 7:13-14",
+      "summary": "The Son of Man is enthroned and given dominion, but there is a period before the judgment of the beasts.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 5149.739,
+          "end": 5244.39
+        }
+      ]
+    },
+    {
+      "id": "matthew-28-20",
+      "reference": "Matthew 28:20",
+      "summary": "Christ promises to be with His disciples always, even after His ascension.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 1355.799,
+          "end": 1446.279
+        }
+      ]
+    },
+    {
+      "id": "acts-1-11",
+      "reference": "Acts 1:11",
+      "summary": "Angels tell the disciples that Jesus will return in the same way He ascended.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 4253.52,
+          "end": 4347.56
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-15",
+      "reference": "1 Corinthians 15:20-23",
+      "summary": "Christ is the first fruits of the resurrection, guaranteeing the resurrection of believers.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 5961.0,
+          "end": 6051.84
+        },
+        {
+          "episode": 72,
+          "start": 6088.79,
+          "end": 6179.68
+        }
+      ]
+    },
+    {
+      "id": "romans-8",
+      "reference": "Romans 8:19-23",
+      "summary": "Creation groans for the revealing of the sons of God, which will bring about its transformation.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 6440.0,
+          "end": 6530.56
+        }
+      ]
+    },
+    {
+      "id": "1-john-3-2",
+      "reference": "1 John 3:2",
+      "summary": "When Christ appears, we will be like Him, for we will see Him as He is.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 6373.439,
+          "end": 6428.0
+        }
+      ]
+    },
+    {
+      "id": "matthew-17",
+      "reference": "Matthew 17:1-8",
+      "summary": "The Transfiguration account, where Jesus is revealed in glory with Moses and Elijah.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 6634.199,
+          "end": 6732.199
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "parousia",
+      "term": "Parousia",
+      "definition": "Greek term meaning 'presence' or 'arrival', used in the New Testament for Christ's coming.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 2700.0,
+          "end": 2791.76
+        }
+      ]
+    },
+    {
+      "id": "epiphaneia",
+      "term": "Epiphaneia",
+      "definition": "Greek term meaning 'appearing' or 'manifestation', used for Christ's glorious appearing.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 3403.199,
+          "end": 3496.199
+        }
+      ]
+    },
+    {
+      "id": "apokalypsis",
+      "term": "Apokalypsis",
+      "definition": "Greek term meaning 'revelation' or 'unveiling', used for Christ's revealing at the end.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 3538.48,
+          "end": 3629.88
+        }
+      ]
+    },
+    {
+      "id": "koine-greek",
+      "term": "Koine Greek",
+      "definition": "The common Greek dialect of the Hellenistic period, but the New Testament is written in a Semitic-influenced Greek.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 3010.519,
+          "end": 3101.559
+        }
+      ]
+    },
+    {
+      "id": "epiclesis",
+      "term": "Epiclesis",
+      "definition": "The invocation of the Holy Spirit in the Divine Liturgy to consecrate the gifts.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 2535.86,
+          "end": 2631.32
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God through participation in His divine life.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 7895.76,
+          "end": 7986.64
+        }
+      ]
+    },
+    {
+      "id": "millenarianism",
+      "term": "Millenarianism",
+      "definition": "Belief in a future thousand-year reign of Christ on earth, often associated with end-times speculation.",
+      "segments": [
+        {
+          "episode": 72,
+          "start": 7560.0,
+          "end": 7653.72
+        }
+      ]
+    }
+  ]
+}

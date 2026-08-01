@@ -1,0 +1,601 @@
+{
+  "summary": "In this episode, the hosts discuss the concept of apocalypse as a biblical genre of revelation, not merely the end of the world. They explore the idea of pre-reflective consciousness (the nous) as a sensory organ for spiritual reality, and how modernity has separated the material and spiritual realms, leading to a reduction of knowledge to language. They argue for a reintegration of the seen and unseen through ritual, worship, and love of neighbor, emphasizing that every action has spiritual significance. The episode includes listener calls on topics such as worship outside the Church, the nature of the nous, and the symbolism of the dove.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox Christian priest.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 16.679,
+          "end": 107.42
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox Christian priest.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 16.679,
+          "end": 107.42
+        }
+      ]
+    },
+    {
+      "id": "rene-descartes",
+      "title": "René Descartes",
+      "category": "person",
+      "summary": "Philosopher whose 'Cogito ergo sum' and dualism are critiqued; his death by horse is mentioned.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 707.179,
+          "end": 797.59
+        }
+      ]
+    },
+    {
+      "id": "immanuel-kant",
+      "title": "Immanuel Kant",
+      "category": "person",
+      "summary": "Philosopher who separated noumenal and phenomenal realms, influencing conservative theology.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 2249.119,
+          "end": 2348.39
+        }
+      ]
+    },
+    {
+      "id": "georg-wilhelm-friedrich-hegel",
+      "title": "Georg Wilhelm Friedrich Hegel",
+      "category": "person",
+      "summary": "Philosopher who collapsed spirit into material, influencing liberal theology.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 2431.599,
+          "end": 2527.39
+        }
+      ]
+    },
+    {
+      "id": "elisha",
+      "title": "Elisha",
+      "category": "person",
+      "summary": "Old Testament prophet whose servant's eyes were opened to see angelic hosts.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 5229.2,
+          "end": 5369.899
+        }
+      ]
+    },
+    {
+      "id": "gehazi",
+      "title": "Gehazi",
+      "category": "person",
+      "summary": "Servant of Elisha who saw the angelic armies after his eyes were opened.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 5229.2,
+          "end": 5369.899
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "Apostle whose epistles contain apocalyptic elements, transitioning from spiritual reality to practical exhortation.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 6404.159,
+          "end": 6554.239
+        }
+      ]
+    },
+    {
+      "id": "st-john-chrysostom",
+      "title": "St. John Chrysostom",
+      "category": "person",
+      "summary": "Church Father quoted on finding Christ in the poor as in the Eucharist.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 8178.6,
+          "end": 8274.459
+        }
+      ]
+    },
+    {
+      "id": "st-irenaeus-of-lyons",
+      "title": "St. Irenaeus of Lyons",
+      "category": "person",
+      "summary": "Church Father quoted on knowing where the Holy Spirit is but not what He does outside the Church.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 3646.329,
+          "end": 3737.289
+        }
+      ]
+    },
+    {
+      "id": "st-silouan-the-athonite",
+      "title": "St. Silouan the Athonite",
+      "category": "person",
+      "summary": "Orthodox saint mentioned in discussion of separated brethren.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 3466.969,
+          "end": 3560.489
+        }
+      ]
+    },
+    {
+      "id": "neil-degrasse-tyson",
+      "title": "Neil deGrasse Tyson",
+      "category": "person",
+      "summary": "Astrophysicist who faced backlash for using 'Godspeed'.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 2664.88,
+          "end": 2755.519
+        }
+      ]
+    },
+    {
+      "id": "ebenezer-scrooge",
+      "title": "Ebenezer Scrooge",
+      "category": "other",
+      "summary": "Fictional character from 'A Christmas Carol' who explains away a spiritual experience.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 1632.319,
+          "end": 1736.44
+        }
+      ]
+    },
+    {
+      "id": "jacob-marley",
+      "title": "Jacob Marley",
+      "category": "other",
+      "summary": "Ghost in 'A Christmas Carol' who visits Scrooge.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 1658.48,
+          "end": 1754.0
+        }
+      ]
+    },
+    {
+      "id": "omri",
+      "title": "Omri",
+      "category": "person",
+      "summary": "King of Israel mentioned briefly in the Bible but prominent in archaeology.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 6125.77,
+          "end": 6217.529
+        }
+      ]
+    },
+    {
+      "id": "isaac-newton",
+      "title": "Isaac Newton",
+      "category": "person",
+      "summary": "Scientist who pursued alchemy and biblical symbolism, illustrating the loss of the noetic.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 8666.989,
+          "end": 8762.52
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "pre-reflective-consciousness",
+      "title": "Pre-reflective Consciousness",
+      "summary": "The level of consciousness before thoughts, which allows one to observe one's own thoughts and self, forming the basis for free will and spiritual growth.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 297.459,
+          "end": 458.42
+        },
+        {
+          "episode": 23,
+          "start": 507.259,
+          "end": 599.58
+        }
+      ]
+    },
+    {
+      "id": "apocalypse-as-genre",
+      "title": "Apocalypse as Genre",
+      "summary": "Apocalypse is a biblical genre of revelation, unveiling spiritual reality behind material events, not just the end of the world.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 4912.569,
+          "end": 5020.14
+        },
+        {
+          "episode": 23,
+          "start": 5014.3,
+          "end": 5110.779
+        }
+      ]
+    },
+    {
+      "id": "reduction-to-language",
+      "title": "Reduction to Language",
+      "summary": "Modern tendency to reduce all knowledge and experience to language, losing the fullness of noetic and ritual participation.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 1144.859,
+          "end": 1238.19
+        },
+        {
+          "episode": 23,
+          "start": 1761.96,
+          "end": 1856.88
+        }
+      ]
+    },
+    {
+      "id": "cartesian-dualism",
+      "title": "Cartesian Dualism",
+      "summary": "The separation of material and spiritual realms, leading to a 'ghost in the machine' view of the soul and the natural/supernatural split.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 2163.239,
+          "end": 2258.36
+        }
+      ]
+    },
+    {
+      "id": "kantian-and-hegelian-theology",
+      "title": "Kantian and Hegelian Theology",
+      "summary": "Kant's separation of noumenal and phenomenal realms, and Hegel's collapse of spirit into material, shaping conservative and liberal Western theology.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 2249.119,
+          "end": 2584.719
+        }
+      ]
+    },
+    {
+      "id": "liturgical-shaping",
+      "title": "Liturgical Shaping",
+      "summary": "The inflexible ritual of the liturgy shapes the nous, cleansing it to apprehend spiritual reality, unlike flexible worship that conforms to the individual.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 7475.39,
+          "end": 7569.84
+        }
+      ]
+    },
+    {
+      "id": "apocalypse-of-the-ordinary",
+      "title": "Apocalypse of the Ordinary",
+      "summary": "Every ordinary moment is an apocalyptic moment, revealing spiritual reality; the Christian life is holistic, with every action having spiritual significance.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 8474.379,
+          "end": 8572.19
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "you-are-not-your-thoughts",
+      "text": "You are not your thoughts; the nous is a pre-reflective consciousness that can observe thoughts, enabling free will.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 406.6,
+          "end": 498.42
+        },
+        {
+          "episode": 23,
+          "start": 942.1,
+          "end": 1045.579
+        }
+      ]
+    },
+    {
+      "id": "cartesian-dualism-is-wrong",
+      "text": "Descartes' 'I think therefore I am' is wrong because thinking is not what makes you you; the soul is not a ghost in the machine.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 707.179,
+          "end": 797.59
+        }
+      ]
+    },
+    {
+      "id": "modernity-separated-realms",
+      "text": "Modernity, through Cartesian dualism and Kantian/Hegelian philosophy, separated the material and spiritual realms, leading to secularism.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 2136.44,
+          "end": 2616.239
+        }
+      ]
+    },
+    {
+      "id": "scripture-is-apocalyptic",
+      "text": "The whole Bible is apocalyptic, revealing spiritual reality behind material events, not just the book of Revelation.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 5038.14,
+          "end": 5159.34
+        }
+      ]
+    },
+    {
+      "id": "worship-outside-church",
+      "text": "God can work through worship outside the canonical Church, but we don't know how; we are accountable for what we receive.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 3399.69,
+          "end": 3677.849
+        }
+      ]
+    },
+    {
+      "id": "liturgy-shapes-the-nous",
+      "text": "Inflexible liturgy shapes the nous, cleansing it to see spiritual reality; flexible worship conforms to the individual and fails.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 7475.39,
+          "end": 7569.84
+        }
+      ]
+    },
+    {
+      "id": "love-is-the-way",
+      "text": "The only way to regain spiritual sight is through love of neighbor, not esoteric practices; love cleanses the nous.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 8794.2,
+          "end": 8942.92
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "psalm-bless-the-lord-o-my-soul",
+      "reference": "Psalm 103:1",
+      "summary": "Used to illustrate addressing one's own soul, showing the nous is distinct from the self.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 661.419,
+          "end": 751.539
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-love-the-lord",
+      "reference": "Deuteronomy 6:5",
+      "summary": "Quoted by Christ as the first commandment, emphasizing love with heart, soul, mind, and strength.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 7819.359,
+          "end": 7917.79
+        }
+      ]
+    },
+    {
+      "id": "leviticus-love-neighbor",
+      "reference": "Leviticus 19:18",
+      "summary": "Quoted as the second commandment, linking love of neighbor to love of God.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 7819.359,
+          "end": 7917.79
+        }
+      ]
+    },
+    {
+      "id": "romans-2-gentiles",
+      "reference": "Romans 2:14-15",
+      "summary": "Used to discuss Gentiles who keep the law by conscience, showing God's judgment based on what one has.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 3852.9,
+          "end": 3946.989
+        }
+      ]
+    },
+    {
+      "id": "ephesians-1-adoption",
+      "reference": "Ephesians 1:5",
+      "summary": "Cited as an example of Paul's apocalyptic revelation of spiritual reality.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 6450.88,
+          "end": 6540.88
+        }
+      ]
+    },
+    {
+      "id": "matthew-25-sheep-and-goats",
+      "reference": "Matthew 25:31-46",
+      "summary": "Used to illustrate that acts of hospitality to others are acts to Christ, and the last judgment is an apocalypse.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 8110.76,
+          "end": 8204.54
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-13-love",
+      "reference": "1 Corinthians 13:1-3",
+      "summary": "Quoted to show that spiritual gifts without love are worthless, emphasizing love as the way to spiritual reality.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 8794.2,
+          "end": 8835.319
+        }
+      ]
+    },
+    {
+      "id": "hebrews-11-1-faith",
+      "reference": "Hebrews 11:1",
+      "summary": "Interpreted as faithfulness being the substance of things hoped for, making spiritual realities real.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 8889.34,
+          "end": 8980.2
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "nous",
+      "term": "Nous",
+      "definition": "The noetic faculty or spiritual organ of perception, the 'eye of the soul' that apprehends spiritual reality.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 297.459,
+          "end": 458.42
+        }
+      ]
+    },
+    {
+      "id": "apocalypse",
+      "term": "Apocalypse",
+      "definition": "A Greek word meaning 'revelation' or 'unveiling'; a genre of literature that reveals spiritual reality.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 4912.569,
+          "end": 5020.14
+        }
+      ]
+    },
+    {
+      "id": "pre-reflective-consciousness",
+      "term": "Pre-reflective Consciousness",
+      "definition": "The level of awareness before thoughts, allowing one to observe one's own mental processes.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 297.459,
+          "end": 458.42
+        }
+      ]
+    },
+    {
+      "id": "cartesian-dualism",
+      "term": "Cartesian Dualism",
+      "definition": "The philosophical separation of mind and body, leading to a 'ghost in the machine' view of the soul.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 2163.239,
+          "end": 2258.36
+        }
+      ]
+    },
+    {
+      "id": "noumenal-realm",
+      "term": "Noumenal Realm",
+      "definition": "In Kantian philosophy, the realm of things as they are in themselves, known through intuition, not senses.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 2267.96,
+          "end": 2364.39
+        }
+      ]
+    },
+    {
+      "id": "phenomenal-realm",
+      "term": "Phenomenal Realm",
+      "definition": "In Kantian philosophy, the realm of things as they appear to the senses, the material world.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 2319.199,
+          "end": 2416.88
+        }
+      ]
+    },
+    {
+      "id": "epiclesis",
+      "term": "Epiclesis",
+      "definition": "The part of the Divine Liturgy where the priest invokes the Holy Spirit to change the bread and wine.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 6899.439,
+          "end": 6989.439
+        }
+      ]
+    },
+    {
+      "id": "gigantomachy",
+      "term": "Gigantomachy",
+      "definition": "The defeat of the giant clans, a spiritual reality behind the conquest of Canaan.",
+      "segments": [
+        {
+          "episode": 23,
+          "start": 6057.289,
+          "end": 6149.85
+        }
+      ]
+    }
+  ]
+}

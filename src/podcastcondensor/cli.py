@@ -13,7 +13,7 @@ from podcastcondensor.playlist_pipeline import (
     process_with_universe_state,
     build_master_cut,
 )
-from podcastcondensor.minimal_theme_cut import build_minimal_theme_cut
+from podcastcondensor.super_cut import build_super_cut, run_super_cut_brackets
 from podcastcondensor.universe_state import UniverseState
 
 
@@ -188,49 +188,69 @@ def cmd_build_master_cut(args):
     print("")
 
 
-def cmd_build_minimal_theme(args):
-    """Build a minimal cut of one theme — LLM decides the length."""
+def cmd_build_super_cut(args):
+    """Build per-theme MP3s for the top topics over the full episode range.
+
+    Offline from disk (no download/whisper): merge per-episode global_state
+    → chunked theme extraction → coalesce → episode-diverse resolution →
+    per-theme LLM selection (LLM-owned volume, same as the range cuts) →
+    one MP3 per theme. ``--dry-run`` stops after resolution and prints the
+    theme table with per-theme episode spread.
+    """
     cfg = Config(
+        lang=args.lang,
         output_root=os.path.abspath(args.output_dir) if args.output_dir else "",
         deepseek_timeout=600,
         keep_temp=args.keep_temp,
+        master_cut_target_duration=args.target_duration,
     )
 
-    end_ep = args.end if args.end > 0 else 140
-    out_path = os.path.abspath(args.output) if not os.path.isabs(args.output) else args.output
+    end_ep = args.end if args.end > 0 else 144
 
-    result = build_minimal_theme_cut(
-        theme_id=args.theme_id,
+    result = build_super_cut(
         playlist_url=args.playlist_url,
         cfg=cfg,
-        state_file=os.path.abspath(args.state_file) if args.state_file else "",
-        themes_file=os.path.abspath(args.themes_file) if args.themes_file else "",
-        output_path=out_path,
         start_episode=args.start,
         end_episode=end_ep,
+        chunk_size=args.chunk_size,
+        max_themes=args.max_themes,
+        theme_ids=args.theme,
+        output_dir=os.path.abspath(args.output_dir) if args.output_dir else "",
+        dry_run=args.dry_run,
     )
 
-    # Print results
     print("=" * 60)
-    print("MINIMAL THEME CUT RESULTS")
+    print("SUPER CUT RESULTS" + (" (DRY RUN)" if args.dry_run else ""))
     print("=" * 60)
     for phase in result.get("phases", []):
         name = phase.get("phase", "?")
         elapsed = phase.get("elapsed_sec", 0)
         extra = ""
-        if name == "download":
-            extra = f", {phase.get('episodes', 0)} episodes"
-        elif name == "load_theme":
-            extra = f", {phase.get('theme_title', '?')} ({phase.get('related_items', 0)} items)"
+        if name == "merge_universe":
+            extra = f", {phase.get('episodes', 0)} episodes, {phase.get('items', 0)} items"
+        elif name == "chunk_themes":
+            extra = f", {phase.get('chunks', 0)} chunks, {phase.get('chunk_theme_count', 0)} themes"
+        elif name == "coalesce":
+            extra = f", {phase.get('global_theme_count', 0)} global themes"
         elif name == "resolve_segments":
-            extra = f", {phase.get('candidate_count', 0)} candidates, {phase.get('total_available_sec', 0):.0f}s"
-        elif name == "llm_selection":
-            extra = f", {phase.get('selected', 0)}/{phase.get('candidates', 0)} kept, {phase.get('total_duration_sec', 0):.0f}s"
+            extra = f", {phase.get('total_candidates', 0)} candidates"
+        elif name == "select_segments":
+            extra = f", {phase.get('selected_count', 0)} segments, {phase.get('total_duration_sec', 0):.0f}s"
         elif name == "assemble_audio":
-            extra = f", → {phase.get('output_path', '?')}"
+            extra = f", → {phase.get('output_dir', '?')}"
         print(f"  {name:20s} {elapsed:.0f}s{extra}")
 
-    print(f"\n  Output:   {result.get('output_path', 'N/A')}")
+    if args.dry_run:
+        print(f"\n  Themes report: {result.get('themes_path', 'N/A')}")
+    else:
+        outputs = result.get("outputs", {})
+        print(f"\n  Per-theme MP3s: {len(outputs)}")
+        for tid, path in list(outputs.items())[:10]:
+            print(f"    - {tid}: {path}")
+        if len(outputs) > 10:
+            print(f"    ... ({len(outputs) - 10} more)")
+        print(f"  Stats: {result.get('stats_path', 'N/A')}")
+
     errors = result.get("errors", [])
     if errors:
         print(f"  Errors:   {len(errors)}")
@@ -239,6 +259,59 @@ def cmd_build_minimal_theme(args):
     else:
         print(f"  Errors:   0 (success)")
     print("")
+
+
+def cmd_super_cut_brackets(args):
+    """Top theme per episode bracket — read-only from on-disk artefacts (0 LLM calls).
+
+    Requires the super-cut discovery + candidates caches (built by one
+    build-super-cut run or --dry-run). Brackets are episode-range strings
+    like "40-80"; "rest" = all episodes not covered by any specified bracket.
+    """
+    output_root = os.path.abspath(args.output_dir) if args.output_dir else ""
+    end_ep = args.end if args.end > 0 else 144
+
+    analysis = run_super_cut_brackets(
+        output_root=output_root,
+        start_episode=args.start,
+        end_episode=end_ep,
+        bracket_specs=args.bracket,
+        top_n=args.top,
+    )
+
+    print("=" * 60)
+    print("TOP THEMES PER EPISODE BRACKET")
+    print("=" * 60)
+    for result in analysis["results"]:
+        name = result["bracket"]
+        print(f"\n── Bracket {name} ──")
+        if not result["top"]:
+            print("  (no candidates in this bracket)")
+            continue
+        for i, s in enumerate(result["top"], 1):
+            span = _compact_span(s["episodes"])
+            print(
+                f"  {i}. {s['title']}  (imp={s['importance']:.2f}, "
+                f"{s['candidates']} candidates, {s['duration_sec']:.0f}s, "
+                f"eps {span})"
+            )
+    print("")
+
+
+def _compact_span(eps):
+    """Compact '1-5, 8' span for a sorted episode list (CLI-local helper)."""
+    if not eps:
+        return "?"
+    parts = []
+    start = prev = eps[0]
+    for ep in eps[1:]:
+        if ep == prev + 1:
+            prev = ep
+            continue
+        parts.append(str(start) if start == prev else f"{start}-{prev}")
+        start = prev = ep
+    parts.append(str(start) if start == prev else f"{start}-{prev}")
+    return ", ".join(parts)
 
 
 def main():
@@ -310,28 +383,48 @@ def main():
     mc.add_argument("--lang", default="en")
     mc.set_defaults(func=cmd_build_master_cut)
 
-    # build-minimal-theme
-    mt = sub.add_parser(
-        "build-minimal-theme",
-        help="Build a minimal audio cut for one theme — LLM decides the length",
+    # build-super-cut
+    sc = sub.add_parser(
+        "build-super-cut",
+        help="Full-corpus thematic anthology: per-theme MP3s over all episodes (offline from disk)",
     )
-    mt.add_argument("theme_id", help="Kebab-case theme ID (e.g. 'theosis-and-salvation')")
-    mt.add_argument("playlist_url",
-                    help="YouTube playlist URL (unused; kept for backwards compatibility)")
-    mt.add_argument("--state-file", default="",
-                    help="Path to universe state JSON (default: auto, range-scoped output/universe_state_{START}_{END}.json)")
-    mt.add_argument("--themes-file", default="output/_themes.json",
-                    help="Path to cached themes JSON (default: output/_themes.json)")
-    mt.add_argument("--output", default="output/minimal_theme_cut.mp3",
-                    help="Output audio path (default: output/minimal_theme_cut.mp3)")
-    mt.add_argument("--start", type=int, default=1,
+    sc.add_argument("playlist_url",
+                    help="YouTube playlist URL (unused; super cut is offline from disk)")
+    sc.add_argument("--start", type=int, default=1,
                     help="First episode to include (default: 1)")
-    mt.add_argument("--end", type=int, default=0,
-                    help="Last episode to include (default: 0 = 140)")
-    mt.add_argument("--keep-temp", action="store_true",
+    sc.add_argument("--end", type=int, default=0,
+                    help="Last episode to include (default: 0 = 144)")
+    sc.add_argument("--chunk-size", type=int, default=12,
+                    help="Episodes per theme-extraction chunk (default: 12)")
+    sc.add_argument("--max-themes", type=int, default=25,
+                    help="Cap on global themes after coalesce dedup (default: 25)")
+    sc.add_argument("--theme", action="append", default=[],
+                    help="Limit to matching theme(s) by id/title substring (repeatable; default: all)")
+    sc.add_argument("--output-dir", default="")
+    sc.add_argument("--target-duration", type=int, default=6750,
+                    help="Informational only (knapsack fallback); volume is LLM-owned")
+    sc.add_argument("--dry-run", action="store_true",
+                    help="Merge → chunk → coalesce → resolve only; print theme table")
+    sc.add_argument("--keep-temp", action="store_true",
                     help="Keep temporary files (debug)")
-    mt.add_argument("--output-dir", default="")
-    mt.set_defaults(func=cmd_build_minimal_theme)
+    sc.add_argument("--lang", default="en")
+    sc.set_defaults(func=cmd_build_super_cut)
+
+    # super-cut-brackets
+    br = sub.add_parser(
+        "super-cut-brackets",
+        help="Top theme per episode bracket — read-only from on-disk artefacts (0 LLM calls)",
+    )
+    br.add_argument("--start", type=int, default=1,
+                    help="First episode to include (default: 1)")
+    br.add_argument("--end", type=int, default=0,
+                    help="Last episode to include (default: 0 = 144)")
+    br.add_argument("--bracket", action="append", default=[],
+                    help="Episode range like '40-80' or '81-120' (repeatable; rest = complement)")
+    br.add_argument("--top", type=int, default=5,
+                    help="How many top themes to show per bracket (default: 5)")
+    br.add_argument("--output-dir", default="")
+    br.set_defaults(func=cmd_super_cut_brackets)
 
     args = parser.parse_args()
     setup_logging(args.verbose)

@@ -1,0 +1,540 @@
+{
+  "summary": "In this episode, Father Andrew reads the full text of the Harrowing of Hell from the Gospel of Nicodemus (Acts of Pilate), an apocryphal New Testament text from the 4th-5th century. He explains that this text belongs to the category of books to be read at home, not Scripture, but is honored in Orthodox liturgical tradition. The narrative describes the descent of Christ into Hades after his crucifixion, where he breaks the gates of brass, defeats Satan and Death, and leads the righteous dead—including Adam, the patriarchs, and prophets—out of hell and into Paradise. The reading includes the testimony of the two sons of Simeon, Karinus and Leucius, who were raised from the dead and recount the events. The episode concludes with the saints entering Paradise, the appearance of Enoch, Elijah, and the penitent thief, and the return of the witnesses to Jerusalem.",
+  "entities": [
+    {
+      "id": "father-andrew",
+      "title": "Father Andrew",
+      "category": "person",
+      "summary": "The host of the podcast who reads the Gospel of Nicodemus.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 0.0,
+          "end": 96.519
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "theological",
+      "summary": "The central figure of Christianity, who descends into hell and rescues the righteous dead.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 120.0,
+          "end": 1821.96
+        }
+      ]
+    },
+    {
+      "id": "adam",
+      "title": "Adam",
+      "category": "historical",
+      "summary": "The first man, who is rescued from hell by Christ.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 447.86,
+          "end": 539.2
+        },
+        {
+          "episode": 40,
+          "start": 1320.0,
+          "end": 1410.79
+        }
+      ]
+    },
+    {
+      "id": "satan",
+      "title": "Satan",
+      "category": "theological",
+      "summary": "The prince of death who opposes Christ but is defeated and bound in hell.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 560.159,
+          "end": 700.44
+        },
+        {
+          "episode": 40,
+          "start": 1068.79,
+          "end": 1160.319
+        }
+      ]
+    },
+    {
+      "id": "hell",
+      "title": "Hell (personified)",
+      "category": "theological",
+      "summary": "Personified as a character who argues with Satan and is forced to release the dead.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 582.22,
+          "end": 672.8
+        },
+        {
+          "episode": 40,
+          "start": 665.72,
+          "end": 756.559
+        }
+      ]
+    },
+    {
+      "id": "david",
+      "title": "David",
+      "category": "historical",
+      "summary": "The prophet and king who prophesies Christ's victory over death.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 806.5,
+          "end": 904.84
+        }
+      ]
+    },
+    {
+      "id": "isaiah",
+      "title": "Isaiah",
+      "category": "historical",
+      "summary": "The prophet who foretold the light shining on those in darkness.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 330.0,
+          "end": 425.36
+        },
+        {
+          "episode": 40,
+          "start": 834.0,
+          "end": 927.919
+        }
+      ]
+    },
+    {
+      "id": "john-the-baptist",
+      "title": "John the Baptist",
+      "category": "historical",
+      "summary": "The forerunner of Christ who announces his arrival in hell.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 394.18,
+          "end": 485.519
+        }
+      ]
+    },
+    {
+      "id": "seth",
+      "title": "Seth",
+      "category": "historical",
+      "summary": "Son of Adam who recounts the prophecy of Michael about the oil of mercy.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 452.319,
+          "end": 569.879
+        }
+      ]
+    },
+    {
+      "id": "michael-the-archangel",
+      "title": "Michael the Archangel",
+      "category": "theological",
+      "summary": "The angel who delivers Adam to Paradise and gives instructions to the witnesses.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 461.56,
+          "end": 551.879
+        },
+        {
+          "episode": 40,
+          "start": 1432.72,
+          "end": 1523.92
+        },
+        {
+          "episode": 40,
+          "start": 1627.119,
+          "end": 1721.359
+        }
+      ]
+    },
+    {
+      "id": "enoch",
+      "title": "Enoch",
+      "category": "historical",
+      "summary": "One of the two witnesses who were taken to Paradise without dying.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 1456.279,
+          "end": 1549.4
+        }
+      ]
+    },
+    {
+      "id": "elijah",
+      "title": "Elijah",
+      "category": "historical",
+      "summary": "The prophet taken up in a chariot of fire, who will return before the end.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 1462.619,
+          "end": 1558.359
+        }
+      ]
+    },
+    {
+      "id": "penitent-thief",
+      "title": "Penitent Thief",
+      "category": "historical",
+      "summary": "The robber crucified with Jesus who was promised Paradise and enters with the sign of the cross.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 1494.46,
+          "end": 1619.92
+        }
+      ]
+    },
+    {
+      "id": "karinus-and-leucius",
+      "title": "Karinus and Leucius",
+      "category": "historical",
+      "summary": "The two sons of Simeon who were raised from the dead and wrote the account of the Harrowing of Hell.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 252.479,
+          "end": 342.5
+        },
+        {
+          "episode": 40,
+          "start": 1620.0,
+          "end": 1769.839
+        }
+      ]
+    },
+    {
+      "id": "joseph-of-arimathea",
+      "title": "Joseph of Arimathea",
+      "category": "historical",
+      "summary": "The man who buried Jesus and later testifies to the resurrection of the dead.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 110.28,
+          "end": 203.199
+        },
+        {
+          "episode": 40,
+          "start": 203.199,
+          "end": 295.56
+        }
+      ]
+    },
+    {
+      "id": "annas-and-caiaphas",
+      "title": "Annas and Caiaphas",
+      "category": "historical",
+      "summary": "High priests who question Joseph and later receive the writings of Karinus and Leucius.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 110.28,
+          "end": 203.199
+        },
+        {
+          "episode": 40,
+          "start": 203.199,
+          "end": 295.56
+        },
+        {
+          "episode": 40,
+          "start": 1728.359,
+          "end": 1819.559
+        }
+      ]
+    },
+    {
+      "id": "nicodemus",
+      "title": "Nicodemus",
+      "category": "historical",
+      "summary": "A Pharisee who helps Joseph and receives the writings of Leucius.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 203.199,
+          "end": 295.56
+        },
+        {
+          "episode": 40,
+          "start": 1728.359,
+          "end": 1819.559
+        }
+      ]
+    },
+    {
+      "id": "pilate",
+      "title": "Pontius Pilate",
+      "category": "historical",
+      "summary": "The Roman governor who records the events in his public books.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 1788.759,
+          "end": 1821.96
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "harrowing-of-hell",
+      "title": "Harrowing of Hell",
+      "summary": "The descent of Christ into Hades after his death to rescue the righteous dead, a key event in Christian theology.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 0.0,
+          "end": 1821.96
+        }
+      ]
+    },
+    {
+      "id": "gospel-of-nicodemus",
+      "title": "Gospel of Nicodemus",
+      "summary": "An apocryphal text from the 4th-5th century, also known as the Acts of Pilate, containing traditions about Christ's descent into hell.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 0.0,
+          "end": 116.28
+        }
+      ]
+    },
+    {
+      "id": "books-read-at-home",
+      "title": "Books Read at Home",
+      "summary": "A category of Christian literature that is not Scripture but is edifying for private reading, distinct from heretical texts.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 30.0,
+          "end": 143.52
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "gospel-of-nicodemus-not-scripture",
+      "text": "The Gospel of Nicodemus is not Scripture but a book to be read at home, reflecting traditions not in the Bible.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 12.16,
+          "end": 106.96
+        }
+      ]
+    },
+    {
+      "id": "three-categories-of-books",
+      "text": "The ancient church distinguished three categories: books read in church (Scripture), books read at home, and books not to be read (heretical).",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 30.0,
+          "end": 143.52
+        }
+      ]
+    },
+    {
+      "id": "christ-defeats-death",
+      "text": "Christ, as King of Glory, tramples death, binds Satan, and leads the righteous dead out of hell.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 1068.79,
+          "end": 1355.0
+        }
+      ]
+    },
+    {
+      "id": "oil-of-mercy-prophecy",
+      "text": "Michael the Archangel told Seth that after 5500 years, the Son of God would come to anoint believers with the oil of mercy through baptism.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 502.519,
+          "end": 594.72
+        }
+      ]
+    },
+    {
+      "id": "sign-of-cross-in-hell",
+      "text": "Christ makes the sign of the cross over Adam and the saints, and the penitent thief uses the sign to enter Paradise.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 1320.0,
+          "end": 1410.79
+        },
+        {
+          "episode": 40,
+          "start": 1543.279,
+          "end": 1636.319
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "isaiah-9-light",
+      "reference": "Isaiah 9:1-2",
+      "summary": "Quoted by Isaiah in hell: 'The people that walked in darkness have seen a great light.'",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 332.0,
+          "end": 425.36
+        }
+      ]
+    },
+    {
+      "id": "psalm-24-gates",
+      "reference": "Psalm 24:7-10",
+      "summary": "Quoted by David: 'Lift up your heads, O gates... the King of glory shall come in.'",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 762.399,
+          "end": 856.299
+        },
+        {
+          "episode": 40,
+          "start": 870.0,
+          "end": 966.39
+        }
+      ]
+    },
+    {
+      "id": "psalm-107-bars",
+      "reference": "Psalm 107:16",
+      "summary": "Quoted by David: 'He has broken the gates of brass and cut the bars of iron asunder.'",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 815.44,
+          "end": 910.879
+        }
+      ]
+    },
+    {
+      "id": "hosea-13-death",
+      "reference": "Hosea 13:14",
+      "summary": "Quoted by Isaiah: 'O death, where is thy sting? O hell, where is thy victory?'",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 840.0,
+          "end": 937.0
+        }
+      ]
+    },
+    {
+      "id": "psalm-30-healing",
+      "reference": "Psalm 30:2-3",
+      "summary": "Quoted by Adam: 'O Lord my God, I cried unto thee and thou hast healed me... brought my soul out of hell.'",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 1260.0,
+          "end": 1355.0
+        }
+      ]
+    },
+    {
+      "id": "psalm-98-salvation",
+      "reference": "Psalm 98:1-2",
+      "summary": "Quoted by David: 'Sing unto the Lord a new song... his right hand has brought salvation.'",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 1350.0,
+          "end": 1445.779
+        }
+      ]
+    },
+    {
+      "id": "micah-7-mercy",
+      "reference": "Micah 7:18-19",
+      "summary": "Quoted by Micah: 'What God is like thee... removing sins and casting them into the depths of the sea.'",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 1392.48,
+          "end": 1488.14
+        }
+      ]
+    },
+    {
+      "id": "luke-23-thief",
+      "reference": "Luke 23:42-43",
+      "summary": "The penitent thief's request and Jesus' promise: 'Today you will be with me in Paradise.'",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 1538.48,
+          "end": 1632.44
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "harrowing-of-hell",
+      "term": "Harrowing of Hell",
+      "definition": "The Christian doctrine that Christ descended into Hades after his crucifixion to rescue the righteous dead.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 0.0,
+          "end": 1821.96
+        }
+      ]
+    },
+    {
+      "id": "apocrypha",
+      "term": "Apocrypha",
+      "definition": "Texts not included in the biblical canon but considered edifying for private reading.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 12.16,
+          "end": 106.96
+        }
+      ]
+    },
+    {
+      "id": "oil-of-mercy",
+      "term": "Oil of Mercy",
+      "definition": "A symbol of God's mercy and the Holy Spirit, promised to anoint believers in the last days.",
+      "segments": [
+        {
+          "episode": 40,
+          "start": 502.519,
+          "end": 594.72
+        }
+      ]
+    }
+  ]
+}

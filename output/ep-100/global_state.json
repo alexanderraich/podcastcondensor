@@ -1,0 +1,534 @@
+{
+  "summary": "In this 100th episode of the Lord of Spirits podcast, hosts Father Andrew Stephen Damick and Father Stephen De Young celebrate their anniversary by exploring the theme of continuity and change within Christianity. They begin by recapping their previous discussion on the continuity of true worship from the Stone Age through the Axial Age, then focus on the relationship between Second Temple Judaism and early Christianity as a paradigm for understanding legitimate change. They argue that Christianity is a continuation of Second Temple Judaism, not a new religion, and that changes such as the shift from temple to synagogue worship, the adaptation of liturgical forms, and the development of the New Testament canon occur within an overarching continuity. They apply this paradigm to evaluate Gnosticism, Neoplatonism, and Arianism, distinguishing between heretical forms of Christianity and entirely different religions. The episode includes listener calls on topics like biblical infallibility, the harrowing of Hades, and the state of grace, and concludes with reflections on the practical implications of this continuity for modern Christians, emphasizing obedience and community over intellectual correctness.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox Christian priest, and author of several books including 'Orthodoxy and Heterodoxy'.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 5.48,
+          "end": 98.239
+        },
+        {
+          "episode": 100,
+          "start": 58.24,
+          "end": 148.319
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox Christian priest, and author of 'Saint Paul the Pharisee'.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 5.48,
+          "end": 98.239
+        },
+        {
+          "episode": 100,
+          "start": 58.24,
+          "end": 148.319
+        }
+      ]
+    },
+    {
+      "id": "trudy-the-tank-richter",
+      "title": "Trudy the Tank Richter",
+      "category": "person",
+      "summary": "Producer and phone screener for the show, known for her energetic presence.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 83.439,
+          "end": 178.759
+        },
+        {
+          "episode": 100,
+          "start": 4506.539,
+          "end": 4597.39
+        }
+      ]
+    },
+    {
+      "id": "melinda-johnson",
+      "title": "Melinda Johnson",
+      "category": "person",
+      "summary": "CEO of Ancient Faith Ministries, present in the studio during the recording.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 1913.799,
+          "end": 2003.88
+        }
+      ]
+    },
+    {
+      "id": "st-irenaeus",
+      "title": "St. Irenaeus",
+      "category": "person",
+      "summary": "Early Church Father who wrote 'Against Heresies' and coined the term 'Gnostic'.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 7489.79,
+          "end": 7583.0
+        },
+        {
+          "episode": 100,
+          "start": 7567.0,
+          "end": 7658.119
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "Apostle to the Gentiles, whose writings are considered secondary scriptures interpreting the Gospels.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 3485.699,
+          "end": 3576.559
+        },
+        {
+          "episode": 100,
+          "start": 3520.719,
+          "end": 3610.79
+        }
+      ]
+    },
+    {
+      "id": "st-isaac-the-syrian",
+      "title": "St. Isaac the Syrian",
+      "category": "person",
+      "summary": "A saint who belonged to the Assyrian Church of the East, a heretical body, yet is venerated in Orthodoxy.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 8758.0,
+          "end": 8849.0
+        },
+        {
+          "episode": 100,
+          "start": 8784.52,
+          "end": 8876.399
+        }
+      ]
+    },
+    {
+      "id": "arianism",
+      "title": "Arianism",
+      "category": "theological",
+      "summary": "A heretical Christian movement that denied the full divinity of Christ, prevalent among the Goths.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 8218.68,
+          "end": 8309.239
+        },
+        {
+          "episode": 100,
+          "start": 8400.0,
+          "end": 8491.44
+        }
+      ]
+    },
+    {
+      "id": "gnosticism",
+      "title": "Gnosticism",
+      "category": "theological",
+      "summary": "A catch-all category for various sects that rejected the Old Testament and the goodness of creation, often mixing Christian elements with pagan philosophy.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 7474.56,
+          "end": 7567.0
+        },
+        {
+          "episode": 100,
+          "start": 7567.0,
+          "end": 7658.119
+        }
+      ]
+    },
+    {
+      "id": "neoplatonism",
+      "title": "Neoplatonism",
+      "category": "theological",
+      "summary": "A philosophical system developed by Plotinus that borrowed Christian ideas to compete with Christianity, but remained fundamentally pagan.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 7890.0,
+          "end": 7986.399
+        },
+        {
+          "episode": 100,
+          "start": 7948.64,
+          "end": 8039.939
+        }
+      ]
+    },
+    {
+      "id": "leontopolis",
+      "title": "Leontopolis",
+      "category": "place",
+      "summary": "Site of a Jewish temple in Egypt that operated alongside the Jerusalem Temple, showing diversity in Second Temple Judaism.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 3807.44,
+          "end": 3899.699
+        },
+        {
+          "episode": 100,
+          "start": 3897.3,
+          "end": 3989.96
+        }
+      ]
+    },
+    {
+      "id": "elephantine-island",
+      "title": "Elephantine Island",
+      "category": "place",
+      "summary": "An island in the Nile where a Jewish temple may have existed, further evidence of non-centralized worship.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 3956.88,
+          "end": 4047.44
+        },
+        {
+          "episode": 100,
+          "start": 3992.0,
+          "end": 4085.36
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "continuity-and-change",
+      "title": "Continuity and Change",
+      "summary": "The central theme of the episode: how the worship of the true God has remained continuous throughout history while undergoing legitimate changes, such as the transition from Second Temple Judaism to Christianity.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 568.879,
+          "end": 659.0
+        },
+        {
+          "episode": 100,
+          "start": 1230.0,
+          "end": 1322.0
+        },
+        {
+          "episode": 100,
+          "start": 2841.159,
+          "end": 2935.199
+        }
+      ]
+    },
+    {
+      "id": "second-temple-judaism",
+      "title": "Second Temple Judaism",
+      "summary": "The period of Jewish history from the rebuilding of the Temple to its destruction in 70 AD, characterized by diverse religious movements, including the emergence of Christianity as a form of Second Temple Judaism.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 1980.0,
+          "end": 2093.0
+        },
+        {
+          "episode": 100,
+          "start": 2586.8,
+          "end": 2678.739
+        },
+        {
+          "episode": 100,
+          "start": 2730.0,
+          "end": 2823.84
+        }
+      ]
+    },
+    {
+      "id": "axial-age",
+      "title": "Axial Age",
+      "summary": "A period in the mid-first millennium BC marked by major intellectual and religious shifts across the world, including the rise of literacy and text-focused religion, which influenced both paganism and Judaism.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 917.32,
+          "end": 1008.799
+        },
+        {
+          "episode": 100,
+          "start": 2220.0,
+          "end": 2310.0
+        },
+        {
+          "episode": 100,
+          "start": 2338.619,
+          "end": 2430.36
+        }
+      ]
+    },
+    {
+      "id": "primary-and-secondary-scriptures",
+      "title": "Primary and Secondary Scriptures",
+      "summary": "The idea that within the canon, certain texts (like the Torah or the Gospels) hold a primary place, while others (like the Prophets or the Epistles) are secondary and interpret the primary texts.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 3210.0,
+          "end": 3302.44
+        },
+        {
+          "episode": 100,
+          "start": 3314.599,
+          "end": 3405.79
+        },
+        {
+          "episode": 100,
+          "start": 3452.0,
+          "end": 3545.719
+        }
+      ]
+    },
+    {
+      "id": "heresy-vs-other-religion",
+      "title": "Heresy vs. Other Religion",
+      "summary": "The distinction between a heretical form of Christianity (like Arianism) and a completely different religion (like Gnosticism or Neoplatonism), based on continuity of scriptures, worship, and authority.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 8195.159,
+          "end": 8285.76
+        },
+        {
+          "episode": 100,
+          "start": 8400.0,
+          "end": 8491.44
+        },
+        {
+          "episode": 100,
+          "start": 8516.159,
+          "end": 8606.79
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "christianity-is-second-temple-judaism",
+      "text": "Christianity is a form of Second Temple Judaism, specifically a variation of Pharisaism, and thus a continuation of the same religion.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 2603.119,
+          "end": 2693.699
+        },
+        {
+          "episode": 100,
+          "start": 2730.0,
+          "end": 2823.84
+        }
+      ]
+    },
+    {
+      "id": "infallibility-is-logically-incoherent",
+      "text": "The Protestant concept of biblical infallibility is logically incoherent because a text cannot exercise authority; it requires interpretation by fallible humans.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 5542.0,
+          "end": 5635.0
+        },
+        {
+          "episode": 100,
+          "start": 5603.359,
+          "end": 5694.0
+        }
+      ]
+    },
+    {
+      "id": "salvation-possible-for-all",
+      "text": "It is possible for anyone who has ever lived to find salvation, regardless of time or place, because God's grace is available to all who respond faithfully to the revelation they have.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 8933.819,
+          "end": 9024.34
+        },
+        {
+          "episode": 100,
+          "start": 9120.0,
+          "end": 9192.86
+        }
+      ]
+    },
+    {
+      "id": "ninevites-example-of-repentance",
+      "text": "The Ninevites, though demon-worshipping pagans, repented and were honored by Christ as examples, showing that faithfulness is not limited to those with correct doctrine.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 8984.44,
+          "end": 9086.0
+        }
+      ]
+    },
+    {
+      "id": "heretical-bodies-lack-power",
+      "text": "Heretical bodies, while retaining some Christian elements, lack the full power of Orthodox Christianity for salvation, but God can still save individuals within them.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 8484.68,
+          "end": 8575.2
+        },
+        {
+          "episode": 100,
+          "start": 8626.639,
+          "end": 8721.2
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-4-26",
+      "reference": "Genesis 4:26",
+      "summary": "Discussed as the beginning of calling upon the name of Yahweh, marking a shift in worship practices.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 1295.39,
+          "end": 1387.759
+        }
+      ]
+    },
+    {
+      "id": "psalm-24",
+      "reference": "Psalm 24",
+      "summary": "Used to support the harrowing of Hades, with the call to lift up the gates for the King of Glory.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 11160.0,
+          "end": 11250.799
+        }
+      ]
+    },
+    {
+      "id": "acts-22",
+      "reference": "Acts 22",
+      "summary": "Paul's account of being in a trance in the temple, illustrating ecstatic visionary experiences.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 10156.479,
+          "end": 10249.879
+        }
+      ]
+    },
+    {
+      "id": "1-peter-3-19",
+      "reference": "1 Peter 3:19",
+      "summary": "Referenced in the discussion of the harrowing of Hades, where Christ preached to the spirits in prison.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 11476.159,
+          "end": 11566.76
+        }
+      ]
+    },
+    {
+      "id": "jonah-3",
+      "reference": "Jonah 3",
+      "summary": "The repentance of the Ninevites, used to illustrate that God honors repentance even from pagans.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 8975.479,
+          "end": 9086.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "axial-age",
+      "term": "Axial Age",
+      "definition": "A period in the mid-first millennium BC characterized by major intellectual and religious shifts, including the rise of literacy and text-focused religion.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 917.32,
+          "end": 1008.799
+        }
+      ]
+    },
+    {
+      "id": "second-temple-judaism",
+      "term": "Second Temple Judaism",
+      "definition": "The period of Jewish history from the rebuilding of the Temple to its destruction in 70 AD, marked by diverse religious movements.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 1980.0,
+          "end": 2093.0
+        }
+      ]
+    },
+    {
+      "id": "harrowing-of-hades",
+      "term": "Harrowing of Hades",
+      "definition": "The Orthodox teaching that Christ descended into Hades after His death to liberate the righteous dead, often depicted as a battle.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 11150.28,
+          "end": 11242.799
+        }
+      ]
+    },
+    {
+      "id": "state-of-grace",
+      "term": "State of Grace",
+      "definition": "A Roman Catholic concept referring to the condition of being free from mortal sin, which determines one's eternal destiny at death.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 11910.0,
+          "end": 12000.0
+        }
+      ]
+    },
+    {
+      "id": "anastasis",
+      "term": "Anastasis",
+      "definition": "Greek word for resurrection, literally 'standing again', used in the New Testament to describe Christ's rising from the dead.",
+      "segments": [
+        {
+          "episode": 100,
+          "start": 12231.79,
+          "end": 12322.879
+        }
+      ]
+    }
+  ]
+}

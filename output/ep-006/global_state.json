@@ -1,0 +1,378 @@
+{
+  "summary": "In this episode of the Lord of Spirits, hosts Father Andrew Stephen Damick and Father Stephen DeYoung explore the active ministry of angels and glorified saints in God's kingdom, emphasizing that the age to come is not static but filled with purposeful work. They discuss the twofold ministry of intercession and governance, drawing on scriptural and Second Temple Jewish texts to show that seeking angelic and saintly intercession is a longstanding practice. The hosts address objections to venerating saints and angels, clarifying the distinction between worship (offering sacrifice) and veneration (honor), and they tackle the topic of necromancy, explaining why Orthodox Christian interaction with the departed is not necromancy but communion in Christ. The episode also includes listener questions on mental illness and spiritual affliction, the nature of ruling with Christ, and the possibility of demonic possession for baptized Christians.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox Christian priest in Pennsylvania.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 60.0,
+          "end": 150.759
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-deyoung",
+      "title": "Father Stephen DeYoung",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox Christian priest in Louisiana.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 60.0,
+          "end": 150.759
+        }
+      ]
+    },
+    {
+      "id": "jrr-tolkien",
+      "title": "J.R.R. Tolkien",
+      "category": "person",
+      "summary": "Author of The Lord of the Rings, quoted at the beginning of the episode about heaven.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 80.579,
+          "end": 170.879
+        }
+      ]
+    },
+    {
+      "id": "job",
+      "title": "Job",
+      "category": "biblical",
+      "summary": "Biblical figure whose story is used to illustrate angelic intercession and the testing of faith.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 900.0,
+          "end": 1132.4
+        }
+      ]
+    },
+    {
+      "id": "first-enoch",
+      "title": "1 Enoch",
+      "category": "text",
+      "summary": "Second Temple Jewish text referenced for its depiction of angels interceding and the role of the Watchers.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 1138.599,
+          "end": 1271.0
+        }
+      ]
+    },
+    {
+      "id": "greek-life-of-adam-and-eve",
+      "title": "Greek Life of Adam and Eve",
+      "category": "text",
+      "summary": "First-century Jewish text describing angels praying alongside Adam and Eve during their repentance.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 1271.0,
+          "end": 1387.4
+        }
+      ]
+    },
+    {
+      "id": "revelation-20",
+      "title": "Revelation 20",
+      "category": "biblical",
+      "summary": "Passage describing the first resurrection and the reign of martyrs with Christ as priests.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 1890.0,
+          "end": 2148.0
+        }
+      ]
+    },
+    {
+      "id": "nebuchadnezzar",
+      "title": "Nebuchadnezzar",
+      "category": "historical",
+      "summary": "Babylonian king who set up a statue for worship, referenced in Daniel 3.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 3158.28,
+          "end": 3249.3
+        }
+      ]
+    },
+    {
+      "id": "caligula",
+      "title": "Caligula",
+      "category": "historical",
+      "summary": "Roman emperor known for his cruelty, mentioned in the discussion of praying for authorities.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 3450.0,
+          "end": 3540.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "angelic-intercession",
+      "title": "Angelic Intercession",
+      "summary": "The belief that angels and saints intercede before God on behalf of humans, a practice rooted in Scripture and Second Temple Jewish tradition.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 592.639,
+          "end": 1132.4
+        },
+        {
+          "episode": 6,
+          "start": 1530.0,
+          "end": 1623.24
+        }
+      ]
+    },
+    {
+      "id": "veneration-vs-worship",
+      "title": "Veneration vs. Worship",
+      "summary": "The Orthodox distinction between worship (offering sacrifice to God alone) and veneration (honor given to saints and angels), addressing Protestant objections.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 2636.8,
+          "end": 3000.59
+        },
+        {
+          "episode": 6,
+          "start": 2999.559,
+          "end": 3089.84
+        }
+      ]
+    },
+    {
+      "id": "royal-priesthood",
+      "title": "Royal Priesthood",
+      "summary": "The concept that glorified humans and angels serve as both kings and priests, ruling and interceding in God's administration, as seen in Revelation 20.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 1751.599,
+          "end": 1889.359
+        },
+        {
+          "episode": 6,
+          "start": 1890.0,
+          "end": 2148.0
+        }
+      ]
+    },
+    {
+      "id": "necromancy-vs-communion",
+      "title": "Necromancy vs. Communion with Saints",
+      "summary": "The distinction between necromancy (attempting to control the dead for forbidden knowledge) and Orthodox prayer with the departed saints, which is communion in Christ.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 4582.88,
+          "end": 5176.68
+        },
+        {
+          "episode": 6,
+          "start": 5220.0,
+          "end": 5352.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "angels-intercede-for-humans",
+      "text": "Angels and saints intercede before God on behalf of humans, as evidenced by Scripture and Second Temple Jewish texts.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 592.639,
+          "end": 1132.4
+        }
+      ]
+    },
+    {
+      "id": "worship-is-sacrifice",
+      "text": "True worship consists of offering sacrifice to God alone, while veneration is honor given to saints and angels.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 2811.76,
+          "end": 3000.59
+        }
+      ]
+    },
+    {
+      "id": "saints-reign-as-priests",
+      "text": "The saints in glory reign with Christ and serve as priests, interceding and offering worship, as described in Revelation 20.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 1890.0,
+          "end": 2148.0
+        }
+      ]
+    },
+    {
+      "id": "orthodox-prayer-not-necromancy",
+      "text": "Asking saints to pray for us is not necromancy because it is not an attempt to control the dead for forbidden knowledge, but a communion in Christ.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 4582.88,
+          "end": 5176.68
+        }
+      ]
+    },
+    {
+      "id": "demonic-possession-requires-invitation",
+      "text": "Demonic possession does not happen accidentally; it requires an invitation, whether explicit or gradual, and can occur even to baptized Christians who apostatize.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 5490.0,
+          "end": 5640.84
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "job-5-1",
+      "reference": "Job 5:1",
+      "summary": "Eliphaz asks Job to which of the holy ones he will address his case, interpreted as angelic intercession.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 1012.519,
+          "end": 1132.4
+        }
+      ]
+    },
+    {
+      "id": "psalm-104-4",
+      "reference": "Psalm 104:4",
+      "summary": "Quoted in the title and closing, describing angels as ministers of flaming fire.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 5818.159,
+          "end": 5920.279
+        }
+      ]
+    },
+    {
+      "id": "revelation-20-4-6",
+      "reference": "Revelation 20:4-6",
+      "summary": "Describes the first resurrection and the reign of martyrs with Christ as priests.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 1890.0,
+          "end": 2148.0
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-10-16-21",
+      "reference": "1 Corinthians 10:16-21",
+      "summary": "Paul contrasts communion with Christ and communion with demons, emphasizing the sacrificial nature of worship.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 5266.399,
+          "end": 5359.0
+        }
+      ]
+    },
+    {
+      "id": "1-timothy-2-1-2",
+      "reference": "1 Timothy 2:1-2",
+      "summary": "Paul urges prayers and thanksgivings for all men, including kings and authorities.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 3413.39,
+          "end": 3505.79
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "divine-council",
+      "term": "Divine Council",
+      "definition": "The heavenly assembly of God and his angelic ministers who govern creation.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 60.0,
+          "end": 150.759
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming partakers of the divine nature through union with Christ.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 1860.0,
+          "end": 1950.72
+        }
+      ]
+    },
+    {
+      "id": "veneration",
+      "term": "Veneration",
+      "definition": "Honor given to saints and angels, distinct from worship which is reserved for God alone.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 2636.8,
+          "end": 3000.59
+        }
+      ]
+    },
+    {
+      "id": "necromancy",
+      "term": "Necromancy",
+      "definition": "Death magic; attempting to communicate with the dead for forbidden knowledge or control.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 4582.88,
+          "end": 4675.79
+        }
+      ]
+    },
+    {
+      "id": "first-resurrection",
+      "term": "First Resurrection",
+      "definition": "The resurrection of the righteous to reign with Christ, as described in Revelation 20.",
+      "segments": [
+        {
+          "episode": 6,
+          "start": 2026.359,
+          "end": 2148.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,787 @@
+{
+  "summary": "This Q&A episode of Lord of Spirits covers a wide range of topics submitted by listeners, including the meaning of liturgy, the relationship between mental illness and spiritual influences, the identity of Cain's wife and the Nephilim, the nature of the soul, the Kingdom of God, the Feast of Tabernacles, the Greek term pharmakeia, the transformation of Nebuchadnezzar, priestly agency in sacraments, the evil eye, the re-enchantment of science and mathematics, the second judgment, the fall of the devil, the purpose of catechesis, the sea god Yam, small-r revelation, the Theotokos as Panagia, the story of Samson, and the creature Ziz. The hosts provide Orthodox Christian perspectives, emphasizing the integration of the seen and unseen, the importance of proper theological terminology, and the need for discernment in spiritual matters.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of Lord of Spirits, an Orthodox Christian priest from Emmaus, Pennsylvania.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 9.4,
+          "end": 101.12
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "Co-host of Lord of Spirits, an Orthodox Christian priest from Lafayette, Louisiana.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 9.4,
+          "end": 101.12
+        }
+      ]
+    },
+    {
+      "id": "aristotle",
+      "title": "Aristotle",
+      "category": "person",
+      "summary": "Ancient Greek philosopher; first to use the phrase 'divine liturgy' in reference to land for temples.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 406.399,
+          "end": 497.54
+        }
+      ]
+    },
+    {
+      "id": "st-nikolai-velimirovic",
+      "title": "St. Nikolai Velimirovic",
+      "category": "person",
+      "summary": "Orthodox saint who said a miracle is one of God's gifts at which men marvel.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1115.68,
+          "end": 1206.0
+        }
+      ]
+    },
+    {
+      "id": "plato",
+      "title": "Plato",
+      "category": "person",
+      "summary": "Greek philosopher; taught the immortality of the soul and reincarnation, which influenced Western thought but differs from biblical teaching.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1904.48,
+          "end": 1995.119
+        }
+      ]
+    },
+    {
+      "id": "st-gregory-palamas",
+      "title": "St. Gregory Palamas",
+      "category": "person",
+      "summary": "Orthodox theologian who articulated the essence-energies distinction, used to explain God's work in the sacraments.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1950.0,
+          "end": 2042.0
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "Apostle; his use of 'pharmakeia' in Galatians and his teaching on excommunication as turning over to Satan for salvation.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 3389.639,
+          "end": 3484.0
+        }
+      ]
+    },
+    {
+      "id": "st-andrew-of-caesarea",
+      "title": "St. Andrew of Caesarea",
+      "category": "person",
+      "summary": "Sixth-century commentator on Revelation; stated that the devil fell after the creation of the world through pride.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 8076.319,
+          "end": 8170.18
+        }
+      ]
+    },
+    {
+      "id": "simone-weil",
+      "title": "Simone Weil",
+      "category": "person",
+      "summary": "20th-century philosopher; contrasted ancient science as discovery of divine beauty with modern science as idolatry.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 7420.859,
+          "end": 7512.319
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "title": "Theotokos (Virgin Mary)",
+      "category": "theological",
+      "summary": "Mother of God; called Panagia (All-Holy) because she was set apart for God's purpose. Her sinlessness is a separate teaching.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 9979.0,
+          "end": 10160.399
+        }
+      ]
+    },
+    {
+      "id": "yam-deity",
+      "title": "Yam (Sea God)",
+      "category": "theological",
+      "summary": "Canaanite sea deity; in the Bible, 'yam' refers both to the sea and to this spiritual entity, which is subdued by Yahweh.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 8706.239,
+          "end": 8832.399
+        }
+      ]
+    },
+    {
+      "id": "leviathan",
+      "title": "Leviathan",
+      "category": "theological",
+      "summary": "Primordial chaos monster; mentioned in the Bible as a creature subdued by God.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 8692.559,
+          "end": 8785.2
+        }
+      ]
+    },
+    {
+      "id": "behemoth",
+      "title": "Behemoth",
+      "category": "theological",
+      "summary": "Primordial land monster; mentioned in Job as a creature of God's power.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 8692.559,
+          "end": 8785.2
+        }
+      ]
+    },
+    {
+      "id": "anzu",
+      "title": "Anzu",
+      "category": "theological",
+      "summary": "Mesopotamian giant bird; the Hebrew Ziz is its equivalent. Anzu stole the tablet of destinies from Enlil.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 10672.79,
+          "end": 10790.239
+        }
+      ]
+    },
+    {
+      "id": "nimrod",
+      "title": "Nimrod",
+      "category": "historical",
+      "summary": "Biblical figure described as a mighty hunter; linguistically identical to the Mesopotamian hero Ninurta who killed Anzu.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 10759.28,
+          "end": 10790.239
+        }
+      ]
+    },
+    {
+      "id": "samson",
+      "title": "Samson",
+      "category": "historical",
+      "summary": "Biblical judge; his death by pulling down the pillars of the Philistine temple is connected to burial under rocks as a cursed death.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 10160.399,
+          "end": 10457.79
+        }
+      ]
+    },
+    {
+      "id": "cain",
+      "title": "Cain",
+      "category": "historical",
+      "summary": "Firstborn son of Adam and Eve; his wife is not named in Scripture. Theories about her origin (e.g., co-Adamism) create theological problems.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1479.599,
+          "end": 1726.359
+        }
+      ]
+    },
+    {
+      "id": "nephilim",
+      "title": "Nephilim",
+      "category": "theological",
+      "summary": "Offspring of the sons of God (fallen angels) and daughters of men; giants of renown. Discussed in relation to Genesis 6.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1402.99,
+          "end": 1495.24
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "meaning-of-liturgy",
+      "title": "Meaning of Liturgy",
+      "summary": "The Greek word 'leitourgia' originally meant 'public works' in the context of the city-state, including religious duties. It was used in the Septuagint for the service of the Levites within the covenant, and later adopted by Christians to describe their public worship as a people. The phrase 'It is time for the Lord to act' is a mistranslation; the correct rendering is 'It is time to begin the service of the Lord.' The liturgy is both God's work for us and our service to God, with God acting instrumentally through the clergy and people.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 240.0,
+          "end": 921.24
+        }
+      ]
+    },
+    {
+      "id": "soul-as-life-of-body",
+      "title": "Soul as Life of the Body",
+      "summary": "In the Hebrew Bible, 'soul' (nephesh) means life. The soul is not an immortal, independent entity but the life of the body. After death, the life continues contingently, preserved by God, and will return to the body in the resurrection. The intermediate state is described analogically in Scripture. Demonic possession involves a demonized life, not a disembodied soul.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1865.39,
+          "end": 2173.599
+        }
+      ]
+    },
+    {
+      "id": "kingdom-of-god",
+      "title": "Kingdom of God",
+      "summary": "The Kingdom of God is not a nation-state or a spiritualized territory, but the extension of the king's rule—those under God's influence and obedience. It is a verbal idea (kingship or dominion) rather than a reified realm. Christ is already enthroned and reigns, and the kingdom is established through ordering creation, culminating in the final judgment when all creation is set right.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 2607.599,
+          "end": 2804.32
+        }
+      ]
+    },
+    {
+      "id": "feast-of-tabernacles",
+      "title": "Feast of Tabernacles",
+      "summary": "The Feast of Tabernacles (Sukkot) commemorates Israel's dependence on God during the wilderness wanderings. It involved living in booths to unsettle oneself, especially at harvest time when settlement was most tempting. The feast also included offerings for the 70 nations, reflecting Israel's priestly role. In Christianity, its themes are fulfilled in the Transfiguration and Pentecost.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 2873.599,
+          "end": 3083.0
+        }
+      ]
+    },
+    {
+      "id": "pharmakeia",
+      "title": "Pharmakeia",
+      "summary": "The Greek word 'pharmakeia' (translated as sorcery or witchcraft) in Galatians 5:20 refers to the use of psychoactive substances within magical practices. In the ancient world, such substances were used in ritual contexts to induce altered states. Not all pharmakeia involves drugs, but some does. The term is connected to folk magic and local practitioners, distinct from official temple worship.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 3120.0,
+          "end": 3427.0
+        }
+      ]
+    },
+    {
+      "id": "priestly-agency",
+      "title": "Priestly Agency in Sacraments",
+      "summary": "In Orthodox theology, the priest is an instrument through which God acts in the sacraments. The Latin translation of Greek 'energeia' as 'effectus' led to a Western focus on the sacrament itself producing grace (ex opere operato), whereas the East emphasizes God's direct action through divine energies. This explains why a layperson can baptize in emergency—God is the true minister.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 3936.96,
+          "end": 4425.979
+        }
+      ]
+    },
+    {
+      "id": "evil-eye",
+      "title": "The Evil Eye",
+      "summary": "The evil eye is an ancient concept involving envy or bitterness directed at someone, often invoking a demonic power to harm them. It is attested in Ugaritic curses and throughout the ancient Near East. Orthodox Christians should not use amulets (like blue beads) for protection, but instead rely on prayer (e.g., Psalm 91), the sign of the cross, and holy water.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 6817.76,
+          "end": 7145.979
+        }
+      ]
+    },
+    {
+      "id": "re-enchanting-science",
+      "title": "Re-enchanting Science and Mathematics",
+      "summary": "Science and mathematics can be re-enchanted by recognizing them as means of discovering divine beauty and order, rather than as tools for power or consumerism. The ancient Pythagoreans and medieval thinkers saw mathematical and scientific truths as revealing spiritual realities. This contrasts with modern instrumentalism, which often strips these disciplines of their transcendent dimension.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 7366.92,
+          "end": 7758.479
+        }
+      ]
+    },
+    {
+      "id": "second-judgment",
+      "title": "The Second Judgment",
+      "summary": "The 'second judgment' (final judgment) is the actual judgment where Christ sets all creation in its proper order permanently. The 'particular judgment' at death is a continuation of one's state. We pray for the departed because the final judgment has not yet occurred. The judgment is not a verdict but a putting-right of all things.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 7804.68,
+          "end": 8019.76
+        }
+      ]
+    },
+    {
+      "id": "catechesis-as-formation",
+      "title": "Catechesis as Formation",
+      "summary": "Catechesis should not be merely informational (transferring doctrinal facts) but formational—teaching how to pray, fast, give alms, and live an Orthodox Christian life. It is about inculturating individuals into the community, similar to apprenticeship. The length and content should be tailored to the repentance and transformation needed, not just the completion of a syllabus.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 8237.2,
+          "end": 8629.44
+        }
+      ]
+    },
+    {
+      "id": "yam-sea-god",
+      "title": "Yam: Sea and Deity",
+      "summary": "In the Hebrew Bible, 'yam' (sea) often refers both to the physical body of water and to the sea deity Yam, as ancient peoples did not separate the material from the spiritual. Calming the sea is also subduing Yam. The biblical authors did not deny the existence of such spirits but demoted them from gods to created beings under Yahweh's authority.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 8706.239,
+          "end": 8832.399
+        }
+      ]
+    },
+    {
+      "id": "small-r-revelation",
+      "title": "Small 'r' Revelation",
+      "summary": "Orthodox Christianity does not emphasize seeking personal, discursive revelations (e.g., God telling you whom to marry). Revelation is primarily the self-revelation of Christ, not a series of propositions. Discernment is about knowing Christ and making good choices, not divining a single 'perfect will.' The idea that God micromanages every decision is a form of Calvinism that causes unnecessary anxiety.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 9059.239,
+          "end": 9691.0
+        }
+      ]
+    },
+    {
+      "id": "panagia-title",
+      "title": "Panagia: All-Holy",
+      "summary": "The title 'Panagia' (All-Holy) for the Theotokos means she is set apart for a special purpose, not necessarily sinless in a juridical sense. Holiness is about being consecrated to God. The title calls us to likewise devote ourselves entirely to Christ. It is similar to addressing the Ecumenical Patriarch as 'All-Holiness'—a recognition of a sacred office.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 9979.0,
+          "end": 10160.399
+        }
+      ]
+    },
+    {
+      "id": "ziz-creature",
+      "title": "Ziz: Primordial Bird",
+      "summary": "Ziz is a giant griffin-like bird in Jewish tradition, mentioned in Psalms (50:11, 80:13). It is the Hebrew version of the Mesopotamian Anzu, a magnificent but mischievous creature. Unlike Leviathan and Behemoth, Ziz is not portrayed as a chaos monster but as a symbol of divine power, reclaimed by God from foreign gods.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 10500.0,
+          "end": 10894.239
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "liturgy-not-work-of-people",
+      "text": "The Greek word 'leitourgia' does not mean 'work of the people' in its historical usage; it originally meant 'public works' and was used for the service of the Levites within the covenant.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 240.0,
+          "end": 684.799
+        }
+      ]
+    },
+    {
+      "id": "soul-not-immortal-thing",
+      "text": "The soul is not an immortal, independent entity but the life of the body. After death, life continues contingently, preserved by God, and will return to the body in the resurrection.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1865.39,
+          "end": 2173.599
+        }
+      ]
+    },
+    {
+      "id": "mental-illness-not-purely-spiritual",
+      "text": "Pre-modern people did not view mental illness as purely spiritual; they saw physical, mental, and spiritual causes as interconnected. The modern either/or dichotomy is a false construct.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1014.24,
+          "end": 1368.0
+        }
+      ]
+    },
+    {
+      "id": "cains-wife-unknown",
+      "text": "The Bible does not name Cain's wife. Theories like co-Adamism create theological problems, especially regarding the origin of death and Christ's defeat of death.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1479.599,
+          "end": 1726.359
+        }
+      ]
+    },
+    {
+      "id": "serpents-seed-not-literal",
+      "text": "The 'seed of the serpent' in Genesis 3:15 refers to those who bear the image of the serpent (i.e., are like him), not literal offspring. Sonship is about image-bearing, not biological descent.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 2486.28,
+          "end": 2592.8
+        }
+      ]
+    },
+    {
+      "id": "pharmakeia-includes-drugs",
+      "text": "The Greek word 'pharmakeia' in Galatians 5:20 includes the use of psychoactive drugs in magical practices, though not all instances refer to drugs.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 3120.0,
+          "end": 3427.0
+        }
+      ]
+    },
+    {
+      "id": "nebuchadnezzar-inversion",
+      "text": "Nebuchadnezzar's transformation into a beast is an inversion of Enkidu's humanization in the Epic of Gilgamesh, depicting demonization rather than a simple reversal.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 3553.639,
+          "end": 3645.0
+        }
+      ]
+    },
+    {
+      "id": "priest-as-instrument",
+      "text": "In Orthodox theology, the priest is an instrument through which God acts in the sacraments. The Latin translation of 'energeia' as 'effectus' led to a Western focus on the sacrament itself producing grace.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 3936.96,
+          "end": 4425.979
+        }
+      ]
+    },
+    {
+      "id": "evil-eye-real",
+      "text": "The evil eye is a real phenomenon involving envy and demonic influence, but protection should come through prayer and sacraments, not amulets.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 6817.76,
+          "end": 7145.979
+        }
+      ]
+    },
+    {
+      "id": "devil-fell-after-creation",
+      "text": "The devil fell after the creation of the world, as he is part of creation. St. Andrew of Caesarea summarizes the patristic teaching that the devil fell through pride after creation.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 8032.239,
+          "end": 8151.0
+        }
+      ]
+    },
+    {
+      "id": "catechesis-formational",
+      "text": "Catechesis should be formational, not merely informational. It should teach how to pray, fast, give alms, and live an Orthodox life, tailored to the individual's need for repentance.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 8237.2,
+          "end": 8629.44
+        }
+      ]
+    },
+    {
+      "id": "yam-both-sea-and-deity",
+      "text": "In the Hebrew Bible, 'yam' refers both to the physical sea and to the sea deity Yam, as ancient peoples did not separate material and spiritual realities.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 8706.239,
+          "end": 8832.399
+        }
+      ]
+    },
+    {
+      "id": "no-micro-managing-god",
+      "text": "God does not micromanage every decision; His will is that we repent, love Him and neighbor, and remain faithful. Discernment is about knowing Christ and making good choices, not divining a single perfect plan.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 9059.239,
+          "end": 9691.0
+        }
+      ]
+    },
+    {
+      "id": "panagia-means-set-apart",
+      "text": "The title 'Panagia' (All-Holy) for the Theotokos means she is set apart for a special purpose, not necessarily sinless in a juridical sense. Holiness is about consecration to God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 9979.0,
+          "end": 10160.399
+        }
+      ]
+    },
+    {
+      "id": "samson-burial-under-curse",
+      "text": "Samson's death under rubble is a cursed death, paralleling other biblical figures like Absalom and Job's family, and connected to the watchers buried under rocks.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 10284.0,
+          "end": 10457.79
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-3-15",
+      "reference": "Genesis 3:15",
+      "summary": "The 'seed of the serpent' is interpreted as those who bear the image of the serpent, not literal offspring.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 2486.28,
+          "end": 2592.8
+        }
+      ]
+    },
+    {
+      "id": "genesis-6-1-4",
+      "reference": "Genesis 6:1-4",
+      "summary": "The sons of God and daughters of men produce the Nephilim, giants of renown.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1402.99,
+          "end": 1495.24
+        }
+      ]
+    },
+    {
+      "id": "galatians-5-20",
+      "reference": "Galatians 5:20",
+      "summary": "Pharmakeia (sorcery) includes the use of psychoactive drugs in magical practices.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 3120.0,
+          "end": 3427.0
+        }
+      ]
+    },
+    {
+      "id": "daniel-4",
+      "reference": "Daniel 4",
+      "summary": "Nebuchadnezzar's transformation into a beast is an inversion of Enkidu's humanization.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 3553.639,
+          "end": 3645.0
+        }
+      ]
+    },
+    {
+      "id": "psalm-91",
+      "reference": "Psalm 91",
+      "summary": "An ancient exorcism prayer for protection against evil and demons.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 7119.64,
+          "end": 7211.0
+        }
+      ]
+    },
+    {
+      "id": "matthew-25",
+      "reference": "Matthew 25",
+      "summary": "The last judgment where Christ sets all creation in order permanently.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 7828.239,
+          "end": 7919.84
+        }
+      ]
+    },
+    {
+      "id": "revelation-12",
+      "reference": "Revelation 12",
+      "summary": "The dragon and the fall of the angels; St. Andrew of Caesarea comments that the devil fell after creation.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 8076.319,
+          "end": 8170.18
+        }
+      ]
+    },
+    {
+      "id": "psalm-50-11",
+      "reference": "Psalm 50:11",
+      "summary": "Reference to Ziz as a creature belonging to God, reclaiming it from foreign gods.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 10830.0,
+          "end": 10922.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "leitourgia",
+      "term": "Leitourgia",
+      "definition": "Greek word for liturgy; originally meant 'public works' in the city-state, later used for the service of the Levites and Christian worship.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 240.0,
+          "end": 684.799
+        }
+      ]
+    },
+    {
+      "id": "nephesh",
+      "term": "Nephesh",
+      "definition": "Hebrew word for soul, meaning life. Used for both humans and animals.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1930.2,
+          "end": 2036.0
+        }
+      ]
+    },
+    {
+      "id": "pharmakeia",
+      "term": "Pharmakeia",
+      "definition": "Greek term for sorcery or witchcraft, often involving psychoactive drugs in magical practices.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 3120.0,
+          "end": 3427.0
+        }
+      ]
+    },
+    {
+      "id": "ex-opere-operato",
+      "term": "Ex opere operato",
+      "definition": "Latin phrase meaning 'from the work worked'; a Western sacramental theology where the sacrament itself produces grace.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 4110.0,
+          "end": 4202.659
+        }
+      ]
+    },
+    {
+      "id": "energeia",
+      "term": "Energeia",
+      "definition": "Greek term for energy or activity; in Orthodox theology, the divine energies are God Himself in action, distinct from His essence.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 3985.76,
+          "end": 4078.0
+        }
+      ]
+    },
+    {
+      "id": "panagia",
+      "term": "Panagia",
+      "definition": "Greek title for the Theotokos meaning 'All-Holy'; signifies she is set apart for God's purpose.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 9979.0,
+          "end": 10160.399
+        }
+      ]
+    },
+    {
+      "id": "co-adamism",
+      "term": "Co-Adamism",
+      "definition": "Theory that there were other humans besides Adam and Eve; often leads to theological problems regarding death and Christ's redemption.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 1512.88,
+          "end": 1726.359
+        }
+      ]
+    },
+    {
+      "id": "ziz",
+      "term": "Ziz",
+      "definition": "Giant griffin-like bird in Jewish tradition; the Hebrew version of the Mesopotamian Anzu.",
+      "segments": [
+        {
+          "episode": 38,
+          "start": 10500.0,
+          "end": 10894.239
+        }
+      ]
+    }
+  ]
+}

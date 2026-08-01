@@ -1,0 +1,467 @@
+{
+  "summary": "In this episode, the hosts discuss the Orthodox Christian understanding of what happens after death, contrasting it with common modern misconceptions. They begin by exploring the ancient Near Eastern and Greek concepts of the underworld (Sheol, Hades, Hell), emphasizing that it was a shadowy, undesirable place for all, not a place of conscious torment. They then examine the hope of resurrection found in the Old Testament, particularly in the Psalms of the Sons of Korah, and how these were interpreted in light of Christ's resurrection. The discussion moves to the intermediate state after death, where the righteous are in paradise and the wicked in Hades, awaiting the final judgment. They critique the Platonic and Gnostic influences that led to the idea of the soul's immortality and the beatific vision, affirming instead the bodily resurrection and the transformation of the cosmos. The episode concludes with practical applications for Christian life, emphasizing repentance and the role of the possibility of eternal condemnation as a spur to spiritual struggle.",
+  "entities": [
+    {
+      "id": "sheol",
+      "title": "Sheol",
+      "category": "theological",
+      "summary": "The Hebrew term for the underworld, the realm of the dead, often depicted as a dark, gloomy place where all go after death.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 392.0,
+          "end": 485.0
+        },
+        {
+          "episode": 42,
+          "start": 1170.0,
+          "end": 1263.799
+        }
+      ]
+    },
+    {
+      "id": "hades",
+      "title": "Hades",
+      "category": "theological",
+      "summary": "The Greek term for the underworld, similar to Sheol, used in the New Testament and early Christian literature to refer to the abode of the dead.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 920.34,
+          "end": 1014.39
+        },
+        {
+          "episode": 42,
+          "start": 990.0,
+          "end": 1080.0
+        }
+      ]
+    },
+    {
+      "id": "sons-of-korah",
+      "title": "Sons of Korah",
+      "category": "historical",
+      "summary": "A Levitical clan descended from Korah, who rebelled against Moses and Aaron, but whose descendants survived and wrote several Psalms expressing hope for deliverance from death.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 1391.2,
+          "end": 1482.0
+        },
+        {
+          "episode": 42,
+          "start": 1504.0,
+          "end": 1597.92
+        }
+      ]
+    },
+    {
+      "id": "book-of-enoch",
+      "title": "Book of Enoch",
+      "category": "theological",
+      "summary": "An ancient Jewish apocalyptic text, not in the biblical canon for most Christians, but influential in Second Temple Judaism, describing visions of the afterlife and the coming Messiah.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 2741.39,
+          "end": 2837.119
+        },
+        {
+          "episode": 42,
+          "start": 3006.599,
+          "end": 3102.119
+        }
+      ]
+    },
+    {
+      "id": "bart-erman",
+      "title": "Bart Ehrman",
+      "category": "person",
+      "summary": "A New Testament scholar and friend of the show, whose views on the afterlife and the historical reliability of the Gospels are discussed and critiqued.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 810.0,
+          "end": 904.46
+        },
+        {
+          "episode": 42,
+          "start": 3934.0,
+          "end": 4026.559
+        },
+        {
+          "episode": 42,
+          "start": 5280.0,
+          "end": 5373.439
+        }
+      ]
+    },
+    {
+      "id": "plato",
+      "title": "Plato",
+      "category": "person",
+      "summary": "Ancient Greek philosopher whose ideas about the immortality of the soul and the body as a prison have influenced Christian theology, often in ways the hosts argue are incompatible with Orthodoxy.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 6795.88,
+          "end": 6889.96
+        },
+        {
+          "episode": 42,
+          "start": 8169.0,
+          "end": 8260.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "intermediate-state",
+      "title": "Intermediate State",
+      "summary": "The period between a person's death and the general resurrection, where the soul exists in a state of waiting, either in paradise or Hades, not yet experiencing the final judgment.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 5503.0,
+          "end": 5601.319
+        },
+        {
+          "episode": 42,
+          "start": 5877.199,
+          "end": 5968.399
+        },
+        {
+          "episode": 42,
+          "start": 7440.0,
+          "end": 7533.239
+        }
+      ]
+    },
+    {
+      "id": "harrowing-of-hades",
+      "title": "Harrowing of Hades",
+      "summary": "The Orthodox belief that after His death, Christ descended into Hades and liberated the righteous, leading them to paradise, fulfilling the Old Testament hopes.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 3169.44,
+          "end": 3265.0
+        },
+        {
+          "episode": 42,
+          "start": 4297.64,
+          "end": 4395.199
+        }
+      ]
+    },
+    {
+      "id": "two-stage-eschatology",
+      "title": "Two-Stage Eschatology",
+      "summary": "The biblical framework that sees the coming of the Messiah as the first stage, inaugurating the Messianic Age, and a future second stage, the end of days, when final judgment and the new creation occur.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 3265.0,
+          "end": 3381.519
+        },
+        {
+          "episode": 42,
+          "start": 3554.5,
+          "end": 3649.579
+        }
+      ]
+    },
+    {
+      "id": "first-resurrection",
+      "title": "First Resurrection",
+      "summary": "The spiritual resurrection of the soul to life in Christ, which occurs at death for the righteous, as opposed to the bodily resurrection at the end of time.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 4293.56,
+          "end": 4387.119
+        },
+        {
+          "episode": 42,
+          "start": 4400.8,
+          "end": 4492.79
+        }
+      ]
+    },
+    {
+      "id": "macro-souls",
+      "title": "Macro-Souls",
+      "summary": "The concept that larger entities, such as communities or nations, have a collective soul or life, which is more than the sum of individual parts, and can be holy or sinful.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 6990.0,
+          "end": 7117.6
+        },
+        {
+          "episode": 42,
+          "start": 7269.64,
+          "end": 7363.52
+        }
+      ]
+    },
+    {
+      "id": "beatific-vision",
+      "title": "Beatific Vision",
+      "summary": "A Western theological concept, influenced by Platonism, that the soul after death can behold the essence of God, which the hosts critique as incompatible with Orthodox theology and the bodily resurrection.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 8229.0,
+          "end": 8321.28
+        },
+        {
+          "episode": 42,
+          "start": 8363.68,
+          "end": 8455.319
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "heaven-hell-model-rejected",
+      "text": "The common idea that after death one goes immediately to heaven or hell forever is not supported by Orthodox Christian teaching; rather, there is an intermediate state awaiting the general resurrection.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 221.759,
+          "end": 312.0
+        },
+        {
+          "episode": 42,
+          "start": 5936.479,
+          "end": 6027.39
+        }
+      ]
+    },
+    {
+      "id": "hell-hades-synonyms",
+      "text": "In Christian tradition, the words 'hell' and 'Hades' are essentially synonyms, both referring to the underworld, and the distinction between them is a modern misconception.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 920.34,
+          "end": 1014.39
+        },
+        {
+          "episode": 42,
+          "start": 990.0,
+          "end": 1080.0
+        }
+      ]
+    },
+    {
+      "id": "christ-resurrection-affects-all",
+      "text": "Christ's resurrection and descent into Hades affected all humanity, liberating the righteous and beginning the general resurrection, which will include both the righteous and the wicked.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 2395.48,
+          "end": 2486.0
+        },
+        {
+          "episode": 42,
+          "start": 4317.0,
+          "end": 4409.8
+        }
+      ]
+    },
+    {
+      "id": "bible-not-scientific-historical-claims",
+      "text": "The Bible does not make scientific or historical claims in the modern sense; it conveys truth through narrative and theological proclamation, and attempting to prove the resurrection through modern historical methods is misguided.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 4690.0,
+          "end": 4797.8
+        },
+        {
+          "episode": 42,
+          "start": 5059.68,
+          "end": 5151.199
+        }
+      ]
+    },
+    {
+      "id": "soul-is-life",
+      "text": "The soul is not a physical object but the principle of life; all living things have souls, and humans have a noetic soul, while larger communities can have macro-souls.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 6810.0,
+          "end": 6908.239
+        },
+        {
+          "episode": 42,
+          "start": 6990.0,
+          "end": 7082.39
+        }
+      ]
+    },
+    {
+      "id": "eternal-condemnation-as-possibility",
+      "text": "Eternal condemnation is a real possibility for every person, but it is not a certainty for anyone; it serves as a spur to repentance and should not be used to condemn others.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 9525.4,
+          "end": 9616.28
+        },
+        {
+          "episode": 42,
+          "start": 9773.0,
+          "end": 9864.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "psalm-88",
+      "reference": "Psalm 88:1-18",
+      "summary": "A Psalm of the Sons of Korah describing the despair of the dead in Sheol, used to illustrate the Old Testament view of the underworld and the hope for deliverance.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 1680.0,
+          "end": 1785.599
+        }
+      ]
+    },
+    {
+      "id": "psalm-16-10",
+      "reference": "Psalm 16:10",
+      "summary": "Quoted in Acts as a prophecy of Christ's resurrection, showing that God would not abandon His Holy One to Hades.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 2340.0,
+          "end": 2430.0
+        }
+      ]
+    },
+    {
+      "id": "luke-16-rich-man-lazarus",
+      "reference": "Luke 16:19-31",
+      "summary": "The parable of the rich man and Lazarus, which reflects the intermediate state and the division between the righteous and the wicked, though it is a parable, not a literal description.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 2866.8,
+          "end": 2965.679
+        }
+      ]
+    },
+    {
+      "id": "revelation-20-first-resurrection",
+      "reference": "Revelation 20:4-6",
+      "summary": "The 'first resurrection' is interpreted as the spiritual resurrection of the saints, which occurs at death, while the bodily resurrection is the second resurrection at the end.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 4498.79,
+          "end": 4589.0
+        }
+      ]
+    },
+    {
+      "id": "genesis-1-souls",
+      "reference": "Genesis 1:20-21",
+      "summary": "The creation of living creatures is described as the creation of 'souls,' indicating that animals have souls, contrary to modern misconceptions.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 6743.88,
+          "end": 6834.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "sheol",
+      "term": "Sheol",
+      "definition": "The Hebrew word for the underworld, the realm of the dead, often translated as 'grave' or 'hell'.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 392.0,
+          "end": 485.0
+        }
+      ]
+    },
+    {
+      "id": "hades",
+      "term": "Hades",
+      "definition": "The Greek word for the underworld, used in the New Testament to refer to the abode of the dead.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 920.34,
+          "end": 1014.39
+        }
+      ]
+    },
+    {
+      "id": "paradise",
+      "term": "Paradise",
+      "definition": "A term for the abode of the righteous after death, associated with the Garden of Eden and the presence of God.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 5575.0,
+          "end": 5666.779
+        }
+      ]
+    },
+    {
+      "id": "tartarus",
+      "term": "Tartarus",
+      "definition": "In Greek mythology, a deep abyss used as a dungeon of torment for the Titans; in Christian usage, sometimes identified with a place of punishment for fallen angels.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 602.96,
+          "end": 697.44
+        }
+      ]
+    },
+    {
+      "id": "abaddon",
+      "term": "Abaddon",
+      "definition": "A Hebrew word meaning 'destruction,' used in the Bible as a name for the realm of the dead or a destroying angel.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 2230.8,
+          "end": 2321.44
+        }
+      ]
+    },
+    {
+      "id": "noetic",
+      "term": "Noetic",
+      "definition": "Pertaining to the intellect or mind; in Orthodox theology, the noetic faculty is the highest aspect of the human soul, capable of knowing God.",
+      "segments": [
+        {
+          "episode": 42,
+          "start": 6957.56,
+          "end": 7049.96
+        }
+      ]
+    }
+  ]
+}

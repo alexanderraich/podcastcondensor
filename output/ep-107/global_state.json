@@ -1,0 +1,342 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen DeYoung explore the concept of progress and its relationship to Christian theology. They argue that the modern idea of history as a linear progression toward a goal is not rooted in traditional Christianity but rather in secularized versions of it, such as Hegelianism. They contrast this with the traditional Christian view that Christ's return will be an interruption, not a culmination of human achievement. The discussion covers topics like teleology, the development of doctrine, the role of language in theology, and the dangers of functional atheism—acting as if God is not involved in the world. They emphasize that true change comes through transformation by the Holy Spirit, not through social engineering or political force.",
+  "entities": [
+    {
+      "id": "georg-wilhelm-friedrich-hegel",
+      "title": "Georg Wilhelm Friedrich Hegel",
+      "category": "person",
+      "summary": "19th-century German philosopher whose dialectical method and philosophy of history are often associated with the idea of progress. The hosts use 'going full Hegel' as a shorthand for a progressive view of history.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 161.28,
+          "end": 251.439
+        },
+        {
+          "episode": 107,
+          "start": 2070.0,
+          "end": 2160.0
+        }
+      ]
+    },
+    {
+      "id": "aristotle",
+      "title": "Aristotle",
+      "category": "person",
+      "summary": "Ancient Greek philosopher who formulated the concept of the four causes, including the final cause (telos). The hosts reference his ideas to discuss purpose and development.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 833.6,
+          "end": 927.32
+        },
+        {
+          "episode": 107,
+          "start": 1485.0,
+          "end": 1584.2
+        }
+      ]
+    },
+    {
+      "id": "francis-fukuyama",
+      "title": "Francis Fukuyama",
+      "category": "person",
+      "summary": "Author of 'The End of History' who argued that liberal democracy represents the endpoint of human ideological evolution. The hosts use his book as an example of a secular teleology.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 2146.0,
+          "end": 2240.559
+        }
+      ]
+    },
+    {
+      "id": "gregory-of-nyssa",
+      "title": "Gregory of Nyssa",
+      "category": "person",
+      "summary": "4th-century Church Father known for his opposition to slavery. The hosts cite him as an example of how Christian transformation led to the abolition of slavery.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 5290.8,
+          "end": 5382.72
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "Apostle to the Gentiles, whose teachings on slavery and other social issues are discussed. The hosts argue that his instructions were not about changing structures but about transforming individuals.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 5045.6,
+          "end": 5136.76
+        },
+        {
+          "episode": 107,
+          "start": 5310.0,
+          "end": 5402.579
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "teleology",
+      "title": "Teleology",
+      "summary": "The philosophical concept that there is a purpose or end (telos) toward which something moves. The hosts argue that while Christianity affirms a beginning and an end to history, it does not necessarily imply that history is progressing toward a goal in the modern sense.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 777.2,
+          "end": 889.519
+        },
+        {
+          "episode": 107,
+          "start": 990.0,
+          "end": 1080.16
+        }
+      ]
+    },
+    {
+      "id": "progressivism",
+      "title": "Progressivism",
+      "summary": "The belief that history is moving toward a better state, often seen as a secularized version of Christian eschatology. The hosts critique this view as a form of functional atheism that collapses God into history.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 687.399,
+          "end": 780.0
+        },
+        {
+          "episode": 107,
+          "start": 2924.0,
+          "end": 3018.119
+        }
+      ]
+    },
+    {
+      "id": "presentism",
+      "title": "Presentism",
+      "summary": "The anachronistic assumption that people in the past thought and experienced the world in the same way as people today. The hosts argue that this is a form of modernism, as seen in young earth creationism and other attempts to read modern science into ancient texts.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 2937.0,
+          "end": 3029.519
+        },
+        {
+          "episode": 107,
+          "start": 3060.0,
+          "end": 3152.88
+        }
+      ]
+    },
+    {
+      "id": "functional-atheism",
+      "title": "Functional Atheism",
+      "summary": "Acting as if God is not involved in the world, even while believing in Him. The hosts argue that both progressivism and presentism can lead to this, as they imply that human effort alone can bring about change.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 6762.0,
+          "end": 6854.92
+        },
+        {
+          "episode": 107,
+          "start": 6999.76,
+          "end": 7094.8
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "title": "Theosis",
+      "summary": "The process of becoming like God through participation in His energies. The hosts explain that this transformation is what leads to societal changes like the abolition of slavery, not through political force but through the gradual transformation of individuals.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 5219.199,
+          "end": 5322.0
+        },
+        {
+          "episode": 107,
+          "start": 5310.0,
+          "end": 5402.579
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "christianity-not-progressive",
+      "text": "Traditional Christianity does not teach that history is progressing toward a goal; rather, Christ's return will be an interruption, not a culmination of human achievement.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 1778.0,
+          "end": 1839.44
+        },
+        {
+          "episode": 107,
+          "start": 2430.0,
+          "end": 2525.679
+        }
+      ]
+    },
+    {
+      "id": "abolition-of-slavery",
+      "text": "The abolition of slavery was not a change in Christian teaching but the natural result of living out the commandments, which transformed individuals and society over time.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 5310.0,
+          "end": 5402.579
+        },
+        {
+          "episode": 107,
+          "start": 5713.0,
+          "end": 5803.199
+        }
+      ]
+    },
+    {
+      "id": "language-not-magical",
+      "text": "Language does not alter reality; it shapes our experience and understanding. New theological vocabulary makes distinctions but does not change who God is.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 6223.0,
+          "end": 6314.0
+        },
+        {
+          "episode": 107,
+          "start": 6473.39,
+          "end": 6564.79
+        }
+      ]
+    },
+    {
+      "id": "functional-atheism-critique",
+      "text": "Both progressivism and presentism imply functional atheism because they assume God is not actively involved in the world, leading to attempts to engineer change through human effort alone.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 6762.0,
+          "end": 6854.92
+        },
+        {
+          "episode": 107,
+          "start": 6999.76,
+          "end": 7094.8
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "ecclesiastes-1-9",
+      "reference": "Ecclesiastes 1:9",
+      "summary": "Quoted to support the idea that there is nothing new under the sun, countering the progressive view of history.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 2882.96,
+          "end": 2975.119
+        }
+      ]
+    },
+    {
+      "id": "matthew-24-37",
+      "reference": "Matthew 24:37",
+      "summary": "Referenced to illustrate that Christ's return will be like the days of Noah, an unexpected interruption.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 2460.0,
+          "end": 2552.579
+        }
+      ]
+    },
+    {
+      "id": "romans-12-2",
+      "reference": "Romans 12:2",
+      "summary": "Cited to emphasize the need for transformation by the renewing of the mind, which is central to the hosts' argument about change.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 5626.56,
+          "end": 5720.0
+        }
+      ]
+    },
+    {
+      "id": "galatians-2-3",
+      "reference": "Galatians 2:3",
+      "summary": "Used as an example of how St. Paul addressed specific issues in specific contexts, which must be recontextualized for today.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 4289.38,
+          "end": 4379.72
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "telos",
+      "term": "Telos",
+      "definition": "Greek word meaning 'end' or 'purpose', used in philosophy to describe the final cause or goal of something.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 777.2,
+          "end": 870.0
+        }
+      ]
+    },
+    {
+      "id": "full-hagel",
+      "term": "Full Hegel",
+      "definition": "A humorous phrase used by the hosts to describe a fully Hegelian view of history, where progress occurs through dialectical synthesis.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 161.28,
+          "end": 251.439
+        }
+      ]
+    },
+    {
+      "id": "presentism",
+      "term": "Presentism",
+      "definition": "The anachronistic assumption that past people thought and experienced the world in the same way as people today.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 2937.0,
+          "end": 3029.519
+        }
+      ]
+    },
+    {
+      "id": "functional-atheism",
+      "term": "Functional Atheism",
+      "definition": "Acting as if God is not involved in the world, even while professing belief in Him.",
+      "segments": [
+        {
+          "episode": 107,
+          "start": 6762.0,
+          "end": 6854.92
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young explore the nature of meaning, order, and interpretation from an Orthodox Christian perspective. They begin by discussing how God's creation involves bringing order out of chaos, and that this order is not an external pattern but is identified with God's Wisdom, the Logos, who is Christ. They emphasize that humanity, made in the image of God, participates in this ordering work, and that the ultimate meaning of life is found in becoming like Christ through active participation in community and the Church. The second half delves into how meaning is both discovered and created through relationships, rejecting both purely passive and purely active approaches. The final third applies these principles to biblical interpretation, arguing that the Church Fathers applied Scripture to their contexts, and that modern Orthodox Christians should trust the authority of bishops and spiritual fathers rather than attempting to interpret everything individually. The episode concludes with a call to creative, faithful engagement in the world, trusting in God's providence.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox Christian priest, and author of the book 'The Lord of Spirits'.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 13.32,
+          "end": 104.4
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox Christian priest from Lafayette, Louisiana.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 11.64,
+          "end": 104.4
+        }
+      ]
+    },
+    {
+      "id": "proverbs-8",
+      "title": "Proverbs 8",
+      "category": "scriptural",
+      "summary": "A key Old Testament passage personifying Wisdom, used to explain the divine Logos as the pattern of creation.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 1105.44,
+          "end": 1226.68
+        }
+      ]
+    },
+    {
+      "id": "plato",
+      "title": "Plato",
+      "category": "person",
+      "summary": "Greek philosopher whose concept of eternal forms is contrasted with the Christian understanding of order as internal to God.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 917.279,
+          "end": 1007.799
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "The first leader of the assembly of Israel, who applied God's commandments to the specific circumstances of the people, serving as a model for later church leadership.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 5600.659,
+          "end": 5692.539
+        }
+      ]
+    },
+    {
+      "id": "st-john-chrysostom",
+      "title": "St. John Chrysostom",
+      "category": "person",
+      "summary": "A Church Father whose homilies were contextual applications of Scripture to his congregation, illustrating the principle of application.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 7060.0,
+          "end": 7155.6
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "order-and-chaos",
+      "title": "Order and Chaos",
+      "summary": "God's creation involves bringing order out of chaos, where chaos is non-being and order is the pattern of creation. This order is not external to God but is identified with His Wisdom/Logos.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 570.0,
+          "end": 914.559
+        }
+      ]
+    },
+    {
+      "id": "logos-as-order",
+      "title": "Logos as the Pattern of Creation",
+      "summary": "The divine Logos, identified with Christ, is the pattern through which God creates and sustains the universe. This is rooted in Proverbs 8 and developed in the New Testament.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 1377.759,
+          "end": 1768.79
+        }
+      ]
+    },
+    {
+      "id": "humanization-of-the-world",
+      "title": "Humanization of the World",
+      "summary": "Humanity's purpose is to continue God's work of ordering and filling creation, thereby humanizing the world. This is tied to the concept of theosis and the image of God.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 1972.319,
+          "end": 2116.0
+        }
+      ]
+    },
+    {
+      "id": "meaning-as-discovery-and-creation",
+      "title": "Meaning as Discovery and Creation",
+      "summary": "Meaning is not purely discovered nor purely created, but arises from the active and passive engagement with the world and relationships. It is a communal, participatory process.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 4156.0,
+          "end": 4348.56
+        }
+      ]
+    },
+    {
+      "id": "application-of-scripture",
+      "title": "Application of Scripture",
+      "summary": "The Church Fathers applied Scripture to their specific contexts, and this application is an instance of the pattern, not the pattern itself. Modern interpretation must similarly apply the text to contemporary life.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 7014.96,
+          "end": 7127.88
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "order-is-christ",
+      "text": "The order of creation is not an external pattern but is the divine Logos, who is Christ, the Wisdom of God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 1377.759,
+          "end": 1768.79
+        }
+      ]
+    },
+    {
+      "id": "meaning-requires-relationship",
+      "text": "Meaning and identity are not intrinsic to objects or persons but arise from their relationships with others and with God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 3442.639,
+          "end": 3762.639
+        }
+      ]
+    },
+    {
+      "id": "church-fathers-applied-scripture",
+      "text": "The Church Fathers did not seek a single objective meaning of Scripture but applied texts to their communities' lives, making their interpretations contextual applications.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 7014.96,
+          "end": 7127.88
+        }
+      ]
+    },
+    {
+      "id": "trust-bishops",
+      "text": "Orthodox Christians should trust the authority of bishops and spiritual fathers to apply the faith, rather than attempting to determine orthodoxy individually.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 9060.0,
+          "end": 9232.899
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-1",
+      "reference": "Genesis 1",
+      "summary": "Discussed as the account of God bringing order out of chaos, with the pattern of creation being the Logos.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 619.0,
+          "end": 715.39
+        }
+      ]
+    },
+    {
+      "id": "proverbs-8-22-31",
+      "reference": "Proverbs 8:22-31",
+      "summary": "Key passage personifying Wisdom as the pattern of creation, used to explain the divine Logos.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 1105.44,
+          "end": 1226.68
+        }
+      ]
+    },
+    {
+      "id": "john-1-1",
+      "reference": "John 1:1",
+      "summary": "Referenced as the New Testament recapitulation of the Logos theology found in Proverbs and Philo.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 1740.0,
+          "end": 1837.599
+        }
+      ]
+    },
+    {
+      "id": "colossians-1-17",
+      "reference": "Colossians 1:17",
+      "summary": "Quoted to show that Christ holds all things together, emphasizing His role as the pattern of creation.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 2306.719,
+          "end": 2400.559
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-12-14",
+      "reference": "Deuteronomy 12-14",
+      "summary": "Used as an example of Moses applying the law to a new generation in a different context, illustrating the principle of application.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 6111.479,
+          "end": 6269.979
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "logos",
+      "term": "Logos",
+      "definition": "The divine Word or Reason, identified with Christ, through whom God creates and sustains the universe.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 1667.0,
+          "end": 1761.359
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God by grace, participating in the divine nature through union with Christ.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 1928.88,
+          "end": 2019.359
+        }
+      ]
+    },
+    {
+      "id": "ex-nihilo",
+      "term": "Ex Nihilo",
+      "definition": "Latin for 'out of nothing', referring to God's creation of the universe from nothing, not from pre-existing matter.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 870.0,
+          "end": 960.5
+        }
+      ]
+    },
+    {
+      "id": "allegory",
+      "term": "Allegory",
+      "definition": "A mode of interpretation that finds deeper spiritual meanings in a text, often applied to Scripture to make it relevant to new contexts.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 7587.399,
+          "end": 7678.8
+        }
+      ]
+    },
+    {
+      "id": "prosopon",
+      "term": "Prosopon",
+      "definition": "Greek word for person, literally meaning 'face', emphasizing that personhood is relational and only fully known in community.",
+      "segments": [
+        {
+          "episode": 79,
+          "start": 4740.0,
+          "end": 4835.439
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,555 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young discuss two Second Temple Jewish texts: the Ascension of Isaiah and the Assumption of Moses. They begin by distinguishing between ascension (bodily ascent while alive, like Enoch and Elijah) and assumption (bodily assumption after death, like Moses and the Theotokos). They explore the traditions surrounding Moses' assumption, referencing Deuteronomy 34, Jude 9, and the Transfiguration, and contrast Orthodox and Roman Catholic views on the Dormition of the Theotokos. The episode then delves into the Ascension of Isaiah, analyzing its composite nature, its Christian sections, and its theological insights, including early Trinitarian thought and the meaning of garments as metaphors for resurrection. Finally, they examine the Assumption of Moses, discussing its genre, dating, and its use of Moses as a literary vehicle to critique the corrupt priesthood, and they reflect on the exaltation of humanity and the importance of trust and intellectual humility.",
+  "entities": [
+    {
+      "id": "isaiah",
+      "title": "Isaiah",
+      "category": "person",
+      "summary": "Old Testament prophet, central figure in the Ascension of Isaiah, martyred by being sawn in two.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 6047.699,
+          "end": 6138.0
+        },
+        {
+          "episode": 93,
+          "start": 6502.539,
+          "end": 6597.68
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "Old Testament lawgiver, whose body was assumed into heaven according to tradition, central to the Assumption of Moses.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 1380.0,
+          "end": 1704.839
+        },
+        {
+          "episode": 93,
+          "start": 9405.4,
+          "end": 9498.2
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "title": "Theotokos",
+      "category": "person",
+      "summary": "The Virgin Mary, whose Dormition and bodily assumption are discussed in contrast to Roman Catholic dogma.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 2621.0,
+          "end": 2715.619
+        },
+        {
+          "episode": 93,
+          "start": 3000.0,
+          "end": 3627.84
+        }
+      ]
+    },
+    {
+      "id": "archangel-michael",
+      "title": "Archangel Michael",
+      "category": "person",
+      "summary": "Archangel who disputed with the devil over the body of Moses, as referenced in Jude 9.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 1924.16,
+          "end": 2017.599
+        },
+        {
+          "episode": 93,
+          "start": 2057.76,
+          "end": 2147.92
+        }
+      ]
+    },
+    {
+      "id": "belial",
+      "title": "Belial",
+      "category": "theological",
+      "summary": "A devil figure in Second Temple literature, meaning 'the lawless one', who possesses a false prophet to kill Isaiah.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 6395.0,
+          "end": 6485.38
+        }
+      ]
+    },
+    {
+      "id": "ascension-of-isaiah-text",
+      "title": "Ascension of Isaiah",
+      "category": "other",
+      "summary": "A composite text with Jewish and Christian sections, containing an apocalyptic vision of Isaiah.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 5382.0,
+          "end": 5500.6
+        },
+        {
+          "episode": 93,
+          "start": 6540.0,
+          "end": 6631.46
+        }
+      ]
+    },
+    {
+      "id": "assumption-of-moses-text",
+      "title": "Assumption of Moses",
+      "category": "other",
+      "summary": "A testament attributed to Moses, likely written early first century AD, with a missing final section.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 8850.0,
+          "end": 9172.639
+        }
+      ]
+    },
+    {
+      "id": "jude",
+      "title": "Jude",
+      "category": "person",
+      "summary": "Brother of the Lord, author of the Epistle of Jude, which references the dispute over Moses' body.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 1900.0,
+          "end": 2017.599
+        }
+      ]
+    },
+    {
+      "id": "enoch",
+      "title": "Enoch",
+      "category": "person",
+      "summary": "Old Testament figure taken up to heaven without dying, often paired with Elijah in apocalyptic traditions.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 556.84,
+          "end": 650.519
+        },
+        {
+          "episode": 93,
+          "start": 922.159,
+          "end": 1018.519
+        }
+      ]
+    },
+    {
+      "id": "elijah",
+      "title": "Elijah",
+      "category": "person",
+      "summary": "Old Testament prophet taken up to heaven in a chariot, expected to return before the Messiah.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 556.84,
+          "end": 650.519
+        },
+        {
+          "episode": 93,
+          "start": 960.0,
+          "end": 1053.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "ascension-vs-assumption",
+      "title": "Ascension vs. Assumption",
+      "summary": "Distinction between being taken up to heaven while alive (ascension) and being taken up after death (assumption).",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 554.159,
+          "end": 720.8
+        }
+      ]
+    },
+    {
+      "id": "assumption-of-moses-tradition",
+      "title": "Assumption of Moses Tradition",
+      "summary": "The tradition that Moses' body was taken up to heaven by God, referenced in Jude 9 and the Transfiguration.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 1676.0,
+          "end": 1909.0
+        },
+        {
+          "episode": 93,
+          "start": 1900.0,
+          "end": 2017.599
+        }
+      ]
+    },
+    {
+      "id": "devil-as-eater-of-dead",
+      "title": "Devil as Eater of the Dead",
+      "summary": "The devil's claim to corrupt human bodies, based on Genesis 3:14, and the dispute over Moses' body.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 2176.679,
+          "end": 2315.88
+        }
+      ]
+    },
+    {
+      "id": "incorrupt-relics",
+      "title": "Incorrupt Relics",
+      "summary": "The phenomenon of saints' bodies not decaying as a sign of the bodily resurrection.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 2550.0,
+          "end": 2640.5
+        }
+      ]
+    },
+    {
+      "id": "orthodox-vs-roman-catholic-dormition",
+      "title": "Orthodox vs. Roman Catholic Dormition",
+      "summary": "Differences in understanding the Dormition of the Theotokos: Orthodox teaches she died and her body was assumed; Roman Catholic dogma allows ambiguity but leans toward no death.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 3660.0,
+          "end": 4040.679
+        }
+      ]
+    },
+    {
+      "id": "garments-as-resurrection",
+      "title": "Garments as Resurrection",
+      "summary": "In the Ascension of Isaiah, garments symbolize the transformed, immortal body, not imputed righteousness.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 6938.88,
+          "end": 7310.0
+        }
+      ]
+    },
+    {
+      "id": "early-trinitarianism",
+      "title": "Early Trinitarianism",
+      "summary": "The Ascension of Isaiah contains early Christian Trinitarian thought, including worship of Father, Son, and Holy Spirit.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 7500.0,
+          "end": 8139.39
+        }
+      ]
+    },
+    {
+      "id": "pseudepigraphy-as-interpretation",
+      "title": "Pseudepigraphy as Interpretation",
+      "summary": "Ancient texts attributed to figures like Isaiah or Moses are not fraudulent but use the figure as an interpretive device.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 8470.559,
+          "end": 8740.84
+        }
+      ]
+    },
+    {
+      "id": "exaltation-of-humanity",
+      "title": "Exaltation of Humanity",
+      "summary": "The destiny of the righteous is bodily resurrection and exaltation to be like the angels, not just going to heaven when you die.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 10629.68,
+          "end": 11167.0
+        }
+      ]
+    },
+    {
+      "id": "intellectual-humility",
+      "title": "Intellectual Humility",
+      "summary": "The need to trust others and institutions, especially the Church, rather than relying solely on one's own understanding.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 11220.0,
+          "end": 12036.559
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "moses-body-assumed",
+      "text": "The tradition that Moses' body was taken up to heaven is clearly referenced in the New Testament, especially in Jude 9 and the Transfiguration.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 1676.0,
+          "end": 1909.0
+        }
+      ]
+    },
+    {
+      "id": "devil-claims-bodies",
+      "text": "The devil has a claim to human bodies due to the curse in Genesis 3, but the righteous are delivered from corruption through resurrection.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 2176.679,
+          "end": 2315.88
+        }
+      ]
+    },
+    {
+      "id": "orthodox-dormition",
+      "text": "The Orthodox Church teaches that the Theotokos died and her body was assumed into heaven, unlike the Roman Catholic dogma which allows ambiguity.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 3660.0,
+          "end": 4040.679
+        }
+      ]
+    },
+    {
+      "id": "garments-not-imputed-righteousness",
+      "text": "The language of garments in the Ascension of Isaiah and Paul refers to the transformed resurrection body, not imputed righteousness.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 7020.0,
+          "end": 7310.0
+        }
+      ]
+    },
+    {
+      "id": "early-trinitarian-belief",
+      "text": "The Ascension of Isaiah shows that Trinitarian belief existed in the first century, contrary to the idea that it evolved later.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 7500.0,
+          "end": 8139.39
+        }
+      ]
+    },
+    {
+      "id": "pseudepigrapha-not-fraud",
+      "text": "Pseudepigraphal texts like the Ascension of Isaiah use figures like Isaiah as interpretive devices, not as fraudulent claims.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 8470.559,
+          "end": 8740.84
+        }
+      ]
+    },
+    {
+      "id": "exaltation-not-just-heaven",
+      "text": "The Christian hope is not merely going to heaven when you die but bodily resurrection and exaltation to be like the angels.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 10629.68,
+          "end": 11167.0
+        }
+      ]
+    },
+    {
+      "id": "trust-in-church",
+      "text": "Intellectual humility requires trusting the Church and others rather than relying solely on one's own judgment.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 11220.0,
+          "end": 12036.559
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-5-24",
+      "reference": "Genesis 5:24",
+      "summary": "Enoch walked with God and was taken, interpreted as an ascension.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 1220.16,
+          "end": 1311.0
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-34-5-6",
+      "reference": "Deuteronomy 34:5-6",
+      "summary": "Describes Moses' death and burial, with ambiguity about who buried him.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 1398.599,
+          "end": 1675.0
+        }
+      ]
+    },
+    {
+      "id": "jude-9",
+      "reference": "Jude 9",
+      "summary": "References Michael disputing with the devil over Moses' body.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 1900.0,
+          "end": 1990.0
+        }
+      ]
+    },
+    {
+      "id": "acts-13-35-37",
+      "reference": "Acts 13:35-37",
+      "summary": "Paul quotes Psalm 16 about not seeing decay, applying it to Christ's resurrection.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 2400.0,
+          "end": 2502.559
+        }
+      ]
+    },
+    {
+      "id": "hebrews-11-37",
+      "reference": "Hebrews 11:37",
+      "summary": "Mentions prophets sawn in two, likely referring to Isaiah's martyrdom.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 6120.0,
+          "end": 6215.0
+        }
+      ]
+    },
+    {
+      "id": "psalm-82",
+      "reference": "Psalm 82",
+      "summary": "The Assumption of Moses expands on themes of God judging the gods and exalting the righteous.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 10251.79,
+          "end": 10343.12
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-15",
+      "reference": "1 Corinthians 15",
+      "summary": "Paul's teaching on the resurrection body, compared to a seed and plant.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 10970.0,
+          "end": 11062.479
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "ascension",
+      "term": "Ascension",
+      "definition": "Bodily ascent to heaven while still alive, as with Enoch and Elijah.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 554.159,
+          "end": 646.2
+        }
+      ]
+    },
+    {
+      "id": "assumption",
+      "term": "Assumption",
+      "definition": "Taking up of a dead person's body into heaven, as with Moses and the Theotokos.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 617.519,
+          "end": 714.8
+        }
+      ]
+    },
+    {
+      "id": "apocalyptic",
+      "term": "Apocalyptic",
+      "definition": "A genre of revelation, often involving a heavenly journey and unveiling of cosmic truths.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 821.6,
+          "end": 912.48
+        }
+      ]
+    },
+    {
+      "id": "palimpsest",
+      "term": "Palimpsest",
+      "definition": "A manuscript page reused by scraping off the original text, often preserving earlier writings.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 9236.399,
+          "end": 9327.84
+        }
+      ]
+    },
+    {
+      "id": "testament",
+      "term": "Testament",
+      "definition": "A genre of literature containing the final words of a biblical figure, often with prophecies.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 8910.0,
+          "end": 9005.0
+        }
+      ]
+    },
+    {
+      "id": "pseudepigrapha",
+      "term": "Pseudepigrapha",
+      "definition": "Works attributed to ancient figures, often used as interpretive devices rather than fraudulent claims.",
+      "segments": [
+        {
+          "episode": 93,
+          "start": 8470.559,
+          "end": 8740.84
+        }
+      ]
+    }
+  ]
+}

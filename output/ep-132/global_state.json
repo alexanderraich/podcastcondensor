@@ -1,0 +1,673 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young address common misconceptions about the Old Testament sacrificial system, particularly sin offerings, and their relationship to the work of Christ. They systematically dismantle three popular but erroneous assumptions: that sins were imputed to sacrificial animals, that the system was substitutionary (the animal dying in place of the sinner), and that it only dealt with unintentional or accidental sins. By closely reading Leviticus 4, Leviticus 16, Numbers 8, and other passages, they demonstrate that these ideas are not supported by the text and often stem from reading later theological concepts back into the Torah. They emphasize that the sacrificial system was never transactional or mechanical but was always tied to repentance and the restoration of right relationships. The hosts then connect this to the New Testament, arguing that Christ's sacrifice is not a penal substitution but a means of purification and reconciliation, and that repentance remains essential for salvation. They conclude by offering pastoral encouragement, assuring listeners of God's desire for their salvation and the assurance found in a life of ongoing repentance.",
+  "entities": [
+    {
+      "id": "leviticus-4",
+      "title": "Leviticus 4",
+      "category": "scriptural",
+      "summary": "The chapter detailing the procedures for sin offerings for different classes of people: the anointed priest, the whole congregation, a leader, and a common person. It specifies the animals to be offered and the rituals to be performed.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 600.0,
+          "end": 929.919
+        }
+      ]
+    },
+    {
+      "id": "leviticus-16",
+      "title": "Leviticus 16",
+      "category": "scriptural",
+      "summary": "The chapter describing the Day of Atonement ritual, including the two goats: one for Yahweh (sin offering) and one for Azazel (scapegoat). The scapegoat carries the sins into the wilderness.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 1115.519,
+          "end": 1213.44
+        },
+        {
+          "episode": 132,
+          "start": 1308.0,
+          "end": 1401.519
+        }
+      ]
+    },
+    {
+      "id": "numbers-8",
+      "title": "Numbers 8",
+      "category": "scriptural",
+      "summary": "The passage describing the consecration of the Levites, where the people lay hands on them as a wave offering, and the Levites lay hands on the bulls for sin and burnt offerings. This shows that laying hands does not always mean transferring sins.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 1468.64,
+          "end": 1594.559
+        }
+      ]
+    },
+    {
+      "id": "numbers-15",
+      "title": "Numbers 15",
+      "category": "scriptural",
+      "summary": "The passage contrasting unintentional sins with high-handed sins. Unintentional sins can be atoned for, but high-handed sins result in being cut off from the people.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 4950.0,
+          "end": 5040.0
+        }
+      ]
+    },
+    {
+      "id": "hebrews-10",
+      "title": "Hebrews 10",
+      "category": "scriptural",
+      "summary": "The passage warning that if we sin deliberately after receiving the knowledge of the truth, there no longer remains a sacrifice for sins. This is used to show that the New Testament also distinguishes between repentant and unrepentant sin.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 4553.479,
+          "end": 4646.239
+        }
+      ]
+    },
+    {
+      "id": "psalm-51",
+      "title": "Psalm 51",
+      "category": "scriptural",
+      "summary": "David's psalm of repentance after his sin with Bathsheba. It emphasizes that God desires a broken spirit, but also that after repentance, sacrifices will be offered again.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 5265.579,
+          "end": 5356.399
+        }
+      ]
+    },
+    {
+      "id": "isaiah-1",
+      "title": "Isaiah 1",
+      "category": "scriptural",
+      "summary": "The prophet's condemnation of Israel's hypocritical worship, where God rejects their sacrifices because they are unrepentant. This shows that sacrifices are not effective without repentance.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 5923.279,
+          "end": 6015.52
+        }
+      ]
+    },
+    {
+      "id": "amos-5",
+      "title": "Amos 5",
+      "category": "scriptural",
+      "summary": "The prophet's call for justice and righteousness rather than empty worship. God hates their feasts and sacrifices because they are unrepentant.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 6069.79,
+          "end": 6160.159
+        }
+      ]
+    },
+    {
+      "id": "jeremiah-7",
+      "title": "Jeremiah 7",
+      "category": "scriptural",
+      "summary": "The prophet's reminder that God did not command sacrifices at the Exodus but commanded obedience. Sacrifices are not a substitute for obedience.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 6225.76,
+          "end": 6323.0
+        }
+      ]
+    },
+    {
+      "id": "malachi-1",
+      "title": "Malachi 1",
+      "category": "scriptural",
+      "summary": "The prophecy that God will be worshipped among the nations with incense and pure offerings, indicating that true worship follows repentance.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 6380.439,
+          "end": 6473.359
+        }
+      ]
+    },
+    {
+      "id": "1-john-1",
+      "title": "1 John 1",
+      "category": "scriptural",
+      "summary": "The verse 'If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness' is used to show that confession is a condition for forgiveness, contradicting the idea that all sins are automatically forgiven.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 9895.36,
+          "end": 10039.959
+        }
+      ]
+    },
+    {
+      "id": "zacchaeus",
+      "title": "Zacchaeus",
+      "category": "biblical",
+      "summary": "The tax collector who repented by giving half his goods to the poor and restoring fourfold what he had stolen. Jesus declared salvation had come to his house after his repentance.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 10209.959,
+          "end": 10302.36
+        }
+      ]
+    },
+    {
+      "id": "father-thomas-hopko",
+      "title": "Father Thomas Hopko",
+      "category": "person",
+      "summary": "A well-known Orthodox priest and theologian, mentioned in the opening banter about old audio recordings.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 126.0,
+          "end": 219.599
+        }
+      ]
+    },
+    {
+      "id": "father-jeremy-davis",
+      "title": "Father Jeremy Davis",
+      "category": "person",
+      "summary": "Author of 'Welcoming Gifts', a book exploring the true meaning of sacrifice, recommended by the hosts.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 2375.519,
+          "end": 2471.92
+        }
+      ]
+    },
+    {
+      "id": "st-gregory-palamas",
+      "title": "St. Gregory Palamas",
+      "category": "person",
+      "summary": "A Church Father quoted to summarize the Orthodox view of atonement: Christ's physical death takes away both physical and spiritual death.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 8970.0,
+          "end": 9060.52
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "sin-offering",
+      "title": "Sin Offering",
+      "summary": "A type of sacrifice in the Old Testament, detailed in Leviticus 4, offered for unintentional sins. The blood was used to purify the sanctuary, and the fat was burned on the altar. The animal was not a substitute for the sinner, and sins were not placed on it.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 600.0,
+          "end": 929.919
+        },
+        {
+          "episode": 132,
+          "start": 990.0,
+          "end": 1084.59
+        }
+      ]
+    },
+    {
+      "id": "scapegoat-azazel",
+      "title": "Scapegoat (Azazel)",
+      "summary": "In Leviticus 16, the goat for Azazel had the sins of the people confessed over it and was sent into the wilderness, not sacrificed. This is the only place where sins are explicitly placed on an animal, and it is not a sin offering.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 1115.519,
+          "end": 1213.44
+        },
+        {
+          "episode": 132,
+          "start": 1308.0,
+          "end": 1401.519
+        }
+      ]
+    },
+    {
+      "id": "high-handed-sin",
+      "title": "High-Handed Sin",
+      "summary": "A deliberate, defiant sin committed with an uplifted hand, often associated with taking an oath. Such sins are contrasted with unintentional sins and are not covered by the sacrificial system because they indicate unrepentance.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 4906.319,
+          "end": 5024.239
+        },
+        {
+          "episode": 132,
+          "start": 5198.0,
+          "end": 5288.88
+        }
+      ]
+    },
+    {
+      "id": "repentance",
+      "title": "Repentance",
+      "summary": "The act of turning away from sin and taking concrete actions to make things right. It is a prerequisite for forgiveness and the effectiveness of sacrifices. Repentance is not merely feeling sorry but involves restitution and a change of life.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 5460.0,
+          "end": 5550.199
+        },
+        {
+          "episode": 132,
+          "start": 6297.0,
+          "end": 6389.56
+        },
+        {
+          "episode": 132,
+          "start": 10057.159,
+          "end": 10154.5
+        }
+      ]
+    },
+    {
+      "id": "sacrifice-as-meal",
+      "title": "Sacrifice as a Meal",
+      "summary": "In the biblical context, sacrifice is not primarily about killing but about a meal of reconciliation. The killing of the animal is not the sacrifice; the priestly actions with the blood and fat constitute the sacrificial act, which is a gift to God and a shared meal.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 2231.0,
+          "end": 2321.76
+        },
+        {
+          "episode": 132,
+          "start": 5469.39,
+          "end": 5560.0
+        }
+      ]
+    },
+    {
+      "id": "penal-substitution",
+      "title": "Penal Substitution",
+      "summary": "The theory that Christ took the punishment for sins in place of sinners, satisfying God's wrath. The hosts argue this is not biblical and leads to heresy, as it requires Christ to suffer spiritual death, which would separate Him from the Father.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 8197.36,
+          "end": 8306.319
+        },
+        {
+          "episode": 132,
+          "start": 8717.0,
+          "end": 8852.84
+        }
+      ]
+    },
+    {
+      "id": "assurance-of-salvation",
+      "title": "Assurance of Salvation",
+      "summary": "The confidence that one is saved, not based on a one-time decision but on a continuous life of repentance. True assurance comes from knowing God's love and His desire for all to be saved, not from a transactional guarantee.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 10909.7,
+          "end": 11002.319
+        },
+        {
+          "episode": 132,
+          "start": 11280.0,
+          "end": 11474.559
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "no-sins-placed-on-sin-offerings",
+      "text": "The Old Testament never describes sins being placed on an animal that is then sacrificed. The only instance of sins being placed on an animal is the scapegoat, which is not sacrificed.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 1016.919,
+          "end": 1391.279
+        }
+      ]
+    },
+    {
+      "id": "sacrificial-system-not-substitutionary",
+      "text": "The sacrificial system is not substitutionary. The animal does not die in place of the sinner, as most sins do not carry the death penalty, and the sinner still has to make restitution.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 1722.79,
+          "end": 2151.719
+        }
+      ]
+    },
+    {
+      "id": "unintentional-sins-not-accidental",
+      "text": "The term 'unintentional' in Leviticus does not mean accidental. It refers to sins committed without defiant intent, as opposed to high-handed sins committed with an uplifted hand.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 2501.599,
+          "end": 2763.9
+        }
+      ]
+    },
+    {
+      "id": "sacrifices-require-repentance",
+      "text": "Sacrifices are only effective when accompanied by repentance. The prophets show that God rejects sacrifices offered by unrepentant sinners.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 5869.319,
+          "end": 6225.76
+        }
+      ]
+    },
+    {
+      "id": "christ-not-penal-substitute",
+      "text": "Christ's death is not a penal substitution. He did not suffer spiritual death, and His physical death does not mean we do not have to die. Instead, His death and resurrection overcome both physical and spiritual death.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 8717.0,
+          "end": 9036.239
+        }
+      ]
+    },
+    {
+      "id": "repentance-necessary-for-salvation",
+      "text": "Repentance is necessary for salvation. The New Testament consistently calls for repentance, and forgiveness is conditioned on confession and turning from sin.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 9137.719,
+          "end": 9577.54
+        }
+      ]
+    },
+    {
+      "id": "assurance-through-repentance",
+      "text": "True assurance of salvation comes not from a one-time decision but from a continuous life of repentance. God desires all to be saved, and no one who sincerely repents will be condemned.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 10909.7,
+          "end": 11474.559
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "lev-4",
+      "reference": "Leviticus 4:1-35",
+      "summary": "Read in full to outline the sin offering procedures for different classes of people.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 600.0,
+          "end": 929.919
+        }
+      ]
+    },
+    {
+      "id": "lev-16",
+      "reference": "Leviticus 16:1-34",
+      "summary": "Discussed to show the scapegoat ritual and that sins are only placed on the goat for Azazel, not on the sin offering goat.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 1115.519,
+          "end": 1391.279
+        }
+      ]
+    },
+    {
+      "id": "num-8",
+      "reference": "Numbers 8:5-13",
+      "summary": "Used to demonstrate that laying hands on a sacrifice does not always mean transferring sins, as the Levites are offered as a wave offering without sins being pronounced.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 1468.64,
+          "end": 1594.559
+        }
+      ]
+    },
+    {
+      "id": "exo-22",
+      "reference": "Exodus 22:1-4",
+      "summary": "Cited to show that theft is not punished by death, undermining the idea that all sins require death.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 1990.44,
+          "end": 2082.159
+        }
+      ]
+    },
+    {
+      "id": "num-15",
+      "reference": "Numbers 15:27-30",
+      "summary": "Contrasts unintentional sins with high-handed sins, showing that the latter are not covered by sacrifices.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 4950.0,
+          "end": 5040.0
+        }
+      ]
+    },
+    {
+      "id": "deut-29",
+      "reference": "Deuteronomy 29:18-20",
+      "summary": "Describes the high-handed sinner who blesses himself in his heart, showing the attitude of unrepentance.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 5072.88,
+          "end": 5169.64
+        }
+      ]
+    },
+    {
+      "id": "psa-51",
+      "reference": "Psalm 51:16-19",
+      "summary": "Shows that God desires a broken spirit, but also that after repentance, sacrifices will be offered again.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 5265.579,
+          "end": 5356.399
+        }
+      ]
+    },
+    {
+      "id": "isa-1",
+      "reference": "Isaiah 1:11-15",
+      "summary": "God rejects the sacrifices of unrepentant Israel, showing that sacrifices are not effective without repentance.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 5923.279,
+          "end": 6015.52
+        }
+      ]
+    },
+    {
+      "id": "amos-5",
+      "reference": "Amos 5:21-24",
+      "summary": "God hates the feasts and sacrifices of the unrepentant, calling for justice and righteousness instead.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 6069.79,
+          "end": 6160.159
+        }
+      ]
+    },
+    {
+      "id": "jer-7",
+      "reference": "Jeremiah 7:21-23",
+      "summary": "God emphasizes obedience over sacrifice, showing that sacrifices are not a substitute for following His ways.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 6225.76,
+          "end": 6323.0
+        }
+      ]
+    },
+    {
+      "id": "mal-1",
+      "reference": "Malachi 1:10-11",
+      "summary": "Prophecy of pure offerings among the nations, indicating that true worship follows repentance.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 6380.439,
+          "end": 6473.359
+        }
+      ]
+    },
+    {
+      "id": "heb-10",
+      "reference": "Hebrews 10:26-30",
+      "summary": "Warns that deliberate sin after receiving the truth leaves no sacrifice, showing the New Testament also distinguishes between repentant and unrepentant sin.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 4553.479,
+          "end": 4646.239
+        }
+      ]
+    },
+    {
+      "id": "1-john-3",
+      "reference": "1 John 3:4-6",
+      "summary": "Literal translation shows that everyone who sins practices lawlessness, not just those who 'keep on sinning'.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 4774.8,
+          "end": 4865.76
+        }
+      ]
+    },
+    {
+      "id": "1-john-1-9",
+      "reference": "1 John 1:9",
+      "summary": "Confession is a condition for forgiveness, contradicting the idea that all sins are automatically forgiven.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 9895.36,
+          "end": 10039.959
+        }
+      ]
+    },
+    {
+      "id": "luke-19",
+      "reference": "Luke 19:1-10",
+      "summary": "Zacchaeus's repentance (giving half his goods and restoring fourfold) leads to Jesus declaring salvation.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 10209.959,
+          "end": 10302.36
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "eisegesis",
+      "term": "Eisegesis",
+      "definition": "The practice of reading one's own ideas into a text, rather than drawing meaning out of it. The hosts accuse many modern interpreters of eisegesis when they read substitutionary atonement into Leviticus.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 478.319,
+          "end": 568.74
+        }
+      ]
+    },
+    {
+      "id": "azazel",
+      "term": "Azazel",
+      "definition": "The name of the scapegoat in Leviticus 16, often understood as a demon or a place. The goat for Azazel carries the sins of the people into the wilderness.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 1115.519,
+          "end": 1213.44
+        }
+      ]
+    },
+    {
+      "id": "kipper",
+      "term": "Kipper (כפר)",
+      "definition": "Hebrew verb meaning 'to cover' or 'to atone', often translated as 'make atonement'. It involves purification and reconciliation, not payment of a penalty.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 7318.0,
+          "end": 7370.279
+        }
+      ]
+    },
+    {
+      "id": "hyper",
+      "term": "Hyper (ὑπέρ)",
+      "definition": "Greek preposition meaning 'in behalf of' or 'for the benefit of', used in the New Testament to describe Christ's death. It does not mean 'instead of'.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 8481.219,
+          "end": 8578.639
+        }
+      ]
+    },
+    {
+      "id": "physical-death",
+      "term": "Physical Death",
+      "definition": "The separation of the soul from the body. Christ experienced physical death, but this does not mean we do not have to die.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 8679.0,
+          "end": 8774.479
+        }
+      ]
+    },
+    {
+      "id": "spiritual-death",
+      "term": "Spiritual Death",
+      "definition": "The separation of the soul from God. Christ did not experience spiritual death, as that would imply He was damned.",
+      "segments": [
+        {
+          "episode": 132,
+          "start": 8679.0,
+          "end": 8774.479
+        }
+      ]
+    }
+  ]
+}

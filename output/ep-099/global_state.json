@@ -1,0 +1,317 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young explore the concept of religion, its historical development, and its relationship to the Stone Age and the Axial Age. They begin by critiquing modern definitions of religion, arguing that the term is a relatively recent construct that often distorts our understanding of ancient practices. They propose a working definition of religion as 'a way of being in the world that encompasses all levels of reality and expresses itself in practices.' The conversation then moves to the Axial Age (c. 800-200 BC), a period of profound religious transformation across the globe, including the rise of philosophy in Greece, the development of Judaism, and the emergence of Buddhism and Zoroastrianism. They highlight common themes such as the depersonalization of spirits and the emergence of ethics. Finally, they delve into the Neolithic Revolution (c. 10,000-8,000 BC), when humans transitioned from hunter-gatherer to settled agricultural life, leading to the domestication of plants and animals and the rise of earth goddesses and local spirits. They discuss archaeological sites like Göbekli Tepe and Çatalhöyük, showing how religious practices shifted with settlement. The episode concludes with a theological reflection: Orthodox Christianity is the right worship of the true God, and throughout history, those who worshiped God rightly were practicing the same religion, even if their practices and understanding evolved.",
+  "entities": [
+    {
+      "id": "karl-jaspers",
+      "title": "Karl Jaspers",
+      "category": "person",
+      "summary": "A 20th-century German-Swiss philosopher who coined the term 'Axial Age' to describe the period of profound religious and philosophical transformation in the first millennium BC.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 4500.0,
+          "end": 4601.76
+        }
+      ]
+    },
+    {
+      "id": "gobekli-tepe",
+      "title": "Göbekli Tepe",
+      "category": "place",
+      "summary": "An archaeological site in modern-day Turkey, dating to around 9,130 BC, featuring massive megalithic structures with animal carvings. It is considered one of the earliest known religious sites, predating permanent settlement.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 8509.0,
+          "end": 8759.84
+        }
+      ]
+    },
+    {
+      "id": "catalhoyuk",
+      "title": "Çatalhöyük",
+      "category": "place",
+      "summary": "A Neolithic settlement in modern-day Turkey, dating to around 7,100 BC, known for its domestic shrines, burial practices, and evidence of bull worship.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 8935.239,
+          "end": 9205.44
+        }
+      ]
+    },
+    {
+      "id": "jericho",
+      "title": "Jericho",
+      "category": "place",
+      "summary": "An ancient city in the Jordan Valley, continuously inhabited since around 10,000 BC. The archaeological site has been damaged by early excavations, making definitive conclusions difficult.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 8813.0,
+          "end": 8955.0
+        }
+      ]
+    },
+    {
+      "id": "zeus",
+      "title": "Zeus",
+      "category": "theological",
+      "summary": "The sky and storm god in ancient Greek religion, representing a later development from earlier sky deities. His emergence is linked to the agricultural importance of rain.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 9189.0,
+          "end": 9281.2
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "religion-as-way-of-being",
+      "title": "Religion as a Way of Being in the World",
+      "summary": "A working definition of religion proposed by the hosts: a way of being in the world that encompasses all levels of reality and expresses itself in practices. This definition avoids reducing religion to beliefs or a separate sphere of life.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 3017.0,
+          "end": 3109.679
+        },
+        {
+          "episode": 99,
+          "start": 3047.36,
+          "end": 3155.92
+        },
+        {
+          "episode": 99,
+          "start": 3144.8,
+          "end": 3263.28
+        }
+      ]
+    },
+    {
+      "id": "axial-age",
+      "title": "Axial Age",
+      "summary": "A term coined by Karl Jaspers to describe the period from roughly 800 to 200 BC, when major religious and philosophical transformations occurred independently across the world, including in Greece, Israel, India, China, and Persia.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 4481.359,
+          "end": 4601.76
+        },
+        {
+          "episode": 99,
+          "start": 4590.0,
+          "end": 4889.979
+        }
+      ]
+    },
+    {
+      "id": "neolithic-revolution",
+      "title": "Neolithic Revolution",
+      "summary": "The transition from nomadic hunter-gatherer societies to settled agricultural communities, occurring around 10,000-8,000 BC in the Fertile Crescent. This shift led to the domestication of plants and animals and significant religious changes, including the emergence of earth goddesses and local spirits.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 6673.439,
+          "end": 6764.199
+        },
+        {
+          "episode": 99,
+          "start": 6737.199,
+          "end": 6858.0
+        },
+        {
+          "episode": 99,
+          "start": 7440.0,
+          "end": 7535.279
+        }
+      ]
+    },
+    {
+      "id": "comparative-religion",
+      "title": "Comparative Religion",
+      "summary": "The academic discipline of comparing different religions, which the hosts critique for often forcing superficial similarities and ignoring the unique contexts of each tradition.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 1739.48,
+          "end": 1883.92
+        }
+      ]
+    },
+    {
+      "id": "hunter-gatherer-religion",
+      "title": "Hunter-Gatherer Religion",
+      "summary": "The religious practices of nomadic peoples before the Neolithic Revolution, characterized by a focus on a single sky deity or spirit, as opposed to the multiplicity of gods that emerged with settled life.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 8141.0,
+          "end": 8233.4
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "religion-is-not-belief",
+      "text": "Religion is not primarily about beliefs but is a way of being in the world that encompasses all levels of reality and expresses itself in practices.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 3017.0,
+          "end": 3155.92
+        }
+      ]
+    },
+    {
+      "id": "axial-age-shift",
+      "text": "The Axial Age saw a worldwide shift in religion, including the depersonalization of spirits and the emergence of ethics, driven by factors like societal stabilization and the rise of literacy.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 4481.359,
+          "end": 4889.979
+        },
+        {
+          "episode": 99,
+          "start": 5100.0,
+          "end": 5405.88
+        }
+      ]
+    },
+    {
+      "id": "neolithic-religious-shift",
+      "text": "The Neolithic Revolution led to a shift from a single sky deity to a multiplicity of gods, including earth goddesses and local spirits, as humans settled and agriculture became central.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 8225.36,
+          "end": 8317.92
+        },
+        {
+          "episode": 99,
+          "start": 9325.799,
+          "end": 9419.879
+        }
+      ]
+    },
+    {
+      "id": "orthodox-christianity-continuity",
+      "text": "Orthodox Christianity is the right worship of the true God, and throughout history, those who worshiped God rightly were practicing the same religion, even if their practices and understanding evolved.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 9809.28,
+          "end": 10167.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "deuteronomy-31",
+      "reference": "Deuteronomy 31:10-13",
+      "summary": "The command for the Torah to be read publicly every seven years, which the hosts discuss as evidence that the Torah was not widely known in pre-exilic Israel.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 7551.359,
+          "end": 7643.76
+        }
+      ]
+    },
+    {
+      "id": "acts-17",
+      "reference": "Acts 17:22-23",
+      "summary": "Paul's address to the Athenians about the 'unknown god,' used as an analogy for how missionaries approached indigenous peoples with a memory of a high god.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 9556.559,
+          "end": 9652.79
+        }
+      ]
+    },
+    {
+      "id": "revelation-5",
+      "reference": "Revelation 5:11-12",
+      "summary": "The vision of angels worshiping the Lamb, quoted at the end of the episode to emphasize the continuity of worship.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 10653.52,
+          "end": 10686.79
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "axial-age",
+      "term": "Axial Age",
+      "definition": "A term coined by Karl Jaspers for the period from roughly 800 to 200 BC, marked by major religious and philosophical developments across the world.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 4481.359,
+          "end": 4601.76
+        }
+      ]
+    },
+    {
+      "id": "neolithic-revolution",
+      "term": "Neolithic Revolution",
+      "definition": "The transition from nomadic hunting and gathering to settled agriculture and domestication of plants and animals, occurring around 10,000-8,000 BC.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 6673.439,
+          "end": 6858.0
+        }
+      ]
+    },
+    {
+      "id": "paleolithic",
+      "term": "Paleolithic",
+      "definition": "The earliest period of the Stone Age, characterized by the use of chipped stone tools and a hunter-gatherer lifestyle.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 231.699,
+          "end": 324.48
+        }
+      ]
+    },
+    {
+      "id": "mesolithic",
+      "term": "Mesolithic",
+      "definition": "The middle period of the Stone Age, transitional between the Paleolithic and Neolithic, with continued hunting and gathering but some development of tools.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 231.699,
+          "end": 324.48
+        }
+      ]
+    },
+    {
+      "id": "neolithic",
+      "term": "Neolithic",
+      "definition": "The final period of the Stone Age, marked by the development of agriculture and permanent settlements.",
+      "segments": [
+        {
+          "episode": 99,
+          "start": 231.699,
+          "end": 324.48
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,472 @@
+{
+  "summary": "In this episode, the hosts explore the concept of sacred space in the Bible, starting with the Garden of Eden as a walled garden on a mountain, which is the pattern for paradise. They discuss how the tabernacle was modeled after the heavenly tent seen by Moses on Mount Sinai, and how the temple of Solomon, while a permanent structure, was a departure from God's original design and often led to syncretism with pagan practices. The episode traces the theme of God's presence moving from the tabernacle to the temple, then to prophets, and ultimately to Christ and the Church. In the New Testament, the tabernacle remains the pattern for heavenly worship, and Orthodox Christian churches are designed after the tabernacle, not the temple. The hosts emphasize that Christianity is a way of life, not just a set of beliefs, and that believers are called to live as aliens and strangers, not settling into the world's cultures.",
+  "entities": [
+    {
+      "id": "taj-mahal",
+      "title": "Taj Mahal",
+      "category": "place",
+      "summary": "A well-known example of a walled garden structure, used to illustrate the concept of paradise as a walled garden.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 88.48,
+          "end": 143.0
+        }
+      ]
+    },
+    {
+      "id": "el",
+      "title": "El",
+      "category": "theological",
+      "summary": "The most high god in Canaanite religion, father of the gods, who dwells in a tent with his divine council.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 515.0,
+          "end": 605.96
+        }
+      ]
+    },
+    {
+      "id": "baal-cycle",
+      "title": "Baal Cycle",
+      "category": "historical",
+      "summary": "A Canaanite mythological text describing the gods' activities, including Baal's quest for his own place in El's tent.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 498.8,
+          "end": 594.659
+        }
+      ]
+    },
+    {
+      "id": "solomon",
+      "title": "Solomon",
+      "category": "person",
+      "summary": "King of Israel who built the first temple in Jerusalem, incorporating pagan elements and later repenting.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 1203.279,
+          "end": 1295.759
+        },
+        {
+          "episode": 37,
+          "start": 1234.0,
+          "end": 1328.839
+        },
+        {
+          "episode": 37,
+          "start": 1337.839,
+          "end": 1432.0
+        }
+      ]
+    },
+    {
+      "id": "jeremiah",
+      "title": "Jeremiah",
+      "category": "person",
+      "summary": "A prophet who warned that the temple was not a talisman and that God could leave it.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 1337.839,
+          "end": 1432.0
+        }
+      ]
+    },
+    {
+      "id": "julian-the-apostate",
+      "title": "Julian the Apostate",
+      "category": "person",
+      "summary": "Roman emperor who tried to revive paganism and criticized Christians for venerating relics.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 2219.84,
+          "end": 2309.92
+        }
+      ]
+    },
+    {
+      "id": "eunapius-of-sardis",
+      "title": "Eunapius of Sardis",
+      "category": "person",
+      "summary": "A pagan Neoplatonist philosopher who mocked Christians for venerating the bones of criminals (martyrs).",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 2245.619,
+          "end": 2340.28
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "paradise-as-walled-garden",
+      "title": "Paradise as a Walled Garden",
+      "summary": "The word 'paradise' comes from a Persian term for a walled garden, and Eden is described as a garden on a mountain with four rivers flowing out, symbolizing God's presence and order.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 88.48,
+          "end": 143.0
+        },
+        {
+          "episode": 37,
+          "start": 111.76,
+          "end": 143.0
+        },
+        {
+          "episode": 37,
+          "start": 187.0,
+          "end": 281.439
+        }
+      ]
+    },
+    {
+      "id": "mountain-of-god",
+      "title": "Mountain of God",
+      "summary": "In ancient Near Eastern thought, gods dwell on mountains. The Garden of Eden is on the mountain of God, and this concept is seen throughout Scripture, with multiple mountains serving as the mountain of God at different times.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 228.0,
+          "end": 322.639
+        },
+        {
+          "episode": 37,
+          "start": 270.0,
+          "end": 360.0
+        },
+        {
+          "episode": 37,
+          "start": 360.0,
+          "end": 457.399
+        }
+      ]
+    },
+    {
+      "id": "divine-council-tent",
+      "title": "Divine Council Tent",
+      "summary": "The gods were envisioned as living in a large tent with partitioned sections for each deity, similar to a patriarchal clan. This imagery underlies the tabernacle and Jesus' reference to 'many mansions' (actually 'many partitions') in His Father's house.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 450.0,
+          "end": 543.679
+        },
+        {
+          "episode": 37,
+          "start": 555.6,
+          "end": 646.39
+        }
+      ]
+    },
+    {
+      "id": "tabernacle-as-microcosm",
+      "title": "Tabernacle as Microcosm",
+      "summary": "The tabernacle was designed as a microcosm of the universe, with the seven-branched lampstand representing the seven planets, and the cherubim woven into the curtains representing the heavenly council.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 1088.88,
+          "end": 1179.319
+        },
+        {
+          "episode": 37,
+          "start": 1146.599,
+          "end": 1238.0
+        }
+      ]
+    },
+    {
+      "id": "temple-as-body-of-god",
+      "title": "Temple as Body of God",
+      "summary": "In pagan thought, the temple building was seen as the body of the god, and Solomon's temple incorporated pagan elements like the chariot of the sun god. God's response was to distance Himself from the temple, and the New Testament identifies Christ's body as the true temple.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 1277.279,
+          "end": 1372.0
+        },
+        {
+          "episode": 37,
+          "start": 1347.39,
+          "end": 1438.0
+        },
+        {
+          "episode": 37,
+          "start": 1408.48,
+          "end": 1498.519
+        }
+      ]
+    },
+    {
+      "id": "christian-worship-as-tabernacle",
+      "title": "Christian Worship as Tabernacle",
+      "summary": "Orthodox Christian churches are patterned after the tabernacle, not the temple. Baptism corresponds to the laver, confession to the altar of burnt offering, and the Eucharist to the bread of the presence. The church building is a microcosm of creation.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 1824.0,
+          "end": 1915.0
+        },
+        {
+          "episode": 37,
+          "start": 1898.0,
+          "end": 1988.79
+        },
+        {
+          "episode": 37,
+          "start": 1961.92,
+          "end": 2053.0
+        }
+      ]
+    },
+    {
+      "id": "faithfulness-over-belief",
+      "title": "Faithfulness Over Belief",
+      "summary": "Christianity is primarily a way of life, not a set of beliefs. True faith is demonstrated by actions, and the early church was known for its practices, such as venerating relics, which pagans found offensive.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 2319.36,
+          "end": 2415.599
+        },
+        {
+          "episode": 37,
+          "start": 2381.199,
+          "end": 2475.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "paradise-is-wherever-god-is",
+      "text": "Paradise is wherever God is present; it is not a physical location but the experience of communion with God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 187.0,
+          "end": 281.439
+        }
+      ]
+    },
+    {
+      "id": "tabernacle-patterned-after-heavenly-tent",
+      "text": "The tabernacle was made after the pattern of the heavenly tent that Moses saw on the mountain, which is the dwelling place of God with the divine council.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 731.0,
+          "end": 822.879
+        }
+      ]
+    },
+    {
+      "id": "temple-not-gods-idea",
+      "text": "God did not originally want a permanent temple; He preferred the tabernacle to keep Israel from settling and becoming corrupt.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 1170.0,
+          "end": 1260.0
+        },
+        {
+          "episode": 37,
+          "start": 1269.88,
+          "end": 1362.0
+        }
+      ]
+    },
+    {
+      "id": "ezekiels-temple-is-christ",
+      "text": "Ezekiel's vision of a future temple is not a literal building but a typological prophecy of Christ's body, as understood by early Christians and Second Temple Judaism.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 1398.48,
+          "end": 1489.72
+        }
+      ]
+    },
+    {
+      "id": "relics-testify-to-resurrection",
+      "text": "The veneration of saints' relics is a testimony to the resurrection of the dead, because the saints are alive in Christ and their bodies are holy.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 2148.719,
+          "end": 2242.48
+        },
+        {
+          "episode": 37,
+          "start": 2452.0,
+          "end": 2545.44
+        }
+      ]
+    },
+    {
+      "id": "christianity-is-a-way-of-life",
+      "text": "Christianity is primarily a way of life, not a set of beliefs; faithfulness is demonstrated by actions, and heresy is a different way of life, not just wrong opinions.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 2319.36,
+          "end": 2415.599
+        },
+        {
+          "episode": 37,
+          "start": 2489.519,
+          "end": 2580.8
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-2-eden",
+      "reference": "Genesis 2:10-14",
+      "summary": "Describes the four rivers flowing out of Eden, indicating it is on a mountain.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 88.48,
+          "end": 143.0
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-28-13-14",
+      "reference": "Ezekiel 28:13-14",
+      "summary": "Explicitly states that Eden is on the holy mountain of God.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 282.92,
+          "end": 377.639
+        }
+      ]
+    },
+    {
+      "id": "john-14-2",
+      "reference": "John 14:2",
+      "summary": "Jesus says 'in my Father's house are many mansions,' but the Greek word means 'partitions' or 'rooms,' referring to the divine council tent.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 555.6,
+          "end": 646.39
+        }
+      ]
+    },
+    {
+      "id": "hebrews-8-5",
+      "reference": "Hebrews 8:5",
+      "summary": "States that the tabernacle was a copy and shadow of the heavenly things shown to Moses on the mountain.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 731.0,
+          "end": 822.879
+        }
+      ]
+    },
+    {
+      "id": "revelation-15-5-8",
+      "reference": "Revelation 15:5-8",
+      "summary": "Describes the heavenly sanctuary as the 'tent of witness,' not a temple.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 1789.88,
+          "end": 1885.64
+        }
+      ]
+    },
+    {
+      "id": "james-2-18",
+      "reference": "James 2:18",
+      "summary": "Faith is shown by works; faithfulness is demonstrated by actions.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 2499.0,
+          "end": 2592.19
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "paradise",
+      "term": "Paradise",
+      "definition": "A Persian loan word meaning a walled garden; used in Scripture to refer to the Garden of Eden and the presence of God.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 88.48,
+          "end": 143.0
+        }
+      ]
+    },
+    {
+      "id": "tabernacle",
+      "term": "Tabernacle",
+      "definition": "The portable tent shrine used by Israel for worship, patterned after the heavenly tent shown to Moses.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 731.0,
+          "end": 822.879
+        }
+      ]
+    },
+    {
+      "id": "holy-of-holies",
+      "term": "Holy of Holies",
+      "definition": "The innermost part of the tabernacle/temple where the Ark of the Covenant was kept, entered only by the high priest once a year.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 1118.92,
+          "end": 1209.359
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God through participation in the divine life; the goal of Christian life.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 570.0,
+          "end": 663.639
+        }
+      ]
+    },
+    {
+      "id": "relics",
+      "term": "Relics",
+      "definition": "The physical remains of saints, venerated because the saint's body has become a temple of the Holy Spirit and a testimony to the resurrection.",
+      "segments": [
+        {
+          "episode": 37,
+          "start": 2148.719,
+          "end": 2242.48
+        }
+      ]
+    }
+  ]
+}

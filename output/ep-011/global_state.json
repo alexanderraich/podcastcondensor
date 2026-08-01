@@ -1,0 +1,493 @@
+{
+  "summary": "In this episode, the hosts continue their discussion on bodies, focusing on the ancient understanding of body as a nexus of powers and potentialities. They address listener questions about anthropomorphism versus theomorphism, clarifying that when Scripture speaks of God's body, it refers to His powers and actions, not a physical form. The conversation then shifts to human bodies, exploring the idea that Adam and Eve were created innocent but not yet perfected, and that their task was to expand Eden and participate in God's ongoing work. The fall introduced mortality as a gift, enabling repentance, and the hosts distinguish between mortal flesh and sinful flesh, emphasizing that sin is a demonic force that entered the world through Adam and mastered Cain. They also discuss angelic bodies, explaining that angels are bodiless compared to us but still have bodies in the ancient sense, and that their inability to repent is tied to their nature and our inability to comprehend their consciousness. The episode concludes with reflections on the resurrection body, the incarnation as the fulfillment of God's original plan, and the Church as the body of Christ, urging listeners to actively participate in God's work in the world.",
+  "entities": [
+    {
+      "id": "adam-and-eve",
+      "title": "Adam and Eve",
+      "category": "theological",
+      "summary": "The first humans, created innocent but not yet perfected, tasked with expanding Eden. Their trespass led to mortality and the need for repentance.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 1335.0,
+          "end": 1439.559
+        },
+        {
+          "episode": 11,
+          "start": 2398.0,
+          "end": 2490.239
+        }
+      ]
+    },
+    {
+      "id": "cain",
+      "title": "Cain",
+      "category": "theological",
+      "summary": "Adam's son, the first sinner, who was mastered by sin as a demonic force. He is seen as the paradigmatic sinner and heretic.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3058.32,
+          "end": 3184.8
+        }
+      ]
+    },
+    {
+      "id": "st-augustine",
+      "title": "St. Augustine",
+      "category": "person",
+      "summary": "A Latin father whose influence on Western Christianity led to a focus on the fall and original sin, sometimes collapsing distinctions the hosts emphasize.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 1600.72,
+          "end": 1709.279
+        },
+        {
+          "episode": 11,
+          "start": 2975.28,
+          "end": 3071.79
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "Apostle who wrote about bodies, resurrection, and the Church as the body of Christ. His writings are central to the episode's arguments.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3978.239,
+          "end": 4070.559
+        },
+        {
+          "episode": 11,
+          "start": 5544.399,
+          "end": 5670.2
+        }
+      ]
+    },
+    {
+      "id": "st-john-of-damascus",
+      "title": "St. John of Damascus",
+      "category": "person",
+      "summary": "Church father who taught that angels are bodiless compared to God but have bodies in a relative sense, and that they cannot repent due to their nature.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3825.28,
+          "end": 3915.599
+        },
+        {
+          "episode": 11,
+          "start": 4634.72,
+          "end": 4731.79
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "theological",
+      "summary": "The God-man, whose incarnation, death, and resurrection fulfill God's original plan for humanity. He has two natures and two bodies in the ancient sense.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 2116.48,
+          "end": 2210.8
+        },
+        {
+          "episode": 11,
+          "start": 6733.39,
+          "end": 6840.359
+        }
+      ]
+    },
+    {
+      "id": "angels",
+      "title": "Angels",
+      "category": "theological",
+      "summary": "Created beings with bodies in the ancient sense, but immaterial compared to humans. They are finite and have different roles and glories.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3821.199,
+          "end": 3974.159
+        }
+      ]
+    },
+    {
+      "id": "demons",
+      "title": "Demons",
+      "category": "theological",
+      "summary": "Fallen angels who have bodies but are deprived of them in some cases (like the Nephilim). They interact with the world by possessing humans or idols.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 4256.8,
+          "end": 4349.68
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "ancient-understanding-of-body",
+      "title": "Ancient Understanding of Body",
+      "summary": "In the ancient world, 'body' referred to a nexus of powers and potentialities, not just a material object. This concept applies to God, angels, and humans, and is key to understanding biblical language about bodies.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 270.0,
+          "end": 360.759
+        },
+        {
+          "episode": 11,
+          "start": 1252.96,
+          "end": 1342.96
+        }
+      ]
+    },
+    {
+      "id": "theomorphism-vs-anthropomorphism",
+      "title": "Theomorphism vs. Anthropomorphism",
+      "summary": "The hosts argue that Scripture uses theomorphism (describing humans in terms of God) rather than anthropomorphism (describing God in human terms). When God's body parts are mentioned, they refer to His powers and actions, not physical features.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 355.79,
+          "end": 475.56
+        }
+      ]
+    },
+    {
+      "id": "mortality-as-gift",
+      "title": "Mortality as a Gift",
+      "summary": "Mortality was given to humanity after the fall as a gift to enable repentance and prevent evil from becoming immortal. It allows for change and the possibility of turning back to God.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 2820.0,
+          "end": 2935.98
+        }
+      ]
+    },
+    {
+      "id": "sin-as-demonic-force",
+      "title": "Sin as a Demonic Force",
+      "summary": "Sin is portrayed in Scripture as an external, demonic force that seeks to master humans, as seen in Genesis 4 with Cain. This understanding contrasts with the idea of sin merely as breaking rules.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3058.32,
+          "end": 3184.8
+        }
+      ]
+    },
+    {
+      "id": "angelic-bodies",
+      "title": "Angelic Bodies",
+      "summary": "Angels have bodies in the ancient sense, but they are immaterial compared to humans. They are finite and circumscribed, and their bodies differ in glory based on their roles.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3821.199,
+          "end": 3974.159
+        }
+      ]
+    },
+    {
+      "id": "incarnation-as-plan-a",
+      "title": "Incarnation as Plan A",
+      "summary": "The incarnation of Christ was not a Plan B response to sin but was always intended as the means for humanity and creation to reach their fullness. Christ is the paradigm of what Adam was meant to become.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 2116.48,
+          "end": 2210.8
+        }
+      ]
+    },
+    {
+      "id": "resurrection-body",
+      "title": "Resurrection Body",
+      "summary": "The resurrection body is not just a return to the original state but a transformation into a new kind of materiality, as seen in Christ's resurrected body. It is sown in weakness and raised in strength, with mortality removed.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 5544.399,
+          "end": 5670.2
+        }
+      ]
+    },
+    {
+      "id": "church-as-body-of-christ",
+      "title": "Church as Body of Christ",
+      "summary": "The Church is the body of Christ in the ancient sense, meaning that Christ acts through the Church to continue His work in the world. This is not a metaphor but a reality of participation in His powers.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 7725.0,
+          "end": 7879.52
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "god-has-a-body",
+      "text": "God has a body in the ancient sense, meaning a nexus of powers, not a physical form. This is not anthropomorphism but theomorphism.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 270.0,
+          "end": 360.759
+        }
+      ]
+    },
+    {
+      "id": "mortality-enables-repentance",
+      "text": "Mortality was given to humanity as a gift to enable repentance, preventing evil from becoming immortal and allowing for change.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 2820.0,
+          "end": 2935.98
+        }
+      ]
+    },
+    {
+      "id": "sin-is-a-force",
+      "text": "Sin is a demonic force that seeks to master humans, as seen in Genesis 4, not merely a violation of rules.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3058.32,
+          "end": 3184.8
+        }
+      ]
+    },
+    {
+      "id": "angels-cannot-repent",
+      "text": "Angels cannot repent because they lack mortal bodies and their consciousness is fundamentally different from ours, making repentance impossible.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 4634.72,
+          "end": 4731.79
+        },
+        {
+          "episode": 11,
+          "start": 4973.68,
+          "end": 5064.68
+        }
+      ]
+    },
+    {
+      "id": "incarnation-not-plan-b",
+      "text": "The incarnation was always intended as the means for humanity to reach its fullness, not a response to sin.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 2116.48,
+          "end": 2210.8
+        }
+      ]
+    },
+    {
+      "id": "resurrection-is-universal",
+      "text": "All humans will be resurrected, both righteous and unrighteous, as resurrection is not a reward but a universal event.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 5658.479,
+          "end": 5749.96
+        }
+      ]
+    },
+    {
+      "id": "church-is-body-of-christ",
+      "text": "The Church is the body of Christ in the ancient sense, meaning Christ acts through the Church to continue His work in the world.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 7725.0,
+          "end": 7879.52
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-3",
+      "reference": "Genesis 3",
+      "summary": "The fall of Adam and Eve, the introduction of mortality, and the expulsion from Eden.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 2398.0,
+          "end": 2490.239
+        }
+      ]
+    },
+    {
+      "id": "genesis-4",
+      "reference": "Genesis 4",
+      "summary": "Cain's sin and the personification of sin as a demonic force crouching at the door.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3058.32,
+          "end": 3184.8
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-15",
+      "reference": "1 Corinthians 15",
+      "summary": "Paul's teaching on the resurrection body, celestial and terrestrial bodies, and the transformation of the body.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3978.239,
+          "end": 4070.559
+        },
+        {
+          "episode": 11,
+          "start": 5544.399,
+          "end": 5670.2
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-4",
+      "reference": "Deuteronomy 4",
+      "summary": "Warning against worshipping the heavenly host, which Paul references in 1 Corinthians 15.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 4080.0,
+          "end": 4177.84
+        }
+      ]
+    },
+    {
+      "id": "john-5",
+      "reference": "John 5",
+      "summary": "Jesus speaks of the resurrection of life and the resurrection of condemnation, indicating universal resurrection.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 5707.92,
+          "end": 5802.0
+        }
+      ]
+    },
+    {
+      "id": "revelation-5",
+      "reference": "Revelation 5",
+      "summary": "The heavenly worship of the Lamb, used as a closing doxology.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 8567.639,
+          "end": 8604.799
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "theomorphism",
+      "term": "Theomorphism",
+      "definition": "The belief that humans are created in the image of God, and that biblical language about God's body parts refers to His powers, not physical features.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 355.79,
+          "end": 475.56
+        }
+      ]
+    },
+    {
+      "id": "anthropomorphism",
+      "term": "Anthropomorphism",
+      "definition": "Attributing human characteristics to God, which the hosts argue is a misunderstanding of biblical language.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 355.79,
+          "end": 475.56
+        }
+      ]
+    },
+    {
+      "id": "nexus-of-powers",
+      "term": "Nexus of Powers",
+      "definition": "The ancient understanding of body as a center of powers and potentialities, not just a material object.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 270.0,
+          "end": 360.759
+        }
+      ]
+    },
+    {
+      "id": "mortality",
+      "term": "Mortality",
+      "definition": "The state of being subject to death, given to humanity as a gift to enable repentance.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 2820.0,
+          "end": 2935.98
+        }
+      ]
+    },
+    {
+      "id": "sin",
+      "term": "Sin",
+      "definition": "A demonic force that seeks to master humans, as depicted in Genesis 4, rather than merely a violation of rules.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 3058.32,
+          "end": 3184.8
+        }
+      ]
+    },
+    {
+      "id": "apophaticism",
+      "term": "Apophaticism",
+      "definition": "Theological approach that emphasizes the limitations of human understanding and the mystery of God, leading to humility.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 5447.84,
+          "end": 5540.96
+        }
+      ]
+    },
+    {
+      "id": "felix-culpa",
+      "term": "Felix Culpa",
+      "definition": "Latin for 'happy fault,' referring to the idea that Adam's fall led to the greater good of redemption in Christ.",
+      "segments": [
+        {
+          "episode": 11,
+          "start": 5907.119,
+          "end": 5999.8
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "summary": "In this episode, the hosts explore the origins and nature of sacrifice in the ancient world, arguing that worship and ritual were foundational to human civilization. They begin by examining the earliest archaeological sites like Göbekli Tepe and Çatalhöyük, which suggest that ritual sites preceded permanent settlements, indicating that spiritual experiences drove the Neolithic Revolution. The discussion then moves to the universal pattern of sacrifice as a communal meal shared with gods or spirits, involving procession, sanctification, and feasting. They also address the role of angels assigned to nations, the nature of guardian angels, and the significance of incense in purification. The episode concludes by emphasizing the importance of ritual as a means of connecting with spiritual reality, contrasting it with modern secularism.",
+  "entities": [
+    {
+      "id": "gobekli-tepe",
+      "title": "Göbekli Tepe",
+      "category": "place",
+      "summary": "An early Neolithic archaeological site in Turkey, considered one of the first ritual centers, with monolithic structures and animal carvings.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 418.279,
+          "end": 669.0
+        }
+      ]
+    },
+    {
+      "id": "catalhoyuk",
+      "title": "Çatalhöyük",
+      "category": "place",
+      "summary": "A later Neolithic settlement in Turkey, known for its domestic architecture, burial practices, and bull-headed shrines.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 1264.0,
+          "end": 1512.839
+        }
+      ]
+    },
+    {
+      "id": "leviathan",
+      "title": "Leviathan",
+      "category": "theological",
+      "summary": "A sea monster in Hebrew scriptures, representing chaos and often associated with the demonic, appearing in various ancient mythologies.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 1650.0,
+          "end": 1769.299
+        }
+      ]
+    },
+    {
+      "id": "behemoth",
+      "title": "Behemoth",
+      "category": "theological",
+      "summary": "A powerful land beast in Hebrew scriptures, symbolizing tyranny, and linked to the bull imagery in ancient worship.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 1558.799,
+          "end": 1649.39
+        }
+      ]
+    },
+    {
+      "id": "saint-michael",
+      "title": "Saint Michael",
+      "category": "person",
+      "summary": "The Archangel Michael, considered the prince of Israel and an exception to the angelic apostasy, as mentioned in Daniel.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 2722.719,
+          "end": 2814.519
+        }
+      ]
+    },
+    {
+      "id": "tolkien-valar",
+      "title": "Tolkien's Valar",
+      "category": "other",
+      "summary": "Angelic beings in J.R.R. Tolkien's legendarium, used as an analogy for what unfallen guardian angels might have been like.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 2599.599,
+          "end": 2699.28
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "neolithic-revolution",
+      "title": "Neolithic Revolution",
+      "summary": "The transition from nomadic hunting-gathering to settled agriculture, which the hosts argue was driven by religious and ritual needs rather than purely material factors.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 748.48,
+          "end": 940.0
+        }
+      ]
+    },
+    {
+      "id": "sacrifice-as-communal-meal",
+      "title": "Sacrifice as Communal Meal",
+      "summary": "The idea that ancient sacrifice was primarily a shared meal between humans and gods, involving food offerings and hospitality, rather than a focus on death or killing.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 3117.48,
+          "end": 3320.639
+        },
+        {
+          "episode": 12,
+          "start": 5096.159,
+          "end": 5274.1
+        }
+      ]
+    },
+    {
+      "id": "angelic-apostasy",
+      "title": "Angelic Apostasy",
+      "summary": "The fall of angels assigned to nations, who began accepting worship and leading humans into idolatry, as discussed in response to a caller's question.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 2538.139,
+          "end": 2708.88
+        }
+      ]
+    },
+    {
+      "id": "incense-purification",
+      "title": "Incense and Purification",
+      "summary": "The use of incense in ancient rituals to purify sacred spaces and drive away malicious spirits, with linguistic connections to the Greek word 'catharsis'.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 5519.68,
+          "end": 5855.0
+        }
+      ]
+    },
+    {
+      "id": "ritual-as-connection",
+      "title": "Ritual as Connection to Reality",
+      "summary": "The hosts argue that ritual is a fundamental way humans interact with reality, and that modern disconnection from ritual has led to a loss of spiritual awareness.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 6262.0,
+          "end": 6443.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "ritual-sites-precede-settlements",
+      "text": "The earliest human settlements were not primarily for practical reasons but were built around ritual sites, indicating that spiritual experiences drove the Neolithic Revolution.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 671.0,
+          "end": 940.0
+        }
+      ]
+    },
+    {
+      "id": "sacrifice-is-food",
+      "text": "Ancient sacrifices were always food offerings, not necessarily animals, and the killing was not the focus; the meal was the central act of communion.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 3287.76,
+          "end": 3382.32
+        },
+        {
+          "episode": 12,
+          "start": 3791.119,
+          "end": 3885.0
+        }
+      ]
+    },
+    {
+      "id": "angelic-fall-near-universal",
+      "text": "The fall of the angels assigned to nations was near universal, with Saint Michael as the exception, and this fall involved accepting worship and leading humans astray.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 2699.28,
+          "end": 2789.92
+        }
+      ]
+    },
+    {
+      "id": "christ-sacrifice-inverts-pagan",
+      "text": "Christ's sacrifice is the ultimate inversion of pagan sacrifice: rather than humans offering to appease a spirit, God offers Himself to us in hospitality.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 3510.0,
+          "end": 3606.239
+        }
+      ]
+    },
+    {
+      "id": "ritual-connects-to-reality",
+      "text": "Ritual is a fundamental way humans connect with reality, and modern disconnection from ritual has led to a loss of spiritual awareness and community.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 6300.0,
+          "end": 6443.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-4-cain-abel",
+      "reference": "Genesis 4:3-5",
+      "summary": "The first example of worship in the Bible, where Cain and Abel offer sacrifices to God, showing that worship predates written instructions.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 120.0,
+          "end": 216.639
+        }
+      ]
+    },
+    {
+      "id": "daniel-10-princes",
+      "reference": "Daniel 10:13, 20-21",
+      "summary": "References to the Prince of Persia, Prince of Greece, and Michael as the prince of Israel, used to discuss angelic beings assigned to nations.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 2722.719,
+          "end": 2814.519
+        }
+      ]
+    },
+    {
+      "id": "psalms-of-ascent",
+      "reference": "Psalms 120-134",
+      "summary": "The Psalms of Ascent were sung by pilgrims as they processed to Jerusalem with their sacrifices, illustrating the procession element of worship.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 3651.96,
+          "end": 3746.0
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-10",
+      "reference": "1 Corinthians 10:14-22",
+      "summary": "Paul warns against participating in pagan sacrificial meals, which are communion with demons, contrasting with the Lord's Supper.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 5198.64,
+          "end": 5296.18
+        }
+      ]
+    },
+    {
+      "id": "revelation-5",
+      "reference": "Revelation 5:11-12",
+      "summary": "The closing scripture, describing the worship of the Lamb, connecting to the theme of sacrifice and worship.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 6543.119,
+          "end": 6568.76
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "propitiation",
+      "term": "Propitiation",
+      "definition": "The act of making someone propitious, i.e., pleased or well-disposed; in sacrifice, it refers to pleasing the deity.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 5880.0,
+          "end": 5972.659
+        }
+      ]
+    },
+    {
+      "id": "expiation",
+      "term": "Expiation",
+      "definition": "The act of purification or atonement, often involving cleansing from sin or impurity.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 5918.279,
+          "end": 6013.439
+        }
+      ]
+    },
+    {
+      "id": "trapezomata",
+      "term": "Trapezomata",
+      "definition": "Greek for 'table things,' referring to the side dishes and other foods served at sacrificial feasts.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 5133.68,
+          "end": 5224.0
+        }
+      ]
+    },
+    {
+      "id": "catharsis",
+      "term": "Catharsis",
+      "definition": "Greek word for purification or cleansing, derived from the Semitic root QTR, meaning to offer incense.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 5771.79,
+          "end": 5867.0
+        }
+      ]
+    },
+    {
+      "id": "haruspex",
+      "term": "Haruspex",
+      "definition": "A priest in ancient Rome who practiced divination by inspecting the entrails of sacrificed animals.",
+      "segments": [
+        {
+          "episode": 12,
+          "start": 5407.479,
+          "end": 5497.6
+        }
+      ]
+    }
+  ]
+}

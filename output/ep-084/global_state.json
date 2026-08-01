@@ -1,0 +1,523 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen DeYoung explore the nature of good and evil, beginning with the Euthyphro dilemma and its modern interpretations. They critique various ethical frameworks—divine command theory, natural law, consequentialism, deontology, and utilitarianism—highlighting their inadequacies. The discussion pivots to a biblical understanding of evil as a malevolent force enslaving humanity and bringing death, contrasting it with good as life and flourishing. They then delve into Orthodox theology, emphasizing God's absolute freedom and the essence-energies distinction, arguing that 'God is good' refers to His eternal activities (energies) rather than His incomprehensible essence. Human goodness is defined as participation in these divine energies, leading to theosis. The episode concludes with practical implications for Christian communities as places of true human flourishing, contrasting with utopian political projects.",
+  "entities": [
+    {
+      "id": "plato",
+      "title": "Plato",
+      "category": "person",
+      "summary": "Ancient Greek philosopher whose dialogue Euthyphro is often misused to pose the dilemma about God and morality. The hosts argue Plato's actual project was to purify Greek religion.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 681.0,
+          "end": 891.36
+        }
+      ]
+    },
+    {
+      "id": "john-calvin",
+      "title": "John Calvin",
+      "category": "person",
+      "summary": "Protestant reformer whose views on total depravity and divine sovereignty are critiqued. The hosts argue his emphasis on motives makes all human actions evil and his view of justice places a standard above God.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 2679.139,
+          "end": 2854.0
+        }
+      ]
+    },
+    {
+      "id": "thomas-hobbes",
+      "title": "Thomas Hobbes",
+      "category": "person",
+      "summary": "Philosopher who proposed that all human actions are either self-centered or other-centered, with only altruistic actions being good. The hosts critique this as unrealistic and leading to absurdities.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 2872.0,
+          "end": 3059.719
+        }
+      ]
+    },
+    {
+      "id": "immanuel-kant",
+      "title": "Immanuel Kant",
+      "category": "person",
+      "summary": "Philosopher who formulated the categorical imperative, a deontological ethical system. The hosts critique it for being too abstract and failing in concrete situations.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 3618.0,
+          "end": 3970.679
+        }
+      ]
+    },
+    {
+      "id": "sam-harris",
+      "title": "Sam Harris",
+      "category": "person",
+      "summary": "Contemporary atheist author who proposes a utilitarian ethics based on maximizing well-being. The hosts critique his system for lacking a basis for altruism without God.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 3953.76,
+          "end": 4352.96
+        }
+      ]
+    },
+    {
+      "id": "aristotle",
+      "title": "Aristotle",
+      "category": "person",
+      "summary": "Ancient Greek philosopher whose ethics focused on virtue as excellence and who held problematic views on natural slaves and women. The hosts contrast his anthropology with Christian universal human nature.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 5179.579,
+          "end": 5273.92
+        },
+        {
+          "episode": 84,
+          "start": 5541.319,
+          "end": 5667.319
+        }
+      ]
+    },
+    {
+      "id": "saint-paul",
+      "title": "Saint Paul",
+      "category": "person",
+      "summary": "Apostle who preached the unity of human nature and the dignity of all people, a revolutionary idea in the ancient world.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 5725.199,
+          "end": 5816.119
+        }
+      ]
+    },
+    {
+      "id": "saint-maximus-the-confessor",
+      "title": "Saint Maximus the Confessor",
+      "category": "person",
+      "summary": "Church Father quoted on freedom: in the age to come, we will be free because we will be unable to sin.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 8647.559,
+          "end": 8701.639
+        }
+      ]
+    },
+    {
+      "id": "saint-john-chrysostom",
+      "title": "Saint John Chrysostom",
+      "category": "person",
+      "summary": "Church Father whose homilies challenge pagan views of the poor and disabled, advocating for Christian compassion.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 5910.0,
+          "end": 6006.96
+        }
+      ]
+    },
+    {
+      "id": "henry-kissinger",
+      "title": "Henry Kissinger",
+      "category": "person",
+      "summary": "Former U.S. Secretary of State, used as an example of a wicked person who prospered in this life, illustrating the need for a reckoning.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 4371.88,
+          "end": 4480.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "euthyphro-dilemma",
+      "title": "Euthyphro Dilemma",
+      "summary": "A philosophical dilemma asking whether God commands what is good because it is good, or whether what is good is good because God commands it. The hosts argue both horns are problematic and propose a third way based on God's energies.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 948.44,
+          "end": 1039.839
+        },
+        {
+          "episode": 84,
+          "start": 1016.879,
+          "end": 1124.799
+        }
+      ]
+    },
+    {
+      "id": "divine-command-theory",
+      "title": "Divine Command Theory",
+      "summary": "The view that morality is based on God's commands. The hosts critique it as making 'God is good' tautological and implying the universe is morally neutral apart from divine fiat.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 1371.359,
+          "end": 1560.0
+        }
+      ]
+    },
+    {
+      "id": "natural-law-tradition",
+      "title": "Natural Law Tradition",
+      "summary": "The idea that moral order is built into creation. The hosts acknowledge its biblical roots but argue it fails to account for the need for revelation and the unique revelation in Christ.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 1880.16,
+          "end": 2022.0
+        },
+        {
+          "episode": 84,
+          "start": 2040.0,
+          "end": 2213.0
+        }
+      ]
+    },
+    {
+      "id": "consequentialism",
+      "title": "Consequentialism",
+      "summary": "Ethical theory judging actions by their outcomes. The hosts critique it using the example of Joseph and the problem of God bringing good out of evil, making consequences unreliable.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 3198.96,
+          "end": 3620.0
+        }
+      ]
+    },
+    {
+      "id": "deontological-ethics",
+      "title": "Deontological Ethics",
+      "summary": "Ethics based on duty and rules, associated with Kant. The hosts argue it fails in real-life situations like lying to save a life, and note that Christian tradition has always allowed exceptions for higher goods.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 3618.0,
+          "end": 3970.679
+        }
+      ]
+    },
+    {
+      "id": "essence-energies-distinction",
+      "title": "Essence-Energies Distinction",
+      "summary": "Orthodox theological distinction between God's unknowable essence and His knowable energies (activities). The hosts use this to explain that 'God is good' refers to His energies, not His essence.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 7186.72,
+          "end": 7277.96
+        },
+        {
+          "episode": 84,
+          "start": 7297.6,
+          "end": 7577.6
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "title": "Theosis",
+      "summary": "The process of becoming like God through participation in His energies. The hosts conclude that following commandments is the path of theosis, leading to true freedom and flourishing.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 9065.5,
+          "end": 9167.76
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "god-is-not-bound-by-external-standard",
+      "text": "If good and evil are objective categories over and above God, then God is not supreme; there is a standard He must obey, leading to an infinite regress.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 1108.119,
+          "end": 1251.92
+        }
+      ]
+    },
+    {
+      "id": "god-is-not-bound-by-his-nature",
+      "text": "The claim that God is bound by His nature is problematic because God's nature is infinite; an infinite nature cannot restrict Him, and if it does, it is finite.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 1258.79,
+          "end": 1364.64
+        }
+      ]
+    },
+    {
+      "id": "divine-command-theory-makes-good-meaningless",
+      "text": "If good is simply whatever God commands, then 'God is good' becomes 'God is God,' and the universe is morally neutral apart from divine fiat.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 1440.0,
+          "end": 1560.0
+        }
+      ]
+    },
+    {
+      "id": "natural-law-requires-revelation",
+      "text": "Christian moral principles were not discovered through natural reason alone; they had to be revealed, as evidenced by the moral failures of ancient civilizations.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 2200.0,
+          "end": 2490.199
+        }
+      ]
+    },
+    {
+      "id": "motives-are-not-primary",
+      "text": "Pre-modern Christian ethics judged actions, not motives; involuntary sins were still sins. Modern focus on motives leads to neurotic self-analysis and denies the goodness of many actions.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 2573.0,
+          "end": 2798.0
+        }
+      ]
+    },
+    {
+      "id": "consequences-are-unreliable",
+      "text": "Because God brings good out of evil, we cannot judge actions by their consequences; evil remains evil even if good results.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 3480.0,
+          "end": 3620.0
+        }
+      ]
+    },
+    {
+      "id": "ethics-requires-reckoning",
+      "text": "Without a final reckoning, there is no rational basis for altruism or ethical behavior; the wicked often prosper, so ethics requires God and judgment.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 4213.399,
+          "end": 4502.84
+        }
+      ]
+    },
+    {
+      "id": "good-is-participation-in-divine-energies",
+      "text": "Human goodness is not merely following rules but participating in God's eternal activities (energies), which transforms us and leads to theosis.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 8019.0,
+          "end": 8343.0
+        }
+      ]
+    },
+    {
+      "id": "true-freedom-is-flourishing",
+      "text": "Real freedom is not the ability to choose between good and evil but the freedom to flourish as a human, which comes from participating in God's life.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 8345.719,
+          "end": 8701.639
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-2-9",
+      "reference": "Genesis 2:9",
+      "summary": "The tree of the knowledge of good and evil introduces the terms 'good' and 'evil' without definition, setting the stage for the episode's discussion.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 239.12,
+          "end": 336.48
+        }
+      ]
+    },
+    {
+      "id": "genesis-4-7",
+      "reference": "Genesis 4:7",
+      "summary": "Sin is described as crouching at the door, a malevolent force seeking to master, illustrating the biblical view of evil as an enslaving power.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 6120.0,
+          "end": 6215.399
+        }
+      ]
+    },
+    {
+      "id": "exodus-1-7",
+      "reference": "Exodus 1:7",
+      "summary": "The Israelites flourish in Egypt, but Pharaoh's oppression brings death, contrasting good (life) and evil (death).",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 6441.76,
+          "end": 6532.0
+        }
+      ]
+    },
+    {
+      "id": "galatians-5-22-23",
+      "reference": "Galatians 5:22-23",
+      "summary": "The fruit of the Spirit is a list of character traits, not results, showing that goodness is about character, not consequences.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 3450.0,
+          "end": 3543.0
+        }
+      ]
+    },
+    {
+      "id": "john-10-10",
+      "reference": "John 10:10",
+      "summary": "Christ came that we might have life abundantly, defining life as flourishing, not mere biological existence.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 6369.439,
+          "end": 6465.119
+        }
+      ]
+    },
+    {
+      "id": "matthew-21-28-31",
+      "reference": "Matthew 21:28-31",
+      "summary": "The parable of the two sons shows that doing the right thing, even with wrong motives, is still doing the right thing.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 3090.0,
+          "end": 3180.79
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "tov",
+      "term": "Tov",
+      "definition": "Hebrew word for 'good,' also meaning beautiful, whole, or intact, as used in Genesis.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 270.0,
+          "end": 360.259
+        }
+      ]
+    },
+    {
+      "id": "kalos",
+      "term": "Kalos",
+      "definition": "Greek word for 'good' and 'beautiful,' used in the Septuagint.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 282.8,
+          "end": 380.16
+        }
+      ]
+    },
+    {
+      "id": "euthyphro",
+      "term": "Euthyphro",
+      "definition": "Platonic dialogue named after a man prosecuting his father, often misused to pose the dilemma about God and morality.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 681.0,
+          "end": 891.36
+        }
+      ]
+    },
+    {
+      "id": "values",
+      "term": "Values",
+      "definition": "Term derived from Nietzsche, implying moral neutrality and relativism; the hosts discourage its use in ethical discussions.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 1573.88,
+          "end": 1751.119
+        }
+      ]
+    },
+    {
+      "id": "energies",
+      "term": "Energies",
+      "definition": "In Orthodox theology, God's activities in creation, which are eternal and reveal His nature, as opposed to His unknowable essence.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 7297.6,
+          "end": 7577.6
+        }
+      ]
+    },
+    {
+      "id": "dynamis",
+      "term": "Dynamis",
+      "definition": "Greek word for power or ability, used by Aristotle to describe potentiality, related to the concept of energies.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 7384.399,
+          "end": 7515.0
+        }
+      ]
+    },
+    {
+      "id": "teleology",
+      "term": "Teleology",
+      "definition": "The study of purpose or end; the hosts argue God has no teleology because He is not developing toward a goal.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 6958.0,
+          "end": 7048.279
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God through participation in His energies, leading to deification.",
+      "segments": [
+        {
+          "episode": 84,
+          "start": 9090.0,
+          "end": 9182.5
+        }
+      ]
+    }
+  ]
+}

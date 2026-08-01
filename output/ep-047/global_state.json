@@ -1,0 +1,411 @@
+{
+  "summary": "In this episode, the hosts continue their series on the Fall of Man, focusing on Cain as the archetypal sinner. They argue that while Adam's disobedience brought death into the world, it is Cain who is primarily identified with sin in Scripture and Second Temple Jewish literature. The discussion covers Cain's birth, his rejected sacrifice, the warning about sin crouching at his door, his murder of Abel, and his subsequent curse and founding of a city. The hosts explore how Cain becomes the 'son of the devil' through his actions, contrasting this with theosis, and examine his legacy as the founder of the 'city of man' in contrast to the 'city of God.' They also address the serpent seed theory, the mark of Cain, and the ritual impurity associated with murder, drawing on sources like 1 John, Josephus, Philo, and St. Augustine. The episode concludes with practical applications about self-mastery, spiritual warfare, and the importance of living as part of a community rather than as isolated individuals.",
+  "entities": [
+    {
+      "id": "cain",
+      "title": "Cain",
+      "category": "person",
+      "summary": "Firstborn son of Adam and Eve, first murderer, and archetypal sinner in Scripture and tradition.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 300.0,
+          "end": 391.84
+        },
+        {
+          "episode": 47,
+          "start": 936.159,
+          "end": 1031.799
+        },
+        {
+          "episode": 47,
+          "start": 2730.0,
+          "end": 2823.76
+        }
+      ]
+    },
+    {
+      "id": "abel",
+      "title": "Abel",
+      "category": "person",
+      "summary": "Younger brother of Cain, whose righteous sacrifice was accepted by God, leading to his murder.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 1460.0,
+          "end": 1550.4
+        }
+      ]
+    },
+    {
+      "id": "adam",
+      "title": "Adam",
+      "category": "person",
+      "summary": "First man, whose disobedience brought death into the world, but who is not primarily identified with sin in the same way as Cain.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 819.559,
+          "end": 919.84
+        }
+      ]
+    },
+    {
+      "id": "st-augustine",
+      "title": "St. Augustine",
+      "category": "person",
+      "summary": "Church Father who emphasized the expulsion from Paradise as the pivotal fall, influencing Western theology. His work 'City of God' discusses Cain as founder of the earthly city.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 394.0,
+          "end": 612.32
+        },
+        {
+          "episode": 47,
+          "start": 4834.92,
+          "end": 5172.79
+        }
+      ]
+    },
+    {
+      "id": "st-irenaeus",
+      "title": "St. Irenaeus",
+      "category": "person",
+      "summary": "Church Father who saw the events of Genesis 4-9 (Cain and the flood) as the main event of the fall.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 458.0,
+          "end": 554.24
+        }
+      ]
+    },
+    {
+      "id": "josephus",
+      "title": "Josephus",
+      "category": "person",
+      "summary": "First-century Jewish historian who described Cain as a teacher of evil, introducing measures, weights, and boundaries.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 4297.439,
+          "end": 4440.2
+        }
+      ]
+    },
+    {
+      "id": "philo",
+      "title": "Philo of Alexandria",
+      "category": "person",
+      "summary": "First-century BC Jewish philosopher who wrote about Cain's curse and his alienation from creation.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 5770.79,
+          "end": 5878.439
+        }
+      ]
+    },
+    {
+      "id": "eridu",
+      "title": "Eridu",
+      "category": "place",
+      "summary": "Ancient Sumerian city, identified with the city founded by Cain in Genesis 4, traditionally considered the first city.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 3307.78,
+          "end": 3407.88
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "three-falls-of-man",
+      "title": "Three Falls of Man",
+      "summary": "The hosts discuss the concept of three distinct falls of man: the expulsion from Paradise, the sin of Cain leading to the flood, and the Tower of Babel. Different Church Fathers emphasize different falls as pivotal.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 358.92,
+          "end": 547.39
+        }
+      ]
+    },
+    {
+      "id": "sin-as-demon",
+      "title": "Sin as a Demonic Force",
+      "summary": "Sin is portrayed as a singular, demonic power that crouches at the door, seeking to master individuals. This is contrasted with 'sins' as individual offenses.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 2306.44,
+          "end": 2434.0
+        },
+        {
+          "episode": 47,
+          "start": 618.559,
+          "end": 708.84
+        }
+      ]
+    },
+    {
+      "id": "serpent-seed-theory",
+      "title": "Serpent Seed Theory",
+      "summary": "A fringe theory that Cain was literally the son of the serpent, not Adam. The hosts refute this, emphasizing that Cain was conceived naturally and became 'of the evil one' through his actions.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 1063.599,
+          "end": 1164.0
+        },
+        {
+          "episode": 47,
+          "start": 1260.0,
+          "end": 1350.48
+        }
+      ]
+    },
+    {
+      "id": "mark-of-cain",
+      "title": "Mark of Cain",
+      "summary": "The mark is not a physical mark but a pledge or oath from God that He would avenge Cain, breaking the cycle of violence.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 2970.0,
+          "end": 3224.239
+        }
+      ]
+    },
+    {
+      "id": "city-of-man-vs-city-of-god",
+      "title": "City of Man vs. City of God",
+      "summary": "Cain's founding of a city represents human civilization built on sin, contrasted with the eternal City of God. St. Augustine's paradigm is discussed.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 4834.92,
+          "end": 5172.79
+        }
+      ]
+    },
+    {
+      "id": "demonosis",
+      "title": "Demonosis",
+      "summary": "A term coined by the hosts to describe the process of becoming like demons, the opposite of theosis. It involves imaging the devil through sin.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 7375.0,
+          "end": 7467.319
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "cain-not-adam-archetypal-sinner",
+      "text": "Cain, not Adam, is the archetypal sinner in Scripture, identified with the origin of sinfulness and the one on the wrong side of judgment.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 819.559,
+          "end": 919.84
+        }
+      ]
+    },
+    {
+      "id": "sin-singular-power",
+      "text": "Sin is a singular, demonic power that seeks to master individuals, not just a list of offenses.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 2306.44,
+          "end": 2434.0
+        }
+      ]
+    },
+    {
+      "id": "cain-son-of-devil",
+      "text": "Cain became the son of the devil by his actions, not by birth, imaging the devil through murder and wickedness.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 7110.0,
+          "end": 7208.72
+        }
+      ]
+    },
+    {
+      "id": "mark-of-cain-not-racial",
+      "text": "The mark of Cain is not a physical mark related to skin color; it is a pledge of God's protection, and all of Cain's descendants perished in the flood.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 2970.0,
+          "end": 3224.239
+        }
+      ]
+    },
+    {
+      "id": "city-founding-sinful",
+      "text": "The founding of the first city by Cain is presented as an outgrowth of sin, not a divine endowment, contrasting with pagan traditions.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 3600.0,
+          "end": 3695.159
+        }
+      ]
+    },
+    {
+      "id": "ritual-impurity-unremovable",
+      "text": "Murder, especially in a sacred context, incurs a permanent ritual impurity that cannot be removed, though forgiveness and repentance are still possible.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 6232.399,
+          "end": 6324.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-4-7",
+      "reference": "Genesis 4:7",
+      "summary": "God warns Cain that sin is crouching at his door, desiring to master him, but he must master it.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 2260.36,
+          "end": 2353.679
+        }
+      ]
+    },
+    {
+      "id": "genesis-4-12",
+      "reference": "Genesis 4:12",
+      "summary": "Cain is cursed from the ground, unable to farm, contrasting with Adam's curse on the ground.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 2823.76,
+          "end": 2916.44
+        }
+      ]
+    },
+    {
+      "id": "1-john-3-12",
+      "reference": "1 John 3:12",
+      "summary": "Cain is described as 'of the evil one' and murdered his brother because his deeds were evil and his brother's righteous.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 1838.14,
+          "end": 1931.79
+        },
+        {
+          "episode": 47,
+          "start": 7110.0,
+          "end": 7204.76
+        }
+      ]
+    },
+    {
+      "id": "romans-5-12",
+      "reference": "Romans 5:12",
+      "summary": "Sin came into the world through one man (Adam), but this is about sin as a power, not the beginning of sinning.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 2469.679,
+          "end": 2604.159
+        }
+      ]
+    },
+    {
+      "id": "jude-1-11",
+      "reference": "Jude 1:11",
+      "summary": "False teachers are compared to Cain, who followed his own way and led others astray.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 4676.76,
+          "end": 4768.159
+        }
+      ]
+    },
+    {
+      "id": "john-8-44",
+      "reference": "John 8:44",
+      "summary": "Jesus tells his critics they are of their father the devil, who was a murderer from the beginning, echoing Cain's example.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 7217.0,
+          "end": 7308.96
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "rovates",
+      "term": "Rovates",
+      "definition": "Hebrew word for 'crouching' in Genesis 4:7, derived from an Akkadian term for a demon that crawls up from the ground.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 2306.44,
+          "end": 2399.92
+        }
+      ]
+    },
+    {
+      "id": "agos",
+      "term": "Agos",
+      "definition": "Greek word for ritual impurity incurred by sacrilege and murder, often permanent.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 6120.0,
+          "end": 6215.38
+        }
+      ]
+    },
+    {
+      "id": "oat",
+      "term": "Oat",
+      "definition": "Hebrew word for 'mark' in the Mark of Cain, meaning a pledge, witness, or oath.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 3138.199,
+          "end": 3235.519
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God, the goal of Christian life, contrasted with demonosis.",
+      "segments": [
+        {
+          "episode": 47,
+          "start": 6870.0,
+          "end": 6960.0
+        }
+      ]
+    }
+  ]
+}

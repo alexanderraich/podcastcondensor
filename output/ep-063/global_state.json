@@ -1,0 +1,664 @@
+{
+  "summary": "In this episode, the hosts explore the Holy Mystery of Monasticism, tracing its roots from the Old Testament Nazarite vow through the New Testament and into early Christian monasticism. They begin by examining Numbers 6, where the Nazarite vow is instituted, highlighting the three key restrictions: abstaining from wine and grape products, not cutting one's hair, and avoiding contact with corpses. The discussion then turns to Samson, the most famous Nazarite, who is portrayed as a 'bad monk' who breaks all his vows, leading to his downfall. The hosts contrast Samson with St. John the Forerunner, who embodies the Nazarite ideal, and discuss how early Christian monasticism developed in Egypt and Syria, influenced by figures like St. Anthony the Great and St. John Cassian. The episode concludes with reflections on the nature of asceticism, the importance of embodying one's faith, and the relevance of monastic practices for all Christians.",
+  "entities": [
+    {
+      "id": "samson",
+      "title": "Samson",
+      "category": "person",
+      "summary": "A judge of Israel from the tribe of Dan, a Nazarite from birth, who broke his vows and is portrayed negatively in the episode.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 1598.72,
+          "end": 1691.599
+        },
+        {
+          "episode": 63,
+          "start": 3140.559,
+          "end": 3232.519
+        },
+        {
+          "episode": 63,
+          "start": 3267.36,
+          "end": 3359.139
+        },
+        {
+          "episode": 63,
+          "start": 3304.96,
+          "end": 3401.76
+        },
+        {
+          "episode": 63,
+          "start": 3360.0,
+          "end": 3450.79
+        }
+      ]
+    },
+    {
+      "id": "st-john-the-baptist",
+      "title": "St. John the Baptist",
+      "category": "person",
+      "summary": "The Forerunner of Christ, a Nazarite who kept his vows and is a model for monasticism.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 4950.0,
+          "end": 5046.0
+        },
+        {
+          "episode": 63,
+          "start": 5073.18,
+          "end": 5165.56
+        },
+        {
+          "episode": 63,
+          "start": 5220.0,
+          "end": 5312.84
+        }
+      ]
+    },
+    {
+      "id": "st-anthony-the-great",
+      "title": "St. Anthony the Great",
+      "category": "person",
+      "summary": "An early Egyptian monastic, considered a founder of Christian monasticism, known for his ascetic life and spiritual warfare.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 8211.399,
+          "end": 8306.879
+        },
+        {
+          "episode": 63,
+          "start": 8319.0,
+          "end": 8410.0
+        }
+      ]
+    },
+    {
+      "id": "st-john-cassian",
+      "title": "St. John Cassian",
+      "category": "person",
+      "summary": "A monk and theologian who brought Eastern monasticism to the West, wrote the 'Conferences' and 'Institutes', and influenced St. Benedict.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 8666.799,
+          "end": 8760.4
+        },
+        {
+          "episode": 63,
+          "start": 8777.12,
+          "end": 8868.0
+        }
+      ]
+    },
+    {
+      "id": "tribe-of-dan",
+      "title": "Tribe of Dan",
+      "category": "historical",
+      "summary": "One of the twelve tribes of Israel, often associated with idolatry and violence, and notably omitted from the list of tribes in Revelation.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 1736.79,
+          "end": 1828.79
+        },
+        {
+          "episode": 63,
+          "start": 1828.79,
+          "end": 1919.96
+        },
+        {
+          "episode": 63,
+          "start": 1985.839,
+          "end": 2083.679
+        },
+        {
+          "episode": 63,
+          "start": 2094.84,
+          "end": 2189.96
+        },
+        {
+          "episode": 63,
+          "start": 2227.84,
+          "end": 2320.79
+        },
+        {
+          "episode": 63,
+          "start": 2484.28,
+          "end": 2576.32
+        }
+      ]
+    },
+    {
+      "id": "mount-athos",
+      "title": "Mount Athos",
+      "category": "place",
+      "summary": "A peninsula in Greece, a major center of Orthodox monasticism, associated with the Theotokos and the burial of a giant.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 8965.44,
+          "end": 9059.92
+        },
+        {
+          "episode": 63,
+          "start": 9024.159,
+          "end": 9120.0
+        },
+        {
+          "episode": 63,
+          "start": 9176.76,
+          "end": 9269.0
+        }
+      ]
+    },
+    {
+      "id": "st-ephraim-the-syrian",
+      "title": "St. Ephraim the Syrian",
+      "category": "person",
+      "summary": "A fourth-century theologian and hymnographer who listed Samson among the dead in hell, indicating a negative view of him.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 4104.119,
+          "end": 4194.6
+        }
+      ]
+    },
+    {
+      "id": "st-hippolytus",
+      "title": "St. Hippolytus",
+      "category": "person",
+      "summary": "An early Church Father who called Samson a forerunner of the Antichrist, linking him to the tribe of Dan.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 3927.679,
+          "end": 4019.639
+        },
+        {
+          "episode": 63,
+          "start": 4020.0,
+          "end": 4110.119
+        }
+      ]
+    },
+    {
+      "id": "st-john-chrysostom",
+      "title": "St. John Chrysostom",
+      "category": "person",
+      "summary": "A Church Father who defended St. Paul's mention of Samson in Hebrews, clarifying that it does not endorse his life.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 4218.159,
+          "end": 4311.279
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "nazarite-vow",
+      "title": "Nazarite Vow",
+      "summary": "A vow in the Old Testament where a person separates themselves to the Lord, abstaining from wine and grapes, not cutting their hair, and avoiding contact with corpses. It is seen as a precursor to Christian monasticism.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 477.48,
+          "end": 655.799
+        },
+        {
+          "episode": 63,
+          "start": 671.0,
+          "end": 762.2
+        },
+        {
+          "episode": 63,
+          "start": 765.72,
+          "end": 864.139
+        }
+      ]
+    },
+    {
+      "id": "monasticism",
+      "title": "Christian Monasticism",
+      "summary": "The way of life of monks and nuns, characterized by asceticism, prayer, and separation from the world. It developed from the Nazarite tradition and was shaped by figures like St. Anthony the Great and St. John Cassian.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 7827.92,
+          "end": 7919.68
+        },
+        {
+          "episode": 63,
+          "start": 8188.88,
+          "end": 8279.319
+        },
+        {
+          "episode": 63,
+          "start": 8960.479,
+          "end": 9053.44
+        }
+      ]
+    },
+    {
+      "id": "asceticism",
+      "title": "Asceticism",
+      "summary": "The practice of giving up good things for better things, such as fasting, vigils, and almsgiving, to discipline the passions and grow closer to God. It is not about rejecting creation as evil but about preventing good things from becoming snares.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 9469.0,
+          "end": 9561.159
+        },
+        {
+          "episode": 63,
+          "start": 9599.36,
+          "end": 9689.4
+        },
+        {
+          "episode": 63,
+          "start": 9817.12,
+          "end": 9907.479
+        }
+      ]
+    },
+    {
+      "id": "samson-as-bad-monk",
+      "title": "Samson as a Bad Monk",
+      "summary": "Samson, a Nazarite from birth, is presented as a negative example who breaks all his vows, leading to his downfall. The hosts argue that he is not a saint and is seen by Church Fathers as a forerunner of the Antichrist.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 1626.46,
+          "end": 1720.24
+        },
+        {
+          "episode": 63,
+          "start": 3140.559,
+          "end": 3232.519
+        },
+        {
+          "episode": 63,
+          "start": 3267.36,
+          "end": 3359.139
+        },
+        {
+          "episode": 63,
+          "start": 3304.96,
+          "end": 3401.76
+        },
+        {
+          "episode": 63,
+          "start": 3360.0,
+          "end": 3450.79
+        }
+      ]
+    },
+    {
+      "id": "st-john-the-forerunner-as-model",
+      "title": "St. John the Forerunner as Model",
+      "summary": "St. John the Baptist is presented as the ideal Nazarite, keeping his vows and embodying the ascetic life. He is contrasted with Samson and serves as a model for Christian monasticism.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 4950.0,
+          "end": 5046.0
+        },
+        {
+          "episode": 63,
+          "start": 5073.18,
+          "end": 5165.56
+        },
+        {
+          "episode": 63,
+          "start": 5220.0,
+          "end": 5312.84
+        }
+      ]
+    },
+    {
+      "id": "hair-and-sexuality",
+      "title": "Hair and Sexuality in Ancient Culture",
+      "summary": "In ancient Greek and Roman culture, long hair was associated with sexual availability and openness. St. Paul's instructions about hair in 1 Corinthians are understood in this context, addressing former pagans.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 5550.0,
+          "end": 5643.68
+        },
+        {
+          "episode": 63,
+          "start": 5797.64,
+          "end": 5893.6
+        },
+        {
+          "episode": 63,
+          "start": 5910.0,
+          "end": 6041.779
+        }
+      ]
+    },
+    {
+      "id": "acts-21-and-temple-sacrifices",
+      "title": "Acts 21 and Temple Sacrifices",
+      "summary": "Acts 21 shows St. Paul participating in Jewish temple rituals, including Nazarite vows and sacrifices, after Christ's resurrection. This challenges the idea that all temple sacrifices were immediately replaced by the Eucharist.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 6441.22,
+          "end": 6536.159
+        },
+        {
+          "episode": 63,
+          "start": 6542.52,
+          "end": 6634.56
+        },
+        {
+          "episode": 63,
+          "start": 6720.0,
+          "end": 6810.79
+        }
+      ]
+    },
+    {
+      "id": "monastic-tonsure",
+      "title": "Monastic Tonsure",
+      "summary": "The ritual of cutting the hair during the monastic profession, symbolizing a new beginning and self-offering to God. It is the material act of the sacrament of monasticism.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 8008.399,
+          "end": 8099.979
+        },
+        {
+          "episode": 63,
+          "start": 8121.88,
+          "end": 8212.68
+        }
+      ]
+    },
+    {
+      "id": "embodiment-of-faith",
+      "title": "Embodiment of Faith",
+      "summary": "Christianity is not just a set of beliefs but a way of life and being. Monasticism exemplifies this by embodying the Christian life in a profound way, and all Christians are called to embody their faith.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 10620.0,
+          "end": 10787.159
+        },
+        {
+          "episode": 63,
+          "start": 10894.719,
+          "end": 10988.2
+        },
+        {
+          "episode": 63,
+          "start": 11001.28,
+          "end": 11100.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "samson-not-a-saint",
+      "text": "Samson is not a saint; he broke his Nazarite vows and is viewed negatively by Scripture and Church Fathers.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 1626.46,
+          "end": 1720.24
+        },
+        {
+          "episode": 63,
+          "start": 3140.559,
+          "end": 3232.519
+        },
+        {
+          "episode": 63,
+          "start": 3267.36,
+          "end": 3359.139
+        },
+        {
+          "episode": 63,
+          "start": 3304.96,
+          "end": 3401.76
+        },
+        {
+          "episode": 63,
+          "start": 3360.0,
+          "end": 3450.79
+        }
+      ]
+    },
+    {
+      "id": "nazarite-vow-is-divine-institution",
+      "text": "The Nazarite vow is directly instituted by God, not a human invention, as indicated by 'The Lord spoke to Moses' in Numbers 6.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 455.279,
+          "end": 549.44
+        }
+      ]
+    },
+    {
+      "id": "acts-21-shows-continuity",
+      "text": "Acts 21 shows that Jewish Christians continued to participate in temple sacrifices after Christ's resurrection, indicating a period of continuity.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 6542.52,
+          "end": 6634.56
+        },
+        {
+          "episode": 63,
+          "start": 6720.0,
+          "end": 6810.79
+        }
+      ]
+    },
+    {
+      "id": "asceticism-is-giving-up-good-for-better",
+      "text": "Asceticism is not about rejecting creation but about giving up good things for better things, to discipline the passions.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 9469.0,
+          "end": 9561.159
+        },
+        {
+          "episode": 63,
+          "start": 9599.36,
+          "end": 9689.4
+        }
+      ]
+    },
+    {
+      "id": "monasticism-is-embodiment",
+      "text": "Christianity is a way of life, not just a set of beliefs, and monasticism embodies this in a profound way.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 10620.0,
+          "end": 10787.159
+        },
+        {
+          "episode": 63,
+          "start": 10894.719,
+          "end": 10988.2
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "numbers-6",
+      "reference": "Numbers 6:1-21",
+      "summary": "The institution of the Nazarite vow, including restrictions on wine, hair, and contact with corpses.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 435.279,
+          "end": 655.799
+        }
+      ]
+    },
+    {
+      "id": "genesis-49-dan",
+      "reference": "Genesis 49:17",
+      "summary": "Jacob's prophecy about Dan being a serpent, used to foreshadow the tribe's negative character.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 2094.84,
+          "end": 2189.96
+        }
+      ]
+    },
+    {
+      "id": "judges-13",
+      "reference": "Judges 13:5",
+      "summary": "The announcement of Samson's birth and his lifelong Nazarite vow.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 3038.42,
+          "end": 3129.48
+        }
+      ]
+    },
+    {
+      "id": "luke-1",
+      "reference": "Luke 1:13-17",
+      "summary": "The prophecy of John the Baptist's birth, drawing parallels to Samson's birth but with a positive outcome.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 5073.18,
+          "end": 5165.56
+        }
+      ]
+    },
+    {
+      "id": "acts-21",
+      "reference": "Acts 21:17-26",
+      "summary": "Paul participates in Nazarite vows and temple sacrifices, showing continuity with Jewish practices.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 6542.52,
+          "end": 6634.56
+        }
+      ]
+    },
+    {
+      "id": "amos-2",
+      "reference": "Amos 2:11-12",
+      "summary": "God raised up Nazarites and prophets, showing the divine calling for such roles.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 7907.279,
+          "end": 8000.399
+        }
+      ]
+    },
+    {
+      "id": "hebrews-11",
+      "reference": "Hebrews 11:32",
+      "summary": "Samson is mentioned in the list of heroes of faith, but the context is debated.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 3702.79,
+          "end": 3797.36
+        }
+      ]
+    },
+    {
+      "id": "revelation-7",
+      "reference": "Revelation 7:4-8",
+      "summary": "The tribe of Dan is omitted from the list of the 144,000, indicating its negative status.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 2484.28,
+          "end": 2576.32
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "nazarite",
+      "term": "Nazarite",
+      "definition": "A person who took a vow to separate themselves to the Lord, abstaining from wine, not cutting hair, and avoiding corpses.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 477.48,
+          "end": 655.799
+        }
+      ]
+    },
+    {
+      "id": "monasticism",
+      "term": "Monasticism",
+      "definition": "A way of life in which individuals dedicate themselves to God through asceticism, prayer, and community or solitude.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 7827.92,
+          "end": 7919.68
+        }
+      ]
+    },
+    {
+      "id": "tonsure",
+      "term": "Tonsure",
+      "definition": "The cutting of hair during monastic profession, symbolizing dedication and new beginning.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 8008.399,
+          "end": 8099.979
+        }
+      ]
+    },
+    {
+      "id": "asceticism",
+      "term": "Asceticism",
+      "definition": "The practice of self-discipline, such as fasting and vigils, to grow in virtue and closeness to God.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 9469.0,
+          "end": 9561.159
+        }
+      ]
+    },
+    {
+      "id": "forerunner",
+      "term": "Forerunner",
+      "definition": "A title for St. John the Baptist, who prepared the way for Christ.",
+      "segments": [
+        {
+          "episode": 63,
+          "start": 4950.0,
+          "end": 5046.0
+        }
+      ]
+    }
+  ]
+}

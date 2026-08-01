@@ -1,0 +1,358 @@
+{
+  "summary": "In this episode of the Lord of Spirits, Fathers Andrew Stephen Damick and Stephen De Young discuss the sacrament of confession, focusing on the nature of forgiveness, the role of the Torah, and the communal aspect of confession. They begin by challenging the view that God must punish every sin, arguing that this makes God subject to a higher principle and undermines His mercy. They then explore the purpose of the Torah, emphasizing that it was given as a sin management system, not a means of earning salvation. The conversation moves to the Old Testament sacrificial system, highlighting that forgiveness was tied to purification and restitution, and that confession was implied in the process. In the New Testament, they examine key passages such as Matthew 18 and James 5, showing that confession is a communal act within the church, and that God works through the community to forgive sins. They also discuss the practice of confession in the Orthodox Church, the meaning of penance as a treatment plan rather than punishment, and the importance of church discipline and excommunication as acts of love aimed at repentance. The episode concludes with a call to embrace the communal and healing nature of confession, and to offer the world the freedom and forgiveness found in Christ.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "One of the hosts, an Orthodox Christian priest from Emmaus, Pennsylvania.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 18.39,
+          "end": 109.48
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "One of the hosts, an Orthodox Christian priest from Lafayette, Louisiana.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 9.4,
+          "end": 102.92
+        }
+      ]
+    },
+    {
+      "id": "david",
+      "title": "David",
+      "category": "historical",
+      "summary": "King David, an example of someone who kept the Torah perfectly by repenting when he sinned, yet still needed a Savior.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 1705.98,
+          "end": 1808.4
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "historical",
+      "summary": "Moses, who struck the rock in the wilderness, an image of Christ taking judgment and giving life.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 4925.84,
+          "end": 5340.359
+        }
+      ]
+    },
+    {
+      "id": "zacchaeus",
+      "title": "Zacchaeus",
+      "category": "historical",
+      "summary": "A tax collector who repented and made restitution, demonstrating the connection between confession and restitution.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 4614.6,
+          "end": 4724.779
+        }
+      ]
+    },
+    {
+      "id": "saint-paul",
+      "title": "Saint Paul",
+      "category": "person",
+      "summary": "Apostle Paul, who wrote about the law, forgiveness, and church discipline, and whose life exemplified repentance.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 1882.0,
+          "end": 2159.719
+        }
+      ]
+    },
+    {
+      "id": "saint-james",
+      "title": "Saint James",
+      "category": "person",
+      "summary": "Author of the Epistle of James, which commands confession to one another and emphasizes the healing power of prayer.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 6570.0,
+          "end": 6660.159
+        }
+      ]
+    },
+    {
+      "id": "john-calvin",
+      "title": "John Calvin",
+      "category": "historical",
+      "summary": "Reformer who considered church discipline a mark of the true church.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 8490.0,
+          "end": 8580.2
+        }
+      ]
+    },
+    {
+      "id": "martin-luther",
+      "title": "Martin Luther",
+      "category": "historical",
+      "summary": "Reformer who had a sacrament of absolution and a version of public confession.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 8519.54,
+          "end": 8610.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "forgiveness-as-purification",
+      "title": "Forgiveness as Purification",
+      "summary": "Forgiveness in Scripture is often described as purification from uncleanness, not merely a legal pardon. It involves cleansing and healing from the corrupting effects of sin.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 2790.0,
+          "end": 2921.84
+        }
+      ]
+    },
+    {
+      "id": "torah-as-sin-management",
+      "title": "Torah as Sin Management",
+      "summary": "The Torah was given as a system to manage sin, providing commandments for righteous living and rituals for dealing with sin when it occurs, rather than a means to earn salvation.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 1539.44,
+          "end": 1642.79
+        }
+      ]
+    },
+    {
+      "id": "communal-confession",
+      "title": "Communal Confession",
+      "summary": "Confession in the New Testament is a communal act, done within the church community, not merely private prayer. It involves verbalizing sins to others as a means of healing and restoration.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 6737.76,
+          "end": 6830.399
+        }
+      ]
+    },
+    {
+      "id": "penance-as-treatment",
+      "title": "Penance as Treatment",
+      "summary": "In Orthodox practice, penance (epitimia) is not punishment but a treatment plan or guidance for spiritual growth, aimed at healing and forming good habits.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 7615.239,
+          "end": 7710.0
+        }
+      ]
+    },
+    {
+      "id": "church-discipline",
+      "title": "Church Discipline",
+      "summary": "Church discipline, including excommunication, is an act of love intended to bring about repentance and protect the community, not a final condemnation.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 7714.56,
+          "end": 7874.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "god-can-forgive-sins",
+      "text": "God can and does forgive sins directly, without requiring punishment, contrary to some theological views that God must punish every sin.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 1080.0,
+          "end": 1172.0
+        }
+      ]
+    },
+    {
+      "id": "torah-not-for-salvation",
+      "text": "The Torah was not given as a means to earn salvation, but as a sin management system to guide life and provide rituals for dealing with sin.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 1539.44,
+          "end": 1642.79
+        }
+      ]
+    },
+    {
+      "id": "confession-is-communal",
+      "text": "In the New Testament, confession of sins is a communal act, done within the church community, not merely private prayer to God.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 6737.76,
+          "end": 6830.399
+        }
+      ]
+    },
+    {
+      "id": "penance-not-punishment",
+      "text": "In Orthodox practice, penance is not punishment but a treatment plan for spiritual healing, aimed at forming good habits and making restitution.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 7615.239,
+          "end": 7710.0
+        }
+      ]
+    },
+    {
+      "id": "excommunication-for-repentance",
+      "text": "Excommunication is an act of love intended to bring about repentance and protect the community, not a final condemnation.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 7714.56,
+          "end": 7874.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "matthew-18-18",
+      "reference": "Matthew 18:18",
+      "summary": "Jesus gives the apostles authority to bind and loose, indicating that the church's actions on earth correspond to heaven.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 6234.39,
+          "end": 6324.96
+        }
+      ]
+    },
+    {
+      "id": "james-5-16",
+      "reference": "James 5:16",
+      "summary": "Confess your sins to one another and pray for one another that you may be healed.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 6570.0,
+          "end": 6660.159
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-5-5",
+      "reference": "1 Corinthians 5:5",
+      "summary": "Handing over to Satan for the destruction of the flesh so that the spirit may be saved.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 8204.959,
+          "end": 8299.0
+        }
+      ]
+    },
+    {
+      "id": "matthew-8-16-17",
+      "reference": "Matthew 8:16-17",
+      "summary": "Jesus heals the sick and casts out demons, fulfilling Isaiah's prophecy about bearing our diseases.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 3381.0,
+          "end": 3472.88
+        }
+      ]
+    },
+    {
+      "id": "psalm-51",
+      "reference": "Psalm 51",
+      "summary": "David's prayer of repentance, asking for cleansing and forgiveness.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 2850.0,
+          "end": 2942.44
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "epitimia",
+      "term": "Epitimia",
+      "definition": "Greek term for penance in Orthodox practice, meaning a treatment plan or guidance for spiritual growth, not punishment.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 7578.64,
+          "end": 7673.0
+        }
+      ]
+    },
+    {
+      "id": "anathema",
+      "term": "Anathema",
+      "definition": "A formal declaration of excommunication, intended to call to repentance, not a final condemnation.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 7815.56,
+          "end": 7908.0
+        }
+      ]
+    },
+    {
+      "id": "metanoia",
+      "term": "Metanoia",
+      "definition": "Greek word for repentance, meaning a change of mind or heart.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 4558.1,
+          "end": 4603.34
+        }
+      ]
+    },
+    {
+      "id": "torah",
+      "term": "Torah",
+      "definition": "The Law of Moses, understood as teaching and guidance for life, not a means of earning salvation.",
+      "segments": [
+        {
+          "episode": 58,
+          "start": 1211.799,
+          "end": 1302.799
+        }
+      ]
+    }
+  ]
+}

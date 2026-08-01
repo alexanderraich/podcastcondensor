@@ -1,0 +1,570 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young explore the question 'What is a spirit?' by first examining the words translated as 'spirit' in Hebrew (ruach), Greek (pneuma), Latin (spiritus), and English (ghost), noting their connections to wind and breath. They then consider examples of spirits in Scripture—human spirits, angelic/demonic spirits, and the Holy Spirit—and debunk common modern misconceptions, such as spirits being ethereal human-like beings or made of ectoplasm. The hosts propose a bottom-up approach, starting from consciousness in animals and plants, to argue that a spirit is a complex of faculties centered on natural will and energy that animates a body. They apply this to human spirits, angelic beings, and collective entities like families, communities, and nations, which have their own 'spirits' that can be good or evil. Finally, they discuss the Holy Spirit as the animating spirit of the Church, the body of Christ, and emphasize the importance of cooperating with the Holy Spirit rather than the spirit of the age.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of the Lord of Spirits podcast, an Orthodox Christian priest.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 102.0,
+          "end": 192.36
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "Co-host of the Lord of Spirits podcast, an Orthodox Christian priest.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 102.0,
+          "end": 192.36
+        }
+      ]
+    },
+    {
+      "id": "thomas-nagel",
+      "title": "Thomas Nagel",
+      "category": "person",
+      "summary": "Philosopher known for the paper 'What Is It Like to Be a Bat?' which discusses the subjective character of consciousness.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 4237.399,
+          "end": 4332.399
+        }
+      ]
+    },
+    {
+      "id": "holy-spirit",
+      "title": "Holy Spirit",
+      "category": "theological",
+      "summary": "The third person of the Trinity, who is divine and animates the Church, and is seen in the Old Testament as the presence of God.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 2697.76,
+          "end": 2787.8
+        },
+        {
+          "episode": 52,
+          "start": 2905.639,
+          "end": 2999.0
+        },
+        {
+          "episode": 52,
+          "start": 7860.0,
+          "end": 7968.92
+        }
+      ]
+    },
+    {
+      "id": "elohim",
+      "title": "Elohim",
+      "category": "theological",
+      "summary": "Hebrew word for God or gods, used in the Old Testament to refer to spiritual beings including angels and sometimes deceased humans.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 326.48,
+          "end": 418.48
+        },
+        {
+          "episode": 52,
+          "start": 471.839,
+          "end": 564.259
+        },
+        {
+          "episode": 52,
+          "start": 593.39,
+          "end": 688.48
+        }
+      ]
+    },
+    {
+      "id": "ruach",
+      "title": "Ruach",
+      "category": "theological",
+      "summary": "Hebrew word for spirit, literally meaning wind or breath, used in the Old Testament.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 638.72,
+          "end": 729.919
+        },
+        {
+          "episode": 52,
+          "start": 675.6,
+          "end": 768.0
+        }
+      ]
+    },
+    {
+      "id": "pneuma",
+      "title": "Pneuma",
+      "category": "theological",
+      "summary": "Greek word for spirit, meaning breath, wind, or blow, used in the New Testament.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 1118.759,
+          "end": 1211.559
+        },
+        {
+          "episode": 52,
+          "start": 1163.39,
+          "end": 1253.4
+        }
+      ]
+    },
+    {
+      "id": "spiritus",
+      "title": "Spiritus",
+      "category": "theological",
+      "summary": "Latin word for spirit, meaning breath or wind, from which the English word 'spirit' derives.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 1601.2,
+          "end": 1692.0
+        },
+        {
+          "episode": 52,
+          "start": 1644.39,
+          "end": 1739.599
+        }
+      ]
+    },
+    {
+      "id": "ghost",
+      "title": "Ghost",
+      "category": "other",
+      "summary": "English word for spirit, originally meaning spirit in general, but later narrowed to refer to a particular kind of spirit.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 1843.4,
+          "end": 1935.279
+        },
+        {
+          "episode": 52,
+          "start": 1859.279,
+          "end": 1949.92
+        },
+        {
+          "episode": 52,
+          "start": 2006.72,
+          "end": 2098.32
+        }
+      ]
+    },
+    {
+      "id": "st-john-chrysostom",
+      "title": "St. John Chrysostom",
+      "category": "person",
+      "summary": "Church Father who taught that people become demons by living like demons, not by dying violently.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 2289.159,
+          "end": 2382.0
+        },
+        {
+          "episode": 52,
+          "start": 2360.79,
+          "end": 2451.0
+        }
+      ]
+    },
+    {
+      "id": "st-basil",
+      "title": "St. Basil",
+      "category": "person",
+      "summary": "Church Father who wrote 'On the Holy Spirit' and affirmed the divinity of the Holy Spirit.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 2839.199,
+          "end": 2933.36
+        },
+        {
+          "episode": 52,
+          "start": 2858.96,
+          "end": 2953.0
+        }
+      ]
+    },
+    {
+      "id": "st-gregory-the-theologian",
+      "title": "St. Gregory the Theologian",
+      "category": "person",
+      "summary": "Church Father who emphasized that the Holy Spirit must be divine for theosis to be possible.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 2845.559,
+          "end": 2940.36
+        },
+        {
+          "episode": 52,
+          "start": 8844.239,
+          "end": 8936.479
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "spirit-as-will-and-energy",
+      "title": "Spirit as Will and Energy",
+      "summary": "A spirit is defined as the complex of faculties centered on the natural will and energy that animates a body, whether human, angelic, or collective.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 5540.2,
+          "end": 5630.479
+        },
+        {
+          "episode": 52,
+          "start": 5676.359,
+          "end": 5767.439
+        },
+        {
+          "episode": 52,
+          "start": 5830.0,
+          "end": 5924.319
+        }
+      ]
+    },
+    {
+      "id": "consciousness-spectrum",
+      "title": "Consciousness Spectrum",
+      "summary": "Consciousness and awareness exist on a continuum from low-level systems like plants and bacteria to higher levels in animals, humans, and angels, with God outside the category.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 4556.159,
+          "end": 4649.39
+        },
+        {
+          "episode": 52,
+          "start": 4898.159,
+          "end": 4992.319
+        }
+      ]
+    },
+    {
+      "id": "collective-spirits",
+      "title": "Collective Spirits",
+      "summary": "Families, communities, nations, and other groups have a spirit—a collective will and energy that can override individual wills and can be good or evil.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 6088.64,
+          "end": 6209.76
+        },
+        {
+          "episode": 52,
+          "start": 6240.0,
+          "end": 6330.39
+        }
+      ]
+    },
+    {
+      "id": "holy-spirit-as-animator",
+      "title": "Holy Spirit as Animator of the Church",
+      "summary": "The Holy Spirit animates the Church as the body of Christ, giving diverse gifts and empowering each member to function, analogous to how a human spirit animates a body.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 7860.0,
+          "end": 7968.92
+        },
+        {
+          "episode": 52,
+          "start": 8178.0,
+          "end": 8269.79
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "elohim-refers-to-spiritual-beings",
+      "text": "The Hebrew word Elohim is used in the Old Testament to refer to spiritual beings, including angels, demons, and sometimes deceased humans, not just God.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 471.839,
+          "end": 564.259
+        },
+        {
+          "episode": 52,
+          "start": 593.39,
+          "end": 688.48
+        }
+      ]
+    },
+    {
+      "id": "spirit-is-not-a-human-like-being",
+      "text": "Spirits are not ethereal humans or made of ectoplasm; they are not a subcategory of human, and human and spirit are not subcategories of a third thing.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 3810.0,
+          "end": 3903.36
+        },
+        {
+          "episode": 52,
+          "start": 3925.679,
+          "end": 4019.679
+        }
+      ]
+    },
+    {
+      "id": "spirit-animates-body",
+      "text": "A spirit is the will and energy that animates a body, whether that body is a human, an angel, or a collective entity like a family or nation.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 5540.2,
+          "end": 5630.479
+        },
+        {
+          "episode": 52,
+          "start": 5676.359,
+          "end": 5767.439
+        }
+      ]
+    },
+    {
+      "id": "collective-units-have-spirits",
+      "text": "Families, communities, and nations have a spirit—a collective will and energy that can override individual wills and can be good or evil.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 6088.64,
+          "end": 6209.76
+        },
+        {
+          "episode": 52,
+          "start": 6240.0,
+          "end": 6330.39
+        }
+      ]
+    },
+    {
+      "id": "holy-spirit-animates-church",
+      "text": "The Holy Spirit animates the Church as the body of Christ, giving diverse gifts and empowering each member to function, analogous to how a human spirit animates a body.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 7860.0,
+          "end": 7968.92
+        },
+        {
+          "episode": 52,
+          "start": 8178.0,
+          "end": 8269.79
+        }
+      ]
+    },
+    {
+      "id": "no-neutral-ground",
+      "text": "There is no neutral ground: humans are always being animated by either the Spirit of God or a dark spirit, and we must choose to cooperate with the Holy Spirit.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 9240.0,
+          "end": 9330.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-3-8",
+      "reference": "Genesis 3:8",
+      "summary": "Discussed the phrase 'spirit of the day' and its possible meanings, including judgment.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 717.159,
+          "end": 809.679
+        },
+        {
+          "episode": 52,
+          "start": 868.12,
+          "end": 959.279
+        }
+      ]
+    },
+    {
+      "id": "genesis-2-7",
+      "reference": "Genesis 2:7",
+      "summary": "God breathes into Adam, and he becomes a living soul, illustrating the relationship between spirit and soul.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 1269.44,
+          "end": 1364.79
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-2-11",
+      "reference": "1 Corinthians 2:11",
+      "summary": "No one knows the thoughts of God except the Spirit of God, showing the Spirit's intimate knowledge.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 7583.68,
+          "end": 7667.84
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-12",
+      "reference": "1 Corinthians 12",
+      "summary": "The Church is the body of Christ, animated by the Holy Spirit, with diverse gifts.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 7784.68,
+          "end": 7874.819
+        },
+        {
+          "episode": 52,
+          "start": 7860.0,
+          "end": 7968.92
+        }
+      ]
+    },
+    {
+      "id": "john-3-8",
+      "reference": "John 3:8",
+      "summary": "The wind blows where it wishes, and you hear its sound, but you do not know where it comes from or where it goes—analogy for the Spirit.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 5980.359,
+          "end": 6073.76
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "elohim",
+      "term": "Elohim",
+      "definition": "Hebrew word for God or gods, used for spiritual beings.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 326.48,
+          "end": 418.48
+        }
+      ]
+    },
+    {
+      "id": "ruach",
+      "term": "Ruach",
+      "definition": "Hebrew word for spirit, meaning wind or breath.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 638.72,
+          "end": 729.919
+        }
+      ]
+    },
+    {
+      "id": "pneuma",
+      "term": "Pneuma",
+      "definition": "Greek word for spirit, meaning breath, wind, or blow.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 1118.759,
+          "end": 1211.559
+        }
+      ]
+    },
+    {
+      "id": "spiritus",
+      "term": "Spiritus",
+      "definition": "Latin word for spirit, meaning breath or wind.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 1601.2,
+          "end": 1692.0
+        }
+      ]
+    },
+    {
+      "id": "ghost",
+      "term": "Ghost",
+      "definition": "English word for spirit, originally meaning spirit in general.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 1843.4,
+          "end": 1935.279
+        }
+      ]
+    },
+    {
+      "id": "ectoplasm",
+      "term": "Ectoplasm",
+      "definition": "A substance supposedly exuded by spiritualist mediums as evidence of spirits, later debunked.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 3446.79,
+          "end": 3538.0
+        },
+        {
+          "episode": 52,
+          "start": 3554.239,
+          "end": 3646.0
+        }
+      ]
+    },
+    {
+      "id": "natural-will",
+      "term": "Natural Will",
+      "definition": "The directedness and propulsion that moves any being toward its telos, related to its nature.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 5377.8,
+          "end": 5473.92
+        }
+      ]
+    },
+    {
+      "id": "energies",
+      "term": "Energies",
+      "definition": "Theological term for the operations or activities of a being, especially God's energies.",
+      "segments": [
+        {
+          "episode": 52,
+          "start": 5517.199,
+          "end": 5608.159
+        }
+      ]
+    }
+  ]
+}

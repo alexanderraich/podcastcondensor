@@ -1,0 +1,451 @@
+{
+  "summary": "In this episode, the hosts discuss the five (or so) falls of angels, examining how biblical narratives correct and co-opt pagan myths. They begin by critiquing the modern view of mythology as primitive explanations, arguing instead that these stories are distorted accounts of real spiritual events. The first fall discussed is that of the devil, who becomes the Lord of Death after tempting Eve in Genesis 3. The hosts explore the Hebrew wordplay in the serpent narrative and connect it to Isaiah 14 and Ezekiel 28, showing how these prophets retell the story using Babylonian and Tyrian imagery. They also address the origin of the name 'Lucifer' from 1 Enoch via St. Jerome. The second fall involves the Watchers (sons of God) who gave forbidden knowledge to humanity, leading to corruption and the Nephilim. The hosts link this to the Sumerian Apkallu tradition and the ritual origins of giants, as seen in Deuteronomy 3's description of Og's bed. The third fall is the origin of unclean spirits from the Nephilim, who after the flood become demons that afflict humanity, as described in the Book of Jubilees. The fourth fall is the Tower of Babel, where God confuses languages and assigns the nations to angelic beings (sons of God), who later rebel by accepting worship. The fifth fall is the casting down of Satan during Christ's ministry, as referenced in Luke 10 and Revelation 12, with a discussion on whether Satan and the devil are the same being. The episode concludes with a preview of the next topic: theosis and becoming sons of God.",
+  "entities": [
+    {
+      "id": "devil",
+      "title": "The Devil",
+      "category": "theological",
+      "summary": "The fallen angel who rebelled against God and became the Lord of Death, tempting humanity into sin.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 540.0,
+          "end": 897.72
+        },
+        {
+          "episode": 3,
+          "start": 1930.64,
+          "end": 2021.68
+        }
+      ]
+    },
+    {
+      "id": "satan",
+      "title": "Satan",
+      "category": "theological",
+      "summary": "A title meaning 'adversary' or 'accuser', often identified with the devil but possibly a distinct being in some traditions. He is cast down during Christ's ministry.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 5296.96,
+          "end": 5790.0
+        }
+      ]
+    },
+    {
+      "id": "lucifer",
+      "title": "Lucifer",
+      "category": "theological",
+      "summary": "A name for the devil derived from 1 Enoch and popularized by St. Jerome's Latin translation of Isaiah 14:12.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 1234.4,
+          "end": 1434.96
+        }
+      ]
+    },
+    {
+      "id": "baal",
+      "title": "Baal",
+      "category": "theological",
+      "summary": "A Canaanite deity whose mythology includes a succession myth. The Bible often mentions Baal as a rival to Yahweh.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 133.0,
+          "end": 226.56
+        },
+        {
+          "episode": 3,
+          "start": 267.12,
+          "end": 357.12
+        }
+      ]
+    },
+    {
+      "id": "enlil",
+      "title": "Enlil",
+      "category": "theological",
+      "summary": "The chief god of old Babylon, overthrown by Marduk. Isaiah 14 uses his name (Helel) to refer to the devil.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 1280.79,
+          "end": 1373.759
+        }
+      ]
+    },
+    {
+      "id": "marduk",
+      "title": "Marduk",
+      "category": "theological",
+      "summary": "The Babylonian god who overthrew Enlil, becoming the chief god. He is part of the succession myth.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 1314.24,
+          "end": 1408.0
+        }
+      ]
+    },
+    {
+      "id": "og",
+      "title": "Og, King of Bashan",
+      "category": "historical",
+      "summary": "A giant king mentioned in Deuteronomy 3:11, whose bed was of iron and measured nine cubits, indicating his enormous size.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 2837.36,
+          "end": 2937.48
+        }
+      ]
+    },
+    {
+      "id": "saint-jerome",
+      "title": "St. Jerome",
+      "category": "person",
+      "summary": "A 5th-century church father who translated the Bible into Latin (Vulgate) and coined the name 'Lucifer' from 1 Enoch.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 1266.4,
+          "end": 1434.96
+        }
+      ]
+    },
+    {
+      "id": "saint-andrew-of-caesarea",
+      "title": "St. Andrew of Caesarea",
+      "category": "person",
+      "summary": "A church father who commented on the fall of Satan and the devil, suggesting they may be one being falling in two ways.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 1930.64,
+          "end": 2021.68
+        },
+        {
+          "episode": 3,
+          "start": 5730.0,
+          "end": 5830.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "succession-myth",
+      "title": "Succession Myth",
+      "summary": "A common ancient Near Eastern narrative where a younger god overthrows the high god, often successfully. The Bible corrects this by showing that rebellion against the true God always fails.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 196.0,
+          "end": 347.4
+        }
+      ]
+    },
+    {
+      "id": "propaganda",
+      "title": "Propaganda",
+      "summary": "The idea that pagan myths are demonic propaganda, distorting true events to lead people into idolatry and rebellion against God.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 89.0,
+          "end": 179.759
+        },
+        {
+          "episode": 3,
+          "start": 1015.679,
+          "end": 1109.68
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "title": "Divine Council",
+      "summary": "The assembly of angelic beings around God's throne, often depicted in ancient Near Eastern religion. In the Bible, it includes the 'sons of God' who are assigned to nations.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 210.0,
+          "end": 300.759
+        },
+        {
+          "episode": 3,
+          "start": 4433.619,
+          "end": 4527.6
+        }
+      ]
+    },
+    {
+      "id": "nephilim",
+      "title": "Nephilim",
+      "summary": "The offspring of the 'sons of God' and human women, described as giants. Their spirits become unclean demons after their death.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 2702.719,
+          "end": 2797.28
+        },
+        {
+          "episode": 3,
+          "start": 3270.0,
+          "end": 3369.519
+        }
+      ]
+    },
+    {
+      "id": "unclean-spirits",
+      "title": "Unclean Spirits",
+      "summary": "Demons that originate from the Nephilim, characterized by their uncleanness due to their illegitimate birth. They are the demons encountered in the Gospels.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 3197.4,
+          "end": 3299.119
+        },
+        {
+          "episode": 3,
+          "start": 3420.0,
+          "end": 3511.32
+        }
+      ]
+    },
+    {
+      "id": "tower-of-babel",
+      "title": "Tower of Babel",
+      "summary": "The biblical account of humanity's attempt to build a ziggurat to manipulate the divine, leading to the confusion of languages and the assignment of nations to angelic beings.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 3988.92,
+          "end": 4450.319
+        }
+      ]
+    },
+    {
+      "id": "satan-fall",
+      "title": "Satan's Fall in Christ's Ministry",
+      "summary": "The event described in Luke 10:18 and Revelation 12 where Satan is cast down from heaven during Christ's ministry, marking a definitive defeat.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 5586.96,
+          "end": 5790.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "pagan-myths-are-propaganda",
+      "text": "Pagan myths are demonic propaganda, distorting true events to lead people into idolatry and rebellion against God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 89.0,
+          "end": 179.759
+        },
+        {
+          "episode": 3,
+          "start": 1015.679,
+          "end": 1109.68
+        }
+      ]
+    },
+    {
+      "id": "devil-became-lord-of-death",
+      "text": "The devil became the Lord of Death after the fall in Genesis 3, being cursed to eat dust and associated with the underworld.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 760.32,
+          "end": 928.2
+        }
+      ]
+    },
+    {
+      "id": "lucifer-name-origin",
+      "text": "The name 'Lucifer' comes from 1 Enoch via St. Jerome, not from the Hebrew text of Isaiah 14.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 1234.4,
+          "end": 1434.96
+        }
+      ]
+    },
+    {
+      "id": "nephilim-spirits-become-demons",
+      "text": "The spirits of the Nephilim become unclean demons after their death, as described in the Book of Jubilees.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 3270.0,
+          "end": 3369.519
+        },
+        {
+          "episode": 3,
+          "start": 3420.0,
+          "end": 3511.32
+        }
+      ]
+    },
+    {
+      "id": "tower-of-babel-assignment",
+      "text": "At the Tower of Babel, God assigned the nations to angelic beings (sons of God), who later rebelled by accepting worship.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 4433.619,
+          "end": 4940.319
+        }
+      ]
+    },
+    {
+      "id": "satan-fall-in-christ",
+      "text": "Satan was cast down from heaven during Christ's ministry, as seen in Luke 10:18 and Revelation 12.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 5586.96,
+          "end": 5790.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-3-14-15",
+      "reference": "Genesis 3:14-15",
+      "summary": "The curse on the serpent, interpreted as the devil's fall and becoming the Lord of Death.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 760.32,
+          "end": 928.2
+        }
+      ]
+    },
+    {
+      "id": "isaiah-14-12-15",
+      "reference": "Isaiah 14:12-15",
+      "summary": "The fall of Helel ben Shachar, identified with the devil, correcting the Babylonian succession myth.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 1037.359,
+          "end": 1345.48
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-28-11-19",
+      "reference": "Ezekiel 28:11-19",
+      "summary": "The lament for the King of Tyre, describing the fall of a guardian cherub, connected to the devil.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 1434.96,
+          "end": 1527.48
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-32-8",
+      "reference": "Deuteronomy 32:8",
+      "summary": "The Most High divided the nations according to the number of the sons of God, referencing the Tower of Babel.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 4433.619,
+          "end": 4560.0
+        }
+      ]
+    },
+    {
+      "id": "luke-10-18",
+      "reference": "Luke 10:18",
+      "summary": "Jesus says, 'I saw Satan fall like lightning,' indicating a fall during his ministry.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 5586.96,
+          "end": 5678.0
+        }
+      ]
+    },
+    {
+      "id": "revelation-12-9",
+      "reference": "Revelation 12:9",
+      "summary": "The dragon, the devil, and Satan are cast down, ambiguous whether one or two beings.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 5745.0,
+          "end": 5847.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "apkallu",
+      "term": "Apkallu",
+      "definition": "Seven sages in Mesopotamian mythology who brought civilization and knowledge to humanity, often associated with the Watchers.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 2179.19,
+          "end": 2271.599
+        }
+      ]
+    },
+    {
+      "id": "shedu",
+      "term": "Shedu",
+      "definition": "A Babylonian territorial spirit, mentioned in Deuteronomy 32:17 as the demons to whom the nations sacrificed.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 4883.84,
+          "end": 4976.79
+        }
+      ]
+    },
+    {
+      "id": "satanel",
+      "term": "Satanel",
+      "definition": "A name for Satan in some Jewish traditions, meaning 'adversary of God', sometimes considered an archangel before his fall.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 5470.6,
+          "end": 5568.64
+        }
+      ]
+    },
+    {
+      "id": "sammael",
+      "term": "Sammael",
+      "definition": "A name for Satan in Jewish tradition, meaning 'venom of God', often identified as the angel of death.",
+      "segments": [
+        {
+          "episode": 3,
+          "start": 5533.359,
+          "end": 5625.52
+        }
+      ]
+    }
+  ]
+}

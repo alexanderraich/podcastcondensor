@@ -1,0 +1,343 @@
+{
+  "summary": "In this episode, the hosts explore the Orthodox sacrament of chrismation, explaining it as the anointing with oil to receive the Holy Spirit. They trace the themes of the Holy Spirit's indwelling and anointing through Scripture, from the Spirit's brooding over creation in Genesis, to the filling of prophets, kings, and craftsmen in the Old Testament, to the prophetic promise of the Spirit poured out on all flesh in Joel, and its fulfillment at Pentecost. They emphasize that chrismation is not a separate sacrament but part of the unified baptismal initiation, and that it empowers Christians to bear the fruit of the Spirit and keep God's commandments. The episode also discusses the concept of anointed ones (messiahs) in the Old Testament and Second Temple Judaism, including the kingly, priestly, and prophetic messiahs, and how Christ fulfills all these roles. Finally, they connect the anointing of the tabernacle and temple with the Christian as the temple of the Holy Spirit, and the practical implications of carrying the Spirit into the world to transform communities.",
+  "entities": [
+    {
+      "id": "holy-spirit",
+      "title": "Holy Spirit",
+      "category": "theological",
+      "summary": "The third person of the Trinity, who indwells believers and empowers them for Christian life.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 158.4,
+          "end": 252.96
+        },
+        {
+          "episode": 56,
+          "start": 1148.519,
+          "end": 1272.79
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "Old Testament prophet who possessed the Holy Spirit and led Israel out of Egypt.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 1286.92,
+          "end": 1378.79
+        }
+      ]
+    },
+    {
+      "id": "david",
+      "title": "David",
+      "category": "person",
+      "summary": "King of Israel, anointed by Samuel, and described as a prophet and man after God's own heart.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 1342.4,
+          "end": 1432.96
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "person",
+      "summary": "The Messiah, the anointed one, who fulfills the roles of king, priest, and prophet, and is the new temple.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 6793.39,
+          "end": 6885.0
+        },
+        {
+          "episode": 56,
+          "start": 9087.239,
+          "end": 9178.76
+        }
+      ]
+    },
+    {
+      "id": "tabernacle",
+      "title": "Tabernacle",
+      "category": "historical",
+      "summary": "The portable sanctuary built by Moses, anointed and filled with God's presence.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 7899.0,
+          "end": 7991.199
+        },
+        {
+          "episode": 56,
+          "start": 8022.0,
+          "end": 8116.0
+        }
+      ]
+    },
+    {
+      "id": "temple",
+      "title": "Temple",
+      "category": "historical",
+      "summary": "The permanent temple in Jerusalem, first built by Solomon, later rebuilt, but never again filled with the glory cloud.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 8177.6,
+          "end": 8268.959
+        },
+        {
+          "episode": 56,
+          "start": 8430.0,
+          "end": 8520.7
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "chrismation",
+      "title": "Chrismation",
+      "summary": "The Orthodox sacrament of anointing with chrism (holy oil) to receive the Holy Spirit, typically administered immediately after baptism.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 176.319,
+          "end": 267.12
+        },
+        {
+          "episode": 56,
+          "start": 634.0,
+          "end": 727.0
+        }
+      ]
+    },
+    {
+      "id": "holy-spirit-indwelling",
+      "title": "Indwelling of the Holy Spirit",
+      "summary": "The concept of the Holy Spirit dwelling within individuals, empowering them for God's mission, as seen in the Old Testament prophets and kings, and now in all Christians.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 1148.519,
+          "end": 1272.79
+        },
+        {
+          "episode": 56,
+          "start": 1267.44,
+          "end": 1359.279
+        }
+      ]
+    },
+    {
+      "id": "anointing",
+      "title": "Anointing",
+      "summary": "The act of applying oil as a sign of consecration and empowerment, particularly for kings, priests, and prophets, and in the New Testament for all Christians.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 5183.159,
+          "end": 5277.6
+        },
+        {
+          "episode": 56,
+          "start": 5220.0,
+          "end": 5313.76
+        }
+      ]
+    },
+    {
+      "id": "messianic-figures",
+      "title": "Messianic Figures",
+      "summary": "In Second Temple Judaism, there were expectations of multiple anointed figures: a kingly Messiah (son of David), a priestly Messiah (son of Levi), and a prophetic Messiah (Elijah), each to restore their respective office.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 5470.479,
+          "end": 5564.0
+        },
+        {
+          "episode": 56,
+          "start": 5599.6,
+          "end": 5693.239
+        }
+      ]
+    },
+    {
+      "id": "temple-as-body",
+      "title": "Temple as Body",
+      "summary": "The concept that the temple is not just a building but a body, and that Christ is the new temple, and Christians are temples of the Holy Spirit.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 9087.239,
+          "end": 9178.76
+        },
+        {
+          "episode": 56,
+          "start": 9371.36,
+          "end": 9464.459
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "chrismation-is-baptism",
+      "text": "Chrismation is not a separate sacrament but part of the unified baptismal initiation, where the newly baptized is anointed to receive the Holy Spirit.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 98.0,
+          "end": 194.8
+        },
+        {
+          "episode": 56,
+          "start": 634.0,
+          "end": 727.0
+        }
+      ]
+    },
+    {
+      "id": "holy-spirit-empowers-keeping-law",
+      "text": "The Holy Spirit empowers Christians to keep the Torah, not to earn salvation, but as the fruit of the Spirit and the fulfillment of the new covenant.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 3898.239,
+          "end": 4041.79
+        },
+        {
+          "episode": 56,
+          "start": 4116.8,
+          "end": 4207.52
+        }
+      ]
+    },
+    {
+      "id": "christ-is-temple",
+      "text": "Christ is the new temple, and Christians are temples of the Holy Spirit, anointed to carry God's presence into the world.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 9087.239,
+          "end": 9178.76
+        },
+        {
+          "episode": 56,
+          "start": 9371.36,
+          "end": 9464.459
+        }
+      ]
+    },
+    {
+      "id": "signs-indicate-presence",
+      "text": "Miraculous signs in the Gospels and Acts indicate that Christ and Christians are the true temple where God dwells, contrasting with the absence of signs in the second temple.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 9540.0,
+          "end": 9631.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-1-2",
+      "reference": "Genesis 1:2",
+      "summary": "The Spirit of God hovering over the waters, described as a mother bird brooding, indicating the Spirit's creative and life-giving role.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 158.4,
+          "end": 252.96
+        }
+      ]
+    },
+    {
+      "id": "joel-2-28-29",
+      "reference": "Joel 2:28-29",
+      "summary": "Prophecy of the Spirit poured out on all flesh, quoted at Pentecost, signifying the universal gift of the Spirit.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 2715.0,
+          "end": 2805.639
+        }
+      ]
+    },
+    {
+      "id": "acts-2",
+      "reference": "Acts 2",
+      "summary": "The fulfillment of Joel's prophecy at Pentecost, where the Holy Spirit descends on the apostles.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 2627.679,
+          "end": 2721.0
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-6-19",
+      "reference": "1 Corinthians 6:19",
+      "summary": "Your body is a temple of the Holy Spirit, indicating that Christians are indwelt by the Spirit.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 9371.36,
+          "end": 9464.459
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "chrism",
+      "term": "Chrism",
+      "definition": "A specially prepared oil consecrated by bishops, used in chrismation, consecration of churches, and other sacraments.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 180.0,
+          "end": 270.12
+        }
+      ]
+    },
+    {
+      "id": "messiah",
+      "term": "Messiah",
+      "definition": "Hebrew for 'anointed one', translated as Christ in Greek, referring to the expected deliverer of Israel.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 5183.159,
+          "end": 5277.6
+        }
+      ]
+    },
+    {
+      "id": "torah",
+      "term": "Torah",
+      "definition": "The Law of God, the first five books of the Bible, which the Holy Spirit empowers Christians to keep.",
+      "segments": [
+        {
+          "episode": 56,
+          "start": 3898.239,
+          "end": 3989.96
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,944 @@
+{
+  "summary": "In this episode, the hosts begin a four-part series on the Christology of the Old Testament, focusing on the Angel of the Lord. They explore the linguistic origins of the phrase, noting that 'angel' means 'messenger' and that the definite article in Hebrew indicates a specific being. They discuss the two possible interpretations of 'of the Lord'—possessive or attributive—and how Second Temple literature, such as the Apocalypse of Abraham, develops the figure of an angel named Yahweh. The episode traces the Angel of the Lord through key Old Testament passages, including the burning bush, the Exodus, Joshua, and Judges, arguing that this figure is the pre-incarnate Christ. They address the question of whether the Angel of the Lord is the second person of the Trinity in a post-resurrectional body, affirming this by discussing the eternal nature of Christ and the concept of time in heaven. The hosts also examine the role of the Angel of the Lord as a warrior and protector, leading Israel in battle, and conclude with a reflection on how understanding Christ's active presence in the Old Testament transforms our view of the Gospel and our own lives.",
+  "entities": [
+    {
+      "id": "yahweh",
+      "title": "Yahweh",
+      "category": "theological",
+      "summary": "The personal name of God in the Hebrew Bible, often translated as 'LORD' in English.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 133.199,
+          "end": 229.599
+        },
+        {
+          "episode": 30,
+          "start": 450.0,
+          "end": 540.0
+        },
+        {
+          "episode": 30,
+          "start": 2116.44,
+          "end": 2207.28
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "theological",
+      "summary": "The Son of God, identified with the Angel of the Lord in the Old Testament.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 2547.32,
+          "end": 2639.679
+        },
+        {
+          "episode": 30,
+          "start": 3677.99,
+          "end": 3769.0
+        },
+        {
+          "episode": 30,
+          "start": 3755.0,
+          "end": 3847.0
+        },
+        {
+          "episode": 30,
+          "start": 7210.46,
+          "end": 7303.119
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "historical",
+      "summary": "The prophet who led Israel out of Egypt and received the Torah.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 2096.0,
+          "end": 2188.4
+        },
+        {
+          "episode": 30,
+          "start": 2135.39,
+          "end": 2245.0
+        },
+        {
+          "episode": 30,
+          "start": 5640.0,
+          "end": 5736.88
+        }
+      ]
+    },
+    {
+      "id": "joshua",
+      "title": "Joshua",
+      "category": "historical",
+      "summary": "Moses' successor who led Israel into the Promised Land.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 4290.0,
+          "end": 4380.0
+        },
+        {
+          "episode": 30,
+          "start": 4634.239,
+          "end": 4726.0
+        }
+      ]
+    },
+    {
+      "id": "gideon",
+      "title": "Gideon",
+      "category": "historical",
+      "summary": "A judge of Israel who encountered the Angel of the Lord.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 6035.479,
+          "end": 6169.0
+        }
+      ]
+    },
+    {
+      "id": "hagar",
+      "title": "Hagar",
+      "category": "historical",
+      "summary": "Sarah's handmaid, the first person to encounter the Angel of the Lord in Scripture.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 6204.84,
+          "end": 6295.0
+        }
+      ]
+    },
+    {
+      "id": "balaam",
+      "title": "Balaam",
+      "category": "historical",
+      "summary": "A non-Israelite prophet who encountered the Angel of the Lord with a drawn sword.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 6338.88,
+          "end": 6434.96
+        }
+      ]
+    },
+    {
+      "id": "elijah",
+      "title": "Elijah",
+      "category": "historical",
+      "summary": "A prophet who interacted with the Angel of the Lord.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 6660.0,
+          "end": 6755.119
+        }
+      ]
+    },
+    {
+      "id": "saint-michael",
+      "title": "Saint Michael",
+      "category": "theological",
+      "summary": "An archangel, sometimes incorrectly identified as the Angel of the Lord.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 2906.96,
+          "end": 2997.239
+        },
+        {
+          "episode": 30,
+          "start": 4344.64,
+          "end": 4440.119
+        },
+        {
+          "episode": 30,
+          "start": 4648.319,
+          "end": 4740.0
+        }
+      ]
+    },
+    {
+      "id": "josephus",
+      "title": "Josephus",
+      "category": "historical",
+      "summary": "A first-century Jewish historian who mentions the giving of the Law by angels.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 1367.0,
+          "end": 1461.279
+        },
+        {
+          "episode": 30,
+          "start": 6888.699,
+          "end": 6980.279
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "historical",
+      "summary": "The Apostle Paul, who references the Law given by angels in Galatians and Hebrews.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 1260.0,
+          "end": 1357.0
+        },
+        {
+          "episode": 30,
+          "start": 1837.0,
+          "end": 1989.0
+        }
+      ]
+    },
+    {
+      "id": "st-stephen",
+      "title": "St. Stephen",
+      "category": "historical",
+      "summary": "The first Christian martyr, who in Acts 7 mentions the Law delivered by angels.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 1151.359,
+          "end": 1241.44
+        }
+      ]
+    },
+    {
+      "id": "st-justin-martyr",
+      "title": "St. Justin Martyr",
+      "category": "historical",
+      "summary": "An early Christian apologist who identified the Angel of the Lord with Christ.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 4427.119,
+          "end": 4521.0
+        }
+      ]
+    },
+    {
+      "id": "st-john-chrysostom",
+      "title": "St. John Chrysostom",
+      "category": "historical",
+      "summary": "A Church Father who spoke of Christ's incarnation as a 'special ops' mission.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 7380.0,
+          "end": 7475.6
+        }
+      ]
+    },
+    {
+      "id": "st-gregory-the-theologian",
+      "title": "St. Gregory the Theologian",
+      "category": "historical",
+      "summary": "A Church Father whose real self is his eternal identity in Christ, not his earthly struggles.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 7740.0,
+          "end": 7853.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "angel-of-the-lord",
+      "title": "Angel of the Lord",
+      "summary": "A specific angelic figure in the Old Testament, often identified with the pre-incarnate Christ, who appears as a messenger of God and is sometimes indistinguishable from Yahweh Himself.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 42.56,
+          "end": 134.879
+        },
+        {
+          "episode": 30,
+          "start": 133.199,
+          "end": 229.599
+        },
+        {
+          "episode": 30,
+          "start": 160.0,
+          "end": 257.379
+        },
+        {
+          "episode": 30,
+          "start": 232.96,
+          "end": 323.8
+        },
+        {
+          "episode": 30,
+          "start": 417.56,
+          "end": 508.8
+        },
+        {
+          "episode": 30,
+          "start": 536.0,
+          "end": 626.48
+        },
+        {
+          "episode": 30,
+          "start": 598.96,
+          "end": 690.0
+        },
+        {
+          "episode": 30,
+          "start": 760.799,
+          "end": 852.59
+        },
+        {
+          "episode": 30,
+          "start": 2547.32,
+          "end": 2639.679
+        },
+        {
+          "episode": 30,
+          "start": 2573.679,
+          "end": 2666.88
+        },
+        {
+          "episode": 30,
+          "start": 2927.0,
+          "end": 3017.39
+        },
+        {
+          "episode": 30,
+          "start": 6443.359,
+          "end": 6534.0
+        },
+        {
+          "episode": 30,
+          "start": 7137.52,
+          "end": 7227.699
+        }
+      ]
+    },
+    {
+      "id": "christology-of-the-old-testament",
+      "title": "Christology of the Old Testament",
+      "summary": "The study of how Christ is present and active in the Old Testament, not just as a foreshadowing but as a direct participant in events.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 26.0,
+          "end": 117.439
+        },
+        {
+          "episode": 30,
+          "start": 7527.72,
+          "end": 7619.52
+        }
+      ]
+    },
+    {
+      "id": "two-hypostases",
+      "title": "Two Hypostases",
+      "summary": "The concept in early Jewish and Christian thought that there are two distinct persons within the Godhead, which later develops into the doctrine of the Trinity.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 2275.239,
+          "end": 2366.0
+        }
+      ]
+    },
+    {
+      "id": "angel-of-the-presence",
+      "title": "Angel of the Presence",
+      "summary": "A figure in the Book of Jubilees and other Second Temple literature, identified with the Angel of the Lord, who mediated the Torah and led Israel.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 1590.0,
+          "end": 1680.619
+        },
+        {
+          "episode": 30,
+          "start": 1795.319,
+          "end": 1888.79
+        },
+        {
+          "episode": 30,
+          "start": 1935.59,
+          "end": 2028.319
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "title": "Divine Council",
+      "summary": "The heavenly assembly of angels and divine beings, where God deliberates and makes decisions, often associated with the Angel of the Lord as the messenger of the council's counsel.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 986.279,
+          "end": 1078.0
+        }
+      ]
+    },
+    {
+      "id": "eternal-reality",
+      "title": "Eternal Reality",
+      "summary": "The concept that God and the heavenly realm exist outside of time and space, and that eternal truths enter into human experience.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 2688.599,
+          "end": 2827.519
+        },
+        {
+          "episode": 30,
+          "start": 2820.0,
+          "end": 2914.0
+        }
+      ]
+    },
+    {
+      "id": "incarnation-without-change",
+      "title": "Incarnation Without Change",
+      "summary": "The theological principle that Christ, being God, became incarnate without altering His divine nature, and that His body is the same before and after the resurrection.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 2593.199,
+          "end": 2685.639
+        },
+        {
+          "episode": 30,
+          "start": 2835.199,
+          "end": 2927.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "angel-of-the-lord-is-christ",
+      "text": "The Angel of the Lord in the Old Testament is the pre-incarnate Christ, the second person of the Trinity.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 42.56,
+          "end": 134.879
+        },
+        {
+          "episode": 30,
+          "start": 2547.32,
+          "end": 2639.679
+        },
+        {
+          "episode": 30,
+          "start": 3677.99,
+          "end": 3769.0
+        },
+        {
+          "episode": 30,
+          "start": 7210.46,
+          "end": 7303.119
+        }
+      ]
+    },
+    {
+      "id": "torah-given-by-angels",
+      "text": "The Torah was given through angels, with the Angel of the Presence as the intermediary, as referenced in the New Testament and Second Temple literature.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 1115.0,
+          "end": 1206.48
+        },
+        {
+          "episode": 30,
+          "start": 1151.359,
+          "end": 1241.44
+        },
+        {
+          "episode": 30,
+          "start": 1260.0,
+          "end": 1357.0
+        },
+        {
+          "episode": 30,
+          "start": 1837.0,
+          "end": 1989.0
+        }
+      ]
+    },
+    {
+      "id": "angel-of-the-lord-is-not-michael",
+      "text": "The Angel of the Lord is not Saint Michael, as evidenced by the worship received and the first-person speech of Yahweh.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 2906.96,
+          "end": 2997.239
+        },
+        {
+          "episode": 30,
+          "start": 4344.64,
+          "end": 4440.119
+        },
+        {
+          "episode": 30,
+          "start": 4634.239,
+          "end": 4726.0
+        },
+        {
+          "episode": 30,
+          "start": 4875.68,
+          "end": 4969.439
+        }
+      ]
+    },
+    {
+      "id": "christ-active-in-old-testament",
+      "text": "Christ was actively involved in the Old Testament, not just foreshadowed, and this understanding enriches the Gospel.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 7527.72,
+          "end": 7619.52
+        },
+        {
+          "episode": 30,
+          "start": 7137.52,
+          "end": 7227.699
+        }
+      ]
+    },
+    {
+      "id": "angel-of-the-lord-has-body",
+      "text": "The Angel of the Lord, being Christ, has a body that is the same before and after the incarnation, as he is incarnate without change.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 2547.32,
+          "end": 2639.679
+        },
+        {
+          "episode": 30,
+          "start": 2573.679,
+          "end": 2666.88
+        }
+      ]
+    },
+    {
+      "id": "name-of-god-in-angel",
+      "text": "When God says 'my name is in him' regarding the Angel of the Lord, it means His identity is in the angel, not the literal tetragrammaton.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 3054.36,
+          "end": 3146.28
+        },
+        {
+          "episode": 30,
+          "start": 3146.28,
+          "end": 3259.0
+        }
+      ]
+    },
+    {
+      "id": "angel-of-the-lord-leads-armies",
+      "text": "The Angel of the Lord is a warrior who leads the armies of God, protecting Israel and executing judgment.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 7137.52,
+          "end": 7227.699
+        },
+        {
+          "episode": 30,
+          "start": 7210.46,
+          "end": 7303.119
+        }
+      ]
+    },
+    {
+      "id": "christ-special-ops",
+      "text": "Christ's incarnation was a 'special ops' mission to defeat the devil, hidden in humility, as described by St. John Chrysostom.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 7365.92,
+          "end": 7465.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "exodus-3-1-6",
+      "reference": "Exodus 3:1-6",
+      "summary": "The Angel of the Lord appears to Moses in the burning bush and identifies as the God of Abraham, Isaac, and Jacob.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 5640.0,
+          "end": 5736.88
+        }
+      ]
+    },
+    {
+      "id": "exodus-23-20-23",
+      "reference": "Exodus 23:20-23",
+      "summary": "God promises to send His angel before Israel, with His name in him, and warns of the consequences of rebellion.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 2980.48,
+          "end": 3075.119
+        },
+        {
+          "episode": 30,
+          "start": 3054.36,
+          "end": 3146.28
+        },
+        {
+          "episode": 30,
+          "start": 3869.0,
+          "end": 3959.84
+        }
+      ]
+    },
+    {
+      "id": "exodus-33-11-20",
+      "reference": "Exodus 33:11-20",
+      "summary": "The apparent contradiction of God speaking face to face with Moses and then saying no one can see His face is resolved by the two hypostases.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 2089.0,
+          "end": 2182.559
+        }
+      ]
+    },
+    {
+      "id": "joshua-5-13-15",
+      "reference": "Joshua 5:13-15",
+      "summary": "The commander of the Lord's army appears to Joshua, receives worship, and tells him to remove his sandals, identifying him as the Angel of the Lord.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 4290.0,
+          "end": 4380.0
+        }
+      ]
+    },
+    {
+      "id": "judges-2-1-5",
+      "reference": "Judges 2:1-5",
+      "summary": "The Angel of the Lord speaks in the first person as Yahweh, rebuking Israel for disobedience and announcing judgment.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 4747.119,
+          "end": 4839.0
+        }
+      ]
+    },
+    {
+      "id": "judges-6-11-24",
+      "reference": "Judges 6:11-24",
+      "summary": "The Angel of the Lord appears to Gideon, is identified with Yahweh, and performs a sign by consuming the offering with fire.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 6035.479,
+          "end": 6169.0
+        }
+      ]
+    },
+    {
+      "id": "genesis-16",
+      "reference": "Genesis 16",
+      "summary": "The Angel of the Lord appears to Hagar, showing care and promising that her son will be a great nation.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 6204.84,
+          "end": 6295.0
+        }
+      ]
+    },
+    {
+      "id": "genesis-22-11-15",
+      "reference": "Genesis 22:11-15",
+      "summary": "The Angel of the Lord calls to Abraham to stop the sacrifice of Isaac, speaking as God.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 6281.0,
+          "end": 6374.0
+        }
+      ]
+    },
+    {
+      "id": "numbers-22",
+      "reference": "Numbers 22",
+      "summary": "The Angel of the Lord with a drawn sword appears to Balaam, and the donkey sees him first.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 6338.88,
+          "end": 6434.96
+        }
+      ]
+    },
+    {
+      "id": "judges-13",
+      "reference": "Judges 13",
+      "summary": "The Angel of the Lord announces Samson's birth and reveals his name as 'Wonderful'.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 6443.359,
+          "end": 6534.0
+        }
+      ]
+    },
+    {
+      "id": "2-samuel-24-16",
+      "reference": "2 Samuel 24:16",
+      "summary": "The Angel of the Lord stays his hand from destroying Jerusalem, at the threshing floor of Araunah.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 6592.0,
+          "end": 6687.34
+        }
+      ]
+    },
+    {
+      "id": "1-chronicles-21-16",
+      "reference": "1 Chronicles 21:16",
+      "summary": "David sees the Angel of the Lord with a drawn sword, similar to Joshua's vision.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 6621.739,
+          "end": 6713.39
+        }
+      ]
+    },
+    {
+      "id": "1-kings-19",
+      "reference": "1 Kings 19",
+      "summary": "The Angel of the Lord interacts with Elijah, paralleling the word of Yahweh.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 6660.0,
+          "end": 6755.119
+        }
+      ]
+    },
+    {
+      "id": "2-kings-19-35",
+      "reference": "2 Kings 19:35",
+      "summary": "The Angel of the Lord strikes down 185,000 Assyrian soldiers in one night.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 6700.239,
+          "end": 6799.6
+        }
+      ]
+    },
+    {
+      "id": "isaiah-37-36",
+      "reference": "Isaiah 37:36",
+      "summary": "Parallel account of the Angel of the Lord destroying the Assyrian army.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 6700.239,
+          "end": 6799.6
+        }
+      ]
+    },
+    {
+      "id": "psalm-34-7",
+      "reference": "Psalm 34:7",
+      "summary": "The Angel of the Lord encamps around those who fear Him and delivers them.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 7050.0,
+          "end": 7148.42
+        }
+      ]
+    },
+    {
+      "id": "zechariah-1",
+      "reference": "Zechariah 1",
+      "summary": "The Angel of the Lord is identified with the word of Yahweh, an angel, and a man, setting up future episodes.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 7080.0,
+          "end": 7170.1
+        }
+      ]
+    },
+    {
+      "id": "jude-5",
+      "reference": "Jude 5",
+      "summary": "Jesus is identified as the one who saved Israel out of Egypt, confirming the Angel of the Lord as Christ.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 3677.99,
+          "end": 3769.0
+        }
+      ]
+    },
+    {
+      "id": "galatians-3-19-20",
+      "reference": "Galatians 3:19-20",
+      "summary": "Paul says the Law was put in place through angels by an intermediary, who is God, not Moses.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 1837.0,
+          "end": 1989.0
+        }
+      ]
+    },
+    {
+      "id": "hebrews-2-2",
+      "reference": "Hebrews 2:2",
+      "summary": "The message declared by angels (the Law) proved reliable, showing the angelic mediation of the Torah.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 1260.0,
+          "end": 1357.0
+        }
+      ]
+    },
+    {
+      "id": "acts-7-53",
+      "reference": "Acts 7:53",
+      "summary": "Stephen says the Jews received the Law as delivered by angels, a common belief.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 1151.359,
+          "end": 1241.44
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "angelos",
+      "term": "Angelos",
+      "definition": "Greek word for 'messenger', from which 'angel' is derived.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 265.12,
+          "end": 355.6
+        }
+      ]
+    },
+    {
+      "id": "malak",
+      "term": "Malak",
+      "definition": "Hebrew word for 'messenger' or 'angel'.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 310.959,
+          "end": 402.8
+        }
+      ]
+    },
+    {
+      "id": "tetragrammaton",
+      "term": "Tetragrammaton",
+      "definition": "The four Hebrew consonants of God's name, YHWH.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 3078.559,
+          "end": 3176.79
+        }
+      ]
+    },
+    {
+      "id": "hypostasis",
+      "term": "Hypostasis",
+      "definition": "A theological term for 'person' or 'subsistence', used in Trinitarian doctrine.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 2275.239,
+          "end": 2366.0
+        }
+      ]
+    },
+    {
+      "id": "second-temple-literature",
+      "term": "Second Temple Literature",
+      "definition": "Jewish writings from the period between 500 BC and 70 AD, including the Apocalypse of Abraham and Jubilees.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 598.96,
+          "end": 690.0
+        }
+      ]
+    },
+    {
+      "id": "gigantomachy",
+      "term": "Gigantomachy",
+      "definition": "The battle against giants, used to describe Israel's conquest of Canaan.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 4019.59,
+          "end": 4110.0
+        }
+      ]
+    },
+    {
+      "id": "theophany",
+      "term": "Theophany",
+      "definition": "An appearance of God to a human being.",
+      "segments": [
+        {
+          "episode": 30,
+          "start": 3265.159,
+          "end": 3360.0
+        }
+      ]
+    }
+  ]
+}

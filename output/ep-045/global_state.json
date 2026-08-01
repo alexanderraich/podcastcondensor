@@ -1,0 +1,829 @@
+{
+  "summary": "In this Q&A episode of the Lord of Spirits, Fathers Andrew Stephen Damick and Stephen De Young answer a wide range of listener questions on topics including Leviticus 18 and Molek, the absence of exorcisms in John's Gospel, the nature of prophecy and the Holy Spirit, the origin of sin as a spiritual force, the meaning of nakedness and garments of skin, the relationship between blessing, justice, and wisdom, the Orthodox approach to curses and the evil eye, the role of women in the Church, the atonement and legal language in salvation, theosis and demonosis, the union of spiritual and material reality, the Eucharist and blood prohibitions, the sacrament of marriage, how changes occur in the Church, gender and the body, the second coming, and ancient Near Eastern cosmology. The hosts provide theological insights grounded in Scripture, patristic tradition, and Orthodox practice, often emphasizing the spiritual reality behind material phenomena and the importance of community and faithfulness.",
+  "entities": [
+    {
+      "id": "molek",
+      "title": "Molek",
+      "category": "theological",
+      "summary": "A demon associated with child sacrifice in the Old Testament, often mistranslated as 'ruler' or 'king.'",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 248.319,
+          "end": 341.6
+        }
+      ]
+    },
+    {
+      "id": "saint-john-the-evangelist",
+      "title": "Saint John the Evangelist",
+      "category": "person",
+      "summary": "Author of the Fourth Gospel, traditionally seen as an elderly man writing a theological supplement to the Synoptics.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 540.0,
+          "end": 769.84
+        }
+      ]
+    },
+    {
+      "id": "saint-cassiani",
+      "title": "Saint Kassiani",
+      "category": "person",
+      "summary": "A Byzantine hymnographer and poet, known for the Hymn of Kassiani sung during Holy Week.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 3696.0,
+          "end": 3799.519
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "title": "Theotokos",
+      "category": "person",
+      "summary": "The Mother of God, venerated as the highest of all saints, exemplifying the pinnacle of human ministry.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 3835.8,
+          "end": 3941.559
+        }
+      ]
+    },
+    {
+      "id": "saint-augustine",
+      "title": "Saint Augustine",
+      "category": "person",
+      "summary": "Western theologian whose ideas on sin and guilt influenced later atonement theology.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 4687.0,
+          "end": 4778.56
+        }
+      ]
+    },
+    {
+      "id": "peter-lombard",
+      "title": "Peter Lombard",
+      "category": "person",
+      "summary": "Medieval theologian who introduced the sufficiency/efficiency distinction in atonement theology.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 4752.579,
+          "end": 4847.0
+        }
+      ]
+    },
+    {
+      "id": "shepherd-of-hermas",
+      "title": "Shepherd of Hermas",
+      "category": "historical",
+      "summary": "Early Christian text that discusses the powerlessness of the devil and the importance of fearing the works of the devil.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 1650.0,
+          "end": 1740.279
+        },
+        {
+          "episode": 45,
+          "start": 3154.8,
+          "end": 3246.96
+        }
+      ]
+    },
+    {
+      "id": "father-vijay",
+      "title": "Father Vijay",
+      "category": "person",
+      "summary": "A priest in the Indian Orthodox Church who asks about curses and the evil eye.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 2940.0,
+          "end": 3033.0
+        }
+      ]
+    },
+    {
+      "id": "kenzie",
+      "title": "Kenzie",
+      "category": "person",
+      "summary": "A Bible college student from Colorado Springs who asks about the role of women in ministry.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 3592.32,
+          "end": 3688.84
+        }
+      ]
+    },
+    {
+      "id": "travis",
+      "title": "Travis",
+      "category": "person",
+      "summary": "A listener who asks about sin, theosis, and demonosis.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 1452.559,
+          "end": 1563.64
+        },
+        {
+          "episode": 45,
+          "start": 4874.159,
+          "end": 4968.56
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "A professional counselor from Portland, Oregon, who asks about gender and the body.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 7625.0,
+          "end": 7739.319
+        }
+      ]
+    },
+    {
+      "id": "kyle",
+      "title": "Kyle",
+      "category": "person",
+      "summary": "A listener from Ireland who asks about the Second Coming.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 8825.76,
+          "end": 8920.2
+        }
+      ]
+    },
+    {
+      "id": "phil",
+      "title": "Phil",
+      "category": "person",
+      "summary": "A listener from Canada who asks about legal language in salvation.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 9115.68,
+          "end": 9209.68
+        }
+      ]
+    },
+    {
+      "id": "jonathan",
+      "title": "Jonathan",
+      "category": "person",
+      "summary": "A listener who asks about ancient Near Eastern cosmology.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 9816.319,
+          "end": 9906.799
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "molek-and-child-sacrifice",
+      "title": "Molek and Child Sacrifice",
+      "summary": "The hosts explain that Leviticus 18:21 refers to Molek, a specific demon associated with child sacrifice, not a general reference to Nephilim rituals. They connect it to fertility practices and contrast it with the biblical command to be fruitful.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 223.52,
+          "end": 359.92
+        }
+      ]
+    },
+    {
+      "id": "johns-gospel-as-supplement",
+      "title": "John's Gospel as Theological Supplement",
+      "summary": "The hosts suggest that John's Gospel was written after the Synoptics and functions as a supplement, assuming knowledge of the other Gospels. This explains the absence of exorcisms and other events, as John focuses on different theological themes.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 540.0,
+          "end": 769.84
+        }
+      ]
+    },
+    {
+      "id": "holy-spirit-possession-and-prophecy",
+      "title": "Holy Spirit Possession and Prophecy",
+      "summary": "The hosts discuss the difference between the Holy Spirit 'coming upon' someone temporarily (as in the case of Saul) and being 'filled with the Spirit' as a permanent state. They explain that prophecy can be a painful experience for the impure, and that God can use sinners for His purposes.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 987.84,
+          "end": 1474.0
+        }
+      ]
+    },
+    {
+      "id": "sin-as-demonic-force",
+      "title": "Sin as Demonic Force",
+      "summary": "The hosts describe sin as a demonic spiritual being that works through human cooperation. They emphasize that yielding to passions gives control to demonic forces, and that there is a continuum between sinning and demonic possession.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 1595.5,
+          "end": 1839.4
+        }
+      ]
+    },
+    {
+      "id": "nakedness-and-garments-of-skin",
+      "title": "Nakedness and Garments of Skin",
+      "summary": "The hosts interpret the nakedness of Adam and Eve as a sign of innocence and childlike maturity. The 'garments of skin' are understood patristically as a change in human nature after the Fall, not literal animal skins.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 2137.39,
+          "end": 2416.8
+        }
+      ]
+    },
+    {
+      "id": "blessing-justice-wisdom",
+      "title": "Blessing, Justice, and Wisdom",
+      "summary": "The hosts clarify that blessing, justice, and wisdom are related but distinct concepts. Justice is the proper order of creation, blessing is the experience of that order, and wisdom is the perception and understanding of it.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 2478.0,
+          "end": 2768.92
+        }
+      ]
+    },
+    {
+      "id": "orthodox-response-to-curses",
+      "title": "Orthodox Response to Curses",
+      "summary": "The hosts address concerns about curses like the evil eye, emphasizing that Christians should not fear them but trust in Christ's protection. They caution against folk magic and encourage prayer and reliance on God.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 3060.0,
+          "end": 3595.119
+        }
+      ]
+    },
+    {
+      "id": "women-in-the-church",
+      "title": "Women in the Church",
+      "summary": "The hosts affirm the vital role of women in the Church, citing examples like St. Kassiani and the Theotokos. They clarify that while women are not ordained as priests, their ministry is essential and not inferior.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 3685.39,
+          "end": 4346.64
+        }
+      ]
+    },
+    {
+      "id": "atonement-and-covering",
+      "title": "Atonement and Covering",
+      "summary": "The hosts explain that the Hebrew word for atonement means 'to cover,' and that its theological significance comes from the Day of Atonement. They discuss why atonement theology became complex in the West, contrasting it with the Eastern approach.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 4430.68,
+          "end": 4890.119
+        }
+      ]
+    },
+    {
+      "id": "theosis-and-demonosis",
+      "title": "Theosis and Demonosis",
+      "summary": "The hosts discuss how our actions draw us closer to God or to demons. They emphasize that sanctity and demonization are matters of degree, not kind, and that others can influence us but our cooperation is essential.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 4953.0,
+          "end": 5381.0
+        }
+      ]
+    },
+    {
+      "id": "spiritual-and-material-reality",
+      "title": "Spiritual and Material Reality",
+      "summary": "The hosts explore the union of spiritual and material reality, suggesting that the distinction is more about seen and unseen rather than material and spiritual. They use the analogy of the 'common sense' integrating the five senses to explain how spiritual perception can be integrated.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 5501.199,
+          "end": 6177.439
+        }
+      ]
+    },
+    {
+      "id": "eucharist-and-blood-prohibitions",
+      "title": "Eucharist and Blood Prohibitions",
+      "summary": "The hosts explain that Christ's command to eat His flesh and drink His blood is an inversion of predatory sacrifice. The blood represents life, and Christ offers His life to us, contrasting with pagan practices and the Old Testament prohibitions.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 6257.0,
+          "end": 6545.39
+        }
+      ]
+    },
+    {
+      "id": "sacrament-of-marriage",
+      "title": "Sacrament of Marriage",
+      "summary": "The hosts describe marriage as a transition to a new mode of life, where spouses serve Christ by serving each other and their children. The wedding service is meaningful when lived out in faithfulness.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 6740.88,
+          "end": 7017.68
+        }
+      ]
+    },
+    {
+      "id": "change-in-the-church",
+      "title": "Change in the Church",
+      "summary": "The hosts discuss how changes occur in the Orthodox Church, primarily through pastoral decisions by bishops. They emphasize that while the core faith does not change, practices can and do evolve, often through local adoption and consensus.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 7092.88,
+          "end": 7628.0
+        }
+      ]
+    },
+    {
+      "id": "gender-and-the-body",
+      "title": "Gender and the Body",
+      "summary": "The hosts address questions about gender, distinguishing biological sex from social gender constructs. They affirm the importance of the body and its potentialities, and suggest that transgender confusion often stems from a breakdown of community and identity.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 7740.0,
+          "end": 8839.0
+        }
+      ]
+    },
+    {
+      "id": "second-coming",
+      "title": "Second Coming",
+      "summary": "The hosts clarify that the Second Coming is a future event in material time, but they acknowledge the limitations of our understanding of time in the intermediate state. They emphasize that Christ is already present with us.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 8883.0,
+          "end": 9108.12
+        }
+      ]
+    },
+    {
+      "id": "salvation-as-debt-and-legal-language",
+      "title": "Salvation as Debt and Legal Language",
+      "summary": "The hosts discuss biblical language about debt and legal imagery, distinguishing it from Western atonement theories. They emphasize that salvation involves freedom from slavery to sin and death, not a legal transaction.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 9204.28,
+          "end": 9816.319
+        }
+      ]
+    },
+    {
+      "id": "ancient-near-eastern-cosmology",
+      "title": "Ancient Near Eastern Cosmology",
+      "summary": "The hosts discuss the three-tier cosmology in the Bible, suggesting it describes spiritual geography rather than material reality. They argue that the Bible does not make scientific claims and that its purpose is to convey theological truths.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 9877.84,
+          "end": 10354.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "molek-is-a-demon",
+      "text": "Molek is a specific demon associated with child sacrifice, not a general reference to Nephilim rituals.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 248.319,
+          "end": 341.6
+        }
+      ]
+    },
+    {
+      "id": "johns-gospel-supplements-synoptics",
+      "text": "John's Gospel was written after the Synoptics and functions as a theological supplement, assuming knowledge of the other Gospels.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 540.0,
+          "end": 769.84
+        }
+      ]
+    },
+    {
+      "id": "holy-spirit-possession-can-be-painful",
+      "text": "When the Holy Spirit comes upon an impure person, it can be a painful experience, as seen in the case of Saul.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 1282.599,
+          "end": 1379.519
+        }
+      ]
+    },
+    {
+      "id": "sin-is-demonic",
+      "text": "Sin is a demonic spiritual being that works through human cooperation, and yielding to passions gives control to demons.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 1595.5,
+          "end": 1839.4
+        }
+      ]
+    },
+    {
+      "id": "garments-of-skin-are-not-literal",
+      "text": "The 'garments of skin' in Genesis are a patristic image for the change in human nature after the Fall, not literal animal skins.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 2235.36,
+          "end": 2327.39
+        }
+      ]
+    },
+    {
+      "id": "blessing-justice-wisdom-related",
+      "text": "Blessing, justice, and wisdom are related but distinct: justice is the order of creation, blessing is the experience of that order, and wisdom is the perception of it.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 2490.0,
+          "end": 2714.92
+        }
+      ]
+    },
+    {
+      "id": "christians-should-not-fear-curses",
+      "text": "Christians should not fear curses like the evil eye but trust in Christ's protection, avoiding folk magic.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 3060.0,
+          "end": 3327.0
+        }
+      ]
+    },
+    {
+      "id": "women-have-vital-ministry",
+      "text": "Women have a vital and irreplaceable ministry in the Church, even though they are not ordained as priests.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 4024.48,
+          "end": 4115.899
+        }
+      ]
+    },
+    {
+      "id": "atonement-means-covering",
+      "text": "The Hebrew word for atonement means 'to cover,' and its theological significance comes from the Day of Atonement.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 4430.68,
+          "end": 4525.92
+        }
+      ]
+    },
+    {
+      "id": "sanctity-and-demonization-are-degrees",
+      "text": "Sanctity and demonization are differences of degree, not kind, and there are no shortcuts to either.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 4960.319,
+          "end": 5129.64
+        }
+      ]
+    },
+    {
+      "id": "spiritual-and-material-are-unified",
+      "text": "Spiritual and material reality are not separate but are part of one created order, distinguished as seen and unseen.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 5506.64,
+          "end": 5938.239
+        }
+      ]
+    },
+    {
+      "id": "eucharist-inverts-predatory-sacrifice",
+      "text": "Christ's self-offering in the Eucharist is the exact inverse of predatory sacrifice, offering His life to us.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 6450.0,
+          "end": 6540.0
+        }
+      ]
+    },
+    {
+      "id": "marriage-is-a-transition",
+      "text": "Marriage is a sacrament that transitions a person to a new mode of life, where they serve Christ by serving their spouse and children.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 6771.88,
+          "end": 6911.359
+        }
+      ]
+    },
+    {
+      "id": "church-changes-pastorally",
+      "text": "Changes in the Orthodox Church occur primarily through pastoral decisions by bishops, and while the core faith does not change, practices can evolve.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 7220.319,
+          "end": 7402.159
+        }
+      ]
+    },
+    {
+      "id": "gender-is-social-construct",
+      "text": "Gender, as commonly discussed, is a social construct, distinct from biological sex, and transgender confusion often stems from a breakdown of community.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 8071.88,
+          "end": 8189.279
+        }
+      ]
+    },
+    {
+      "id": "second-coming-is-future-event",
+      "text": "The Second Coming is a future event in material time, but our understanding of time in the intermediate state is limited.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 8940.0,
+          "end": 9048.799
+        }
+      ]
+    },
+    {
+      "id": "salvation-includes-freedom-from-slavery",
+      "text": "Salvation involves freedom from slavery to sin and death, not a legal transaction, and biblical debt language is not equivalent to Western atonement theories.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 9384.12,
+          "end": 9757.92
+        }
+      ]
+    },
+    {
+      "id": "bible-does-not-make-scientific-claims",
+      "text": "The Bible does not make scientific claims, and its three-tier cosmology describes spiritual geography rather than material reality.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 10140.0,
+          "end": 10236.59
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "leviticus-18-21",
+      "reference": "Leviticus 18:21",
+      "summary": "Discussed in relation to Molek and child sacrifice, and its connection to sexual immorality.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 154.759,
+          "end": 359.92
+        }
+      ]
+    },
+    {
+      "id": "genesis-4-7",
+      "reference": "Genesis 4:7",
+      "summary": "Referenced to illustrate sin as a demonic being crouching at the door.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 1617.759,
+          "end": 1708.16
+        }
+      ]
+    },
+    {
+      "id": "genesis-2-25",
+      "reference": "Genesis 2:25",
+      "summary": "Used to discuss the nakedness and innocence of Adam and Eve before the Fall.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 2100.0,
+          "end": 2416.8
+        }
+      ]
+    },
+    {
+      "id": "genesis-3-21",
+      "reference": "Genesis 3:21",
+      "summary": "Referenced in the discussion of garments of skin and their patristic interpretation.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 2235.36,
+          "end": 2327.39
+        }
+      ]
+    },
+    {
+      "id": "john-6",
+      "reference": "John 6",
+      "summary": "Mentioned as containing Eucharistic discourse not found in the Synoptics.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 684.0,
+          "end": 775.39
+        }
+      ]
+    },
+    {
+      "id": "1-john-3-8",
+      "reference": "1 John 3:8",
+      "summary": "Referenced to explain that Christ came to destroy the works of the devil.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 1840.68,
+          "end": 1933.799
+        }
+      ]
+    },
+    {
+      "id": "colossians-2-14-15",
+      "reference": "Colossians 2:14-15",
+      "summary": "Discussed in relation to debt and legal language in salvation, and Christ's triumph over principalities.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 9120.0,
+          "end": 9757.92
+        }
+      ]
+    },
+    {
+      "id": "revelation-5-11-12",
+      "reference": "Revelation 5:11-12",
+      "summary": "Quoted at the end of the episode, emphasizing the worthiness of Christ.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 10433.959,
+          "end": 10459.6
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "molek",
+      "term": "Molek",
+      "definition": "A demon associated with child sacrifice in the Old Testament, often mistranslated as 'ruler' or 'king.'",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 248.319,
+          "end": 341.6
+        }
+      ]
+    },
+    {
+      "id": "garments-of-skin",
+      "term": "Garments of Skin",
+      "definition": "A patristic image for the change in human nature after the Fall, not literal animal skins.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 2235.36,
+          "end": 2327.39
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming more like God through participation in His divine life.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 4874.159,
+          "end": 4968.56
+        }
+      ]
+    },
+    {
+      "id": "demonosis",
+      "term": "Demonosis",
+      "definition": "The process of becoming more like demons through yielding to sin and passions.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 4874.159,
+          "end": 4968.56
+        }
+      ]
+    },
+    {
+      "id": "evil-eye",
+      "term": "Evil Eye",
+      "definition": "A folk belief that a malevolent glare can cause harm, often countered with prayers or amulets.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 3033.0,
+          "end": 3327.0
+        }
+      ]
+    },
+    {
+      "id": "black-tongue",
+      "term": "Black Tongue",
+      "definition": "A curse concept in Indian Orthodox tradition, similar to the evil eye.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 2997.59,
+          "end": 3090.39
+        }
+      ]
+    },
+    {
+      "id": "common-sense",
+      "term": "Common Sense",
+      "definition": "Originally referred to the integration of the five senses into a coherent perception of reality.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 5640.0,
+          "end": 5731.159
+        }
+      ]
+    },
+    {
+      "id": "three-tier-cosmology",
+      "term": "Three-Tier Cosmology",
+      "definition": "The ancient Near Eastern view of the world as having three levels: heavens, earth, and underworld.",
+      "segments": [
+        {
+          "episode": 45,
+          "start": 9902.0,
+          "end": 10043.0
+        }
+      ]
+    }
+  ]
+}

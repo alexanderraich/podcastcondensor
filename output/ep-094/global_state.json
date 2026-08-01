@@ -1,0 +1,503 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen De Young explore the various devil figures found in Scripture and Second Temple Jewish literature. They begin by discussing the devil (diabolos) and Satan, examining their biblical origins and the traditions surrounding them. They then introduce less familiar figures such as Azazel, Mastema, and Belial, each associated with different patterns of evil. The hosts emphasize that these names and descriptions are not meant to form a systematic demonology but rather to help Christians discern the presence of evil spirits in the world and in their own lives. The episode concludes with practical advice on spiritual warfare, urging listeners to focus on personal holiness, prayer, and discernment rather than esoteric knowledge.",
+  "entities": [
+    {
+      "id": "devil",
+      "title": "The Devil",
+      "category": "theological",
+      "summary": "A fallen angel who rebelled against God out of envy for humanity, identified with the serpent in Genesis 3. He is cast down and given power over death.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 305.0,
+          "end": 792.48
+        },
+        {
+          "episode": 94,
+          "start": 1090.96,
+          "end": 1185.2
+        }
+      ]
+    },
+    {
+      "id": "satan",
+      "title": "Satan",
+      "category": "theological",
+      "summary": "A title meaning 'adversary' or 'accuser,' referring to a spiritual being who tests and accuses humans, as seen in the book of Job. He is often conflated with the devil but has distinct traditions.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 3310.199,
+          "end": 3629.159
+        }
+      ]
+    },
+    {
+      "id": "azazel",
+      "title": "Azazel",
+      "category": "theological",
+      "summary": "A demonic spirit associated with the wilderness and the Day of Atonement scapegoat ritual. In Second Temple literature, he is a leader of fallen angels who corrupted humanity.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 5396.79,
+          "end": 6265.0
+        },
+        {
+          "episode": 94,
+          "start": 6422.96,
+          "end": 7164.56
+        }
+      ]
+    },
+    {
+      "id": "mastema",
+      "title": "Mastema",
+      "category": "theological",
+      "summary": "A demonic figure in the Book of Jubilees, leader of the disembodied spirits of the giants. He is allowed by God to tempt and torment the wicked.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 7879.96,
+          "end": 8114.399
+        }
+      ]
+    },
+    {
+      "id": "belial",
+      "title": "Belial",
+      "category": "theological",
+      "summary": "A figure representing lawlessness and worthlessness, often depicted as the opponent of the Messiah in Second Temple literature.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 8137.84,
+          "end": 8420.399
+        }
+      ]
+    },
+    {
+      "id": "sammael",
+      "title": "Sammael",
+      "category": "theological",
+      "summary": "An archangel in Second Temple Jewish literature, often identified as the angel of death and the adversary. He is sometimes listed among the seven archangels.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 3658.159,
+          "end": 3964.639
+        }
+      ]
+    },
+    {
+      "id": "milton",
+      "title": "John Milton",
+      "category": "historical",
+      "summary": "English poet whose 'Paradise Lost' popularized the idea of a primordial rebellion of Lucifer, which is not found in earlier Christian tradition.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 2245.559,
+          "end": 2337.39
+        }
+      ]
+    },
+    {
+      "id": "st-andrew-of-cesarea",
+      "title": "St. Andrew of Caesarea",
+      "category": "historical",
+      "summary": "Early Christian commentator on the Book of Revelation, whose interpretation influenced the Eastern Orthodox acceptance of Revelation. He argued that the devil fell after the creation of the world.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 2350.0,
+          "end": 2452.32
+        },
+        {
+          "episode": 94,
+          "start": 4740.0,
+          "end": 4830.579
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "historical",
+      "summary": "Apostle and author of many New Testament epistles. His writings on spiritual warfare and the armor of God are central to the episode's practical application.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 11204.959,
+          "end": 11874.799
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "succession-myth",
+      "title": "Succession Myth",
+      "summary": "A pagan narrative pattern where a younger god overthrows the reigning high god, often through violence or usurpation. The Hebrew Scriptures counter this with the story of an attempted rebellion that failed.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 1170.0,
+          "end": 1526.66
+        }
+      ]
+    },
+    {
+      "id": "devil-figure",
+      "title": "Devil Figure",
+      "summary": "The concept of the devil as a fallen angel who rebelled out of envy against humanity and was cast down. This figure is identified with the serpent in Genesis 3 and is distinct from the Satan figure.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 305.0,
+          "end": 792.48
+        },
+        {
+          "episode": 94,
+          "start": 1090.96,
+          "end": 1185.2
+        }
+      ]
+    },
+    {
+      "id": "satan-figure",
+      "title": "Satan Figure",
+      "summary": "A title meaning 'adversary' or 'accuser,' referring to a spiritual being who tests and accuses humans, as seen in the book of Job. This figure is sometimes conflated with the devil but has distinct traditions.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 3310.199,
+          "end": 3629.159
+        }
+      ]
+    },
+    {
+      "id": "azazel-figure",
+      "title": "Azazel Figure",
+      "summary": "A demonic spirit associated with the wilderness and the Day of Atonement scapegoat ritual. In Second Temple literature, Azazel is depicted as a leader of fallen angels who corrupted humanity.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 5396.79,
+          "end": 6265.0
+        },
+        {
+          "episode": 94,
+          "start": 6422.96,
+          "end": 7164.56
+        }
+      ]
+    },
+    {
+      "id": "mastema-figure",
+      "title": "Mastema Figure",
+      "summary": "A demonic figure in the Book of Jubilees, leader of the disembodied spirits of the giants. He is allowed by God to tempt and torment the wicked, serving as a tool of divine judgment.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 7879.96,
+          "end": 8114.399
+        }
+      ]
+    },
+    {
+      "id": "belial-figure",
+      "title": "Belial Figure",
+      "summary": "A figure representing lawlessness and worthlessness, often depicted as the opponent of the Messiah in Second Temple literature. The name is used in the New Testament as a contrast to Christ.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 8137.84,
+          "end": 8420.399
+        }
+      ]
+    },
+    {
+      "id": "spiritual-warfare",
+      "title": "Spiritual Warfare",
+      "summary": "The Christian struggle against demonic forces, emphasizing discernment, prayer, and personal holiness rather than mere exposure of evil. This is the practical application of understanding devil figures.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 11204.959,
+          "end": 11874.799
+        }
+      ]
+    },
+    {
+      "id": "discernment-of-spirits",
+      "title": "Discernment of Spirits",
+      "summary": "The practice of examining one's thoughts and actions to determine their spiritual origin, distinguishing between the Holy Spirit, one's own spirit, and demonic influences.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 11899.2,
+          "end": 12436.12
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "devil-fell-after-creation",
+      "text": "The devil fell after the creation of the world through envy of humanity, not in a primordial rebellion before creation as popularized by Milton.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 2245.559,
+          "end": 2379.0
+        }
+      ]
+    },
+    {
+      "id": "satan-as-accuser",
+      "text": "Satan is a title meaning 'adversary' or 'accuser,' referring to a role rather than a proper name, as seen in the book of Job.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 3310.199,
+          "end": 3629.159
+        }
+      ]
+    },
+    {
+      "id": "azazel-as-demon",
+      "text": "Azazel is a demonic spirit, not a scapegoat, as evidenced by the parallel language in Leviticus 16 and the unanimous interpretation of Second Temple Jewish literature.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 5515.0,
+          "end": 5688.72
+        }
+      ]
+    },
+    {
+      "id": "scapegoat-not-sacrifice",
+      "text": "The scapegoat in Leviticus 16 is not sacrificed but sent away, contradicting penal substitutionary atonement theories that see sin placed on a sacrificed animal.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 5761.159,
+          "end": 5855.6
+        }
+      ]
+    },
+    {
+      "id": "devil-and-satan-distinct",
+      "text": "The devil and Satan may be two distinct figures or two aspects of the same figure, as suggested by St. Andrew of Caesarea's interpretation of Revelation 12.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 4800.0,
+          "end": 4938.26
+        }
+      ]
+    },
+    {
+      "id": "spiritual-warfare-practical",
+      "text": "Spiritual warfare is not about exposing evil but about personal holiness, prayer, and discernment, as taught in Ephesians 6.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 11204.959,
+          "end": 11874.799
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-3",
+      "reference": "Genesis 3",
+      "summary": "The serpent in the garden is identified as the devil, who is cursed and cast down, symbolizing the fall of the devil.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 1820.44,
+          "end": 2259.48
+        }
+      ]
+    },
+    {
+      "id": "leviticus-16",
+      "reference": "Leviticus 16",
+      "summary": "The Day of Atonement ritual involving two goats, one for Yahweh and one for Azazel, which is interpreted as a demonic figure.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 5430.0,
+          "end": 5764.199
+        }
+      ]
+    },
+    {
+      "id": "job-1",
+      "reference": "Job 1",
+      "summary": "The Satan appears among the sons of God as an accuser, illustrating the role of Satan as adversary.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 3371.599,
+          "end": 3629.159
+        }
+      ]
+    },
+    {
+      "id": "isaiah-14",
+      "reference": "Isaiah 14",
+      "summary": "The fall of the king of Babylon is described using imagery that later became associated with the devil, including the name Lucifer.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 2785.0,
+          "end": 3036.559
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-28",
+      "reference": "Ezekiel 28",
+      "summary": "The oracle against the king of Tyre is interpreted as referring to the devil, describing his fall from the mountain of God.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 3036.559,
+          "end": 3190.8
+        }
+      ]
+    },
+    {
+      "id": "luke-10",
+      "reference": "Luke 10",
+      "summary": "Jesus says he saw Satan fall like lightning, which is interpreted as referring to the defeat of Satan during the ministry of the disciples.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 4350.0,
+          "end": 4478.0
+        }
+      ]
+    },
+    {
+      "id": "revelation-12",
+      "reference": "Revelation 12",
+      "summary": "The dragon is cast out of heaven by Michael, identified as the ancient serpent, the devil, and Satan, and is defeated by the blood of the Lamb.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 4478.0,
+          "end": 4938.26
+        }
+      ]
+    },
+    {
+      "id": "ephesians-6",
+      "reference": "Ephesians 6",
+      "summary": "Paul describes the armor of God for spiritual warfare, emphasizing the need for truth, righteousness, faith, and prayer.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 11204.959,
+          "end": 11874.799
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "diabolos",
+      "term": "Diabolos",
+      "definition": "Greek word for 'devil,' meaning 'one who throws apart' or 'slanderer.'",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 1090.96,
+          "end": 1185.2
+        }
+      ]
+    },
+    {
+      "id": "satan",
+      "term": "Satan",
+      "definition": "Hebrew word meaning 'adversary' or 'accuser,' used as a title for a spiritual being who opposes and tests humans.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 3310.199,
+          "end": 3420.0
+        }
+      ]
+    },
+    {
+      "id": "azazel",
+      "term": "Azazel",
+      "definition": "A name for a demonic spirit associated with the wilderness, possibly meaning 'goat of departure' or 'strong one against God.'",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 5515.0,
+          "end": 5712.79
+        }
+      ]
+    },
+    {
+      "id": "mastema",
+      "term": "Mastema",
+      "definition": "A demonic figure in the Book of Jubilees, leader of the spirits of the giants, whose name means 'hostility' or 'enmity.'",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 7879.96,
+          "end": 8114.399
+        }
+      ]
+    },
+    {
+      "id": "belial",
+      "term": "Belial",
+      "definition": "A Hebrew term meaning 'worthlessness' or 'lawlessness,' used as a name for a demonic figure representing opposition to God.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 8137.84,
+          "end": 8420.399
+        }
+      ]
+    },
+    {
+      "id": "sammael",
+      "term": "Sammael",
+      "definition": "An archangel in Jewish tradition, often identified as the angel of death and the adversary, whose name means 'poison of God.'",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 3658.159,
+          "end": 3964.639
+        }
+      ]
+    },
+    {
+      "id": "scapegoat",
+      "term": "Scapegoat",
+      "definition": "A translation of Azazel, referring to the goat sent into the wilderness on the Day of Atonement, symbolically carrying the sins of the people.",
+      "segments": [
+        {
+          "episode": 94,
+          "start": 5515.0,
+          "end": 5764.199
+        }
+      ]
+    }
+  ]
+}

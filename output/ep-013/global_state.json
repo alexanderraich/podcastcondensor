@@ -1,0 +1,603 @@
+{
+  "summary": "In this episode, the hosts discuss the religious life of ancient Israel, focusing on the sacrificial system and worship practices as prescribed in the Torah. They emphasize that Israelite worship was not derived from paganism but was a direct commandment from God, with both continuity and discontinuity from surrounding cultures. The episode covers the role of the family in early worship, the establishment of the Levitical priesthood, the centrality of the Temple, and the various types of offerings (incense, sin, peace, thank, grain, and drink offerings). They also explore the differences from pagan practices, such as the showbread, the high priest's vestments, and the handling of blood. The discussion extends to the liturgical calendar, including Passover, Pentecost, and the Feast of Tabernacles, and concludes with reflections on how these ancient practices inform Christian worship and the Church's role as a priesthood for the world.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox Christian priest.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 10.0,
+          "end": 102.76
+        },
+        {
+          "episode": 13,
+          "start": 68.359,
+          "end": 158.99
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox Christian priest.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 20.0,
+          "end": 112.79
+        },
+        {
+          "episode": 13,
+          "start": 72.4,
+          "end": 164.0
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "Prophet who led Israel out of Egypt and received the Torah.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 173.5,
+          "end": 270.72
+        },
+        {
+          "episode": 13,
+          "start": 390.0,
+          "end": 485.68
+        }
+      ]
+    },
+    {
+      "id": "aaron",
+      "title": "Aaron",
+      "category": "person",
+      "summary": "High priest, brother of Moses, from whom the priesthood was established.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 386.0,
+          "end": 479.72
+        },
+        {
+          "episode": 13,
+          "start": 674.0,
+          "end": 767.39
+        }
+      ]
+    },
+    {
+      "id": "david",
+      "title": "David",
+      "category": "person",
+      "summary": "King of Israel, anointed by God, who ate the showbread.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 4718.479,
+          "end": 4810.72
+        },
+        {
+          "episode": 13,
+          "start": 4841.0,
+          "end": 4938.479
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "person",
+      "summary": "The Messiah, whose sacrifice is understood in terms of Passover and the Eucharist.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 1890.0,
+          "end": 1984.559
+        },
+        {
+          "episode": 13,
+          "start": 5867.92,
+          "end": 5959.52
+        },
+        {
+          "episode": 13,
+          "start": 5989.479,
+          "end": 6084.8
+        }
+      ]
+    },
+    {
+      "id": "yahweh",
+      "title": "Yahweh",
+      "category": "theological",
+      "summary": "The God of Israel, who commanded worship and sacrifice.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 72.4,
+          "end": 164.0
+        },
+        {
+          "episode": 13,
+          "start": 1686.799,
+          "end": 1780.14
+        }
+      ]
+    },
+    {
+      "id": "levites",
+      "title": "Levites",
+      "category": "historical",
+      "summary": "The tribe of Levi, set apart for priestly service.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 390.0,
+          "end": 485.68
+        },
+        {
+          "episode": 13,
+          "start": 1593.299,
+          "end": 1686.799
+        }
+      ]
+    },
+    {
+      "id": "phinehas",
+      "title": "Phinehas",
+      "category": "person",
+      "summary": "Grandson of Aaron, high priest, of African descent, showing Israel's ethnic diversity.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6718.5,
+          "end": 6808.72
+        }
+      ]
+    },
+    {
+      "id": "jeroboam",
+      "title": "Jeroboam",
+      "category": "person",
+      "summary": "King of the northern kingdom who set up golden calves.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 1709.79,
+          "end": 1799.96
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "israelite-worship-not-derived-from-paganism",
+      "title": "Israelite Worship Not Derived from Paganism",
+      "summary": "The hosts argue that Israelite worship was not derived from surrounding pagan practices but was a direct revelation from God, with both continuity and discontinuity.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 96.79,
+          "end": 192.0
+        },
+        {
+          "episode": 13,
+          "start": 508.68,
+          "end": 609.279
+        },
+        {
+          "episode": 13,
+          "start": 5179.84,
+          "end": 5275.52
+        }
+      ]
+    },
+    {
+      "id": "religion-as-way-of-life",
+      "title": "Religion as a Way of Life",
+      "summary": "In ancient Israel, religion was not a separate compartment but an integrated way of life, encompassing family, agriculture, and community, unlike modern compartmentalized religion.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 990.0,
+          "end": 1080.39
+        },
+        {
+          "episode": 13,
+          "start": 1217.88,
+          "end": 1333.839
+        },
+        {
+          "episode": 13,
+          "start": 1916.119,
+          "end": 2038.39
+        }
+      ]
+    },
+    {
+      "id": "priesthood-of-israel",
+      "title": "Priesthood of Israel",
+      "summary": "Israel was called to be a kingdom of priests, serving as priests for the nations, with the Levites serving as priests for Israel, and this concept is fulfilled in the Church.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 1504.619,
+          "end": 1617.64
+        },
+        {
+          "episode": 13,
+          "start": 7590.0,
+          "end": 7837.56
+        },
+        {
+          "episode": 13,
+          "start": 7830.0,
+          "end": 7927.319
+        }
+      ]
+    },
+    {
+      "id": "sin-as-disease-and-residue",
+      "title": "Sin as Disease and Residue",
+      "summary": "Sin is understood not just as breaking rules but as a corrupting force that leaves residue, requiring cleansing and purification, similar to a disease.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 2992.96,
+          "end": 3112.79
+        },
+        {
+          "episode": 13,
+          "start": 3102.88,
+          "end": 3198.96
+        }
+      ]
+    },
+    {
+      "id": "passover-as-liberation",
+      "title": "Passover as Liberation",
+      "summary": "Passover is primarily about liberation from slavery to the gods of Egypt, not substitutionary sacrifice, and it marks the creation of Israel as a people.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6096.0,
+          "end": 6311.6
+        },
+        {
+          "episode": 13,
+          "start": 6317.39,
+          "end": 6589.84
+        }
+      ]
+    },
+    {
+      "id": "eucharist-as-fulfillment",
+      "title": "Eucharist as Fulfillment of Sacrifices",
+      "summary": "The Eucharist fulfills and transforms the Old Testament sacrifices, particularly the sin offering, as Christ's command 'do this as my remembrance' indicates.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 5989.479,
+          "end": 6084.8
+        },
+        {
+          "episode": 13,
+          "start": 8310.0,
+          "end": 8403.34
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "israel-was-not-monotheistic-in-modern-sense",
+      "text": "Ancient Israel was not monotheistic in the modern sense; the Old Testament shows they often fell into idolatry, and the Bible itself records this.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 203.0,
+          "end": 308.879
+        }
+      ]
+    },
+    {
+      "id": "sin-offerings-are-not-transactional",
+      "text": "Sin offerings are not a transactional payment to God but a cleansing of the residue of sin, similar to purifying a disease.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 3540.0,
+          "end": 3631.0
+        },
+        {
+          "episode": 13,
+          "start": 3597.48,
+          "end": 3689.84
+        }
+      ]
+    },
+    {
+      "id": "passover-is-not-substitutionary",
+      "text": "Passover is not a substitutionary sacrifice; it is about liberation from slavery and marking the people of Israel.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6103.0,
+          "end": 6311.6
+        }
+      ]
+    },
+    {
+      "id": "eucharist-fulfills-sin-offering",
+      "text": "The Eucharist fulfills the sin offering, as Christ's command 'do this as my remembrance' uses the same language as sin offerings.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6016.399,
+          "end": 6113.72
+        }
+      ]
+    },
+    {
+      "id": "materialist-christianity-devolves-into-politics",
+      "text": "Materialist Christianity, whether conservative or liberal, devolves into politics and uses force, leading to hell on earth.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 8407.479,
+          "end": 8512.719
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "exodus-30-7-9",
+      "reference": "Exodus 30:7-9",
+      "summary": "Instructions for burning incense on the altar of incense, morning and evening.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 674.0,
+          "end": 767.39
+        }
+      ]
+    },
+    {
+      "id": "leviticus-16",
+      "reference": "Leviticus 16",
+      "summary": "The Day of Atonement, involving sin offerings and the scapegoat.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 2617.579,
+          "end": 2707.92
+        },
+        {
+          "episode": 13,
+          "start": 7025.319,
+          "end": 7117.84
+        }
+      ]
+    },
+    {
+      "id": "numbers-10-10",
+      "reference": "Numbers 10:10",
+      "summary": "Sin offerings are offered as a remembrance before the Lord.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6026.8,
+          "end": 6117.199
+        }
+      ]
+    },
+    {
+      "id": "matthew-12-1-8",
+      "reference": "Matthew 12:1-8",
+      "summary": "Jesus refers to David eating the showbread to illustrate the purpose of the Sabbath.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 4770.0,
+          "end": 4860.0
+        }
+      ]
+    },
+    {
+      "id": "jeremiah-31-31-34",
+      "reference": "Jeremiah 31:31-34",
+      "summary": "The new covenant, involving forgiveness of sins and the law written on hearts.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6921.39,
+          "end": 7014.159
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-36-24-28",
+      "reference": "Ezekiel 36:24-28",
+      "summary": "Sprinkling with clean water and the giving of a new heart and spirit.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6921.39,
+          "end": 7014.159
+        }
+      ]
+    },
+    {
+      "id": "joel-2-28-29",
+      "reference": "Joel 2:28-29",
+      "summary": "The outpouring of the Spirit on all flesh.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6921.39,
+          "end": 7014.159
+        }
+      ]
+    },
+    {
+      "id": "acts-2",
+      "reference": "Acts 2",
+      "summary": "Pentecost, the coming of the Holy Spirit, and baptism with water.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6941.0,
+          "end": 7032.52
+        }
+      ]
+    },
+    {
+      "id": "1-peter-2-9",
+      "reference": "1 Peter 2:9",
+      "summary": "The Church as a royal priesthood, applying the language of Israel to the Church.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 7830.0,
+          "end": 7927.319
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "showbread",
+      "term": "Showbread",
+      "definition": "Bread placed on a table in the tabernacle/temple, replaced daily, eaten by priests, symbolizing God feeding his people.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 4512.279,
+          "end": 4723.439
+        }
+      ]
+    },
+    {
+      "id": "sin-offering",
+      "term": "Sin Offering",
+      "definition": "A sacrifice offered to cleanse from the residue of sin, not a payment but a purification.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 3446.159,
+          "end": 3603.0
+        }
+      ]
+    },
+    {
+      "id": "peace-offering",
+      "term": "Peace Offering",
+      "definition": "A sacrifice to restore relationship with God after a major rupture, often involving a communal meal.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 3962.32,
+          "end": 4164.319
+        }
+      ]
+    },
+    {
+      "id": "thank-offering",
+      "term": "Thank Offering",
+      "definition": "A voluntary sacrifice offered in gratitude to God, often in fulfillment of a vow.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 4139.0,
+          "end": 4229.96
+        }
+      ]
+    },
+    {
+      "id": "grain-offering",
+      "term": "Grain Offering",
+      "definition": "An offering of grain or flour, often associated with the harvest and first fruits.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 4194.439,
+          "end": 4287.39
+        }
+      ]
+    },
+    {
+      "id": "drink-offering",
+      "term": "Drink Offering",
+      "definition": "An offering of wine or oil, often poured out on another sacrifice.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 4205.0,
+          "end": 4297.899
+        }
+      ]
+    },
+    {
+      "id": "passover",
+      "term": "Passover (Pesach)",
+      "definition": "The feast commemorating Israel's liberation from Egypt, involving the sacrifice and eating of a lamb.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 5801.76,
+          "end": 5906.359
+        }
+      ]
+    },
+    {
+      "id": "pentecost",
+      "term": "Pentecost (Feast of Weeks)",
+      "definition": "The feast fifty days after Passover, celebrating the giving of the covenant and later the Holy Spirit.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 6788.479,
+          "end": 6976.0
+        }
+      ]
+    },
+    {
+      "id": "feast-of-tabernacles",
+      "term": "Feast of Tabernacles (Sukkot)",
+      "definition": "A harvest festival where Israelites lived in temporary booths to remember their dependence on God.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 7332.79,
+          "end": 7549.979
+        }
+      ]
+    },
+    {
+      "id": "yom-kippur",
+      "term": "Yom Kippur (Day of Atonement)",
+      "definition": "The holiest day of the Jewish year, involving fasting and atonement rituals, to be discussed in the next episode.",
+      "segments": [
+        {
+          "episode": 13,
+          "start": 7025.319,
+          "end": 7117.84
+        }
+      ]
+    }
+  ]
+}

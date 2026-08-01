@@ -1,0 +1,317 @@
+{
+  "summary": "In this special episode of Lord of Spirits, Fr. Stephen De Young takes the helm while Fr. Andrew is away, offering listeners a unique 'Storytime' session. He reads and comments on two ancient texts from different civilizations and genres. The first is the Memphite Theology from Egypt, an Old Kingdom text that was inscribed on stone by Pharaoh Shabaka around 710 BC. Fr. Stephen explains how this text serves as a theological and political argument to unify Upper and Lower Egypt under the god Ptah, integrating various local deities and myths into a cohesive religious system centered on Ptah as the creator and ruler of all. The second text is a Babylonian dialogue between a master and his servant, a dark comedy that satirizes the futility of human endeavors and the absurdity of life, reflecting the pessimistic worldview of Mesopotamian culture. Fr. Stephen draws parallels between ancient theological methods and those found in the Old Testament, and offers a modern reflection on the dangers of constant affirmation leading to nihilism.",
+  "entities": [
+    {
+      "id": "fr-stephen-de-young",
+      "title": "Fr. Stephen De Young",
+      "category": "person",
+      "summary": "One of the hosts of the Lord of Spirits podcast, an Orthodox priest and scholar, who reads and comments on ancient texts in this episode.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 60.0,
+          "end": 159.199
+        },
+        {
+          "episode": 120,
+          "start": 2640.0,
+          "end": 2850.39
+        }
+      ]
+    },
+    {
+      "id": "ptah",
+      "title": "Ptah",
+      "category": "theological",
+      "summary": "An Egyptian god associated with craftsmanship and creation, elevated in the Memphite Theology as the supreme creator god, heart and tongue of the gods.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 510.0,
+          "end": 600.0
+        },
+        {
+          "episode": 120,
+          "start": 179.199,
+          "end": 2082.519
+        }
+      ]
+    },
+    {
+      "id": "horus",
+      "title": "Horus",
+      "category": "theological",
+      "summary": "Egyptian god, son of Osiris and Isis, associated with kingship and the sky; in the Memphite Theology, he is the firstborn son of Geb and is given rule over Lower Egypt.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 611.559,
+          "end": 706.799
+        },
+        {
+          "episode": 120,
+          "start": 807.919,
+          "end": 920.72
+        }
+      ]
+    },
+    {
+      "id": "seth",
+      "title": "Seth",
+      "category": "theological",
+      "summary": "Egyptian god of chaos and the desert, associated with Upper Egypt; in the Memphite Theology, he is given rule over Upper Egypt and later reconciled with Horus.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 611.559,
+          "end": 706.799
+        },
+        {
+          "episode": 120,
+          "start": 807.919,
+          "end": 920.72
+        }
+      ]
+    },
+    {
+      "id": "osiris",
+      "title": "Osiris",
+      "category": "theological",
+      "summary": "Egyptian god of the afterlife and resurrection, whose death and rebirth are central to Egyptian mythology; his story is incorporated into the Memphite Theology to unify the gods.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 1107.0,
+          "end": 1199.359
+        },
+        {
+          "episode": 120,
+          "start": 1968.39,
+          "end": 2077.0
+        }
+      ]
+    },
+    {
+      "id": "geb",
+      "title": "Geb",
+      "category": "theological",
+      "summary": "Egyptian god of the earth, father of Osiris, Isis, Seth, and Horus; in the Memphite Theology, he acts as the judge who divides the lands between Horus and Seth.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 611.559,
+          "end": 706.799
+        },
+        {
+          "episode": 120,
+          "start": 807.919,
+          "end": 920.72
+        }
+      ]
+    },
+    {
+      "id": "shabaka",
+      "title": "Pharaoh Shabaka",
+      "category": "person",
+      "summary": "The Kushite pharaoh of Egypt who ordered the inscription of the Memphite Theology onto stone around 710 BC, preserving the ancient text.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 139.4,
+          "end": 232.8
+        },
+        {
+          "episode": 120,
+          "start": 470.759,
+          "end": 588.44
+        }
+      ]
+    },
+    {
+      "id": "memphis",
+      "title": "Memphis",
+      "category": "place",
+      "summary": "Ancient Egyptian city that became the capital after the unification of Upper and Lower Egypt; central to the Memphite Theology as the seat of Ptah's cult.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 281.199,
+          "end": 375.48
+        },
+        {
+          "episode": 120,
+          "start": 1872.799,
+          "end": 1963.16
+        }
+      ]
+    },
+    {
+      "id": "babylonian-servant",
+      "title": "Babylonian Servant",
+      "category": "other",
+      "summary": "A character in the Babylonian dialogue who agrees with his master's every whim, offering contradictory advice, ultimately revealing the absurdity of life.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 2331.239,
+          "end": 2649.519
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "memphite-theology",
+      "title": "Memphite Theology",
+      "summary": "An ancient Egyptian theological text from the Old Kingdom, inscribed by Pharaoh Shabaka, that integrates various local deities and myths to establish Ptah as the supreme creator god, using theological argument to support the political unification of Egypt under Memphis.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 115.439,
+          "end": 452.0
+        },
+        {
+          "episode": 120,
+          "start": 598.5,
+          "end": 2082.519
+        }
+      ]
+    },
+    {
+      "id": "ancient-theological-method",
+      "title": "Ancient Theological Method",
+      "summary": "The way theology was done in the ancient world, particularly in Egypt and the Old Testament, by retelling familiar myths and stories with new emphases and polemical purposes to teach theological truths and support socio-political realities.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 2079.84,
+          "end": 2217.32
+        }
+      ]
+    },
+    {
+      "id": "babylonian-dialogue",
+      "title": "Babylonian Dialogue of Pessimism",
+      "summary": "A darkly comedic Babylonian text featuring a master and servant debating the value of various actions, ultimately concluding that nothing matters, reflecting Mesopotamian pessimism and the absurdity of human striving.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 2220.0,
+          "end": 2649.519
+        }
+      ]
+    },
+    {
+      "id": "nihilism-and-affirmation",
+      "title": "Nihilism and Constant Affirmation",
+      "summary": "Fr. Stephen's reflection on how surrounding oneself with 'yes men' and constant affirmation can lead to a nihilistic worldview, as illustrated by the Babylonian dialogue, and the importance of recognizing good and bad, right and wrong.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 2640.0,
+          "end": 2850.39
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "ptah-as-creator",
+      "text": "The Memphite Theology argues that Ptah is the supreme creator god, who created all things through the thoughts of his heart and the words of his tongue, and that all other gods are manifestations of his creative power.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 1430.279,
+          "end": 1655.92
+        },
+        {
+          "episode": 120,
+          "start": 1775.16,
+          "end": 1867.0
+        }
+      ]
+    },
+    {
+      "id": "ancient-theology-retells-myths",
+      "text": "Ancient theology, including in the Old Testament, often retold familiar myths and stories with new emphases and polemical purposes to teach theological truths and support socio-political realities.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 2079.84,
+          "end": 2217.32
+        }
+      ]
+    },
+    {
+      "id": "constant-affirmation-leads-to-nihilism",
+      "text": "Surrounding oneself with constant affirmation and avoiding criticism can lead to a nihilistic worldview, as illustrated by the Babylonian dialogue where the master's indecision and the servant's agreement result in a sense of futility.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 2640.0,
+          "end": 2850.39
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "old-testament-theology",
+      "reference": "Various Old Testament passages",
+      "summary": "Fr. Stephen references the Old Testament's use of ancient Near Eastern stories, such as the flood narrative, which are retold and inverted to teach theological truths, similar to the Memphite Theology's method.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 2079.84,
+          "end": 2217.32
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "hypostasis",
+      "term": "Hypostasis",
+      "definition": "In Christian theology, a person or subsistence; in the context of this episode, Fr. Stephen uses it to describe different manifestations or aspects of a deity, such as Ptah appearing as Ta-Tenen.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 1376.759,
+          "end": 1470.0
+        },
+        {
+          "episode": 120,
+          "start": 2023.38,
+          "end": 2116.539
+        }
+      ]
+    },
+    {
+      "id": "nome",
+      "term": "Nome",
+      "definition": "A geographical division of ancient Egypt, similar to a county or province.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 951.279,
+          "end": 1045.359
+        }
+      ]
+    },
+    {
+      "id": "en-nead",
+      "term": "Ennead",
+      "definition": "A group of nine deities in Egyptian mythology, often worshipped together; in the Memphite Theology, the Ennead is said to have come into being through Ptah's creative word.",
+      "segments": [
+        {
+          "episode": 120,
+          "start": 1568.64,
+          "end": 1661.839
+        }
+      ]
+    }
+  ]
+}

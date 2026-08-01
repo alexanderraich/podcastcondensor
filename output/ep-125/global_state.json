@@ -1,0 +1,423 @@
+{
+  "summary": "In this episode, the hosts discuss Cyrus the Great and the Persian Empire, focusing on his historical significance and his role in the Bible. They begin by contrasting the Persian Empire with earlier empires like the Assyrian and Neo-Babylonian, highlighting its administrative sophistication and religious tolerance. The narrative covers Cyrus's rise to power, his conquests, and his eventual capture of Babylon, which led to the end of the Jewish exile. The hosts then explore Persian religion, particularly Zoroastrianism, its origins, practices, and its relationship to Cyrus's policies. They address common misconceptions about Zoroastrianism, such as its alleged dualism, and discuss its later development and persecution of Christians. The episode concludes with a theological reflection on Cyrus as 'the Lord's anointed' in Isaiah, emphasizing that God works through even pagan rulers to accomplish His purposes, and drawing lessons for listeners about humility, purpose, and being prepared for God's calling.",
+  "entities": [
+    {
+      "id": "cyrus-the-great",
+      "title": "Cyrus the Great",
+      "category": "person",
+      "summary": "Founder of the Persian Empire, known for his conquests, religious tolerance, and allowing the Jews to return to Jerusalem and rebuild the temple.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 400.56,
+          "end": 490.8
+        },
+        {
+          "episode": 125,
+          "start": 1530.0,
+          "end": 1622.0
+        },
+        {
+          "episode": 125,
+          "start": 2031.599,
+          "end": 2129.32
+        },
+        {
+          "episode": 125,
+          "start": 2658.44,
+          "end": 2749.0
+        },
+        {
+          "episode": 125,
+          "start": 3673.599,
+          "end": 3813.599
+        },
+        {
+          "episode": 125,
+          "start": 8245.159,
+          "end": 8337.84
+        }
+      ]
+    },
+    {
+      "id": "zoroaster",
+      "title": "Zoroaster (Zarathustra)",
+      "category": "person",
+      "summary": "The prophet and reformer who founded Zoroastrianism, rejecting the old Vedic-style religion and establishing the worship of Ahura Mazda.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 5008.479,
+          "end": 5099.68
+        },
+        {
+          "episode": 125,
+          "start": 5424.159,
+          "end": 5514.92
+        }
+      ]
+    },
+    {
+      "id": "ahura-mazda",
+      "title": "Ahura Mazda",
+      "category": "theological",
+      "summary": "The supreme god in Zoroastrianism, creator of the universe out of light, and the embodiment of justice and goodness.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 5520.0,
+          "end": 5614.96
+        }
+      ]
+    },
+    {
+      "id": "nebuchadnezzar",
+      "title": "Nebuchadnezzar",
+      "category": "person",
+      "summary": "The Neo-Babylonian emperor who destroyed Jerusalem and exiled the Jews, and whose empire was later conquered by Cyrus.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 418.6,
+          "end": 509.92
+        },
+        {
+          "episode": 125,
+          "start": 3203.92,
+          "end": 3296.0
+        }
+      ]
+    },
+    {
+      "id": "babylon",
+      "title": "Babylon",
+      "category": "place",
+      "summary": "The capital of the Neo-Babylonian Empire, conquered by Cyrus in 539 BC, leading to the end of the Jewish exile.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 3390.0,
+          "end": 3484.32
+        },
+        {
+          "episode": 125,
+          "start": 3530.96,
+          "end": 3622.559
+        }
+      ]
+    },
+    {
+      "id": "persia",
+      "title": "Persia",
+      "category": "place",
+      "summary": "The region and empire centered on the Iranian Plateau, founded by Cyrus the Great, and later known for its administrative and cultural achievements.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 600.0,
+          "end": 703.39
+        },
+        {
+          "episode": 125,
+          "start": 1149.759,
+          "end": 1249.279
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "persian-empire",
+      "title": "Persian Empire",
+      "summary": "The original Persian Empire, founded by Cyrus the Great, was known for its vast territorial extent, administrative sophistication, and religious tolerance, contrasting with earlier empires.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 600.0,
+          "end": 703.39
+        },
+        {
+          "episode": 125,
+          "start": 743.559,
+          "end": 1017.799
+        },
+        {
+          "episode": 125,
+          "start": 3926.48,
+          "end": 4119.319
+        }
+      ]
+    },
+    {
+      "id": "zoroastrianism",
+      "title": "Zoroastrianism",
+      "summary": "A religion founded by Zoroaster, reforming earlier Iranian paganism. It emphasized the worship of Ahura Mazda, rejected animal sacrifices, and had practices like sky burials and the use of psychedelics.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 4550.479,
+          "end": 4663.76
+        },
+        {
+          "episode": 125,
+          "start": 5008.479,
+          "end": 5184.159
+        },
+        {
+          "episode": 125,
+          "start": 5424.159,
+          "end": 5609.92
+        },
+        {
+          "episode": 125,
+          "start": 6628.319,
+          "end": 6791.0
+        },
+        {
+          "episode": 125,
+          "start": 6985.199,
+          "end": 7079.96
+        }
+      ]
+    },
+    {
+      "id": "religious-tolerance",
+      "title": "Religious Tolerance",
+      "summary": "Cyrus's policy of allowing conquered peoples to practice their own religions, which was unusual for ancient empires and contributed to the stability of his empire.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 3926.48,
+          "end": 4119.319
+        },
+        {
+          "episode": 125,
+          "start": 4949.0,
+          "end": 5040.199
+        }
+      ]
+    },
+    {
+      "id": "messiah-concept",
+      "title": "Messiah Concept",
+      "summary": "The term 'messiah' (anointed one) is used in the Old Testament for various figures, including Cyrus, who is called 'the Lord's anointed' in Isaiah, showing that God can anoint even pagans for His purposes.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 9306.879,
+          "end": 9407.579
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "cyrus-as-messiah",
+      "text": "Cyrus is called 'the Lord's anointed' (Messiah) in Isaiah 45:1, showing that God can anoint even a pagan king for His purposes.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 9306.879,
+          "end": 9407.579
+        }
+      ]
+    },
+    {
+      "id": "zoroastrianism-not-dualistic",
+      "text": "Zoroastrianism is not a dualistic religion with a good god and an evil god; Angra Mainyu is not a separate being but a shadow of Ahura Mazda.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 5610.0,
+          "end": 5729.92
+        }
+      ]
+    },
+    {
+      "id": "cyrus-religious-tolerance",
+      "text": "Cyrus's religious tolerance was unusual for ancient empires and likely stemmed from his personal lack of piety rather than a theological commitment.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 4949.0,
+          "end": 5040.199
+        }
+      ]
+    },
+    {
+      "id": "persian-empire-administration",
+      "text": "The Persian Empire was the first to establish a sophisticated administrative state with bureaucracy and trade routes, surpassing earlier empires.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 990.0,
+          "end": 1088.72
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "isaiah-44-45",
+      "reference": "Isaiah 44:24-45:7",
+      "summary": "This passage names Cyrus as God's shepherd and anointed, and declares that God will use him to rebuild Jerusalem and the temple, even though Cyrus does not know God.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 9168.0,
+          "end": 9273.0
+        }
+      ]
+    },
+    {
+      "id": "ezra-1",
+      "reference": "Ezra 1:1-11",
+      "summary": "Cyrus's decree allowing the Jews to return and rebuild the temple, fulfilling Jeremiah's prophecy.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 8370.0,
+          "end": 8505.36
+        }
+      ]
+    },
+    {
+      "id": "2-chronicles-36",
+      "reference": "2 Chronicles 36:22-23",
+      "summary": "The end of 2 Chronicles records Cyrus's proclamation, marking the end of the exile.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 8252.579,
+          "end": 8351.6
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "achaemenid-empire",
+      "term": "Achaemenid Empire",
+      "definition": "The first Persian Empire, founded by Cyrus the Great, named after the dynasty's founder Achaemenes.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 1045.759,
+          "end": 1135.799
+        }
+      ]
+    },
+    {
+      "id": "angra-mainyu",
+      "term": "Angra Mainyu",
+      "definition": "In Zoroastrianism, the 'destructive spirit' or shadow of Ahura Mazda, not a separate co-equal deity.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 5693.279,
+          "end": 5785.0
+        }
+      ]
+    },
+    {
+      "id": "asha",
+      "term": "Asha",
+      "definition": "The Zoroastrian concept of cosmic order and justice, similar to Ma'at in Egypt or Mishpat in Hebrew.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 5579.199,
+          "end": 5669.96
+        }
+      ]
+    },
+    {
+      "id": "cyrus-cylinder",
+      "term": "Cyrus Cylinder",
+      "definition": "An ancient clay cylinder inscribed with Cyrus's proclamation after conquering Babylon, detailing his policies and legitimacy.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 3480.0,
+          "end": 3577.119
+        }
+      ]
+    },
+    {
+      "id": "haoma",
+      "term": "Haoma",
+      "definition": "A plant used in Zoroastrian rituals to produce a hallucinogenic drink, cognate with Vedic soma.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 5310.0,
+          "end": 5404.79
+        }
+      ]
+    },
+    {
+      "id": "magi",
+      "term": "Magi",
+      "definition": "Priests in ancient Persian religion, often associated with Zoroastrianism, who interpreted dreams and performed rituals.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 2326.96,
+          "end": 2418.159
+        }
+      ]
+    },
+    {
+      "id": "masagatae",
+      "term": "Massagetae",
+      "definition": "A nomadic people of Central Asia who killed Cyrus the Great in battle.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 3696.239,
+          "end": 3792.239
+        }
+      ]
+    },
+    {
+      "id": "median-wall",
+      "term": "Median Wall",
+      "definition": "A defensive wall built by the Neo-Babylonians to protect against invasions from the east, which Cyrus had to circumvent.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 3215.0,
+          "end": 3312.0
+        }
+      ]
+    },
+    {
+      "id": "parsi",
+      "term": "Parsi",
+      "definition": "A Zoroastrian community that migrated from Iran to India, preserving their religion.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 6827.68,
+          "end": 6920.239
+        }
+      ]
+    },
+    {
+      "id": "sassanid-empire",
+      "term": "Sassanid Empire",
+      "definition": "The second Persian Empire (3rd-7th century AD), known for its persecution of Christians and its conflicts with Rome.",
+      "segments": [
+        {
+          "episode": 125,
+          "start": 622.679,
+          "end": 716.259
+        }
+      ]
+    }
+  ]
+}

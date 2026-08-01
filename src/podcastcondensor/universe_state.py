@@ -50,6 +50,68 @@ def _now() -> str:
     return datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
 
 
+def merge_episode_knowledge(data: dict, episode_num: int, knowledge: dict) -> None:
+    """Merge structured knowledge from an episode into a universe data dict.
+
+    Accumulates episode summaries and merges entities/concepts/claims etc.
+    with dedup by id. When an item with the same ID already exists (e.g.
+    ``divine-council`` appears in multiple episodes), its ``segments`` array
+    is extended with the new episode's timestamp references.
+
+    Pure: mutates ``data`` in place, no I/O. The metadata update + ``save()``
+    live in ``UniverseState.add_episode_knowledge``; this function is the
+    reusable body for building chunk/cumulative universes in memory.
+    """
+    # Episode summary
+    ep_summary = knowledge.get("summary", "").strip()
+    if ep_summary:
+        eps = data.setdefault("episode_summaries", [])
+        eps.append({
+            "episode_number": episode_num,
+            "summary": ep_summary,
+        })
+
+    # Structured items
+    for category in ["entities", "concepts", "claims",
+                     "scriptural_links", "glossary"]:
+        items = knowledge.get(category, [])
+        if not items:
+            continue
+
+        existing = data.get(category, [])
+        existing_by_id = {
+            e.get("id"): e for e in existing
+            if isinstance(e, dict) and e.get("id")
+        }
+
+        new_items = []
+        for item in items:
+            if not isinstance(item, dict):
+                continue
+            item_id = item.get("id")
+
+            if item_id and item_id in existing_by_id:
+                # Merge segments onto existing item
+                existing_item = existing_by_id[item_id]
+                new_segs = item.get("segments", [])
+                if new_segs:
+                    existing_segs = existing_item.setdefault("segments", [])
+                    existing_segs.extend(new_segs)
+                # Track episode provenance
+                existing_eps = existing_item.setdefault("episode_numbers", [])
+                if episode_num not in existing_eps:
+                    existing_eps.append(episode_num)
+                    existing_eps.sort()
+            else:
+                # New item — add with segments
+                item["episode_numbers"] = [episode_num]
+                new_items.append(item)
+                if item_id:
+                    existing_by_id[item_id] = item
+
+        data[category] = existing + new_items
+
+
 # ------------------------------------------------------------------
 # Prompt for the per-episode single-shot extraction
 # ------------------------------------------------------------------
@@ -227,70 +289,15 @@ class UniverseState:
         """Merge structured knowledge from an episode into the state.
 
         Accumulates episode summaries and merges entities/concepts/claims
-        etc. with dedup by id.
+        etc. with dedup by id (via the pure ``merge_episode_knowledge``),
+        then updates provenance metadata and saves.
 
         When an item with the same ID already exists (e.g. ``divine-council``
         appears in multiple episodes), its ``segments`` array is extended
         with the new episode's timestamp references. This is how the universe
         state builds up cross-episode audio position pointers.
         """
-        # Episode summary
-        ep_summary = knowledge.get("summary", "").strip()
-        if ep_summary:
-            eps = self.data.setdefault("episode_summaries", [])
-            eps.append({
-                "episode_number": episode_num,
-                "summary": ep_summary,
-            })
-
-        # Structured items
-        for category in ["entities", "concepts", "claims",
-                         "scriptural_links", "glossary"]:
-            items = knowledge.get(category, [])
-            if not items:
-                continue
-
-            existing = self.data.get(category, [])
-            existing_by_id = {
-                e.get("id"): e for e in existing
-                if isinstance(e, dict) and e.get("id")
-            }
-
-            new_items = []
-            for item in items:
-                if not isinstance(item, dict):
-                    continue
-                item_id = item.get("id")
-
-                if item_id and item_id in existing_by_id:
-                    # Merge segments onto existing item
-                    existing_item = existing_by_id[item_id]
-                    new_segs = item.get("segments", [])
-                    if new_segs:
-                        existing_segs = existing_item.setdefault("segments", [])
-                        existing_segs.extend(new_segs)
-                        logger.debug(
-                            "  %s: %d segments appended to '%s'",
-                            category, len(new_segs), item_id,
-                        )
-                    # Track episode provenance
-                    existing_eps = existing_item.setdefault("episode_numbers", [])
-                    if episode_num not in existing_eps:
-                        existing_eps.append(episode_num)
-                        existing_eps.sort()
-                else:
-                    # New item — add with segments
-                    item["episode_numbers"] = [episode_num]
-                    new_items.append(item)
-                    if item_id:
-                        existing_by_id[item_id] = item
-
-            self.data[category] = existing + new_items
-            if new_items:
-                logger.info(
-                    "  %s: %d new (total: %d)",
-                    category, len(new_items), len(self.data[category]),
-                )
+        merge_episode_knowledge(self.data, episode_num, knowledge)
 
         # Update metadata
         meta = self.data.setdefault("metadata", {})

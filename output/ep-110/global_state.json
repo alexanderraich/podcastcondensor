@@ -1,0 +1,348 @@
+{
+  "summary": "In this episode, the hosts discuss the nature and roles of angels, contrasting them with demons and exploring how God works through angelic beings and glorified humans. They emphasize that angels are not a separate species but have unique roles and tasks, and that the hierarchy of angels reflects their participation in God's glory and their assigned duties. The discussion covers the guardian angel tradition, the idea that angels operate in the world of thoughts, and the importance of recognizing their agency and free will. The hosts also address common misconceptions, such as the idea that angels are no longer active after Christ's ascension, and they critique the modern tendency to flatten the spiritual world, which leads to a sense of isolation. They conclude by highlighting the reality of spiritual warfare as a battle for the mind and the importance of engaging with the 'crowded spiritual world' of angels and saints for spiritual health.",
+  "entities": [
+    {
+      "id": "dionysius-the-areopagite",
+      "title": "Dionysius the Areopagite",
+      "category": "person",
+      "summary": "Early Christian theologian who wrote 'The Celestial Hierarchy', which systematized the nine ranks of angels and influenced Orthodox angelology.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 285.759,
+          "end": 376.199
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "title": "Theotokos",
+      "category": "theological",
+      "summary": "The Virgin Mary, considered the greatest human saint and the prime example of glorified humanity, exalted above the angels in the celestial hierarchy.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 1002.399,
+          "end": 1107.599
+        },
+        {
+          "episode": 110,
+          "start": 1629.16,
+          "end": 1729.74
+        }
+      ]
+    },
+    {
+      "id": "archangel-gabriel",
+      "title": "Archangel Gabriel",
+      "category": "theological",
+      "summary": "An archangel who appears in Scripture delivering messages, including the Annunciation to the Theotokos. He is one of the seven chief angels.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 2089.78,
+          "end": 2164.519
+        },
+        {
+          "episode": 110,
+          "start": 2747.519,
+          "end": 2839.48
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "Apostle to the Gentiles, whose writings emphasize the incarnation and the exalted role of humanity, including the idea that humans will judge angels.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 3611.28,
+          "end": 3707.0
+        },
+        {
+          "episode": 110,
+          "start": 5856.0,
+          "end": 5950.479
+        }
+      ]
+    },
+    {
+      "id": "st-michael",
+      "title": "St. Michael",
+      "category": "person",
+      "summary": "Archangel mentioned in Scripture and tradition, often depicted as a warrior and leader of the heavenly host. In some traditions, he is considered a Seraphim.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 708.96,
+          "end": 804.159
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "angelic-hierarchy",
+      "title": "Angelic Hierarchy",
+      "summary": "The nine ranks of angels (Seraphim, Cherubim, Thrones, Dominions, Virtues, Powers, Principalities, Archangels, Angels) are not species but roles or jobs assigned by God, reflecting their participation in His glory and their tasks.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 279.36,
+          "end": 516.62
+        }
+      ]
+    },
+    {
+      "id": "guardian-angel",
+      "title": "Guardian Angel",
+      "summary": "The tradition that each baptized Christian has a guardian angel assigned to guide and protect them, but this is not a rigid box; prayers for angels of peace and guidance are also part of the tradition.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 2910.0,
+          "end": 3142.199
+        }
+      ]
+    },
+    {
+      "id": "angelic-agency",
+      "title": "Angelic Agency",
+      "summary": "Angels have their own free will and agency; they are not sock puppets or drones. Their obedience is voluntary alignment with God's will, just as human obedience is freely given.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 3160.199,
+          "end": 3336.559
+        }
+      ]
+    },
+    {
+      "id": "angelic-fall",
+      "title": "Angelic Fall",
+      "summary": "Angels fall by aligning their will with human wills in rebellion against God, often through idolatry and communion with demons. This happens in communion with humanity, and it explains how angels can be mutable.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 3354.679,
+          "end": 3478.0
+        }
+      ]
+    },
+    {
+      "id": "spiritual-warfare",
+      "title": "Spiritual Warfare",
+      "summary": "The battle between angels and demons is primarily for the mind and heart, influencing thoughts and guiding humans toward God or destruction. It is not a physical sword fight but a battle of thoughts and ideas.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 6540.0,
+          "end": 6712.439
+        }
+      ]
+    },
+    {
+      "id": "intercession-of-angels-and-saints",
+      "title": "Intercession of Angels and Saints",
+      "summary": "Angels and glorified saints intercede for humans, bringing prayers before God. This is not in place of direct prayer to God but in addition to it, as an expression of love and communion.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 4973.6,
+          "end": 5125.72
+        },
+        {
+          "episode": 110,
+          "start": 5394.88,
+          "end": 5570.96
+        },
+        {
+          "episode": 110,
+          "start": 5730.0,
+          "end": 5914.239
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "angels-are-not-species",
+      "text": "Angels do not have species because they do not reproduce; each angel is unique, and the ranks represent roles or jobs, not biological categories.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 387.6,
+          "end": 478.6
+        }
+      ]
+    },
+    {
+      "id": "god-works-through-agents",
+      "text": "God administers creation through angels and humans, not out of necessity but out of love, sharing His work and creating community.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 1884.0,
+          "end": 2080.739
+        }
+      ]
+    },
+    {
+      "id": "angels-continue-after-ascension",
+      "text": "Angels continue their roles after Christ's ascension, as seen in the Book of Acts, where they still deliver messages and act as intermediaries.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 2370.0,
+          "end": 2469.119
+        }
+      ]
+    },
+    {
+      "id": "holy-spirit-not-information-feed",
+      "text": "The Holy Spirit's indwelling is not primarily about feeding information but about God's presence in us, as in the temple; claiming direct divine messages can be blasphemous.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 4495.319,
+          "end": 4585.699
+        }
+      ]
+    },
+    {
+      "id": "intercession-not-necessary-but-loving",
+      "text": "Angels and saints intercede for us not because God needs information but as an expression of love and communion, similar to asking friends to pray.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 5549.76,
+          "end": 5647.0
+        },
+        {
+          "episode": 110,
+          "start": 6254.0,
+          "end": 6344.76
+        }
+      ]
+    },
+    {
+      "id": "spiritual-battle-is-for-mind",
+      "text": "The battle between angels and demons is for the mind and heart, influencing thoughts and guiding humans toward God or destruction.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 6540.0,
+          "end": 6712.439
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "psalm-82",
+      "reference": "Psalm 82",
+      "summary": "Used to discuss the judgment of angels who failed their tasks over the nations, and connected to the Great Commission in Matthew 28.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 2802.659,
+          "end": 2893.34
+        }
+      ]
+    },
+    {
+      "id": "matthew-28-18-20",
+      "reference": "Matthew 28:18-20",
+      "summary": "Christ's declaration of all authority and the command to make disciples, linked to the replacement of fallen angels over nations.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 2802.659,
+          "end": 2893.34
+        }
+      ]
+    },
+    {
+      "id": "luke-20-36",
+      "reference": "Luke 20:36",
+      "summary": "Jesus says that those who are sons of the resurrection are equal to angels, supporting the idea of glorified humans joining the angelic hierarchy.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 1442.0,
+          "end": 1532.0
+        }
+      ]
+    },
+    {
+      "id": "1-timothy-2-1-5",
+      "reference": "1 Timothy 2:1-5",
+      "summary": "St. Paul urges intercessions for all, because there is one mediator, Christ; this is used to support the practice of intercession, not oppose it.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 5848.79,
+          "end": 5940.76
+        }
+      ]
+    },
+    {
+      "id": "revelation-5-11-12",
+      "reference": "Revelation 5:11-12",
+      "summary": "The closing quote describing many angels around the throne, praising the Lamb, illustrating the heavenly worship and the presence of angels.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 7017.8,
+          "end": 7049.72
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "noetic-world",
+      "term": "Noetic World",
+      "definition": "The world of thoughts and minds, where angels and demons operate, influencing human consciousness.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 3786.599,
+          "end": 3877.599
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "term": "Theotokos",
+      "definition": "Greek for 'God-bearer', a title for the Virgin Mary, emphasizing her role as the mother of God.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 1720.859,
+          "end": 1811.72
+        }
+      ]
+    },
+    {
+      "id": "monachos",
+      "term": "Monachos",
+      "definition": "Greek for 'monk', meaning 'alone', but in practice, monks are not alone because they engage with the spiritual world.",
+      "segments": [
+        {
+          "episode": 110,
+          "start": 6820.79,
+          "end": 6913.76
+        }
+      ]
+    }
+  ]
+}

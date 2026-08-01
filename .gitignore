@@ -8,16 +8,21 @@ build/
 *.whl
 venv/
 
-# Output artifacts — only source_subtitles.srt is version-controlled
+# Output artifacts — SRTs, per-episode global_state, and universe/super-cut
+# caches ARE version-controlled (LLM-generated, expensive to regenerate).
+# Everything else (audio, diag logs, temp) stays ignored.
 output/*
 !output/*.gitkeep
+!output/universe_state_*.json
+!output/super_cut_*.json
 
-# Per-episode: only the whisper SRT
+# Per-episode: whisper SRT + global_state.json (LLM extraction) tracked
 # NOTE: must un-ignore the ep dirs BEFORE re-ignoring their contents, else
-# git never descends into them and the SRT negation below never fires.
+# git never descends into them and the negations below never fire.
 !output/ep-*/
 output/ep-*/*
 !output/ep-*/source_subtitles.srt
+!output/ep-*/global_state.json
 
 # Temp
 *.tmp

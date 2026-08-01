@@ -1,0 +1,383 @@
+{
+  "summary": "In this episode, the hosts explore the meaning of the cross of Christ, moving beyond the common focus on atonement to examine the crucifixion as a victory over death and the devil. They begin by discussing the historical origins of crucifixion, noting that the Persians invented it and the Romans perfected it as a brutal deterrent. They then delve into the Old Testament background, particularly Deuteronomy 21:22-23, which speaks of the curse of hanging on a tree, and how this curse is understood in terms of sin, corruption, and exile. The hosts emphasize that Christ's death was not a penal substitution but a participation in the curse of the Torah, which he bore to destroy the power of death and the devil. They also explore the language of redemption and manumission, highlighting that Christ's death was a ransom that set humanity free from slavery to sin and death. The episode concludes with a call to participate in Christ's sacrifice through the Eucharist and by offering our own lives as living sacrifices, following Christ through suffering to resurrection.",
+  "entities": [
+    {
+      "id": "pontius-pilate",
+      "title": "Pontius Pilate",
+      "category": "person",
+      "summary": "Roman governor of Judea who ordered the crucifixion of Jesus, known for his brutal use of crucifixion as a tool for population control.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 760.679,
+          "end": 851.0
+        },
+        {
+          "episode": 113,
+          "start": 870.0,
+          "end": 967.58
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-21",
+      "title": "Deuteronomy 21",
+      "category": "scriptural",
+      "summary": "Old Testament passage about capital punishment and the curse of hanging on a tree, foundational for understanding the New Testament view of Christ's crucifixion.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 1077.759,
+          "end": 1168.79
+        },
+        {
+          "episode": 113,
+          "start": 1274.0,
+          "end": 1372.0
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "Apostle whose writings, especially Galatians and Romans, are central to the discussion of the cross, redemption, and participation in Christ.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 230.92,
+          "end": 324.72
+        },
+        {
+          "episode": 113,
+          "start": 2501.48,
+          "end": 2592.48
+        },
+        {
+          "episode": 113,
+          "start": 2586.639,
+          "end": 2680.4
+        }
+      ]
+    },
+    {
+      "id": "devil",
+      "title": "Devil",
+      "category": "theological",
+      "summary": "The adversary who holds the power of death and accuses humanity, but is defeated by Christ's death and resurrection.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 5580.0,
+          "end": 5678.239
+        },
+        {
+          "episode": 113,
+          "start": 6187.439,
+          "end": 6278.72
+        }
+      ]
+    },
+    {
+      "id": "day-of-atonement",
+      "title": "Day of Atonement",
+      "category": "theological",
+      "summary": "The annual Old Testament ritual involving two goats, one sacrificed and one sent into the wilderness, foreshadowing Christ's atoning work.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 2451.599,
+          "end": 2494.84
+        },
+        {
+          "episode": 113,
+          "start": 2907.92,
+          "end": 2999.44
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "crucifixion-as-execution",
+      "title": "Crucifixion as Execution",
+      "summary": "The historical practice of crucifixion as a method of execution, its origins with the Persians, and its use by the Romans as a deterrent and form of public humiliation.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 324.72,
+          "end": 425.12
+        },
+        {
+          "episode": 113,
+          "start": 435.759,
+          "end": 527.0
+        },
+        {
+          "episode": 113,
+          "start": 510.0,
+          "end": 600.399
+        }
+      ]
+    },
+    {
+      "id": "curse-of-the-torah",
+      "title": "Curse of the Torah",
+      "summary": "The concept of the curse of the Torah, as enumerated in Leviticus 26 and Deuteronomy 28-30, which includes death and exile as consequences of disobedience, and how Christ bore this curse on the cross.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 2096.92,
+          "end": 2219.39
+        },
+        {
+          "episode": 113,
+          "start": 2257.4,
+          "end": 2366.4
+        }
+      ]
+    },
+    {
+      "id": "participation-vs-substitution",
+      "title": "Participation vs. Substitution",
+      "summary": "The distinction between substitutionary atonement (Christ dying instead of us) and participatory atonement (we die and rise with Christ), emphasizing the New Testament language of being 'in Christ'.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 3147.48,
+          "end": 3265.48
+        },
+        {
+          "episode": 113,
+          "start": 3576.0,
+          "end": 3700.559
+        }
+      ]
+    },
+    {
+      "id": "manumission",
+      "title": "Manumission",
+      "summary": "The act of releasing someone from slavery, used as a metaphor for Christ's redemption of humanity from slavery to sin and death.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 5127.6,
+          "end": 5218.72
+        },
+        {
+          "episode": 113,
+          "start": 6330.0,
+          "end": 6425.76
+        }
+      ]
+    },
+    {
+      "id": "sin-offering",
+      "title": "Sin Offering",
+      "summary": "The Old Testament sacrificial system, particularly the sin offering, and how Christ is presented as the ultimate sin offering, consecrated and offered to God for purification.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 7677.399,
+          "end": 7798.8
+        },
+        {
+          "episode": 113,
+          "start": 8291.799,
+          "end": 8382.459
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "persians-invented-crucifixion",
+      "text": "The Persians invented crucifixion as a method of execution, not the Romans.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 324.72,
+          "end": 415.6
+        }
+      ]
+    },
+    {
+      "id": "christ-bore-curse-of-torah",
+      "text": "Christ redeemed us from the curse of the Torah by becoming a curse for us, as stated in Galatians 3:13.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 2501.48,
+          "end": 2592.48
+        }
+      ]
+    },
+    {
+      "id": "atonement-is-participation",
+      "text": "The New Testament teaches participation in Christ's death and resurrection, not substitutionary atonement.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 3147.48,
+          "end": 3265.48
+        }
+      ]
+    },
+    {
+      "id": "redemption-is-universal",
+      "text": "Christ's redemption is universal, but not all are saved; all are raised, but some to condemnation.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 6577.439,
+          "end": 6670.439
+        }
+      ]
+    },
+    {
+      "id": "christ-cancelled-debt",
+      "text": "Christ canceled the record of debt that stood against us, nailing it to the cross (Colossians 2:14).",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 6745.56,
+          "end": 6841.439
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "deut-21-22-23",
+      "reference": "Deuteronomy 21:22-23",
+      "summary": "Discussed as the basis for the curse of hanging on a tree, applied to Christ's crucifixion.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 1077.759,
+          "end": 1168.79
+        },
+        {
+          "episode": 113,
+          "start": 1274.0,
+          "end": 1372.0
+        }
+      ]
+    },
+    {
+      "id": "gal-3-13",
+      "reference": "Galatians 3:13",
+      "summary": "Quoted to show Christ became a curse for us, redeeming us from the curse of the law.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 2501.48,
+          "end": 2592.48
+        }
+      ]
+    },
+    {
+      "id": "rom-8-3",
+      "reference": "Romans 8:3",
+      "summary": "Explained as God condemning sin in the flesh of Christ, not condemning Christ.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 2586.639,
+          "end": 2680.4
+        }
+      ]
+    },
+    {
+      "id": "col-2-14",
+      "reference": "Colossians 2:14",
+      "summary": "Interpreted as Christ canceling the record of debt, not paying a ransom to the devil.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 6745.56,
+          "end": 6841.439
+        }
+      ]
+    },
+    {
+      "id": "heb-2-14-15",
+      "reference": "Hebrews 2:14-15",
+      "summary": "Cited to show Christ's death destroys the devil and frees those enslaved by fear of death.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 6187.439,
+          "end": 6278.72
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "manumission",
+      "term": "Manumission",
+      "definition": "The act of releasing someone from slavery, used metaphorically for Christ's redemption.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 5127.6,
+          "end": 5218.72
+        }
+      ]
+    },
+    {
+      "id": "propitiation",
+      "term": "Propitiation",
+      "definition": "Something that renders someone propitious or pleased; in context, Christ's offering is pleasing to God, not appeasing wrath.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 9478.319,
+          "end": 9569.6
+        }
+      ]
+    },
+    {
+      "id": "sin-offering",
+      "term": "Sin Offering",
+      "definition": "An Old Testament sacrifice for purification from sin; Christ is the ultimate sin offering.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 7677.399,
+          "end": 7798.8
+        }
+      ]
+    },
+    {
+      "id": "curse-of-the-torah",
+      "term": "Curse of the Torah",
+      "definition": "The curses enumerated in Leviticus 26 and Deuteronomy 28-30 for disobedience, including death and exile.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 2096.92,
+          "end": 2219.39
+        }
+      ]
+    },
+    {
+      "id": "debt-slavery",
+      "term": "Debt Slavery",
+      "definition": "A form of slavery in the ancient world where individuals sold themselves or family members to pay off debts.",
+      "segments": [
+        {
+          "episode": 113,
+          "start": 5243.279,
+          "end": 5339.159
+        }
+      ]
+    }
+  ]
+}

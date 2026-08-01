@@ -1,0 +1,393 @@
+{
+  "summary": "In this episode, the hosts begin a three-part series on the history of Israel, aiming to provide a framework for understanding the Bible. They start by examining the promises made to Abraham, emphasizing that the ultimate fulfillment is not the land or descendants but theosis—becoming like the stars of heaven. They introduce the concept of a sequence of signs, where immediate fulfillments (like Isaac's birth) point to greater future realities. The discussion then explores the category of non-Israelite Abrahamites (Edomites, Moabites, Ammonites, etc.), who are distinct from both Israelites and Gentiles, and who initially worship Yahweh. The hosts critique dispensationalism, arguing that the modern state of Israel is not the biblical Israel and that the Torah was never a means of earning salvation. They also discuss the formation of Israel as a nation through the Passover and Exodus, emphasizing that Israel was constituted by shared experience and the giving of the Torah, which defined its way of life. The episode concludes with a call to embrace the messiness of history and theology, rejecting overly systematic approaches that distort the biblical narrative.",
+  "entities": [
+    {
+      "id": "abraham",
+      "title": "Abraham",
+      "category": "person",
+      "summary": "The patriarch to whom God made promises of descendants, land, and blessing. His story begins in Genesis 12 and is central to the series.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 412.5,
+          "end": 520.679
+        },
+        {
+          "episode": 114,
+          "start": 626.399,
+          "end": 830.48
+        }
+      ]
+    },
+    {
+      "id": "israel",
+      "title": "Israel",
+      "category": "theological",
+      "summary": "The nation chosen by God, formed through the Exodus and defined by the Torah. The series explores its history and role.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 5025.84,
+          "end": 5138.399
+        },
+        {
+          "episode": 114,
+          "start": 5820.0,
+          "end": 6010.399
+        }
+      ]
+    },
+    {
+      "id": "edomites",
+      "title": "Edomites",
+      "category": "historical",
+      "summary": "Descendants of Esau, a non-Israelite Abrahamite group that initially worshiped Yahweh and received land from God.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 1290.0,
+          "end": 1507.24
+        },
+        {
+          "episode": 114,
+          "start": 1546.299,
+          "end": 1696.79
+        }
+      ]
+    },
+    {
+      "id": "moabites",
+      "title": "Moabites",
+      "category": "historical",
+      "summary": "Descendants of Lot, another non-Israelite Abrahamite group that received land and were treated similarly to Israel.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 1290.0,
+          "end": 1507.24
+        },
+        {
+          "episode": 114,
+          "start": 1546.299,
+          "end": 1696.79
+        }
+      ]
+    },
+    {
+      "id": "dispensationalism",
+      "title": "Dispensationalism",
+      "category": "theological",
+      "summary": "A theological system that separates Israel and the Church, often linking the modern state of Israel to biblical prophecy. The hosts critique it heavily.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 1830.0,
+          "end": 1932.48
+        },
+        {
+          "episode": 114,
+          "start": 3308.48,
+          "end": 3413.28
+        },
+        {
+          "episode": 114,
+          "start": 3787.44,
+          "end": 3883.219
+        }
+      ]
+    },
+    {
+      "id": "dan",
+      "title": "Tribe of Dan",
+      "category": "historical",
+      "summary": "A tribe of Israel that may have originated from the Sea Peoples (Danai), not primarily biological descendants of Jacob. They were poorly assimilated and later fell into idolatry.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 5507.92,
+          "end": 5704.8
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "promises-to-abraham",
+      "title": "Promises to Abraham",
+      "summary": "The promises God made to Abraham include descendants, land, and becoming like the stars of heaven (theosis). These promises form a sequence of signs, with immediate fulfillments pointing to ultimate ones.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 412.5,
+          "end": 520.679
+        },
+        {
+          "episode": 114,
+          "start": 626.399,
+          "end": 830.48
+        }
+      ]
+    },
+    {
+      "id": "sequence-of-signs",
+      "title": "Sequence of Signs",
+      "summary": "In prophecy, a sign is an immediate event that confirms the certainty of a larger future fulfillment. Examples include the birth of Isaac and the virgin birth prophecy in Isaiah 7.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 820.0,
+          "end": 1020.0
+        }
+      ]
+    },
+    {
+      "id": "non-israelite-abrahamites",
+      "title": "Non-Israelite Abrahamites",
+      "summary": "Groups like Edomites, Moabites, and Ammonites are descendants of Abraham but not Israelites. They are distinct from Gentiles and initially worship Yahweh, receiving land and treatment similar to Israel.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 1290.0,
+          "end": 1507.24
+        },
+        {
+          "episode": 114,
+          "start": 1546.299,
+          "end": 1696.79
+        }
+      ]
+    },
+    {
+      "id": "israel-as-nation",
+      "title": "Israel as a Nation",
+      "summary": "Israel came into existence as a nation through the Passover and Exodus, constituted by shared experience and the giving of the Torah, which defined its way of life.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 5025.84,
+          "end": 5138.399
+        },
+        {
+          "episode": 114,
+          "start": 5820.0,
+          "end": 6010.399
+        }
+      ]
+    },
+    {
+      "id": "torah-as-nomos",
+      "title": "Torah as Nomos",
+      "summary": "The Torah was given to Israel as its way of life (nomos), covering all aspects of society. It was unique to Israel and not given to other Abrahamite nations or Gentiles.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 6981.0,
+          "end": 7119.819
+        }
+      ]
+    },
+    {
+      "id": "messiness-of-history",
+      "title": "Messiness of History",
+      "summary": "The hosts emphasize that history and theology are messy, not neatly systematic. Attempts to force them into systems lead to bad theology, such as dispensationalism.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 8755.28,
+          "end": 9046.5
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "promises-fulfilled-in-christ",
+      "text": "The promises to Abraham are fulfilled in Jesus Christ, who is the ultimate descendant and the means by which all nations are blessed.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 521.679,
+          "end": 612.96
+        }
+      ]
+    },
+    {
+      "id": "modern-israel-not-biblical",
+      "text": "The modern state of Israel is not the biblical Israel; there is no direct connection between them.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 3446.199,
+          "end": 3537.9
+        },
+        {
+          "episode": 114,
+          "start": 3570.0,
+          "end": 3664.76
+        }
+      ]
+    },
+    {
+      "id": "torah-not-salvation",
+      "text": "The Torah was never a means of earning salvation; it was given to Israel as a way of life and a sign pointing to future fulfillment.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 8052.399,
+          "end": 8144.119
+        }
+      ]
+    },
+    {
+      "id": "israel-constituted-by-passover",
+      "text": "Israel was constituted as a nation through the Passover event, where the blood of the lamb marked the boundaries of the people.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 5820.0,
+          "end": 6010.399
+        }
+      ]
+    },
+    {
+      "id": "dispensationalism-antisemitic",
+      "text": "Dispensationalism is inherently anti-Semitic because it views Jews as tools for end-times prophecy rather than people needing salvation.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 3787.44,
+          "end": 3883.219
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-12",
+      "reference": "Genesis 12:1-3",
+      "summary": "God's call to Abraham and the initial promises of descendants, land, and blessing.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 412.5,
+          "end": 520.679
+        }
+      ]
+    },
+    {
+      "id": "genesis-15",
+      "reference": "Genesis 15:5",
+      "summary": "God promises Abraham descendants as numerous as the stars, linked to the idea of becoming like the stars (theosis).",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 736.2,
+          "end": 830.48
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-2",
+      "reference": "Deuteronomy 2:18-25",
+      "summary": "God tells Israel not to harass the Moabites and Ammonites because He has given them land, showing they are Abrahamite nations.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 1676.599,
+          "end": 1781.119
+        }
+      ]
+    },
+    {
+      "id": "daniel-12-3",
+      "reference": "Daniel 12:3",
+      "summary": "The righteous will shine like stars in the resurrection, connecting to the promise to Abraham.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 8335.44,
+          "end": 8426.59
+        }
+      ]
+    },
+    {
+      "id": "exodus-12",
+      "reference": "Exodus 12:13",
+      "summary": "The blood on the doorposts as a sign for Israel, marking the distinction between Israel and Egypt.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 5820.0,
+          "end": 6010.399
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God, participating in the divine nature, often described as becoming like the stars of heaven.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 759.919,
+          "end": 853.39
+        }
+      ]
+    },
+    {
+      "id": "gentiles",
+      "term": "Gentiles",
+      "definition": "In the Old Testament, the nations listed in the Table of Nations (Genesis 10), generally pagans, distinct from Israelites and other Abrahamites.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 1335.2,
+          "end": 1426.68
+        }
+      ]
+    },
+    {
+      "id": "torah",
+      "term": "Torah",
+      "definition": "The first five books of the Bible, also meaning 'instruction' or 'law', given to Israel as its way of life.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 6981.0,
+          "end": 7119.819
+        }
+      ]
+    },
+    {
+      "id": "dispensationalism",
+      "term": "Dispensationalism",
+      "definition": "A theological system that separates God's plans for Israel and the Church, often linking modern Israel to prophecy.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 1830.0,
+          "end": 1932.48
+        }
+      ]
+    },
+    {
+      "id": "passover",
+      "term": "Passover",
+      "definition": "The Jewish festival commemorating the Exodus, when the angel of death passed over the homes marked with lamb's blood.",
+      "segments": [
+        {
+          "episode": 114,
+          "start": 5820.0,
+          "end": 6010.399
+        }
+      ]
+    }
+  ]
+}

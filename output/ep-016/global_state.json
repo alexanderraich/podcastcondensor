@@ -1,0 +1,553 @@
+{
+  "summary": "In this episode, the hosts recap their previous discussion on sacred geography and the nature of being, clarifying that human consciousness actively constructs the world we experience, not as an illusion but as an interaction with objective reality. They explore the essence-energies distinction, the non-existence of space and time as things, and how ritual creates sacred time and space. The main focus then shifts to the underworld, examining its geography, including Gehenna, the Abyss, and the various rivers, and how profane spaces become gateways to demonic influence. They discuss the biblical and ancient Near Eastern understanding of Sheol/Hades, the imprisonment of fallen angels, and the hope that Christianity brings through the resurrection, contrasting it with the hopelessness of pagan afterlife beliefs. The episode concludes with practical applications for Christians to transform profane spaces into sacred ones through participation in God's work.",
+  "entities": [
+    {
+      "id": "gehenna",
+      "title": "Gehenna",
+      "category": "place",
+      "summary": "The Valley of Hinnom outside Jerusalem, infamous for child sacrifice to Molech. It became a symbol of the underworld and a place of judgment, where bodies were left unburied.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 2172.88,
+          "end": 2460.0
+        }
+      ]
+    },
+    {
+      "id": "mount-hermon",
+      "title": "Mount Hermon",
+      "category": "place",
+      "summary": "A mountain associated with the Watchers' rebellion in the Book of Enoch and considered a gateway to the underworld. It was the site of pagan shrines and near Caesarea Philippi, where Peter confessed Christ.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 2499.44,
+          "end": 2682.8
+        }
+      ]
+    },
+    {
+      "id": "mount-lykaion",
+      "title": "Mount Lykaion",
+      "category": "place",
+      "summary": "Wolf Mountain in Greece, site of an ancient altar with human sacrifice and cannibalism, associated with Lycaon, the first werewolf. It was later rededicated to St. Elias.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 2682.8,
+          "end": 2853.99
+        }
+      ]
+    },
+    {
+      "id": "abyss",
+      "title": "The Abyss",
+      "category": "place",
+      "summary": "The deepest part of the underworld, a prison for rebellious angels and demons. It is depicted as a bottomless pit, the inverse of a mountain, and is associated with the lake of fire.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 4305.76,
+          "end": 4870.0
+        }
+      ]
+    },
+    {
+      "id": "tartarus",
+      "title": "Tartarus",
+      "category": "place",
+      "summary": "In Greek mythology, the prison of the Titans. The New Testament uses this term in 2 Peter 2:4 to describe the place where fallen angels are held in chains of darkness.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 4658.279,
+          "end": 4750.279
+        }
+      ]
+    },
+    {
+      "id": "elysian-fields",
+      "title": "Elysian Fields",
+      "category": "place",
+      "summary": "The best part of the underworld in Greek myth, a place of rest for the righteous. It is compared to the Bosom of Abraham in Jewish tradition.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 4860.0,
+          "end": 4951.0
+        }
+      ]
+    },
+    {
+      "id": "acherusian-lake",
+      "title": "Acherusian Lake",
+      "category": "place",
+      "summary": "A lake in the underworld associated with purification and forgetfulness. In the Apocalypse of Paul, the city of God is built upon it, and souls are purified in its waters.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 6283.3,
+          "end": 6563.6
+        }
+      ]
+    },
+    {
+      "id": "baal",
+      "title": "Baal",
+      "category": "theological",
+      "summary": "A Canaanite deity who, in mythology, defeats Yam and Mot and builds his palace in the underworld. The Old Testament ridicules Baal, identifying him with the devil.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 6749.239,
+          "end": 6866.0
+        }
+      ]
+    },
+    {
+      "id": "gilgamesh",
+      "title": "Gilgamesh",
+      "category": "historical",
+      "summary": "The hero of the Epic of Gilgamesh, considered a giant in later tradition. The Book of the Giants among the Dead Sea Scrolls lists him as one of the giants.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 5828.0,
+          "end": 5968.1
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "essence-energies-distinction",
+      "title": "Essence-Energies Distinction",
+      "summary": "The theological concept that we cannot know the inner essence of any being, including God, but we can experience their energies or operations. Applied to all created things, it explains why we only encounter how things relate to us, not their full being.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 435.19,
+          "end": 553.44
+        }
+      ]
+    },
+    {
+      "id": "sacred-time-and-space",
+      "title": "Sacred Time and Space",
+      "summary": "The idea that through ritual, specific places and times become holy, making present the eternal realities they commemorate. This is contrasted with profane space, which is outside the temple and subject to demonic influence.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 1290.0,
+          "end": 1433.48
+        },
+        {
+          "episode": 16,
+          "start": 1613.759,
+          "end": 1863.119
+        }
+      ]
+    },
+    {
+      "id": "profane-space",
+      "title": "Profane Space",
+      "summary": "Space that has been defiled by sin and demonic activity, becoming a gateway for evil. It is the opposite of sacred space and requires purification to be reclaimed for God.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 1863.119,
+          "end": 1977.24
+        },
+        {
+          "episode": 16,
+          "start": 1963.96,
+          "end": 2152.679
+        }
+      ]
+    },
+    {
+      "id": "underworld-geography",
+      "title": "Underworld Geography",
+      "summary": "The ancient understanding of the underworld as a real place with distinct regions, including the Abyss, Tartarus, the Elysian Fields, and the Bosom of Abraham. These regions correspond to specific locations on earth that have become gateways.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 4230.0,
+          "end": 4331.39
+        },
+        {
+          "episode": 16,
+          "start": 4850.72,
+          "end": 5204.0
+        }
+      ]
+    },
+    {
+      "id": "astral-projection",
+      "title": "Astral Projection",
+      "summary": "The concept of consciousness traveling outside the body to other places or times. The hosts distinguish between legitimate ecstatic visions granted by God and sorcerous techniques that attempt to force such experiences.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 3090.0,
+          "end": 3279.5
+        }
+      ]
+    },
+    {
+      "id": "soul-sleep",
+      "title": "Soul Sleep",
+      "summary": "The belief that the dead are unconscious until the resurrection. The hosts refute this, explaining that sleep is not oblivion and that the conscious experience continues in the intermediate state.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 5428.159,
+          "end": 5648.92
+        }
+      ]
+    },
+    {
+      "id": "annihilationism",
+      "title": "Annihilationism",
+      "summary": "The belief that the wicked cease to exist after judgment. The hosts argue this is a modern concept that doesn't align with ancient thought, where non-existence was understood as descent into chaos, not void.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 5650.199,
+          "end": 5808.119
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "consciousness-produces-world",
+      "text": "Human consciousness produces the world we experience, not as an illusion, but as an interaction with objective reality, shaping it through language, art, music, and ritual.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 84.0,
+          "end": 329.819
+        }
+      ]
+    },
+    {
+      "id": "space-time-not-things",
+      "text": "Space and time are not things but categories of human experience, and they do not exist independently of conscious beings.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 953.759,
+          "end": 1305.359
+        }
+      ]
+    },
+    {
+      "id": "ritual-makes-present",
+      "text": "Ritual causes a particular place and time to become not just sacred, but a specific sacred space and time, making present the eternal event it commemorates.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 1290.0,
+          "end": 1433.48
+        }
+      ]
+    },
+    {
+      "id": "no-neutral-space",
+      "text": "There is no neutral space; every place is either sacred or profane, and human actions determine which it becomes.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 2119.99,
+          "end": 2210.0
+        }
+      ]
+    },
+    {
+      "id": "gehenna-became-hell",
+      "text": "The Valley of Hinnom became hell because of the child sacrifices performed there, turning it into a gateway to the underworld.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 2250.0,
+          "end": 2460.0
+        }
+      ]
+    },
+    {
+      "id": "peter-confession-near-gate",
+      "text": "Peter's confession of Christ occurred near a literal gate of hell, the gateway to the underworld at Caesarea Philippi, making Christ's promise about the gates of hell not prevailing particularly poignant.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 2608.76,
+          "end": 2703.0
+        }
+      ]
+    },
+    {
+      "id": "astral-projection-not-technique",
+      "text": "Legitimate ecstatic visions are granted by God, not achieved through techniques; attempting to force such experiences is sorcery.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 3203.519,
+          "end": 3295.0
+        }
+      ]
+    },
+    {
+      "id": "soul-sleep-refuted",
+      "text": "The dead are not unconscious; they experience a foretaste of their final state, and the comparison to sleep does not imply oblivion.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 5428.159,
+          "end": 5648.92
+        }
+      ]
+    },
+    {
+      "id": "annihilationism-ancient-chaos",
+      "text": "Annihilationism is a modern concept; in ancient thought, non-existence meant descent into chaos, not void, and the condemned continue to exist in a diminished state.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 5650.199,
+          "end": 5808.119
+        }
+      ]
+    },
+    {
+      "id": "underworld-no-hope",
+      "text": "Ancient paganism offered no hope for the afterlife; the underworld was a shadowy, sad existence, and Christianity's promise of resurrection is a radical departure.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 7341.199,
+          "end": 7598.399
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "jeremiah-7-19",
+      "reference": "Jeremiah 7:31-32",
+      "summary": "Jeremiah condemns the child sacrifices in the Valley of Hinnom and prophesies that the place will be called the Valley of Slaughter, where bodies will be left unburied.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 2314.0,
+          "end": 2460.0
+        }
+      ]
+    },
+    {
+      "id": "matthew-16-18",
+      "reference": "Matthew 16:18",
+      "summary": "Jesus tells Peter that the gates of hell will not prevail against the church, spoken near the gates of the underworld at Caesarea Philippi.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 2608.76,
+          "end": 2703.0
+        }
+      ]
+    },
+    {
+      "id": "2-peter-2-4",
+      "reference": "2 Peter 2:4",
+      "summary": "Peter refers to the angels who sinned being cast into Tartarus, equating the Greek Tartarus with the prison of fallen angels.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 4677.479,
+          "end": 4769.76
+        }
+      ]
+    },
+    {
+      "id": "jonah-2",
+      "reference": "Jonah 2:2-6",
+      "summary": "Jonah prays from the belly of the fish, describing it as the abyss and the depths of the sea, a descent into the underworld.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 4448.0,
+          "end": 4551.72
+        }
+      ]
+    },
+    {
+      "id": "luke-16-22-24",
+      "reference": "Luke 16:22-24",
+      "summary": "The parable of the rich man and Lazarus, where Lazarus is in the bosom of Abraham and the rich man asks for water, referencing the spring in the righteous section of Hades.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 4887.479,
+          "end": 5026.56
+        }
+      ]
+    },
+    {
+      "id": "revelation-9-1",
+      "reference": "Revelation 9:1-2",
+      "summary": "An angel with the key to the abyss opens it, releasing demons to torment humanity.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 4765.52,
+          "end": 4860.0
+        }
+      ]
+    },
+    {
+      "id": "revelation-20-1-3",
+      "reference": "Revelation 20:1-3",
+      "summary": "The same angel imprisons the devil in the abyss for a thousand years.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 4785.68,
+          "end": 4875.76
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "sheol",
+      "term": "Sheol",
+      "definition": "The Hebrew term for the underworld, the realm of the dead, often depicted as a dark, dusty place beneath the earth.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 3700.679,
+          "end": 3831.119
+        }
+      ]
+    },
+    {
+      "id": "hades",
+      "term": "Hades",
+      "definition": "The Greek term for the underworld, also the name of its ruler. It is a place of shadows and forgetfulness, not necessarily a place of torment.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 4005.36,
+          "end": 4198.479
+        }
+      ]
+    },
+    {
+      "id": "tartarus",
+      "term": "Tartarus",
+      "definition": "In Greek mythology, the deepest abyss of the underworld, used as a prison for the Titans. In the New Testament, it is the place where fallen angels are held.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 4658.279,
+          "end": 4750.279
+        }
+      ]
+    },
+    {
+      "id": "abyss",
+      "term": "Abyss",
+      "definition": "The bottomless pit, the deepest part of the underworld, a prison for demons and rebellious spirits.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 4305.76,
+          "end": 4870.0
+        }
+      ]
+    },
+    {
+      "id": "bosom-of-abraham",
+      "term": "Bosom of Abraham",
+      "definition": "A place of comfort in the underworld for the righteous, where they rest with the patriarchs, often associated with a spring of water.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 4887.479,
+          "end": 5026.56
+        }
+      ]
+    },
+    {
+      "id": "acherusian-lake",
+      "term": "Acherusian Lake",
+      "definition": "A lake in the underworld associated with purification and forgetfulness, later used in Christian apocalyptic literature as a place of cleansing.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 6283.3,
+          "end": 6563.6
+        }
+      ]
+    },
+    {
+      "id": "styx",
+      "term": "Styx",
+      "definition": "The river in Greek mythology that separates the world of the living from the underworld, crossed by the ferryman Charon.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 6177.239,
+          "end": 6268.0
+        }
+      ]
+    },
+    {
+      "id": "lethe",
+      "term": "Lethe",
+      "definition": "The river of forgetfulness in the underworld, which erases memories of past lives in reincarnation.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 6346.52,
+          "end": 6456.64
+        }
+      ]
+    },
+    {
+      "id": "kokytos",
+      "term": "Kokytos",
+      "definition": "The river of wailing and lamentation in the underworld, one of the five rivers of Hades.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 6604.88,
+          "end": 6696.96
+        }
+      ]
+    },
+    {
+      "id": "phlegethon",
+      "term": "Phlegethon",
+      "definition": "The river of fire in the underworld, which flows into the abyss and becomes the lake of fire.",
+      "segments": [
+        {
+          "episode": 16,
+          "start": 4800.0,
+          "end": 4893.119
+        }
+      ]
+    }
+  ]
+}

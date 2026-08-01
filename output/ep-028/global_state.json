@@ -1,0 +1,455 @@
+{
+  "summary": "In this episode of the Lord of Spirits, Fathers Andrew Stephen Damick and Stephen De Young explore the biblical and ancient Near Eastern imagery of Leviathan and Behemoth, two monstrous spiritual beings that symbolize chaos and tyranny. They begin by defining Leviathan (Hebrew: Liwyatan) as a twisting, fugitive sea serpent, connected to the Canaanite god Yam and his dragon Lotan. They discuss how these creatures were not merely literal animals but embodied spiritual forces behind the sea, storms, and chaos. The hosts then trace Leviathan's appearances in the Old Testament, including Psalm 74 and Isaiah 27, where God defeats Leviathan as an act of creation and salvation, and in Job, where Leviathan is described with crocodile-like features but also as a fire-breathing creature, indicating its supernatural nature. They also introduce Behemoth, a land beast associated with the underworld and virility, paralleling the Ugaritic figure of Bull El. The episode then moves to the New Testament, particularly Revelation 13, where the beast from the sea and the beast from the earth are identified as Leviathan and Behemoth, representing the demonic forces behind empires and false religions. They discuss the historical context of Nero as the antichrist figure and the meaning of the number 666. Finally, they apply these themes to contemporary life, urging Christians to recognize the spiritual battle behind worldly powers and to respond with repentance, transformation, and faithful witness rather than fear or worldly power.",
+  "entities": [
+    {
+      "id": "leviathan",
+      "title": "Leviathan",
+      "category": "theological",
+      "summary": "A sea serpent in Hebrew mythology, representing chaos and destruction. In the Bible, it is defeated by God and is a symbol of God's sovereignty over evil.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 198.24,
+          "end": 288.48
+        },
+        {
+          "episode": 28,
+          "start": 2267.279,
+          "end": 2358.0
+        },
+        {
+          "episode": 28,
+          "start": 7309.76,
+          "end": 7402.46
+        }
+      ]
+    },
+    {
+      "id": "behemoth",
+      "title": "Behemoth",
+      "category": "theological",
+      "summary": "A land beast in Hebrew mythology, representing tyranny and chaos on earth. It is paired with Leviathan and is identified with the beast from the earth in Revelation.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 3956.56,
+          "end": 4050.44
+        },
+        {
+          "episode": 28,
+          "start": 4787.2,
+          "end": 4879.819
+        },
+        {
+          "episode": 28,
+          "start": 7535.279,
+          "end": 7627.539
+        }
+      ]
+    },
+    {
+      "id": "yam",
+      "title": "Yam",
+      "category": "theological",
+      "summary": "The Canaanite god of the sea, often depicted as a dragon or sea monster. He is the embodiment of chaos and is defeated by Baal in Ugaritic mythology.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 462.5,
+          "end": 554.179
+        },
+        {
+          "episode": 28,
+          "start": 713.86,
+          "end": 805.1
+        }
+      ]
+    },
+    {
+      "id": "nero",
+      "title": "Nero",
+      "category": "historical",
+      "summary": "Roman emperor (r. 54-68 AD) who persecuted Christians and is often identified as the antichrist figure in Revelation. The number 666 is associated with him through gematria.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 7948.88,
+          "end": 8043.52
+        },
+        {
+          "episode": 28,
+          "start": 8206.239,
+          "end": 8298.959
+        }
+      ]
+    },
+    {
+      "id": "baal",
+      "title": "Baal",
+      "category": "theological",
+      "summary": "Canaanite storm god who defeats Yam and Leviathan in Ugaritic mythology. He is a rival to Yahweh in the Old Testament.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 805.1,
+          "end": 897.2
+        },
+        {
+          "episode": 28,
+          "start": 1203.68,
+          "end": 1302.359
+        }
+      ]
+    },
+    {
+      "id": "marduk",
+      "title": "Marduk",
+      "category": "theological",
+      "summary": "Babylonian god who defeats Tiamat, the chaos dragon, in the Enuma Elish. This myth parallels the biblical account of God defeating Leviathan.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 1218.68,
+          "end": 1310.36
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "leviathan-as-chaos-monster",
+      "title": "Leviathan as Chaos Monster",
+      "summary": "Leviathan is a sea serpent representing chaos, destruction, and the forces opposed to God's order. In ancient Near Eastern mythology, it is associated with Yam, the sea god, and is defeated by the storm god (Baal, Marduk, etc.). In the Bible, God defeats Leviathan as an act of creation and salvation, demonstrating His sovereignty over chaos.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 198.24,
+          "end": 288.48
+        },
+        {
+          "episode": 28,
+          "start": 805.1,
+          "end": 897.2
+        },
+        {
+          "episode": 28,
+          "start": 2267.279,
+          "end": 2358.0
+        }
+      ]
+    },
+    {
+      "id": "behemoth-as-tyranny",
+      "title": "Behemoth as Tyranny",
+      "summary": "Behemoth is a land beast representing tyrannical power, virility, and the forces of chaos on earth. It is associated with the underworld and is paralleled with the Ugaritic figure Bull El. In the Bible, Behemoth is described in Job and is later identified with the beast from the earth in Revelation, symbolizing oppressive empires and false religions.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 3956.56,
+          "end": 4050.44
+        },
+        {
+          "episode": 28,
+          "start": 4787.2,
+          "end": 4879.819
+        },
+        {
+          "episode": 28,
+          "start": 7535.279,
+          "end": 7627.539
+        }
+      ]
+    },
+    {
+      "id": "hypostasis-and-embodiment",
+      "title": "Hypostasis and Embodiment",
+      "summary": "The concept of hypostasis is used to explain how ancient gods like Yam were embodied in physical phenomena (e.g., the sea) and how their powers were instantiated in creatures like Leviathan. This helps understand the relationship between spiritual forces and their manifestations in the world.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 520.779,
+          "end": 613.62
+        },
+        {
+          "episode": 28,
+          "start": 713.86,
+          "end": 805.1
+        }
+      ]
+    },
+    {
+      "id": "god-controls-chaos",
+      "title": "God Controls Chaos",
+      "summary": "Unlike pagan myths where chaos and order are in equal opposition, the Bible teaches that God is sovereign over chaos. He not only defeats Leviathan but also uses it for His purposes, turning chaos into order and evil into good. This is seen in the imagery of Leviathan being fed to the Ethiopians and in the eschatological feast where the beasts are eaten.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 2529.2,
+          "end": 2621.44
+        },
+        {
+          "episode": 28,
+          "start": 3693.84,
+          "end": 3810.4
+        },
+        {
+          "episode": 28,
+          "start": 7741.199,
+          "end": 7832.88
+        }
+      ]
+    },
+    {
+      "id": "beasts-of-revelation",
+      "title": "Beasts of Revelation",
+      "summary": "In Revelation 13, the beast from the sea and the beast from the earth are identified as Leviathan and Behemoth, representing the demonic forces behind empires and false religions. They are not merely future figures but are active throughout history, animating oppressive systems and leading people away from God.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 6854.66,
+          "end": 6945.1
+        },
+        {
+          "episode": 28,
+          "start": 7535.279,
+          "end": 7664.42
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "leviathan-is-not-literal",
+      "text": "Leviathan is not a literal sea dragon but a spiritual being representing chaos and evil, often used metaphorically in the Bible.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 123.52,
+          "end": 219.4
+        },
+        {
+          "episode": 28,
+          "start": 198.24,
+          "end": 288.48
+        }
+      ]
+    },
+    {
+      "id": "god-defeats-chaos",
+      "text": "God defeats Leviathan as an act of creation and salvation, demonstrating His sovereignty over chaos and evil.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 2267.279,
+          "end": 2358.0
+        },
+        {
+          "episode": 28,
+          "start": 2889.559,
+          "end": 2980.179
+        }
+      ]
+    },
+    {
+      "id": "beasts-are-leviathan-and-behemoth",
+      "text": "The beast from the sea and the beast from the earth in Revelation 13 are Leviathan and Behemoth, representing demonic forces behind empires and false religions.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 6854.66,
+          "end": 6945.1
+        },
+        {
+          "episode": 28,
+          "start": 7535.279,
+          "end": 7664.42
+        }
+      ]
+    },
+    {
+      "id": "nero-as-antichrist",
+      "text": "Nero is the prototypical antichrist figure in Revelation, and the number 666 refers to him through gematria.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 7948.88,
+          "end": 8043.52
+        },
+        {
+          "episode": 28,
+          "start": 8206.239,
+          "end": 8298.959
+        }
+      ]
+    },
+    {
+      "id": "christian-response-to-empire",
+      "text": "Christians should not respond to empire with worldly power but with repentance, transformation, and faithful witness, trusting in God's sovereignty.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 8847.46,
+          "end": 8979.92
+        },
+        {
+          "episode": 28,
+          "start": 9212.56,
+          "end": 9847.2
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "psalm-74-12-17",
+      "reference": "Psalm 74:12-17",
+      "summary": "Describes God defeating Leviathan and Yam, establishing creation, and feeding Leviathan to the Ethiopians, symbolizing God's sovereignty over chaos.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 2267.279,
+          "end": 2358.0
+        }
+      ]
+    },
+    {
+      "id": "isaiah-27-1",
+      "reference": "Isaiah 27:1",
+      "summary": "Prophecy of God punishing Leviathan, the fugitive serpent, and slaying the dragon in the sea, pointing to eschatological victory.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 2703.72,
+          "end": 2798.719
+        }
+      ]
+    },
+    {
+      "id": "job-40-15-24",
+      "reference": "Job 40:15-24",
+      "summary": "Description of Behemoth as a powerful land beast, emphasizing its strength and untamable nature, symbolizing chaos and tyranny.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 4787.2,
+          "end": 4879.819
+        }
+      ]
+    },
+    {
+      "id": "job-41-1-34",
+      "reference": "Job 41:1-34",
+      "summary": "Description of Leviathan as a fire-breathing sea monster, highlighting its invincibility and God's control over it.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 3313.96,
+          "end": 3404.279
+        }
+      ]
+    },
+    {
+      "id": "revelation-13-1-2",
+      "reference": "Revelation 13:1-2",
+      "summary": "The beast from the sea combines features of Daniel's four beasts, identifying it as Leviathan, the embodiment of chaos and empire.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 7305.579,
+          "end": 7396.46
+        }
+      ]
+    },
+    {
+      "id": "revelation-13-11",
+      "reference": "Revelation 13:11",
+      "summary": "The beast from the earth has horns like a lamb but speaks like a dragon, identifying it as Behemoth, the false prophet.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 7535.279,
+          "end": 7627.539
+        }
+      ]
+    },
+    {
+      "id": "revelation-19-17-21",
+      "reference": "Revelation 19:17-21",
+      "summary": "The great supper of God where the beasts are thrown into the lake of fire, fulfilling the imagery of Leviathan and Behemoth being eaten.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 7686.72,
+          "end": 7783.52
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "leviathan",
+      "term": "Leviathan",
+      "definition": "A sea serpent in Hebrew mythology, representing chaos and destruction. In the Bible, it is defeated by God and is a symbol of God's sovereignty over evil.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 198.24,
+          "end": 288.48
+        }
+      ]
+    },
+    {
+      "id": "behemoth",
+      "term": "Behemoth",
+      "definition": "A land beast in Hebrew mythology, representing tyranny and chaos on earth. It is paired with Leviathan and is identified with the beast from the earth in Revelation.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 3956.56,
+          "end": 4050.44
+        }
+      ]
+    },
+    {
+      "id": "yam",
+      "term": "Yam",
+      "definition": "The Canaanite god of the sea, often depicted as a dragon or sea monster. He is the embodiment of chaos and is defeated by Baal in Ugaritic mythology.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 462.5,
+          "end": 554.179
+        }
+      ]
+    },
+    {
+      "id": "hypostasis",
+      "term": "Hypostasis",
+      "definition": "A Greek term meaning 'underlying reality' or 'substance.' In theology, it refers to a specific person or being, but in ancient pagan context, it denotes the embodiment or instantiation of a spirit in a physical form.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 520.779,
+          "end": 613.62
+        }
+      ]
+    },
+    {
+      "id": "gematria",
+      "term": "Gematria",
+      "definition": "A system of assigning numerical value to letters, used in ancient Hebrew and Greek. It is used to encode names or words, such as the number 666 for Nero.",
+      "segments": [
+        {
+          "episode": 28,
+          "start": 8298.96,
+          "end": 8394.68
+        }
+      ]
+    }
+  ]
+}

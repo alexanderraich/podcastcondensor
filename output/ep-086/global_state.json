@@ -1,0 +1,548 @@
+{
+  "summary": "In this episode of the Lord of Spirits, Fathers Andrew Stephen Damick and Stephen De Young explore the biblical and theological foundations of Great Lent, focusing on the significance of the number 40, the connection between Lent and baptism, and the ultimate goal of Lent as preparation for Pentecost. They argue that Lent is not a medieval invention but is deeply rooted in Scripture, where the number 40 symbolizes a period of preparation, anticipation, and repentance. They trace this theme through the flood, Moses on Mount Sinai, the wilderness wanderings, the ministry of Elijah, Jonah's preaching, and the life of Christ, culminating in the 40 days between the Resurrection and Ascension. The hosts then connect Lent to the catechumenate, explaining that the 40-day fast was originally a period of preparation for baptism, which is itself a beginning of a new life in Christ, not merely an event. They emphasize that baptism is preparatory to receiving the Holy Spirit, and that Pentecost, not Easter, is the true climax of the liturgical year, as it celebrates the giving of the Spirit and the renewal of the covenant. The episode concludes with practical advice on how to approach Lent as a time of self-mastery, self-knowledge, and recommitment to walking in the Spirit, even when we fail.",
+  "entities": [
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "Moses is a key figure in the discussion of the number 40, as he spent 40 days on Mount Sinai twice, fasting and interceding for Israel. His example connects fasting with repentance and preparation for receiving the Law.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 1459.74,
+          "end": 1710.0
+        },
+        {
+          "episode": 86,
+          "start": 2985.84,
+          "end": 3077.599
+        }
+      ]
+    },
+    {
+      "id": "elijah",
+      "title": "Elijah",
+      "category": "person",
+      "summary": "Elijah's 40-day journey to Mount Horeb is another example of preparation for an encounter with God, paralleling Moses' experience and emphasizing the theme of anticipation.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 2490.0,
+          "end": 2607.0
+        }
+      ]
+    },
+    {
+      "id": "jonah",
+      "title": "Jonah",
+      "category": "person",
+      "summary": "Jonah's preaching to Nineveh gave the city 40 days to repent, illustrating the connection between the number 40 and the opportunity for repentance.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 2588.0,
+          "end": 2772.0
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "person",
+      "summary": "Jesus' 40-day fast in the wilderness recapitulates Israel's 40 years and Moses' fasting, showing that His mission is to bring forgiveness of sins and to retake Israel through repentance, not military conquest.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 2894.639,
+          "end": 3192.48
+        }
+      ]
+    },
+    {
+      "id": "st-john-the-baptist",
+      "title": "St. John the Baptist",
+      "category": "person",
+      "summary": "St. John's baptism was a baptism of repentance for the forgiveness of sins, preparatory to the coming of Christ and the baptism with the Holy Spirit.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 3596.79,
+          "end": 3770.28
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "St. Paul's teachings on baptism, the old and new man, and living according to the Spirit are central to understanding the purpose of Lent and asceticism.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 4702.399,
+          "end": 4795.72
+        },
+        {
+          "episode": 86,
+          "start": 4916.359,
+          "end": 5009.52
+        },
+        {
+          "episode": 86,
+          "start": 5559.68,
+          "end": 5651.199
+        }
+      ]
+    },
+    {
+      "id": "pentecost",
+      "title": "Pentecost",
+      "category": "theological",
+      "summary": "Pentecost is the Jewish feast of weeks, celebrated 50 days after Passover, which commemorates the giving of the Torah at Sinai. In the New Testament, it is the day the Holy Spirit descended on the apostles, marking the renewal of the covenant.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 6944.52,
+          "end": 7036.0
+        },
+        {
+          "episode": 86,
+          "start": 7098.779,
+          "end": 7191.8
+        },
+        {
+          "episode": 86,
+          "start": 7303.199,
+          "end": 7393.6
+        }
+      ]
+    },
+    {
+      "id": "great-lent",
+      "title": "Great Lent",
+      "category": "theological",
+      "summary": "Great Lent is the 40-day period of fasting and repentance before Pascha, rooted in the biblical themes of preparation and purification, and originally connected to the catechumenate.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 120.0,
+          "end": 211.0
+        },
+        {
+          "episode": 86,
+          "start": 8550.0,
+          "end": 8640.2
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "number-40",
+      "title": "The Number 40",
+      "summary": "In Scripture, the number 40 (or 42) represents a period of preparation, anticipation, and repentance. It is often associated with fasting and purification, signaling that something significant is about to happen.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 450.0,
+          "end": 571.12
+        },
+        {
+          "episode": 86,
+          "start": 720.0,
+          "end": 989.6
+        },
+        {
+          "episode": 86,
+          "start": 3346.39,
+          "end": 3439.76
+        }
+      ]
+    },
+    {
+      "id": "baptism-as-preparatory",
+      "title": "Baptism as Preparatory",
+      "summary": "Baptism is not an end in itself but the beginning of a new life in Christ. It is a death to the old man (Adam) and a resurrection to new life, preparing the believer to receive the Holy Spirit and live according to the Spirit.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 4553.6,
+          "end": 4795.72
+        },
+        {
+          "episode": 86,
+          "start": 4895.96,
+          "end": 4989.92
+        },
+        {
+          "episode": 86,
+          "start": 6240.0,
+          "end": 6476.0
+        }
+      ]
+    },
+    {
+      "id": "pentecost-as-climax",
+      "title": "Pentecost as the Climax",
+      "summary": "Pentecost, not Easter, is the true climax of the liturgical year. It is the feast of the giving of the Holy Spirit, which fulfills the promises of the New Covenant and represents the renewal of the covenant, making it the ultimate goal of Lent.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 6687.39,
+          "end": 6778.119
+        },
+        {
+          "episode": 86,
+          "start": 6944.52,
+          "end": 7036.0
+        },
+        {
+          "episode": 86,
+          "start": 7691.52,
+          "end": 7783.92
+        }
+      ]
+    },
+    {
+      "id": "asceticism",
+      "title": "Asceticism",
+      "summary": "Asceticism is not about harming the body or viewing matter as evil, but about disciplining the flesh to gain self-mastery, so that one can be mastered by the Holy Spirit. It includes fasting, vigils, and almsgiving as means of controlling sinful desires.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 5694.399,
+          "end": 5849.56
+        },
+        {
+          "episode": 86,
+          "start": 5839.79,
+          "end": 6112.68
+        }
+      ]
+    },
+    {
+      "id": "self-mastery",
+      "title": "Self-Mastery",
+      "summary": "The goal of the Christian life is self-mastery, which allows one to offer oneself fully to God. Lent is designed to reveal our weaknesses and help us develop self-control, which is the hardest fruit of the Spirit.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 9291.76,
+          "end": 9403.799
+        },
+        {
+          "episode": 86,
+          "start": 9409.84,
+          "end": 9502.959
+        },
+        {
+          "episode": 86,
+          "start": 9502.959,
+          "end": 9593.76
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "lent-biblical",
+      "text": "Lent and its practices are firmly rooted in the Scriptures, not a medieval invention.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 120.0,
+          "end": 211.0
+        }
+      ]
+    },
+    {
+      "id": "number-40-meaning",
+      "text": "The number 40 in Scripture symbolizes a period of preparation, anticipation, and repentance, often associated with fasting.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 450.0,
+          "end": 571.12
+        },
+        {
+          "episode": 86,
+          "start": 3346.39,
+          "end": 3439.76
+        }
+      ]
+    },
+    {
+      "id": "baptism-beginning",
+      "text": "Baptism is the beginning of a new life in Christ, not an end or a mere symbol, and it is preparatory to receiving the Holy Spirit.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 4553.6,
+          "end": 4795.72
+        },
+        {
+          "episode": 86,
+          "start": 6240.0,
+          "end": 6476.0
+        }
+      ]
+    },
+    {
+      "id": "pentecost-climax",
+      "text": "Pentecost, not Easter, is the climax of the liturgical year, as it celebrates the giving of the Holy Spirit and the renewal of the covenant.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 6687.39,
+          "end": 6778.119
+        },
+        {
+          "episode": 86,
+          "start": 7691.52,
+          "end": 7783.92
+        }
+      ]
+    },
+    {
+      "id": "asceticism-not-gnostic",
+      "text": "Asceticism is not about harming the body or viewing matter as evil, but about disciplining the flesh to gain self-mastery and follow the Spirit.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 5694.399,
+          "end": 5849.56
+        }
+      ]
+    },
+    {
+      "id": "lent-set-up-to-fail",
+      "text": "Lent is set up for us to fail, so that we can learn about our weaknesses and develop self-knowledge and self-mastery.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 9161.0,
+          "end": 9252.92
+        },
+        {
+          "episode": 86,
+          "start": 9409.84,
+          "end": 9502.959
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-7-8",
+      "reference": "Genesis 7-8",
+      "summary": "The flood lasts 40 days and 40 nights, representing the uncreation of the world and the preparation for recreation.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 967.679,
+          "end": 1117.68
+        }
+      ]
+    },
+    {
+      "id": "genesis-50-3",
+      "reference": "Genesis 50:3",
+      "summary": "Jacob's mummification takes 40 days, preparing his body for the journey to rest with his fathers.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 1095.839,
+          "end": 1289.39
+        }
+      ]
+    },
+    {
+      "id": "exodus-16-35",
+      "reference": "Exodus 16:35",
+      "summary": "Israel's 40 years in the wilderness is a period of purification and preparation for entering the Promised Land.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 1282.79,
+          "end": 1458.39
+        }
+      ]
+    },
+    {
+      "id": "exodus-34-28",
+      "reference": "Exodus 34:28",
+      "summary": "Moses fasts for 40 days and 40 nights on Mount Sinai, interceding for the people and receiving the Law.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 1459.74,
+          "end": 1710.0
+        }
+      ]
+    },
+    {
+      "id": "numbers-13-25",
+      "reference": "Numbers 13:25",
+      "summary": "The spies spend 40 days exploring the land of Canaan, a preparatory period that leads to the people's failure to trust God.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 1762.79,
+          "end": 1866.839
+        }
+      ]
+    },
+    {
+      "id": "1-kings-19-8",
+      "reference": "1 Kings 19:8",
+      "summary": "Elijah journeys 40 days to Mount Horeb, preparing to encounter God.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 2490.0,
+          "end": 2607.0
+        }
+      ]
+    },
+    {
+      "id": "jonah-3-4",
+      "reference": "Jonah 3:4",
+      "summary": "Jonah warns Nineveh that in 40 days the city will be overthrown, giving them time to repent.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 2588.0,
+          "end": 2772.0
+        }
+      ]
+    },
+    {
+      "id": "matthew-4-2",
+      "reference": "Matthew 4:2",
+      "summary": "Jesus fasts for 40 days and 40 nights in the wilderness, recapitulating Israel's testing and Moses' fasting.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 2894.639,
+          "end": 3020.0
+        }
+      ]
+    },
+    {
+      "id": "acts-1-3",
+      "reference": "Acts 1:3",
+      "summary": "Jesus appears to the apostles for 40 days after his resurrection, preparing them for the coming of the Holy Spirit.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 3204.28,
+          "end": 3299.0
+        }
+      ]
+    },
+    {
+      "id": "romans-6-4",
+      "reference": "Romans 6:4",
+      "summary": "Baptism is a death and resurrection with Christ, symbolizing the end of the old life and the beginning of a new one.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 4702.399,
+          "end": 4795.72
+        }
+      ]
+    },
+    {
+      "id": "galatians-5-16-24",
+      "reference": "Galatians 5:16-24",
+      "summary": "Paul contrasts the works of the flesh with the fruit of the Spirit, showing the two ways of living.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 6134.159,
+          "end": 6229.39
+        }
+      ]
+    },
+    {
+      "id": "john-16-4-15",
+      "reference": "John 16:4-15",
+      "summary": "Jesus tells his disciples that it is to their advantage that he goes away, so that the Helper (Holy Spirit) can come.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 6855.399,
+          "end": 6950.39
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "paska",
+      "term": "Paska",
+      "definition": "The Greek word for Passover, used by Orthodox Christians to refer to Easter, the celebration of Christ's resurrection.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 466.199,
+          "end": 558.279
+        }
+      ]
+    },
+    {
+      "id": "triodion",
+      "term": "Triodion",
+      "definition": "The liturgical book used during the period of Great Lent, containing hymns and prayers for the season.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 129.28,
+          "end": 221.5
+        }
+      ]
+    },
+    {
+      "id": "catechesis",
+      "term": "Catechesis",
+      "definition": "Instruction in the faith, originally a period of training in a way of living, not just intellectual learning, for those preparing for baptism.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 6376.479,
+          "end": 6470.0
+        }
+      ]
+    },
+    {
+      "id": "chrismation",
+      "term": "Chrismation",
+      "definition": "The sacrament of anointing with holy oil, which in Orthodox Christianity is the reception of the Holy Spirit, typically immediately after baptism.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 6677.159,
+          "end": 6768.0
+        }
+      ]
+    },
+    {
+      "id": "jubilee",
+      "term": "Jubilee",
+      "definition": "The 50th year in the Hebrew calendar, a time of liberation and restoration, foreshadowing the coming of the Holy Spirit.",
+      "segments": [
+        {
+          "episode": 86,
+          "start": 7006.359,
+          "end": 7098.779
+        }
+      ]
+    }
+  ]
+}

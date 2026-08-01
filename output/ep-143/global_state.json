@@ -1,0 +1,455 @@
+{
+  "summary": "In this live-recorded episode of the Lord of Spirits podcast, Fr. Andrew Stephen Damick and Fr. Stephen De Young address the phenomenon of the 'Convert Surge'—a significant influx of converts to Orthodox Christianity in America, particularly since the pandemic. They discuss the challenges and opportunities this presents to parishes, including the need for effective catechesis, the importance of practical love and lay ministry, and the realities of a clergy shortage. The conversation includes audience Q&A on topics such as attracting women converts, the role of the internet, integrating newcomers without destabilizing existing communities, and the meaning of hell in Orthodox iconography. The episode emphasizes that conversion is not merely an intellectual decision but a transformative, three-dimensional movement into a new way of life centered on Christ.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Fr. Andrew Stephen Damick",
+      "category": "person",
+      "summary": "One of the hosts of the Lord of Spirits podcast, a priest in the Antiochian Orthodox Archdiocese, and a speaker at the Parish Life Conference.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 60.0,
+          "end": 150.24
+        },
+        {
+          "episode": 143,
+          "start": 1950.0,
+          "end": 2017.0
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Fr. Stephen De Young",
+      "category": "person",
+      "summary": "Co-host of the Lord of Spirits podcast, a priest and scholar, also speaking at the conference.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 60.0,
+          "end": 150.24
+        },
+        {
+          "episode": 143,
+          "start": 1957.24,
+          "end": 2017.0
+        }
+      ]
+    },
+    {
+      "id": "antiochian-orthodox-archdiocese",
+      "title": "Antiochian Orthodox Archdiocese",
+      "category": "other",
+      "summary": "The jurisdiction hosting the Parish Life Conference, known for its strong diaconate and convert-friendly culture.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 60.0,
+          "end": 150.24
+        },
+        {
+          "episode": 143,
+          "start": 1484.39,
+          "end": 1575.79
+        }
+      ]
+    },
+    {
+      "id": "metropolitan-philip",
+      "title": "Metropolitan Philip",
+      "category": "person",
+      "summary": "The late Metropolitan of the Antiochian Archdiocese who promoted the diaconate starting in the 1970s.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 1495.559,
+          "end": 1586.279
+        }
+      ]
+    },
+    {
+      "id": "father-david",
+      "title": "Fr. David",
+      "category": "person",
+      "summary": "A priest in Raleigh, North Carolina, referenced for his parish's large number of converts and confessions.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 1213.44,
+          "end": 1305.79
+        },
+        {
+          "episode": 143,
+          "start": 1428.839,
+          "end": 1521.0
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "The Apostle Paul, whose Epistle to the Romans is discussed as a model for integrating newcomers and old members.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 1183.599,
+          "end": 1274.559
+        },
+        {
+          "episode": 143,
+          "start": 3946.36,
+          "end": 4038.679
+        }
+      ]
+    },
+    {
+      "id": "claudius",
+      "title": "Emperor Claudius",
+      "category": "person",
+      "summary": "Roman emperor who expelled Jews from Rome, leading to the situation addressed in Romans.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 3877.239,
+          "end": 3973.8
+        }
+      ]
+    },
+    {
+      "id": "galatians-5",
+      "title": "Galatians 5",
+      "category": "scriptural",
+      "summary": "A passage used to discern good online content by its fruits of the Spirit.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 4893.399,
+          "end": 5003.92
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "convert-surge",
+      "title": "Convert Surge",
+      "summary": "The recent significant increase in conversions to Orthodox Christianity in America, particularly since the pandemic, which has led to demographic shifts and pastoral challenges.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 360.0,
+          "end": 450.0
+        },
+        {
+          "episode": 143,
+          "start": 1271.519,
+          "end": 1363.79
+        },
+        {
+          "episode": 143,
+          "start": 2164.0,
+          "end": 2254.0
+        }
+      ]
+    },
+    {
+      "id": "apotaxis-syntaxis",
+      "title": "Apotaxis and Syntaxis",
+      "summary": "The renunciation of the devil and the alignment with Christ in the baptismal service, representing a real movement from one allegiance to another.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 420.0,
+          "end": 555.0
+        }
+      ]
+    },
+    {
+      "id": "catechesis",
+      "title": "Catechesis",
+      "summary": "The process of instructing converts in the Orthodox faith, which should focus on forming habits of faithful living rather than merely imparting theological information.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 929.32,
+          "end": 1160.599
+        }
+      ]
+    },
+    {
+      "id": "rationing-of-pastoral-care",
+      "title": "Rationing of Pastoral Care",
+      "summary": "The reality that due to the convert surge and clergy shortage, priests have limited time for individual pastoral care, necessitating lay involvement.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 1318.759,
+          "end": 1468.92
+        }
+      ]
+    },
+    {
+      "id": "lay-ministry",
+      "title": "Lay Ministry",
+      "summary": "The increased role of laypeople in ministering to each other, including practical acts of love, mentoring, and integration of newcomers.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 1511.0,
+          "end": 1603.79
+        },
+        {
+          "episode": 143,
+          "start": 1562.759,
+          "end": 1719.359
+        },
+        {
+          "episode": 143,
+          "start": 1784.16,
+          "end": 1874.279
+        }
+      ]
+    },
+    {
+      "id": "hellmouth",
+      "title": "Hellmouth",
+      "summary": "The image of a serpent or dragon swallowing the damned in Last Judgment icons, rooted in Genesis 3 and symbolizing death and the devil's power.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 4230.0,
+          "end": 4356.319
+        }
+      ]
+    },
+    {
+      "id": "orthodoxy-101",
+      "title": "Orthodoxy 101",
+      "summary": "A common but insufficient approach to catechesis that focuses on teaching basic information about Orthodoxy, akin to a college survey course.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 929.32,
+          "end": 1021.799
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "conversion-is-movement",
+      "text": "Conversion is not just a decision but a real movement from the devil's service to alignment with Christ, as seen in the baptismal renunciations.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 420.0,
+          "end": 555.0
+        }
+      ]
+    },
+    {
+      "id": "god-sent-converts",
+      "text": "The convert surge is not due to any program but is God's action; parishes should receive them with gratitude.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 291.959,
+          "end": 384.0
+        },
+        {
+          "episode": 143,
+          "start": 1271.519,
+          "end": 1363.79
+        }
+      ]
+    },
+    {
+      "id": "catechesis-should-form-habits",
+      "text": "Catechesis should train people to be faithful parishioners—worshippers, pray-ers, almsgivers, and volunteers—not just pass a theology test.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 1060.64,
+          "end": 1160.599
+        }
+      ]
+    },
+    {
+      "id": "clergy-shortage-rationing",
+      "text": "The clergy shortage means pastoral care is rationed; laypeople must step up to help.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 1318.759,
+          "end": 1468.92
+        }
+      ]
+    },
+    {
+      "id": "young-families-second-peak",
+      "text": "The convert surge's second peak is dominated by young families, not just single men, leading to a demographic shift.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 2187.0,
+          "end": 2278.199
+        }
+      ]
+    },
+    {
+      "id": "hell-is-for-christians",
+      "text": "Hell is presented in scripture and icons primarily to believers to motivate repentance, not as a threat to unbelievers.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 4440.0,
+          "end": 4537.26
+        }
+      ]
+    },
+    {
+      "id": "online-discernment-fruits",
+      "text": "Discern online Orthodox content by the fruits of the Spirit as listed in Galatians 5; if it produces strife, avoid it.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 4893.399,
+          "end": 5003.92
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-3-serpent",
+      "reference": "Genesis 3:14",
+      "summary": "The serpent eating dust is interpreted as an image of death and the devil's power, connected to the hellmouth in icons.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 4251.96,
+          "end": 4342.0
+        }
+      ]
+    },
+    {
+      "id": "romans-integration",
+      "reference": "Romans 11:13-24",
+      "summary": "Paul's teaching on Jews and Gentiles is applied to integrating newcomers and cradle Orthodox.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 3946.36,
+          "end": 4045.79
+        }
+      ]
+    },
+    {
+      "id": "galatians-5-fruit",
+      "reference": "Galatians 5:16-26",
+      "summary": "The fruit of the Spirit is used as a test for online Orthodox content.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 4893.399,
+          "end": 5003.92
+        }
+      ]
+    },
+    {
+      "id": "matthew-25-judgment",
+      "reference": "Matthew 25:31-46",
+      "summary": "The judgment scene is referenced to emphasize that we are judged by our actions, not just opinions.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 5081.439,
+          "end": 5180.76
+        }
+      ]
+    },
+    {
+      "id": "john-20-breathing",
+      "reference": "John 20:22",
+      "summary": "Christ breathing on the disciples is connected to the breathing in baptismal exorcism.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 5283.39,
+          "end": 5374.14
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "apotaxis",
+      "term": "Apotaxis",
+      "definition": "The renunciation of the devil in the baptismal service, literally meaning 'to be ordered away from'.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 422.0,
+          "end": 515.0
+        }
+      ]
+    },
+    {
+      "id": "syntaxis",
+      "term": "Syntaxis",
+      "definition": "The alignment with Christ in baptism, literally meaning 'to be ordered with'.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 468.0,
+          "end": 561.0
+        }
+      ]
+    },
+    {
+      "id": "catechumen",
+      "term": "Catechumen",
+      "definition": "A person receiving instruction in the faith before baptism.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 1291.559,
+          "end": 1382.16
+        }
+      ]
+    },
+    {
+      "id": "hellmouth",
+      "term": "Hellmouth",
+      "definition": "The image of a serpent's mouth swallowing the damned in Last Judgment icons.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 4233.52,
+          "end": 4324.68
+        }
+      ]
+    },
+    {
+      "id": "orthros",
+      "term": "Orthros",
+      "definition": "The early morning service of the Orthodox Church, also called Matins.",
+      "segments": [
+        {
+          "episode": 143,
+          "start": 1085.2,
+          "end": 1175.2
+        }
+      ]
+    }
+  ]
+}

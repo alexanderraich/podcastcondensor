@@ -1,0 +1,368 @@
+{
+  "summary": "In this episode of the Lord of Spirits, hosts Father Andrew Stephen Damick and Father Stephen DeYoung delve into the nature and activity of demons, building on previous discussions about spirits and the noetic world. They begin by reviewing key concepts: spirits are consciousness above the human level, and demons are a subset of spirits, often understood as fallen angels or demonized humans. They explore the etymology of 'demon' (Greek 'daimon'), its evolution from a neutral term for lesser spirits to a negative one in Christian context, and the distinction between Jewish and Christian views on fallen angels. The hosts also address the idea of angelic rebellions, emphasizing that these are not primordial but connected to human history, and they discuss the spectrum of demonic activity from temptation to possession to full participation, using biblical examples like King Saul, the Book of Tobit, and the Gadarene demoniac. They clarify that demonic possession involves a loss of agency, while participation is a voluntary alignment with demonic will, and they stress the importance of repentance and the normal Christian life as the primary defense against demonic influence. The episode includes listener calls on topics such as the resurrection and marriage, personal encounters with the demonic, and questions about ghouls and sleepwalking, all of which are addressed within the framework of Orthodox theology.",
+  "entities": [
+    {
+      "id": "asmodius",
+      "title": "Asmodius",
+      "category": "theological",
+      "summary": "A demon in the Book of Tobit, whose name means 'wrath demon' in Persian. He is associated with wrath, shrine prostitution, and has a long afterlife in Jewish and Islamic traditions, sometimes identified as the disembodied spirit of Hadad the Edomite.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 8442.479,
+          "end": 8608.239
+        },
+        {
+          "episode": 109,
+          "start": 8663.319,
+          "end": 8935.0
+        }
+      ]
+    },
+    {
+      "id": "king-saul",
+      "title": "King Saul",
+      "category": "historical",
+      "summary": "First king of Israel, who after his disobedience was troubled by an unclean spirit sent by God. This torment was intended to drive him to repentance but instead led to rage and murderous intent toward David.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 7946.399,
+          "end": 8094.159
+        }
+      ]
+    },
+    {
+      "id": "sarah-of-tobit",
+      "title": "Sarah of Tobit",
+      "category": "historical",
+      "summary": "A woman in the Book of Tobit who was afflicted by the demon Asmodius, which killed her previous seven husbands on their wedding nights. She is a victim of ancestral sin and is delivered by Tobias with the help of the Archangel Raphael.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 8130.0,
+          "end": 8221.159
+        },
+        {
+          "episode": 109,
+          "start": 8922.0,
+          "end": 9013.2
+        }
+      ]
+    },
+    {
+      "id": "st-john-chrysostom",
+      "title": "St. John Chrysostom",
+      "category": "person",
+      "summary": "A 4th-5th century Church Father who taught that one becomes a demon after death by living like a demon in life, not by dying violently. He also addressed encounters with spirits of the dead, advising discernment based on the fruits of the experience.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 2316.88,
+          "end": 2412.0
+        },
+        {
+          "episode": 109,
+          "start": 7733.8,
+          "end": 7824.96
+        }
+      ]
+    },
+    {
+      "id": "hadad-the-edomite",
+      "title": "Hadad the Edomite",
+      "category": "historical",
+      "summary": "An Edomite royal who escaped to Egypt and later became an adversary of Solomon. In later Jewish tradition, he is identified as the illegitimate son of David through a shrine prostitute, and his disembodied spirit is said to be Asmodius.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 8815.18,
+          "end": 8909.84
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "demonic-activity-spectrum",
+      "title": "Demonic Activity Spectrum",
+      "summary": "The spectrum of demonic influence ranges from temptation (thoughts) to torment (affliction) to possession (loss of agency) to participation (voluntary alignment with demons). This framework helps understand how demons interact with humans.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 9720.0,
+          "end": 9822.0
+        },
+        {
+          "episode": 109,
+          "start": 9810.0,
+          "end": 9900.159
+        }
+      ]
+    },
+    {
+      "id": "thoughts-vs-ideas",
+      "title": "Thoughts vs. Ideas",
+      "summary": "Thoughts are sense impressions that come into the mind unbidden, while ideas are formed by actively thinking about and connecting thoughts. This distinction is crucial for understanding spiritual warfare and the role of the nous.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 5244.0,
+          "end": 5441.0
+        },
+        {
+          "episode": 109,
+          "start": 5711.0,
+          "end": 5836.279
+        }
+      ]
+    },
+    {
+      "id": "noetic-world",
+      "title": "Noetic World",
+      "summary": "The noetic world is the spiritual realm perceived by the nous (mind), which is like a sensory organ. Demons primarily interact with humans through thoughts and the noetic realm, not physically.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 844.98,
+          "end": 936.12
+        },
+        {
+          "episode": 109,
+          "start": 5123.56,
+          "end": 5244.0
+        }
+      ]
+    },
+    {
+      "id": "exorcism",
+      "title": "Exorcism",
+      "summary": "Exorcism in the Orthodox Church is a liturgical act that breaks the chains of sin and demonic influence. It is not magic or psychology but a means of dealing with sin and its consequences, applicable across the demonic activity spectrum.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 9945.239,
+          "end": 10188.0
+        }
+      ]
+    },
+    {
+      "id": "synergy-with-demons",
+      "title": "Synergy with Demons",
+      "summary": "Just as salvation involves synergy with God, one can synergize with demons by aligning one's will with demonic energies. This is the state of the Antichrist and the Nephilim, representing the extreme end of demonic participation.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 9630.0,
+          "end": 9728.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "demons-are-fallen-angels-or-demonic-humans",
+      "text": "Demons are either fallen angelic beings (like the devil, watchers, etc.) or the spirits of dead humans who have become demonic through living like demons. They are not a separate neutral category.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 2076.79,
+          "end": 2169.539
+        },
+        {
+          "episode": 109,
+          "start": 2316.88,
+          "end": 2412.0
+        }
+      ]
+    },
+    {
+      "id": "angelic-rebellions-after-creation",
+      "text": "Angelic rebellions began after the creation of the world, not before, and are connected to human history. The devil fell through envy after creation, as taught by the Church Fathers.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 1659.39,
+          "end": 1750.79
+        }
+      ]
+    },
+    {
+      "id": "thoughts-are-not-generated",
+      "text": "Thoughts are not generated by the brain but are perceived by the nous as sense impressions. They come from outside, and we have control over which thoughts we allow to become ideas and actions.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 5015.6,
+          "end": 5105.68
+        },
+        {
+          "episode": 109,
+          "start": 6166.39,
+          "end": 6258.68
+        }
+      ]
+    },
+    {
+      "id": "demonic-possession-is-loss-of-agency",
+      "text": "Demonic possession involves a removal of agency, where the person acts on demonic impulses without control. It is a subhuman state, but not the worst; voluntary participation with demons is worse.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 9293.399,
+          "end": 9389.719
+        },
+        {
+          "episode": 109,
+          "start": 9533.6,
+          "end": 9625.0
+        }
+      ]
+    },
+    {
+      "id": "exorcism-is-not-magic",
+      "text": "Exorcism is not a magical formula but a liturgical act that breaks the chains of sin and demonic influence. It is effective only within the context of repentance and the Christian life.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 10044.479,
+          "end": 10188.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "1-samuel-16-14",
+      "reference": "1 Samuel 16:14",
+      "summary": "The Spirit of the Lord departed from Saul, and an evil spirit from the Lord troubled him. This is used to illustrate demonic torment as a form of tough love intended to drive repentance.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 7946.399,
+          "end": 8040.0
+        }
+      ]
+    },
+    {
+      "id": "tobit-3-8",
+      "reference": "Tobit 3:8",
+      "summary": "Sarah had been married to seven husbands, but the demon Asmodius killed each before consummation. This illustrates demonic affliction and ancestral sin.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 8130.0,
+          "end": 8221.159
+        }
+      ]
+    },
+    {
+      "id": "matthew-12-43-45",
+      "reference": "Matthew 12:43-45",
+      "summary": "Jesus' teaching about an unclean spirit returning with seven others if the house is left empty. This is applied to the need for positive replacement in spiritual life.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 10455.319,
+          "end": 10546.12
+        }
+      ]
+    },
+    {
+      "id": "acts-19-13-16",
+      "reference": "Acts 19:13-16",
+      "summary": "The seven sons of Sceva attempt to cast out demons using Jesus' name as a formula, but the demon attacks them. This shows that exorcism requires delegated authority, not magical incantation.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 9197.5,
+          "end": 9290.76
+        }
+      ]
+    },
+    {
+      "id": "2-thessalonians-2-9",
+      "reference": "2 Thessalonians 2:9",
+      "summary": "The coming of the lawless one is according to the working of Satan, with all power, signs, and lying wonders. This is used to illustrate synergy with demonic energies.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 9660.0,
+          "end": 9750.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "daimon",
+      "term": "Daimon (δαίμων)",
+      "definition": "Greek term for a lesser spirit or ancestral spirit, which in Christian usage came to mean an evil spirit or demon.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 1012.559,
+          "end": 1108.24
+        }
+      ]
+    },
+    {
+      "id": "nous",
+      "term": "Nous (νοῦς)",
+      "definition": "The mind or spiritual faculty of perception, often called the 'eye of the heart' or 'eye of the soul'. It perceives thoughts and spiritual realities.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 5123.56,
+          "end": 5244.0
+        }
+      ]
+    },
+    {
+      "id": "nephilim",
+      "term": "Nephilim",
+      "definition": "Offspring of the 'sons of God' and 'daughters of men' in Genesis 6, understood in Orthodox tradition as demonized humans, not biological hybrids. They are associated with giants and demonic participation.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 2207.599,
+          "end": 2298.0
+        },
+        {
+          "episode": 109,
+          "start": 9570.0,
+          "end": 9660.12
+        }
+      ]
+    },
+    {
+      "id": "egregor",
+      "term": "Egregor",
+      "definition": "A concept from occultism referring to a thought-form or collective entity created by group consciousness. The hosts question whether Tinkerbell could be an egregor, but it is not a Christian concept.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 487.92,
+          "end": 578.759
+        }
+      ]
+    },
+    {
+      "id": "vrykolakas",
+      "term": "Vrykolakas",
+      "definition": "A Greek vampire-like creature in folklore, often associated with the undead and cannibalism. It is considered a demonized human in the same continuum as ghouls.",
+      "segments": [
+        {
+          "episode": 109,
+          "start": 4590.0,
+          "end": 4689.0
+        }
+      ]
+    }
+  ]
+}

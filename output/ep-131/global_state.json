@@ -1,0 +1,514 @@
+{
+  "summary": "In this episode of the Lord of Spirits podcast, Fathers Andrew Stephen Damick and Stephen DeYoung explore the history and theology of burial practices, from prehistoric Neanderthal and early Homo sapiens burials to ancient Near Eastern, Greek, Roman, and Christian traditions. They argue that burial is a deeply human and ritual act, reflecting a shared culture and pointing to an original monotheism. The episode culminates in a discussion of Orthodox Christian burial practices, emphasizing the importance of treating the body with respect, the continuity of burial customs throughout history, and the belief that love is more powerful than death, as revealed in Christ's resurrection. The hosts also address listener questions about the afterlife, the harrowing of Hades, and the nature of time for the departed.",
+  "entities": [
+    {
+      "id": "neanderthals",
+      "title": "Neanderthals",
+      "category": "historical",
+      "summary": "An extinct group of archaic humans who interbred with Homo sapiens. They had burial practices, including deliberate graves with grave goods, and are considered human.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 300.0,
+          "end": 523.48
+        },
+        {
+          "episode": 131,
+          "start": 561.6,
+          "end": 705.919
+        }
+      ]
+    },
+    {
+      "id": "shanidar-cave",
+      "title": "Shanidar Cave",
+      "category": "place",
+      "summary": "A Neanderthal burial site in northern Iraq with multiple skeletons, some with grave goods, indicating deliberate burial practices.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 780.0,
+          "end": 872.0
+        }
+      ]
+    },
+    {
+      "id": "la-chapelle-aux-saints",
+      "title": "La Chapelle-aux-Saints",
+      "category": "place",
+      "summary": "A Neanderthal burial site in France notable for a deliberate grave cut into limestone, containing an elderly individual with grave goods.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 870.0,
+          "end": 1063.68
+        }
+      ]
+    },
+    {
+      "id": "kebara-cave",
+      "title": "Kebara Cave",
+      "category": "place",
+      "summary": "A Neanderthal burial site in Palestine where a skeleton was found with arms folded, but the skull was removed, possibly for ritual purposes.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 1339.2,
+          "end": 1501.44
+        }
+      ]
+    },
+    {
+      "id": "qafzeh-cave",
+      "title": "Qafzeh Cave",
+      "category": "place",
+      "summary": "An early Homo sapiens burial site in Palestine with 15 burials, including grave goods like shells and ochre, dating to around 100,000 BC.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 1740.0,
+          "end": 2007.0
+        }
+      ]
+    },
+    {
+      "id": "panga-ya-saidi",
+      "title": "Panga ya Saidi",
+      "category": "place",
+      "summary": "An early Homo sapiens burial site in Kenya, dating to around 84,000 BC, notable for the burial of a toddler with a pillow and blanket.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 2084.48,
+          "end": 2232.239
+        }
+      ]
+    },
+    {
+      "id": "catalhoyuk",
+      "title": "Çatalhöyük",
+      "category": "place",
+      "summary": "A Neolithic settlement in Turkey where burials were primarily under the floors of homes, with some skulls plastered and painted, indicating complex ritual practices.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 4101.0,
+          "end": 4506.96
+        }
+      ]
+    },
+    {
+      "id": "sumeria",
+      "title": "Sumeria",
+      "category": "historical",
+      "summary": "Ancient Mesopotamian civilization with distinct burial practices: commoners buried under floors, elites in brick vaults with human sacrifices and grave goods.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 4957.0,
+          "end": 5194.8
+        }
+      ]
+    },
+    {
+      "id": "ancient-egypt",
+      "title": "Ancient Egypt",
+      "category": "historical",
+      "summary": "Civilization known for elaborate burial practices including mummification, pyramids, and extensive grave goods, reflecting a death cult and belief in afterlife.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 5248.6,
+          "end": 5966.399
+        }
+      ]
+    },
+    {
+      "id": "ancient-greece",
+      "title": "Ancient Greece",
+      "category": "historical",
+      "summary": "Greek burial practices included viewing, procession, sacrifices, and grave goods, with a transition toward ancestor veneration and a disconnect between body and soul.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 6148.79,
+          "end": 6554.72
+        }
+      ]
+    },
+    {
+      "id": "ancient-rome",
+      "title": "Ancient Rome",
+      "category": "historical",
+      "summary": "Roman burial practices initially included cremation and burial outside the city, with ancestor masks in processions, later shifting to inhumation under Christian influence.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 6579.39,
+          "end": 6940.0
+        }
+      ]
+    },
+    {
+      "id": "joseph-of-arimathea",
+      "title": "Joseph of Arimathea",
+      "category": "biblical",
+      "summary": "A disciple who buried Jesus' body in his own tomb, risking his life, and is praised in all four gospels for this act of love.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 10226.68,
+          "end": 10320.0
+        }
+      ]
+    },
+    {
+      "id": "tobit",
+      "title": "Tobit",
+      "category": "biblical",
+      "summary": "A righteous man in the deuterocanonical book who risked his life to bury the dead, considered a model of burial as an act of love.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 10132.28,
+          "end": 10222.799
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "grave-goods",
+      "title": "Grave Goods",
+      "summary": "Items placed in a grave intended for use in the afterlife, as opposed to mere personal possessions. The interpretation of grave goods in prehistoric burials is debated among scholars.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 1064.96,
+          "end": 1155.599
+        },
+        {
+          "episode": 131,
+          "start": 1800.0,
+          "end": 1961.559
+        }
+      ]
+    },
+    {
+      "id": "prehistoric-burial-practices",
+      "title": "Prehistoric Burial Practices",
+      "summary": "Burial customs of Neanderthals and early Homo sapiens, including body positioning, location, and grave goods, which show shared cultural rituals across vast geographic distances.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 2310.0,
+          "end": 2518.0
+        }
+      ]
+    },
+    {
+      "id": "kurgan-burial-mounds",
+      "title": "Kurgan Burial Mounds",
+      "summary": "Burial mounds used by Indo-European peoples, typically for high-status individuals, often with internal chambers, altars, and grave goods, indicating ongoing ritual use.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 4525.96,
+          "end": 4821.439
+        }
+      ]
+    },
+    {
+      "id": "christian-burial-practices",
+      "title": "Christian Burial Practices",
+      "summary": "Orthodox Christian customs for burial, including vigil with Psalms, vesting clergy in vestments, burial facing east, and memorial services, all centered on the hope of resurrection.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 7483.2,
+          "end": 8006.0
+        },
+        {
+          "episode": 131,
+          "start": 8310.0,
+          "end": 8808.0
+        }
+      ]
+    },
+    {
+      "id": "harrowing-of-hades",
+      "title": "Harrowing of Hades",
+      "summary": "The Orthodox Christian belief that after his death, Christ descended into Hades and brought the righteous to paradise, changing the afterlife for all who die in faith.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 3027.8,
+          "end": 3119.239
+        }
+      ]
+    },
+    {
+      "id": "trans-temporality-of-resurrection",
+      "title": "Trans-temporality of Resurrection",
+      "summary": "The concept that the effects of Christ's resurrection are not bound by linear time, so the righteous are already experiencing resurrection in a heavenly form, even before the general resurrection.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 3139.76,
+          "end": 3229.84
+        }
+      ]
+    },
+    {
+      "id": "burial-ministry",
+      "title": "Burial Ministry",
+      "summary": "A ministry within Orthodox parishes where members care for the dead, including preparing the body, conducting funerals, and burial, as an act of love and evangelism.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 9039.12,
+          "end": 9182.799
+        },
+        {
+          "episode": 131,
+          "start": 10098.76,
+          "end": 10193.68
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "neanderthals-are-human",
+      "text": "Neanderthals, Homo sapiens, and Denisovans interbred and are all humans, not separate species, as evidenced by DNA.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 349.36,
+          "end": 577.759
+        }
+      ]
+    },
+    {
+      "id": "shared-burial-practices-indicate-original-monotheism",
+      "text": "The commonalities in early human burial practices across vast distances suggest a shared culture and support the idea of original monotheism.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 2455.92,
+          "end": 2562.559
+        }
+      ]
+    },
+    {
+      "id": "harrowing-of-hades-changes-afterlife",
+      "text": "Before the Harrowing of Hades, all humanity went to Hades; after, the righteous go to paradise, and only the wicked go to Hades.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 3027.8,
+          "end": 3119.239
+        }
+      ]
+    },
+    {
+      "id": "resurrection-is-trans-temporal",
+      "text": "The resurrection of the righteous is trans-temporal; they are already experiencing resurrection in a heavenly form, even though the general resurrection is future.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 3139.76,
+          "end": 3229.84
+        }
+      ]
+    },
+    {
+      "id": "christ-was-ritually-unclean",
+      "text": "Christ voluntarily experienced ritual uncleanness as part of his blameless passions, without becoming ontologically unclean.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 3715.679,
+          "end": 3872.0
+        }
+      ]
+    },
+    {
+      "id": "orthodox-church-forbids-cremation",
+      "text": "The Orthodox Church forbids cremation because it rejects the human throughline of burial and the hope of resurrection.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 9881.76,
+          "end": 9975.2
+        }
+      ]
+    },
+    {
+      "id": "burial-is-an-act-of-love",
+      "text": "Caring for the dead is one of the greatest acts of love, as exemplified by Tobit and Joseph of Arimathea, and is a powerful ministry.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 10138.799,
+          "end": 10254.639
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-cave-of-machpelah",
+      "reference": "Genesis 23",
+      "summary": "Abraham buys the cave at Machpelah to bury Sarah, establishing a family burial site for the patriarchs.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 6056.96,
+          "end": 6148.79
+        }
+      ]
+    },
+    {
+      "id": "matthew-holy-people-raise",
+      "reference": "Matthew 27:52-53",
+      "summary": "After Jesus' resurrection, holy people left their tombs and entered the city, illustrating the trans-temporal effect of the resurrection.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 2990.599,
+          "end": 3088.639
+        }
+      ]
+    },
+    {
+      "id": "jude-moses-body",
+      "reference": "Jude 1:9",
+      "summary": "Mention of a dispute over Moses' body, suggesting a special burial, which relates to his appearance at the Transfiguration.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 3105.88,
+          "end": 3197.0
+        }
+      ]
+    },
+    {
+      "id": "tobit-burial-of-dead",
+      "reference": "Tobit 1:16-18",
+      "summary": "Tobit's righteous acts include burying the dead, which is a model for Christian burial ministry.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 10132.28,
+          "end": 10222.799
+        }
+      ]
+    },
+    {
+      "id": "let-the-dead-bury-their-dead",
+      "reference": "Matthew 8:22",
+      "summary": "Jesus' saying is interpreted not as forbidding burial, but as a rebuke to excuses for not following him.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 10184.799,
+          "end": 10276.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "hades",
+      "term": "Hades",
+      "definition": "The underworld where all the dead go, often translated as 'hell' in English, but distinct from the final lake of fire.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 3027.8,
+          "end": 3119.239
+        }
+      ]
+    },
+    {
+      "id": "harrowing-of-hades",
+      "term": "Harrowing of Hades",
+      "definition": "Christ's descent into Hades after his death to free the righteous, leading them to paradise.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 3027.8,
+          "end": 3119.239
+        }
+      ]
+    },
+    {
+      "id": "trans-temporal",
+      "term": "Trans-temporal",
+      "definition": "Crossing or transcending time; the idea that Christ's resurrection affects all times simultaneously.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 3160.96,
+          "end": 3255.199
+        }
+      ]
+    },
+    {
+      "id": "blameless-passions",
+      "term": "Blameless Passions",
+      "definition": "Human experiences like hunger, thirst, and tiredness that are not sinful, which Christ assumed in his incarnation.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 3715.679,
+          "end": 3807.639
+        }
+      ]
+    },
+    {
+      "id": "kurgan",
+      "term": "Kurgan",
+      "definition": "A burial mound used by Indo-European peoples, often for high-status individuals, with internal chambers and altars.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 4525.96,
+          "end": 4821.439
+        }
+      ]
+    },
+    {
+      "id": "memory-eternal",
+      "term": "Memory Eternal",
+      "definition": "A hymn and prayer asking God to remember the departed, contrasting with pagan ideas of human memory keeping the dead alive.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 9355.0,
+          "end": 9448.479
+        }
+      ]
+    },
+    {
+      "id": "kolyva",
+      "term": "Kolyva",
+      "definition": "Boiled wheat used in memorial services, symbolizing the resurrection.",
+      "segments": [
+        {
+          "episode": 131,
+          "start": 9401.2,
+          "end": 9493.959
+        }
+      ]
+    }
+  ]
+}

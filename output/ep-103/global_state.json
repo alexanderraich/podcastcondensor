@@ -1,0 +1,392 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen DeYoung tackle the theological concept of 'election' (being chosen) as presented in Scripture, contrasting it with the Calvinist doctrine of predestination. They argue that the biblical terms for 'chosen' (Hebrew 'bachir', Greek 'eklektos') are adjectives describing a person's role or office, not participles indicating a past action of being picked. They explore how Israel, Jerusalem, military units, and even angels are described as 'chosen' in the Old and New Testaments, showing that election is about being set apart for a purpose, not about individual salvation. The hosts then exegete key passages from Romans 8-11, arguing that St. Paul's discussion of election is about God's faithfulness to His promises and the inclusion of the Gentiles, not about individual predestination to salvation or damnation. They also address the 'elect angels' and the parable of the wedding feast, concluding that election is about faithfulness and qualification, not arbitrary selection. The episode aims to correct misunderstandings and present a positive Orthodox understanding of election as a calling to holiness and service.",
+  "entities": [
+    {
+      "id": "israel",
+      "title": "Israel",
+      "category": "theological",
+      "summary": "Israel is the people created by God through Abraham and the Exodus, set apart to be a kingdom of priests to the nations. The hosts argue that Israel is not one of the nations but a new creation, and that the Church is the continuation of Israel with Gentiles grafted in.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 1349.839,
+          "end": 1602.0
+        },
+        {
+          "episode": 103,
+          "start": 5995.76,
+          "end": 6285.79
+        }
+      ]
+    },
+    {
+      "id": "calvinism",
+      "title": "Calvinism",
+      "category": "theological",
+      "summary": "Calvinism is a Protestant theological system that emphasizes predestination and election. The hosts critique Calvinist interpretations of election, arguing that they misunderstand the biblical terms and impose a system not found in Scripture.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 222.96,
+          "end": 317.759
+        },
+        {
+          "episode": 103,
+          "start": 3060.0,
+          "end": 3150.59
+        }
+      ]
+    },
+    {
+      "id": "thomas-aquinas",
+      "title": "Thomas Aquinas",
+      "category": "historical",
+      "summary": "Thomas Aquinas was a medieval Catholic theologian whose views on predestination influenced Calvin. The hosts discuss his attempt to reconcile God's providence with free will, noting that Calvin took a different direction.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 3369.99,
+          "end": 3462.0
+        },
+        {
+          "episode": 103,
+          "start": 3480.0,
+          "end": 3579.46
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "St. Paul is the Apostle who wrote Romans, a key text for the doctrine of election. The hosts exegete Romans 8-11 to show that Paul's discussion of election is about God's faithfulness and the inclusion of the Gentiles, not individual predestination.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 4920.0,
+          "end": 5143.52
+        },
+        {
+          "episode": 103,
+          "start": 6759.64,
+          "end": 6851.119
+        }
+      ]
+    },
+    {
+      "id": "jacob-and-esau",
+      "title": "Jacob and Esau",
+      "category": "biblical",
+      "summary": "Jacob and Esau are twin brothers in Genesis. The hosts argue that Paul's reference to 'Jacob I loved, but Esau I hated' is about nations, not individuals, and refers to the Edomites' betrayal of Israel, not their eternal destiny.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 6458.439,
+          "end": 6685.68
+        },
+        {
+          "episode": 103,
+          "start": 7235.359,
+          "end": 7494.159
+        }
+      ]
+    },
+    {
+      "id": "pharaoh",
+      "title": "Pharaoh",
+      "category": "biblical",
+      "summary": "Pharaoh is the Egyptian ruler in Exodus. The hosts argue that Paul's reference to Pharaoh is about God using him as an object lesson, not about his personal salvation. Pharaoh's hardening serves to display God's power and name to the nations.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 7716.56,
+          "end": 7942.79
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "election-as-adjective",
+      "title": "Election as Adjective, Not Participle",
+      "summary": "The hosts argue that the Hebrew and Greek words translated as 'chosen' or 'elect' are adjectives, not participles. This means they describe a quality or role of a person, not the result of an action done to them. This distinction undermines the Calvinist interpretation of election as God's arbitrary selection of individuals for salvation.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 718.0,
+          "end": 1000.799
+        }
+      ]
+    },
+    {
+      "id": "israel-created-not-picked",
+      "title": "Israel Created, Not Picked",
+      "summary": "The hosts argue that Israel was not chosen from among the nations but was created by God. Israel is not one of the 70 nations listed in Genesis 10; it is a new entity formed by God through Abraham and the Exodus. This challenges the idea that God arbitrarily picked one nation over others.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 1349.839,
+          "end": 1602.0
+        }
+      ]
+    },
+    {
+      "id": "elect-angels",
+      "title": "Elect Angels",
+      "summary": "The phrase 'elect angels' in 1 Timothy 5:21 and Second Temple literature refers to angels who have a specific role or office, not to angels chosen for salvation. Since there is no salvation for angels, this usage demonstrates that 'elect' does not mean 'chosen for salvation' in the Calvinist sense.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 2938.36,
+          "end": 3050.92
+        }
+      ]
+    },
+    {
+      "id": "golden-chain-of-redemption",
+      "title": "Golden Chain of Redemption",
+      "summary": "The 'golden chain' in Romans 8:29-30 (foreknew, predestined, called, justified, glorified) is often used by Calvinists to support predestination. The hosts argue that these verbs are all past tense and refer to God's past actions in salvation history, not to a logical order of decrees. They emphasize that the chain is about God's faithfulness, not individual selection.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 4980.0,
+          "end": 5143.52
+        }
+      ]
+    },
+    {
+      "id": "infra-and-supralapsarianism",
+      "title": "Infra- and Supralapsarianism",
+      "summary": "The hosts explain the Calvinist debates about the logical order of God's decrees regarding the fall and election. Infralapsarianism holds that God decreed the fall before election, while supralapsarianism holds that election was decreed before the fall. These distinctions are attempts to avoid making God the author of evil, but the hosts argue they are ultimately problematic.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 4064.8,
+          "end": 4428.439
+        }
+      ]
+    },
+    {
+      "id": "election-as-qualification",
+      "title": "Election as Qualification",
+      "summary": "The hosts conclude that being 'chosen' or 'elect' means being qualified for a role or purpose. This is seen in military units, elders, and the Messiah. In the New Testament, Christians are called to make their election sure by growing in virtue and faithfulness, as Peter writes in 2 Peter 1.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 10596.54,
+          "end": 10810.12
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "election-not-predestination",
+      "text": "The biblical concept of election is not about God arbitrarily choosing individuals for salvation, but about setting apart people for a specific role or purpose.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 600.0,
+          "end": 1000.799
+        }
+      ]
+    },
+    {
+      "id": "israel-created",
+      "text": "Israel was not chosen from among the nations but was created by God as a new entity, distinct from the 70 nations.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 1349.839,
+          "end": 1602.0
+        }
+      ]
+    },
+    {
+      "id": "elect-angels-not-salvation",
+      "text": "The 'elect angels' cannot refer to election to salvation because angels are not subject to salvation; it refers to their role or office.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 2938.36,
+          "end": 3050.92
+        }
+      ]
+    },
+    {
+      "id": "romans-8-past-tense",
+      "text": "In Romans 8:29-30, the verbs 'foreknew,' 'predestined,' 'called,' 'justified,' and 'glorified' are all past tense, referring to God's past actions in salvation history, not to a logical order of decrees.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 4980.0,
+          "end": 5143.52
+        }
+      ]
+    },
+    {
+      "id": "jacob-esau-nations",
+      "text": "Paul's quotation 'Jacob I loved, but Esau I hated' refers to the nations of Israel and Edom, not to the individual destinies of Jacob and Esau.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 7235.359,
+          "end": 7494.159
+        }
+      ]
+    },
+    {
+      "id": "election-made-sure",
+      "text": "According to 2 Peter 1, Christians must make their calling and election sure through effort and virtue, indicating that election is not a one-time event but a process of faithfulness.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 10596.54,
+          "end": 10810.12
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-10",
+      "reference": "Genesis 10",
+      "summary": "The table of nations lists 70 nations, and Israel is not among them, supporting the claim that Israel was created, not chosen from the nations.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 1349.839,
+          "end": 1392.4
+        }
+      ]
+    },
+    {
+      "id": "isaiah-41-8",
+      "reference": "Isaiah 41:8",
+      "summary": "God calls Israel 'my chosen,' but in context He is not happy with them, showing that 'chosen' refers to a role, not favoritism.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 2049.599,
+          "end": 2140.38
+        }
+      ]
+    },
+    {
+      "id": "1-timothy-5-21",
+      "reference": "1 Timothy 5:21",
+      "summary": "Paul refers to 'elect angels,' which cannot mean chosen for salvation, but rather angels with a specific role.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 2938.36,
+          "end": 3028.92
+        }
+      ]
+    },
+    {
+      "id": "romans-8-28-30",
+      "reference": "Romans 8:28-30",
+      "summary": "The 'golden chain' of redemption is interpreted as God's past actions in salvation history, not a logical order of decrees.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 4920.0,
+          "end": 5143.52
+        }
+      ]
+    },
+    {
+      "id": "romans-9-13",
+      "reference": "Romans 9:13",
+      "summary": "The quotation 'Jacob I loved, but Esau I hated' is explained as referring to nations, not individuals.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 7235.359,
+          "end": 7494.159
+        }
+      ]
+    },
+    {
+      "id": "2-peter-1-10",
+      "reference": "2 Peter 1:10",
+      "summary": "Peter urges believers to make their calling and election sure through virtue, showing that election is conditional on faithfulness.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 10596.54,
+          "end": 10810.12
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "bachir",
+      "term": "Bachir",
+      "definition": "Hebrew adjective meaning 'chosen' or 'elect,' used to describe someone given a role or office, not the recipient of an action.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 840.0,
+          "end": 936.0
+        }
+      ]
+    },
+    {
+      "id": "eklektos",
+      "term": "Eklektos",
+      "definition": "Greek adjective meaning 'chosen' or 'elect,' derived from the verb 'eklegomai' (to call out), but used as an adjective to describe a person's quality or role.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 945.0,
+          "end": 1036.24
+        }
+      ]
+    },
+    {
+      "id": "infralapsarianism",
+      "term": "Infralapsarianism",
+      "definition": "The Calvinist view that God decreed the fall of man before decreeing election and reprobation.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 4230.0,
+          "end": 4329.0
+        }
+      ]
+    },
+    {
+      "id": "supralapsarianism",
+      "term": "Supralapsarianism",
+      "definition": "The Calvinist view that God decreed election and reprobation before decreeing the fall of man.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 4298.88,
+          "end": 4391.39
+        }
+      ]
+    },
+    {
+      "id": "reprobation",
+      "term": "Reprobation",
+      "definition": "The Calvinist doctrine that God has eternally decreed some people to damnation.",
+      "segments": [
+        {
+          "episode": 103,
+          "start": 3205.0,
+          "end": 3297.26
+        }
+      ]
+    }
+  ]
+}

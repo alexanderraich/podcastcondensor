@@ -1,0 +1,472 @@
+{
+  "summary": "In this episode, the hosts discuss the Shepherd of Hermas, an early Christian text from the 2nd century. They explore its authorship, dating, structure, and content, emphasizing its importance as a non-canonical but authoritative work for understanding early Christian life and theology. The episode also addresses common misconceptions and scholarly critiques, particularly regarding its Christology and alleged legalism, and concludes with reflections on the value of engaging with such texts with humility and openness.",
+  "entities": [
+    {
+      "id": "hermas",
+      "title": "Hermas",
+      "category": "person",
+      "summary": "The author of the Shepherd of Hermas, a freed Roman slave and brother of Pope Pius I. He received visions and recorded them in the text.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 266.959,
+          "end": 619.159
+        },
+        {
+          "episode": 142,
+          "start": 1080.0,
+          "end": 1180.0
+        }
+      ]
+    },
+    {
+      "id": "pope-pius-i",
+      "title": "Pope Pius I",
+      "category": "person",
+      "summary": "Bishop of Rome in the mid-2nd century, brother of Hermas. His mention in the Muratorian Canon helps date the Shepherd of Hermas.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 535.48,
+          "end": 626.159
+        }
+      ]
+    },
+    {
+      "id": "muratorian-canon",
+      "title": "Muratorian Canon",
+      "category": "historical",
+      "summary": "An early canon list from around AD 170 that includes the 27 books of the New Testament and comments on other texts, including the Shepherd of Hermas, which it says is not canonical.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 442.199,
+          "end": 535.48
+        }
+      ]
+    },
+    {
+      "id": "father-bogdan",
+      "title": "Father Bogdan",
+      "category": "person",
+      "summary": "A contemporary Orthodox scholar whose work on the Shepherd of Hermas challenged the scholarly consensus regarding its Christology, arguing for a more orthodox reading.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 9960.0,
+          "end": 10125.879
+        }
+      ]
+    },
+    {
+      "id": "st-athanasius",
+      "title": "St. Athanasius",
+      "category": "person",
+      "summary": "4th-century bishop of Alexandria who recommended the Shepherd of Hermas for catechesis, showing its authoritative status despite not being canonical.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 1888.799,
+          "end": 1980.0
+        }
+      ]
+    },
+    {
+      "id": "st-john-cassian",
+      "title": "St. John Cassian",
+      "category": "person",
+      "summary": "5th-century monk and theologian who frequently cited the Shepherd of Hermas in his writings on monastic formation, indicating its continued influence.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 2017.359,
+          "end": 2110.239
+        }
+      ]
+    },
+    {
+      "id": "st-nicholas-confessor",
+      "title": "St. Nicholas the Confessor",
+      "category": "person",
+      "summary": "9th-century Patriarch of Constantinople who included the Shepherd of Hermas in his list of books to be read privately, showing its ongoing use.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 2038.799,
+          "end": 2130.719
+        }
+      ]
+    },
+    {
+      "id": "codex-sinaiticus",
+      "title": "Codex Sinaiticus",
+      "category": "historical",
+      "summary": "A 4th-century manuscript of the Bible that includes the Shepherd of Hermas at the end, but this does not imply canonicity, as codices often included non-canonical texts for liturgical or devotional use.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 1611.2,
+          "end": 1703.519
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "shepherd-of-hermas",
+      "title": "Shepherd of Hermas",
+      "summary": "An early Christian text written in the 140s AD by Hermas, brother of Pope Pius I. It contains visions, commandments, and parables focused on Christian living, repentance, and the nature of the church.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 266.959,
+          "end": 619.159
+        },
+        {
+          "episode": 142,
+          "start": 1080.0,
+          "end": 1180.0
+        },
+        {
+          "episode": 142,
+          "start": 5121.199,
+          "end": 5219.0
+        },
+        {
+          "episode": 142,
+          "start": 8942.0,
+          "end": 9033.0
+        }
+      ]
+    },
+    {
+      "id": "canonicity",
+      "title": "Canonicity",
+      "summary": "The discussion of which books are considered part of the Bible. The episode highlights that the Shepherd of Hermas was never considered canonical but was highly influential and authoritative in the early church.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 2279.579,
+          "end": 2611.3
+        },
+        {
+          "episode": 142,
+          "start": 2666.79,
+          "end": 2758.92
+        },
+        {
+          "episode": 142,
+          "start": 2838.159,
+          "end": 2931.39
+        }
+      ]
+    },
+    {
+      "id": "secondary-authority",
+      "title": "Secondary Authority",
+      "summary": "The concept that within Orthodox Christianity, Scripture holds primary authority, but other texts like the Shepherd of Hermas and church fathers hold a secondary, yet authoritative, role in guiding interpretation and practice.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 3138.0,
+          "end": 3237.76
+        },
+        {
+          "episode": 142,
+          "start": 3227.199,
+          "end": 3374.519
+        }
+      ]
+    },
+    {
+      "id": "post-baptismal-sin",
+      "title": "Post-Baptismal Sin",
+      "summary": "The Shepherd of Hermas addresses the seriousness of sins committed after baptism, emphasizing that there is one opportunity for repentance during one's lifetime, not that forgiveness is impossible.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 5686.96,
+          "end": 5909.96
+        }
+      ]
+    },
+    {
+      "id": "church-as-tower",
+      "title": "Church as Tower",
+      "summary": "A major image in the Shepherd of Hermas where the church is depicted as a tower being built from stones representing believers, with Christ as the foundation. This illustrates the collective and dynamic nature of the church.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 5917.239,
+          "end": 6073.68
+        },
+        {
+          "episode": 142,
+          "start": 8490.0,
+          "end": 8792.559
+        }
+      ]
+    },
+    {
+      "id": "adoptionist-christology",
+      "title": "Adoptionist Christology",
+      "summary": "A theological view that Jesus was a man adopted by God, often attributed to the Shepherd of Hermas by modern scholars. The episode argues this is a misinterpretation, and the text actually supports a more orthodox understanding.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 9758.0,
+          "end": 9943.76
+        },
+        {
+          "episode": 142,
+          "start": 10001.239,
+          "end": 10218.959
+        }
+      ]
+    },
+    {
+      "id": "developmental-hypothesis",
+      "title": "Developmental Hypothesis",
+      "summary": "The scholarly assumption that Christian doctrines evolved over time from simple to complex, leading to anachronistic readings of early texts. The episode critiques this approach as flawed.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 10385.92,
+          "end": 10512.84
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "shepherd-written-140s",
+      "text": "The Shepherd of Hermas was written in the 140s AD, as indicated by the Muratorian Canon's statement that it was written recently by the brother of Pius, bishop of Rome.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 535.48,
+          "end": 626.159
+        }
+      ]
+    },
+    {
+      "id": "shepherd-not-canonical",
+      "text": "The Shepherd of Hermas was never considered part of the New Testament canon, but it was highly authoritative and widely used in the early church for teaching and spiritual guidance.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 1587.0,
+          "end": 1677.79
+        },
+        {
+          "episode": 142,
+          "start": 1929.0,
+          "end": 2023.4
+        }
+      ]
+    },
+    {
+      "id": "orthodox-continuationism",
+      "text": "The Orthodox Church holds a continuationist view, believing that visions and prophetic gifts continued after the apostolic era, contrary to cessationism.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 937.759,
+          "end": 1033.16
+        }
+      ]
+    },
+    {
+      "id": "scripture-part-of-tradition",
+      "text": "In Orthodox theology, Scripture is part of Holy Tradition and holds a primary authority, but it is not the sole authority; other elements of Tradition have secondary authority.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 3203.84,
+          "end": 3296.559
+        },
+        {
+          "episode": 142,
+          "start": 3227.199,
+          "end": 3374.519
+        }
+      ]
+    },
+    {
+      "id": "parable-five-christology",
+      "text": "The Son of God in Parable 5 of the Shepherd of Hermas is not Jesus but rather Christians who are adopted as sons of God through the Holy Spirit, aligning with the theme of theosis.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 10110.0,
+          "end": 10218.959
+        }
+      ]
+    },
+    {
+      "id": "scholarly-presuppositions",
+      "text": "Modern scholars often read the Shepherd of Hermas through the lens of a developmental hypothesis, assuming early texts must have low Christology, leading to misinterpretations.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 10385.92,
+          "end": 10512.84
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "romans-16-14",
+      "reference": "Romans 16:14",
+      "summary": "Mentions a Hermas in Rome, which some early writers like Origen thought was the author of the Shepherd of Hermas.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 318.56,
+          "end": 409.0
+        }
+      ]
+    },
+    {
+      "id": "acts-11-28",
+      "reference": "Acts 11:28",
+      "summary": "Agabus, a New Testament prophet, predicts a famine, showing that prophecy continued after the apostles, supporting the legitimacy of Hermas's visions.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 1463.68,
+          "end": 1558.4
+        }
+      ]
+    },
+    {
+      "id": "joel-2-28",
+      "reference": "Joel 2:28",
+      "summary": "Quoted by St. Peter at Pentecost, promising visions and dreams, indicating that such experiences are part of the new covenant era.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 1523.119,
+          "end": 1619.799
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-21-23",
+      "reference": "Deuteronomy 21:23",
+      "summary": "States that anyone hung on a tree is cursed, which St. Paul uses to explain Christ's crucifixion as taking on the curse of the law.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 4510.0,
+          "end": 4600.0
+        }
+      ]
+    },
+    {
+      "id": "galatians-3-13",
+      "reference": "Galatians 3:13",
+      "summary": "Christ redeemed us from the curse of the law by becoming a curse for us, a key text in understanding the atonement.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 4527.68,
+          "end": 4618.0
+        }
+      ]
+    },
+    {
+      "id": "1-peter-2-11",
+      "reference": "1 Peter 2:11",
+      "summary": "Christians are strangers and exiles in this world, a theme echoed in the first parable of the Shepherd of Hermas.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 7764.56,
+          "end": 7855.279
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "cessationism",
+      "term": "Cessationism",
+      "definition": "The belief that miraculous gifts and visions ceased with the death of the apostles or the close of the apostolic era.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 848.399,
+          "end": 945.759
+        }
+      ]
+    },
+    {
+      "id": "continuationism",
+      "term": "Continuationism",
+      "definition": "The belief that miraculous gifts and visions continue throughout church history, as held by the Orthodox Church.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 863.84,
+          "end": 958.8
+        }
+      ]
+    },
+    {
+      "id": "psychopomp",
+      "term": "Psychopomp",
+      "definition": "A guide of souls, often an angelic figure, who leads a person on a journey through the cosmos or the afterlife.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 1166.599,
+          "end": 1258.44
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God, participating in the divine nature, a central theme in Orthodox theology.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 10152.559,
+          "end": 10247.799
+        }
+      ]
+    },
+    {
+      "id": "sola-scriptura",
+      "term": "Sola Scriptura",
+      "definition": "The Protestant doctrine that Scripture alone is the ultimate authority, which the episode argues is incompatible with the historical development of the canon.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 2681.239,
+          "end": 2773.519
+        }
+      ]
+    },
+    {
+      "id": "apocalyptic-literature",
+      "term": "Apocalyptic Literature",
+      "definition": "A genre of literature that reveals hidden realities through visions and journeys, often involving a heavenly guide.",
+      "segments": [
+        {
+          "episode": 142,
+          "start": 1245.96,
+          "end": 1345.0
+        }
+      ]
+    }
+  ]
+}

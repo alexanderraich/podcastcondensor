@@ -1,0 +1,538 @@
+{
+  "summary": "In this episode, the hosts conclude their three-part series on the history of Israel, covering the period from the Babylonian exile through the Second Temple period, the Hasmonean dynasty, and the rise of the Pharisees and Sadducees. They discuss the return of the Jewish exiles under Cyrus the Great, the development of synagogues and the concept of Judaism as a way of life, and the impact of Hellenistic rule, including the persecution under Antiochus IV Epiphanes and the Maccabean revolt. The episode also addresses the theological implications of these events, particularly the restoration of Israel as understood by St. Paul in Romans 9-11, and critiques modern ideologies like dispensationalism and supersessionism.",
+  "entities": [
+    {
+      "id": "cyrus-the-great",
+      "title": "Cyrus the Great",
+      "category": "person",
+      "summary": "Founder of the Persian Achaemenid Empire, who allowed the Jewish exiles to return to Judea and rebuild the Temple. He is referred to as 'Messiah' in the Hebrew Scriptures.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 1047.759,
+          "end": 1139.72
+        },
+        {
+          "episode": 116,
+          "start": 1350.0,
+          "end": 1443.24
+        },
+        {
+          "episode": 116,
+          "start": 1620.0,
+          "end": 1710.68
+        }
+      ]
+    },
+    {
+      "id": "alexander-the-great",
+      "title": "Alexander the Great",
+      "category": "person",
+      "summary": "Macedonian conqueror who created a vast empire and spread Hellenistic culture. He was deified and his successors, the Diadochi, divided his empire, leading to the Seleucid and Ptolemaic dynasties.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 5445.6,
+          "end": 5536.0
+        },
+        {
+          "episode": 116,
+          "start": 5602.88,
+          "end": 5693.84
+        }
+      ]
+    },
+    {
+      "id": "antiochus-iv-epiphanes",
+      "title": "Antiochus IV Epiphanes",
+      "category": "person",
+      "summary": "Seleucid king who persecuted the Jews, desecrated the Temple, and triggered the Maccabean Revolt. His actions are seen as the 'abomination of desolation'.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 6090.0,
+          "end": 6185.52
+        },
+        {
+          "episode": 116,
+          "start": 6225.0,
+          "end": 6321.56
+        }
+      ]
+    },
+    {
+      "id": "judas-maccabeus",
+      "title": "Judas Maccabeus",
+      "category": "person",
+      "summary": "Leader of the Maccabean Revolt, known as 'Judah the Hammer'. He recaptured and rededicated the Temple, an event commemorated by Hanukkah.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 7110.0,
+          "end": 7205.56
+        },
+        {
+          "episode": 116,
+          "start": 7170.0,
+          "end": 7261.76
+        }
+      ]
+    },
+    {
+      "id": "john-hyrcanus",
+      "title": "John Hyrcanus",
+      "category": "person",
+      "summary": "Hasmonean king and high priest who expanded Judea by conquering Samaria and Idumea, destroying the Samaritan temple on Mount Gerizim.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 8183.159,
+          "end": 8278.84
+        },
+        {
+          "episode": 116,
+          "start": 8235.84,
+          "end": 8327.12
+        }
+      ]
+    },
+    {
+      "id": "herod-the-great",
+      "title": "Herod the Great",
+      "category": "person",
+      "summary": "Idumean client king of Judea under Rome, known for his massive building projects, including the expansion of the Second Temple. He was not a Judean but an Edomite.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 9192.959,
+          "end": 9284.319
+        },
+        {
+          "episode": 116,
+          "start": 9277.92,
+          "end": 9374.639
+        },
+        {
+          "episode": 116,
+          "start": 9365.76,
+          "end": 9460.799
+        }
+      ]
+    },
+    {
+      "id": "samaritans",
+      "title": "Samaritans",
+      "category": "people",
+      "summary": "A group with mixed ancestry from the northern kingdom and foreign settlers, who had their own version of the Torah and worshiped on Mount Gerizim. They were rivals of the Judeans.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 6723.0,
+          "end": 6815.96
+        },
+        {
+          "episode": 116,
+          "start": 6847.239,
+          "end": 6940.479
+        },
+        {
+          "episode": 116,
+          "start": 8296.719,
+          "end": 8391.479
+        }
+      ]
+    },
+    {
+      "id": "seleucid-empire",
+      "title": "Seleucid Empire",
+      "category": "historical",
+      "summary": "One of the successor states to Alexander's empire, ruling over Syria and the eastern territories, including Judea. It was the oppressor during the Maccabean Revolt.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 5773.39,
+          "end": 5867.119
+        },
+        {
+          "episode": 116,
+          "start": 5820.0,
+          "end": 5912.8
+        }
+      ]
+    },
+    {
+      "id": "ptolemaic-kingdom",
+      "title": "Ptolemaic Kingdom",
+      "category": "historical",
+      "summary": "Another successor state, ruling Egypt and North Africa, often in conflict with the Seleucids over the Levant.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 5773.39,
+          "end": 5867.119
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "second-temple-judaism",
+      "title": "Second Temple Judaism",
+      "summary": "The period of Jewish history from the rebuilding of the Temple in Jerusalem (c. 515 BC) until its destruction in AD 70. It saw the development of synagogues, the rise of sects like the Pharisees and Sadducees, and significant changes in Jewish religious practice due to the diaspora.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 2173.679,
+          "end": 2264.32
+        },
+        {
+          "episode": 116,
+          "start": 2890.159,
+          "end": 2981.48
+        },
+        {
+          "episode": 116,
+          "start": 3158.719,
+          "end": 3252.639
+        }
+      ]
+    },
+    {
+      "id": "hasmonean-dynasty",
+      "title": "Hasmonean Dynasty",
+      "summary": "A dynasty of Jewish priest-kings who ruled Judea from 140 BC to 37 BC, founded after the Maccabean Revolt. They combined the roles of king and high priest, which was controversial and led to opposition from the Pharisees.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 7454.0,
+          "end": 7546.399
+        },
+        {
+          "episode": 116,
+          "start": 8060.0,
+          "end": 8156.64
+        },
+        {
+          "episode": 116,
+          "start": 8143.8,
+          "end": 8235.84
+        }
+      ]
+    },
+    {
+      "id": "pharisees",
+      "title": "Pharisees",
+      "summary": "A Jewish sect known for their strict adherence to the Torah and oral traditions. They opposed the Hasmonean priest-kings and emphasized faithfulness to God's law, waiting for God's intervention. They are often misunderstood as legalistic hypocrites, but the hosts argue they were the 'good guys' in the New Testament context.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 7487.359,
+          "end": 7584.319
+        },
+        {
+          "episode": 116,
+          "start": 7566.0,
+          "end": 7659.52
+        },
+        {
+          "episode": 116,
+          "start": 7852.96,
+          "end": 7943.0
+        }
+      ]
+    },
+    {
+      "id": "sadducees",
+      "title": "Sadducees",
+      "summary": "A Jewish sect associated with the priestly aristocracy, descended from the Hasmonean line. They rejected the oral traditions of the Pharisees, did not believe in resurrection, and were often in conflict with the Pharisees.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 9083.659,
+          "end": 9179.0
+        },
+        {
+          "episode": 116,
+          "start": 9120.0,
+          "end": 9213.0
+        }
+      ]
+    },
+    {
+      "id": "maccabean-revolt",
+      "title": "Maccabean Revolt",
+      "summary": "A Jewish rebellion against the Seleucid Empire and Antiochus IV Epiphanes, led by the Maccabees, which resulted in the rededication of the Temple and the establishment of the Hasmonean dynasty.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 7046.119,
+          "end": 7139.0
+        },
+        {
+          "episode": 116,
+          "start": 7067.479,
+          "end": 7158.6
+        }
+      ]
+    },
+    {
+      "id": "restoration-of-israel",
+      "title": "Restoration of Israel",
+      "summary": "The prophetic expectation that God would restore the twelve tribes of Israel, including the northern kingdom, and establish a renewed covenant. St. Paul interprets this as fulfilled in Christ, with the inclusion of the Gentiles as the 'fullness of the nations'.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 9975.559,
+          "end": 10065.68
+        },
+        {
+          "episode": 116,
+          "start": 10304.479,
+          "end": 10396.34
+        },
+        {
+          "episode": 116,
+          "start": 10540.399,
+          "end": 10631.0
+        }
+      ]
+    },
+    {
+      "id": "olive-tree-metaphor",
+      "title": "Olive Tree Metaphor",
+      "summary": "St. Paul's analogy in Romans 11 of Israel as an olive tree, with natural branches (Jews) and wild branches (Gentiles) grafted in. It emphasizes the unity of Israel and the inclusion of the nations without replacing Israel.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 11593.76,
+          "end": 11692.559
+        },
+        {
+          "episode": 116,
+          "start": 11683.12,
+          "end": 11775.44
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "pharisees-not-bad-guys",
+      "text": "The Pharisees are not the bad guys in the New Testament; Jesus never says they are wrong about anything, only that they are hypocrites.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 7507.0,
+          "end": 7597.56
+        }
+      ]
+    },
+    {
+      "id": "hasmoneans-illegitimate",
+      "text": "The Hasmonean dynasty was illegitimate because they combined the roles of king and high priest, which was against the Torah, and they were not from the line of Zadok.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 7615.68,
+          "end": 7705.72
+        }
+      ]
+    },
+    {
+      "id": "restoration-includes-northern-kingdom",
+      "text": "The restoration of Israel includes the northern kingdom, not just Judah, as prophesied in Ezekiel and Jeremiah, and fulfilled in Christ.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 10304.479,
+          "end": 10396.34
+        },
+        {
+          "episode": 116,
+          "start": 10540.399,
+          "end": 10631.0
+        }
+      ]
+    },
+    {
+      "id": "paul-not-teaching-double-predestination",
+      "text": "St. Paul's use of the potter metaphor in Romans 9 is not teaching double predestination but is based on Jeremiah 18, where God's plans are conditional on repentance.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 11352.79,
+          "end": 11443.92
+        },
+        {
+          "episode": 116,
+          "start": 11550.0,
+          "end": 11640.0
+        }
+      ]
+    },
+    {
+      "id": "one-olive-tree",
+      "text": "There is only one olive tree in Romans 11, meaning there is only one Israel, and the church is not a replacement but a grafting in.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 11683.12,
+          "end": 11775.44
+        }
+      ]
+    },
+    {
+      "id": "gentiles-remain-distinct",
+      "text": "Wild olive branches (Gentiles) do not become natural branches; they remain distinct but are grafted into the same tree, drawing life from the root.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 11866.4,
+          "end": 11957.159
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "ezekiel-37",
+      "reference": "Ezekiel 37:1-14",
+      "summary": "The vision of the dry bones, symbolizing the restoration of the whole house of Israel, including the northern kingdom.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 10421.479,
+          "end": 10547.399
+        }
+      ]
+    },
+    {
+      "id": "jeremiah-31",
+      "reference": "Jeremiah 31:1-6",
+      "summary": "Prophecy of the restoration of Israel and Judah, with the watchmen calling Ephraim to go up to Zion.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 10618.36,
+          "end": 10709.84
+        }
+      ]
+    },
+    {
+      "id": "jeremiah-18",
+      "reference": "Jeremiah 18:1-12",
+      "summary": "The potter and clay metaphor, showing God's conditional plans for nations based on their repentance.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 11153.84,
+          "end": 11250.0
+        }
+      ]
+    },
+    {
+      "id": "romans-9",
+      "reference": "Romans 9:20-24",
+      "summary": "St. Paul's use of the potter metaphor, referencing Jeremiah, to explain God's purposes for Israel and the nations.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 11352.79,
+          "end": 11443.92
+        }
+      ]
+    },
+    {
+      "id": "romans-11",
+      "reference": "Romans 11:17-26",
+      "summary": "The olive tree metaphor, explaining the inclusion of the Gentiles and the future salvation of all Israel.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 11593.76,
+          "end": 11692.559
+        }
+      ]
+    },
+    {
+      "id": "genesis-48",
+      "reference": "Genesis 48:19",
+      "summary": "Jacob's blessing of Ephraim, saying his descendants will become the 'fullness of the nations', which St. Paul connects to the inclusion of the Gentiles.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 11977.399,
+          "end": 12078.719
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "ioudaismos",
+      "term": "Ioudaismos",
+      "definition": "Greek term for Judaism, meaning the Judean way of life, encompassing all aspects of life according to the Torah.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 2520.0,
+          "end": 2531.719
+        }
+      ]
+    },
+    {
+      "id": "diaspora",
+      "term": "Diaspora",
+      "definition": "The dispersion of the Jewish people outside of Judea, leading to the development of synagogues and a distinct Jewish identity.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 2890.159,
+          "end": 2981.48
+        }
+      ]
+    },
+    {
+      "id": "abomination-of-desolation",
+      "term": "Abomination of Desolation",
+      "definition": "The desecration of the Temple by Antiochus IV, who sacrificed a pig on the altar to Zeus, as mentioned in Daniel and the Gospels.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 6252.479,
+          "end": 6346.239
+        }
+      ]
+    },
+    {
+      "id": "hanukkah",
+      "term": "Hanukkah",
+      "definition": "The Jewish festival commemorating the rededication of the Second Temple after the Maccabean Revolt, celebrated for eight days.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 7170.0,
+          "end": 7261.76
+        }
+      ]
+    },
+    {
+      "id": "tetrarch",
+      "term": "Tetrarch",
+      "definition": "A ruler of a quarter of a territory, as used for Herod's sons after his death.",
+      "segments": [
+        {
+          "episode": 116,
+          "start": 9420.0,
+          "end": 9511.319
+        }
+      ]
+    }
+  ]
+}

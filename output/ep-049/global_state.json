@@ -1,0 +1,440 @@
+{
+  "summary": "In this episode, the hosts explore the concept of thunder gods in pagan religions and how they relate to the God of the Bible. They begin with Baal, the Canaanite storm god, discussing his origins, his role in the Baal Cycle, and his appearances in the Old Testament, particularly in the stories of Elijah and the prophets. They then move to Zeus, examining his Indo-European roots, his assimilation of Near Eastern elements, and his portrayal in Greek mythology, including his connection to Baal and his depiction as a shapeshifting rapist. Finally, they discuss Thor, the Norse thunder god, noting that most of what we know comes from Christian sources like Snorri Sturluson's Prose Edda, and they explore his stories, such as the fishing expedition and Ragnarok. Throughout, the hosts argue that while these pagan gods are associated with thunder and lightning, the God of Israel, Yahweh, is distinct and superior, often using the language of storm gods to assert His supremacy. They conclude by addressing the scholarly consensus that Yahweh was originally a storm god, arguing that this view lacks evidence and is based on flawed presuppositions.",
+  "entities": [
+    {
+      "id": "baal",
+      "title": "Baal",
+      "category": "theological",
+      "summary": "Canaanite storm god, also known as Hadad, associated with fertility and thunder, often mentioned in the Old Testament.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 249.36,
+          "end": 340.0
+        },
+        {
+          "episode": 49,
+          "start": 330.0,
+          "end": 422.0
+        },
+        {
+          "episode": 49,
+          "start": 2028.14,
+          "end": 2119.84
+        },
+        {
+          "episode": 49,
+          "start": 2077.199,
+          "end": 2168.699
+        }
+      ]
+    },
+    {
+      "id": "zeus",
+      "title": "Zeus",
+      "category": "theological",
+      "summary": "Greek god of the sky and thunder, king of the gods, whose worship assimilated Near Eastern elements.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 3082.199,
+          "end": 3177.199
+        },
+        {
+          "episode": 49,
+          "start": 4000.44,
+          "end": 4093.39
+        },
+        {
+          "episode": 49,
+          "start": 4350.0,
+          "end": 4440.119
+        },
+        {
+          "episode": 49,
+          "start": 5062.0,
+          "end": 5155.8
+        }
+      ]
+    },
+    {
+      "id": "thor",
+      "title": "Thor",
+      "category": "theological",
+      "summary": "Norse god of thunder, son of Odin, known for his hammer Mjolnir and his battles against giants and the Midgard Serpent.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 6206.96,
+          "end": 6298.22
+        },
+        {
+          "episode": 49,
+          "start": 7995.96,
+          "end": 8088.319
+        },
+        {
+          "episode": 49,
+          "start": 8430.0,
+          "end": 8521.28
+        },
+        {
+          "episode": 49,
+          "start": 8835.84,
+          "end": 8928.12
+        }
+      ]
+    },
+    {
+      "id": "el",
+      "title": "El",
+      "category": "theological",
+      "summary": "Semitic word for God, also used as a proper name for a high god in Canaanite religion, father of Baal.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 214.0,
+          "end": 306.12
+        },
+        {
+          "episode": 49,
+          "start": 800.279,
+          "end": 899.639
+        },
+        {
+          "episode": 49,
+          "start": 1250.0,
+          "end": 1342.559
+        }
+      ]
+    },
+    {
+      "id": "snorri-sturluson",
+      "title": "Snorri Sturluson",
+      "category": "historical",
+      "summary": "13th-century Icelandic Christian historian and poet, author of the Prose Edda, a major source for Norse mythology.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 7192.239,
+          "end": 7285.0
+        },
+        {
+          "episode": 49,
+          "start": 7277.0,
+          "end": 7370.159
+        },
+        {
+          "episode": 49,
+          "start": 7490.96,
+          "end": 7581.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "thunder-gods",
+      "title": "Thunder Gods",
+      "summary": "The concept of thunder gods in various pagan pantheons, including Baal, Zeus, and Thor, and their association with storms, lightning, and fertility.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 201.68,
+          "end": 291.72
+        },
+        {
+          "episode": 49,
+          "start": 249.36,
+          "end": 340.0
+        },
+        {
+          "episode": 49,
+          "start": 3082.199,
+          "end": 3177.199
+        },
+        {
+          "episode": 49,
+          "start": 6206.96,
+          "end": 6298.22
+        }
+      ]
+    },
+    {
+      "id": "baal-cycle",
+      "title": "Baal Cycle",
+      "summary": "The Ugaritic text describing the exploits of Baal, including his insurrection against Yam, his battle with Mot, and his enthronement.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 846.279,
+          "end": 936.679
+        },
+        {
+          "episode": 49,
+          "start": 965.0,
+          "end": 1057.0
+        },
+        {
+          "episode": 49,
+          "start": 1436.16,
+          "end": 1529.359
+        },
+        {
+          "episode": 49,
+          "start": 1824.68,
+          "end": 1918.799
+        }
+      ]
+    },
+    {
+      "id": "euhemerization",
+      "title": "Euhemerization",
+      "summary": "The interpretation of mythological beings as historical humans who were later deified, as seen in Snorri's Prose Edda and other Christian sources.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 7490.96,
+          "end": 7581.0
+        },
+        {
+          "episode": 49,
+          "start": 7916.859,
+          "end": 8009.979
+        }
+      ]
+    },
+    {
+      "id": "storm-god-theory",
+      "title": "Storm God Theory",
+      "summary": "The scholarly hypothesis that Yahweh originated as a storm god in a Canaanite pantheon, which the hosts argue is baseless.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 9627.36,
+          "end": 9720.879
+        },
+        {
+          "episode": 49,
+          "start": 10075.4,
+          "end": 10168.92
+        },
+        {
+          "episode": 49,
+          "start": 10093.86,
+          "end": 10186.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "baal-is-not-yahweh",
+      "text": "Baal is not Yahweh; the Old Testament uses Baal's language to assert Yahweh's superiority, not to equate them.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 2625.84,
+          "end": 2716.119
+        },
+        {
+          "episode": 49,
+          "start": 10688.239,
+          "end": 10781.18
+        },
+        {
+          "episode": 49,
+          "start": 11205.0,
+          "end": 11298.2
+        }
+      ]
+    },
+    {
+      "id": "zeus-is-baal",
+      "text": "Zeus and Baal were identified as the same deity in antiquity, as seen in Alexander the Great's reconsecration of Baal shrines to Zeus.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 5805.8,
+          "end": 5898.239
+        },
+        {
+          "episode": 49,
+          "start": 5834.399,
+          "end": 5924.64
+        }
+      ]
+    },
+    {
+      "id": "thor-sources-christian",
+      "text": "Almost all written sources about Thor and Norse mythology were composed by Christians centuries after Christianization, so they may not accurately reflect pagan beliefs.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 6685.76,
+          "end": 6775.96
+        },
+        {
+          "episode": 49,
+          "start": 7050.0,
+          "end": 7140.899
+        }
+      ]
+    },
+    {
+      "id": "yahweh-not-storm-god",
+      "text": "The scholarly consensus that Yahweh was originally a storm god is based on no evidence and flawed presuppositions.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 9708.479,
+          "end": 9801.0
+        },
+        {
+          "episode": 49,
+          "start": 10075.4,
+          "end": 10168.92
+        },
+        {
+          "episode": 49,
+          "start": 10093.86,
+          "end": 10186.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "psalm-24",
+      "reference": "Psalm 24:7-10",
+      "summary": "The call to lift up the gates is used in Christian liturgy for the Ascension, echoing Baal's enthronement but applying it to Christ.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 1365.839,
+          "end": 1457.299
+        },
+        {
+          "episode": 49,
+          "start": 1954.88,
+          "end": 2050.0
+        }
+      ]
+    },
+    {
+      "id": "daniel-7",
+      "reference": "Daniel 7:13-14",
+      "summary": "The Son of Man coming on the clouds is seen as a corrective rewriting of Baal's cloud-rider imagery.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 1991.4,
+          "end": 2088.719
+        },
+        {
+          "episode": 49,
+          "start": 10704.319,
+          "end": 10796.54
+        }
+      ]
+    },
+    {
+      "id": "job-leviathan",
+      "reference": "Job 41:1-34",
+      "summary": "Leviathan being drawn up with a hook parallels Thor's fishing expedition, but in Scripture it demonstrates God's power over chaos.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 8819.0,
+          "end": 8910.4
+        }
+      ]
+    },
+    {
+      "id": "acts-14",
+      "reference": "Acts 14:8-18",
+      "summary": "Paul and Barnabas are mistaken for Zeus and Hermes in Lystra, showing the cultural context of Greek gods.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 6000.0,
+          "end": 6095.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "hypostasis",
+      "term": "Hypostasis",
+      "definition": "In pagan context, a local manifestation or aspect of a deity, as in Baal of Peor being a hypostasis of Baal.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 649.12,
+          "end": 740.32
+        },
+        {
+          "episode": 49,
+          "start": 744.559,
+          "end": 834.639
+        }
+      ]
+    },
+    {
+      "id": "theophoric-name",
+      "term": "Theophoric Name",
+      "definition": "A name that includes the name of a deity, such as Jezebel (Baal) or Ben-Hadad (Hadad).",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 2177.28,
+          "end": 2270.619
+        },
+        {
+          "episode": 49,
+          "start": 6889.0,
+          "end": 6980.0
+        }
+      ]
+    },
+    {
+      "id": "mjolnir",
+      "term": "Mjolnir",
+      "definition": "Thor's hammer, a symbol of his power over thunder and lightning.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 8422.479,
+          "end": 8514.719
+        },
+        {
+          "episode": 49,
+          "start": 8525.799,
+          "end": 8616.559
+        }
+      ]
+    },
+    {
+      "id": "ragnarok",
+      "term": "Ragnarok",
+      "definition": "The Norse end of the world, where Thor fights the Midgard Serpent and both die.",
+      "segments": [
+        {
+          "episode": 49,
+          "start": 8842.79,
+          "end": 8937.2
+        },
+        {
+          "episode": 49,
+          "start": 8901.0,
+          "end": 8994.0
+        }
+      ]
+    }
+  ]
+}

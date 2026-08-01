@@ -1,0 +1,694 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young explore the biblical meaning of salvation, arguing that it is not primarily about escaping hell and going to heaven after death, but about theosis—becoming like God through faithful participation in the way of life God sets before humanity. They trace this theme from Adam in Eden, through Noah, Abraham, Moses, and the Torah, showing that salvation has always been about growing into the likeness of God, with sin, death, and demonic powers as obstacles to be overcome. They emphasize that salvation is received through faithfulness, not mere belief or legalistic works, and that Christ, as the second Adam and the perfect image of God, accomplishes the removal of these obstacles and enables humanity to fulfill its original purpose. The episode also addresses listener questions on worship and veneration, the rapture and dispensationalism, Isaiah 53 and penal substitutionary atonement, and the nature of hell, critiquing the 'River of Fire' theology for distorting scriptural language and presenting God as passive. The hosts conclude by urging listeners to focus not only on what they are saved from (sin, death, demons) but also on what they are saved for—good works prepared by God, which transform them into the likeness of Christ and bring life to the world.",
+  "entities": [
+    {
+      "id": "adam",
+      "title": "Adam",
+      "category": "person",
+      "summary": "The first human, created in God's image and given commandments to fill and subdue the earth. His fall introduced sin, death, and demonic powers as obstacles to salvation, but his original purpose of theosis remains the model for all humanity.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 514.36,
+          "end": 620.32
+        },
+        {
+          "episode": 136,
+          "start": 1440.0,
+          "end": 1535.519
+        },
+        {
+          "episode": 136,
+          "start": 2728.39,
+          "end": 2819.88
+        }
+      ]
+    },
+    {
+      "id": "noah",
+      "title": "Noah",
+      "category": "person",
+      "summary": "A righteous man saved from the corruption of his generation through the flood, which prefigures baptism. His salvation involved faithful obedience in building the ark, and after the flood, he was told to continue the original mandate to fill and subdue the earth.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 1718.339,
+          "end": 1853.0
+        },
+        {
+          "episode": 136,
+          "start": 1890.0,
+          "end": 2024.799
+        },
+        {
+          "episode": 136,
+          "start": 2806.39,
+          "end": 2896.599
+        }
+      ]
+    },
+    {
+      "id": "abraham",
+      "title": "Abraham",
+      "category": "person",
+      "summary": "Called out of Ur to receive promises of land, descendants, and blessing. His faithfulness, not mere belief, was credited as righteousness, and his life demonstrates that salvation is received through obedient trust in God's promises.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 2160.0,
+          "end": 2317.199
+        },
+        {
+          "episode": 136,
+          "start": 2857.92,
+          "end": 2955.26
+        },
+        {
+          "episode": 136,
+          "start": 2940.0,
+          "end": 3031.48
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "The prophet who led Israel out of Egypt and received the Torah. His salvation involved being called out of Egypt, speaking with God face to face, and becoming like God. He is one of the few who saw God directly.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 5040.0,
+          "end": 5180.319
+        },
+        {
+          "episode": 136,
+          "start": 5240.0,
+          "end": 5336.72
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "person",
+      "summary": "The second Adam and perfect image of God, who recapitulates Israel's history and accomplishes salvation. His incarnation is the basis for theosis, and his death and resurrection defeat sin, death, and the devil.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 9628.79,
+          "end": 9719.4
+        },
+        {
+          "episode": 136,
+          "start": 10005.2,
+          "end": 10099.84
+        },
+        {
+          "episode": 136,
+          "start": 10127.12,
+          "end": 10218.0
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "Apostle who articulates the theology of salvation by faithfulness, the role of the Torah, and the cosmic significance of Christ's work. His letters, especially Romans and Ephesians, are central to the episode's arguments.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 2940.0,
+          "end": 3031.48
+        },
+        {
+          "episode": 136,
+          "start": 6256.88,
+          "end": 6347.84
+        },
+        {
+          "episode": 136,
+          "start": 10830.0,
+          "end": 10927.36
+        }
+      ]
+    },
+    {
+      "id": "st-basil-the-great",
+      "title": "St. Basil the Great",
+      "category": "person",
+      "summary": "Church Father quoted for his statement that man is commanded to become God, linking theosis to the original purpose of humanity.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 1217.39,
+          "end": 1309.0
+        }
+      ]
+    },
+    {
+      "id": "alexander-kalomiros",
+      "title": "Alexander Kalomiros",
+      "category": "person",
+      "summary": "Author of 'The River of Fire', a widely circulated article that presents hell as the experience of God's love by the unrepentant. The hosts critique this view for depicting God as passive and distorting scriptural language.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 8580.0,
+          "end": 8672.0
+        },
+        {
+          "episode": 136,
+          "start": 8630.76,
+          "end": 8750.799
+        }
+      ]
+    },
+    {
+      "id": "the-torah",
+      "title": "The Torah",
+      "category": "theological",
+      "summary": "The Law given through Moses, which functions on three levels: land, sin management, and imaging God. It is not a means of earning salvation but a way of life that facilitates theosis.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 5306.0,
+          "end": 5399.76
+        },
+        {
+          "episode": 136,
+          "start": 6099.0,
+          "end": 6190.72
+        },
+        {
+          "episode": 136,
+          "start": 6600.0,
+          "end": 6690.0
+        }
+      ]
+    },
+    {
+      "id": "the-church",
+      "title": "The Church",
+      "category": "theological",
+      "summary": "The restored Israel, which continues the Torah in a fulfilled way through the sacraments and a way of life centered on love and repentance.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 10165.879,
+          "end": 10259.12
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "salvation-as-theosis",
+      "title": "Salvation as Theosis",
+      "summary": "Salvation is not merely escaping hell but becoming like God through faithful participation in His life, a process called theosis. This is the original purpose for which humanity was created and remains the core of salvation throughout Scripture.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 565.0,
+          "end": 659.32
+        },
+        {
+          "episode": 136,
+          "start": 1440.0,
+          "end": 1535.519
+        },
+        {
+          "episode": 136,
+          "start": 10127.12,
+          "end": 10218.0
+        },
+        {
+          "episode": 136,
+          "start": 10623.239,
+          "end": 10714.239
+        }
+      ]
+    },
+    {
+      "id": "faithfulness-as-the-key",
+      "title": "Faithfulness as the Key to Receiving Salvation",
+      "summary": "Salvation is received through faithfulness to God's commandments and way of life, not through mere intellectual belief or legalistic works. This is demonstrated in the lives of Adam, Noah, Abraham, and Moses.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 2760.0,
+          "end": 2855.8
+        },
+        {
+          "episode": 136,
+          "start": 2959.0,
+          "end": 3051.159
+        },
+        {
+          "episode": 136,
+          "start": 5760.0,
+          "end": 5850.2
+        }
+      ]
+    },
+    {
+      "id": "three-levels-of-the-torah",
+      "title": "Three Levels of the Torah",
+      "summary": "The Torah functions on three levels: the lowest concerns the land and life in it; the middle deals with managing sin through commandments and sacrifices; the highest and most important is about imaging God, summarized by justice, mercy, and faithfulness.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 5306.0,
+          "end": 5399.76
+        },
+        {
+          "episode": 136,
+          "start": 6026.359,
+          "end": 6120.0
+        },
+        {
+          "episode": 136,
+          "start": 6099.0,
+          "end": 6190.72
+        },
+        {
+          "episode": 136,
+          "start": 6600.0,
+          "end": 6690.0
+        }
+      ]
+    },
+    {
+      "id": "christ-as-second-adam",
+      "title": "Christ as the Second Adam",
+      "summary": "Christ succeeds where Adam failed, perfectly imaging God and fulfilling humanity's original purpose. The incarnation is the basis for theosis, and Christ's work removes the obstacles of sin, death, and demonic powers.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 9628.79,
+          "end": 9719.4
+        },
+        {
+          "episode": 136,
+          "start": 9719.4,
+          "end": 9810.0
+        },
+        {
+          "episode": 136,
+          "start": 10005.2,
+          "end": 10099.84
+        }
+      ]
+    },
+    {
+      "id": "saved-from-and-saved-for",
+      "title": "Saved From and Saved For",
+      "summary": "Salvation involves being saved from sin, death, and demons, but also being saved for good works and participation in God's energies. The focus should be on the positive purpose of becoming like Christ and transforming the world.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 10749.44,
+          "end": 10843.79
+        },
+        {
+          "episode": 136,
+          "start": 10890.0,
+          "end": 10981.4
+        },
+        {
+          "episode": 136,
+          "start": 11054.399,
+          "end": 11145.479
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "salvation-not-heaven-or-hell",
+      "text": "The common understanding of salvation as going to heaven instead of hell when you die is never what the word 'saved' means in the Bible.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 416.959,
+          "end": 510.0
+        }
+      ]
+    },
+    {
+      "id": "adam-had-three-commandments",
+      "text": "Adam was given three commandments, not one: fill the earth, subdue it, and not eat from the tree of knowledge. These were a way of life leading to theosis.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 831.2,
+          "end": 928.0
+        }
+      ]
+    },
+    {
+      "id": "salvation-for-adam-before-fall",
+      "text": "Adam was on a path to salvation before the fall, and salvation for him meant becoming like God through faithful obedience to the commandments.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 614.96,
+          "end": 705.0
+        },
+        {
+          "episode": 136,
+          "start": 1440.0,
+          "end": 1535.519
+        }
+      ]
+    },
+    {
+      "id": "noah-saved-through-waters",
+      "text": "Noah's salvation through the flood prefigures baptism, and after being saved, he was told to continue the original mandate to fill and subdue the earth.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 2004.319,
+          "end": 2095.44
+        }
+      ]
+    },
+    {
+      "id": "abraham-faithfulness-credited",
+      "text": "St. Paul's statement that Abraham believed and it was credited as righteousness means Abraham was faithful, and that faithfulness is the standard by which God reckons righteousness.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 2959.0,
+          "end": 3051.159
+        }
+      ]
+    },
+    {
+      "id": "torah-does-not-solve-sin",
+      "text": "The Torah does not and cannot solve the problem of sin; it manages sin by bringing knowledge of sin, providing means of atonement, and teaching about sin's nature.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 6116.0,
+          "end": 6206.239
+        },
+        {
+          "episode": 136,
+          "start": 6256.88,
+          "end": 6347.84
+        }
+      ]
+    },
+    {
+      "id": "weightier-matters-of-the-law",
+      "text": "Christ identifies justice, mercy, and faithfulness as the weightier matters of the Torah, which are the core and essence of the law, not the peripheral regulations.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 6639.39,
+          "end": 6735.0
+        }
+      ]
+    },
+    {
+      "id": "gentiles-overlooked-before-christ",
+      "text": "Before Christ, God overlooked the sins of the Gentiles because they were not given the Torah, but now that the gospel has gone out, they are called to repent and held to the high standard.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 7418.79,
+          "end": 7528.119
+        }
+      ]
+    },
+    {
+      "id": "isaiah-53-not-penal-substitution",
+      "text": "Isaiah 53's statement that it was the will of the Lord to crush him does not imply penal substitutionary atonement; it means that Christ's suffering was part of God's plan, not that the Father punished the Son.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 4412.0,
+          "end": 4521.1
+        },
+        {
+          "episode": 136,
+          "start": 4594.399,
+          "end": 4652.5
+        }
+      ]
+    },
+    {
+      "id": "river-of-fire-distorts-scripture",
+      "text": "The 'River of Fire' theology, which equates heaven and hell as the same experience of God's love, distorts scriptural language and depicts God as passive, contradicting the active judgment described in the Gospels.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 8630.76,
+          "end": 8750.799
+        },
+        {
+          "episode": 136,
+          "start": 8869.0,
+          "end": 8961.44
+        }
+      ]
+    },
+    {
+      "id": "saved-for-good-works",
+      "text": "Ephesians 2:10 teaches that we are saved for good works, not just from sin and death. These works are part of our original purpose and are the means by which we become like Christ.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 10890.0,
+          "end": 10981.4
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-1-28",
+      "reference": "Genesis 1:28",
+      "summary": "The command to fill the earth and subdue it is cited as one of Adam's positive commandments, indicating his purpose of theosis.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 855.5,
+          "end": 947.8
+        }
+      ]
+    },
+    {
+      "id": "genesis-2-16-17",
+      "reference": "Genesis 2:16-17",
+      "summary": "The negative commandment not to eat from the tree of knowledge is one of three commandments given to Adam, part of his way of life.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 835.2,
+          "end": 928.0
+        }
+      ]
+    },
+    {
+      "id": "genesis-3-15",
+      "reference": "Genesis 3:15",
+      "summary": "The curse on the serpent implies the defeat of the demonic powers, which is part of salvation.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 1627.44,
+          "end": 1725.339
+        }
+      ]
+    },
+    {
+      "id": "genesis-6-9",
+      "reference": "Genesis 6:9",
+      "summary": "Noah is described as righteous in his generation, setting him apart for salvation from the corrupt world.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 1800.0,
+          "end": 1895.44
+        }
+      ]
+    },
+    {
+      "id": "genesis-15-6",
+      "reference": "Genesis 15:6",
+      "summary": "Abraham's faithfulness is credited as righteousness, a key text for understanding salvation by faithfulness.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 2940.0,
+          "end": 3031.48
+        }
+      ]
+    },
+    {
+      "id": "matthew-22-37-40",
+      "reference": "Matthew 22:37-40",
+      "summary": "The greatest commandments to love God and neighbor sum up the Torah and the Prophets, revealing the core of the law.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 6863.18,
+          "end": 6954.239
+        }
+      ]
+    },
+    {
+      "id": "matthew-23-23",
+      "reference": "Matthew 23:23",
+      "summary": "Christ condemns the Pharisees for neglecting the weightier matters of the law: justice, mercy, and faithfulness.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 6639.39,
+          "end": 6735.0
+        }
+      ]
+    },
+    {
+      "id": "romans-2-14-15",
+      "reference": "Romans 2:14-15",
+      "summary": "Gentiles who do not have the Torah can still fulfill its righteous requirements by nature, showing that salvation is not tied to the specific commandments.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 7695.0,
+          "end": 7785.659
+        }
+      ]
+    },
+    {
+      "id": "romans-5-12-21",
+      "reference": "Romans 5:12-21",
+      "summary": "Paul presents Christ as the second Adam, whose obedience brings life and righteousness to all, contrasting with Adam's disobedience.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 9628.79,
+          "end": 9719.4
+        }
+      ]
+    },
+    {
+      "id": "ephesians-2-8-10",
+      "reference": "Ephesians 2:8-10",
+      "summary": "We are saved by grace through faithfulness, not works, but created in Christ Jesus for good works, which are our purpose.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 10830.0,
+          "end": 10927.36
+        }
+      ]
+    },
+    {
+      "id": "hebrews-6-1-2",
+      "reference": "Hebrews 6:1-2",
+      "summary": "The elementary doctrines of repentance, faith, washings, laying on of hands, resurrection, and judgment are foundational but not the ultimate goal; we are to go on to maturity.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 10430.0,
+          "end": 10527.76
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God through participation in His divine life, the ultimate purpose of human creation and salvation.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 565.0,
+          "end": 659.32
+        },
+        {
+          "episode": 136,
+          "start": 10127.12,
+          "end": 10218.0
+        }
+      ]
+    },
+    {
+      "id": "torah",
+      "term": "Torah",
+      "definition": "The Law given through Moses, which functions on three levels: land, sin management, and imaging God. It is a way of life leading to theosis.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 5306.0,
+          "end": 5399.76
+        }
+      ]
+    },
+    {
+      "id": "kavod",
+      "term": "Kavod",
+      "definition": "Hebrew word meaning 'weight' or 'glory', used to describe the core of the Torah as justice, mercy, and faithfulness.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 6701.79,
+          "end": 6799.76
+        }
+      ]
+    },
+    {
+      "id": "penal-substitutionary-atonement",
+      "term": "Penal Substitutionary Atonement",
+      "definition": "A theory of atonement that Christ took the punishment for sin in our place, satisfying God's wrath. The hosts argue this is not the biblical model.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 4594.399,
+          "end": 4652.5
+        }
+      ]
+    },
+    {
+      "id": "river-of-fire",
+      "term": "River of Fire",
+      "definition": "A concept popularized by Alexander Kalomiros, suggesting that hell is the experience of God's love by the unrepentant. The hosts critique this as distorting Scripture.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 8580.0,
+          "end": 8672.0
+        }
+      ]
+    },
+    {
+      "id": "apocatastasis",
+      "term": "Apocatastasis",
+      "definition": "The belief that all will eventually be saved, often associated with Origen. The hosts reject this as contrary to Scripture.",
+      "segments": [
+        {
+          "episode": 136,
+          "start": 8433.399,
+          "end": 8530.28
+        }
+      ]
+    }
+  ]
+}
