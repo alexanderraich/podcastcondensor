@@ -1,0 +1,500 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young explore the resurrection appearances of Christ, arguing that they are not merely evidence for the resurrection but revelations of Christ's divine identity as Yahweh, the God of Israel, who has come to visit His people. They begin by distinguishing Christ's resurrection (anastasis) from mere resuscitation, linking it to the Old Testament concept of the Day of the Lord, a day of judgment and restoration. They discuss how the Day of the Lord involves the rising of the righteous, the judgment of heavenly and earthly powers, and the establishment of justice. The hosts then examine the resurrection appearances in the Gospels, noting that many people fail to recognize Jesus, which would be poor evidence if the accounts were meant as proof. Instead, they argue these appearances are prophetic visions that reveal Christ's glory and commission the apostles. They also address listener questions about the afterlife, the value of historical-critical scholarship, and the significance of the myrrh-bearing women, St. Peter's restoration, and St. Paul's self-description as 'one born out of due time.' The episode concludes with a call to participate in the resurrection life through the liturgy and to go out into the world as apostles.",
+  "entities": [
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "theological",
+      "summary": "The central figure of the episode, whose resurrection appearances reveal His identity as Yahweh, the God of Israel, and the Lord of glory.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 414.319,
+          "end": 506.79
+        },
+        {
+          "episode": 19,
+          "start": 2542.96,
+          "end": 2634.679
+        },
+        {
+          "episode": 19,
+          "start": 8430.0,
+          "end": 8520.2
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul the Apostle",
+      "category": "person",
+      "summary": "Apostle who lists resurrection appearances in 1 Corinthians 15, emphasizing their importance as part of the gospel, and who describes himself as 'one born out of due time'.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 3649.0,
+          "end": 3739.26
+        },
+        {
+          "episode": 19,
+          "start": 8156.84,
+          "end": 8339.92
+        }
+      ]
+    },
+    {
+      "id": "st-peter",
+      "title": "St. Peter",
+      "category": "person",
+      "summary": "Disciple who denied Christ three times and was restored by Christ in a resurrection appearance, contrasting with Judas.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 7380.0,
+          "end": 7475.199
+        },
+        {
+          "episode": 19,
+          "start": 7678.0,
+          "end": 7769.56
+        }
+      ]
+    },
+    {
+      "id": "st-james",
+      "title": "St. James the Just",
+      "category": "person",
+      "summary": "Brother of the Lord, who received a resurrection appearance and became the first bishop of Jerusalem.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 7789.8,
+          "end": 7907.92
+        }
+      ]
+    },
+    {
+      "id": "myrrhbearers",
+      "title": "Myrrh-bearing Women",
+      "category": "historical",
+      "summary": "Women who first discovered the empty tomb and were the first to see the risen Christ, becoming apostles to the apostles.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 7050.0,
+          "end": 7217.439
+        },
+        {
+          "episode": 19,
+          "start": 7335.76,
+          "end": 7428.72
+        }
+      ]
+    },
+    {
+      "id": "lazarus",
+      "title": "Lazarus",
+      "category": "biblical",
+      "summary": "Raised from the dead by Jesus, serving as a sign that the Day of the Lord has come and that Christ is the Resurrection.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 2427.84,
+          "end": 2613.92
+        }
+      ]
+    },
+    {
+      "id": "isaiah",
+      "title": "Isaiah",
+      "category": "person",
+      "summary": "Old Testament prophet whose writings describe the Day of the Lord and the judgment of heavenly and earthly powers.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 1010.82,
+          "end": 1102.64
+        },
+        {
+          "episode": 19,
+          "start": 1230.0,
+          "end": 1325.92
+        }
+      ]
+    },
+    {
+      "id": "st-mary-magdalene",
+      "title": "St. Mary Magdalene",
+      "category": "person",
+      "summary": "One of the myrrh-bearers, called the Apostle to the Apostles, who saw the risen Christ and did not recognize Him until He called her name.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 4755.0,
+          "end": 4847.6
+        },
+        {
+          "episode": 19,
+          "start": 7084.859,
+          "end": 7175.199
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "anastasis",
+      "title": "Anastasis (Resurrection)",
+      "summary": "The Greek word for resurrection, used specifically for Christ's rising, which is not just resuscitation but a cosmic event inaugurating the Day of the Lord and the restoration of all things.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 414.319,
+          "end": 506.79
+        },
+        {
+          "episode": 19,
+          "start": 2148.92,
+          "end": 2245.0
+        },
+        {
+          "episode": 19,
+          "start": 2542.96,
+          "end": 2634.679
+        }
+      ]
+    },
+    {
+      "id": "day-of-the-lord",
+      "title": "Day of the Lord",
+      "summary": "An Old Testament concept of the day when Yahweh visits His people to bring judgment and justice, involving the rising of the righteous and the punishment of the wicked, fulfilled in Christ's crucifixion and resurrection.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 652.799,
+          "end": 745.559
+        },
+        {
+          "episode": 19,
+          "start": 974.0,
+          "end": 1070.559
+        },
+        {
+          "episode": 19,
+          "start": 1363.279,
+          "end": 1454.0
+        }
+      ]
+    },
+    {
+      "id": "resurrection-appearances",
+      "title": "Resurrection Appearances",
+      "summary": "The post-resurrection appearances of Christ, which are not evidence but revelations of His divine identity, commissioning the apostles and revealing His glory.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 3622.76,
+          "end": 3714.719
+        },
+        {
+          "episode": 19,
+          "start": 4867.84,
+          "end": 5052.239
+        },
+        {
+          "episode": 19,
+          "start": 8430.0,
+          "end": 8520.2
+        }
+      ]
+    },
+    {
+      "id": "prophetic-vision",
+      "title": "Prophetic Vision",
+      "summary": "The experience of seeing God, as in the Old Testament, which commissions prophets and apostles; the resurrection appearances are such visions that make the apostles.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 5277.0,
+          "end": 5369.84
+        },
+        {
+          "episode": 19,
+          "start": 5484.0,
+          "end": 5574.79
+        }
+      ]
+    },
+    {
+      "id": "harrowing-of-hell",
+      "title": "Harrowing of Hell",
+      "summary": "The Orthodox belief that Christ descended into Hades after His death to liberate the righteous, connected to the resurrection appearances and the Day of the Lord.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 1873.44,
+          "end": 1998.619
+        },
+        {
+          "episode": 19,
+          "start": 2305.76,
+          "end": 2400.19
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "resurrection-not-resuscitation",
+      "text": "Christ's resurrection is not a resuscitation to the same kind of life, but a transformation into a new mode of existence, inaugurating the Day of the Lord.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 160.96,
+          "end": 252.36
+        },
+        {
+          "episode": 19,
+          "start": 548.799,
+          "end": 639.0
+        }
+      ]
+    },
+    {
+      "id": "resurrection-appearances-revelation",
+      "text": "The resurrection appearances are not evidence for the resurrection but revelations of Christ's divine identity, making the apostles prophets.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 4867.84,
+          "end": 5052.239
+        },
+        {
+          "episode": 19,
+          "start": 8430.0,
+          "end": 8520.2
+        }
+      ]
+    },
+    {
+      "id": "day-of-the-lord-fulfilled",
+      "text": "The Day of the Lord prophesied in the Old Testament is fulfilled in Christ's crucifixion and resurrection, bringing judgment and restoration.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 1363.279,
+          "end": 1454.0
+        },
+        {
+          "episode": 19,
+          "start": 2148.92,
+          "end": 2245.0
+        }
+      ]
+    },
+    {
+      "id": "women-first-witnesses",
+      "text": "The fact that women were the first witnesses of the resurrection is a deliberate pattern, echoing Old Testament examples where women deliver Israel, and it would not be invented as propaganda.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 7140.0,
+          "end": 7233.1
+        },
+        {
+          "episode": 19,
+          "start": 7335.76,
+          "end": 7428.72
+        }
+      ]
+    },
+    {
+      "id": "st-paul-owning-insult",
+      "text": "St. Paul's self-description as 'one born out of due time' is an acceptance of an insult, showing humility and contrasting with his boldness.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 8156.84,
+          "end": 8339.92
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "1-enoch-48-4-5",
+      "reference": "1 Enoch 48:4-5",
+      "summary": "Quoted at the beginning, describing the Son of Man as a staff for the righteous and light to the nations, setting the theme of the episode.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 0.0,
+          "end": 90.2
+        }
+      ]
+    },
+    {
+      "id": "isaiah-24-21-22",
+      "reference": "Isaiah 24:21-22",
+      "summary": "Used to illustrate the Day of the Lord, where heavenly and earthly powers are imprisoned and later punished.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 1010.82,
+          "end": 1102.64
+        }
+      ]
+    },
+    {
+      "id": "isaiah-13-9-11",
+      "reference": "Isaiah 13:9-11",
+      "summary": "Describes the Day of the Lord with cosmic signs, connecting to the crucifixion imagery.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 1230.0,
+          "end": 1325.92
+        }
+      ]
+    },
+    {
+      "id": "matthew-27-52-53",
+      "reference": "Matthew 27:52-53",
+      "summary": "The rising of the saints at Christ's death, interpreted as a sign of the Day of the Lord.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 1594.2,
+          "end": 1697.759
+        }
+      ]
+    },
+    {
+      "id": "john-11-23-25",
+      "reference": "John 11:23-25",
+      "summary": "Jesus' dialogue with Martha, where He identifies Himself as the Resurrection, showing the Day of the Lord has come.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 2427.84,
+          "end": 2613.92
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-15-3-8",
+      "reference": "1 Corinthians 15:3-8",
+      "summary": "St. Paul's list of resurrection appearances, which are not evidence but part of the gospel proclamation.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 3714.719,
+          "end": 3806.8
+        }
+      ]
+    },
+    {
+      "id": "luke-24-13-35",
+      "reference": "Luke 24:13-35",
+      "summary": "The Road to Emmaus, where the disciples do not recognize Jesus until the breaking of bread, illustrating the revelatory nature of the appearances.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 4673.0,
+          "end": 4763.0
+        }
+      ]
+    },
+    {
+      "id": "john-20-14-16",
+      "reference": "John 20:14-16",
+      "summary": "Mary Magdalene mistakes Jesus for the gardener until He calls her name, showing recognition comes through revelation.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 4755.0,
+          "end": 4847.6
+        }
+      ]
+    },
+    {
+      "id": "john-21-4-12",
+      "reference": "John 21:4-12",
+      "summary": "The disciples do not recognize Jesus on the shore, yet know it is the Lord, highlighting the mystery of His glorified body.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 4770.0,
+          "end": 4895.6
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "anastasis",
+      "term": "Anastasis",
+      "definition": "Greek for 'resurrection', specifically the rising of Christ, which is not just resuscitation but a cosmic event of judgment and restoration.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 414.319,
+          "end": 506.79
+        }
+      ]
+    },
+    {
+      "id": "eothina",
+      "term": "Eothina",
+      "definition": "The eleven resurrection gospel readings used in Orthodox Matins on Sundays, proclaiming Christ's victory.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 3573.599,
+          "end": 3670.0
+        }
+      ]
+    },
+    {
+      "id": "prokeimenon",
+      "term": "Prokeimenon",
+      "definition": "A psalm verse chanted before the Gospel reading, often calling on God to arise, setting the theme for the reading.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 2115.719,
+          "end": 2206.0
+        }
+      ]
+    },
+    {
+      "id": "apostello",
+      "term": "Apostello",
+      "definition": "Greek verb meaning 'to send', from which 'apostle' derives, indicating the commissioning of the apostles.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 5334.319,
+          "end": 5429.76
+        }
+      ]
+    },
+    {
+      "id": "rasul",
+      "term": "Rasul",
+      "definition": "Arabic word for 'apostle' or 'messenger', used for both prophets and apostles, indicating direct reception from God.",
+      "segments": [
+        {
+          "episode": 19,
+          "start": 5357.699,
+          "end": 5521.399
+        }
+      ]
+    }
+  ]
+}

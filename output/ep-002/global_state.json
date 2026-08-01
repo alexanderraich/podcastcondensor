@@ -1,0 +1,455 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen De Young continue their exploration of divine plurality by focusing on the divine council, a concept found throughout Scripture and ancient Near Eastern cultures. They explain that the divine council is a heavenly assembly of angelic beings (sons of God) over which Yahweh presides as the Most High. They emphasize that while other cultures had pantheons with a supreme god and a divine son, Israel uniquely saw Yahweh as both Father and Son, with no succession. The hosts discuss the biblical evidence for the divine council, including Psalm 82, Psalm 89, and 1 Kings 22, and address common misconceptions about polytheism, clarifying that these 'gods' are created beings, not comparable to the one true God. They also introduce the nine ranks of angels (Seraphim, Cherubim, Thrones, Dominions, Virtues, Powers, Principalities, Archangels, Angels), explaining that these are roles or jobs, not species, and that angels do not reproduce. The episode includes listener calls about pagan worship and paranormal experiences, and concludes with a discussion on demons, emphasizing that they are fallen angelic beings who rebelled after creation, not before, and that God uses even their evil for good, ultimately to bring about repentance.",
+  "entities": [
+    {
+      "id": "yahweh",
+      "title": "Yahweh",
+      "category": "theological",
+      "summary": "The God of Israel, the Most High, who presides over the divine council. In Christian understanding, Yahweh is both the Father and the Son (Jesus Christ).",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 238.92,
+          "end": 435.92
+        },
+        {
+          "episode": 2,
+          "start": 1404.39,
+          "end": 1530.359
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "theological",
+      "summary": "The Son of God, identified as the Yahweh who appeared to Moses and the one who presides over the divine council. He is the unique Son of God, distinct from other 'sons of God'.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 413.0,
+          "end": 505.4
+        },
+        {
+          "episode": 2,
+          "start": 1224.96,
+          "end": 1317.799
+        },
+        {
+          "episode": 2,
+          "start": 1440.0,
+          "end": 1530.359
+        }
+      ]
+    },
+    {
+      "id": "st-gregory-the-great",
+      "title": "St. Gregory the Great",
+      "category": "person",
+      "summary": "A Church Father (also known as Gregory the Dialogist) whose commentary on 1 Kings 22 explains that the 'host of heaven' includes both elect and fallen angels, and that even evil spirits serve God's purposes.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 1890.0,
+          "end": 1983.559
+        }
+      ]
+    },
+    {
+      "id": "st-dionysius-the-areopagite",
+      "title": "St. Dionysius the Areopagite",
+      "category": "person",
+      "summary": "A Church Father who wrote 'The Celestial Hierarchies' and 'The Ecclesiastical Hierarchies', drawing parallels between the angelic ranks and the hierarchy of the Church.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 4293.8,
+          "end": 4389.0
+        },
+        {
+          "episode": 2,
+          "start": 4419.199,
+          "end": 4516.3
+        }
+      ]
+    },
+    {
+      "id": "michael",
+      "title": "Michael",
+      "category": "theological",
+      "summary": "One of the seven archangels, who is the chief of the Dominions and the heavenly patron of Israel. He is involved in judging rebellious spiritual powers.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 4105.79,
+          "end": 4199.64
+        }
+      ]
+    },
+    {
+      "id": "gabriel",
+      "title": "Gabriel",
+      "category": "theological",
+      "summary": "One of the seven archangels, known for delivering messages from God, such as the annunciation to the Virgin Mary.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 4199.64,
+          "end": 4289.92
+        }
+      ]
+    },
+    {
+      "id": "satan",
+      "title": "Satan",
+      "category": "theological",
+      "summary": "A fallen angelic being who is the adversary. In Job, 'Satan' is an office, not a name. He is associated with the rebellion against God and is cast down by Michael.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 1643.92,
+          "end": 1737.2
+        },
+        {
+          "episode": 2,
+          "start": 4126.399,
+          "end": 4219.199
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "divine-council",
+      "title": "Divine Council",
+      "summary": "The heavenly assembly of angelic beings (sons of God) over which Yahweh presides as the Most High. This concept is found in Scripture and ancient Near Eastern cultures, but in Israel, Yahweh is both Father and Son, with no succession.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 238.92,
+          "end": 435.92
+        },
+        {
+          "episode": 2,
+          "start": 540.0,
+          "end": 630.519
+        },
+        {
+          "episode": 2,
+          "start": 1404.39,
+          "end": 1530.359
+        }
+      ]
+    },
+    {
+      "id": "sons-of-god",
+      "title": "Sons of God",
+      "summary": "A title for angelic beings who are members of the divine council, through whom God administers His kingdom. This language is taken from Canaanite culture (sons of El) and used in the Old Testament.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 564.72,
+          "end": 659.0
+        },
+        {
+          "episode": 2,
+          "start": 617.6,
+          "end": 708.2
+        },
+        {
+          "episode": 2,
+          "start": 1410.0,
+          "end": 1501.39
+        }
+      ]
+    },
+    {
+      "id": "ranks-of-angels",
+      "title": "Ranks of Angels",
+      "summary": "The nine traditional ranks of angelic beings (Seraphim, Cherubim, Thrones, Dominions, Virtues, Powers, Principalities, Archangels, Angels) are roles or jobs, not species. They are cosmic intelligences that serve God in various capacities.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 2230.0,
+          "end": 2422.32
+        },
+        {
+          "episode": 2,
+          "start": 2816.28,
+          "end": 3410.639
+        },
+        {
+          "episode": 2,
+          "start": 3411.48,
+          "end": 4252.8
+        }
+      ]
+    },
+    {
+      "id": "demons-as-fallen-angels",
+      "title": "Demons as Fallen Angels",
+      "summary": "Demons are angelic beings who rebelled against God after creation, not before. They are not a different species but beings who failed to fulfill their created roles. There are multiple angelic falls, and God uses even their evil for good.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 4914.479,
+          "end": 5009.119
+        },
+        {
+          "episode": 2,
+          "start": 4977.92,
+          "end": 5220.79
+        },
+        {
+          "episode": 2,
+          "start": 5369.68,
+          "end": 5467.52
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "divine-council-in-scripture",
+      "text": "The divine council is a biblical concept: God presides over an assembly of angelic beings, as seen in Psalm 82, Psalm 89, and 1 Kings 22.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 1404.39,
+          "end": 1530.359
+        },
+        {
+          "episode": 2,
+          "start": 1680.0,
+          "end": 1781.759
+        }
+      ]
+    },
+    {
+      "id": "no-pre-creation-fall",
+      "text": "The idea that the devil fell before creation is not biblical; it comes from John Milton. The Church Fathers, such as St. Andrew of Caesarea, taught that the devil fell after creation through envy.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 4977.92,
+          "end": 5125.479
+        }
+      ]
+    },
+    {
+      "id": "demons-serve-gods-purpose",
+      "text": "Even demonic powers serve the true God despite themselves, and God uses them to bring about repentance, as seen in the book of Jubilees and the Gospels.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 2529.599,
+          "end": 2620.0
+        },
+        {
+          "episode": 2,
+          "start": 5396.56,
+          "end": 5515.76
+        }
+      ]
+    },
+    {
+      "id": "angels-are-roles-not-species",
+      "text": "The ranks of angels are roles or jobs, not different species. Angels do not reproduce, and the descriptions of them are human attempts to describe cosmic intelligences.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 2286.719,
+          "end": 2422.32
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "psalm-82",
+      "reference": "Psalm 82:1,6-7",
+      "summary": "Used to show God presiding over the divine council and judging the 'gods' (sons of the Most High). Christ quotes this Psalm in John 10:34-36.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 1404.39,
+          "end": 1495.92
+        }
+      ]
+    },
+    {
+      "id": "psalm-89",
+      "reference": "Psalm 89:5-7",
+      "summary": "Describes God as feared in the council of the holy ones, surrounded by the sons of God.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 1475.16,
+          "end": 1569.279
+        }
+      ]
+    },
+    {
+      "id": "1-kings-22",
+      "reference": "1 Kings 22:19-23",
+      "summary": "The prophet Micaiah sees Yahweh on His throne with the host of heaven standing around Him, and a lying spirit volunteers to deceive Ahab.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 1680.0,
+          "end": 1781.759
+        }
+      ]
+    },
+    {
+      "id": "genesis-6",
+      "reference": "Genesis 6:1-4",
+      "summary": "Mentioned as a future topic regarding the 'sons of God' and the Nephilim, and the origin of demons.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 670.879,
+          "end": 763.24
+        }
+      ]
+    },
+    {
+      "id": "revelation-12",
+      "reference": "Revelation 12:7-9",
+      "summary": "Discussed in relation to the fall of the dragon, with St. Andrew of Caesarea interpreting it as a post-creation event.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 5070.0,
+          "end": 5161.819
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "divine-council",
+      "term": "Divine Council",
+      "definition": "The heavenly assembly of angelic beings (sons of God) over which Yahweh presides as the Most High.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 238.92,
+          "end": 435.92
+        }
+      ]
+    },
+    {
+      "id": "sons-of-god",
+      "term": "Sons of God",
+      "definition": "A title for angelic beings who are members of the divine council, through whom God administers His kingdom.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 564.72,
+          "end": 659.0
+        }
+      ]
+    },
+    {
+      "id": "seraphim",
+      "term": "Seraphim",
+      "definition": "A rank of angels associated with the throne of God, often depicted as fiery serpents (from Egyptian 'seraph').",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 3090.0,
+          "end": 3180.0
+        }
+      ]
+    },
+    {
+      "id": "cherubim",
+      "term": "Cherubim",
+      "definition": "A rank of angels who serve as throne guardians, often depicted as winged creatures (from Babylonian 'karubu').",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 2879.44,
+          "end": 2969.96
+        }
+      ]
+    },
+    {
+      "id": "thrones",
+      "term": "Thrones",
+      "definition": "A rank of angels associated with God's throne, often depicted as wheels with eyes, symbolizing God's omnipresence and omniscience.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 3285.96,
+          "end": 3411.48
+        }
+      ]
+    },
+    {
+      "id": "dominions",
+      "term": "Dominions",
+      "definition": "A rank of angels in charge of judging and restraining other spiritual powers.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 3411.48,
+          "end": 3525.79
+        }
+      ]
+    },
+    {
+      "id": "virtues",
+      "term": "Virtues",
+      "definition": "A rank of angels who preside over the material elements of creation (sun, moon, stars, winds).",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 3537.8,
+          "end": 3628.88
+        }
+      ]
+    },
+    {
+      "id": "powers-and-principalities",
+      "term": "Powers and Principalities",
+      "definition": "Angelic beings assigned to preside over nations and peoples; they are the 'regional gods' of the ancient world.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 3715.28,
+          "end": 3868.719
+        }
+      ]
+    },
+    {
+      "id": "archangels",
+      "term": "Archangels",
+      "definition": "A rank of angels, but the seven archangels (Michael, Gabriel, etc.) are not from this rank; they are higher and stand before the throne of God.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 3877.28,
+          "end": 4165.52
+        }
+      ]
+    },
+    {
+      "id": "angels",
+      "term": "Angels",
+      "definition": "The lowest rank of angelic beings, whose primary role is to deliver messages from God.",
+      "segments": [
+        {
+          "episode": 2,
+          "start": 4182.359,
+          "end": 4274.88
+        }
+      ]
+    }
+  ]
+}

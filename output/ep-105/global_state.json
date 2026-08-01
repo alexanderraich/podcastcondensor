@@ -1,0 +1,539 @@
+{
+  "summary": "In this episode, the hosts explore the relationship between the incarnation of Christ and the bodily appearances of God in the Old Testament. They begin by discussing early Christological heresies, particularly Docetism, which claimed Jesus only seemed to be human. They argue that the existence of Docetist communities in the first century challenges the evolutionary view of Christology that Jesus was first seen as a mere man and only later as divine. The hosts then examine Old Testament theophanies where God appears with physicality—walking in Eden, eating with Abraham, and standing before Samuel—and ask how these relate to the incarnation. They propose that Christ's humanity is not limited to his earthly life but exists eternally, as seen in Revelation's depiction of the Lamb slain from the foundation of the world. The episode concludes with a reflection on the icon of the Creation of Adam, where Christ and Adam share the same face, emphasizing that humanity is made according to Christ, the image of God, and that the incarnation is the center and purpose of all creation.",
+  "entities": [
+    {
+      "id": "ignatius-of-antioch",
+      "title": "Ignatius of Antioch",
+      "category": "person",
+      "summary": "An early Church Father and disciple of the Apostle John, who wrote seven letters against Docetism, emphasizing the reality of Christ's flesh.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 1335.88,
+          "end": 1430.0
+        }
+      ]
+    },
+    {
+      "id": "cerinthus",
+      "title": "Cerinthus",
+      "category": "person",
+      "summary": "An early heretic who taught that Jesus was a man upon whom the divine Logos descended at his baptism, a form of adoptionism.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 703.39,
+          "end": 802.2
+        }
+      ]
+    },
+    {
+      "id": "bart-erman",
+      "title": "Bart Ehrman",
+      "category": "person",
+      "summary": "A New Testament scholar who wrote 'How Jesus Became God', arguing for an evolutionary view of Christology. The hosts critique his position and invite him to the show.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 1172.359,
+          "end": 1268.799
+        },
+        {
+          "episode": 105,
+          "start": 3232.39,
+          "end": 3323.559
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "title": "Theotokos",
+      "category": "theological",
+      "summary": "The Virgin Mary, referred to as the Mother of God. The episode discusses her perpetual virginity and her role as the new Ark of the Covenant.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 5419.18,
+          "end": 5511.92
+        },
+        {
+          "episode": 105,
+          "start": 6244.0,
+          "end": 6335.0
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "The prophet who saw God face to face and received the Law. The episode references Exodus 33 to illustrate the distinction between the visible and invisible Yahweh.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 4131.399,
+          "end": 4223.159
+        }
+      ]
+    },
+    {
+      "id": "abraham",
+      "title": "Abraham",
+      "category": "person",
+      "summary": "The patriarch who hosted God and two angels at Mamre, where God ate and had his feet washed, demonstrating physicality.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 5010.0,
+          "end": 5103.68
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "docetism",
+      "title": "Docetism",
+      "summary": "An early Christian heresy teaching that Jesus only appeared to be human, denying his true physicality. The term comes from the Greek 'dokeo' meaning 'to seem'.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 971.799,
+          "end": 1080.0
+        }
+      ]
+    },
+    {
+      "id": "adoptionism",
+      "title": "Adoptionism",
+      "summary": "A heresy that Jesus was a mere man who was adopted as God's Son at some point, such as his baptism or resurrection.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 718.12,
+          "end": 810.0
+        }
+      ]
+    },
+    {
+      "id": "gnosticism",
+      "title": "Gnosticism",
+      "summary": "A syncretistic religious movement in the second century that often viewed matter as evil and denied the incarnation. The hosts argue that Docetism should not be conflated with Gnosticism.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 1689.0,
+          "end": 1787.0
+        },
+        {
+          "episode": 105,
+          "start": 2174.3,
+          "end": 2267.94
+        }
+      ]
+    },
+    {
+      "id": "theophany",
+      "title": "Theophany",
+      "summary": "An appearance of God in the Old Testament, often with physical characteristics. The hosts discuss how these appearances relate to the incarnation of Christ.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 4470.0,
+          "end": 4563.0
+        },
+        {
+          "episode": 105,
+          "start": 4554.479,
+          "end": 4645.64
+        }
+      ]
+    },
+    {
+      "id": "incarnation",
+      "title": "Incarnation",
+      "summary": "The doctrine that the Son of God took on human flesh. The episode explores the idea that Christ's humanity is not confined to his earthly life but is eternal and central to creation.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 5730.0,
+          "end": 5820.76
+        },
+        {
+          "episode": 105,
+          "start": 8335.84,
+          "end": 8429.92
+        }
+      ]
+    },
+    {
+      "id": "second-yahweh",
+      "title": "Second Yahweh",
+      "summary": "A concept in Second Temple Judaism of a divine being distinct from God the Father, often identified with the Son of God. This figure appears in theophanies and is seen as pre-existent.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 4084.39,
+          "end": 4197.359
+        }
+      ]
+    },
+    {
+      "id": "lamb-slain-from-foundation",
+      "title": "Lamb Slain from the Foundation of the World",
+      "summary": "A phrase from Revelation 13:8 indicating that Christ's sacrifice is not merely a historical event but is rooted in the eternal purpose of creation.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 8114.39,
+          "end": 8220.44
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "docetism-not-gnostic",
+      "text": "Docetism should not be conflated with Gnosticism; the Docetists were likely Jewish Christians who believed Jesus was a theophany, not that matter was evil.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 1689.0,
+          "end": 1787.0
+        },
+        {
+          "episode": 105,
+          "start": 2454.84,
+          "end": 2549.0
+        }
+      ]
+    },
+    {
+      "id": "incarnation-eternal",
+      "text": "The incarnation is not a change in God but the eternal reality of Christ's humanity, which is the basis and purpose of all creation.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 8335.84,
+          "end": 8429.92
+        },
+        {
+          "episode": 105,
+          "start": 8409.52,
+          "end": 8518.28
+        }
+      ]
+    },
+    {
+      "id": "christ-humanity-eternal",
+      "text": "Christ's humanity exists outside of time and space, allowing his feet to walk in Eden and his sacrifice to be 'from the foundation of the world'.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 7845.0,
+          "end": 7949.0
+        },
+        {
+          "episode": 105,
+          "start": 8114.39,
+          "end": 8220.44
+        }
+      ]
+    },
+    {
+      "id": "protestants-virgin-birth",
+      "text": "Most Protestants believe in the virgin conception but not the perpetual virginity of Mary, which is a departure from historic Christian teaching.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 5475.359,
+          "end": 5567.2
+        }
+      ]
+    },
+    {
+      "id": "christ-death-meaning",
+      "text": "When we say 'God died on the cross', we mean the person Jesus Christ died, as his human soul was separated from his body, not that the divine nature died.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 7294.76,
+          "end": 7570.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "luke-24-39",
+      "reference": "Luke 24:39",
+      "summary": "Jesus' post-resurrection appearance where he shows his hands and feet, emphasizing he has flesh and bones, not a spirit.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 2696.0,
+          "end": 2788.8
+        }
+      ]
+    },
+    {
+      "id": "john-1-14",
+      "reference": "John 1:14",
+      "summary": "The Word became flesh and dwelt among us, a key verse for the incarnation.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 2815.8,
+          "end": 2907.42
+        }
+      ]
+    },
+    {
+      "id": "acts-2-31",
+      "reference": "Acts 2:31",
+      "summary": "Peter's sermon: Christ's flesh did not see corruption, proving his bodily resurrection.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 2831.78,
+          "end": 2929.119
+        }
+      ]
+    },
+    {
+      "id": "romans-1-3",
+      "reference": "Romans 1:3",
+      "summary": "Paul speaks of Christ being 'from David according to the flesh', emphasizing his human lineage.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 2867.599,
+          "end": 2945.39
+        }
+      ]
+    },
+    {
+      "id": "romans-9-5",
+      "reference": "Romans 9:5",
+      "summary": "Christ is from the patriarchs according to the flesh, yet is God over all.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 2896.88,
+          "end": 2945.39
+        }
+      ]
+    },
+    {
+      "id": "ephesians-2-14",
+      "reference": "Ephesians 2:14",
+      "summary": "Christ broke down the dividing wall in his flesh, referring to the crucifixion.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 2910.0,
+          "end": 3001.0
+        }
+      ]
+    },
+    {
+      "id": "hebrews-2-14",
+      "reference": "Hebrews 2:14",
+      "summary": "Christ partook of flesh and blood to destroy the devil through death.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 2955.28,
+          "end": 3045.48
+        }
+      ]
+    },
+    {
+      "id": "1-peter-4-1",
+      "reference": "1 Peter 4:1",
+      "summary": "Christ suffered in the flesh, and we are called to share in that suffering.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 2992.0,
+          "end": 3082.0
+        }
+      ]
+    },
+    {
+      "id": "1-john-4-2",
+      "reference": "1 John 4:2",
+      "summary": "Confessing Jesus Christ come in the flesh is the test of the Spirit of God.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 3030.0,
+          "end": 3121.0
+        }
+      ]
+    },
+    {
+      "id": "2-john-1-7",
+      "reference": "2 John 1:7",
+      "summary": "Those who do not confess Jesus coming in the flesh are deceivers and antichrist.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 3045.48,
+          "end": 3142.32
+        }
+      ]
+    },
+    {
+      "id": "genesis-3-8",
+      "reference": "Genesis 3:8",
+      "summary": "God walking in the garden, indicating physicality.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 4554.479,
+          "end": 4645.64
+        }
+      ]
+    },
+    {
+      "id": "exodus-24-9-11",
+      "reference": "Exodus 24:9-11",
+      "summary": "Moses and elders see God, with a pavement under his feet, and they eat and drink.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 4599.64,
+          "end": 4806.39
+        }
+      ]
+    },
+    {
+      "id": "1-samuel-3-10",
+      "reference": "1 Samuel 3:10",
+      "summary": "The Lord comes and stands, calling Samuel, showing physical presence.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 4806.39,
+          "end": 4905.439
+        }
+      ]
+    },
+    {
+      "id": "jeremiah-1-9",
+      "reference": "Jeremiah 1:9",
+      "summary": "The Lord puts out his hand and touches Jeremiah's mouth.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 4969.0,
+          "end": 5062.159
+        }
+      ]
+    },
+    {
+      "id": "genesis-18-1-8",
+      "reference": "Genesis 18:1-8",
+      "summary": "The Lord appears to Abraham, eats, and has his feet washed.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 5010.0,
+          "end": 5103.68
+        }
+      ]
+    },
+    {
+      "id": "revelation-13-8",
+      "reference": "Revelation 13:8",
+      "summary": "The Lamb slain from the foundation of the world, indicating the eternal nature of Christ's sacrifice.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 8114.39,
+          "end": 8220.44
+        }
+      ]
+    },
+    {
+      "id": "ephesians-2-6",
+      "reference": "Ephesians 2:6",
+      "summary": "God raised us up and seated us with Christ in heavenly places, already accomplished.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 8066.239,
+          "end": 8156.56
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "dokeo",
+      "term": "Dokeo",
+      "definition": "Greek verb meaning 'to seem' or 'to appear', root of the word Docetism.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 976.2,
+          "end": 1077.0
+        }
+      ]
+    },
+    {
+      "id": "doxa",
+      "term": "Doxa",
+      "definition": "Greek noun meaning 'seeming', 'appearance', 'glory', or 'opinion', related to dogma and orthodoxy.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 981.2,
+          "end": 1077.0
+        }
+      ]
+    },
+    {
+      "id": "memra",
+      "term": "Memra",
+      "definition": "Aramaic term for 'word', used in the Targums to refer to God's visible manifestation, akin to the Logos.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 4341.84,
+          "end": 4435.0
+        }
+      ]
+    },
+    {
+      "id": "logos",
+      "term": "Logos",
+      "definition": "Greek term for 'word' or 'reason', used in John's Gospel to identify Jesus as the pre-existent Word of God.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 4375.76,
+          "end": 4467.0
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "term": "Theotokos",
+      "definition": "Greek title for the Virgin Mary meaning 'God-bearer' or 'Mother of God'.",
+      "segments": [
+        {
+          "episode": 105,
+          "start": 5419.18,
+          "end": 5511.92
+        }
+      ]
+    }
+  ]
+}

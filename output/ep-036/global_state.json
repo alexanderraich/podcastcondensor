@@ -1,0 +1,307 @@
+{
+  "summary": "In this episode, the hosts discuss idolatry, the worship of false gods, as described in the Bible. They begin by addressing the question of whether pagan gods are real, citing Psalm 96:5 ('all the gods of the nations are demons') and other scriptures. They explore the Hebrew word 'elil' (worthless) and its translation history, including Old English renderings. The conversation then delves into the nature of monotheism, arguing that the term is a modern invention and that the biblical view is more nuanced, with Yahweh being in a different category from other spiritual beings. They outline three categories of demons: Watchers (imprisoned angels), unclean spirits (dead Nephilim), and the gods of the nations (fallen angels ruling over peoples). The hosts compare this to Greek mythology, noting parallels like Prometheus and the Titans. They then examine how idolatry works: idols serve as bodies for spirits, created through rituals like the 'opening of the nostrils.' Idolatry is contrasted with proper worship, as seen in the Ark of the Covenant, which had no idol. The episode concludes by discussing the transformative effect of worship: idolatry shapes worshippers into being like the idols (powerless), while Christian worship transforms them into the likeness of Christ. They warn against modern forms of idolatry, such as treating God as a means to an end, and emphasize trust in God's future rather than trying to control outcomes.",
+  "entities": [
+    {
+      "id": "watchers",
+      "title": "Watchers",
+      "category": "theological",
+      "summary": "Angelic beings who fell by teaching forbidden knowledge to humans and are imprisoned in the Abyss.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 2066.36,
+          "end": 2157.36
+        }
+      ]
+    },
+    {
+      "id": "nephilim",
+      "title": "Nephilim (Giants)",
+      "category": "theological",
+      "summary": "Offspring of Watchers and humans; their disembodied spirits become unclean demons.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 2160.0,
+          "end": 2250.0
+        }
+      ]
+    },
+    {
+      "id": "gods-of-the-nations",
+      "title": "Gods of the Nations",
+      "category": "theological",
+      "summary": "Fallen angels placed over nations after Babel, who accepted worship and became demons.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 2431.44,
+          "end": 2523.79
+        }
+      ]
+    },
+    {
+      "id": "prometheus",
+      "title": "Prometheus",
+      "category": "mythological",
+      "summary": "Titan who gave fire to humans and was punished by Zeus, paralleling the Watchers.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 2700.0,
+          "end": 2798.0
+        }
+      ]
+    },
+    {
+      "id": "tartarus",
+      "title": "Tartarus",
+      "category": "place",
+      "summary": "Greek underworld prison for Titans, used in 2 Peter for imprisoned angels.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 2719.39,
+          "end": 2814.96
+        },
+        {
+          "episode": 36,
+          "start": 2760.0,
+          "end": 2855.119
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "idolatry-as-technique",
+      "title": "Idolatry as Technique",
+      "summary": "Idolatry is a ritual technique to manipulate spiritual forces, using idols as access points to control gods.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 5655.76,
+          "end": 5714.88
+        },
+        {
+          "episode": 36,
+          "start": 8700.0,
+          "end": 8794.879
+        }
+      ]
+    },
+    {
+      "id": "three-categories-of-demons",
+      "title": "Three Categories of Demons",
+      "summary": "Biblical model includes Watchers (imprisoned angels), unclean spirits (dead Nephilim), and gods of the nations (fallen angels ruling over peoples).",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 2065.36,
+          "end": 2157.36
+        },
+        {
+          "episode": 36,
+          "start": 2431.44,
+          "end": 2523.79
+        }
+      ]
+    },
+    {
+      "id": "monotheism-as-modern-category",
+      "title": "Monotheism as a Modern Category",
+      "summary": "The term 'monotheism' was coined in the 17th century and does not accurately describe biblical faith, which sees Yahweh as unique among many spiritual beings.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 1105.16,
+          "end": 1200.0
+        }
+      ]
+    },
+    {
+      "id": "idolatry-vs-iconography",
+      "title": "Idolatry vs. Iconography",
+      "summary": "Idolatry uses images to control gods, while Christian iconography uses images to connect to the true God through love and humility.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 8690.479,
+          "end": 8782.799
+        },
+        {
+          "episode": 36,
+          "start": 8607.52,
+          "end": 8699.2
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "psalm-96-5-gods-are-demons",
+      "text": "Psalm 96:5 says 'all the gods of the nations are demons' in the Greek Septuagint, indicating pagan gods are real demonic beings.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 317.4,
+          "end": 411.199
+        }
+      ]
+    },
+    {
+      "id": "idolatry-transforms-worshipper",
+      "text": "Idolatry transforms the worshipper into the likeness of the idol—powerless and lifeless—as stated in Psalm 115.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 7628.76,
+          "end": 7718.939
+        }
+      ]
+    },
+    {
+      "id": "golden-calf-was-yahweh-worship",
+      "text": "The golden calf was an attempt to worship Yahweh through an idol, not a different god.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 5872.319,
+          "end": 5965.76
+        }
+      ]
+    },
+    {
+      "id": "idolatry-is-instrumentality",
+      "text": "Idolatry is fundamentally about using ritual to manipulate spiritual forces for personal gain, contrasting with Christian love.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 8700.0,
+          "end": 8794.879
+        },
+        {
+          "episode": 36,
+          "start": 8795.92,
+          "end": 8894.12
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "psalm-96-5",
+      "reference": "Psalm 96:5",
+      "summary": "Used to assert that the gods of the nations are demons.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 317.4,
+          "end": 411.199
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-10-20",
+      "reference": "1 Corinthians 10:20",
+      "summary": "Paul says pagan sacrifices are offered to demons.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 826.279,
+          "end": 922.399
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-32-17",
+      "reference": "Deuteronomy 32:17",
+      "summary": "They sacrificed to demons, not to God.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 846.0,
+          "end": 937.48
+        }
+      ]
+    },
+    {
+      "id": "psalm-115-3-8",
+      "reference": "Psalm 115:3-8",
+      "summary": "Idols are powerless, and those who make them become like them.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 7648.399,
+          "end": 7739.88
+        }
+      ]
+    },
+    {
+      "id": "isaiah-44-9-17",
+      "reference": "Isaiah 44:9-17",
+      "summary": "Satire of idol-making, showing the craftsman is more powerful than the idol.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 4995.119,
+          "end": 5099.96
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "elil",
+      "term": "Elil",
+      "definition": "Hebrew word meaning 'worthless' or 'vain,' used to describe false gods.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 371.12,
+          "end": 462.319
+        }
+      ]
+    },
+    {
+      "id": "shedu",
+      "term": "Shedu",
+      "definition": "Babylonian loanword for a territorial spirit, used in Deuteronomy 32:17 for demons.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 892.639,
+          "end": 985.879
+        }
+      ]
+    },
+    {
+      "id": "gigantomachy",
+      "term": "Gigantomachy",
+      "definition": "Greek myth of the war between the Olympians and the Giants.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 2891.599,
+          "end": 2984.599
+        }
+      ]
+    },
+    {
+      "id": "hypostasis",
+      "term": "Hypostasis",
+      "definition": "A specific manifestation or localization of a god, especially in idolatry.",
+      "segments": [
+        {
+          "episode": 36,
+          "start": 5760.0,
+          "end": 5850.0
+        }
+      ]
+    }
+  ]
+}

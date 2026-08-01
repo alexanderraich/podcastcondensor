@@ -1,0 +1,424 @@
+{
+  "summary": "In this episode, the hosts explore the prophetic tradition culminating in St. John the Forerunner, focusing on Elijah as the paradigmatic prophet. They discuss Elijah's role in spiritual warfare against Baal worship, his ascension into the divine council, and his connection to John the Forerunner, who comes in his spirit and power. The episode also covers the concept of the remnant, the angelic life, and the importance of community in salvation.",
+  "entities": [
+    {
+      "id": "elijah",
+      "title": "Elijah (St. Elias)",
+      "category": "person",
+      "summary": "A major Old Testament prophet, considered the paradigmatic prophet, known for his confrontation with Baal worship, his ascension to heaven, and his role in the divine council.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 309.89,
+          "end": 423.009
+        },
+        {
+          "episode": 25,
+          "start": 447.41,
+          "end": 542.289
+        },
+        {
+          "episode": 25,
+          "start": 2703.57,
+          "end": 2799.17
+        }
+      ]
+    },
+    {
+      "id": "john-the-forerunner",
+      "title": "St. John the Forerunner",
+      "category": "person",
+      "summary": "The last prophet of the Old Testament era, who prepared the way for Christ, lived an angelic life in the wilderness, and is now part of the divine council.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 5191.52,
+          "end": 5282.0
+        },
+        {
+          "episode": 25,
+          "start": 7984.689,
+          "end": 8079.97
+        }
+      ]
+    },
+    {
+      "id": "ahab",
+      "title": "Ahab",
+      "category": "person",
+      "summary": "King of the northern kingdom of Israel, married to Jezebel, who promoted Baal worship and opposed the prophets of Yahweh.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 851.409,
+          "end": 941.409
+        },
+        {
+          "episode": 25,
+          "start": 1134.609,
+          "end": 1225.97
+        }
+      ]
+    },
+    {
+      "id": "jezebel",
+      "title": "Jezebel",
+      "category": "person",
+      "summary": "Phoenician princess and wife of Ahab, who brought Baal worship to Israel and persecuted Yahweh's prophets.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 880.45,
+          "end": 974.929
+        },
+        {
+          "episode": 25,
+          "start": 1073.65,
+          "end": 1169.17
+        }
+      ]
+    },
+    {
+      "id": "baal",
+      "title": "Baal",
+      "category": "theological",
+      "summary": "A storm god worshiped in the ancient Near East, depicted as a usurper in the divine council, whose worship was opposed by Elijah.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 1170.289,
+          "end": 1262.609
+        },
+        {
+          "episode": 25,
+          "start": 1740.289,
+          "end": 1832.66
+        }
+      ]
+    },
+    {
+      "id": "zachariah",
+      "title": "Zachariah (father of John)",
+      "category": "person",
+      "summary": "A priest, father of St. John the Forerunner, who was killed in the temple for refusing to reveal John's location.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 5416.0,
+          "end": 5508.319
+        },
+        {
+          "episode": 25,
+          "start": 5492.72,
+          "end": 5586.239
+        }
+      ]
+    },
+    {
+      "id": "elizabeth",
+      "title": "Elizabeth",
+      "category": "person",
+      "summary": "Mother of St. John the Forerunner, who took him into the wilderness to escape Herod's massacre.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 5306.72,
+          "end": 5399.76
+        },
+        {
+          "episode": 25,
+          "start": 6023.119,
+          "end": 6113.119
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "paradigmatic-prophet",
+      "title": "Paradigmatic Prophet",
+      "summary": "Elijah is presented as the standard for what it means to be a prophet, as seen in the detailed narrative of his life in the books of Kings, contrasting with other prophets.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 309.89,
+          "end": 423.009
+        },
+        {
+          "episode": 25,
+          "start": 447.41,
+          "end": 542.289
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "title": "Divine Council",
+      "summary": "The heavenly assembly where God presides with angelic beings and exalted humans. Prophets like Elijah and John are depicted as standing in this council, receiving messages and guidance.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2576.69,
+          "end": 2674.13
+        },
+        {
+          "episode": 25,
+          "start": 2703.57,
+          "end": 2799.17
+        },
+        {
+          "episode": 25,
+          "start": 7984.689,
+          "end": 8079.97
+        }
+      ]
+    },
+    {
+      "id": "angelic-life",
+      "title": "Angelic Life",
+      "summary": "A way of life lived in constant awareness and participation with the angelic hosts, often associated with prophets and monastics, characterized by worship and spiritual warfare.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2867.889,
+          "end": 2962.849
+        },
+        {
+          "episode": 25,
+          "start": 2971.969,
+          "end": 3068.13
+        }
+      ]
+    },
+    {
+      "id": "remnant",
+      "title": "Remnant",
+      "summary": "The faithful minority preserved by God throughout history, as seen in Elijah's time and later in the New Testament, emphasizing that God's work is often through a small group.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2102.26,
+          "end": 2213.3
+        },
+        {
+          "episode": 25,
+          "start": 2290.99,
+          "end": 2416.5
+        }
+      ]
+    },
+    {
+      "id": "spiritual-warfare",
+      "title": "Spiritual Warfare",
+      "summary": "The conflict between God and rebellious angels (demons), often manifested in idolatry and false worship. Elijah's ministry is depicted as a form of spiritual warfare.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 1872.18,
+          "end": 1969.38
+        },
+        {
+          "episode": 25,
+          "start": 1951.94,
+          "end": 2042.339
+        }
+      ]
+    },
+    {
+      "id": "patron-saints",
+      "title": "Patron Saints",
+      "summary": "Saints who serve as guides and intercessors for individuals, modeled on the relationship between Elijah and John the Forerunner, where the patron saint leads and mentors the person.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 8431.95,
+          "end": 8566.3
+        },
+        {
+          "episode": 25,
+          "start": 8570.27,
+          "end": 8661.69
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "elijah-paradigm",
+      "text": "Elijah is the paradigmatic prophet because the biblical narrative gives him a detailed biography, unlike other prophets, and he is held up as the standard for prophethood.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 309.89,
+          "end": 423.009
+        }
+      ]
+    },
+    {
+      "id": "john-elijah-connection",
+      "text": "John the Forerunner comes in the spirit and power of Elijah, fulfilling Malachi's prophecy, and is guided by Elijah in the divine council.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 6850.72,
+          "end": 6944.88
+        },
+        {
+          "episode": 25,
+          "start": 7002.64,
+          "end": 7099.6
+        }
+      ]
+    },
+    {
+      "id": "remnant-application",
+      "text": "The concept of the remnant applies to individuals as a call to be faithful, not to identify oneself as the remnant, and it is a pattern throughout history.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2333.46,
+          "end": 2423.86
+        }
+      ]
+    },
+    {
+      "id": "zachariah-murder",
+      "text": "The Zachariah mentioned in Matthew 23:35 is the father of John the Forerunner, killed in the temple, as supported by church tradition and the natural reading of the text.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 5492.72,
+          "end": 5684.399
+        }
+      ]
+    },
+    {
+      "id": "salvation-community",
+      "text": "God does not save individuals in isolation; salvation is communal, and Christians must be part of a community to be saved.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 8966.2,
+          "end": 9076.709
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "malachi-3-1",
+      "reference": "Malachi 3:1",
+      "summary": "Prophecy about sending a messenger to prepare the way before the Lord, applied to John the Forerunner.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 6149.76,
+          "end": 6241.279
+        }
+      ]
+    },
+    {
+      "id": "malachi-4-5-6",
+      "reference": "Malachi 4:5-6",
+      "summary": "Prophecy about sending Elijah before the great day of the Lord, turning hearts, applied to John.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 6166.159,
+          "end": 6256.88
+        }
+      ]
+    },
+    {
+      "id": "isaiah-40-3",
+      "reference": "Isaiah 40:3",
+      "summary": "Voice crying in the wilderness to prepare the way of the Lord, quoted in all four gospels about John.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 6363.52,
+          "end": 6454.8
+        }
+      ]
+    },
+    {
+      "id": "luke-1-17",
+      "reference": "Luke 1:17",
+      "summary": "Angel's prophecy to Zechariah that John will go before the Lord in the spirit and power of Elijah.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 6813.52,
+          "end": 6906.96
+        }
+      ]
+    },
+    {
+      "id": "matthew-23-34-35",
+      "reference": "Matthew 23:34-35",
+      "summary": "Jesus references the murder of Zachariah, interpreted as John's father, linking to church tradition.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 5492.72,
+          "end": 5586.239
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "divine-council",
+      "term": "Divine Council",
+      "definition": "The heavenly assembly of God and angelic beings, where prophets receive their commissions.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2576.69,
+          "end": 2674.13
+        }
+      ]
+    },
+    {
+      "id": "angelic-life",
+      "term": "Angelic Life",
+      "definition": "A life lived in constant awareness of and participation with the angels, often associated with prophets and monastics.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2867.889,
+          "end": 2962.849
+        }
+      ]
+    },
+    {
+      "id": "remnant",
+      "term": "Remnant",
+      "definition": "The faithful minority preserved by God throughout history, as seen in Elijah's time and later in the New Testament.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 2102.26,
+          "end": 2213.3
+        }
+      ]
+    },
+    {
+      "id": "patron-saint",
+      "term": "Patron Saint",
+      "definition": "A saint who serves as a guide and intercessor for an individual, modeled on the relationship between Elijah and John.",
+      "segments": [
+        {
+          "episode": 25,
+          "start": 8431.95,
+          "end": 8566.3
+        }
+      ]
+    }
+  ]
+}

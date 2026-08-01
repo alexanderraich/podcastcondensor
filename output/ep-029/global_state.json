@@ -1,0 +1,430 @@
+{
+  "summary": "In this Monster Month episode of the Lord of Spirits, hosts Father Andrew Stephen Damick and Father Stephen De Young explore the biblical and historical roots of various monsters, including Lilith, unicorns, werewolves, vampires, and demon possession. They trace Lilith from Sumerian mythology through the Bible and rabbinic tradition, discuss the translation of 're'em' as 'unicorn' in the King James Version, and examine werewolf legends from ancient Greece to Native American Wendigo stories. The episode also covers vampires as demon-possessed corpses, referencing the Nomocanon's instructions for dealing with vrykolakas, and concludes with a discussion of King Solomon's ring and the motif of holy people commanding demons. Throughout, the hosts emphasize the spiritual reality behind these monsters and the importance of trusting in Christ rather than pagan practices.",
+  "entities": [
+    {
+      "id": "lilith",
+      "title": "Lilith",
+      "category": "theological",
+      "summary": "A demonic figure in Jewish mythology, often considered Adam's first wife. In the episode, she is traced from Sumerian and Akkadian sources to the Bible and rabbinic tradition.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 306.79,
+          "end": 397.279
+        },
+        {
+          "episode": 29,
+          "start": 1724.64,
+          "end": 1930.14
+        }
+      ]
+    },
+    {
+      "id": "gilgamesh",
+      "title": "Gilgamesh",
+      "category": "historical",
+      "summary": "A legendary Sumerian king and hero of the Epic of Gilgamesh. In the episode, the poem 'Gilgamesh and Enkidu in the Netherworld' is discussed as the first literary appearance of Lilith.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 510.0,
+          "end": 604.639
+        }
+      ]
+    },
+    {
+      "id": "lamashtu",
+      "title": "Lamashtu",
+      "category": "theological",
+      "summary": "A Babylonian demoness associated with harming infants and pregnant women. She is assimilated with Lilith and later appears as Lamia in Greek mythology.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 1260.0,
+          "end": 1350.0
+        }
+      ]
+    },
+    {
+      "id": "pazuzu",
+      "title": "Pazuzu",
+      "category": "theological",
+      "summary": "A Babylonian demon of famine and drought, invoked to ward off Lamashtu. He is known from the film 'The Exorcist.'",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 1402.24,
+          "end": 1493.44
+        }
+      ]
+    },
+    {
+      "id": "lamia",
+      "title": "Lamia",
+      "category": "theological",
+      "summary": "A Greek mythological figure, a serpent-woman who devours children. She is connected to Lilith and Lamashtu in the episode.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 1530.0,
+          "end": 1624.759
+        }
+      ]
+    },
+    {
+      "id": "lycaon",
+      "title": "Lycaon",
+      "category": "historical",
+      "summary": "A mythical king of Arcadia who sacrificed a child to Zeus and was transformed into a wolf, giving rise to werewolf legends.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 5075.84,
+          "end": 5167.539
+        }
+      ]
+    },
+    {
+      "id": "wendigo",
+      "title": "Wendigo",
+      "category": "theological",
+      "summary": "A spirit from Algonquian folklore, associated with cannibalism and greed. The hosts compare it to werewolf legends.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 5981.68,
+          "end": 6121.26
+        }
+      ]
+    },
+    {
+      "id": "vrykolakas",
+      "title": "Vrykolakas",
+      "category": "theological",
+      "summary": "A Greek term for a vampire-like creature, a demon-possessed corpse. The Nomocanon provides instructions for dealing with them.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 6401.6,
+          "end": 6495.52
+        },
+        {
+          "episode": 29,
+          "start": 6823.76,
+          "end": 7014.96
+        }
+      ]
+    },
+    {
+      "id": "solomon",
+      "title": "King Solomon",
+      "category": "historical",
+      "summary": "Biblical king known for his wisdom. In the Testament of Solomon, he uses a magic ring to command demons, a motif discussed in the episode.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 8424.559,
+          "end": 8527.6
+        },
+        {
+          "episode": 29,
+          "start": 8988.12,
+          "end": 9138.799
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "lilith",
+      "title": "Lilith",
+      "summary": "A female demon from ancient Near Eastern mythology, appearing in Sumerian, Akkadian, and Hebrew traditions. In the Bible, she appears in Isaiah 34:14, often translated as 'night bird' or 'screech owl.' She is associated with night, seduction, and harming infants.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 306.79,
+          "end": 397.279
+        },
+        {
+          "episode": 29,
+          "start": 1724.64,
+          "end": 1930.14
+        }
+      ]
+    },
+    {
+      "id": "unicorn",
+      "title": "Unicorn",
+      "summary": "A mythical creature often associated with purity, but in the Bible, the word 'unicorn' in the King James Version translates the Hebrew 're'em,' which likely refers to a wild ox or aurochs. The hosts argue that unicorns are monsters in the biblical context, representing demonic forces.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 2577.32,
+          "end": 2834.719
+        }
+      ]
+    },
+    {
+      "id": "werewolf",
+      "title": "Werewolf",
+      "summary": "A human who transforms into a wolf or wolf-like creature, often through demonic communion or cannibalistic rituals. The hosts trace werewolf legends from ancient Greece (Lycaon) to medieval Europe and Native American Wendigo stories, emphasizing the connection to demonic possession and cannibalism.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 4620.0,
+          "end": 4756.92
+        },
+        {
+          "episode": 29,
+          "start": 5075.84,
+          "end": 5167.539
+        },
+        {
+          "episode": 29,
+          "start": 5490.0,
+          "end": 5585.8
+        }
+      ]
+    },
+    {
+      "id": "vampire",
+      "title": "Vampire",
+      "summary": "A demon-possessed corpse that returns from the dead to harm the living, often associated with blood-drinking and cannibalism. The hosts discuss the historical and Orthodox Christian understanding of vampires, including the vrykolakas in Greek tradition and the Nomocanon's instructions for dealing with them.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 6180.0,
+          "end": 6275.0
+        },
+        {
+          "episode": 29,
+          "start": 6420.0,
+          "end": 6512.359
+        },
+        {
+          "episode": 29,
+          "start": 6823.76,
+          "end": 7014.96
+        }
+      ]
+    },
+    {
+      "id": "demon-possession",
+      "title": "Demon Possession",
+      "summary": "The state of being controlled or influenced by a demonic spirit. The hosts discuss how demon possession was viewed in the ancient world, the biblical accounts of exorcism, and the motif of holy people commanding demons through their holiness, as seen in the Testament of Solomon and the lives of saints.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 8297.6,
+          "end": 8391.0
+        },
+        {
+          "episode": 29,
+          "start": 8988.12,
+          "end": 9138.799
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "lilith-first-appearance",
+      "text": "Lilith first appears in the Sumerian poem 'Gilgamesh and Enkidu in the Netherworld' as a demon living in a tree, and her name is related to the Southwest wind.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 510.0,
+          "end": 604.639
+        },
+        {
+          "episode": 29,
+          "start": 866.559,
+          "end": 959.2
+        }
+      ]
+    },
+    {
+      "id": "unicorn-translation",
+      "text": "The word 'unicorn' in the King James Version is a translation of the Hebrew 're'em,' which likely refers to a wild ox or aurochs, not a mythical horse-like creature.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 2577.32,
+          "end": 2834.719
+        }
+      ]
+    },
+    {
+      "id": "werewolf-cannibalism",
+      "text": "Werewolf legends are connected to cannibalism and human sacrifice, as seen in the story of Lycaon and the rituals at Mount Lycaeon.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 5075.84,
+          "end": 5167.539
+        },
+        {
+          "episode": 29,
+          "start": 5490.0,
+          "end": 5585.8
+        }
+      ]
+    },
+    {
+      "id": "vampire-demonic-possession",
+      "text": "Vampires are demon-possessed corpses, not living humans, and the Orthodox Church provides liturgical remedies for dealing with them, as seen in the Nomocanon.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 6180.0,
+          "end": 6275.0
+        },
+        {
+          "episode": 29,
+          "start": 6823.76,
+          "end": 7014.96
+        }
+      ]
+    },
+    {
+      "id": "holy-people-command-demons",
+      "text": "Holy people can command demons through their holiness, as seen in the Testament of Solomon and the lives of saints, but this power is lost through sin.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 8988.12,
+          "end": 9138.799
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "isaiah-34-14",
+      "reference": "Isaiah 34:14",
+      "summary": "Lilith is mentioned in the context of the desolation of Edom, where she haunts the ruins.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 1724.64,
+          "end": 1930.14
+        }
+      ]
+    },
+    {
+      "id": "numbers-23-22",
+      "reference": "Numbers 23:22",
+      "summary": "The King James Version mentions 'unicorn' in this verse, which is part of Balaam's oracle.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 2614.48,
+          "end": 2708.88
+        }
+      ]
+    },
+    {
+      "id": "job-39-9",
+      "reference": "Job 39:9",
+      "summary": "The 'unicorn' is mentioned in the context of God's power over creation.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 2614.48,
+          "end": 2708.88
+        }
+      ]
+    },
+    {
+      "id": "psalm-22-21",
+      "reference": "Psalm 22:21",
+      "summary": "The 'unicorn' is mentioned in a psalm of lament, possibly referring to a wild ox.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 2614.48,
+          "end": 2708.88
+        }
+      ]
+    },
+    {
+      "id": "genesis-4-7",
+      "reference": "Genesis 4:7",
+      "summary": "The concept of sin crouching at the door is connected to demonic mastery, as discussed in the episode.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 9083.0,
+          "end": 9173.12
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "huluppu-tree",
+      "term": "Huluppu Tree",
+      "definition": "A mythical tree in Sumerian mythology, planted by Inanna, which becomes infested with creatures including Lilith.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 756.48,
+          "end": 846.559
+        }
+      ]
+    },
+    {
+      "id": "kisikil-lil",
+      "term": "Kisikil Lil",
+      "definition": "A Sumerian demon name, the earliest form of Lilith, meaning 'maiden of the wind' or similar.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 866.559,
+          "end": 959.2
+        }
+      ]
+    },
+    {
+      "id": "onomocanon",
+      "term": "Nomocanon",
+      "definition": "A collection of ecclesiastical law, including instructions for dealing with vrykolakas, issued to Orthodox priests in Greece.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 6794.199,
+          "end": 6888.119
+        }
+      ]
+    },
+    {
+      "id": "vrykolakas",
+      "term": "Vrykolakas",
+      "definition": "A Greek term for a vampire-like creature, a demon-possessed corpse that returns to harm the living.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 6401.6,
+          "end": 6495.52
+        }
+      ]
+    },
+    {
+      "id": "testament-of-solomon",
+      "term": "Testament of Solomon",
+      "definition": "A pseudepigraphal text about King Solomon using a magic ring to command demons, which is not canonical but reflects certain motifs.",
+      "segments": [
+        {
+          "episode": 29,
+          "start": 8424.559,
+          "end": 8527.6
+        }
+      ]
+    }
+  ]
+}

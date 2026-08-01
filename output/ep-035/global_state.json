@@ -1,0 +1,254 @@
+{
+  "summary": "In this episode, the hosts explore the biblical concept of priesthood, arguing that it is not merely a clerical office but a fundamental aspect of human nature rooted in creation. They begin by examining Adam as the first priest, whose role was to represent God to creation and offer creation back to God, thereby expanding Eden. This priestly function is tied to fatherhood and masculinity, but also involves participation from women. The discussion then traces the development of priesthood through the Old Testament: the fracturing of priesthood from kingship after Moses' failure, the establishment of the Aaronic priesthood, the role of the Levites, and the concentric circles of holiness (high priest, priests, Levites, Israel, nations). They address the corruption of the priesthood in the Second Temple period, particularly the Sadducees, and how Christ fulfills and reunites priesthood and kingship as the Great High Priest. In the New Covenant, the presbyter (elder) is reunited with the priestly function, and the Church as a whole is a royal priesthood. The episode concludes with practical applications for living out this priestly vocation in family, community, and society, emphasizing transparency, sacrifice, and integration rather than domination.",
+  "entities": [
+    {
+      "id": "adam",
+      "title": "Adam",
+      "category": "person",
+      "summary": "The first human, created as priest and king in the Garden of Eden, tasked with ordering creation and offering it back to God.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 44.0,
+          "end": 192.12
+        },
+        {
+          "episode": 35,
+          "start": 297.4,
+          "end": 632.799
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "Prophet and leader of Israel; his failure to circumcise his son led to the priesthood being taken from him and given to Aaron.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 3283.39,
+          "end": 3665.84
+        }
+      ]
+    },
+    {
+      "id": "aaron",
+      "title": "Aaron",
+      "category": "person",
+      "summary": "Brother of Moses, appointed as the first high priest after Moses' failure.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 3600.0,
+          "end": 3691.559
+        }
+      ]
+    },
+    {
+      "id": "melchizedek",
+      "title": "Melchizedek",
+      "category": "person",
+      "summary": "Priest-king of Salem, a type of Christ who combines priesthood and kingship.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 2001.92,
+          "end": 2095.92
+        },
+        {
+          "episode": 35,
+          "start": 2923.39,
+          "end": 3016.36
+        }
+      ]
+    },
+    {
+      "id": "sadducees",
+      "title": "Sadducees",
+      "category": "historical",
+      "summary": "A priestly party in Second Temple Judaism that controlled the temple and corrupted the priesthood for financial gain.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 6909.76,
+          "end": 7083.199
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "priesthood-as-human-nature",
+      "title": "Priesthood as Human Nature",
+      "summary": "Priesthood is not a job but a way of relating to God and creation, built into what it means to be human. It involves representing God to creation and creation to God.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 690.0,
+          "end": 909.24
+        }
+      ]
+    },
+    {
+      "id": "paradise-as-temple",
+      "title": "Paradise as Temple",
+      "summary": "The Garden of Eden is understood as a temple, with Adam as the image of God placed within it, mirroring ancient Near Eastern temple construction.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 297.4,
+          "end": 470.839
+        }
+      ]
+    },
+    {
+      "id": "concentric-circles-of-priesthood",
+      "title": "Concentric Circles of Priesthood",
+      "summary": "In the Old Covenant, holiness and priestly function are arranged in concentric circles: high priest, priests, Levites, Israel, and the nations. Each group serves as priests to the next outer circle.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 5176.539,
+          "end": 5267.92
+        },
+        {
+          "episode": 35,
+          "start": 6400.68,
+          "end": 6492.0
+        }
+      ]
+    },
+    {
+      "id": "fulfillment-not-abolition",
+      "title": "Fulfillment Not Abolition",
+      "summary": "Christ's fulfillment of the Old Testament priesthood does not abolish it but fills it to overflowing, restoring and reuniting what was fractured.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 8395.159,
+          "end": 8502.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "adam-as-priest",
+      "text": "Adam was created as a priest, tasked with offering creation back to God and expanding Eden through his priestly work.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 44.0,
+          "end": 192.12
+        },
+        {
+          "episode": 35,
+          "start": 585.559,
+          "end": 679.0
+        }
+      ]
+    },
+    {
+      "id": "priesthood-fractured-at-exodus",
+      "text": "The priesthood was fractured from kingship after Moses failed to circumcise his son, and was given to Aaron and his descendants.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 3283.39,
+          "end": 3665.84
+        }
+      ]
+    },
+    {
+      "id": "korah-rebellion",
+      "text": "Korah's rebellion against Aaron's priesthood was not about seizing power but about faithfulness; God confirmed Aaron's priesthood by opening the earth to swallow Korah.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 4907.92,
+          "end": 5108.159
+        }
+      ]
+    },
+    {
+      "id": "christ-reunites-priesthood-and-kingship",
+      "text": "Christ as the Great High Priest reunites the priesthood and kingship that were separated in the Old Testament, restoring humanity's original priestly nature.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 7347.199,
+          "end": 7478.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "exodus-19-5-6",
+      "reference": "Exodus 19:5-6",
+      "summary": "Israel is called a kingdom of priests and a holy nation, establishing their priestly role among the nations.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 6315.64,
+          "end": 6407.479
+        }
+      ]
+    },
+    {
+      "id": "1-peter-2-9",
+      "reference": "1 Peter 2:9",
+      "summary": "The Church is described as a chosen race, a royal priesthood, a holy nation, echoing Exodus 19 and applying it to Christians.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 8080.8,
+          "end": 8171.39
+        }
+      ]
+    },
+    {
+      "id": "revelation-1-6",
+      "reference": "Revelation 1:6",
+      "summary": "Christ has made us a kingdom, priests to His God and Father, showing the fulfillment of the priestly calling.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 8291.819,
+          "end": 8383.59
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "presbyter",
+      "term": "Presbyter",
+      "definition": "Greek word for elder, used in the New Testament for church leaders; in English, it is the root of both 'priest' and 'presbyter'.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 7613.8,
+          "end": 7794.5
+        }
+      ]
+    },
+    {
+      "id": "concentric-circles",
+      "term": "Concentric Circles of Holiness",
+      "definition": "The arrangement of holiness in the Old Covenant: high priest, priests, Levites, Israel, and the nations, each serving as priests to the next outer circle.",
+      "segments": [
+        {
+          "episode": 35,
+          "start": 5176.539,
+          "end": 5267.92
+        }
+      ]
+    }
+  ]
+}

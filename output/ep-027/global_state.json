@@ -1,0 +1,449 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young explore the mysterious figure of Melchizedek, who appears briefly in Genesis 14, is referenced in Psalm 110, and is central to the Epistle to the Hebrews. They begin by setting the context: the war of the five kings, Abram's rescue of Lot, and the encounter with Melchizedek, who brings bread and wine and blesses Abram. The hosts argue that Melchizedek, despite his pagan-sounding name and city (Salem, i.e., Jerusalem), is a faithful priest of the Most High God, a remnant of true worship after the Tower of Babel. They emphasize that the text repeatedly stresses 'God Most High' to counter the assumption that he is a pagan priest-king. They also discuss the significance of Abram's refusal of the spoils from the king of Sodom, linking it to the taint of the giant clans and the need for separation from their culture.\n\nThe second half connects Melchizedek to the messianic tradition, tracing the theme of the singular seed from Abraham through Isaac, Jacob, and Judah, culminating in the Davidic monarchy. They examine Jacob's blessing of Judah in Genesis 49, noting the promise of a ruler from Judah's line, and then move to the Davidic covenant, where David is called a 'prince' rather than a full king, pointing to a future ultimate king. They also address the common misinterpretation of 1 Samuel 8 as anti-monarchy, clarifying that the problem was not kingship per se but the people's desire for a king like the pagan nations, rejecting God's direct rule. The hosts then delve into Psalm 110, the most quoted Old Testament text in the New Testament, explaining its messianic significance: the Messiah sits at God's right hand, rules in the midst of his enemies, and is a priest forever after the order of Melchizedek. They interpret this as describing the current messianic age, where Christ reigns as king and high priest, with the liturgy as the central activity, until the final defeat of his enemies.\n\nIn the final half, they explore the deeper implications of the priesthood of Melchizedek as presented in Hebrews, contrasting it with the Levitical priesthood. They emphasize that Melchizedek's priesthood is eternal and heavenly, prefiguring Christ's unique high priesthood. They also introduce a Dead Sea Scrolls text (11Q13) from around 100 BC, which already interprets Melchizedek as a divine messianic figure who will judge the demonic powers and liberate captives, demonstrating that the New Testament's use of Melchizedek is rooted in pre-existing Jewish exegesis. The episode concludes with a reflection on the unity of Scripture, arguing that the Bible is a cohesive whole pointing to Christ, and that this coherence is a powerful argument for the Christian faith.",
+  "entities": [
+    {
+      "id": "melchizedek",
+      "title": "Melchizedek",
+      "category": "person",
+      "summary": "King of Salem and priest of God Most High, who blesses Abram and receives a tithe. He is a type of Christ.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 214.949,
+          "end": 306.75
+        },
+        {
+          "episode": 27,
+          "start": 256.949,
+          "end": 347.75
+        },
+        {
+          "episode": 27,
+          "start": 2999.719,
+          "end": 3089.719
+        }
+      ]
+    },
+    {
+      "id": "abram",
+      "title": "Abram (Abraham)",
+      "category": "person",
+      "summary": "The patriarch who meets Melchizedek after rescuing Lot. He refuses the spoils of Sodom and receives Melchizedek's blessing.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 214.949,
+          "end": 306.75
+        },
+        {
+          "episode": 27,
+          "start": 256.949,
+          "end": 347.75
+        },
+        {
+          "episode": 27,
+          "start": 1096.569,
+          "end": 1187.569
+        }
+      ]
+    },
+    {
+      "id": "shemesh",
+      "title": "Shemesh",
+      "category": "theological",
+      "summary": "The Canaanite sun god, of whom Zedek is a hypostasis. Worshiped in Jerusalem until Josiah's reforms.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 2439.849,
+          "end": 2530.92
+        },
+        {
+          "episode": 27,
+          "start": 2695.92,
+          "end": 2786.92
+        }
+      ]
+    },
+    {
+      "id": "zedek",
+      "title": "Zedek",
+      "category": "theological",
+      "summary": "A hypostasis of Shemesh, the sun god, associated with justice. The name Melchizedek means 'My King is Zedek'.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 1665.2,
+          "end": 1757.519
+        },
+        {
+          "episode": 27,
+          "start": 2427.849,
+          "end": 2518.92
+        }
+      ]
+    },
+    {
+      "id": "jerusalem",
+      "title": "Jerusalem (Salem)",
+      "category": "place",
+      "summary": "The city of Melchizedek, originally named Urushalim, meaning 'city of Shalim'. Later becomes the site of the Temple.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 1506.2,
+          "end": 1600.2
+        },
+        {
+          "episode": 27,
+          "start": 1556.2,
+          "end": 1649.2
+        }
+      ]
+    },
+    {
+      "id": "david",
+      "title": "King David",
+      "category": "person",
+      "summary": "The second king of Israel, from the tribe of Judah, who receives the covenant promising an eternal dynasty. He is a type of the Messiah.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 5584.199,
+          "end": 5678.199
+        },
+        {
+          "episode": 27,
+          "start": 6248.939,
+          "end": 6344.939
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "person",
+      "summary": "The Messiah, who is both king and priest after the order of Melchizedek, fulfilling the prophecies and establishing the messianic age.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 6999.539,
+          "end": 7098.539
+        },
+        {
+          "episode": 27,
+          "start": 8294.54,
+          "end": 8390.54
+        }
+      ]
+    },
+    {
+      "id": "belial",
+      "title": "Belial",
+      "category": "theological",
+      "summary": "The demonic adversary in the Dead Sea Scrolls, who is judged by Melchizedek in 11Q13.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 8023.539,
+          "end": 8124.539
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "melchizedek-priest-king",
+      "title": "Melchizedek as Priest-King",
+      "summary": "Melchizedek is presented as a unique figure who combines the roles of king and priest, serving as a type of Christ who is both king and high priest.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 256.949,
+          "end": 347.75
+        },
+        {
+          "episode": 27,
+          "start": 3792.809,
+          "end": 3886.449
+        },
+        {
+          "episode": 27,
+          "start": 6999.539,
+          "end": 7098.539
+        }
+      ]
+    },
+    {
+      "id": "remnant-theology",
+      "title": "Remnant Theology",
+      "summary": "The idea that even after the Tower of Babel, there were individuals like Melchizedek who remained faithful to the Most High God, foreshadowing the remnant concept in later prophecy.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 3722.809,
+          "end": 3819.809
+        }
+      ]
+    },
+    {
+      "id": "messianic-age",
+      "title": "Messianic Age",
+      "summary": "The current era between Christ's first and second coming, where he rules in the midst of his enemies, as described in Psalm 110.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 6451.439,
+          "end": 6554.819
+        },
+        {
+          "episode": 27,
+          "start": 6564.819,
+          "end": 6682.819
+        }
+      ]
+    },
+    {
+      "id": "hypostasis-paganism",
+      "title": "Hypostasis in Paganism vs. Christianity",
+      "summary": "The ancient pagan belief that gods could have multiple hypostases (local manifestations) is contrasted with the Christian doctrine of the Trinity, where God exists in exactly three eternal hypostases.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 2029.869,
+          "end": 2123.869
+        },
+        {
+          "episode": 27,
+          "start": 2118.869,
+          "end": 2241.869
+        }
+      ]
+    },
+    {
+      "id": "jubilee-and-melchizedek",
+      "title": "Jubilee and Melchizedek",
+      "summary": "The Dead Sea Scrolls text 11Q13 interprets the Jubilee year as a type of the eschatological liberation that Melchizedek will accomplish, connecting the Old Testament law to the Messiah.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 7819.539,
+          "end": 7998.539
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "melchizedek-not-pagan",
+      "text": "Despite his name and city, Melchizedek is not a pagan priest-king but a faithful priest of the Most High God, as emphasized by the repeated phrase 'God Most High'.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 3025.719,
+          "end": 3117.26
+        }
+      ]
+    },
+    {
+      "id": "abram-refuses-spoils",
+      "text": "Abram refuses the spoils of Sodom because they are tainted by the giant clans, and he wants nothing to do with their culture or their gods.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 1119.569,
+          "end": 1209.569
+        },
+        {
+          "episode": 27,
+          "start": 1219.569,
+          "end": 1310.2
+        }
+      ]
+    },
+    {
+      "id": "messianic-age-now",
+      "text": "The messianic age began with Christ's resurrection and continues until his second coming, during which he rules in the midst of his enemies.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 6451.439,
+          "end": 6554.819
+        }
+      ]
+    },
+    {
+      "id": "psalm-110-messianic",
+      "text": "Psalm 110 is the most quoted Old Testament text in the New Testament, and it describes the Messiah as both king and priest after the order of Melchizedek.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 5957.939,
+          "end": 6050.939
+        },
+        {
+          "episode": 27,
+          "start": 6125.939,
+          "end": 6219.939
+        }
+      ]
+    },
+    {
+      "id": "dead-sea-scrolls-precedent",
+      "text": "The Dead Sea Scrolls text 11Q13, written around 100 BC, already interprets Melchizedek as a divine messianic figure who will judge demons and liberate captives, showing that the New Testament's use of Melchizedek is rooted in pre-existing Jewish exegesis.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 7787.539,
+          "end": 7998.539
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-14-18-20",
+      "reference": "Genesis 14:18-20",
+      "summary": "The primary passage about Melchizedek, where he brings bread and wine and blesses Abram.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 214.949,
+          "end": 306.75
+        }
+      ]
+    },
+    {
+      "id": "psalm-110",
+      "reference": "Psalm 110",
+      "summary": "The psalm that mentions Melchizedek and is used to describe the Messiah's kingship and priesthood.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 5957.939,
+          "end": 6050.939
+        },
+        {
+          "episode": 27,
+          "start": 6125.939,
+          "end": 6219.939
+        }
+      ]
+    },
+    {
+      "id": "genesis-49-8-12",
+      "reference": "Genesis 49:8-12",
+      "summary": "Jacob's blessing of Judah, promising a ruler from his line, which is connected to the messianic tradition.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 4358.239,
+          "end": 4448.239
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-17-18-20",
+      "reference": "Deuteronomy 17:18-20",
+      "summary": "The commandment for the king to copy and study the Torah, indicating God's design for kingship.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 5251.199,
+          "end": 5342.199
+        }
+      ]
+    },
+    {
+      "id": "2-samuel-7",
+      "reference": "2 Samuel 7",
+      "summary": "The Davidic covenant, where God promises David an eternal dynasty, and David is called 'prince'.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 5584.199,
+          "end": 5678.199
+        }
+      ]
+    },
+    {
+      "id": "daniel-7",
+      "reference": "Daniel 7",
+      "summary": "The vision of the Son of Man, which is connected to the enthronement of the Messiah in Psalm 110.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 6307.939,
+          "end": 6398.939
+        }
+      ]
+    },
+    {
+      "id": "leviticus-25",
+      "reference": "Leviticus 25",
+      "summary": "The Jubilee year, which is interpreted in 11Q13 as a type of Melchizedek's eschatological liberation.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 7819.539,
+          "end": 7915.539
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "hypostasis",
+      "term": "Hypostasis",
+      "definition": "In ancient pagan thought, a local manifestation or body of a god; in Christian theology, a person of the Trinity.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 2029.869,
+          "end": 2123.869
+        }
+      ]
+    },
+    {
+      "id": "melchizedek-order",
+      "term": "Order of Melchizedek",
+      "definition": "A phrase from Psalm 110 and Hebrews, referring to a priesthood that is eternal and not based on lineage, unlike the Levitical priesthood.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 6958.1,
+          "end": 7053.539
+        }
+      ]
+    },
+    {
+      "id": "jubilee",
+      "term": "Jubilee",
+      "definition": "A year of remission of debts and release of captives, commanded in Leviticus 25, seen as a type of Christ's salvation.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 7819.539,
+          "end": 7915.539
+        }
+      ]
+    },
+    {
+      "id": "messianic-age",
+      "term": "Messianic Age",
+      "definition": "The period from Christ's first coming to his second coming, during which he reigns as king and priest.",
+      "segments": [
+        {
+          "episode": 27,
+          "start": 6451.439,
+          "end": 6554.819
+        }
+      ]
+    }
+  ]
+}

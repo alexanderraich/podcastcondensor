@@ -1,0 +1,366 @@
+{
+  "summary": "In this live episode recorded at the 2026 Parish Life Conference, Father Andrew Stephen Damick and Father Stephen De Young address the question of what Orthodox Christianity has to say about alienation in modern society. They begin by defining Marxist alienation as the replacement of human relationships with relationships with things, using examples like buying a chair from Walmart versus receiving one from a craftsman. They then introduce John B. Calhoun's Universe 25 mouse experiment as a metaphor for societal collapse, drawing parallels between the mice's inability to escape shame and the modern phenomenon of cancel culture, and the loss of purpose when all needs are met without work. The Orthodox Church, they argue, offers a unique solution through the sacrament of baptism, which allows people to start anew, and through the parish community, which provides purpose and belonging. They also discuss Christopher Lasch's 'The Culture of Narcissism' and the importance of generational connection, which Orthodoxy preserves through its unchanging liturgy and tradition. The Q&A session covers topics such as deaf ministry, reaching those who have left the church, the dangers of internet content creation, the role of artists and writers, and practical catechesis for a generation that lacks basic social skills.",
+  "entities": [
+    {
+      "id": "john-b-calhoun",
+      "title": "John B. Calhoun",
+      "category": "person",
+      "summary": "American ethologist who conducted the Universe 25 mouse experiments, studying the effects of overpopulation and social breakdown.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 514.0,
+          "end": 607.44
+        }
+      ]
+    },
+    {
+      "id": "christopher-lasch",
+      "title": "Christopher Lasch",
+      "category": "person",
+      "summary": "American historian and social critic, author of 'The Culture of Narcissism,' which analyzed the shift toward self-centeredness in American culture.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 1002.639,
+          "end": 1094.359
+        }
+      ]
+    },
+    {
+      "id": "simone-weil",
+      "title": "Simone Weil",
+      "category": "person",
+      "summary": "French philosopher and mystic, mentioned in the context of a conversation about alienation.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 166.4,
+          "end": 257.339
+        }
+      ]
+    },
+    {
+      "id": "roman-reigns",
+      "title": "Roman Reigns",
+      "category": "person",
+      "summary": "Professional wrestler, quoted on the idea that people want you to do good but not better than them, illustrating the challenge of Christian love.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 2668.39,
+          "end": 2759.94
+        }
+      ]
+    },
+    {
+      "id": "father-elias-batar",
+      "title": "Father Elias Batar",
+      "category": "person",
+      "summary": "Orthodox priest, quoted on the proper attitude when reading the Epistle in church, emphasizing humility over performance.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 4940.64,
+          "end": 5034.439
+        }
+      ]
+    },
+    {
+      "id": "orthodox-christian-deaf-association",
+      "title": "Orthodox Christian Deaf Association",
+      "category": "organization",
+      "summary": "Organization dedicated to ministering to deaf Orthodox Christians, mentioned in the Q&A about deaf ministry.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 1519.0,
+          "end": 1610.64
+        }
+      ]
+    },
+    {
+      "id": "ancient-faith-radio",
+      "title": "Ancient Faith Radio",
+      "category": "organization",
+      "summary": "Listener-supported Orthodox media network that produces the Lord of Spirits podcast, mentioned at the end of the episode.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 5584.0,
+          "end": 5628.72
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "alienation",
+      "title": "Alienation",
+      "summary": "The Marxist concept of alienation, where human relationships are replaced by relationships with things, leading to a breakdown in community and purpose.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 207.0,
+          "end": 456.0
+        }
+      ]
+    },
+    {
+      "id": "universe-25",
+      "title": "Universe 25",
+      "summary": "John B. Calhoun's mouse utopia experiment that collapsed due to overpopulation and lack of purpose, used as a metaphor for modern society.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 510.0,
+          "end": 625.559
+        },
+        {
+          "episode": 144,
+          "start": 818.5,
+          "end": 911.0
+        }
+      ]
+    },
+    {
+      "id": "shame-and-cancel-culture",
+      "title": "Shame and Cancel Culture",
+      "summary": "The idea that modern culture traps people in their past mistakes with no escape, leading to despair and acting out, whereas the Orthodox Church offers a new start through baptism.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 683.879,
+          "end": 787.0
+        }
+      ]
+    },
+    {
+      "id": "purpose-and-social-roles",
+      "title": "Purpose and Social Roles",
+      "summary": "The collapse of social roles and purpose in modern society, leading to 'deaths of despair,' and how the Orthodox parish can provide a sense of purpose and contribution.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 849.159,
+          "end": 1010.259
+        }
+      ]
+    },
+    {
+      "id": "generational-connection",
+      "title": "Generational Connection",
+      "summary": "Christopher Lasch's idea that life is a thread stretched between parents and children, and how Orthodoxy preserves this through its unchanging tradition.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 1043.68,
+          "end": 1134.0
+        },
+        {
+          "episode": 144,
+          "start": 1167.119,
+          "end": 1274.16
+        }
+      ]
+    },
+    {
+      "id": "parasocial-relationships",
+      "title": "Parasocial Relationships",
+      "summary": "One-sided relationships formed through media, where viewers feel they know a creator but the creator does not know them, leading to distorted connections.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 3169.639,
+          "end": 3300.519
+        }
+      ]
+    },
+    {
+      "id": "practical-catechesis",
+      "title": "Practical Catechesis",
+      "summary": "The need for catechesis that teaches basic human skills like how to enter a church, pray, fast, and interact with others, rather than just theological content.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 5180.479,
+          "end": 5318.64
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "orthodox-church-offers-new-start",
+      "text": "The Orthodox Church is the one place left in American culture where someone can come in and start again, because baptism truly deletes the past and gives a new identity.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 731.799,
+          "end": 827.179
+        }
+      ]
+    },
+    {
+      "id": "universe-25-parallels-modern-society",
+      "text": "Universe 25 shows that when people have no escape from shame and no purpose, they become violent or die of despair, mirroring modern society's cancel culture and purposelessness.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 683.879,
+          "end": 890.759
+        }
+      ]
+    },
+    {
+      "id": "orthodox-liturgy-unchanged",
+      "text": "Unlike evangelical and Roman Catholic churches, Orthodox parishes maintain the same liturgy and tradition across generations, providing a stable connection to the past.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 1174.64,
+          "end": 1267.619
+        }
+      ]
+    },
+    {
+      "id": "new-converts-should-not-create-content",
+      "text": "New converts should not start podcasts or YouTube channels because they need to receive before they can pass on, and creating content can feed narcissism and parasocial relationships.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 3097.559,
+          "end": 3407.179
+        }
+      ]
+    },
+    {
+      "id": "artists-should-create-secular-art",
+      "text": "Orthodox artists and writers should be free to create art that is not explicitly religious, as beauty and truth are connected to God even without explicit Christian content.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 4266.72,
+          "end": 4358.34
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "moses-offering-himself",
+      "reference": "Exodus 32:32",
+      "summary": "Moses offers to be blotted out of God's book for the sake of the people, cited as an example of ultimate Christian love.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 2722.239,
+          "end": 2816.4
+        }
+      ]
+    },
+    {
+      "id": "paul-offering-himself",
+      "reference": "Romans 9:3",
+      "summary": "St. Paul wishes he could be cut off from Christ for the sake of his kinsmen, cited alongside Moses as a model of self-sacrificial love.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 2722.239,
+          "end": 2816.4
+        }
+      ]
+    },
+    {
+      "id": "christ-died-for-sinners",
+      "reference": "Romans 5:8",
+      "summary": "Christ died for us while we were still sinners, illustrating that real love gives without expecting anything in return.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 2865.79,
+          "end": 2955.88
+        }
+      ]
+    },
+    {
+      "id": "neophyte-not-teacher",
+      "reference": "1 Timothy 3:6",
+      "summary": "The warning that a recent convert should not be made a bishop or teacher, applied to the advice against new converts creating online content.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 3376.239,
+          "end": 3467.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "alienation",
+      "term": "Alienation",
+      "definition": "In Marxist theory, the process whereby human relationships are replaced by relationships with things, leading to isolation and loss of community.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 207.0,
+          "end": 300.0
+        }
+      ]
+    },
+    {
+      "id": "universe-25",
+      "term": "Universe 25",
+      "definition": "A mouse utopia experiment by John B. Calhoun that collapsed due to overpopulation and social breakdown, used as a metaphor for societal decline.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 510.0,
+          "end": 603.24
+        }
+      ]
+    },
+    {
+      "id": "deaths-of-despair",
+      "term": "Deaths of Despair",
+      "definition": "Deaths resulting from suicide, drug overdose, or alcohol-related causes, often linked to social and economic despair.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 927.0,
+          "end": 1018.24
+        }
+      ]
+    },
+    {
+      "id": "parasocial-relationship",
+      "term": "Parasocial Relationship",
+      "definition": "A one-sided relationship where a viewer feels they know a media figure, but the figure does not know them, leading to distorted intimacy.",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 3180.0,
+          "end": 3277.0
+        }
+      ]
+    },
+    {
+      "id": "cradles-and-converts",
+      "term": "Cradles and Converts",
+      "definition": "Terms used in Orthodox Christianity to distinguish those born into the faith (cradles) from those who converted later (converts).",
+      "segments": [
+        {
+          "episode": 144,
+          "start": 2372.239,
+          "end": 2462.48
+        }
+      ]
+    }
+  ]
+}

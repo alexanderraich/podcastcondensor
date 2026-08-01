@@ -1,0 +1,500 @@
+{
+  "summary": "In this episode of the Lord of Spirits, Fathers Andrew Stephen Damick and Stephen De Young explore the doctrine of the bodily resurrection, challenging common misconceptions rooted in Platonic dualism. They argue that human identity is not located in an immaterial soul but is external, constituted by the body, relationships, actions, and the entire span of one's life in the world. The resurrection, therefore, is not about reassembling the same atoms but about restoring and transfiguring the whole person—their life, relationships, and works—into eternity. They discuss how this understanding reframes eternal life as the transformation of this present life, not merely an endless future existence, and how purification after death involves the burning away of sin and suffering while preserving the good fruit of a life lived in communion with God. The episode includes listener calls addressing cremation, the resurrection of saints, and the balance between interior and exterior faith, and concludes with reflections on the Transfiguration as a glimpse of the glorified body and the eternal life that awaits.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox Christian priest from Emmaus, Pennsylvania.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 51.359,
+          "end": 146.639
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox Christian priest from Lafayette, Louisiana.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 51.359,
+          "end": 146.639
+        }
+      ]
+    },
+    {
+      "id": "plato",
+      "title": "Plato",
+      "category": "person",
+      "summary": "Ancient Greek philosopher whose dualistic view of soul and body is criticized as 'Plato brain' and contrasted with Christian understanding.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 258.68,
+          "end": 350.48
+        },
+        {
+          "episode": 97,
+          "start": 787.48,
+          "end": 838.639
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "title": "Theotokos (Virgin Mary)",
+      "category": "theological",
+      "summary": "The Mother of God, whose bodily assumption is discussed as an example of participation in the resurrection.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 4140.0,
+          "end": 4230.0
+        },
+        {
+          "episode": 97,
+          "start": 4316.159,
+          "end": 4410.0
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "biblical",
+      "summary": "Old Testament prophet who appeared at the Transfiguration, representing the saints who participate in the resurrection.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 10447.4,
+          "end": 10544.239
+        },
+        {
+          "episode": 97,
+          "start": 10512.6,
+          "end": 10604.5
+        }
+      ]
+    },
+    {
+      "id": "elijah",
+      "title": "Elijah (Elias)",
+      "category": "biblical",
+      "summary": "Old Testament prophet taken up into heaven, appearing at the Transfiguration, representing the bodily resurrection.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 10447.4,
+          "end": 10544.239
+        },
+        {
+          "episode": 97,
+          "start": 10512.6,
+          "end": 10604.5
+        }
+      ]
+    },
+    {
+      "id": "mary-of-egypt",
+      "title": "St. Mary of Egypt",
+      "category": "saint",
+      "summary": "A saint whose life story illustrates that identity is the whole arc of a life, including both sin and repentance.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 5340.0,
+          "end": 5458.199
+        }
+      ]
+    },
+    {
+      "id": "dostoevsky",
+      "title": "Fyodor Dostoevsky",
+      "category": "person",
+      "summary": "Russian novelist whose 'The Brothers Karamazov' contains the 'Onion' folk tale used to illustrate the possibility of salvation through a single good deed.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 9243.76,
+          "end": 9335.44
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "identity-as-external",
+      "title": "Identity as External",
+      "summary": "The hosts argue that a person's identity is not an inner, immaterial self but is constituted by their body, relationships, actions, and the web of connections in the world. This challenges modern individualism and Platonic notions of the soul as the true self.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 1170.0,
+          "end": 1283.39
+        },
+        {
+          "episode": 97,
+          "start": 1824.48,
+          "end": 1917.48
+        },
+        {
+          "episode": 97,
+          "start": 2075.0,
+          "end": 2166.88
+        }
+      ]
+    },
+    {
+      "id": "soul-as-life",
+      "title": "Soul as Life",
+      "summary": "The soul (nephesh/anima) is understood as the life of the body, not a separate entity or the seat of identity. All human souls are essentially the same; what makes each person unique is their body and life.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 796.519,
+          "end": 888.24
+        },
+        {
+          "episode": 97,
+          "start": 888.96,
+          "end": 982.72
+        }
+      ]
+    },
+    {
+      "id": "bodily-resurrection",
+      "title": "Bodily Resurrection",
+      "summary": "The resurrection of the body is not about reassembling the same atoms but about restoring the whole person—their identity, relationships, and life—transfigured and made eternal. This is the central hope of Christianity.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 2779.159,
+          "end": 2921.519
+        },
+        {
+          "episode": 97,
+          "start": 2948.88,
+          "end": 3040.0
+        },
+        {
+          "episode": 97,
+          "start": 7662.319,
+          "end": 7769.479
+        }
+      ]
+    },
+    {
+      "id": "eternal-life-as-transfigured-life",
+      "title": "Eternal Life as Transfigured Life",
+      "summary": "Eternal life is not an endless succession of moments but the transformation of this present life, lived in time and space, into eternity. The good and sacred moments of life become eternal, while sin and suffering are burned away.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 7860.0,
+          "end": 7950.199
+        },
+        {
+          "episode": 97,
+          "start": 8079.6,
+          "end": 8178.0
+        },
+        {
+          "episode": 97,
+          "start": 8910.0,
+          "end": 9000.0
+        }
+      ]
+    },
+    {
+      "id": "purification-after-death",
+      "title": "Purification After Death",
+      "summary": "After death, the whole life is subjected to fire, burning away sin and suffering, while the good fruit remains. This purification is not a temporal process like purgatory but a way of thinking about how identity is purified and made eternal.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 8296.799,
+          "end": 8419.84
+        },
+        {
+          "episode": 97,
+          "start": 8490.0,
+          "end": 8586.0
+        },
+        {
+          "episode": 97,
+          "start": 8696.879,
+          "end": 8787.879
+        }
+      ]
+    },
+    {
+      "id": "transfiguration",
+      "title": "Transfiguration",
+      "summary": "The Transfiguration of Christ on Mount Tabor is a glimpse of the glorified body and the Kingdom of God. It shows that the destiny of humanity is to participate in Christ's glory, with bodies that are transformed and elevated.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 10427.76,
+          "end": 10527.42
+        },
+        {
+          "episode": 97,
+          "start": 10740.0,
+          "end": 10830.2
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "open-theism-incoherent",
+      "text": "Open theism is incoherent because it assumes God is a being within time and finite, and the future is not a thing but the present plus motion, so God would have no idea what we will do, making Him inferior to pagan gods.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 345.399,
+          "end": 517.0
+        }
+      ]
+    },
+    {
+      "id": "soul-not-identity",
+      "text": "The soul is not the self; it is the life of the body. All human souls are essentially the same, so identity must be found in the body and external relationships.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 796.519,
+          "end": 888.24
+        },
+        {
+          "episode": 97,
+          "start": 888.96,
+          "end": 982.72
+        }
+      ]
+    },
+    {
+      "id": "identity-external",
+      "text": "Who you are is external to you, constituted by your body, relationships, and actions in the world, not an inner essence.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 1824.48,
+          "end": 1917.48
+        },
+        {
+          "episode": 97,
+          "start": 2075.0,
+          "end": 2166.88
+        }
+      ]
+    },
+    {
+      "id": "resurrection-not-atoms",
+      "text": "The bodily resurrection is not about reassembling the same atoms but about restoring the whole person—identity, relationships, and life—transfigured and made eternal.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 2779.159,
+          "end": 2921.519
+        },
+        {
+          "episode": 97,
+          "start": 2948.88,
+          "end": 3040.0
+        }
+      ]
+    },
+    {
+      "id": "eternal-life-this-life",
+      "text": "Eternal life is not an endless future existence but the transformation of this present life into eternity; the good moments become eternal, and the bad are burned away.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 7860.0,
+          "end": 7950.199
+        },
+        {
+          "episode": 97,
+          "start": 8079.6,
+          "end": 8178.0
+        }
+      ]
+    },
+    {
+      "id": "purgatory-over-literalized",
+      "text": "The Roman Catholic doctrine of purgatory is an over-literalization of the purification that happens after death, which is better understood as the purification of one's whole life, not a temporal process.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 8329.0,
+          "end": 8419.84
+        }
+      ]
+    },
+    {
+      "id": "individualism-lie",
+      "text": "Individualism is a lie; there is no such thing as an individual. Persons are constituted by relationships, and the individual is nothing.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 5922.8,
+          "end": 6016.8
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "john-3-16",
+      "reference": "John 3:16",
+      "summary": "The 'so' in 'God so loved the world' is misunderstood; it means 'in this manner,' showing that love is an action, not a feeling.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 2550.0,
+          "end": 2642.0
+        }
+      ]
+    },
+    {
+      "id": "john-14-15",
+      "reference": "John 14:15",
+      "summary": "Jesus says, 'If you love me, you will keep my commandments,' used to argue that love is expressed in actions.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 2518.32,
+          "end": 2609.96
+        }
+      ]
+    },
+    {
+      "id": "1-john-5-11-13",
+      "reference": "1 John 5:11-13",
+      "summary": "Used to show that eternal life is a quality of the present life of the believer, not just a future hope.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 7940.88,
+          "end": 8033.199
+        }
+      ]
+    },
+    {
+      "id": "1-corinthians-3-11-15",
+      "reference": "1 Corinthians 3:11-15",
+      "summary": "Describes the purification of one's life by fire, where the work built on Christ is tested; used to explain the purification of the whole life.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 8700.0,
+          "end": 8797.719
+        }
+      ]
+    },
+    {
+      "id": "matthew-27-52-53",
+      "reference": "Matthew 27:52-53",
+      "summary": "The saints who came out of their tombs after Christ's resurrection are interpreted as participating in the general resurrection, not just resuscitation.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 7219.8,
+          "end": 7309.84
+        }
+      ]
+    },
+    {
+      "id": "hebrews-11-40",
+      "reference": "Hebrews 11:40",
+      "summary": "The Old Testament saints were not made perfect until with us, connecting to the idea that Christ's resurrection is the beginning of the general resurrection.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 7302.479,
+          "end": 7393.52
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "open-theism",
+      "term": "Open Theism",
+      "definition": "A theological view that God does not know the future because it does not exist yet, which the hosts argue is incoherent and teaches a different God.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 345.399,
+          "end": 517.0
+        }
+      ]
+    },
+    {
+      "id": "plato-brain",
+      "term": "Plato Brain",
+      "definition": "A colloquial term used by the hosts to describe the influence of Platonic dualism, which separates soul and body and sees the body as a prison.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 258.68,
+          "end": 350.48
+        },
+        {
+          "episode": 97,
+          "start": 787.48,
+          "end": 838.639
+        }
+      ]
+    },
+    {
+      "id": "axial-age",
+      "term": "Axial Age",
+      "definition": "The period in the mid-first millennium BC when various cultures developed philosophical and religious self-reflection, leading to new ideas about the body and soul.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 1538.79,
+          "end": 1630.88
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God, participating in the divine nature, which the hosts connect to the transformation of one's life into eternity.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 8112.96,
+          "end": 8203.479
+        }
+      ]
+    },
+    {
+      "id": "intermediate-state",
+      "term": "Intermediate State",
+      "definition": "The state of the soul between death and the general resurrection, which the hosts discuss in relation to purification and identity.",
+      "segments": [
+        {
+          "episode": 97,
+          "start": 8862.36,
+          "end": 8957.139
+        }
+      ]
+    }
+  ]
+}

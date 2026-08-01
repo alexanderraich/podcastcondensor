@@ -1,0 +1,340 @@
+{
+  "summary": "In this episode, the hosts introduce a new series on the Apocrypha, focusing on the Testaments of the Twelve Patriarchs, a pre-Christian Jewish text from the Second Temple period. They clarify the term 'apocrypha' as referring to books read privately, not heretical or forbidden texts, and explain the genre of 'testaments' as final words of biblical figures. The episode surveys each of the twelve testaments, highlighting themes such as repentance, chastity, envy, anger, and the two Messiahs (priestly and kingly). They emphasize the continuity between Second Temple Judaism and Christianity, arguing that many 'Christian' ideas like the virgin birth and the Lamb of God have Jewish precedents. The hosts also address listener calls on topics like sabbatical years and plundering the Egyptians, and conclude with a practical application about not isolating elements of the Christian tradition.",
+  "entities": [
+    {
+      "id": "testaments-of-the-twelve-patriarchs",
+      "title": "Testaments of the Twelve Patriarchs",
+      "category": "theological",
+      "summary": "A collection of twelve apocryphal Jewish texts, each presenting the last words of one of the twelve sons of Jacob, written in the Second Temple period.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 850.59,
+          "end": 942.24
+        },
+        {
+          "episode": 91,
+          "start": 2157.679,
+          "end": 2249.159
+        }
+      ]
+    },
+    {
+      "id": "book-of-enoch",
+      "title": "Book of Enoch",
+      "category": "theological",
+      "summary": "An ancient Jewish text attributed to Enoch, quoted in the Testaments of the Twelve Patriarchs, and believed by many in the Second Temple period to be genuinely written by Enoch.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 1260.0,
+          "end": 1351.519
+        },
+        {
+          "episode": 91,
+          "start": 1350.0,
+          "end": 1440.68
+        }
+      ]
+    },
+    {
+      "id": "reuben",
+      "title": "Reuben",
+      "category": "historical",
+      "summary": "The firstborn son of Jacob, whose testament focuses on his sin with Bilhah and his repentance, serving as an example of overcoming lust.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 3253.84,
+          "end": 3349.4
+        },
+        {
+          "episode": 91,
+          "start": 3426.8,
+          "end": 3520.79
+        }
+      ]
+    },
+    {
+      "id": "levi",
+      "title": "Levi",
+      "category": "historical",
+      "summary": "The third son of Jacob, whose testament presents him as the archetypal priest, with an apocalyptic vision and a focus on the priestly Messiah.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 5108.119,
+          "end": 5201.399
+        },
+        {
+          "episode": 91,
+          "start": 5531.6,
+          "end": 5621.68
+        }
+      ]
+    },
+    {
+      "id": "judah",
+      "title": "Judah",
+      "category": "historical",
+      "summary": "The fourth son of Jacob, whose testament portrays him as a warrior king, but also warns against drunkenness and lust, and contains prophecies of the kingly Messiah.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 5970.0,
+          "end": 6060.0
+        },
+        {
+          "episode": 91,
+          "start": 6057.68,
+          "end": 6149.5
+        }
+      ]
+    },
+    {
+      "id": "joseph",
+      "title": "Joseph",
+      "category": "historical",
+      "summary": "The eleventh son of Jacob, whose testament emphasizes chastity and forgiveness, and includes a dream vision of the Messiah as the Lamb of God.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 9870.0,
+          "end": 9962.0
+        },
+        {
+          "episode": 91,
+          "start": 10223.6,
+          "end": 10318.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "apocrypha-definition",
+      "title": "Apocrypha Definition",
+      "summary": "The term 'apocrypha' refers to books read privately, not heretical or forbidden texts. It is a middle category between public scripture and heretical works.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 330.0,
+          "end": 438.0
+        }
+      ]
+    },
+    {
+      "id": "testament-genre",
+      "title": "Testament Genre",
+      "summary": "A testament is a genre of ancient Jewish literature presenting the last words of a biblical figure, often with prophetic elements, modeled after Jacob's blessings in Genesis 49.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 1020.0,
+          "end": 1179.359
+        }
+      ]
+    },
+    {
+      "id": "seven-parts-of-spirit",
+      "title": "Seven Parts of the Spirit",
+      "summary": "The Testament of Reuben outlines seven parts of the human spirit: soul, sight, hearing, smell, taste, speech, and sex, emphasizing that these are good when properly directed.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 3702.179,
+          "end": 3852.88
+        }
+      ]
+    },
+    {
+      "id": "two-messiahs",
+      "title": "Two Messiahs",
+      "summary": "The Testaments of the Twelve Patriarchs present two messianic figures: a priestly Messiah from Levi and a kingly Messiah from Judah, with the priestly one elevated above the kingly.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 5580.0,
+          "end": 5670.38
+        },
+        {
+          "episode": 91,
+          "start": 5721.0,
+          "end": 5819.0
+        }
+      ]
+    },
+    {
+      "id": "fullness-of-gentiles",
+      "title": "Fullness of the Gentiles",
+      "summary": "The Testament of Naphtali envisions the northern tribes being taken up into heaven, symbolizing that Gentiles will find salvation through Israel, a concept later used by St. Paul.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 9056.92,
+          "end": 9219.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "apocrypha-not-banned",
+      "text": "The apocrypha were not banned or burned by the Church; they were simply designated for private reading rather than public reading in worship.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 258.839,
+          "end": 355.839
+        }
+      ]
+    },
+    {
+      "id": "testaments-pre-christian",
+      "text": "The Testaments of the Twelve Patriarchs are pre-Christian Jewish texts, and their messianic prophecies are not Christian interpolations but reflect existing Jewish expectations.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 4843.479,
+          "end": 4935.119
+        },
+        {
+          "episode": 91,
+          "start": 10729.879,
+          "end": 10820.0
+        }
+      ]
+    },
+    {
+      "id": "christianity-same-religion",
+      "text": "Christianity is not a new religion but the continuation of the religion of ancient Israel, with the coming of the Messiah inaugurating the Messianic age.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 11610.0,
+          "end": 11700.0
+        }
+      ]
+    },
+    {
+      "id": "tradition-over-individualism",
+      "text": "Christians should not pick and choose elements of the tradition but must submit to the whole tradition to be transformed, even the parts they dislike.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 12420.0,
+          "end": 12479.959
+        },
+        {
+          "episode": 91,
+          "start": 12499.0,
+          "end": 12589.159
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-49",
+      "reference": "Genesis 49",
+      "summary": "Jacob's blessing of his sons serves as the model for the testament genre, with prophetic words directed to their descendants.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 1069.39,
+          "end": 1160.88
+        }
+      ]
+    },
+    {
+      "id": "genesis-35-22",
+      "reference": "Genesis 35:22",
+      "summary": "Reuben's sin with Bilhah is the basis for his testament, where he repents and warns against lust.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 3314.0,
+          "end": 3406.599
+        }
+      ]
+    },
+    {
+      "id": "isaiah-7-14",
+      "reference": "Isaiah 7:14",
+      "summary": "The prophecy of the virgin birth is cited as a pre-Christian precedent for the messianic expectation in the Testament of Joseph.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 10560.0,
+          "end": 10657.76
+        }
+      ]
+    },
+    {
+      "id": "romans-11-25",
+      "reference": "Romans 11:25",
+      "summary": "St. Paul's concept of the 'fullness of the Gentiles' is connected to the Testament of Naphtali's vision of Gentiles being incorporated into Israel.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 9163.68,
+          "end": 9255.559
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "apocrypha",
+      "term": "Apocrypha",
+      "definition": "Books read privately, not in public worship, often containing valuable teachings but also errors, requiring discernment.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 330.0,
+          "end": 438.0
+        }
+      ]
+    },
+    {
+      "id": "testament",
+      "term": "Testament",
+      "definition": "A genre of ancient Jewish literature presenting the last words of a biblical figure, often with prophetic and apocalyptic elements.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 1020.0,
+          "end": 1110.48
+        }
+      ]
+    },
+    {
+      "id": "nephilim",
+      "term": "Nephilim",
+      "definition": "Giants mentioned in Genesis, often associated with the fallen angels, and discussed in the Testament of Reuben in relation to lust and power.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 3490.88,
+          "end": 3583.679
+        }
+      ]
+    },
+    {
+      "id": "belial",
+      "term": "Belial",
+      "definition": "A name for the devil or a demonic figure in Second Temple Jewish literature, used in the Testaments to represent evil.",
+      "segments": [
+        {
+          "episode": 91,
+          "start": 11348.2,
+          "end": 11440.879
+        }
+      ]
+    }
+  ]
+}

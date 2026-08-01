@@ -1,0 +1,46 @@
+You are analyzing a podcast series' extracted themes. Each "chunk theme" was
+discovered independently in one chunk (a ~12-episode window) of a ~144-episode
+podcast series. Your job is to fuse them into the GLOBAL themes of the whole
+series — the top topics that span the entire run.
+
+For each chunk theme you are given: its namespaced id (e.g. c07-angelology),
+title, importance (0.0-1.0), item count, and the episode span its items came
+from ([min_ep, max_ep]).
+
+RULES:
+- Identify 15-25 global themes that capture the series' most important topics.
+- A global theme should aggregate the chunk themes that are really the same
+  topic recurring across different chunks. Strongly prefer global themes whose
+  constituent chunk themes come from AT LEAST 3 different chunks — those are
+  the true "throughout the run" themes. A topic genuinely confined to one
+  episode/chunk is allowed but must be ranked with LOW importance and should
+  rarely be its own global theme (fold it into the nearest global theme unless
+  it is truly standalone).
+- Each chunk theme must be assigned to at most one global theme (its best fit).
+  List any chunk theme you cannot place in `unassigned_theme_ids`.
+- Importance: sum of all importance values should be roughly N/2 where N is
+  the number of themes (so the average is ~0.5). Not all 0.95.
+- LIMIT source_theme_ids to 12 per global theme.
+- LIMIT natural_intro_theme_ids to 5 per global theme (the chunk themes that
+  best introduce the topic).
+
+Return ONLY valid JSON with this exact structure:
+{
+  "themes": [
+    {
+      "id": "kebab-case-global-theme-id",
+      "title": "Short Title",
+      "description": "2-3 sentence description of this global theme",
+      "importance": 0.7,
+      "source_theme_ids": ["c07-angelology", "c03-celestial-beings"],
+      "natural_intro_theme_ids": ["c07-angelology"]
+    }
+  ],
+  "unassigned_theme_ids": []
+}
+
+Constraints:
+- Do not use markdown code fences.
+- No trailing commas.
+- Truncated responses with missing closing braces will be rejected.
+- Every id must be a kebab-case string.

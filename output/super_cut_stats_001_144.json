@@ -1,0 +1,143 @@
+{
+  "total_duration_sec": 1969.7,
+  "themes": 1,
+  "segments": 8,
+  "warnings": [],
+  "errors": [],
+  "phases": [
+    {
+      "phase": "merge_universe",
+      "elapsed_sec": 0.6,
+      "episodes": 125,
+      "items": 3094
+    },
+    {
+      "phase": "chunk_themes",
+      "elapsed_sec": 557.7,
+      "chunks": 11,
+      "chunk_theme_count": 201
+    },
+    {
+      "phase": "coalesce",
+      "elapsed_sec": 77.9,
+      "global_theme_count": 25,
+      "theme_ids": [
+        "angelology-and-heavenly-host",
+        "christology-and-incarnation",
+        "spiritual-warfare-and-demonic-powers",
+        "theosis-and-deification",
+        "sacraments-and-liturgy",
+        "scripture-and-hermeneutics",
+        "eschatology-and-afterlife",
+        "atonement-and-sacrifice",
+        "creation-and-fall",
+        "paganism-and-idolatry",
+        "divine-council-and-spiritual-realities",
+        "saints-and-veneration",
+        "theology-of-the-body-and-personhood",
+        "kingship-and-priesthood",
+        "history-of-israel-and-old-testament-narrative",
+        "orthodox-theology-and-philosophy",
+        "second-temple-judaism-and-christian-origins",
+        "sacred-space-and-geography",
+        "spiritual-life-and-practice",
+        "church-and-community",
+        "prophecy-and-apocalyptic",
+        "creation-and-cosmic-order",
+        "magic-and-occult",
+        "time-and-eternity",
+        "heresy-and-orthodoxy"
+      ]
+    },
+    {
+      "phase": "resolve_segments",
+      "elapsed_sec": 7.0,
+      "total_candidates": 1169
+    },
+    {
+      "phase": "select_segments",
+      "elapsed_sec": 21.7,
+      "selected_count": 8,
+      "total_duration_sec": 1969.7
+    },
+    {
+      "phase": "assemble_audio",
+      "elapsed_sec": 90.8,
+      "output_dir": "/mnt/c/Users/raich/Projects/podcastcondensor/output/super_cut_001_144"
+    }
+  ],
+  "selections": [
+    {
+      "theme_title": "Christology and the Incarnation",
+      "theme_id": "christology-and-incarnation",
+      "episode": 2,
+      "start": 230.2,
+      "end": 456.0,
+      "duration": 225.8,
+      "beep_before": "none"
+    },
+    {
+      "theme_title": "Christology and the Incarnation",
+      "theme_id": "christology-and-incarnation",
+      "episode": 3,
+      "start": 510.0,
+      "end": 909.4,
+      "duration": 399.4,
+      "beep_before": "single"
+    },
+    {
+      "theme_title": "Christology and the Incarnation",
+      "theme_id": "christology-and-incarnation",
+      "episode": 3,
+      "start": 5587.0,
+      "end": 5810.0,
+      "duration": 223.0,
+      "beep_before": "single"
+    },
+    {
+      "theme_title": "Christology and the Incarnation",
+      "theme_id": "christology-and-incarnation",
+      "episode": 4,
+      "start": 817.3,
+      "end": 926.8,
+      "duration": 109.6,
+      "beep_before": "single"
+    },
+    {
+      "theme_title": "Christology and the Incarnation",
+      "theme_id": "christology-and-incarnation",
+      "episode": 5,
+      "start": 2920.0,
+      "end": 3148.8,
+      "duration": 228.8,
+      "beep_before": "single"
+    },
+    {
+      "theme_title": "Christology and the Incarnation",
+      "theme_id": "christology-and-incarnation",
+      "episode": 8,
+      "start": 3326.8,
+      "end": 3465.1,
+      "duration": 138.3,
+      "beep_before": "single"
+    },
+    {
+      "theme_title": "Christology and the Incarnation",
+      "theme_id": "christology-and-incarnation",
+      "episode": 19,
+      "start": 2400.0,
+      "end": 2622.6,
+      "duration": 222.6,
+      "beep_before": "single"
+    },
+    {
+      "theme_title": "Christology and the Incarnation",
+      "theme_id": "christology-and-incarnation",
+      "episode": 79,
+      "start": 1377.8,
+      "end": 1800.0,
+      "duration": 422.2,
+      "beep_before": "single"
+    }
+  ]
+}

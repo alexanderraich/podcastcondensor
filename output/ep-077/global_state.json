@@ -1,0 +1,187 @@
+{
+  "summary": "In this special episode of the Lord of Spirits podcast, recorded for those unable to attend the Lord of Spirits Conference, Father Andrew Stephen Damick explores the theme of missing out on a party in the Second Millennium BC Mesopotamia. He humorously presents three ancient texts that illustrate ways one might miss a celebration: improper clothing, having an adopted monkey child, and telling bad jokes. The episode highlights the cultural and social norms of ancient Mesopotamia, drawing parallels to modern experiences of FOMO (fear of missing out). The discussion is lighthearted but rooted in historical and theological reflection, emphasizing the continuity of human experience across millennia.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "One of the hosts of the Lord of Spirits podcast, an Orthodox Christian priest, who presents the episode's content.",
+      "segments": [
+        {
+          "episode": 77,
+          "start": 27.76,
+          "end": 119.92
+        }
+      ]
+    },
+    {
+      "id": "mesopotamia",
+      "title": "Mesopotamia",
+      "category": "place",
+      "summary": "Ancient region in the Near East, the setting for the historical texts discussed in the episode.",
+      "segments": [
+        {
+          "episode": 77,
+          "start": 120.0,
+          "end": 210.0
+        },
+        {
+          "episode": 77,
+          "start": 396.959,
+          "end": 494.399
+        }
+      ]
+    },
+    {
+      "id": "acadian-tablet",
+      "title": "Acadian Tablet",
+      "category": "historical",
+      "summary": "An ancient cuneiform tablet from Mesopotamia containing a text about a cleaner and clothing, used as an example of missing a party due to unclean clothes.",
+      "segments": [
+        {
+          "episode": 77,
+          "start": 150.0,
+          "end": 298.8
+        }
+      ]
+    },
+    {
+      "id": "monkey-child",
+      "title": "Monkey Child",
+      "category": "other",
+      "summary": "A humorous example from a cuneiform text about a slave woman who adopted a monkey child, illustrating a potential reason for being excluded from a party.",
+      "segments": [
+        {
+          "episode": 77,
+          "start": 296.0,
+          "end": 389.4
+        }
+      ]
+    },
+    {
+      "id": "jester",
+      "title": "Jester",
+      "category": "historical",
+      "summary": "A professional entertainer in ancient Mesopotamia whose stand-up routine is quoted in the episode.",
+      "segments": [
+        {
+          "episode": 77,
+          "start": 396.959,
+          "end": 609.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "fomo-in-ancient-mesopotamia",
+      "title": "FOMO in Ancient Mesopotamia",
+      "summary": "The concept of missing out on social events, or FOMO, is explored through ancient Mesopotamian texts that describe various reasons for being excluded from parties, such as unclean clothing, having an adopted monkey child, or telling offensive jokes.",
+      "segments": [
+        {
+          "episode": 77,
+          "start": 113.12,
+          "end": 307.12
+        },
+        {
+          "episode": 77,
+          "start": 296.0,
+          "end": 389.4
+        },
+        {
+          "episode": 77,
+          "start": 381.279,
+          "end": 618.0
+        }
+      ]
+    },
+    {
+      "id": "ancient-mesopotamian-humor",
+      "title": "Ancient Mesopotamian Humor",
+      "summary": "The episode features a translation of an early first millennium BC stand-up comedy routine from Mesopotamia, showcasing the style and content of ancient jokes, which often involved self-deprecation and absurd comparisons.",
+      "segments": [
+        {
+          "episode": 77,
+          "start": 396.959,
+          "end": 609.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "ancient-mesopotamians-experienced-fomo",
+      "text": "People in ancient Mesopotamia experienced the fear of missing out on social events, as evidenced by texts describing various reasons for being excluded from parties.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 77,
+          "start": 113.12,
+          "end": 307.12
+        },
+        {
+          "episode": 77,
+          "start": 296.0,
+          "end": 389.4
+        },
+        {
+          "episode": 77,
+          "start": 381.279,
+          "end": 618.0
+        }
+      ]
+    },
+    {
+      "id": "ancient-jokes-are-offensive",
+      "text": "Ancient Mesopotamian jokes, as seen in the jester's routine, could be offensive and cross lines, similar to modern humor.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 77,
+          "start": 396.959,
+          "end": 609.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "1-enoch-48-4-5",
+      "reference": "1 Enoch 48:4-5",
+      "summary": "The episode opens with a quote from 1 Enoch about praising the Lord of Spirits, setting a theological tone for the discussion.",
+      "segments": [
+        {
+          "episode": 77,
+          "start": 0.0,
+          "end": 97.68
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "cuneiform",
+      "term": "Cuneiform",
+      "definition": "One of the earliest systems of writing, using wedge-shaped marks on clay tablets, used in ancient Mesopotamia.",
+      "segments": [
+        {
+          "episode": 77,
+          "start": 314.24,
+          "end": 406.16
+        }
+      ]
+    },
+    {
+      "id": "kuneiform",
+      "term": "Kuneiform",
+      "definition": "Alternate spelling of cuneiform, used in the transcript.",
+      "segments": [
+        {
+          "episode": 77,
+          "start": 314.24,
+          "end": 406.16
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "summary": "In this episode, the hosts trace the biblical theme of sacred space and the presence of God from Eden through the tabernacle and temple, culminating in Pentecost. They argue that God's presence is dangerous to the unprepared, introducing the concept of 'death by holiness.' The narrative follows humanity's expulsion from Eden, the scattering at Babel, and God's gradual re-establishment of sacred spaces, first with the patriarchs, then the tabernacle, and finally the temple. The episode highlights the transition in the New Testament where Christ becomes the new temple, and the Holy Spirit indwells believers, making them temples of God. The hosts conclude by emphasizing the Christian call to internal purification and the outward mission to expand God's presence throughout the world.",
+  "entities": [
+    {
+      "id": "eden",
+      "title": "Eden",
+      "category": "place",
+      "summary": "The garden where God placed Adam and Eve, representing the original sacred space where humanity dwelt with God.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 138.639,
+          "end": 232.0
+        },
+        {
+          "episode": 21,
+          "start": 336.16,
+          "end": 426.6
+        }
+      ]
+    },
+    {
+      "id": "nimerda",
+      "title": "Nimrod / Nimerda",
+      "category": "person",
+      "summary": "A biblical figure associated with Babylon, later deified as the god Nimerda, illustrating the demonization of human souls.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 1467.16,
+          "end": 1575.2
+        },
+        {
+          "episode": 21,
+          "start": 1590.0,
+          "end": 1692.119
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "title": "Theotokos (Virgin Mary)",
+      "category": "person",
+      "summary": "The mother of Jesus, who is seen as the new tabernacle and temple, purified to become God's dwelling place.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 6057.159,
+          "end": 6149.84
+        },
+        {
+          "episode": 21,
+          "start": 6330.0,
+          "end": 6423.159
+        }
+      ]
+    },
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "The prophet who led Israel out of Egypt and received the Law, associated with the tabernacle and Sinai.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 2906.88,
+          "end": 2999.78
+        },
+        {
+          "episode": 21,
+          "start": 3913.599,
+          "end": 4006.659
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "death-by-holiness",
+      "title": "Death by Holiness",
+      "summary": "The concept that being in the presence of God without proper preparation is dangerous and can lead to death or destruction, as seen in various biblical narratives.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 814.7,
+          "end": 908.0
+        },
+        {
+          "episode": 21,
+          "start": 197.68,
+          "end": 294.16
+        }
+      ]
+    },
+    {
+      "id": "sacred-space",
+      "title": "Sacred Space",
+      "summary": "The idea that certain places are set apart for God's presence, requiring purification and holiness, and that this concept is central to understanding biblical history.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 218.479,
+          "end": 311.8
+        },
+        {
+          "episode": 21,
+          "start": 1912.16,
+          "end": 2008.64
+        }
+      ]
+    },
+    {
+      "id": "theophanic-glory-cloud",
+      "title": "Theophanic Glory Cloud",
+      "summary": "The visible manifestation of God's presence that filled the tabernacle and temple, and later descends upon believers at Pentecost.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 4500.0,
+          "end": 4590.0
+        },
+        {
+          "episode": 21,
+          "start": 5303.199,
+          "end": 5393.279
+        }
+      ]
+    },
+    {
+      "id": "temple-of-the-holy-spirit",
+      "title": "Temple of the Holy Spirit",
+      "summary": "The New Testament teaching that individual believers and the church collectively are now the dwelling place of God through the Holy Spirit.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 6952.88,
+          "end": 7049.319
+        },
+        {
+          "episode": 21,
+          "start": 7704.68,
+          "end": 7795.319
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "god-withdraws-at-babel",
+      "text": "At Babel, God withdrew from the nations and assigned angels to govern them, as a mercy to prevent their destruction by his holiness.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 1851.559,
+          "end": 1945.92
+        }
+      ]
+    },
+    {
+      "id": "pentecost-reverses-babel",
+      "text": "Pentecost is the reversal of Babel, where the Holy Spirit descends and unites people, fulfilling the promise of God's presence returning.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 7456.159,
+          "end": 7546.72
+        }
+      ]
+    },
+    {
+      "id": "christ-is-new-temple",
+      "text": "Christ is the new temple, and his body is the place where God dwells, replacing the physical temple.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 6764.72,
+          "end": 6857.699
+        },
+        {
+          "episode": 21,
+          "start": 6860.68,
+          "end": 6952.88
+        }
+      ]
+    },
+    {
+      "id": "believers-are-temples",
+      "text": "Through the Holy Spirit, believers become temples of God, and the Christian life is about purifying this inner temple.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 7704.68,
+          "end": 7795.319
+        },
+        {
+          "episode": 21,
+          "start": 8293.6,
+          "end": 8384.719
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-2-8",
+      "reference": "Genesis 2:8",
+      "summary": "God plants a garden in Eden, establishing the first sacred space.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 370.48,
+          "end": 470.0
+        }
+      ]
+    },
+    {
+      "id": "genesis-6-3",
+      "reference": "Genesis 6:3",
+      "summary": "God's Spirit will not contend with humans, leading to the flood as an act of death by holiness.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 993.36,
+          "end": 1086.0
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-32-8",
+      "reference": "Deuteronomy 32:8",
+      "summary": "God assigns the nations to angelic beings after Babel.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 1860.0,
+          "end": 1951.88
+        }
+      ]
+    },
+    {
+      "id": "john-1-14",
+      "reference": "John 1:14",
+      "summary": "The Word became flesh and tabernacled among us, identifying Christ as the new tabernacle.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 6819.0,
+          "end": 6910.0
+        }
+      ]
+    },
+    {
+      "id": "acts-2-1-4",
+      "reference": "Acts 2:1-4",
+      "summary": "The Holy Spirit descends at Pentecost, filling the apostles and inaugurating the new temple.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 7456.159,
+          "end": 7546.72
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "death-by-holiness",
+      "term": "Death by Holiness",
+      "definition": "The concept that being in the presence of God without proper preparation is dangerous and can lead to death or destruction.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 814.7,
+          "end": 908.0
+        }
+      ]
+    },
+    {
+      "id": "theophanic-glory-cloud",
+      "term": "Theophanic Glory Cloud",
+      "definition": "The visible manifestation of God's presence that filled the tabernacle and temple, and later descends upon believers at Pentecost.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 4500.0,
+          "end": 4590.0
+        }
+      ]
+    },
+    {
+      "id": "shasu",
+      "term": "Shasu",
+      "definition": "A group of nomadic people in ancient Egypt, some of whom were associated with the worship of Yahweh.",
+      "segments": [
+        {
+          "episode": 21,
+          "start": 2817.28,
+          "end": 2910.39
+        }
+      ]
+    }
+  ]
+}

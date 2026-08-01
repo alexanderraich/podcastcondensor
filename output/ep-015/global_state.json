@@ -1,0 +1,483 @@
+{
+  "summary": "In this episode, the hosts explore the nature of being and existence from an Orthodox Christian perspective, challenging modern materialist assumptions. They discuss how being is not opposed to nothingness but to chaos, and how creation involves ordering and establishing relationships. They introduce the idea that existence is dynamic and teleological, and that human consciousness plays a role in constituting reality. They then apply these concepts to sacred geography, discussing how places become holy through God's presence and ritual, and how the mountain of God is a recurring theme from Eden to the Temple to the Church. They conclude with practical implications for spiritual life, emphasizing that we are called to become paradise and to orient ourselves toward God.",
+  "entities": [
+    {
+      "id": "william-shatner",
+      "title": "William Shatner",
+      "category": "person",
+      "summary": "Actor who, at age 90, is having AI recordings made of himself, raising questions about identity and existence.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 87.2,
+          "end": 180.0
+        }
+      ]
+    },
+    {
+      "id": "heraclitus",
+      "title": "Heraclitus",
+      "category": "person",
+      "summary": "Pre-Socratic philosopher known for the idea that everything is in flux, used to illustrate the problem of identity.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 2223.76,
+          "end": 2316.96
+        }
+      ]
+    },
+    {
+      "id": "parmenides",
+      "title": "Parmenides",
+      "category": "person",
+      "summary": "Pre-Socratic philosopher who argued that being is static and unchanging, contrasting with Heraclitus.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 2307.559,
+          "end": 2400.0
+        }
+      ]
+    },
+    {
+      "id": "david-hume",
+      "title": "David Hume",
+      "category": "person",
+      "summary": "Empiricist philosopher who questioned the constancy of identity, used as an example of extreme skepticism.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 2268.0,
+          "end": 2360.8
+        }
+      ]
+    },
+    {
+      "id": "jrr-tolkien",
+      "title": "J.R.R. Tolkien",
+      "category": "person",
+      "summary": "Author who used the image of a tower to illustrate the importance of the whole over its parts, referenced in relation to being.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 984.159,
+          "end": 1078.64
+        }
+      ]
+    },
+    {
+      "id": "joseph-smith",
+      "title": "Joseph Smith",
+      "category": "person",
+      "summary": "Founder of Mormonism, whose theology of uncreated matter is contrasted with Orthodox creation ex nihilo.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 660.0,
+          "end": 753.7
+        }
+      ]
+    },
+    {
+      "id": "mount-sinai",
+      "title": "Mount Sinai",
+      "category": "place",
+      "summary": "The mountain where God gave the Law to Moses, considered a mountain of God.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 6023.399,
+          "end": 6113.76
+        },
+        {
+          "episode": 15,
+          "start": 6246.119,
+          "end": 6344.88
+        }
+      ]
+    },
+    {
+      "id": "mount-zion",
+      "title": "Mount Zion",
+      "category": "place",
+      "summary": "The hill in Jerusalem where the Temple was built, becoming the mountain of God.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 6296.399,
+          "end": 6389.439
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "title": "Theotokos",
+      "category": "theological",
+      "summary": "The Virgin Mary, described as paradise and the place where God dwells.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 6389.439,
+          "end": 6480.39
+        }
+      ]
+    },
+    {
+      "id": "father-alexander-addy",
+      "title": "Father Alexander Atty",
+      "category": "person",
+      "summary": "Orthodox priest who advised to 'make the place you're in into paradise.'",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 7080.0,
+          "end": 7177.52
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "being-as-verb",
+      "title": "Being as a Verb",
+      "summary": "Existence is not a static state but an active, dynamic process of being ordered and in relationship. To be is to be in a particular state of order and relationship, which can change over time.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 219.52,
+          "end": 310.5
+        },
+        {
+          "episode": 15,
+          "start": 914.0,
+          "end": 1006.159
+        }
+      ]
+    },
+    {
+      "id": "creation-ex-nihilo",
+      "title": "Creation Ex Nihilo",
+      "summary": "The doctrine that God created the world out of nothing, meaning that nothing is co-eternal with God. It is not about a pre-existing 'nothing' but about the radical distinction between Creator and creation.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 353.519,
+          "end": 446.24
+        },
+        {
+          "episode": 15,
+          "start": 716.0,
+          "end": 806.639
+        }
+      ]
+    },
+    {
+      "id": "teleology",
+      "title": "Teleology",
+      "summary": "The idea that things are defined by their purpose, function, and end. A thing's identity is tied to its telos, not just its material composition.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 2654.96,
+          "end": 2747.199
+        },
+        {
+          "episode": 15,
+          "start": 2695.0,
+          "end": 2789.559
+        }
+      ]
+    },
+    {
+      "id": "sacred-geography",
+      "title": "Sacred Geography",
+      "summary": "The concept that certain places become holy because of God's presence and activity, and that these places are not just spatial but also temporal, becoming sites of encounter with the divine.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 3340.199,
+          "end": 3430.88
+        },
+        {
+          "episode": 15,
+          "start": 3415.76,
+          "end": 3510.0
+        }
+      ]
+    },
+    {
+      "id": "mountain-of-god",
+      "title": "Mountain of God",
+      "summary": "A recurring biblical image of the place where God dwells and where the divine council meets. It is associated with Eden, Sinai, Zion, and ultimately Christ and the Church.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 5784.96,
+          "end": 5879.979
+        },
+        {
+          "episode": 15,
+          "start": 5820.0,
+          "end": 5916.119
+        },
+        {
+          "episode": 15,
+          "start": 6125.39,
+          "end": 6219.72
+        }
+      ]
+    },
+    {
+      "id": "thin-places",
+      "title": "Thin Places",
+      "summary": "Celtic concept of places where the barrier between the seen and unseen is thin, allowing for spiritual encounters. The hosts relate this to biblical and Orthodox ideas of sacred space.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 4594.0,
+          "end": 4688.479
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "being-opposed-to-chaos",
+      "text": "In the ancient biblical worldview, being is not opposed to nothingness but to chaos. To exist is to be ordered and placed in a web of relationships.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 524.2,
+          "end": 615.159
+        }
+      ]
+    },
+    {
+      "id": "creation-ex-nihilo-meaning",
+      "text": "Creation ex nihilo means that nothing is co-eternal with God, not that there was a pre-existing 'nothing' that God used.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 716.0,
+          "end": 806.639
+        }
+      ]
+    },
+    {
+      "id": "identity-is-teleological",
+      "text": "A thing's identity is determined by its purpose and function, not its material composition. The Ship of Theseus remains the same ship because it continues to serve the same role.",
+      "topic": "Philosophy",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 2593.79,
+          "end": 2687.0
+        }
+      ]
+    },
+    {
+      "id": "human-consciousness-constitutes-reality",
+      "text": "The world as we know it is a product of human consciousness; things exist as they are perceived and related to by humans.",
+      "topic": "Philosophy",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 1438.519,
+          "end": 1530.0
+        }
+      ]
+    },
+    {
+      "id": "ritual-makes-present",
+      "text": "Ritual makes a past event present again, allowing participants to enter into that event. This is how the Passover is celebrated as 'tonight' and how the Eucharist makes Christ's sacrifice present.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 3765.0,
+          "end": 3859.119
+        },
+        {
+          "episode": 15,
+          "start": 3912.0,
+          "end": 4008.88
+        }
+      ]
+    },
+    {
+      "id": "christ-is-the-temple",
+      "text": "Christ is the new temple, fulfilling Ezekiel's prophecy. The temple in Ezekiel is not a physical building but Christ himself, and in the New Jerusalem there is no temple because God and the Lamb are there.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 6450.0,
+          "end": 6692.96
+        }
+      ]
+    },
+    {
+      "id": "saints-are-paradise",
+      "text": "Saints become paradise because they are places where God dwells, and we can encounter God through them.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 7318.0,
+          "end": 7409.88
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-1-2",
+      "reference": "Genesis 1:2",
+      "summary": "The Spirit hovering over the waters as an image of creation bringing order out of chaos.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 557.19,
+          "end": 648.0
+        }
+      ]
+    },
+    {
+      "id": "genesis-2-8",
+      "reference": "Genesis 2:8",
+      "summary": "God plants a garden in Eden, in the east, establishing the east as the direction of paradise.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 4989.84,
+          "end": 5082.79
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-28-13-16",
+      "reference": "Ezekiel 28:13-16",
+      "summary": "Ezekiel refers to Eden as a mountain, connecting it to the mountain of God.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 6180.0,
+          "end": 6270.239
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-47",
+      "reference": "Ezekiel 47",
+      "summary": "The temple prophecy includes waters flowing from the temple, echoing Eden's rivers.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 6344.88,
+          "end": 6435.739
+        }
+      ]
+    },
+    {
+      "id": "john-2-19-21",
+      "reference": "John 2:19-21",
+      "summary": "Jesus refers to his body as the temple, identifying himself as the new temple.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 6475.0,
+          "end": 6565.319
+        }
+      ]
+    },
+    {
+      "id": "revelation-21-22",
+      "reference": "Revelation 21:22",
+      "summary": "In the New Jerusalem, there is no temple because God and the Lamb are its temple.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 6642.479,
+          "end": 6734.659
+        }
+      ]
+    },
+    {
+      "id": "revelation-16-16",
+      "reference": "Revelation 16:16",
+      "summary": "Armageddon is identified as the mountain of assembly, where the enemies of God gather.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 6870.0,
+          "end": 6960.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "ex-nihilo",
+      "term": "Ex Nihilo",
+      "definition": "Latin for 'out of nothing'; the doctrine that God created the world from nothing, meaning no pre-existing matter or being.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 353.519,
+          "end": 446.24
+        }
+      ]
+    },
+    {
+      "id": "teleology",
+      "term": "Teleology",
+      "definition": "The study of purpose or design in natural phenomena; the idea that things have an end or goal that defines them.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 2654.96,
+          "end": 2747.199
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God, of participating in the divine nature, often described as deification.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 7730.39,
+          "end": 7822.0
+        }
+      ]
+    },
+    {
+      "id": "harmagedon",
+      "term": "Armageddon",
+      "definition": "Greek transliteration of the Hebrew 'Har Mo'ed', meaning 'Mountain of Assembly', the place where the final battle against God's enemies occurs.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 6900.0,
+          "end": 6990.0
+        }
+      ]
+    },
+    {
+      "id": "ziggurat",
+      "term": "Ziggurat",
+      "definition": "A terraced pyramid-like structure in ancient Mesopotamia, representing a man-made mountain to reach the divine.",
+      "segments": [
+        {
+          "episode": 15,
+          "start": 5970.0,
+          "end": 6066.79
+        }
+      ]
+    }
+  ]
+}

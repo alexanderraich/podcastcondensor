@@ -1,0 +1,175 @@
+{
+  "summary": "In this episode, Father Stephen De Young reads and comments on the Babylonian Theodicy, an Akkadian text from the Neo-Babylonian Empire (mid-first millennium BC). The text is a dialogue between a sufferer and his friend, resembling the Book of Job. The sufferer laments his misfortunes despite his piety, while his friend insists on continuing traditional worship and appeasing the gods. The dialogue highlights the quid pro quo nature of Babylonian religion, where offerings are made to gain divine favor, but the sufferer finds this system ineffective. Father Stephen contrasts this with the Book of Job, where God's ways are mysterious but ultimately just, and where suffering is not merely a punishment but a test of faith. The episode explores themes of theodicy, divine justice, and the nature of pagan religion versus biblical revelation.",
+  "entities": [
+    {
+      "id": "babylonian-gods",
+      "title": "Babylonian Gods",
+      "category": "theological",
+      "summary": "The pantheon of gods in Babylonian religion, including Marduk, Shamash, and others, who are seen as capricious and distant.",
+      "segments": [
+        {
+          "episode": 60,
+          "start": 145.0,
+          "end": 237.84
+        },
+        {
+          "episode": 60,
+          "start": 1124.799,
+          "end": 1220.48
+        }
+      ]
+    },
+    {
+      "id": "yahweh",
+      "title": "Yahweh",
+      "category": "theological",
+      "summary": "The God of Israel, contrasted with Babylonian gods, who reveals himself in the Book of Job as just and sovereign.",
+      "segments": [
+        {
+          "episode": 60,
+          "start": 1251.39,
+          "end": 1277.119
+        }
+      ]
+    },
+    {
+      "id": "book-of-job",
+      "title": "Book of Job",
+      "category": "scriptural",
+      "summary": "A biblical book that addresses the problem of suffering, used as a comparison to the Babylonian Theodicy.",
+      "segments": [
+        {
+          "episode": 60,
+          "start": 1232.44,
+          "end": 1277.119
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "babylonian-theodicy",
+      "title": "Babylonian Theodicy",
+      "summary": "An Akkadian text from the Neo-Babylonian Empire that dialogues on the problem of suffering and divine justice, similar to the Book of Job.",
+      "segments": [
+        {
+          "episode": 60,
+          "start": 97.76,
+          "end": 187.96
+        },
+        {
+          "episode": 60,
+          "start": 1232.44,
+          "end": 1277.119
+        }
+      ]
+    },
+    {
+      "id": "quid-pro-quo-religion",
+      "title": "Quid Pro Quo Religion",
+      "summary": "The Babylonian view that offerings and worship are instrumental to get the gods to do what you want, which the sufferer finds ineffective.",
+      "segments": [
+        {
+          "episode": 60,
+          "start": 614.96,
+          "end": 706.799
+        },
+        {
+          "episode": 60,
+          "start": 132.479,
+          "end": 223.8
+        }
+      ]
+    },
+    {
+      "id": "divine-justice",
+      "title": "Divine Justice",
+      "summary": "The concept of how gods or God administer justice, contrasting Babylonian confusion with biblical revelation.",
+      "segments": [
+        {
+          "episode": 60,
+          "start": 1232.44,
+          "end": 1277.119
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "babylonian-religion-ineffective",
+      "text": "The Babylonian system of offerings and worship is ineffective because the sufferer did everything right and still suffered.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 60,
+          "start": 598.7,
+          "end": 691.639
+        }
+      ]
+    },
+    {
+      "id": "gods-ways-remote",
+      "text": "The friend claims that the ways of the gods are remote and incomprehensible, so one must continue traditional worship without expecting immediate results.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 60,
+          "start": 646.6,
+          "end": 740.46
+        }
+      ]
+    },
+    {
+      "id": "humanity-broken",
+      "text": "The friend argues that humanity is broken because the gods gave them twisted words, so they praise the wicked and revile the good.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 60,
+          "start": 1100.96,
+          "end": 1193.14
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "job-comparison",
+      "reference": "Job 1-42",
+      "summary": "The Book of Job is compared to the Babylonian Theodicy, highlighting differences in divine justice and revelation.",
+      "segments": [
+        {
+          "episode": 60,
+          "start": 1232.44,
+          "end": 1277.119
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "babylonian-theodicy",
+      "term": "Babylonian Theodicy",
+      "definition": "An Akkadian poem from ancient Mesopotamia that explores the problem of suffering and divine justice.",
+      "segments": [
+        {
+          "episode": 60,
+          "start": 97.76,
+          "end": 187.96
+        }
+      ]
+    },
+    {
+      "id": "lacuna",
+      "term": "Lacuna",
+      "definition": "A gap in a manuscript or text where content is missing.",
+      "segments": [
+        {
+          "episode": 60,
+          "start": 183.28,
+          "end": 276.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,525 @@
+{
+  "summary": "In this episode, the hosts continue their two-part exploration of idolatry and iconography, arguing that these are two distinct phenomena rather than the same thing. They begin by addressing common misconceptions, such as the idea that iconography and idolatry are essentially the same or that veneration and worship are identical. They then define myth and ritual, explaining how iconography functions as a ritual reenactment of myth. The discussion covers pagan iconography, using examples like Göbekli Tepe and Çatalhöyük, and contrasts it with idolatry. They then examine Israelite iconography, including the tabernacle, the Ark of the Covenant, and the bronze serpent, showing how God commanded the creation of images for specific purposes. The episode concludes with Christian iconography, tracing its continuity from Jewish synagogue art and early house churches, and addressing modern iconoclastic arguments. The hosts emphasize that iconography is a means of participating in spiritual reality, and that the honor given to icons passes to their prototypes, ultimately pointing to the incarnation as the foundation for Christian use of images.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox Christian priest.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 6.96,
+          "end": 102.0
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "Co-host of the podcast, an Orthodox Christian priest.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 6.96,
+          "end": 102.0
+        }
+      ]
+    },
+    {
+      "id": "gobekli-tepe",
+      "title": "Göbekli Tepe",
+      "category": "place",
+      "summary": "An ancient archaeological site in Turkey, considered the oldest known human religious site, with iconography carved into standing stones.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 2320.0,
+          "end": 2470.44
+        }
+      ]
+    },
+    {
+      "id": "catalhoyuk",
+      "title": "Çatalhöyük",
+      "category": "place",
+      "summary": "An ancient settlement in Turkey with evidence of both idolatry and iconography, including bull horns mounted on walls.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 2670.0,
+          "end": 2851.96
+        }
+      ]
+    },
+    {
+      "id": "bronze-serpent",
+      "title": "Bronze Serpent",
+      "category": "theological",
+      "summary": "An object made by Moses at God's command for healing, later misused as an idol and destroyed by Hezekiah.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 6087.68,
+          "end": 6356.439
+        }
+      ]
+    },
+    {
+      "id": "ark-of-the-covenant",
+      "title": "Ark of the Covenant",
+      "category": "theological",
+      "summary": "A sacred chest in the tabernacle, with cherubim on its cover, representing the throne of God, not a container for God.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 5480.8,
+          "end": 5790.0
+        }
+      ]
+    },
+    {
+      "id": "tabernacle",
+      "title": "Tabernacle",
+      "category": "theological",
+      "summary": "The portable sanctuary built by Moses, designed as an icon of the heavenly sanctuary, with cherubim imagery.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 5310.0,
+          "end": 5480.8
+        }
+      ]
+    },
+    {
+      "id": "dura-europos",
+      "title": "Dura-Europos",
+      "category": "place",
+      "summary": "An ancient city in Syria with well-preserved synagogue and house church, both containing extensive iconography.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 9030.0,
+          "end": 9220.2
+        }
+      ]
+    },
+    {
+      "id": "st-phanourios",
+      "title": "St. Phanourios",
+      "category": "person",
+      "summary": "A saint known for helping people find lost items, associated with the offering of a cake called Fanouropita.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 7757.79,
+          "end": 7956.88
+        }
+      ]
+    },
+    {
+      "id": "john-calvin",
+      "title": "John Calvin",
+      "category": "person",
+      "summary": "A Protestant reformer who argued against iconography, but his arguments were based on incorrect historical assumptions.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 8760.0,
+          "end": 8868.959
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "iconography-vs-idolatry",
+      "title": "Iconography vs. Idolatry",
+      "summary": "The central distinction between iconography and idolatry: they are separate phenomena, not the same thing. Iconography involves images used for ritual participation and veneration, while idolatry involves worship directed to an image as a deity.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 62.96,
+          "end": 157.39
+        },
+        {
+          "episode": 76,
+          "start": 235.84,
+          "end": 329.0
+        },
+        {
+          "episode": 76,
+          "start": 1227.2,
+          "end": 1319.839
+        },
+        {
+          "episode": 76,
+          "start": 5279.399,
+          "end": 5370.42
+        }
+      ]
+    },
+    {
+      "id": "myth-and-ritual",
+      "title": "Myth and Ritual",
+      "summary": "Myth is a story with ongoing significance for a community, kept alive through ritual. Iconography is a form of ritual reenactment, connecting viewers to the story and its spiritual reality.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 1320.0,
+          "end": 1439.92
+        },
+        {
+          "episode": 76,
+          "start": 2004.79,
+          "end": 2098.94
+        }
+      ]
+    },
+    {
+      "id": "veneration-vs-worship",
+      "title": "Veneration vs. Worship",
+      "summary": "Veneration is the honor or respect given to icons, saints, or objects, distinct from worship which is due to God alone. The honor paid to an icon passes to its prototype.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 1020.0,
+          "end": 1140.0
+        },
+        {
+          "episode": 76,
+          "start": 3821.599,
+          "end": 3914.34
+        },
+        {
+          "episode": 76,
+          "start": 9602.319,
+          "end": 9698.79
+        }
+      ]
+    },
+    {
+      "id": "pagan-iconography",
+      "title": "Pagan Iconography",
+      "summary": "The use of images in pagan religious contexts that are not objects of worship but serve as decoration or narrative, distinct from idols which are central to worship.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 2271.28,
+          "end": 2470.44
+        },
+        {
+          "episode": 76,
+          "start": 3030.0,
+          "end": 3136.539
+        }
+      ]
+    },
+    {
+      "id": "israelite-iconography",
+      "title": "Israelite Iconography",
+      "summary": "The use of images in the Old Testament, such as the cherubim on the Ark and the bronze serpent, commanded by God for specific purposes, showing that iconography is not inherently idolatrous.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 5310.0,
+          "end": 5540.96
+        },
+        {
+          "episode": 76,
+          "start": 6087.68,
+          "end": 6356.439
+        }
+      ]
+    },
+    {
+      "id": "christian-iconography",
+      "title": "Christian Iconography",
+      "summary": "The continuation of Jewish iconographic traditions in Christian worship, grounded in the incarnation, and the development of icons as a means of participating in the heavenly reality.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 8409.6,
+          "end": 8499.799
+        },
+        {
+          "episode": 76,
+          "start": 8508.719,
+          "end": 8603.799
+        },
+        {
+          "episode": 76,
+          "start": 9030.0,
+          "end": 9220.2
+        }
+      ]
+    },
+    {
+      "id": "wonderworking-icons",
+      "title": "Wonderworking Icons",
+      "summary": "Icons through which God works miracles, such as healing or the flow of myrrh. These are not magical objects but means through which God acts, similar to the bronze serpent.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 10040.559,
+          "end": 10239.12
+        },
+        {
+          "episode": 76,
+          "start": 10758.799,
+          "end": 11002.319
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "iconography-and-idolatry-are-distinct",
+      "text": "Iconography and idolatry are two separate phenomena, not the same thing, and they have existed alongside each other in various cultures.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 62.96,
+          "end": 157.39
+        },
+        {
+          "episode": 76,
+          "start": 235.84,
+          "end": 329.0
+        }
+      ]
+    },
+    {
+      "id": "veneration-is-not-worship",
+      "text": "Veneration is the honor given to icons and saints, which is different from worship, which is due to God alone.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 1020.0,
+          "end": 1140.0
+        },
+        {
+          "episode": 76,
+          "start": 3821.599,
+          "end": 3914.34
+        }
+      ]
+    },
+    {
+      "id": "god-commanded-iconography",
+      "text": "God commanded the creation of images, such as the cherubim on the Ark and the bronze serpent, showing that iconography is not inherently idolatrous.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 5310.0,
+          "end": 5540.96
+        },
+        {
+          "episode": 76,
+          "start": 6087.68,
+          "end": 6356.439
+        }
+      ]
+    },
+    {
+      "id": "christianity-continued-jewish-iconography",
+      "text": "Early Christians continued the Jewish tradition of iconography, as evidenced by the Dura-Europos synagogue and house church.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 9030.0,
+          "end": 9220.2
+        }
+      ]
+    },
+    {
+      "id": "iconoclasm-is-platonic",
+      "text": "Modern iconoclastic arguments are ultimately grounded in Platonic dualism, rejecting the material as a means of encountering God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 10227.84,
+          "end": 10604.319
+        }
+      ]
+    },
+    {
+      "id": "honor-passes-to-prototype",
+      "text": "The honor given to an icon passes to its prototype, meaning that venerating an icon is a way of honoring the person or event depicted.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 11036.26,
+          "end": 11130.59
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-1-27",
+      "reference": "Genesis 1:27",
+      "summary": "Humanity is created in the image (icon) of God, establishing the foundation for iconography.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 5168.0,
+          "end": 5260.96
+        }
+      ]
+    },
+    {
+      "id": "exodus-25-18-20",
+      "reference": "Exodus 25:18-20",
+      "summary": "God commands the making of cherubim on the Ark of the Covenant, showing divine approval of iconography.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 5480.8,
+          "end": 5575.6
+        }
+      ]
+    },
+    {
+      "id": "numbers-21-4-9",
+      "reference": "Numbers 21:4-9",
+      "summary": "The bronze serpent is made at God's command for healing, illustrating the proper use of an icon.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 6087.68,
+          "end": 6178.68
+        }
+      ]
+    },
+    {
+      "id": "2-kings-18-4",
+      "reference": "2 Kings 18:4",
+      "summary": "Hezekiah destroys the bronze serpent because it had become an idol, showing the misuse of an icon.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 6227.239,
+          "end": 6322.399
+        }
+      ]
+    },
+    {
+      "id": "matthew-22-20-21",
+      "reference": "Matthew 22:20-21",
+      "summary": "Jesus uses the coin's image (icon) to teach about rendering to Caesar and to God, playing on the word 'icon'.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 7194.8,
+          "end": 7594.64
+        }
+      ]
+    },
+    {
+      "id": "1-john-4-20",
+      "reference": "1 John 4:20",
+      "summary": "If we cannot love our brother whom we have seen, we cannot love God whom we have not seen, emphasizing that humans are icons of God.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 11310.0,
+          "end": 11400.959
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "icon",
+      "term": "Icon",
+      "definition": "A sacred image used in Orthodox Christianity, representing Christ, saints, or events, and venerated as a means of participating in the spiritual reality depicted.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 62.96,
+          "end": 157.39
+        }
+      ]
+    },
+    {
+      "id": "idol",
+      "term": "Idol",
+      "definition": "An image or object that is worshipped as a deity, often believed to embody a spirit, and is the focus of sacrificial offerings.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 62.96,
+          "end": 157.39
+        }
+      ]
+    },
+    {
+      "id": "veneration",
+      "term": "Veneration",
+      "definition": "The act of showing honor and respect to icons, saints, or sacred objects, distinct from worship which is due to God alone.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 1020.0,
+          "end": 1140.0
+        }
+      ]
+    },
+    {
+      "id": "myth",
+      "term": "Myth",
+      "definition": "A story with ongoing significance for a community, kept alive through ritual and shaping the identity of the people.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 1320.0,
+          "end": 1439.92
+        }
+      ]
+    },
+    {
+      "id": "ritual",
+      "term": "Ritual",
+      "definition": "Repeated communal behavior that enacts a myth, allowing participants to enter into the story and its spiritual reality.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 1606.839,
+          "end": 1698.64
+        }
+      ]
+    },
+    {
+      "id": "prototype",
+      "term": "Prototype",
+      "definition": "The original person or event depicted in an icon; the honor given to the icon passes to the prototype.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 11036.26,
+          "end": 11130.59
+        }
+      ]
+    },
+    {
+      "id": "fanouropita",
+      "term": "Fanouropita",
+      "definition": "A cake baked in honor of St. Phanourios, often offered as a thank-offering after finding a lost item, blessed and shared among the faithful.",
+      "segments": [
+        {
+          "episode": 76,
+          "start": 7757.79,
+          "end": 7956.88
+        }
+      ]
+    }
+  ]
+}

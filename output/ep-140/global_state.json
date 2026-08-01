@@ -1,0 +1,404 @@
+{
+  "summary": "In this episode, the hosts explore the history and theology of the Samaritans, tracing their origins from the division of the united monarchy, through the Assyrian conquest and resettlement, to their development as a distinct people with their own temple on Mount Gerizim. They examine the biblical narrative in 2 Kings 17, the tensions between Samaritans and Jews as seen in Ezra, and the theological significance of Samaria in the New Testament, particularly in the ministries of Jesus and the apostles. The episode concludes with a reflection on how the story of Ephraim and the Samaritans symbolizes the inclusion of the Gentiles into the people of God, and how this pattern of death and resurrection applies both collectively and individually.",
+  "entities": [
+    {
+      "id": "samaritans",
+      "title": "Samaritans",
+      "category": "people",
+      "summary": "An ethnoreligious group descended from the Israelites of the northern kingdom and foreign settlers, with their own version of the Torah and a temple on Mount Gerizim. They are known for their rivalry with the Jews.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 165.56,
+          "end": 257.639
+        },
+        {
+          "episode": 140,
+          "start": 4971.439,
+          "end": 5077.0
+        }
+      ]
+    },
+    {
+      "id": "ephraim",
+      "title": "Ephraim",
+      "category": "historical",
+      "summary": "The tribe of Ephraim, descended from Joseph's son, became the largest and most powerful tribe in the northern kingdom of Israel. In prophetic literature, Ephraim often represents the entire northern kingdom.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 1530.0,
+          "end": 1620.0
+        },
+        {
+          "episode": 140,
+          "start": 12694.879,
+          "end": 12786.7
+        }
+      ]
+    },
+    {
+      "id": "mount-gerizim",
+      "title": "Mount Gerizim",
+      "category": "place",
+      "summary": "The sacred mountain of the Samaritans, where they built their temple. It is located near Shechem and is central to Samaritan religious identity.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 7920.0,
+          "end": 8013.92
+        },
+        {
+          "episode": 140,
+          "start": 8111.0,
+          "end": 8201.36
+        }
+      ]
+    },
+    {
+      "id": "jeroboam",
+      "title": "Jeroboam",
+      "category": "historical",
+      "summary": "The first king of the northern kingdom of Israel, who set up golden calves at Dan and Bethel, leading Israel into idolatry. His sins are frequently cited as the cause of the northern kingdom's downfall.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 1304.64,
+          "end": 1397.759
+        },
+        {
+          "episode": 140,
+          "start": 1980.0,
+          "end": 2075.239
+        }
+      ]
+    },
+    {
+      "id": "omri",
+      "title": "Omri",
+      "category": "historical",
+      "summary": "King of Israel who founded the Omride dynasty and built the city of Samaria as his capital. He is mentioned briefly in the Bible but was a significant geopolitical figure.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 2240.39,
+          "end": 2332.76
+        },
+        {
+          "episode": 140,
+          "start": 2452.559,
+          "end": 2542.679
+        }
+      ]
+    },
+    {
+      "id": "john-hyrcanus",
+      "title": "John Hyrcanus",
+      "category": "historical",
+      "summary": "Hasmonean ruler who conquered Samaria and destroyed the Samaritan temple on Mount Gerizim around 150 BC, deepening the enmity between Jews and Samaritans.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 9308.399,
+          "end": 9402.0
+        }
+      ]
+    },
+    {
+      "id": "st-photini",
+      "title": "St. Photini",
+      "category": "person",
+      "summary": "The Samaritan woman at the well whom Jesus met in John 4. She is venerated as a saint in the Orthodox Church and is seen as a symbol of the conversion of the Samaritans.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 13723.479,
+          "end": 13816.379
+        },
+        {
+          "episode": 140,
+          "start": 15382.79,
+          "end": 15473.159
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "samaritan-identity",
+      "title": "Samaritan Identity",
+      "summary": "The Samaritans emerged as a distinct people from the intermingling of Israelites left in the northern kingdom and foreign peoples resettled by the Assyrians. Their identity was shaped by their own version of the Torah and their temple on Mount Gerizim, leading to a rivalry with the Jews over who were the true heirs of Israel.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 4971.439,
+          "end": 5077.0
+        },
+        {
+          "episode": 140,
+          "start": 7845.56,
+          "end": 7936.0
+        }
+      ]
+    },
+    {
+      "id": "ephraim-as-fullness-of-gentiles",
+      "title": "Ephraim as the Fullness of the Gentiles",
+      "summary": "The concept that Ephraim, representing the northern kingdom, was scattered among the nations and would be reconstituted through the inclusion of Gentiles into the people of God. This is seen as the fulfillment of Jacob's blessing that Ephraim's offspring would become the 'fullness of the Gentiles' (Genesis 48:19), and is applied by St. Paul to the Church.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 13491.84,
+          "end": 13584.0
+        },
+        {
+          "episode": 140,
+          "start": 13567.0,
+          "end": 13697.2
+        }
+      ]
+    },
+    {
+      "id": "samaria-as-pivot",
+      "title": "Samaria as Pivot Point",
+      "summary": "In the New Testament, Samaria serves as a bridge between the Jewish mission and the Gentile mission. Jesus' encounter with the Samaritan woman and the apostles' preaching in Samaria (Acts 8) demonstrate that the gospel was to spread from Jerusalem to Judea, then Samaria, and then to the ends of the earth, symbolizing the reunification of Israel.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 13697.2,
+          "end": 13789.0
+        },
+        {
+          "episode": 140,
+          "start": 14032.879,
+          "end": 14202.0
+        }
+      ]
+    },
+    {
+      "id": "death-and-resurrection-pattern",
+      "title": "Death and Resurrection Pattern",
+      "summary": "The history of Samaria is seen as a pattern of being emptied and refilled, disciplined and restored. This pattern is applied to the Church and to individuals, emphasizing that through death and resurrection, God brings about redemption and transformation.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 14508.379,
+          "end": 14604.399
+        },
+        {
+          "episode": 140,
+          "start": 15107.44,
+          "end": 15198.68
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "united-kingdom-duration",
+      "text": "The united kingdom of Israel lasted only about 100 years, from Saul to the split after Solomon, contrary to popular belief that it lasted much longer.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 289.759,
+          "end": 386.639
+        }
+      ]
+    },
+    {
+      "id": "solomons-main-sin",
+      "text": "Solomon's main sin was not sexual immorality but making treaty alliances with pagan nations through marriage, which led to idolatry and the division of the kingdom.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 682.34,
+          "end": 869.559
+        }
+      ]
+    },
+    {
+      "id": "samaritan-torah-variants",
+      "text": "The Samaritan Pentateuch shares about 2,000 variants with the Septuagint against the Masoretic Text, indicating it is not simply a corrupted version but preserves an independent Hebrew tradition.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 8410.479,
+          "end": 8540.76
+        }
+      ]
+    },
+    {
+      "id": "ephraim-restoration",
+      "text": "The prophets Jeremiah and Ezekiel indicate that Ephraim (the northern kingdom) would be restored and reunited with Judah under the Messiah, which is fulfilled in the inclusion of Gentiles into the Church.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 12758.0,
+          "end": 13017.28
+        },
+        {
+          "episode": 140,
+          "start": 13006.639,
+          "end": 13235.0
+        }
+      ]
+    },
+    {
+      "id": "samaria-in-acts",
+      "text": "In Acts 1:8, Jesus' command to be witnesses in Jerusalem, Judea, Samaria, and to the ends of the earth indicates that Samaria was a deliberate step in the mission, symbolizing the reunification of Israel.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 14032.879,
+          "end": 14202.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-48",
+      "reference": "Genesis 48:5, 14-20",
+      "summary": "Jacob adopts Ephraim and Manasseh as his own sons and gives Ephraim the primary blessing, prophesying that his offspring would become the 'fullness of the Gentiles.'",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 12320.879,
+          "end": 12609.239
+        }
+      ]
+    },
+    {
+      "id": "2-kings-17",
+      "reference": "2 Kings 17:6-41",
+      "summary": "Describes the fall of the northern kingdom, the resettlement of foreigners in Samaria, and the origins of the Samaritans, including their syncretistic worship.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 3641.519,
+          "end": 4602.79
+        }
+      ]
+    },
+    {
+      "id": "ezra-4",
+      "reference": "Ezra 4:7-24",
+      "summary": "The Samaritans write to the Persian king to stop the rebuilding of Jerusalem, leading to a halt in construction and beginning the enmity between Jews and Samaritans.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 7482.52,
+          "end": 7795.0
+        }
+      ]
+    },
+    {
+      "id": "jeremiah-31",
+      "reference": "Jeremiah 31:15-20",
+      "summary": "Rachel weeps for her children (Ephraim), but God promises mercy and restoration, indicating that Ephraim's destiny is not over.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 12780.0,
+          "end": 12997.68
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-37",
+      "reference": "Ezekiel 37:15-28",
+      "summary": "The sticks of Judah and Ephraim are joined together, symbolizing the reunification of Israel under the Messiah, which is applied to the Church.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 13006.639,
+          "end": 13235.0
+        }
+      ]
+    },
+    {
+      "id": "john-4",
+      "reference": "John 4:27-38",
+      "summary": "Jesus' conversation with the Samaritan woman and his teaching about the harvest illustrate the gathering of the Samaritans into the kingdom.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 13764.84,
+          "end": 13982.0
+        }
+      ]
+    },
+    {
+      "id": "acts-8",
+      "reference": "Acts 8:4-25",
+      "summary": "Philip preaches in Samaria, and Peter and John come to lay hands on the new believers, showing the acceptance of Samaritans into the Church.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 14196.0,
+          "end": 14339.68
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "samaritan-pentateuch",
+      "term": "Samaritan Pentateuch",
+      "definition": "The version of the Torah used by the Samaritans, written in the Samaritan script and containing about 6,000 differences from the Masoretic Text, including a tenth commandment about Mount Gerizim.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 8149.52,
+          "end": 8240.159
+        },
+        {
+          "episode": 140,
+          "start": 8304.0,
+          "end": 8395.559
+        }
+      ]
+    },
+    {
+      "id": "taheb",
+      "term": "Taheb",
+      "definition": "The Samaritan messianic figure, meaning 'restorer,' who is expected to come as a prophet like Moses, restore the kingdom of Israel, and bring about the resurrection.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 10510.799,
+          "end": 10604.4
+        }
+      ]
+    },
+    {
+      "id": "deuteronomistic-history",
+      "term": "Deuteronomistic History",
+      "definition": "A scholarly term for the books of Joshua, Judges, 1-2 Samuel, and 1-2 Kings, which are seen as a unified work interpreting Israel's history through the lens of Deuteronomy.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 1044.359,
+          "end": 1135.839
+        }
+      ]
+    },
+    {
+      "id": "gibirah",
+      "term": "Gebirah",
+      "definition": "The Queen Mother in the kingdom of Judah, who held a position of power and was often mentioned in the biblical accounts of kings. This office is seen as a type of the Theotokos.",
+      "segments": [
+        {
+          "episode": 140,
+          "start": 3160.0,
+          "end": 3269.96
+        }
+      ]
+    }
+  ]
+}

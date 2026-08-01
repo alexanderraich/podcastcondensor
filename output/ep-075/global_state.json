@@ -1,0 +1,464 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen De Young explore the nature of idolatry, contrasting it with Christian iconography. They begin by defining idolatry as a technique of manipulating the divine realm, rooted in pagan practices of localizing and limiting deities through physical representations. They trace the historical development of idolatry from natural sites to crafted images, and discuss how it functioned as a means of control. The hosts then examine Israelite idolatry, showing that the Old Testament is replete with examples of both idolatrous worship of Yahweh and worship of other gods alongside Him. They highlight the Golden Calf, the Northern Kingdom's calves, and the syncretism of Solomon and later kings. Finally, they address Christian idolatry, emphasizing that while literal paganism faded, idolatry persists in the form of covetousness, nationalism, sexuality, and even the church itself when it becomes a concept to be manipulated. They conclude with a call to live in the present, trusting God rather than seeking control through idols.",
+  "entities": [
+    {
+      "id": "golden-calf",
+      "title": "Golden Calf",
+      "category": "historical",
+      "summary": "The idol made by Aaron while Moses was on Mount Sinai, representing an attempt to worship Yahweh through an idol, likely modeled on the Apis bull of Egypt.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 4790.399,
+          "end": 4889.52
+        },
+        {
+          "episode": 75,
+          "start": 5004.72,
+          "end": 5098.46
+        }
+      ]
+    },
+    {
+      "id": "baal-peor",
+      "title": "Baal-Peor",
+      "category": "theological",
+      "summary": "A localized form of Baal worshiped at Peor, associated with orgiastic fertility rites, which led Israel into idolatry and sexual immorality, resulting in a plague.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 6024.479,
+          "end": 6119.72
+        },
+        {
+          "episode": 75,
+          "start": 6084.479,
+          "end": 6174.76
+        }
+      ]
+    },
+    {
+      "id": "jeroboam",
+      "title": "Jeroboam",
+      "category": "historical",
+      "summary": "First king of the Northern Kingdom of Israel, who set up golden calves at Bethel and Dan to prevent his people from traveling to Jerusalem, creating a new religious system.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 5734.159,
+          "end": 5829.0
+        },
+        {
+          "episode": 75,
+          "start": 5820.0,
+          "end": 5917.92
+        }
+      ]
+    },
+    {
+      "id": "solomon",
+      "title": "Solomon",
+      "category": "historical",
+      "summary": "King of Israel who, despite his wisdom, built shrines to the gods of his foreign wives, leading to idolatry in the temple courts.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 6559.359,
+          "end": 6653.72
+        }
+      ]
+    },
+    {
+      "id": "plato",
+      "title": "Plato",
+      "category": "historical",
+      "summary": "Greek philosopher who, while critiquing the humanization of gods, still operated within paganism, replacing the gods with abstract Forms, which functioned similarly to idols.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 2624.88,
+          "end": 2777.719
+        },
+        {
+          "episode": 75,
+          "start": 2925.96,
+          "end": 3016.44
+        }
+      ]
+    },
+    {
+      "id": "mammon",
+      "title": "Mammon",
+      "category": "theological",
+      "summary": "A term for wealth or material substance, which St. Paul identifies with idolatry when it becomes a means of control and manipulation.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 8635.0,
+          "end": 8725.76
+        },
+        {
+          "episode": 75,
+          "start": 10461.0,
+          "end": 10553.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "idolatry-as-technique",
+      "title": "Idolatry as Technique",
+      "summary": "Idolatry is not merely making images but a technique of accessing, interacting with, and controlling the spiritual realm. It involves localizing a deity, creating a body for it, and using rituals to gain leverage over it.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 3527.0,
+          "end": 3626.96
+        },
+        {
+          "episode": 75,
+          "start": 3591.159,
+          "end": 3683.92
+        }
+      ]
+    },
+    {
+      "id": "localization-of-deity",
+      "title": "Localization of Deity",
+      "summary": "Idols serve to localize a deity, bringing a spirit that is not physically present into a specific place, creating a version of that god tied to that location.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 1402.559,
+          "end": 1497.759
+        },
+        {
+          "episode": 75,
+          "start": 1500.0,
+          "end": 1590.4
+        }
+      ]
+    },
+    {
+      "id": "limiting-the-divine",
+      "title": "Limiting the Divine",
+      "summary": "The idol acts as a visual definition, limiting the deity to specific qualities, which is necessary for humans to gain control or leverage over it.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 1946.96,
+          "end": 2037.0
+        },
+        {
+          "episode": 75,
+          "start": 2070.0,
+          "end": 2162.719
+        }
+      ]
+    },
+    {
+      "id": "inversion-of-incarnation",
+      "title": "Inversion of the Incarnation",
+      "summary": "Idolatry is the reverse of the Incarnation: it attempts to reduce the divine to the human or subhuman, whereas the Incarnation elevates humanity to union with God.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 2296.48,
+          "end": 2389.719
+        },
+        {
+          "episode": 75,
+          "start": 2369.619,
+          "end": 2459.82
+        }
+      ]
+    },
+    {
+      "id": "conceptual-idolatry",
+      "title": "Conceptual Idolatry",
+      "summary": "Concepts can become idols when they are mentally shaped and delimited, allowing them to be manipulated. This applies to concepts like justice, love, or even God, when they are reduced to human definitions.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 9345.12,
+          "end": 9435.139
+        },
+        {
+          "episode": 75,
+          "start": 9414.459,
+          "end": 9506.239
+        },
+        {
+          "episode": 75,
+          "start": 9510.0,
+          "end": 9607.0
+        }
+      ]
+    },
+    {
+      "id": "idolatry-and-sexual-immorality",
+      "title": "Idolatry and Sexual Immorality",
+      "summary": "Throughout Scripture, idolatry is linked with sexual immorality, especially in the context of orgiastic pagan worship, which involves transgression of social boundaries to achieve ecstatic experiences.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 5040.0,
+          "end": 5130.88
+        },
+        {
+          "episode": 75,
+          "start": 6112.72,
+          "end": 6206.88
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "idolatry-is-not-iconography",
+      "text": "Idolatry and iconography are fundamentally different things, even though both involve images and religion. Idolatry is a technique of control, while iconography is a means of veneration.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 385.519,
+          "end": 476.0
+        },
+        {
+          "episode": 75,
+          "start": 495.899,
+          "end": 588.8
+        }
+      ]
+    },
+    {
+      "id": "idolatry-is-self-contradictory",
+      "text": "The Jewish critique of idolatry is that it is self-contradictory: if a god has power, why can't it stand up or dress itself? The idol is more limited than the human who made it.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 1738.44,
+          "end": 1830.0
+        },
+        {
+          "episode": 75,
+          "start": 1820.599,
+          "end": 1910.799
+        }
+      ]
+    },
+    {
+      "id": "idolatry-backfires",
+      "text": "Those who worship idols become like them: they attempt to control the divine but end up being controlled by it, becoming subhuman.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 3630.0,
+          "end": 3720.0
+        }
+      ]
+    },
+    {
+      "id": "covetousness-is-idolatry",
+      "text": "St. Paul identifies covetousness (greed) as idolatry because it is an attempt to gain a handle on the forces of the world through material wealth, similar to how idolatry seeks to control the divine.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 8513.6,
+          "end": 8606.92
+        },
+        {
+          "episode": 75,
+          "start": 8596.92,
+          "end": 8688.0
+        }
+      ]
+    },
+    {
+      "id": "concepts-can-become-idols",
+      "text": "Concepts, when defined and delimited, can become idols because they are mentally shaped and then used to manipulate others, especially when they carry divine agency.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 9345.12,
+          "end": 9435.139
+        },
+        {
+          "episode": 75,
+          "start": 9510.0,
+          "end": 9607.0
+        }
+      ]
+    },
+    {
+      "id": "church-can-be-idol",
+      "text": "The church itself can be treated as an idol when people worship a concept of the church, using it as a handle for control, rather than as the living body of Christ.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 10530.0,
+          "end": 10620.0
+        },
+        {
+          "episode": 75,
+          "start": 10800.0,
+          "end": 10890.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "second-commandment",
+      "reference": "Exodus 20:4-6",
+      "summary": "The prohibition against making graven images is discussed as forbidding idolatry directed toward Yahweh, not iconography.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 4176.5,
+          "end": 4266.56
+        }
+      ]
+    },
+    {
+      "id": "golden-calf-exodus",
+      "reference": "Exodus 32",
+      "summary": "The story of the Golden Calf is used as the archetypal example of idolatry directed toward Yahweh.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 4790.399,
+          "end": 4889.52
+        }
+      ]
+    },
+    {
+      "id": "baal-peor-numbers",
+      "reference": "Numbers 25",
+      "summary": "The incident at Baal-Peor illustrates idolatry of other gods alongside Yahweh, involving sexual immorality and plague.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 6024.479,
+          "end": 6134.72
+        }
+      ]
+    },
+    {
+      "id": "colossians-3-5",
+      "reference": "Colossians 3:5",
+      "summary": "St. Paul identifies covetousness as idolatry, linking it to sexual immorality and impurity.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 8513.6,
+          "end": 8606.92
+        }
+      ]
+    },
+    {
+      "id": "ephesians-5-5",
+      "reference": "Ephesians 5:5",
+      "summary": "St. Paul again equates covetousness with idolatry, warning that idolaters have no inheritance in the kingdom of Christ.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 8539.79,
+          "end": 8631.0
+        }
+      ]
+    },
+    {
+      "id": "revelation-22",
+      "reference": "Revelation 22:8-9",
+      "summary": "The angel's refusal of worship is explained as a distinction between worship of God and veneration of creatures, not a prohibition of all bowing.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 4406.39,
+          "end": 4496.72
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "idolatry",
+      "term": "Idolatry",
+      "definition": "The worship of idols, which in this context is understood as a technique of manipulating the divine realm through images and rituals, often involving attempts to control spiritual forces.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 3527.0,
+          "end": 3626.96
+        }
+      ]
+    },
+    {
+      "id": "iconography",
+      "term": "Iconography",
+      "definition": "The use of sacred images in Christian worship, which is distinct from idolatry and will be discussed in the next episode.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 385.519,
+          "end": 476.0
+        }
+      ]
+    },
+    {
+      "id": "hypostasis",
+      "term": "Hypostasis",
+      "definition": "A Greek term meaning 'substance' or 'person', used here to describe how an idol creates a localized manifestation of a deity.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 1440.0,
+          "end": 1530.0
+        }
+      ]
+    },
+    {
+      "id": "theromorphic",
+      "term": "Theriomorphic",
+      "definition": "Having the form of an animal, used to describe early idol depictions that combined human and animal features.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 953.24,
+          "end": 1046.4
+        }
+      ]
+    },
+    {
+      "id": "orgiastic-worship",
+      "term": "Orgiastic Worship",
+      "definition": "A form of pagan worship involving frenzied, transgressive rituals, often including sexual immorality and violence, believed to produce ecstatic spiritual experiences.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 5040.0,
+          "end": 5130.88
+        }
+      ]
+    },
+    {
+      "id": "mammon",
+      "term": "Mammon",
+      "definition": "A term for wealth or material substance, personified as a false god in Scripture, representing the idolatrous pursuit of material security.",
+      "segments": [
+        {
+          "episode": 75,
+          "start": 8635.0,
+          "end": 8725.76
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "summary": "In this episode, the hosts discuss the Book of Jubilees, a Second Temple Jewish text that retells Genesis and early Exodus with additional traditions and interpretations. They explore its unique status among apocryphal literature, its use in both Jewish and Christian communities, and its emphasis on the Enochic calendar and liturgical cycles. The episode highlights the book's apocalyptic genre, its role as a repository of traditions, and its influence on the New Testament, including references in Acts, Galatians, and Revelation. The hosts also delve into specific contents such as the creation of angels, the story of Mastema, and the prayer of Noah, emphasizing the importance of understanding apocrypha within the broader tradition of the Church.",
+  "entities": [
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "Central figure in the Book of Jubilees, who receives a vision of history on Mount Sinai. The book is framed as a revelation to Moses.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 1120.72,
+          "end": 1211.819
+        },
+        {
+          "episode": 92,
+          "start": 3279.139,
+          "end": 3369.76
+        }
+      ]
+    },
+    {
+      "id": "mastema",
+      "title": "Mastema",
+      "category": "theological",
+      "summary": "A devil figure in the Book of Jubilees, depicted as a leader of evil spirits who makes a deal with God to afflict the wicked. He is associated with the giants and the angel of death.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 9984.959,
+          "end": 10139.0
+        },
+        {
+          "episode": 92,
+          "start": 11446.639,
+          "end": 11546.559
+        }
+      ]
+    },
+    {
+      "id": "noah",
+      "title": "Noah",
+      "category": "person",
+      "summary": "Patriarch who, in Jubilees, offers sacrifices, prays against demons, and begins the celebration of Pentecost. He is also depicted as a preacher of righteousness.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 10440.0,
+          "end": 10536.239
+        },
+        {
+          "episode": 92,
+          "start": 10605.59,
+          "end": 10699.79
+        }
+      ]
+    },
+    {
+      "id": "abraham",
+      "title": "Abraham",
+      "category": "person",
+      "summary": "Patriarch whose story is expanded in Jubilees, including his anti-idolatry stance, his encounter with Mastema, and his blessing of Jacob.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 11015.739,
+          "end": 11187.76
+        },
+        {
+          "episode": 92,
+          "start": 11258.159,
+          "end": 11355.879
+        }
+      ]
+    },
+    {
+      "id": "angel-of-the-presence",
+      "title": "Angel of the Presence",
+      "category": "theological",
+      "summary": "A divine figure in Jubilees who speaks for God and is identified with the Second Person of the Trinity, often using 'we' when describing God's actions.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 4872.88,
+          "end": 4966.159
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "book-of-jubilees",
+      "title": "Book of Jubilees",
+      "summary": "A Second Temple Jewish text that retells Genesis and early Exodus, adding traditions, interpretations, and an emphasis on the Enochic calendar. It is considered apocryphal but was widely used in both Jewish and Christian communities.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 120.0,
+          "end": 211.4
+        },
+        {
+          "episode": 92,
+          "start": 300.0,
+          "end": 395.56
+        },
+        {
+          "episode": 92,
+          "start": 3832.0,
+          "end": 3922.32
+        }
+      ]
+    },
+    {
+      "id": "enochic-calendar",
+      "title": "Enochic Calendar",
+      "summary": "A 364-day solar calendar with four seasons of three months each, plus four intercalary days. It was considered mathematically perfect and was central to certain Jewish communities, including the Essenes at Qumran.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 1260.0,
+          "end": 1401.0
+        },
+        {
+          "episode": 92,
+          "start": 4994.0,
+          "end": 5085.38
+        }
+      ]
+    },
+    {
+      "id": "apocalyptic-literature",
+      "title": "Apocalyptic Literature",
+      "summary": "A genre that reveals heavenly realities and provides a 'heaven's eye view' of history, often through visions or journeys. The Book of Jubilees is apocalyptic in that it presents Moses receiving a vision of history from God.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 1036.16,
+          "end": 1129.92
+        },
+        {
+          "episode": 92,
+          "start": 1120.72,
+          "end": 1211.819
+        }
+      ]
+    },
+    {
+      "id": "midrash",
+      "title": "Midrash",
+      "summary": "A method of Jewish commentary that expands on Scripture with additional traditions and explanations, often incorporated directly into the text. Jubilees functions similarly as a commentary on Genesis.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 1980.0,
+          "end": 2072.8
+        },
+        {
+          "episode": 92,
+          "start": 2247.76,
+          "end": 2339.92
+        }
+      ]
+    },
+    {
+      "id": "ritual-participation",
+      "title": "Ritual Participation",
+      "summary": "The idea that liturgical cycles and feasts allow believers to enter into eternal realities, not just commemorate past events. This is central to the Book of Jubilees and Orthodox theology.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 4410.0,
+          "end": 4506.96
+        },
+        {
+          "episode": 92,
+          "start": 4775.319,
+          "end": 4872.88
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "jubilees-used-by-both-jews-and-christians",
+      "text": "The Book of Jubilees was used by both Jewish and Christian communities, unlike most other Second Temple Jewish texts, which were preserved only by Christians.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 505.74,
+          "end": 599.12
+        },
+        {
+          "episode": 92,
+          "start": 870.0,
+          "end": 965.0
+        }
+      ]
+    },
+    {
+      "id": "jubilees-is-apocalyptic",
+      "text": "The Book of Jubilees is apocalyptic literature because it presents a heavenly revelation to Moses, giving a 'heaven's eye view' of history.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 1036.16,
+          "end": 1129.92
+        }
+      ]
+    },
+    {
+      "id": "law-given-by-angels",
+      "text": "The Law was given through angels, a tradition found in Jubilees and referenced in the New Testament (Acts 7:53, Galatians 3:19, Hebrews 2:2).",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 6375.39,
+          "end": 6469.76
+        }
+      ]
+    },
+    {
+      "id": "torah-commandments-built-into-creation",
+      "text": "The commandments of the Torah are built into the structure of creation, not arbitrary rules, as emphasized in Jubilees.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 5640.0,
+          "end": 5730.79
+        }
+      ]
+    },
+    {
+      "id": "calendar-shapes-life",
+      "text": "The calendar and liturgical cycles shape a person's life and community, as illustrated by the Book of Jubilees and modern consumer calendars.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 4446.0,
+          "end": 4567.14
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-1-1",
+      "reference": "Genesis 1:1",
+      "summary": "Jubilees retells the creation account, adding details about the creation of angels and the calendar.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 7757.68,
+          "end": 7852.619
+        }
+      ]
+    },
+    {
+      "id": "exodus-12-40",
+      "reference": "Exodus 12:40",
+      "summary": "Paul's 430 years in Galatians 3:17 matches Jubilees 15:4, not the Masoretic text, suggesting a different textual tradition.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 7140.0,
+          "end": 7301.0
+        }
+      ]
+    },
+    {
+      "id": "acts-7-53",
+      "reference": "Acts 7:53",
+      "summary": "Stephen's reference to the law given by angels is a tradition found in Jubilees.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 6375.39,
+          "end": 6469.76
+        }
+      ]
+    },
+    {
+      "id": "2-peter-3-13",
+      "reference": "2 Peter 3:13",
+      "summary": "Peter's language about new heavens and new earth echoes Jubilees 1:29.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 6550.239,
+          "end": 6646.26
+        }
+      ]
+    },
+    {
+      "id": "revelation-1-6",
+      "reference": "Revelation 1:6",
+      "summary": "The phrase 'kingdom and priests' in Revelation matches Jubilees 16:18, which uses 'and' instead of 'of'.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 7343.18,
+          "end": 7433.39
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "jubilee",
+      "term": "Jubilee",
+      "definition": "A year of remission and restoration occurring every 50 years, as prescribed in Leviticus 25. The Book of Jubilees is named after this concept.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 5130.0,
+          "end": 5220.0
+        }
+      ]
+    },
+    {
+      "id": "targum",
+      "term": "Targum",
+      "definition": "An Aramaic translation of the Hebrew Bible that often includes interpretive expansions.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 1627.0,
+          "end": 1717.2
+        }
+      ]
+    },
+    {
+      "id": "geez",
+      "term": "Ge'ez",
+      "definition": "The liturgical language of the Ethiopian Orthodox Church, in which the complete text of Jubilees is preserved.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 3144.96,
+          "end": 3236.719
+        }
+      ]
+    },
+    {
+      "id": "mastema",
+      "term": "Mastema",
+      "definition": "A devil figure in Jubilees, leader of evil spirits, who makes a deal with God to afflict the wicked.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 9984.959,
+          "end": 10139.0
+        }
+      ]
+    },
+    {
+      "id": "noahide-laws",
+      "term": "Noahide Laws",
+      "definition": "Commandments given to Noah and his descendants, considered binding on all humanity, as opposed to the Torah given to Israel.",
+      "segments": [
+        {
+          "episode": 92,
+          "start": 10859.0,
+          "end": 10949.719
+        }
+      ]
+    }
+  ]
+}

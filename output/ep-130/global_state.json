@@ -1,0 +1,389 @@
+{
+  "summary": "In this Christmas special episode of the Lord of Spirits podcast, Fathers Andrew Stephen Damick and Stephen DeYoung explore the relationship between the incarnation of Jesus Christ and time. They begin by challenging common assumptions about time and space, arguing that these categories are not objective realities but rather part of human experience. They then discuss what it means for God to be eternal, rejecting both the Platonic idea of stasis and the popular notion of endless time, and instead asserting that temporal categories simply do not apply to God. The conversation then moves to the incarnation as the solution to the problem of how an infinite God can interact with finite humans, emphasizing that Christ's humanity, united to His divinity, becomes eternal and omnipresent. They conclude by reflecting on the implications for Christian life, the resurrection, and the hope of theosis, where believers are called to participate in the divine nature and transcend the boundaries of time and death.",
+  "entities": [
+    {
+      "id": "william-lane-craig",
+      "title": "William Lane Craig",
+      "category": "person",
+      "summary": "An evangelical philosopher and theologian whom the hosts criticize for his views on God's relationship to time, particularly his Molinism and belief that God exists within time.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 1259.0,
+          "end": 1328.599
+        },
+        {
+          "episode": 130,
+          "start": 2481.76,
+          "end": 2580.0
+        },
+        {
+          "episode": 130,
+          "start": 3144.44,
+          "end": 3236.239
+        }
+      ]
+    },
+    {
+      "id": "plato",
+      "title": "Plato",
+      "category": "person",
+      "summary": "Ancient Greek philosopher whose concept of eternity as stasis influenced Western theology, leading to problematic views of God as unchanging and inactive.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 2520.0,
+          "end": 2639.0
+        },
+        {
+          "episode": 130,
+          "start": 2750.599,
+          "end": 2845.0
+        }
+      ]
+    },
+    {
+      "id": "st-augustine",
+      "title": "St. Augustine",
+      "category": "person",
+      "summary": "Church Father whose writings on God and time are often misquoted. The hosts note that his views are more nuanced than commonly assumed.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 362.0,
+          "end": 457.36
+        },
+        {
+          "episode": 130,
+          "start": 4470.0,
+          "end": 4571.0
+        }
+      ]
+    },
+    {
+      "id": "st-maximus-the-confessor",
+      "title": "St. Maximus the Confessor",
+      "category": "person",
+      "summary": "Church Father who taught that God does not exist in the same way creatures do, and whose theology supports the idea that God is beyond time and space.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 766.2,
+          "end": 859.12
+        }
+      ]
+    },
+    {
+      "id": "st-basil-the-great",
+      "title": "St. Basil the Great",
+      "category": "person",
+      "summary": "Church Father who expressed the idea that humanity is commanded to become God, which is only possible through the incarnation.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 6090.0,
+          "end": 6180.119
+        },
+        {
+          "episode": 130,
+          "start": 6254.699,
+          "end": 6345.39
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "Apostle whose writings, such as Ephesians 4:9-10, are used to support the idea of Christ's descent and ascent, and theosis.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 5932.84,
+          "end": 6024.199
+        },
+        {
+          "episode": 130,
+          "start": 7179.399,
+          "end": 7272.0
+        }
+      ]
+    },
+    {
+      "id": "st-john",
+      "title": "St. John",
+      "category": "person",
+      "summary": "Apostle and author of the Gospel and Revelation, who saw himself in glory in the book of Revelation, illustrating the idea that the saints are already seated with Christ in heavenly places.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 7157.39,
+          "end": 7249.39
+        }
+      ]
+    },
+    {
+      "id": "st-nicholas",
+      "title": "St. Nicholas",
+      "category": "person",
+      "summary": "Saint known for appearing in multiple places at once, demonstrating the saints' participation in divine omnipresence.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 7303.8,
+          "end": 7397.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "time-and-space-as-human-experience",
+      "title": "Time and Space as Human Experience",
+      "summary": "The hosts argue that time and space are not objective realities but categories of human experience, similar to color, which exists only in relation to a perceiver. They use this to explain why God, who is not finite, is not bound by these categories.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 776.72,
+          "end": 1021.679
+        },
+        {
+          "episode": 130,
+          "start": 1410.0,
+          "end": 1540.0
+        }
+      ]
+    },
+    {
+      "id": "gods-eternity",
+      "title": "God's Eternity",
+      "summary": "The concept that God's eternity is not endless time or Platonic stasis, but rather that temporal categories (past, present, future) do not apply to God. God does not exist at a point in time, and there is no future or past for Him.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 1833.68,
+          "end": 1930.0
+        },
+        {
+          "episode": 130,
+          "start": 2970.0,
+          "end": 3060.0
+        },
+        {
+          "episode": 130,
+          "start": 3174.48,
+          "end": 3323.92
+        }
+      ]
+    },
+    {
+      "id": "incarnation-as-solution",
+      "title": "Incarnation as Solution",
+      "summary": "The incarnation is presented as the key to understanding how God can interact with humanity. By taking on human nature, the eternal Son of God enters into human experience, bridging the gap between the infinite and the finite.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 3849.119,
+          "end": 3946.92
+        },
+        {
+          "episode": 130,
+          "start": 4335.359,
+          "end": 4427.96
+        },
+        {
+          "episode": 130,
+          "start": 5189.56,
+          "end": 5279.88
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "title": "Theosis",
+      "summary": "The process by which humans participate in the divine nature through union with Christ. The hosts explain that Christ's humanity, being united to divinity, becomes eternal, and believers are called to share in that eternity, transcending the limitations of time and death.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 5895.359,
+          "end": 5986.159
+        },
+        {
+          "episode": 130,
+          "start": 6930.0,
+          "end": 7020.3
+        },
+        {
+          "episode": 130,
+          "start": 8484.4,
+          "end": 8578.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "time-and-space-do-not-exist",
+      "text": "Time and space are not objective realities but categories of human experience, similar to color, and therefore do not exist independently of observers.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 776.72,
+          "end": 1021.679
+        }
+      ]
+    },
+    {
+      "id": "god-does-not-exist",
+      "text": "God does not exist in the same way creatures do; He is not a being among beings, and therefore categories like existence, time, and space do not apply to Him.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 739.919,
+          "end": 834.8
+        },
+        {
+          "episode": 130,
+          "start": 2400.0,
+          "end": 2490.519
+        }
+      ]
+    },
+    {
+      "id": "god-has-no-future-or-past",
+      "text": "There is no future or past for God; temporal categories do not apply to Him, so questions about God's foreknowledge or predestination are incoherent.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 3174.48,
+          "end": 3323.92
+        }
+      ]
+    },
+    {
+      "id": "incarnation-makes-christs-humanity-eternal",
+      "text": "Through the incarnation, Christ's humanity is united to His divinity, and therefore His humanity becomes eternal and omnipresent, allowing Him to appear throughout history.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 6777.439,
+          "end": 6868.239
+        }
+      ]
+    },
+    {
+      "id": "saints-hear-prayers-not-through-sound-waves",
+      "text": "The saints do not hear prayers through physical sound waves; rather, their humanity, being united to Christ, participates in divine omnipresence, allowing them to hear prayers from anywhere.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 7220.0,
+          "end": 7317.439
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "ephesians-4-9-10",
+      "reference": "Ephesians 4:9-10",
+      "summary": "Used to support the idea of Christ's descent and ascent, and theosis, as the purpose of the incarnation.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 5932.84,
+          "end": 6024.199
+        }
+      ]
+    },
+    {
+      "id": "john-1-18",
+      "reference": "John 1:18",
+      "summary": "Quoted to show that no one has seen God, but the unique God in the bosom of the Father has made Him known, referring to Christ.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 3927.0,
+          "end": 4019.32
+        }
+      ]
+    },
+    {
+      "id": "revelation-5-11-12",
+      "reference": "Revelation 5:11-12",
+      "summary": "Quoted at the end of the episode to emphasize the glory of Christ and the worship of the heavenly hosts.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 8642.399,
+          "end": 8667.92
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "kenosis",
+      "term": "Kenosis",
+      "definition": "The self-emptying of Christ, referring to His humiliation and suffering, not to a cessation of His divinity.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 4872.72,
+          "end": 4963.52
+        },
+        {
+          "episode": 130,
+          "start": 5043.239,
+          "end": 5135.359
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming partakers of the divine nature through union with Christ, often summarized as 'God became man so that man might become God.'",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 6017.279,
+          "end": 6112.84
+        },
+        {
+          "episode": 130,
+          "start": 6930.0,
+          "end": 7020.3
+        }
+      ]
+    },
+    {
+      "id": "extra-calvinisticum",
+      "term": "Extra Calvinisticum",
+      "definition": "A Calvinist doctrine that Christ's divine nature is everywhere while His human nature is confined to a specific place, which the hosts reject.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 6648.0,
+          "end": 6742.479
+        }
+      ]
+    },
+    {
+      "id": "docetism",
+      "term": "Docetism",
+      "definition": "An early heresy that Christ only appeared to be human, not actually incarnate. The hosts argue that the physicality of Christ's resurrection body refutes this.",
+      "segments": [
+        {
+          "episode": 130,
+          "start": 5610.0,
+          "end": 5700.0
+        }
+      ]
+    }
+  ]
+}

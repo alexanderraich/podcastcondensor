@@ -1,0 +1,612 @@
+{
+  "summary": "In this episode of Lord of Spirits, hosts Fr. Andrew Stephen Damick and Fr. Stephen De Young explore the concept of 'body' from an ancient and biblical perspective, challenging modern assumptions. They argue that a body is not merely a physical object but a 'nexus of potentialities' or a collection of powers and energies. This understanding is applied to God, who is described in Scripture as having a body in this sense, interacting with creation through His powers and energies. The hosts contrast this with the Greek philosophical view of God as an unmoved mover, detached and bodiless, which they trace through history to modern deism and secular materialism. They also discuss the distinction between body (soma) and flesh (sarx) in the New Testament, the garments of skin given to Adam and Eve, and the implications for Christology, particularly the heresy of Nestorianism and the term 'Lordly Man'. The episode includes listener calls about theosis, the bodies of fallen angels and Nephilim, and the identity of Yahweh in the Old Testament, concluding with reflections on worship and the temple as God's body.",
+  "entities": [
+    {
+      "id": "aristotle",
+      "title": "Aristotle",
+      "category": "historical",
+      "summary": "Greek philosopher whose concept of the unmoved mover influenced later views of God as bodiless and detached.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 494.0,
+          "end": 590.159
+        },
+        {
+          "episode": 10,
+          "start": 2174.159,
+          "end": 2264.659
+        }
+      ]
+    },
+    {
+      "id": "plato",
+      "title": "Plato",
+      "category": "historical",
+      "summary": "Greek philosopher whose idea of the Good as perfect and unchanging contributed to the philosophical view of a remote God.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 2834.619,
+          "end": 2926.559
+        },
+        {
+          "episode": 10,
+          "start": 2880.0,
+          "end": 2970.159
+        }
+      ]
+    },
+    {
+      "id": "st-john-chrysostom",
+      "title": "St. John Chrysostom",
+      "category": "person",
+      "summary": "Archbishop of Constantinople who was falsely accused of Origenism at the Synod of the Oak, partly for allegedly denying that God has a body.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 3262.88,
+          "end": 3358.159
+        },
+        {
+          "episode": 10,
+          "start": 3352.48,
+          "end": 3444.44
+        }
+      ]
+    },
+    {
+      "id": "nestorius",
+      "title": "Nestorius",
+      "category": "person",
+      "summary": "Heretic who held that Christ had two separate persons, a view influenced by the philosophical idea that God is bodiless and cannot unite with humanity.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 3650.4,
+          "end": 3744.119
+        },
+        {
+          "episode": 10,
+          "start": 3678.44,
+          "end": 3771.36
+        }
+      ]
+    },
+    {
+      "id": "st-cyril-of-alexandria",
+      "title": "St. Cyril of Alexandria",
+      "category": "person",
+      "summary": "Church Father who defended the unity of Christ's person against Nestorianism, insisting on the hypostatic union.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 3800.92,
+          "end": 3897.199
+        },
+        {
+          "episode": 10,
+          "start": 3818.48,
+          "end": 3911.599
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "Apostle whose writings distinguish between body and flesh, and who preached to the philosophers at the Areopagus about the nearness of God.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 1244.24,
+          "end": 1339.39
+        },
+        {
+          "episode": 10,
+          "start": 6493.79,
+          "end": 6585.1
+        }
+      ]
+    },
+    {
+      "id": "yawheh",
+      "title": "Yahweh",
+      "category": "theological",
+      "summary": "The personal name of God in the Old Testament, understood as a title meaning 'He who causes to be', applicable to all three persons of the Trinity.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 5056.239,
+          "end": 5150.0
+        },
+        {
+          "episode": 10,
+          "start": 5096.819,
+          "end": 5187.0
+        }
+      ]
+    },
+    {
+      "id": "the-logos",
+      "title": "The Logos",
+      "category": "theological",
+      "summary": "The Word of God, identified as the second person of the Trinity, who appears in the Old Testament as the visible Yahweh interacting with humans.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 4883.68,
+          "end": 4979.92
+        },
+        {
+          "episode": 10,
+          "start": 5048.399,
+          "end": 5138.5
+        }
+      ]
+    },
+    {
+      "id": "the-temple",
+      "title": "The Temple",
+      "category": "theological",
+      "summary": "The place where God chose to dwell among Israel, serving as a localized body of God for worship and interaction.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 5817.92,
+          "end": 5909.72
+        },
+        {
+          "episode": 10,
+          "start": 5947.279,
+          "end": 6038.84
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "body-as-nexus-of-potentialities",
+      "title": "Body as Nexus of Potentialities",
+      "summary": "The ancient and biblical understanding of a body is not a physical object but a collection of powers, energies, or abilities. This concept is central to the episode's argument that God has a body in this sense.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 253.0,
+          "end": 345.5
+        },
+        {
+          "episode": 10,
+          "start": 1181.0,
+          "end": 1277.839
+        }
+      ]
+    },
+    {
+      "id": "theomorphic-vs-anthropomorphic",
+      "title": "Theomorphic vs Anthropomorphic",
+      "summary": "Humans are made in the image of God (theomorphic), not God in the image of humans (anthropomorphic). This reverses the common modern assumption that biblical language about God's body is metaphorical.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 710.44,
+          "end": 803.919
+        },
+        {
+          "episode": 10,
+          "start": 6465.159,
+          "end": 6557.0
+        }
+      ]
+    },
+    {
+      "id": "god-of-the-philosophers",
+      "title": "God of the Philosophers",
+      "summary": "The Greek philosophical concept of God as an unmoved mover, detached and bodiless, which contrasts with the biblical God who interacts with creation. This concept is traced to modern deism and secular materialism.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 2657.32,
+          "end": 2751.0
+        },
+        {
+          "episode": 10,
+          "start": 2979.0,
+          "end": 3072.84
+        }
+      ]
+    },
+    {
+      "id": "flesh-vs-body",
+      "title": "Flesh vs Body",
+      "summary": "In the New Testament, 'flesh' (sarx) is a subcategory of 'body' (soma), referring to a weakened, corruptible, and mortal type of body. This distinction is crucial for understanding St. Paul's writings.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 1236.759,
+          "end": 1330.64
+        },
+        {
+          "episode": 10,
+          "start": 1434.2,
+          "end": 1526.319
+        }
+      ]
+    },
+    {
+      "id": "garments-of-skin",
+      "title": "Garments of Skin",
+      "summary": "The 'garments of skin' given to Adam and Eve after the Fall represent a change in their bodies, making them fleshly, mortal, and corruptible. This is a key concept for understanding human nature and the incarnation.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 1502.519,
+          "end": 1595.39
+        },
+        {
+          "episode": 10,
+          "start": 1560.0,
+          "end": 1655.38
+        }
+      ]
+    },
+    {
+      "id": "idolatry-as-body-creation",
+      "title": "Idolatry as Body Creation",
+      "summary": "Ancient pagans believed their gods had multiple bodies, often localized in statues and temples. Idolatry was an attempt to create a body for a god to manipulate and control it, contrasting with Yahweh's choice of one place for worship.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 5520.0,
+          "end": 5615.0
+        },
+        {
+          "episode": 10,
+          "start": 5718.239,
+          "end": 5811.76
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "god-has-a-body",
+      "text": "God has a body in the ancient sense of a nexus of potentialities, meaning He has powers and energies to interact with creation.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 14.859,
+          "end": 105.359
+        },
+        {
+          "episode": 10,
+          "start": 268.0,
+          "end": 359.6
+        }
+      ]
+    },
+    {
+      "id": "humans-are-theomorphic",
+      "text": "Humans are theomorphic, made in the image of God, not God anthropomorphic. Our bodies are weaker versions of God's powers.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 710.44,
+          "end": 803.919
+        },
+        {
+          "episode": 10,
+          "start": 160.68,
+          "end": 252.0
+        }
+      ]
+    },
+    {
+      "id": "philosophers-god-is-not-biblical",
+      "text": "The God of the philosophers, an unmoved mover detached from creation, is not the God of the Bible, who is personal and interactive.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 2657.32,
+          "end": 2751.0
+        },
+        {
+          "episode": 10,
+          "start": 3119.39,
+          "end": 3210.79
+        }
+      ]
+    },
+    {
+      "id": "flesh-is-a-subcategory-of-body",
+      "text": "In the New Testament, flesh is a subcategory of body, referring to a weakened, mortal type of body, not synonymous with body.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 1434.2,
+          "end": 1526.319
+        },
+        {
+          "episode": 10,
+          "start": 1815.88,
+          "end": 1909.0
+        }
+      ]
+    },
+    {
+      "id": "garments-of-skin-alter-bodies",
+      "text": "The garments of skin given to Adam and Eve after the Fall represent a change in their bodies, making them fleshly and mortal.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 1502.519,
+          "end": 1595.39
+        },
+        {
+          "episode": 10,
+          "start": 1560.0,
+          "end": 1655.38
+        }
+      ]
+    },
+    {
+      "id": "idolatry-is-body-creation",
+      "text": "Idolatry is the attempt to create a body for a god to manipulate and control, contrasting with Yahweh's choice of one place for worship.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 5718.239,
+          "end": 5811.76
+        },
+        {
+          "episode": 10,
+          "start": 5776.159,
+          "end": 5866.319
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "gen-15-1",
+      "reference": "Genesis 15:1",
+      "summary": "The word of Yahweh came to Abraham in a vision, indicating a bodily appearance.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 4345.0,
+          "end": 4437.239
+        }
+      ]
+    },
+    {
+      "id": "1-sam-3-1-21",
+      "reference": "1 Samuel 3:1-21",
+      "summary": "Yahweh stood next to Samuel, showing a bodily presence.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 4410.0,
+          "end": 4500.6
+        }
+      ]
+    },
+    {
+      "id": "jer-1-4-9",
+      "reference": "Jeremiah 1:4-9",
+      "summary": "Yahweh stretched out His hand and touched Jeremiah's mouth, a physical action.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 4511.279,
+          "end": 4602.479
+        }
+      ]
+    },
+    {
+      "id": "gen-18-17-19",
+      "reference": "Genesis 18:17-19",
+      "summary": "Yahweh talks to Abraham face to face, and later Yahweh talks to Yahweh.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 4650.0,
+          "end": 4740.0
+        }
+      ]
+    },
+    {
+      "id": "gen-19-24",
+      "reference": "Genesis 19:24",
+      "summary": "Yahweh on earth rains fire from Yahweh in heaven, indicating two persons.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 4705.84,
+          "end": 4799.0
+        }
+      ]
+    },
+    {
+      "id": "exo-33-11-20",
+      "reference": "Exodus 33:11-20",
+      "summary": "Moses speaks to God face to face, yet God says no one can see His face and live, indicating different persons.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 4773.699,
+          "end": 4864.479
+        }
+      ]
+    },
+    {
+      "id": "john-1-18",
+      "reference": "John 1:18",
+      "summary": "No one has seen God, but the unique God in the bosom of the Father has made Him known, identifying the visible Yahweh as the Son.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 4835.739,
+          "end": 4929.0
+        }
+      ]
+    },
+    {
+      "id": "acts-17-27-28",
+      "reference": "Acts 17:27-28",
+      "summary": "Paul tells the philosophers that God is not far from each one of us, for in Him we live and move and have our being.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 6579.699,
+          "end": 6672.399
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "nexus-of-potentialities",
+      "term": "Nexus of Potentialities",
+      "definition": "A phrase used to describe the ancient understanding of a body as a collection of powers, energies, or abilities, rather than a physical object.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 253.0,
+          "end": 345.5
+        }
+      ]
+    },
+    {
+      "id": "theomorphic",
+      "term": "Theomorphic",
+      "definition": "Having the form or likeness of God; humans are theomorphic, made in God's image.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 710.44,
+          "end": 803.919
+        }
+      ]
+    },
+    {
+      "id": "anthropomorphism",
+      "term": "Anthropomorphism",
+      "definition": "Attributing human form or characteristics to God; the episode argues this is backwards, as humans are theomorphic.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 674.879,
+          "end": 771.279
+        }
+      ]
+    },
+    {
+      "id": "soma",
+      "term": "Soma",
+      "definition": "Greek word for body, meaning the nexus of potentialities or collection of powers.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 1249.92,
+          "end": 1345.599
+        }
+      ]
+    },
+    {
+      "id": "sarx",
+      "term": "Sarx",
+      "definition": "Greek word for flesh, a subcategory of body that is weakened, corruptible, and mortal.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 1249.92,
+          "end": 1345.599
+        }
+      ]
+    },
+    {
+      "id": "garments-of-skin",
+      "term": "Garments of Skin",
+      "definition": "The clothing God gave Adam and Eve after the Fall, representing a change to fleshly, mortal bodies.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 1502.519,
+          "end": 1595.39
+        }
+      ]
+    },
+    {
+      "id": "unmoved-mover",
+      "term": "Unmoved Mover",
+      "definition": "Aristotle's concept of God as a perfect, unchanging being that moves others by being an object of desire, but is itself unmoved.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 2174.159,
+          "end": 2264.659
+        }
+      ]
+    },
+    {
+      "id": "demiurge",
+      "term": "Demiurge",
+      "definition": "In Plato's philosophy, a lesser divine being who creates the world by looking at the Forms; later used in Gnosticism as a creator god.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 2880.0,
+          "end": 2970.159
+        }
+      ]
+    },
+    {
+      "id": "origenism",
+      "term": "Origenism",
+      "definition": "A set of teachings attributed to Origen, often including the idea that God is bodiless and that resurrected bodies are spherical.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 3311.599,
+          "end": 3406.239
+        }
+      ]
+    },
+    {
+      "id": "anthropomorphites",
+      "term": "Anthropomorphites",
+      "definition": "A group of monks who believed God has a body in a literal, physical sense, opposing the Origenist view.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 3365.82,
+          "end": 3456.0
+        }
+      ]
+    },
+    {
+      "id": "lordly-man",
+      "term": "Lordly Man",
+      "definition": "A term used by St. Mark the Ascetic to describe the pre-incarnate Christ's body, meaning He had a body in the ancient sense.",
+      "segments": [
+        {
+          "episode": 10,
+          "start": 3715.0,
+          "end": 3806.86
+        },
+        {
+          "episode": 10,
+          "start": 3846.159,
+          "end": 3938.36
+        }
+      ]
+    }
+  ]
+}

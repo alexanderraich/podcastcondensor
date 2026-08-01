@@ -1,0 +1,325 @@
+{
+  "summary": "In this episode, the hosts conclude a four-part series on Old Testament Christology by examining various theophanies where God appears in human form. They analyze Daniel 10's 'heavenly man,' Ezekiel 1's throne vision with cherubim and zodiac imagery, and Exodus 24's covenant ratification meal. Key themes include the identity of the pre-incarnate Christ, the inversion of judgment into salvation through the incarnation, and the soteriological purpose of divine appearances. The episode also connects these Old Testament passages to New Testament events, such as the Eucharist and Christ's resurrection appearances, emphasizing that God's self-revelation is always for human salvation.",
+  "entities": [
+    {
+      "id": "daniel",
+      "title": "Daniel",
+      "category": "person",
+      "summary": "Prophet in Babylonian exile who receives visions of the heavenly man and angelic beings.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 159.28,
+          "end": 250.0
+        },
+        {
+          "episode": 33,
+          "start": 599.0,
+          "end": 690.84
+        }
+      ]
+    },
+    {
+      "id": "ezekiel",
+      "title": "Ezekiel",
+      "category": "person",
+      "summary": "Exilic prophet who sees the throne-chariot vision with cherubim and the likeness of a man.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 3245.0,
+          "end": 3556.159
+        }
+      ]
+    },
+    {
+      "id": "abraham",
+      "title": "Abraham",
+      "category": "person",
+      "summary": "Patriarch who hosts Yahweh and two angels at Mamre, eating with them and interceding for Sodom.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 6649.39,
+          "end": 6779.6
+        },
+        {
+          "episode": 33,
+          "start": 7716.88,
+          "end": 7823.92
+        }
+      ]
+    },
+    {
+      "id": "michael",
+      "title": "Michael",
+      "category": "person",
+      "summary": "Archangel, chief prince who helps the heavenly man in battle against the Prince of Persia.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 782.639,
+          "end": 876.24
+        },
+        {
+          "episode": 33,
+          "start": 1904.119,
+          "end": 1994.799
+        }
+      ]
+    },
+    {
+      "id": "prince-of-persia",
+      "title": "Prince of Persia",
+      "category": "theological",
+      "summary": "A fallen angelic ruler over Persia, opposed by the heavenly man and Michael.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 782.639,
+          "end": 876.24
+        },
+        {
+          "episode": 33,
+          "start": 2322.79,
+          "end": 2413.739
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "heavenly-man",
+      "title": "Heavenly Man",
+      "summary": "The pre-incarnate Christ appearing in human form in Old Testament theophanies, such as Daniel 10 and Ezekiel 1, often described with divine attributes like lightning and bronze.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 47.48,
+          "end": 137.879
+        },
+        {
+          "episode": 33,
+          "start": 599.0,
+          "end": 690.84
+        },
+        {
+          "episode": 33,
+          "start": 1080.0,
+          "end": 1170.119
+        }
+      ]
+    },
+    {
+      "id": "cherubim-zodiac",
+      "title": "Cherubim Zodiac",
+      "summary": "The four living creatures in Ezekiel 1 represent the four cardinal zodiac signs (man, lion, ox, eagle), connecting angelic beings to constellations and the cosmic scope of God's throne.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 3698.0,
+          "end": 3888.159
+        }
+      ]
+    },
+    {
+      "id": "covenant-ratification",
+      "title": "Covenant Ratification",
+      "summary": "The ceremony in Exodus 24 involving blood sprinkling and a meal with God, which prefigures the Eucharist and the new covenant in Christ's blood.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 4937.199,
+          "end": 5108.8
+        },
+        {
+          "episode": 33,
+          "start": 5458.56,
+          "end": 5607.84
+        }
+      ]
+    },
+    {
+      "id": "soteriological-motive",
+      "title": "Soteriological Motive",
+      "summary": "The principle that all divine appearances and actions are for the purpose of human salvation, not mere display.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 8406.559,
+          "end": 8501.44
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-pre-incarnate-christ",
+      "text": "The 'heavenly man' in Daniel 10 and other Old Testament theophanies is the pre-incarnate Christ, the second person of the Trinity, appearing in human form.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 480.0,
+          "end": 572.0
+        },
+        {
+          "episode": 33,
+          "start": 6294.479,
+          "end": 6353.92
+        }
+      ]
+    },
+    {
+      "id": "claim-eucharist-covenant",
+      "text": "The Eucharist is rooted in the covenant ratification ceremony of Exodus 24, where blood and a meal establish fellowship with God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 5599.92,
+          "end": 5695.0
+        },
+        {
+          "episode": 33,
+          "start": 5817.68,
+          "end": 5908.399
+        }
+      ]
+    },
+    {
+      "id": "claim-christ-inverts-judgment",
+      "text": "Christ's incarnation inverts the pattern of divine judgment seen in Genesis 18-19; he comes not to condemn but to save.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 7915.2,
+          "end": 8005.239
+        }
+      ]
+    },
+    {
+      "id": "claim-god-appears-for-salvation",
+      "text": "Every appearance of God in Scripture is motivated by His desire to save humanity, not merely to display power.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 8406.559,
+          "end": 8501.44
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "daniel-10",
+      "reference": "Daniel 10:1-21",
+      "summary": "Vision of the heavenly man with description similar to Revelation 1; identifies Christ battling the Prince of Persia.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 159.28,
+          "end": 250.0
+        },
+        {
+          "episode": 33,
+          "start": 599.0,
+          "end": 690.84
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-1",
+      "reference": "Ezekiel 1:1-28",
+      "summary": "Throne-chariot vision with cherubim, wheels, and a human-like figure on the throne, identified as Christ.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 3245.0,
+          "end": 3556.159
+        }
+      ]
+    },
+    {
+      "id": "exodus-24",
+      "reference": "Exodus 24:1-18",
+      "summary": "Covenant ratification with blood and a meal; elders see God and eat, prefiguring the Eucharist.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 4740.0,
+          "end": 4909.92
+        }
+      ]
+    },
+    {
+      "id": "genesis-18",
+      "reference": "Genesis 18:1-33",
+      "summary": "Yahweh appears as a man with two angels, eats with Abraham, and discusses judgment on Sodom.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 6649.39,
+          "end": 6779.6
+        },
+        {
+          "episode": 33,
+          "start": 7716.88,
+          "end": 7823.92
+        }
+      ]
+    },
+    {
+      "id": "revelation-1",
+      "reference": "Revelation 1:12-15",
+      "summary": "John's vision of the Son of Man, similar to Daniel 10, confirming the identity of the heavenly man as Christ.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 1568.279,
+          "end": 1665.359
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "kyriakos-anthropos",
+      "term": "Kyriakos Anthropos",
+      "definition": "Greek term meaning 'Lordly Man,' used by St. Mark the Ascetic to describe the pre-incarnate Christ in human form.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 354.16,
+          "end": 445.56
+        }
+      ]
+    },
+    {
+      "id": "merkevah",
+      "term": "Merkavah",
+      "definition": "Hebrew for 'chariot,' referring to the throne-chariot vision of God in Ezekiel 1 and related mystical traditions.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 3599.38,
+          "end": 3689.8
+        }
+      ]
+    },
+    {
+      "id": "sacramentum",
+      "term": "Sacramentum",
+      "definition": "Latin term for a sacred oath, used by Zwingli to emphasize the oath-taking aspect of the Eucharist.",
+      "segments": [
+        {
+          "episode": 33,
+          "start": 5687.0,
+          "end": 5779.279
+        }
+      ]
+    }
+  ]
+}

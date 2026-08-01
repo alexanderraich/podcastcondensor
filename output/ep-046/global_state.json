@@ -1,0 +1,332 @@
+{
+  "summary": "In this episode, the hosts begin a three-part series on the fall of man, focusing on death as the first element. They explore the creation of the invisible creation (angels), the fall of the devil, and the expulsion from Paradise, emphasizing that death is not a punishment but a compassionate gift from God to prevent humanity from becoming immortal in a fallen state. They discuss the garments of skin as a symbol of humanity's new mortal, animal-like nature, and the distinction between physical and spiritual death. The episode concludes with reflections on mortality as a tool for repentance and theosis, urging listeners to aim for union with Christ.",
+  "entities": [
+    {
+      "id": "adam-and-eve",
+      "title": "Adam and Eve",
+      "category": "person",
+      "summary": "The first humans, whose disobedience led to the fall, expulsion from Paradise, and the introduction of death into the world.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 4191.76,
+          "end": 4284.96
+        },
+        {
+          "episode": 46,
+          "start": 5021.76,
+          "end": 5129.6
+        }
+      ]
+    },
+    {
+      "id": "satan",
+      "title": "Satan",
+      "category": "theological",
+      "summary": "The devil, a fallen angel who tempts humanity and is cast down, representing the enemy of God and humanity.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 2185.239,
+          "end": 2279.239
+        },
+        {
+          "episode": 46,
+          "start": 2223.239,
+          "end": 2388.519
+        }
+      ]
+    },
+    {
+      "id": "st-andrew-of-caesarea",
+      "title": "St. Andrew of Caesarea",
+      "category": "person",
+      "summary": "A Church Father whose commentary on Revelation is cited to support the timing of the devil's fall after creation.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 2185.239,
+          "end": 2279.239
+        }
+      ]
+    },
+    {
+      "id": "st-john-of-damascus",
+      "title": "St. John of Damascus",
+      "category": "person",
+      "summary": "A Church Father whose distinction between physical and spiritual death is discussed in detail.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 4558.64,
+          "end": 4649.939
+        }
+      ]
+    },
+    {
+      "id": "genesis",
+      "title": "Genesis",
+      "category": "scripture",
+      "summary": "The first book of the Bible, which contains the creation narrative and the story of the fall.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 478.519,
+          "end": 570.0
+        },
+        {
+          "episode": 46,
+          "start": 4191.76,
+          "end": 4284.96
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "death-as-gift",
+      "title": "Death as a Gift",
+      "summary": "Death is not a punishment from God but a compassionate act to prevent humanity from living forever in a fallen, sinful state. It allows for repentance and the possibility of change.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 9158.719,
+          "end": 9267.4
+        },
+        {
+          "episode": 46,
+          "start": 9270.0,
+          "end": 9360.0
+        }
+      ]
+    },
+    {
+      "id": "garments-of-skin",
+      "title": "Garments of Skin",
+      "summary": "The garments of skin symbolize the change in human nature after the fall, becoming mortal and animal-like, subject to passions and death.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 5854.8,
+          "end": 5947.439
+        },
+        {
+          "episode": 46,
+          "start": 5910.0,
+          "end": 6004.239
+        }
+      ]
+    },
+    {
+      "id": "spiritual-vs-physical-death",
+      "title": "Spiritual vs. Physical Death",
+      "summary": "Spiritual death is the separation of the soul from God, which is the real death, while physical death is the consequence and image of that spiritual death.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 4558.64,
+          "end": 4649.939
+        },
+        {
+          "episode": 46,
+          "start": 5021.76,
+          "end": 5129.6
+        }
+      ]
+    },
+    {
+      "id": "theosis-and-human-destiny",
+      "title": "Theosis and Human Destiny",
+      "summary": "Humanity's ultimate purpose is union with God (theosis), a journey that was interrupted by the fall but is restored in Christ. Mortality provides the opportunity for repentance and growth.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 8264.79,
+          "end": 8358.799
+        },
+        {
+          "episode": 46,
+          "start": 8409.459,
+          "end": 8499.879
+        }
+      ]
+    },
+    {
+      "id": "fall-of-the-devil",
+      "title": "Fall of the Devil",
+      "summary": "The devil's fall is not a pre-creation event but occurs in Genesis 3, when he is cast down due to pride and envy of humanity's destiny. This is supported by St. Andrew of Caesarea and Old Testament passages.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 2185.239,
+          "end": 2279.239
+        },
+        {
+          "episode": 46,
+          "start": 2223.239,
+          "end": 2388.519
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "death-is-not-punishment",
+      "text": "Death is not a punishment from God but a compassionate act to prevent humanity from living forever in a fallen state, allowing for repentance.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 9158.719,
+          "end": 9267.4
+        }
+      ]
+    },
+    {
+      "id": "devil-fell-in-genesis-3",
+      "text": "The devil's fall occurred in Genesis 3, not before creation, as supported by St. Andrew of Caesarea and Old Testament passages.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 2185.239,
+          "end": 2279.239
+        },
+        {
+          "episode": 46,
+          "start": 2223.239,
+          "end": 2388.519
+        }
+      ]
+    },
+    {
+      "id": "spiritual-death-is-real-death",
+      "text": "Spiritual death, the separation of the soul from God, is the real death, while physical death is a consequence and image of it.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 5021.76,
+          "end": 5129.6
+        }
+      ]
+    },
+    {
+      "id": "mortality-enables-repentance",
+      "text": "Mortality and mutability are tools given by God that make repentance and change possible, leading to theosis.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 8409.459,
+          "end": 8499.879
+        },
+        {
+          "episode": 46,
+          "start": 9270.0,
+          "end": 9360.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-3-21",
+      "reference": "Genesis 3:21",
+      "summary": "The garments of skin are discussed as symbolizing the change in human nature to mortality.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 5854.8,
+          "end": 5947.439
+        }
+      ]
+    },
+    {
+      "id": "genesis-2-17",
+      "reference": "Genesis 2:17",
+      "summary": "The command not to eat from the tree of knowledge, with the warning of death, is discussed in relation to spiritual and physical death.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 4558.64,
+          "end": 4649.939
+        }
+      ]
+    },
+    {
+      "id": "revelation-12-7-9",
+      "reference": "Revelation 12:7-9",
+      "summary": "The casting out of the dragon is interpreted as the fall of the devil, connected to Genesis 3.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 2185.239,
+          "end": 2279.239
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-28-13-17",
+      "reference": "Ezekiel 28:13-17",
+      "summary": "The description of the king of Tyre as a guardian cherub in Eden is used to support the devil's presence in Paradise.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 2298.639,
+          "end": 2395.719
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God, participating in His divine life, and the ultimate destiny of humanity.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 8264.79,
+          "end": 8358.799
+        }
+      ]
+    },
+    {
+      "id": "passions",
+      "term": "Passions",
+      "definition": "Strong emotions or desires that can lead to sin, including both blameless (e.g., hunger) and blameworthy (e.g., greed) passions.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 8130.0,
+          "end": 8279.959
+        }
+      ]
+    },
+    {
+      "id": "garments-of-skin",
+      "term": "Garments of Skin",
+      "definition": "A symbol of the mortal, animal-like nature humanity received after the fall, representing the change in human existence.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 5854.8,
+          "end": 5947.439
+        }
+      ]
+    },
+    {
+      "id": "spiritual-death",
+      "term": "Spiritual Death",
+      "definition": "The separation of the soul from God, which is the real death and leads to physical death.",
+      "segments": [
+        {
+          "episode": 46,
+          "start": 4558.64,
+          "end": 4649.939
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,369 @@
+{
+  "summary": "In this episode, the hosts explore the Ascension of Christ as the culmination of His enthronement, drawing parallels with ancient Near Eastern temple practices and mythology. They begin by discussing petrosomatic glyphs—footprints carved in stone found outside temples—which trace the path of a deity's victory and enthronement. This leads to an examination of the succession myth and chaoskampf in pagan religions, contrasting these with the biblical narrative where God creates without struggle and Christ's ascension fulfills the vision of Daniel. The episode also addresses listener questions on topics such as Mary Magdalene's encounter with the risen Christ, the theology of the body, and the nature of ritual participation. The hosts emphasize that the Ascension is not merely a historical event but a present reality in which believers participate through worship and the sacraments, ultimately sharing in Christ's reign.",
+  "entities": [
+    {
+      "id": "ain-dara",
+      "title": "Ain Dara",
+      "category": "place",
+      "summary": "An ancient archaeological site in Syria with a temple to Baal, featuring large carved footprints at the entrance.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 356.1,
+          "end": 448.839
+        },
+        {
+          "episode": 20,
+          "start": 510.0,
+          "end": 600.24
+        }
+      ]
+    },
+    {
+      "id": "baal",
+      "title": "Baal",
+      "category": "theological",
+      "summary": "A Canaanite storm god, often depicted as riding clouds, whose mythology includes victory over chaos and enthronement.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 570.0,
+          "end": 660.0
+        },
+        {
+          "episode": 20,
+          "start": 6576.0,
+          "end": 6672.8
+        }
+      ]
+    },
+    {
+      "id": "daniel",
+      "title": "Daniel",
+      "category": "person",
+      "summary": "Old Testament prophet who saw a vision of the Son of Man being presented to the Ancient of Days, a key ascension text.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 6108.439,
+          "end": 6198.439
+        },
+        {
+          "episode": 20,
+          "start": 6147.119,
+          "end": 6264.22
+        }
+      ]
+    },
+    {
+      "id": "zeus",
+      "title": "Zeus",
+      "category": "theological",
+      "summary": "Greek god whose altar at Pergamon was called the 'throne of Satan' by St. John, representing the false enthronement of demons.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 1680.0,
+          "end": 1770.0
+        }
+      ]
+    },
+    {
+      "id": "pergamon",
+      "title": "Pergamon",
+      "category": "place",
+      "summary": "Ancient city with a massive altar to Zeus, which St. John referred to as the throne of Satan in Revelation.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 1680.0,
+          "end": 1770.0
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "title": "Theotokos",
+      "category": "person",
+      "summary": "The Virgin Mary, whose body was the means by which the invisible God became visible in Christ.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 3173.0,
+          "end": 3270.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "petrosomatic-glyph",
+      "title": "Petrosomatic Glyph",
+      "summary": "Footprints or other shapes carved into rock, often found at temple entrances, tracing the path of a deity's victory and enthronement.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 332.62,
+          "end": 423.36
+        },
+        {
+          "episode": 20,
+          "start": 756.0,
+          "end": 851.2
+        },
+        {
+          "episode": 20,
+          "start": 2259.4,
+          "end": 2299.88
+        }
+      ]
+    },
+    {
+      "id": "succession-myth",
+      "title": "Succession Myth",
+      "summary": "A mythological pattern where a younger god overthrows the older high god to take the throne, often involving violence and rivalry.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 1198.48,
+          "end": 1289.88
+        },
+        {
+          "episode": 20,
+          "start": 3540.0,
+          "end": 3632.0
+        }
+      ]
+    },
+    {
+      "id": "chaoskampf",
+      "title": "Chaoskampf",
+      "summary": "The struggle of a god against a chaos monster, often resulting in creation or the establishment of order.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 1310.759,
+          "end": 1401.0
+        },
+        {
+          "episode": 20,
+          "start": 3420.0,
+          "end": 3517.0
+        }
+      ]
+    },
+    {
+      "id": "enthronement",
+      "title": "Enthronement",
+      "summary": "The act of a deity or king taking their seat on a throne, symbolizing victory, authority, and the establishment of rule.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 1074.0,
+          "end": 1164.79
+        },
+        {
+          "episode": 20,
+          "start": 1602.68,
+          "end": 1695.539
+        },
+        {
+          "episode": 20,
+          "start": 7156.8,
+          "end": 7249.68
+        }
+      ]
+    },
+    {
+      "id": "sabbath-rest",
+      "title": "Sabbath Rest",
+      "summary": "The concept of God's rest after creation, understood not as a break but as entering into His rule and enthronement, which believers are invited to share.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 930.0,
+          "end": 1020.0
+        },
+        {
+          "episode": 20,
+          "start": 7944.659,
+          "end": 8038.72
+        }
+      ]
+    },
+    {
+      "id": "recapitulation",
+      "title": "Recapitulation",
+      "summary": "The theological idea, associated with St. Irenaeus, that Christ sums up and renews all of creation, reversing Adam's failure.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 4653.56,
+          "end": 4745.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "ascension-fulfills-daniel",
+      "text": "The Ascension of Christ fulfills the vision of Daniel 7, where the Son of Man receives dominion from the Ancient of Days, and believers share in that reign.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 7091.92,
+          "end": 7186.72
+        }
+      ]
+    },
+    {
+      "id": "sabbath-is-enthronement",
+      "text": "The Sabbath made for man is not a day of rest but an invitation to enter into God's rest, which is participation in His enthronement and rule.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 7944.659,
+          "end": 8038.72
+        }
+      ]
+    },
+    {
+      "id": "pagan-rituals-inverted",
+      "text": "Pagan temple rituals reenact the victory and enthronement of their gods, but the true story is inverted in Scripture: God creates and gives, not needs.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 4050.0,
+          "end": 4141.39
+        }
+      ]
+    },
+    {
+      "id": "christ-wounds-eternal",
+      "text": "Christ's wounds remain after the resurrection because His sacrifice is an eternal reality, not just a past event, and He continually offers His blood in the heavenly sanctuary.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 5300.199,
+          "end": 5486.399
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "daniel-7-9-27",
+      "reference": "Daniel 7:9-27",
+      "summary": "Vision of the Ancient of Days and the Son of Man receiving dominion, used to interpret the Ascension.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 6147.119,
+          "end": 6264.22
+        }
+      ]
+    },
+    {
+      "id": "psalm-110-1",
+      "reference": "Psalm 110:1",
+      "summary": "The Lord said to my Lord, 'Sit at my right hand,' the most quoted Old Testament text in the New Testament, referring to Christ's enthronement.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 7460.0,
+          "end": 7553.199
+        }
+      ]
+    },
+    {
+      "id": "matthew-28-18-20",
+      "reference": "Matthew 28:18-20",
+      "summary": "Jesus claims all authority in heaven and on earth before ascending, connecting to Daniel's vision.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 7108.319,
+          "end": 7200.0
+        }
+      ]
+    },
+    {
+      "id": "acts-1-6-11",
+      "reference": "Acts 1:6-11",
+      "summary": "The Ascension account where Jesus is taken up in a cloud, echoing Daniel's cloud-riding Son of Man.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 7237.6,
+          "end": 7330.479
+        }
+      ]
+    },
+    {
+      "id": "revelation-20-4-6",
+      "reference": "Revelation 20:4-6",
+      "summary": "Saints reign with Christ for a thousand years, participating in the first resurrection and enthronement.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 7540.79,
+          "end": 7634.96
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "petrosomatic-glyph",
+      "term": "Petrosomatic Glyph",
+      "definition": "A footprint or other shape carved into rock, often found at temple entrances, symbolizing a deity's path to enthronement.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 332.62,
+          "end": 423.36
+        }
+      ]
+    },
+    {
+      "id": "chaoskampf",
+      "term": "Chaoskampf",
+      "definition": "The struggle of a god against a chaos monster, a common motif in ancient Near Eastern mythology.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 1310.759,
+          "end": 1401.0
+        }
+      ]
+    },
+    {
+      "id": "succession-myth",
+      "term": "Succession Myth",
+      "definition": "A mythological pattern where a younger god overthrows the older high god to take the throne.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 1198.48,
+          "end": 1289.88
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God, participating in His divine life, often described as co-enthronement with Christ.",
+      "segments": [
+        {
+          "episode": 20,
+          "start": 3942.4,
+          "end": 4032.4
+        }
+      ]
+    }
+  ]
+}

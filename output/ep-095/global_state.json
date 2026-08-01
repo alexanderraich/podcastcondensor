@@ -1,0 +1,697 @@
+{
+  "summary": "In this episode, the hosts explore the broad category of magic in the ancient world, distinguishing it from modern stage magic and framing it as a set of para-religious techniques for interacting with spiritual beings. They survey various types of magic, including wonder-working, demonology, divination, astrology, alchemy, and the creation of amulets and curse tablets, emphasizing that these practices were common and institutionalized in ancient societies. The discussion then moves to biblical prohibitions, particularly in Deuteronomy 18, and the New Testament's treatment of magic, including the accusations against Jesus and the story of Simon Magus. The hosts also address the persistence of magical practices in Christian history, from folk magic to modern esoteric traditions, and conclude with a critique of contemporary 'magical thinking' in both secular and religious contexts, advocating for repentance and contentment as the true Christian alternatives.",
+  "entities": [
+    {
+      "id": "simon-magus",
+      "title": "Simon Magus",
+      "category": "person",
+      "summary": "A Samaritan magician who appears in Acts 8, offering money to the apostles for the power of the Holy Spirit. He was a cult leader with a Gnostic-like theology, claiming to be God and his consort Helen was the first thought of God.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 5910.0,
+          "end": 6173.439
+        },
+        {
+          "episode": 95,
+          "start": 6158.359,
+          "end": 6629.439
+        }
+      ]
+    },
+    {
+      "id": "sofronius-of-tella",
+      "title": "Sofronius of Tella",
+      "category": "person",
+      "summary": "A 5th-century bishop who used the 'cheese sandwich oracle' and a divining cup to identify a thief, as reported at the Robber Council of 449. His story illustrates the persistence of magical practices among Christians.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 9242.399,
+          "end": 9632.899
+        }
+      ]
+    },
+    {
+      "id": "witch-of-endor",
+      "title": "Witch of Endor",
+      "category": "person",
+      "summary": "A medium consulted by King Saul to summon the prophet Samuel's spirit. The story is found in 1 Samuel 28 and is a biblical example of necromancy.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 4876.96,
+          "end": 5203.399
+        }
+      ]
+    },
+    {
+      "id": "manasseh",
+      "title": "Manasseh",
+      "category": "person",
+      "summary": "King of Judah who practiced idolatry, sorcery, and necromancy before repenting. His story is in 2 Chronicles 33.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 5202.399,
+          "end": 5325.319
+        }
+      ]
+    },
+    {
+      "id": "apollonius-of-tyana",
+      "title": "Apollonius of Tyana",
+      "category": "person",
+      "summary": "A contemporary of Jesus who was reputed to work miracles. Skeptics often cite him to challenge Christian uniqueness, but the hosts note that miracles alone do not prove divine origin.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 1099.79,
+          "end": 1192.599
+        }
+      ]
+    },
+    {
+      "id": "carl-jung",
+      "title": "Carl Jung",
+      "category": "person",
+      "summary": "Psychologist who studied Hermeticism, alchemy, and Gnostic texts, and collected the Jung Codex. He took these traditions in a psychological direction but also had a cult-like personal life.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 9893.92,
+          "end": 9989.92
+        }
+      ]
+    },
+    {
+      "id": "kenneth-copeland",
+      "title": "Kenneth Copeland",
+      "category": "person",
+      "summary": "A prosperity gospel preacher whom the hosts explicitly label as not a Christian, accusing him of preaching magic rather than repentance.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 10153.0,
+          "end": 10256.719
+        },
+        {
+          "episode": 95,
+          "start": 10254.959,
+          "end": 10400.239
+        }
+      ]
+    },
+    {
+      "id": "benny-hinn",
+      "title": "Benny Hinn",
+      "category": "person",
+      "summary": "A faith healer and prosperity preacher, also labeled as not a Christian by the hosts, with a direct connection to new thought movements.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 10211.4,
+          "end": 10305.84
+        },
+        {
+          "episode": 95,
+          "start": 10254.959,
+          "end": 10400.239
+        }
+      ]
+    },
+    {
+      "id": "oprah-winfrey",
+      "title": "Oprah Winfrey",
+      "category": "person",
+      "summary": "Media personality associated with 'The Secret' and 'A Course in Miracles,' which the hosts critique as magical thinking with a veneer of Christianity.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 10418.7,
+          "end": 10571.28
+        }
+      ]
+    },
+    {
+      "id": "urim-and-thummim",
+      "title": "Urim and Thummim",
+      "category": "theological",
+      "summary": "Objects used by the high priest in ancient Israel to determine God's will, often seen as a form of divination but actually an accommodation to human weakness, distinct from pagan practices.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 3600.0,
+          "end": 3869.96
+        }
+      ]
+    },
+    {
+      "id": "medusa",
+      "title": "Medusa",
+      "category": "mythological",
+      "summary": "A figure from Greek mythology whose face was used on amulets and shields to ward off evil, based on the idea that the image of misfortune repels misfortune.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 2660.4,
+          "end": 2751.39
+        }
+      ]
+    },
+    {
+      "id": "delphic-oracle",
+      "title": "Delphic Oracle",
+      "category": "place",
+      "summary": "An oracle at Delphi where Apollo was believed to possess a person and speak through them, often giving ambiguous prophecies.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 1705.799,
+          "end": 1797.519
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "magic-as-technique",
+      "title": "Magic as Technique",
+      "summary": "Magic in the ancient world is understood as a set of techniques for manipulating spiritual beings, distinct from the role of a priest. It is accessible to anyone who learns the procedures, and it often involves ritual and material elements.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 533.159,
+          "end": 624.919
+        },
+        {
+          "episode": 95,
+          "start": 597.759,
+          "end": 688.0
+        },
+        {
+          "episode": 95,
+          "start": 782.759,
+          "end": 873.39
+        }
+      ]
+    },
+    {
+      "id": "divination",
+      "title": "Divination",
+      "summary": "Divination is the practice of gaining knowledge (past, present, or future) through spiritual means. It includes augury (reading omens), extispicy (reading entrails), and oracles, and was widespread in the ancient world.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 1340.4,
+          "end": 1431.79
+        },
+        {
+          "episode": 95,
+          "start": 1470.0,
+          "end": 1567.0
+        },
+        {
+          "episode": 95,
+          "start": 1539.0,
+          "end": 1678.44
+        }
+      ]
+    },
+    {
+      "id": "astrology",
+      "title": "Astrology",
+      "summary": "Astrology in the ancient world was based on the belief that celestial bodies are divine or angelic beings that influence earthly events. Pagan astrology assumed fatalism, while Jewish astrology saw the stars as God's messengers.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 1795.319,
+          "end": 1940.99
+        },
+        {
+          "episode": 95,
+          "start": 1976.16,
+          "end": 2208.559
+        }
+      ]
+    },
+    {
+      "id": "alchemy",
+      "title": "Alchemy",
+      "summary": "Alchemy is the production of objects or substances (like the philosopher's stone or potions) that are believed to manipulate spiritual forces. It is not primitive chemistry but a distinct magical practice.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 2219.39,
+          "end": 2309.88
+        },
+        {
+          "episode": 95,
+          "start": 2460.0,
+          "end": 2639.92
+        }
+      ]
+    },
+    {
+      "id": "amulets",
+      "title": "Amulets",
+      "summary": "Amulets were the most common magical objects in the ancient world, worn to ward off evil spirits or attract protection. They included pendants, rings, and talismans, often featuring images like the Medusa face.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 2610.0,
+          "end": 2704.239
+        },
+        {
+          "episode": 95,
+          "start": 2706.719,
+          "end": 2801.159
+        }
+      ]
+    },
+    {
+      "id": "execration-bowls",
+      "title": "Execration Bowls",
+      "summary": "Execration bowls were clay bowls inscribed with curses and the name of a target, then smashed to symbolize the curse. They were a form of magical cursing in the ancient world.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 2803.199,
+          "end": 2916.28
+        }
+      ]
+    },
+    {
+      "id": "official-vs-unofficial-practitioners",
+      "title": "Official vs. Unofficial Practitioners",
+      "summary": "Magical practitioners could be official (attached to courts or institutions) or unofficial (itinerant or local folk practitioners). This distinction is based on social position, not licensing.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 2919.48,
+          "end": 3020.199
+        },
+        {
+          "episode": 95,
+          "start": 3132.0,
+          "end": 3274.639
+        }
+      ]
+    },
+    {
+      "id": "prophecy-vs-divination",
+      "title": "Prophecy vs. Divination",
+      "summary": "In Deuteronomy 18, God forbids divination and instead promises a prophet like Moses. Prophecy is a direct relationship with God, while divination is manipulative and forbidden.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 4440.0,
+          "end": 4583.239
+        }
+      ]
+    },
+    {
+      "id": "magical-thinking-in-church",
+      "title": "Magical Thinking in the Church",
+      "summary": "The hosts warn against a mechanistic or formulaic understanding of sacraments and piety, which they label as 'magical thinking.' True Christian life is about repentance and relationship, not techniques.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 11051.2,
+          "end": 11225.6
+        }
+      ]
+    },
+    {
+      "id": "contentment-as-anti-magic",
+      "title": "Contentment as Anti-Magic",
+      "summary": "Father Stephen concludes that contentment—being at peace with unmet desires—is the antidote to magical thinking, which seeks to control outcomes. Contentment is a superpower that frees us from the futile quest to fulfill every desire.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 11602.34,
+          "end": 11871.639
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "magic-is-technique-not-role",
+      "text": "Magic in the ancient world is a set of techniques for manipulating spirits, not a social role like the priesthood. Anyone who learns the techniques can practice them.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 533.159,
+          "end": 624.919
+        },
+        {
+          "episode": 95,
+          "start": 597.759,
+          "end": 688.0
+        }
+      ]
+    },
+    {
+      "id": "bible-forbids-magic-because-it-works",
+      "text": "God forbids magic not because it is fake, but because it works and leads to communion with demons. The Bible assumes the reality of magical practices.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 4197.159,
+          "end": 4287.6
+        }
+      ]
+    },
+    {
+      "id": "prophecy-replaces-divination",
+      "text": "In Deuteronomy 18, God promises a prophet like Moses as the legitimate alternative to divination. Prophecy is a direct relationship with God, while divination is manipulative.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 4440.0,
+          "end": 4583.239
+        }
+      ]
+    },
+    {
+      "id": "jesus-accused-of-sorcery",
+      "text": "Jesus' opponents did not deny his miracles; they accused him of using demonic power (Beelzebul). This shows that miracles alone do not prove divine origin.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 5422.399,
+          "end": 5574.479
+        }
+      ]
+    },
+    {
+      "id": "simon-magus-offered-money",
+      "text": "Simon Magus offered money to the apostles to buy the power of the Holy Spirit, revealing a magical mindset that treats spiritual power as a purchasable technique.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 6044.399,
+          "end": 6173.439
+        }
+      ]
+    },
+    {
+      "id": "cheese-sandwich-oracle-real",
+      "text": "The 'cheese sandwich oracle' is a real historical practice used by Bishop Sofronius of Tella in the 5th century to identify a thief, as recorded in council acts.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 9242.399,
+          "end": 9632.899
+        }
+      ]
+    },
+    {
+      "id": "prosperity-gospel-is-magic",
+      "text": "Prosperity gospel and word-faith teachings are a form of magic because they claim to manipulate reality through words and thoughts, rather than preaching repentance and faithfulness.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 10254.959,
+          "end": 10400.239
+        }
+      ]
+    },
+    {
+      "id": "repentance-is-opposite-of-magic",
+      "text": "Repentance is the opposite of magic because it involves surrendering control and submitting to God's will, rather than trying to manipulate spiritual forces for personal gain.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 11205.959,
+          "end": 11299.5
+        }
+      ]
+    },
+    {
+      "id": "contentment-frees-from-magic",
+      "text": "Contentment—being at peace with unmet desires—is a superpower that frees us from the need for magical thinking, because we no longer seek to control outcomes.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 11602.34,
+          "end": 11871.639
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "exodus-22-18",
+      "reference": "Exodus 22:18",
+      "summary": "The verse 'You shall not permit a sorceress to live' is cited as a key biblical prohibition against magic, within the context of pagan practices.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 3966.8,
+          "end": 4123.39
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-18-9-14",
+      "reference": "Deuteronomy 18:9-14",
+      "summary": "This passage lists forbidden magical practices (divination, sorcery, necromancy) and is read in full to show the biblical stance against magic.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 4126.68,
+          "end": 4217.0
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-18-15-22",
+      "reference": "Deuteronomy 18:15-22",
+      "summary": "Immediately following the prohibition, God promises a prophet like Moses, providing a legitimate alternative to divination.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 4440.0,
+          "end": 4583.239
+        }
+      ]
+    },
+    {
+      "id": "1-samuel-28",
+      "reference": "1 Samuel 28",
+      "summary": "The story of the Witch of Endor, where Saul consults a medium to summon Samuel, is discussed as an example of necromancy.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 4876.96,
+          "end": 5203.399
+        }
+      ]
+    },
+    {
+      "id": "2-chronicles-33-5-6",
+      "reference": "2 Chronicles 33:5-6",
+      "summary": "King Manasseh's sins include sorcery, divination, and necromancy, which he repented of.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 5202.399,
+          "end": 5325.319
+        }
+      ]
+    },
+    {
+      "id": "mark-3-23-27",
+      "reference": "Mark 3:23-27",
+      "summary": "Jesus is accused of casting out demons by Beelzebul, and he responds by pointing out the absurdity and warning against blasphemy of the Holy Spirit.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 5494.439,
+          "end": 5589.0
+        }
+      ]
+    },
+    {
+      "id": "acts-8-9-24",
+      "reference": "Acts 8:9-24",
+      "summary": "The story of Simon Magus, who practiced magic and tried to buy the Holy Spirit's power, is read and discussed.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 5985.319,
+          "end": 6173.439
+        }
+      ]
+    },
+    {
+      "id": "acts-19-13-20",
+      "reference": "Acts 19:13-20",
+      "summary": "The seven sons of Sceva attempt to exorcise using Jesus' name, are overpowered, and many new believers burn their magical books.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 6667.6,
+          "end": 6761.0
+        }
+      ]
+    },
+    {
+      "id": "galatians-5-19-21",
+      "reference": "Galatians 5:19-21",
+      "summary": "Paul lists sorcery among the works of the flesh, indicating its prevalence among former pagans.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 6903.359,
+          "end": 6997.399
+        }
+      ]
+    },
+    {
+      "id": "2-thessalonians-2-7-10",
+      "reference": "2 Thessalonians 2:7-10",
+      "summary": "The man of lawlessness will work signs and wonders through the energies of Satan, showing that miracles can be demonic.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 5737.6,
+          "end": 5827.96
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "thaumaturgy",
+      "term": "Thaumaturgy",
+      "definition": "Wonder-working; the ability to perform miracles, often attributed to saints. In the ancient world, it was seen as a form of magic.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 917.399,
+          "end": 1008.44
+        }
+      ]
+    },
+    {
+      "id": "exousia",
+      "term": "Exousia",
+      "definition": "Greek word for power or authority, used to describe the magical practitioner's ability to command spirits.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 954.24,
+          "end": 1049.0
+        }
+      ]
+    },
+    {
+      "id": "augury",
+      "term": "Augury",
+      "definition": "Divination by observing the flight of birds and other omens.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 1473.0,
+          "end": 1567.0
+        }
+      ]
+    },
+    {
+      "id": "extispicy",
+      "term": "Extispicy",
+      "definition": "Divination by reading the entrails of sacrificed animals, also called haruspicy.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 1539.0,
+          "end": 1678.44
+        }
+      ]
+    },
+    {
+      "id": "pharmakeia",
+      "term": "Pharmakeia",
+      "definition": "Greek term often translated as sorcery, but specifically related to the use of drugs or potions, including hallucinogens, to interact with spirits.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 2560.0,
+          "end": 2655.599
+        }
+      ]
+    },
+    {
+      "id": "execration",
+      "term": "Execration",
+      "definition": "A curse; in the ancient world, execration bowls were used to curse enemies by writing their name and smashing the bowl.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 2803.199,
+          "end": 2916.28
+        }
+      ]
+    },
+    {
+      "id": "necromancy",
+      "term": "Necromancy",
+      "definition": "Divination by communicating with the dead, often through ritual manipulation of spirits.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 4288.6,
+          "end": 4380.0
+        }
+      ]
+    },
+    {
+      "id": "simony",
+      "term": "Simony",
+      "definition": "The sin of buying or selling spiritual offices or powers, named after Simon Magus.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 6044.399,
+          "end": 6173.439
+        }
+      ]
+    },
+    {
+      "id": "word-faith",
+      "term": "Word-Faith",
+      "definition": "A movement teaching that words and thoughts can manipulate reality, which the hosts identify as magical thinking.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 10254.959,
+          "end": 10400.239
+        }
+      ]
+    },
+    {
+      "id": "new-thought",
+      "term": "New Thought",
+      "definition": "A 19th-century movement emphasizing the power of mind over matter, which influenced prosperity gospel and New Age spirituality.",
+      "segments": [
+        {
+          "episode": 95,
+          "start": 9837.799,
+          "end": 9929.4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,447 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young explore the nature of Mosaic authority, its exercise, and its transmission. They argue that Moses' authority was not merely about performing miracles or judging court cases, but involved making authoritative rulings on how God's commandments apply to daily life. This authority was delegated to elders (presbyters) and later passed on to Joshua through the laying on of hands, establishing a pattern of prophetic succession. The episode critiques modern Christian divisions of the Law into moral, civil, and ceremonial categories, and emphasizes that the Old Testament remains relevant and authoritative. The discussion sets the stage for a follow-up episode on how this authority continues in the New Testament and the Church.",
+  "entities": [
+    {
+      "id": "moses",
+      "title": "Moses",
+      "category": "person",
+      "summary": "The great prophet and leader of Israel, who received authority from God to interpret and apply the Law, and who passed that authority to Joshua.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 1280.759,
+          "end": 1378.519
+        },
+        {
+          "episode": 118,
+          "start": 1796.79,
+          "end": 1889.9
+        },
+        {
+          "episode": 118,
+          "start": 4893.239,
+          "end": 4984.76
+        }
+      ]
+    },
+    {
+      "id": "joshua",
+      "title": "Joshua",
+      "category": "person",
+      "summary": "Moses' successor, who received authority through the laying on of hands and led Israel into the Promised Land.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 4893.239,
+          "end": 4984.76
+        },
+        {
+          "episode": 118,
+          "start": 5077.479,
+          "end": 5173.119
+        }
+      ]
+    },
+    {
+      "id": "jethro",
+      "title": "Jethro",
+      "category": "person",
+      "summary": "Moses' father-in-law, who advised Moses to delegate authority to capable men to help judge the people.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 4181.56,
+          "end": 4304.319
+        }
+      ]
+    },
+    {
+      "id": "jeremiah",
+      "title": "Jeremiah",
+      "category": "person",
+      "summary": "A prophet who exercised Mosaic authority by making rulings on the sins of Israel and warning of judgment, contrasting with false prophets.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 7823.399,
+          "end": 7917.0
+        },
+        {
+          "episode": 118,
+          "start": 8045.8,
+          "end": 8135.84
+        }
+      ]
+    },
+    {
+      "id": "phineas",
+      "title": "Phineas",
+      "category": "person",
+      "summary": "A priest who zealously defended the holiness of Israel by executing an Israelite man and a Midianite woman, stopping a plague and receiving a covenant of peace.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 3800.79,
+          "end": 3894.599
+        },
+        {
+          "episode": 118,
+          "start": 3987.199,
+          "end": 4080.0
+        }
+      ]
+    },
+    {
+      "id": "baal-peor",
+      "title": "Baal Peor",
+      "category": "place",
+      "summary": "A high place of pagan worship associated with cultic prostitution, where Israel was led into idolatry and sexual immorality.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 3810.0,
+          "end": 3900.119
+        },
+        {
+          "episode": 118,
+          "start": 3920.88,
+          "end": 4012.92
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "title": "Divine Council",
+      "category": "theological",
+      "summary": "The heavenly assembly of God and His angels, where true prophets stand to receive God's word and counsel.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 7880.0,
+          "end": 7977.0
+        },
+        {
+          "episode": 118,
+          "start": 7934.239,
+          "end": 8026.739
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "mosaic-authority",
+      "title": "Mosaic Authority",
+      "summary": "The authority given by God to Moses to interpret and apply the Law, making binding rulings for Israel. It is not merely about performing miracles but about adjudicating how commandments apply in specific situations.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 1796.79,
+          "end": 1889.9
+        },
+        {
+          "episode": 118,
+          "start": 2550.0,
+          "end": 2642.9
+        },
+        {
+          "episode": 118,
+          "start": 2663.5,
+          "end": 2797.739
+        }
+      ]
+    },
+    {
+      "id": "prophetic-succession",
+      "title": "Prophetic Succession",
+      "summary": "The transmission of prophetic authority from Moses to Joshua and then to subsequent prophets through the laying on of hands, establishing a chain of authority that continues in the Church.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 4893.239,
+          "end": 4984.76
+        },
+        {
+          "episode": 118,
+          "start": 5216.96,
+          "end": 5309.96
+        },
+        {
+          "episode": 118,
+          "start": 7036.319,
+          "end": 7128.52
+        }
+      ]
+    },
+    {
+      "id": "adjudication",
+      "title": "Adjudication",
+      "summary": "The act of making authoritative rulings on how God's commandments apply to specific situations, as exemplified by Moses and the prophets.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 1916.0,
+          "end": 2009.68
+        },
+        {
+          "episode": 118,
+          "start": 2795.76,
+          "end": 2887.679
+        },
+        {
+          "episode": 118,
+          "start": 3330.0,
+          "end": 3420.0
+        }
+      ]
+    },
+    {
+      "id": "laying-on-of-hands",
+      "title": "Laying on of Hands",
+      "summary": "The physical act of transmitting authority from one person to another, as seen in the ordination of Joshua and later in the Church's ordination practices.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 4893.239,
+          "end": 4984.76
+        },
+        {
+          "episode": 118,
+          "start": 6490.0,
+          "end": 6582.479
+        },
+        {
+          "episode": 118,
+          "start": 7036.319,
+          "end": 7128.52
+        }
+      ]
+    },
+    {
+      "id": "false-prophets",
+      "title": "False Prophets",
+      "summary": "Individuals who claim prophetic authority but lack the genuine spiritual experience and divine commission, often leading people astray with false assurances.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 7387.199,
+          "end": 7477.579
+        },
+        {
+          "episode": 118,
+          "start": 7823.399,
+          "end": 7917.0
+        },
+        {
+          "episode": 118,
+          "start": 7904.0,
+          "end": 7998.399
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "moses-authority-includes-rulings",
+      "text": "Moses' authority included making binding rulings on how God's commandments apply to specific situations, not just delivering laws.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 2550.0,
+          "end": 2642.9
+        },
+        {
+          "episode": 118,
+          "start": 2795.76,
+          "end": 2887.679
+        }
+      ]
+    },
+    {
+      "id": "prophetic-succession-through-laying-on-of-hands",
+      "text": "Prophetic authority was transmitted through the laying on of hands, as seen in the succession from Moses to Joshua and later prophets.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 4893.239,
+          "end": 4984.76
+        },
+        {
+          "episode": 118,
+          "start": 7036.319,
+          "end": 7128.52
+        }
+      ]
+    },
+    {
+      "id": "false-prophets-lack-divine-council",
+      "text": "False prophets are those who claim authority but have not stood in the divine council, and their false assurances lead people away from repentance.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 7904.0,
+          "end": 7998.399
+        },
+        {
+          "episode": 118,
+          "start": 8045.8,
+          "end": 8135.84
+        }
+      ]
+    },
+    {
+      "id": "old-testament-authority-structures-god-made",
+      "text": "The authority structures in the Old Testament, such as Moses' authority and its transmission, are not man-made but established by God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 8695.719,
+          "end": 8789.12
+        },
+        {
+          "episode": 118,
+          "start": 8784.879,
+          "end": 8878.719
+        }
+      ]
+    },
+    {
+      "id": "liberalism-rejects-authority",
+      "text": "Classical liberalism, rooted in the rejection of authority, is satanic and leads to destruction, as it encourages individuals to follow their own judgment rather than God-given authority.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 9083.879,
+          "end": 9174.68
+        },
+        {
+          "episode": 118,
+          "start": 9231.479,
+          "end": 9323.28
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "exodus-13-1-16",
+      "reference": "Exodus 13:1-16",
+      "summary": "God commands Moses to consecrate the firstborn, and Moses elaborates on how to apply this command, demonstrating his authority to interpret and apply God's word.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 2029.279,
+          "end": 2181.92
+        }
+      ]
+    },
+    {
+      "id": "exodus-18-13-27",
+      "reference": "Exodus 18:13-27",
+      "summary": "Jethro advises Moses to appoint capable men to help judge the people, showing the delegation of authority while Moses retains final authority.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 4181.56,
+          "end": 4304.319
+        }
+      ]
+    },
+    {
+      "id": "numbers-27-18-23",
+      "reference": "Numbers 27:18-23",
+      "summary": "God commands Moses to lay hands on Joshua and invest him with authority, establishing the pattern of prophetic succession.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 4893.239,
+          "end": 4984.76
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-18-15-22",
+      "reference": "Deuteronomy 18:15-22",
+      "summary": "Moses promises a prophet like him, and gives criteria for testing prophets, including the fulfillment of signs.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 5232.199,
+          "end": 5324.239
+        },
+        {
+          "episode": 118,
+          "start": 7402.76,
+          "end": 7495.92
+        }
+      ]
+    },
+    {
+      "id": "jeremiah-23-15-18",
+      "reference": "Jeremiah 23:15-18",
+      "summary": "Jeremiah condemns false prophets who speak visions of their own minds and give false assurances, contrasting with true prophets who stand in the divine council.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 7823.399,
+          "end": 7917.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "semikha",
+      "term": "Semikha",
+      "definition": "Hebrew term for ordination, originally referring to the authority imparted by the laying on of hands, from a root meaning 'sturdy' or 'able to support weight'.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 6485.0,
+          "end": 6575.239
+        }
+      ]
+    },
+    {
+      "id": "exousia",
+      "term": "Exousia",
+      "definition": "Greek word for authority, derived from the verb 'exesti' meaning 'it is permitted', indicating the freedom and ability to make rulings.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 6597.439,
+          "end": 6720.199
+        }
+      ]
+    },
+    {
+      "id": "presbyteroi",
+      "term": "Presbyteroi",
+      "definition": "Greek term for elders, used in the Septuagint for the leaders appointed to assist Moses, later used for church elders.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 4423.319,
+          "end": 4514.88
+        }
+      ]
+    },
+    {
+      "id": "urim-and-thummim",
+      "term": "Urim and Thummim",
+      "definition": "Objects used by the high priest to discern God's will in difficult cases, mentioned in the context of Joshua's authority.",
+      "segments": [
+        {
+          "episode": 118,
+          "start": 4938.76,
+          "end": 5068.56
+        }
+      ]
+    }
+  ]
+}

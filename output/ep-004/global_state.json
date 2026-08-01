@@ -1,0 +1,572 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young discuss the Orthodox Christian concept of theosis (deification/divinization) as the true understanding of salvation, contrasting it with Western Protestant and Roman Catholic views that focus on satisfying divine justice. They argue that theosis is not merely an individual moral improvement or a post-salvation add-on, but the very purpose of creation and humanity's destiny. The hosts trace the theme of becoming 'sons of God' and 'equal to the angels' from the promises to Abraham in Genesis (where his offspring are to be 'as the stars') through the New Testament, particularly in St. Paul's letters (Galatians 3-4, Romans 8). They emphasize that salvation involves adoption as sons of God, sharing in Christ's glory and authority, and participating in the divine council that governs creation. The episode also addresses listener questions on the role of demons in mental illness, the loss of this teaching in the West, and the difference between Protestant sanctification and Orthodox theosis.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "One of the hosts, an Orthodox Christian priest from Emmaus, Pennsylvania.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 68.0,
+          "end": 162.56
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "One of the hosts, an Orthodox Christian priest from Lafayette, Louisiana, and a biblical scholar.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 68.0,
+          "end": 162.56
+        }
+      ]
+    },
+    {
+      "id": "abraham",
+      "title": "Abraham",
+      "category": "person",
+      "summary": "The biblical patriarch to whom God made promises about his offspring becoming as the stars.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 909.96,
+          "end": 1006.0
+        },
+        {
+          "episode": 4,
+          "start": 1016.96,
+          "end": 1112.9
+        }
+      ]
+    },
+    {
+      "id": "saint-paul",
+      "title": "Saint Paul",
+      "category": "person",
+      "summary": "The Apostle Paul, whose writings in Galatians and Romans are examined to show theosis as the core of salvation.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 3492.559,
+          "end": 3629.96
+        },
+        {
+          "episode": 4,
+          "start": 3879.96,
+          "end": 3962.0
+        }
+      ]
+    },
+    {
+      "id": "saint-athanasius",
+      "title": "Saint Athanasius",
+      "category": "person",
+      "summary": "Church Father known for the quote 'God became man so that we might become gods,' central to theosis.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 223.68,
+          "end": 314.879
+        },
+        {
+          "episode": 4,
+          "start": 4303.0,
+          "end": 4393.0
+        }
+      ]
+    },
+    {
+      "id": "father-matthew-baker",
+      "title": "Father Matthew Baker",
+      "category": "person",
+      "summary": "Late Orthodox priest and theologian, author of the paper 'Deification and Sonship according to Saint Athanasius of Alexandria.'",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 4218.96,
+          "end": 4318.0
+        },
+        {
+          "episode": 4,
+          "start": 6000.0,
+          "end": 6090.8
+        }
+      ]
+    },
+    {
+      "id": "philo-of-alexandria",
+      "title": "Philo of Alexandria",
+      "category": "person",
+      "summary": "First-century Jewish philosopher who explained the sun, moon, and stars as subsidiary divine beings governing creation under God.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 1888.79,
+          "end": 2024.79
+        }
+      ]
+    },
+    {
+      "id": "tolkien",
+      "title": "J.R.R. Tolkien",
+      "category": "person",
+      "summary": "Author whose works reflect a mythic understanding of scripture and the divine council, mentioned in relation to rediscovering these teachings.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 5139.39,
+          "end": 5229.88
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-32-8",
+      "title": "Deuteronomy 32:8",
+      "category": "scriptural",
+      "summary": "Verse about God dividing the nations according to the number of the sons of God, used to support the divine council concept.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 1786.319,
+          "end": 1879.68
+        }
+      ]
+    },
+    {
+      "id": "genesis-15-5",
+      "title": "Genesis 15:5",
+      "category": "scriptural",
+      "summary": "Promise to Abraham that his offspring would be as the stars, interpreted as becoming like the angelic beings.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 1016.96,
+          "end": 1109.92
+        }
+      ]
+    },
+    {
+      "id": "luke-20-36",
+      "title": "Luke 20:36",
+      "category": "scriptural",
+      "summary": "Jesus' statement that the sons of the resurrection are equal to the angels, used as the episode's title.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 2314.0,
+          "end": 2404.98
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "theosis",
+      "title": "Theosis (Deification/Divinization)",
+      "summary": "The Orthodox Christian understanding of salvation as becoming partakers of the divine nature, becoming like God, and being adopted as sons of God, which is the purpose of creation and humanity's destiny.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 142.199,
+          "end": 233.879
+        },
+        {
+          "episode": 4,
+          "start": 327.48,
+          "end": 419.279
+        },
+        {
+          "episode": 4,
+          "start": 817.279,
+          "end": 909.96
+        },
+        {
+          "episode": 4,
+          "start": 4303.0,
+          "end": 4393.0
+        }
+      ]
+    },
+    {
+      "id": "sons-of-god",
+      "title": "Sons of God",
+      "summary": "A term referring to angelic beings in the Old Testament, and in the New Testament, to humans who are adopted as sons of God through Christ, becoming equal to the angels and part of the divine council.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 2314.0,
+          "end": 2404.98
+        },
+        {
+          "episode": 4,
+          "start": 3977.119,
+          "end": 4072.0
+        },
+        {
+          "episode": 4,
+          "start": 4150.0,
+          "end": 4251.0
+        }
+      ]
+    },
+    {
+      "id": "promises-to-abraham",
+      "title": "Promises to Abraham",
+      "summary": "God's promises to Abraham that his offspring would be as the stars of heaven, indicating not just numerical multiplication but a qualitative transformation to become like the angelic beings who govern creation.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 909.96,
+          "end": 1006.0
+        },
+        {
+          "episode": 4,
+          "start": 1016.96,
+          "end": 1112.9
+        },
+        {
+          "episode": 4,
+          "start": 2033.39,
+          "end": 2125.8
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "title": "Divine Council",
+      "summary": "The assembly of angelic beings (sons of God) who serve God and govern creation; humans are destined to join this council through theosis.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 531.5,
+          "end": 624.2
+        },
+        {
+          "episode": 4,
+          "start": 2257.0,
+          "end": 2349.32
+        },
+        {
+          "episode": 4,
+          "start": 5580.0,
+          "end": 5670.319
+        }
+      ]
+    },
+    {
+      "id": "sanctification-vs-theosis",
+      "title": "Sanctification vs. Theosis",
+      "summary": "Contrast between the Protestant concept of sanctification as a post-salvation process of moral improvement and the Orthodox view that sanctification is theosis—becoming holy as becoming like God and joining the heavenly hosts.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 5451.64,
+          "end": 5715.0
+        },
+        {
+          "episode": 4,
+          "start": 5718.359,
+          "end": 5849.859
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "theosis-is-salvation",
+      "text": "Theosis is not a metaphor or an adjunct to salvation; it is salvation itself, the purpose for which humanity was created.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 817.279,
+          "end": 909.96
+        },
+        {
+          "episode": 4,
+          "start": 499.839,
+          "end": 591.0
+        }
+      ]
+    },
+    {
+      "id": "western-salvation-focuses-on-justice",
+      "text": "Most Protestant and Catholic understandings of salvation focus on satisfying God's divine justice, whereas Orthodoxy focuses on transformation and union with God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 383.68,
+          "end": 473.879
+        }
+      ]
+    },
+    {
+      "id": "abrahams-offspring-as-stars-means-angelic",
+      "text": "The promise that Abraham's offspring would be as the stars means they would become like the angelic beings who govern creation, not just numerous descendants.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 2033.39,
+          "end": 2125.8
+        }
+      ]
+    },
+    {
+      "id": "paul-as-prophet",
+      "text": "St. Paul should be understood as a prophet and mystic, not a modern theologian, which affects how his writings on salvation are interpreted.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 3492.559,
+          "end": 3629.96
+        }
+      ]
+    },
+    {
+      "id": "sanctification-is-theosis",
+      "text": "Sanctification, properly understood, is theosis: becoming holy means becoming like God and joining the heavenly hosts, not just moral improvement.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 5556.539,
+          "end": 5649.0
+        }
+      ]
+    },
+    {
+      "id": "mental-illness-and-demons",
+      "text": "Mental illness and demonic possession are distinct phenomena, but spiritual influences can be involved in mental illness; they are not mutually exclusive.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 2543.28,
+          "end": 2634.0
+        },
+        {
+          "episode": 4,
+          "start": 2624.0,
+          "end": 2717.32
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "gen-15-5",
+      "reference": "Genesis 15:5",
+      "summary": "God tells Abraham his offspring will be as the stars, interpreted as becoming like the angelic beings.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 1016.96,
+          "end": 1109.92
+        }
+      ]
+    },
+    {
+      "id": "gen-22-17",
+      "reference": "Genesis 22:17",
+      "summary": "Promise that Abraham's offspring will possess the gate of his enemies, linked to taking positions of power.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 1124.799,
+          "end": 1219.68
+        }
+      ]
+    },
+    {
+      "id": "gen-26-4",
+      "reference": "Genesis 26:4",
+      "summary": "Reiteration of the promise that offspring will be as the stars and all nations blessed.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 1333.96,
+          "end": 1424.96
+        }
+      ]
+    },
+    {
+      "id": "deut-32-8",
+      "reference": "Deuteronomy 32:8",
+      "summary": "God divided the nations according to the number of the sons of God, indicating the divine council.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 1786.319,
+          "end": 1879.68
+        }
+      ]
+    },
+    {
+      "id": "deut-4-19",
+      "reference": "Deuteronomy 4:19",
+      "summary": "Warning against worshiping the sun, moon, and stars, which God has allotted to all nations, equating them with divine beings.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 1803.839,
+          "end": 1893.92
+        }
+      ]
+    },
+    {
+      "id": "luke-20-36",
+      "reference": "Luke 20:36",
+      "summary": "Jesus says the sons of the resurrection are equal to the angels, connecting to theosis.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 2314.0,
+          "end": 2404.98
+        }
+      ]
+    },
+    {
+      "id": "gal-3-26-29",
+      "reference": "Galatians 3:26-29",
+      "summary": "Paul says believers are sons of God through faith, baptized into Christ, and heirs according to the promise to Abraham.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 3977.119,
+          "end": 4072.0
+        }
+      ]
+    },
+    {
+      "id": "gal-4-5-7",
+      "reference": "Galatians 4:5-7",
+      "summary": "Paul speaks of adoption as sons, receiving the Spirit, and being heirs through God.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 4118.72,
+          "end": 4213.79
+        }
+      ]
+    },
+    {
+      "id": "rom-8-14-17",
+      "reference": "Romans 8:14-17",
+      "summary": "Paul describes believers as sons of God, adopted, and fellow heirs with Christ.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 4373.68,
+          "end": 4465.239
+        }
+      ]
+    },
+    {
+      "id": "rom-8-19-23",
+      "reference": "Romans 8:19-23",
+      "summary": "Creation waits for the revealing of the sons of God, and believers await adoption and redemption of their bodies.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 4482.0,
+          "end": 4577.92
+        }
+      ]
+    },
+    {
+      "id": "rom-8-29",
+      "reference": "Romans 8:29",
+      "summary": "Paul says believers are predestined to be conformed to the image of Christ, so that He is the firstborn among many brothers.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 4624.279,
+          "end": 4715.34
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God, deification, or divinization; the Orthodox understanding of salvation.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 327.48,
+          "end": 419.279
+        }
+      ]
+    },
+    {
+      "id": "huiothesia",
+      "term": "Huiothesia",
+      "definition": "Greek term for adoption as sons, used in the New Testament and by Church Fathers in relation to theosis.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 4268.96,
+          "end": 4360.96
+        }
+      ]
+    },
+    {
+      "id": "theopoiesis",
+      "term": "Theopoiesis",
+      "definition": "Greek term meaning 'God-making' or being made a god, synonymous with theosis.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 4303.0,
+          "end": 4393.0
+        }
+      ]
+    },
+    {
+      "id": "sons-of-god",
+      "term": "Sons of God",
+      "definition": "In the Old Testament, angelic beings; in the New Testament, humans adopted as sons of God through Christ.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 2314.0,
+          "end": 2404.98
+        }
+      ]
+    },
+    {
+      "id": "divine-council",
+      "term": "Divine Council",
+      "definition": "The assembly of angelic beings who serve God and govern creation; humans are destined to join it.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 2257.0,
+          "end": 2349.32
+        }
+      ]
+    },
+    {
+      "id": "sanctification",
+      "term": "Sanctification",
+      "definition": "Becoming holy; in Orthodoxy, understood as theosis, not just moral improvement.",
+      "segments": [
+        {
+          "episode": 4,
+          "start": 5556.539,
+          "end": 5649.0
+        }
+      ]
+    }
+  ]
+}

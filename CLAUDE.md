@@ -6,6 +6,12 @@ Condensing "Lord of Spirits" podcast episodes using DeepSeek LLM.
 
 **Document architectural decisions in CLAUDE.md.** Any substantive architectural change (data flow, pipeline design, scoping strategy, state management) is recorded here with rationale. This documents the decision's context and reasoning for future reference.
 
+**Planning → CLAUDE.md first, then implement.** For any substantive change,
+the standing workflow is: plan → hammer the plan down into CLAUDE.md
+(reconcile it with existing content, resolve contradictions) → THEN implement.
+A plan is not approved until it is documented in CLAUDE.md. This applies to
+every architectural decision, not just the first one.
+
 ## Core decisions (July 2026)
 
 - **Only whisper SRTs in git.** YouTube subtitles are unreliable (fragmented,
@@ -140,25 +146,16 @@ python3 -m podcastcondensor build-master-cut <PLAYLIST_URL> \
   --start N --end N --target-duration 6750 --output output/master_cut.mp3
 ```
 
-### `build-minimal-theme` — single-theme dev tool
-
-Uses the same LLM selection approach as master cut Phase 5. Reads
-universe state + optional themes cache (no longer cached — always
-fresh extraction).
-
-```bash
-python3 -m podcastcondensor build-minimal-theme <THEME_ID>
-```
-
 ## Source modules
 
 | File | Purpose |
 |------|---------|
 | `src/podcastcondensor/cli.py` | CLI entry point, all 4 subcommands |
+| `src/podcastcondensor/super_cut.py` | `build-super-cut` orchestration (offline: merge → chunk → coalesce → resolve → select → assemble) |
 | `src/podcastcondensor/pipeline.py` | `process-playlist` single-ep orchestration |
 | `src/podcastcondensor/playlist_pipeline.py` | `build-universe` + re-exports `build_master_cut` |
 | `src/podcastcondensor/master_cut.py` | `build-master-cut` orchestration (6 phases) |
-| `src/podcastcondensor/minimal_theme_cut.py` | `build-minimal-theme` + LLM selection logic |
+| `src/podcastcondensor/minimal_theme_cut.py` | Per-theme LLM selection engine (shared by master-cut & super-cut) |
 | `src/podcastcondensor/universe_state.py` | Cross-episode knowledge base management |
 | `src/podcastcondensor/global_state.py` | Per-episode DeepSeek: transcript → structured knowledge |
 | `src/podcastcondensor/classify_raw.py` | Per-episode compression (one-shot) + legacy classification |
@@ -177,6 +174,7 @@ python3 -m podcastcondensor build-minimal-theme <THEME_ID>
 | `prompts/compress_episode.txt` | Compression prompt (classify_raw.py) |
 | `prompts/classify_raw.txt` | Legacy classification prompt |
 | `prompts/extract_themes.txt` | Theme extraction prompt |
+| `prompts/coalesce_themes.txt` | Coalesce prompt (super_cut.py) — fuses chunk themes into global themes |
 
 ### Squelched: `build_sentence_blocks` info log → debug
 
@@ -259,75 +257,163 @@ have their `global_state.json` on disk.
 | ep31-40 | ✅ Done (2nd pass) | 10 themes / 35 segments, 6704.9s vs 6750 target, 3 warnings, 0 errors. 31-40 archive comparison run was killed mid-assembly (2026-07-31) — deprioritized in favor of the transcription effort. |
 | ep41-50 | ✅ Archive done | LLM-volume archive: 9.13h / 20 themes / 185 segments / 31% of 29.5h source, 0 errors, 3 "too broad" warnings. |
 
-## Episode data (2026-07-31 — COMPLETE)
+## Episode data (2026-08-01 — COMPLETE)
 
-**All 126 non-Q&A episodes have whisper SRTs + `global_state.json` on disk, and
-all 126 SRTs are committed to git.** Coverage = eps 1-144 minus 18 Q&A episodes.
+**All 125 non-Q&A episodes have whisper SRTs in git AND `global_state.json` on
+disk** (eps 1-144 minus 19 Q&A). The 126th SRT is ep-18 — itself a Q&A episode
+that was transcribed before Q&A skipping was standard, so it has an SRT but no
+`global_state.json`. Per convention, `global_state.json` stays gitignored.
 
-**Why 126, not 144:** the 18 missing episodes are all Q&A / "Pantheon &
-Pandemonium Live Q&A" specials (66, 67, 74, 78, 80, 89, 90, 98, 104, 106, 111,
-117, 121, 122, 126, 134, 135, 141). They don't develop coherent themes, so
-`build-universe` skips them by default (`--include-qa` to include). They are
-the ONLY episodes without SRTs; every non-Q&A episode has one.
+**Why 125, not 144:** the 19 Q&A / "Pantheon & Pandemonium Live Q&A" specials
+(18, 66, 67, 74, 78, 80, 89, 90, 98, 104, 106, 111, 117, 121, 122, 126, 134,
+135, 141) don't develop coherent themes, so `build-universe` skips them by
+default (`--include-qa` to include). They are the ONLY episodes without
+`global_state.json`; every non-Q&A episode has one. **Correction (2026-08-01):**
+ep-18 is a Q&A episode (added to the list — previously mislabeled non-Q&A).
 
-| Episodes | SRT | global_state |
-|----------|-----|--------------|
-| 1-50 | ✅ all | ✅ all |
-| 51-98 | ✅ all (minus Q&A 66,67,74,78,80,89,90) | ✅ all |
-| 99-144 | ✅ all (minus Q&A 98,104,106,111,117,121,122,126,134,135,141) | ✅ all |
-| Q&A (18) | ❌ intentionally skipped | ❌ |
+| Episodes | SRT | global_state (on disk) |
+|----------|-----|------------------------|
+| 1-30 | ✅ all (in git) | ✅ all (ep-18 = Q&A skipped; ep-29 extracted offline after search-fallback failure) |
+| 31-50 | ✅ all | ✅ all |
+| 51-98 | ✅ all (minus Q&A 66,67,74,78,80,89,90,98) | ✅ all |
+| 99-144 | ✅ all (minus Q&A 104,106,111,117,121,122,126,134,135,141) | ✅ all |
+| Q&A (19) | ❌ intentionally skipped (except ep-18, pre-existing SRT) | ❌ |
 
-## Roadmap — 144-episode super master cut (2026-07-31, TO BE DONE)
+## Super master cut — 144-episode thematic anthology (2026-08-01, PLAN)
 
-**End goal:** a true cross-episode thematic anthology — "the most important
-insights over all ~144 episodes" — built from the full audio database.
+**End goal:** a true cross-episode thematic anthology over all ~144 episodes —
+"the most important insights over all the universe" — where each top theme's
+cut quotes MANY episodes (a topic may be concentrated in a few episodes or
+diffuse across the run). This replaces the old 2026-07-31 "roadmap" (which
+proposed a separate insight-synthesis call); see "Why not insight synthesis".
 
-**Why the current per-theme master cut is NOT the end goal:** it is effectively
-per-episode curation. The show is organized episode-per-topic, so each theme's
-content is concentrated in its dedicated episode (ep42 = afterlife, ep43 =
-prophecy, ep44 = scripture). Per-theme selection therefore keeps ~one episode's
-content per theme. Verified in the ep41-50 archive: 20/20 "Afterlife" segments
-were all from ep 42. The result is a labeled episode-cores anthology, not
-cross-episode synthesis.
+**Approved design (2026-08-01):**
+1. **Output = per-theme MP3s** (one file per top theme), not one combined file.
+2. **Volume = mirror the proven range-cut mechanism** (ep41-50: 9.13h / 20
+   themes / 185 segments / 31% of 29.5h). Reuse `select_segments_for_master_cut`
+   with NO time budget — the soft "4-8 segments / 8-20 min" guide; LLM-owned
+   volume. Per-theme volume is unbounded by design (~8-20h total expected).
+3. **Theme discovery is chunked + coalesced.** The full universe is ~3,900
+   items — too big for one 64K-context call — and the existing
+   `extract_themes` truncation (200 items, 20 related_item_ids/theme cap)
+   fights the "many episodes quoted" goal:
+   - Split 1-144 into ~11 chunks of ~12 eps; run existing `extract_themes`
+     per chunk (re-merge the chunk's global_states so `episode_numbers`
+     reflect chunk-local frequency, not corpus-wide).
+   - One new `coalesce_themes` DeepSeek call fuses all chunk themes
+     (~100-140) into the top 15-25 global themes, each mapped to its
+     constituent chunk-theme ids.
+   - A global theme's items = union of its chunk themes' related_item_ids,
+     resolved against the cumulative universe → full cross-episode span.
+4. **Episode-diversity cap** on candidate segments per theme (reserve top-N
+   by relevance + round-robin across episodes, `max_total≈48`,
+   `max_per_episode≈6`) so the selection prompt stays in context AND quotes
+   many episodes — this is the mechanism that delivers "throughout the run".
+5. **Pipeline runs offline from disk** (no YouTube, 0 download/whisper):
+   merge cumulative `universe_state_001_144.json` from per-episode
+   global_states → chunk → coalesce → resolve → select → assemble per-theme
+   MP3s. **Output is FLAT** — MP3s go directly into `output_root` as
+   `<theme_id>.mp3` (no `super_cut_001_144/` subfolder; decided 2026-08-01).
 
-**Planned pipeline (to be built):**
-1. **Full data** — ✅ **DONE (2026-07-31).** Whisper SRT + `global_state.json`
-   for all 126 non-Q&A episodes (1-144 minus 18 Q&A). All SRTs committed.
-2. **Universe state merge** — build a real cumulative `universe_state.json`
-   across all ~144 (currently range-scoped per batch; needs a merge step over
-   the per-episode `global_state.json` files).
-3. **Theme identification** across the full ~144 (one DeepSeek call).
-4. **Cross-episode insight synthesis (the missing core step)** — per theme,
-   ONE DeepSeek call over all episodes' claims/segments producing the ~8-15
-   most important insights ordered narratively, **required to span different
-   episodes** (traces how understanding deepens across the arc). This is what
-   makes it overarching instead of per-episode.
-5. **Resolve each insight to audio** + assemble per-theme insight tracks
-   (or a combined cut). Optional future enhancement: LLM-written narrator
-   intros between insights (undecided).
+**Prerequisites (done 2026-08-01):** output dir cleaned of stale pipeline
+artifacts — only the per-episode 4-file set (`source_subtitles.srt`,
+`global_state.json`, `<video_id>.mp3`, `_transcribe_diag.log`) plus top-level
+`.gitkeep` remain; the 210MB `master_cut_41_50.mp3` and ep41-50 state/stats
+were removed. eps 1-30 global_state regenerated via the standard
+`build-universe --start 1 --end 30` (ep-29 via one-off offline extraction;
+ep-18 correctly skipped as Q&A) — **full 125/125 non-Q&A coverage achieved.**
 
-**Decisions taken 2026-07-31:**
-- Master cut volume is LLM-owned (archive, not forced 90-min). Both the greedy
-  global Python cap and pure-prompt budgets failed (see history in the
-  `build-master-cut` section); volume enforcement is deferred until the
-  insight-synthesis design lands.
-- Q&A and Reading episodes are excluded from `build-universe` (default) — they
-  don't develop coherent themes.
-- The 90-min target is informational for master cut; the archive is typically
-  9h+ per 10-episode batch.
+**Why not insight synthesis (replaces 2026-07-31 roadmap step 4):** the user
+explicitly chose to mirror the proven range-cut volume mechanism (per-theme
+LLM selection, no budget) rather than a new "exactly N insights" scheme. The
+cross-episode character comes from global themes discovered across chunks +
+episode-diverse candidate pools — not a separate narrative-synthesis call.
+LLM-written narrator intros remain out of scope (undecided).
 
-## Universe state coverage (2026-07-31 — current)
+**New code:** `src/podcastcondensor/super_cut.py` (orchestrator) +
+`build-super-cut` CLI subcommand + `prompts/coalesce_themes.txt`; small
+refactor of `universe_state.py::add_episode_knowledge` → pure
+`merge_episode_knowledge`. Reuses unchanged: `extract_themes`,
+`resolve_theme_segments_from_state`, `select_segments_for_master_cut`,
+`assemble_master_cut`, audio helpers. Artifacts (all gitignored):
+`universe_state_001_144.json`, `super_cut_themes_001_144.json` (the "top
+topics" report, with per-theme `episode_numbers`), `super_cut_stats_001_144.json`,
+and flat `<theme_id>.mp3` files in `output_root`.
+
+**Coalesce dedup + cap (decision, 2026-08-01):** DeepSeek does NOT honor the
+coalesce prompt's "15-25 themes" count — the first full dry-run produced
+**101 global themes** from 198 chunk themes, with many near-duplicates
+("Theology of the Cross and Atonement" ×2, "Theology of Penance and
+Confession" ×3, ...). Fixed deterministically (not by trusting the prompt):
+`_dedupe_and_cap_global_themes` drops empty-source themes, merges themes with
+the exact same `source_theme_ids` set, merges identical normalized titles
+(union of sources, max importance), then caps to `--max-themes` (default 25)
+by importance. Result: 101 → 25 clean themes. Same lesson as the master-cut
+budget saga: constraints must be enforced in code, not the prompt.
+
+**Status (2026-08-01):** implemented + unit-tested (23 tests); eps 1-30
+regenerated (full 125/125 non-Q&A coverage); 41-50 dry-run validated; full
+1-144 dry-run validated (125 eps / 3,094 items → 198 chunk themes → 25
+curated global themes → 2,831 candidate segments; top themes span 34-45
+episodes, e.g. "Christology" 45 eps, "Theosis" 43). Christology single-theme
+pilot cut ran (8 segments / 7 eps / 26 min) then was deleted on request.
+**`build-minimal-theme` was removed on 2026-08-01** as a leftover —
+superseded by `build-super-cut --theme <id>` for single-theme cuts; its
+per-theme selection engine survives as the shared `minimal_theme_cut.py`.
+
+### Intermediate artefacts on disk (plan, 2026-08-01 — TO BE IMPLEMENTED)
+
+**Principle: the only expensive work is theme discovery (~12 DeepSeek calls),
+and it runs ONCE and is persisted. Everything downstream is deterministic from
+persisted artefacts, and each theme's selection is persisted the moment it's
+cut.** Repeated theme cuts must never re-run discovery or re-spend calls on
+themes already selected. Range-scoped to `_001_144`:
+
+| # | Artefact | Contents | Produced by | Cost |
+|---|----------|----------|-------------|------|
+| 1 | `universe_state_001_144.json` | cumulative merge (125 eps, ~3k items) | merge | 0 calls, deterministic |
+| 2 | `super_cut_discovery_001_144.json` | chunk themes + 25 global themes + chunk→episode map | chunk extraction + coalesce | **~12 calls, ONCE** |
+| 3 | `super_cut_candidates_001_144.json` | per global theme: capped candidate segments (ep, start, end, audio_path, relevance, is_intro, episode_numbers) | resolve + cap | 0 calls, deterministic from #1+#2 |
+| 4 | `super_cut_selections_001_144.json` | per theme: LLM-selected segments with refined boundaries | selection | **1 call per theme, appended** |
+| 5 | `super_cut_themes_001_144.json` | all 25 themes report (importance, episode_numbers, candidate/selected counts) | derived from #2+#3+#4 | 0 calls |
+| 6 | `super_cut_stats_001_144.json` | selection trace | assembly | 0 calls |
+
+**Flows:**
+- **"Cut next theme"** → load #2+#3; if theme already in #4 → assemble only
+  (0 LLM calls). If not → **1 selection call**, append to #4, assemble.
+- **Full archive** → iterate #3, select only the missing themes, assemble.
+  0 discovery, 0 resolve — just N selection calls + ffmpeg.
+- **Bracket analysis** (top theme per episode bracket, e.g. 40-80 / 81-120 /
+  rest) → pure offline computation from #3 + #1 (rank by importance ×
+  in-bracket candidate weight). A `super-cut-brackets` subcommand, 0 LLM calls.
+- **Regenerating the full themes report** → recomputed from #2+#3+#4; a
+  `--theme` filtered run must NOT overwrite the all-themes report (fixed: the
+  report is always written from the full global-theme list).
+
+**Implementation checklist (DONE 2026-08-01):** discovery cache (`_save/load`),
+candidates cache (`_save/load`), selections cache (`_merge/load` +
+`_selections_from_dicts`); resolve step always resolves ALL themes (0 calls) so
+candidates/report/brackets are complete regardless of `--theme`; the full
+themes report is always written from the full theme list (a `--theme` run no
+longer overwrites it); selection skips already-cached themes (0 calls → pure
+audio re-cut); `super-cut-brackets` subcommand (read-only). Unit-tested (30
+tests). NOT yet seeded: caches need ONE `build-super-cut --dry-run` run
+(~12 discovery calls) to populate `super_cut_discovery_001_144.json` +
+`super_cut_candidates_001_144.json`.
+
+## Universe state coverage (2026-08-01 — current)
 
 | Episodes | SRT source | In universe state |
 |----------|-----------|-------------------|
 | 1-28 | Whisper | ✅ (per-episode `global_state.json`) |
-| 29-30 | YouTube subs + whisper | ✅ (per-episode `global_state.json`) |
+| 29-30 | YouTube subs + whisper | ✅ (per-episode `global_state.json`; ep-29 extracted offline) |
 | 31-50 | Whisper | ✅ (per-episode `global_state.json`) |
 | 51-144 | Whisper | ✅ (per-episode `global_state.json`) |
 
-All 126 non-Q&A episodes have per-episode `global_state.json` on disk. The
-**cumulative 1-144 universe state is NOT yet built** — it's the next step
-(task #15).
+All 125 non-Q&A episodes have per-episode `global_state.json` on disk
+(ep-18 = Q&A, excluded by design). The **cumulative 1-144 universe state is
+built by the `build-super-cut` merge phase** (offline, 0 API calls) — see the
+super-cut section. Per convention all universe state is gitignored.
 
 ## Required
 

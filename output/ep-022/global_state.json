@@ -1,0 +1,668 @@
+{
+  "summary": "In this episode of the Lord of Spirits, hosts Father Andrew Stephen Damick and Father Stephen DeYoung explore the ancient and biblical understanding of knowledge, contrasting it with modern epistemology. They discuss the Greek concepts of episteme (demonstrable knowledge), doxa (opinion/perspective), techne (craft/know-how), phronesis (moral reasoning), and sophia (wisdom), emphasizing that true knowledge is not limited to scientific demonstration but includes testimony, perspective, and wisdom. The conversation culminates in an examination of the nous (mind) as an organ of spiritual perception, which receives thoughts from external spiritual beings rather than generating them internally. This understanding has profound implications for spiritual life, including the practice of guarding one's thoughts, the Jesus Prayer, and the transformative power of focusing on Christ. The episode also addresses listener questions on the soul, personality, and the essence-energies distinction, and warns against the dangers of modern spectacle and passive consumption of thoughts.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "One of the hosts of the Lord of Spirits podcast, an Orthodox Christian priest.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 30.0,
+          "end": 110.4
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen DeYoung",
+      "category": "person",
+      "summary": "Co-host of the Lord of Spirits podcast, an Orthodox Christian priest.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 30.0,
+          "end": 110.4
+        }
+      ]
+    },
+    {
+      "id": "plato",
+      "title": "Plato",
+      "category": "person",
+      "summary": "Ancient Greek philosopher whose concept of the nous as discerning eternal forms is discussed.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 6265.359,
+          "end": 6359.479
+        }
+      ]
+    },
+    {
+      "id": "aristotle",
+      "title": "Aristotle",
+      "category": "person",
+      "summary": "Ancient Greek philosopher whose ideas on the nous and the unmoved mover are referenced.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 6292.159,
+          "end": 6387.439
+        }
+      ]
+    },
+    {
+      "id": "maximus-the-confessor",
+      "title": "St. Maximus the Confessor",
+      "category": "person",
+      "summary": "Church Father known for his theology of the logoi of creation, connecting Christ as the Logos to the patterns in creation.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 4727.279,
+          "end": 4821.68
+        }
+      ]
+    },
+    {
+      "id": "lamech",
+      "title": "Lamech",
+      "category": "historical",
+      "summary": "A descendant of Cain who exemplifies the misuse of moral reasoning, seeking to become like God through violence and domination.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 3000.0,
+          "end": 3090.0
+        }
+      ]
+    },
+    {
+      "id": "cain",
+      "title": "Cain",
+      "category": "historical",
+      "summary": "The first murderer, whose line received technology from fallen angels, illustrating the dangerous gift of techne.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 4217.68,
+          "end": 4311.0
+        }
+      ]
+    },
+    {
+      "id": "eve",
+      "title": "Eve",
+      "category": "historical",
+      "summary": "The first woman, who was tempted by the serpent to eat from the tree of the knowledge of good and evil, illustrating the wrong means to theosis.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 2558.8,
+          "end": 2652.8
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "theological",
+      "summary": "The Son of God, identified as the Logos and Wisdom of God, the ultimate object of the nous and the source of good thoughts.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 4688.5,
+          "end": 4779.8
+        },
+        {
+          "episode": 22,
+          "start": 6660.0,
+          "end": 6750.359
+        }
+      ]
+    },
+    {
+      "id": "holy-spirit",
+      "title": "Holy Spirit",
+      "category": "theological",
+      "summary": "The third Person of the Trinity, who purifies the nous and opens the eyes of the heart to see Christ.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 6651.56,
+          "end": 6741.56
+        }
+      ]
+    },
+    {
+      "id": "demons",
+      "title": "Demons",
+      "category": "theological",
+      "summary": "Fallen angels who influence human thoughts and seek to lead people away from God, often by giving harmful knowledge or thoughts.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 6688.92,
+          "end": 6780.0
+        },
+        {
+          "episode": 22,
+          "start": 7483.68,
+          "end": 7578.279
+        }
+      ]
+    },
+    {
+      "id": "ancient-greece",
+      "title": "Ancient Greece",
+      "category": "historical",
+      "summary": "The cultural context for many of the philosophical concepts discussed, including the nous and the mystery cults.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 6461.68,
+          "end": 6552.8
+        }
+      ]
+    },
+    {
+      "id": "orthodox-church",
+      "title": "Orthodox Church",
+      "category": "other",
+      "summary": "The Christian tradition that preserves the ancient understanding of the nous and spiritual disciplines like the Jesus Prayer.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 7106.88,
+          "end": 7198.56
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "episteme",
+      "title": "Episteme (Scientific Knowledge)",
+      "summary": "In ancient Greek thought, episteme refers to knowledge that can be demonstrated and proven, such as mathematical truths or scientific facts. It is the basis for the modern scientific method and is distinguished from other types of knowledge like doxa.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 461.439,
+          "end": 552.72
+        },
+        {
+          "episode": 22,
+          "start": 505.92,
+          "end": 602.0
+        }
+      ]
+    },
+    {
+      "id": "doxa",
+      "title": "Doxa (Opinion/Perspective)",
+      "summary": "Doxa is knowledge based on appearance, perspective, and testimony, as opposed to demonstration. It includes historical knowledge and personal viewpoints. The term is related to 'orthodoxy' (right opinion) and 'glory' (appearance/reputation).",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 649.8,
+          "end": 740.19
+        },
+        {
+          "episode": 22,
+          "start": 706.799,
+          "end": 797.799
+        }
+      ]
+    },
+    {
+      "id": "techne",
+      "title": "Techne (Craft/Know-How)",
+      "summary": "Techne is the knowledge of how to make or do things, including crafts, arts, and technology. It is morally neutral and can be used for good or evil. The episode discusses how demons gave certain technologies to humanity with harmful intent.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 3831.679,
+          "end": 3923.119
+        },
+        {
+          "episode": 22,
+          "start": 3941.0,
+          "end": 4038.119
+        },
+        {
+          "episode": 22,
+          "start": 4059.719,
+          "end": 4150.39
+        }
+      ]
+    },
+    {
+      "id": "phronesis",
+      "title": "Phronesis (Moral Reasoning)",
+      "summary": "Phronesis is practical wisdom or moral reasoning, the ability to choose the good and shun evil. It is not primarily deliberative but is formed through training and habit, aiming at the ultimate end of becoming like God (theosis).",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 2210.36,
+          "end": 2301.119
+        },
+        {
+          "episode": 22,
+          "start": 2335.8,
+          "end": 2426.84
+        },
+        {
+          "episode": 22,
+          "start": 2538.32,
+          "end": 2629.719
+        }
+      ]
+    },
+    {
+      "id": "sophia",
+      "title": "Sophia (Wisdom)",
+      "summary": "Sophia is wisdom, the perception of the patterns and order built into creation by God. It is a way of knowing that leads to God and is personified in Christ as the Logos. Wisdom is connected to justice and is accessible to all, even Gentiles.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 4380.0,
+          "end": 4470.399
+        },
+        {
+          "episode": 22,
+          "start": 4461.479,
+          "end": 4554.0
+        },
+        {
+          "episode": 22,
+          "start": 4612.8,
+          "end": 4706.539
+        }
+      ]
+    },
+    {
+      "id": "nous",
+      "title": "Nous (Mind/Spiritual Perception)",
+      "summary": "The nous is the highest faculty of human perception, an organ of spiritual sight that receives thoughts from the spiritual realm. It is not the brain or the source of thoughts but a receptive organ that can be purified and trained to see God.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 5126.279,
+          "end": 5217.79
+        },
+        {
+          "episode": 22,
+          "start": 5970.0,
+          "end": 6089.8
+        },
+        {
+          "episode": 22,
+          "start": 6135.72,
+          "end": 6232.159
+        },
+        {
+          "episode": 22,
+          "start": 6889.579,
+          "end": 6984.72
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "title": "Theosis (Deification)",
+      "summary": "Theosis is the process of becoming like God, the purpose for which humans were created. It is achieved through union with Christ and the purification of the nous, and it is contrasted with demonization, the opposite transformation.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 2681.119,
+          "end": 2772.0
+        },
+        {
+          "episode": 22,
+          "start": 7400.52,
+          "end": 7495.92
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "modern-knowledge-collapse",
+      "text": "The modern world collapses all knowledge into scientific demonstration, but this is a reduction that excludes many valid ways of knowing.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 265.0,
+          "end": 359.4
+        },
+        {
+          "episode": 22,
+          "start": 1115.0,
+          "end": 1207.24
+        }
+      ]
+    },
+    {
+      "id": "doxa-is-knowledge",
+      "text": "In the ancient world, doxa (opinion/perspective) was considered a legitimate form of knowledge, not inferior to episteme.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 649.8,
+          "end": 746.34
+        }
+      ]
+    },
+    {
+      "id": "thoughts-are-received",
+      "text": "Thoughts are not generated by the brain but are received from external spiritual beings; the nous is an organ of perception.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 5970.0,
+          "end": 6089.8
+        },
+        {
+          "episode": 22,
+          "start": 6889.579,
+          "end": 6984.72
+        }
+      ]
+    },
+    {
+      "id": "looking-is-touching",
+      "text": "Looking with lust, envy, or anger is a form of receiving and being transformed by that thought; looking is touching.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 7483.68,
+          "end": 7578.279
+        }
+      ]
+    },
+    {
+      "id": "nous-becomes-what-it-sees",
+      "text": "The nous becomes like what it focuses on; focusing on Christ leads to theosis, while focusing on evil leads to demonization.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 7369.0,
+          "end": 7462.8
+        }
+      ]
+    },
+    {
+      "id": "orthodoxy-means-right-opinion",
+      "text": "The word 'orthodoxy' etymologically means 'right opinion' or 'right perspective', not 'right worship'.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 750.0,
+          "end": 842.879
+        }
+      ]
+    },
+    {
+      "id": "essence-energies-applies-to-humans",
+      "text": "Just as God's essence is unknowable but His energies are knowable, so too we know other humans through their energies, not their essence.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 3712.639,
+          "end": 3802.92
+        }
+      ]
+    },
+    {
+      "id": "wisdom-leads-to-christ",
+      "text": "Wisdom, the perception of patterns in creation, leads to Christ, as seen in the Magi and in Romans 1 and 10.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 4612.8,
+          "end": 4706.539
+        },
+        {
+          "episode": 22,
+          "start": 5220.0,
+          "end": 5358.6
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-3-knowledge-of-good-and-evil",
+      "reference": "Genesis 3",
+      "summary": "The tree of the knowledge of good and evil represents moral reasoning, which was misused by Eve to try to become like God.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 2238.59,
+          "end": 2329.32
+        },
+        {
+          "episode": 22,
+          "start": 2558.8,
+          "end": 2652.8
+        }
+      ]
+    },
+    {
+      "id": "isaiah-7-knowing-to-choose-good",
+      "reference": "Isaiah 7:15-16",
+      "summary": "The prophecy about Christ knowing to choose good and shun evil, illustrating moral reasoning.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 2252.0,
+          "end": 2345.599
+        }
+      ]
+    },
+    {
+      "id": "matthew-6-eye-is-lamp",
+      "reference": "Matthew 6:22-23",
+      "summary": "The eye as the lamp of the body, illustrating how the nous receives light and transforms the person.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 7431.18,
+          "end": 7523.84
+        }
+      ]
+    },
+    {
+      "id": "romans-1-creation-reveals-god",
+      "reference": "Romans 1:20",
+      "summary": "The invisible attributes of God are made plain in creation, accessible through wisdom.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 4612.8,
+          "end": 4706.539
+        }
+      ]
+    },
+    {
+      "id": "romans-10-stars-preach-gospel",
+      "reference": "Romans 10:18",
+      "summary": "The gospel is written in the stars, discernible through wisdom.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 4650.0,
+          "end": 4740.0
+        }
+      ]
+    },
+    {
+      "id": "2-corinthians-10-5-taking-thoughts-captive",
+      "reference": "2 Corinthians 10:5",
+      "summary": "Taking every thought captive to obey Christ, a discipline of guarding the nous.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 6990.0,
+          "end": 7086.319
+        }
+      ]
+    },
+    {
+      "id": "proverbs-6-6-go-to-the-ant",
+      "reference": "Proverbs 6:6",
+      "summary": "Go to the ant, you sluggard; consider its ways and be wise, illustrating wisdom from creation.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 4518.699,
+          "end": 4609.72
+        }
+      ]
+    },
+    {
+      "id": "revelation-5-worthy-is-the-lamb",
+      "reference": "Revelation 5:11-12",
+      "summary": "The Lamb is worthy to receive power, riches, wisdom, strength, honor, glory, and blessing.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 8310.0,
+          "end": 8359.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "episteme",
+      "term": "Episteme",
+      "definition": "Knowledge that can be demonstrated and proven, such as scientific or mathematical truths.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 461.439,
+          "end": 552.72
+        }
+      ]
+    },
+    {
+      "id": "doxa",
+      "term": "Doxa",
+      "definition": "Opinion, perspective, or appearance-based knowledge, including testimony and viewpoint.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 649.8,
+          "end": 740.19
+        }
+      ]
+    },
+    {
+      "id": "techne",
+      "term": "Techne",
+      "definition": "Craft, art, or know-how; the knowledge of how to make or do things.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 3831.679,
+          "end": 3923.119
+        }
+      ]
+    },
+    {
+      "id": "phronesis",
+      "term": "Phronesis",
+      "definition": "Moral reasoning or practical wisdom; the ability to choose the good and shun evil.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 2210.36,
+          "end": 2301.119
+        }
+      ]
+    },
+    {
+      "id": "sophia",
+      "term": "Sophia",
+      "definition": "Wisdom; the perception of the patterns and order in creation that lead to God.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 4380.0,
+          "end": 4470.399
+        }
+      ]
+    },
+    {
+      "id": "nous",
+      "term": "Nous",
+      "definition": "The mind or spiritual perception; an organ that receives thoughts from the spiritual realm and can see God.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 5126.279,
+          "end": 5217.79
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "Deification; the process of becoming like God through union with Christ.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 2681.119,
+          "end": 2772.0
+        }
+      ]
+    },
+    {
+      "id": "logoi",
+      "term": "Logoi",
+      "definition": "The principles or patterns in created things that reflect the Logos, Christ.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 4727.279,
+          "end": 4821.68
+        }
+      ]
+    },
+    {
+      "id": "kundalini",
+      "term": "Kundalini",
+      "definition": "A serpent-like energy in Eastern practices that is said to rise up the spine to activate the third eye; a form of spiritual bootstrapping.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 6514.0,
+          "end": 6607.6
+        }
+      ]
+    },
+    {
+      "id": "third-eye",
+      "term": "Third Eye",
+      "definition": "A concept in Eastern religions associated with the pineal gland and spiritual perception, often opened through techniques or drugs.",
+      "segments": [
+        {
+          "episode": 22,
+          "start": 6404.479,
+          "end": 6498.88
+        }
+      ]
+    }
+  ]
+}

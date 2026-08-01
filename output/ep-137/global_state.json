@@ -1,0 +1,531 @@
+{
+  "summary": "In this episode, Fr. Andrew and Fr. Stephen discuss the Passion narratives in all four Gospels, emphasizing the importance of reading each account separately rather than harmonizing them. They argue that the differences between the Gospels are not contradictions but rather reflect the distinct perspectives, audiences, and theological emphases of each evangelist. The episode begins with a lengthy prolegomena critiquing modern harmonization and the modernist approach to biblical interpretation, then proceeds to read and comment on the Passion accounts from Mark, Matthew, Luke, and John, highlighting key theological points such as Christ's kingship, the significance of the temple curtain tearing, the role of Barabbas, the meaning of Psalm 22, and the new creation imagery in John's account.",
+  "entities": [
+    {
+      "id": "bart-erman",
+      "title": "Bart Ehrman",
+      "category": "person",
+      "summary": "A prominent New Testament textual critic and agnostic scholar, referred to as 'friend of the show' for his honest historical assessments, including affirming the historicity of Jesus' crucifixion.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 112.96,
+          "end": 203.92
+        },
+        {
+          "episode": 137,
+          "start": 1830.0,
+          "end": 1976.2
+        }
+      ]
+    },
+    {
+      "id": "tatian",
+      "title": "Tatian",
+      "category": "person",
+      "summary": "An early Christian writer who composed the Diatessaron, a harmony of the four Gospels, which the hosts mention as an early example of harmonization.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 382.639,
+          "end": 474.0
+        }
+      ]
+    },
+    {
+      "id": "st-john-chrysostom",
+      "title": "St. John Chrysostom",
+      "category": "person",
+      "summary": "A fourth-century Church Father who noted that differing eyewitness testimony is a sign of authenticity, a point the hosts use to defend the Gospel differences.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 890.36,
+          "end": 984.39
+        }
+      ]
+    },
+    {
+      "id": "st-mark",
+      "title": "St. Mark",
+      "category": "person",
+      "summary": "The author of the earliest Gospel, traditionally based on the memoirs of St. Peter, written after Peter's martyrdom.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 2340.0,
+          "end": 2516.96
+        }
+      ]
+    },
+    {
+      "id": "st-peter",
+      "title": "St. Peter",
+      "category": "person",
+      "summary": "The chief apostle whose denial of Christ is recorded in all Gospels, and whose repentance contrasts with Judas's despair.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 3523.599,
+          "end": 3617.719
+        },
+        {
+          "episode": 137,
+          "start": 5378.88,
+          "end": 5474.6
+        }
+      ]
+    },
+    {
+      "id": "barabbas",
+      "title": "Barabbas",
+      "category": "person",
+      "summary": "A notorious prisoner released instead of Jesus, whose name means 'son of the father' and who represents the false messianic expectations of violent insurrection.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 6057.159,
+          "end": 6265.279
+        }
+      ]
+    },
+    {
+      "id": "pontius-pilate",
+      "title": "Pontius Pilate",
+      "category": "person",
+      "summary": "The Roman governor who condemned Jesus, portrayed as a cowardly and superstitious figure, motivated by fear of omens and political pressure.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 6414.399,
+          "end": 6612.319
+        },
+        {
+          "episode": 137,
+          "start": 8756.399,
+          "end": 8847.0
+        }
+      ]
+    },
+    {
+      "id": "st-dysmas",
+      "title": "St. Dysmas",
+      "category": "person",
+      "summary": "The penitent thief crucified with Jesus, who is venerated as a saint and whose salvation is an exceptional case, not the norm.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 9235.68,
+          "end": 9629.76
+        }
+      ]
+    },
+    {
+      "id": "st-longinus",
+      "title": "St. Longinus",
+      "category": "person",
+      "summary": "The Roman soldier who pierced Christ's side with a spear, traditionally venerated as a saint.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 12319.6,
+          "end": 12410.399
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "title": "Theotokos",
+      "category": "person",
+      "summary": "The Virgin Mary, who is presented in John's Gospel as the new Eve, becoming the mother of all believers.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 11475.459,
+          "end": 11894.0
+        }
+      ]
+    },
+    {
+      "id": "secret-gospel-of-mark",
+      "title": "Secret Gospel of Mark",
+      "category": "other",
+      "summary": "A modern forgery that claimed to contain additional passages from a secret version of Mark's Gospel, debunked as a fraud.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 2695.199,
+          "end": 2878.559
+        }
+      ]
+    },
+    {
+      "id": "temple-curtain",
+      "title": "Temple Curtain",
+      "category": "theological",
+      "summary": "The tearing of the temple curtain at Christ's death is interpreted as a sign of judgment against the temple and the high priesthood, not as opening access to all people.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 4630.72,
+          "end": 4912.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "harmonization",
+      "title": "Harmonization",
+      "summary": "The practice of combining the four Gospel accounts into one unified narrative, which the hosts argue creates a non-canonical 'fifth gospel' and obscures the distinct theological points of each evangelist.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 329.399,
+          "end": 419.959
+        },
+        {
+          "episode": 137,
+          "start": 426.439,
+          "end": 534.2
+        },
+        {
+          "episode": 137,
+          "start": 560.279,
+          "end": 720.399
+        }
+      ]
+    },
+    {
+      "id": "eyewitness-testimony",
+      "title": "Eyewitness Testimony",
+      "summary": "The concept that the Gospels are based on eyewitness testimony, which naturally varies in details and emphasis, and that this variation is a sign of authenticity rather than contradiction.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 730.36,
+          "end": 937.0
+        },
+        {
+          "episode": 137,
+          "start": 930.0,
+          "end": 1121.16
+        }
+      ]
+    },
+    {
+      "id": "modernism-and-biblical-interpretation",
+      "title": "Modernism and Biblical Interpretation",
+      "summary": "The hosts critique both liberal and fundamentalist approaches to Scripture as being modernist, focusing on proving historical facts rather than understanding the theological significance of the events.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 1380.0,
+          "end": 1698.0
+        },
+        {
+          "episode": 137,
+          "start": 1687.0,
+          "end": 1782.48
+        }
+      ]
+    },
+    {
+      "id": "day-of-atonement-typology",
+      "title": "Day of Atonement Typology",
+      "summary": "The Passion narratives, especially Matthew's, present Christ as fulfilling both the scapegoat and the sacrificial goat of the Day of Atonement, with details like the scarlet robe and the reed pointing to this typology.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 6654.159,
+          "end": 6965.119
+        },
+        {
+          "episode": 137,
+          "start": 6965.119,
+          "end": 7055.39
+        }
+      ]
+    },
+    {
+      "id": "harrowing-of-hades",
+      "title": "Harrowing of Hades",
+      "summary": "The event of Christ descending into Hades after His death and leading out the Old Testament saints, as witnessed by the resurrection of the saints in Matthew's Gospel.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 7295.479,
+          "end": 7701.0
+        }
+      ]
+    },
+    {
+      "id": "new-creation-in-john",
+      "title": "New Creation in John",
+      "summary": "St. John's Passion account uses language from Genesis to present the crucifixion as the beginning of the new creation, with Mary as the new Eve and the blood and water from Christ's side as the birth of the Church.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 11606.0,
+          "end": 11894.0
+        },
+        {
+          "episode": 137,
+          "start": 12360.0,
+          "end": 12528.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "four-gospels-not-contradictory",
+      "text": "The four Gospel accounts of the Passion are not contradictory but are complementary, each emphasizing different theological points based on the author's audience and purpose.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 560.279,
+          "end": 720.399
+        },
+        {
+          "episode": 137,
+          "start": 2248.0,
+          "end": 2338.239
+        }
+      ]
+    },
+    {
+      "id": "harmonization-creates-fifth-gospel",
+      "text": "Harmonizing the Gospels creates a non-canonical 'fifth gospel' that is not authoritative and can lead to heresy.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 653.559,
+          "end": 744.84
+        }
+      ]
+    },
+    {
+      "id": "jesus-crucifixion-best-attested",
+      "text": "The crucifixion of Jesus is the single best-attested fact from the ancient world, as even Bart Ehrman affirms.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 1818.48,
+          "end": 1976.2
+        }
+      ]
+    },
+    {
+      "id": "psalm-22-not-abandonment",
+      "text": "Jesus' cry 'My God, my God, why have you forsaken me?' is not a statement of abandonment but the opening of Psalm 22, which concludes with God's deliverance.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 3866.96,
+          "end": 4223.399
+        }
+      ]
+    },
+    {
+      "id": "temple-curtain-judgment",
+      "text": "The tearing of the temple curtain was a sign of judgment against the temple and the high priesthood, revealing that God's presence had departed.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 4770.0,
+          "end": 4912.0
+        }
+      ]
+    },
+    {
+      "id": "barabbas-false-messiah",
+      "text": "Barabbas represents the false messianic expectations of violent insurrection, in contrast to Jesus' non-violent kingdom.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 6195.0,
+          "end": 6290.96
+        }
+      ]
+    },
+    {
+      "id": "pilate-superstition",
+      "text": "Pilate's reluctance to condemn Jesus was motivated by superstition, particularly his wife's dream, not by any sense of justice.",
+      "topic": "History",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 6414.399,
+          "end": 6612.319
+        }
+      ]
+    },
+    {
+      "id": "mary-new-eve",
+      "text": "In John's Gospel, Jesus' words to Mary at the cross change her name from 'woman' to 'mother,' making her the new Eve and mother of all believers.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 11606.0,
+          "end": 11894.0
+        }
+      ]
+    },
+    {
+      "id": "blood-and-water-church",
+      "text": "The blood and water flowing from Christ's side symbolize the sacraments of the Eucharist and Baptism, which constitute the Church, the new Eve.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 12360.0,
+          "end": 12528.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "daniel-7",
+      "reference": "Daniel 7:13-14",
+      "summary": "Jesus' reference to the Son of Man coming with the clouds of heaven is a direct allusion to Daniel's vision, claiming divine authority and enthronement.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 3180.0,
+          "end": 3446.639
+        }
+      ]
+    },
+    {
+      "id": "psalm-22",
+      "reference": "Psalm 22:1",
+      "summary": "Jesus' cry from the cross is the opening verse of Psalm 22, which is a psalm of deliverance, not abandonment.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 3866.96,
+          "end": 4223.399
+        }
+      ]
+    },
+    {
+      "id": "jeremiah-32",
+      "reference": "Jeremiah 32:6-15",
+      "summary": "Matthew's citation of Jeremiah regarding the thirty pieces of silver points to the pattern of Israel devaluing God, yet God still blessing them.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 5593.79,
+          "end": 5830.6
+        }
+      ]
+    },
+    {
+      "id": "zechariah-12",
+      "reference": "Zechariah 12:10",
+      "summary": "John's citation of Zechariah identifies Jesus as the one pierced, who is God Himself, and points to the fountain of cleansing opened for repentance.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 12542.559,
+          "end": 12806.0
+        }
+      ]
+    },
+    {
+      "id": "genesis-2",
+      "reference": "Genesis 2:21-23",
+      "summary": "John's account of the piercing of Christ's side echoes the creation of Eve from Adam's side, symbolizing the birth of the Church.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 12360.0,
+          "end": 12528.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "prolegomena",
+      "term": "Prolegomena",
+      "definition": "Introductory remarks or preliminary observations, often of a scholarly nature.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 96.48,
+          "end": 189.199
+        }
+      ]
+    },
+    {
+      "id": "diatessaron",
+      "term": "Diatessaron",
+      "definition": "A harmony of the four Gospels compiled by Tatian in the second century.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 382.639,
+          "end": 474.0
+        }
+      ]
+    },
+    {
+      "id": "swoon-theory",
+      "term": "Swoon Theory",
+      "definition": "A discredited theory that Jesus did not die on the cross but merely fainted and later revived.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 1418.96,
+          "end": 1511.599
+        }
+      ]
+    },
+    {
+      "id": "preterism",
+      "term": "Preterism",
+      "definition": "The belief that biblical prophecies, especially those in the Olivet Discourse, were fulfilled in the destruction of Jerusalem in AD 70.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 8947.0,
+          "end": 9048.28
+        }
+      ]
+    },
+    {
+      "id": "harrowing-of-hades",
+      "term": "Harrowing of Hades",
+      "definition": "The Orthodox doctrine that Christ descended into Hades after His death and liberated the righteous dead.",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 7440.0,
+          "end": 7544.88
+        }
+      ]
+    },
+    {
+      "id": "theotokos",
+      "term": "Theotokos",
+      "definition": "A Greek title for the Virgin Mary meaning 'God-bearer' or 'Mother of God.'",
+      "segments": [
+        {
+          "episode": 137,
+          "start": 11493.44,
+          "end": 11587.0
+        }
+      ]
+    }
+  ]
+}

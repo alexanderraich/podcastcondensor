@@ -1,0 +1,416 @@
+{
+  "summary": "In this fifth anniversary episode of the Lord of Spirits, hosts Fr. Andrew Stephen Damick and Fr. Stephen De Young explore the ancient flood stories of Mesopotamia, Greece, and Norse mythology, contrasting them with the biblical account in Genesis. They begin by examining the Sumerian flood story, the Atrahasis Epic, and the Epic of Gilgamesh, highlighting common themes of divine displeasure, a hero surviving with animals, and the gods' capriciousness. They then discuss Plato's Atlantis narrative and its later esoteric interpretations, including the racist and occultist developments by figures like Ignatius Donnelly, Madame Blavatsky, and Edgar Cayce. The hosts emphasize that the Genesis flood story is not a plagiarism of these myths but a deliberate theological reworking, presenting a God who loves humanity and desires its flourishing, in stark contrast to the pagan gods. They argue that the flood in Genesis is best understood as an 'uncreation' and 'recreation' event, and they critique modern debates about the flood's global or local extent as missing the point. The episode concludes with a call to focus on the spiritual and moral lessons of the scriptures rather than on historical or scientific details, and to understand faith as faithfulness rather than mere mental assent.",
+  "entities": [
+    {
+      "id": "atrahasis",
+      "title": "Atrahasis",
+      "category": "historical",
+      "summary": "The hero of the Akkadian Atrahasis Epic, a wise man who is warned by the god Ea/Enki to build a boat to survive the flood.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 1997.0,
+          "end": 2115.119
+        },
+        {
+          "episode": 123,
+          "start": 2589.199,
+          "end": 2684.719
+        }
+      ]
+    },
+    {
+      "id": "ziusudra",
+      "title": "Ziusudra",
+      "category": "historical",
+      "summary": "The hero of the Sumerian flood story, a priest-king of Shuruppak who survives the flood and is granted immortality.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 1350.0,
+          "end": 1443.0
+        },
+        {
+          "episode": 123,
+          "start": 1560.0,
+          "end": 1662.359
+        }
+      ]
+    },
+    {
+      "id": "gilgamesh",
+      "title": "Gilgamesh",
+      "category": "historical",
+      "summary": "The protagonist of the Epic of Gilgamesh, who seeks immortality and learns the flood story from Utnapishtim.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 3567.36,
+          "end": 3668.239
+        },
+        {
+          "episode": 123,
+          "start": 3717.119,
+          "end": 3810.39
+        }
+      ]
+    },
+    {
+      "id": "plato",
+      "title": "Plato",
+      "category": "person",
+      "summary": "The Greek philosopher who wrote about Atlantis in his dialogues Timaeus and Critias, claiming it was based on Egyptian records.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 5908.0,
+          "end": 6066.0
+        },
+        {
+          "episode": 123,
+          "start": 6750.0,
+          "end": 6947.119
+        }
+      ]
+    },
+    {
+      "id": "ignatius-donnelly",
+      "title": "Ignatius Donnelly",
+      "category": "person",
+      "summary": "A 19th-century American congressman who wrote 'Atlantis: The Antediluvian World', popularizing the idea that Atlantis was a real civilization and the source of all ancient cultures.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 7347.79,
+          "end": 7506.8
+        }
+      ]
+    },
+    {
+      "id": "madame-blavatsky",
+      "title": "Madame Blavatsky",
+      "category": "person",
+      "summary": "Founder of Theosophy, who incorporated Atlantis into her esoteric cosmology, linking it to the Aryan race and psychic powers.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 7539.279,
+          "end": 7739.939
+        }
+      ]
+    },
+    {
+      "id": "edgar-cayce",
+      "title": "Edgar Cayce",
+      "category": "person",
+      "summary": "An American psychic known as the 'Sleeping Prophet', who claimed to have visions of Atlantis and predicted its rise in the 1960s.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 7868.0,
+          "end": 8200.0
+        }
+      ]
+    },
+    {
+      "id": "noah",
+      "title": "Noah",
+      "category": "biblical",
+      "summary": "The righteous man in Genesis who, with his family and animals, survives the flood in the ark, becoming a new father of humanity and a type of Christ.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 9282.79,
+          "end": 9373.5
+        },
+        {
+          "episode": 123,
+          "start": 11375.76,
+          "end": 11472.0
+        }
+      ]
+    },
+    {
+      "id": "enlil",
+      "title": "Enlil",
+      "category": "theological",
+      "summary": "The chief god in Mesopotamian mythology who decides to destroy humanity with a flood, often seen as a type of the devil in later interpretation.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 2608.76,
+          "end": 2699.98
+        },
+        {
+          "episode": 123,
+          "start": 2890.92,
+          "end": 3108.0
+        }
+      ]
+    },
+    {
+      "id": "bergelmir",
+      "title": "Bergelmir",
+      "category": "mythological",
+      "summary": "A frost giant in Norse mythology who survives the flood of Ymir's blood and becomes the ancestor of all frost giants.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 11099.399,
+          "end": 11189.899
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "ancient-flood-stories",
+      "title": "Ancient Flood Stories",
+      "summary": "The episode surveys flood narratives from Sumerian, Akkadian, Babylonian, Greek, and Norse traditions, noting their common elements and contrasts with the biblical account.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 600.0,
+          "end": 1181.759
+        },
+        {
+          "episode": 123,
+          "start": 10931.399,
+          "end": 11308.12
+        }
+      ]
+    },
+    {
+      "id": "genesis-flood-as-uncreation",
+      "title": "Genesis Flood as Uncreation",
+      "summary": "The hosts argue that the Genesis flood narrative describes God uncreating the world by reversing the separation of waters from days two and three, and then recreating it, rather than describing a merely global or local flood.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 9817.2,
+          "end": 9930.2
+        }
+      ]
+    },
+    {
+      "id": "documentary-hypothesis",
+      "title": "Documentary Hypothesis",
+      "summary": "The hosts critique the JEDP documentary hypothesis, explaining its origins, circular reasoning, and why it is not useful for Orthodox Christian interpretation.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 4931.64,
+          "end": 5507.68
+        }
+      ]
+    },
+    {
+      "id": "atlantis-and-occultism",
+      "title": "Atlantis and Occultism",
+      "summary": "The episode traces the development of Atlantis from Plato's dialogues through its adoption by occultists like Madame Blavatsky and Edgar Cayce, and its connection to Nazi ideology.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 7120.0,
+          "end": 8200.0
+        }
+      ]
+    },
+    {
+      "id": "faith-as-faithfulness",
+      "title": "Faith as Faithfulness",
+      "summary": "Fr. Stephen De Young emphasizes that biblical faith is not mere mental assent but faithfulness demonstrated in one's life, and that debates over historical details are irrelevant to Christian living.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 11560.34,
+          "end": 12381.54
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "genesis-not-plagiarism",
+      "text": "The Genesis flood story is not a plagiarism of Mesopotamian myths but a deliberate theological reworking that presents a God who loves humanity, in contrast to the capricious pagan gods.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 660.0,
+          "end": 750.799
+        },
+        {
+          "episode": 123,
+          "start": 3155.599,
+          "end": 3251.539
+        }
+      ]
+    },
+    {
+      "id": "flood-as-uncreation",
+      "text": "The Genesis flood narrative describes God uncreating the world by reversing the separation of waters, and then recreating it, rather than describing a merely global or local flood.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 9817.2,
+          "end": 9930.2
+        }
+      ]
+    },
+    {
+      "id": "documentary-hypothesis-circular",
+      "text": "The documentary hypothesis is based on circular reasoning, assuming that Israelite religion evolved from polytheism, and it is not useful for Orthodox Christian interpretation.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 5078.439,
+          "end": 5173.68
+        }
+      ]
+    },
+    {
+      "id": "faith-not-belief",
+      "text": "Biblical faith is not mere mental assent but faithfulness demonstrated in one's life; debates over historical details are irrelevant to Christian living.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 11560.34,
+          "end": 12381.54
+        }
+      ]
+    },
+    {
+      "id": "noah-as-type-of-christ",
+      "text": "Noah is a type of Christ, as he is the righteous one through whom God saves humanity, pointing to Jesus who is the true second Adam.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 11375.76,
+          "end": 11472.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-6-9",
+      "reference": "Genesis 6-9",
+      "summary": "The primary biblical passage discussed, the story of Noah and the flood, contrasted with ancient Near Eastern flood myths.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 539.8,
+          "end": 630.159
+        },
+        {
+          "episode": 123,
+          "start": 8968.86,
+          "end": 9059.819
+        }
+      ]
+    },
+    {
+      "id": "matthew-24-38",
+      "reference": "Matthew 24:38",
+      "summary": "Jesus' reference to the days of Noah, interpreted as a warning about being unprepared for the second coming, not about Nephilim rituals.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 5700.0,
+          "end": 5792.56
+        }
+      ]
+    },
+    {
+      "id": "genesis-1-3",
+      "reference": "Genesis 1-3",
+      "summary": "The creation account that provides the framework for understanding the flood as an uncreation and recreation.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 9771.0,
+          "end": 9864.4
+        }
+      ]
+    },
+    {
+      "id": "acts-15",
+      "reference": "Acts 15",
+      "summary": "Mentioned in the discussion of the prohibition on eating blood, which is no longer used for atonement after Christ.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 10272.159,
+          "end": 10366.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "nephilim",
+      "term": "Nephilim",
+      "definition": "The offspring of the 'sons of God' and 'daughters of men' in Genesis 6:1-4, often understood as giants or fallen heroes, and a key topic in the episode.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 8998.459,
+          "end": 9090.0
+        }
+      ]
+    },
+    {
+      "id": "documentary-hypothesis",
+      "term": "Documentary Hypothesis",
+      "definition": "A theory that the Pentateuch was composed from multiple sources (J, E, D, P) over centuries, critiqued by the hosts as circular and unhelpful.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 4931.64,
+          "end": 5507.68
+        }
+      ]
+    },
+    {
+      "id": "theosophy",
+      "term": "Theosophy",
+      "definition": "An esoteric movement founded by Madame Blavatsky, which incorporated Atlantis and the Aryan race into its teachings.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 7539.279,
+          "end": 7739.939
+        }
+      ]
+    },
+    {
+      "id": "thule-society",
+      "term": "Thule Society",
+      "definition": "A German occult group that combined Atlantis and Hyperborea myths, influencing Nazi ideology.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 7767.819,
+          "end": 7859.119
+        }
+      ]
+    },
+    {
+      "id": "bimini-road",
+      "term": "Bimini Road",
+      "definition": "An underwater rock formation near Bimini in the Bahamas, claimed by some to be evidence of Atlantis.",
+      "segments": [
+        {
+          "episode": 123,
+          "start": 8152.96,
+          "end": 8244.79
+        }
+      ]
+    }
+  ]
+}

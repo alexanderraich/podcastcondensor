@@ -1,0 +1,352 @@
+{
+  "summary": "In this episode of the Lord of Spirits, hosts Father Andrew Stephen Damick and Father Stephen DeYoung conclude their three-part series on sacrifice by exploring the concept of atonement. They begin by examining the English word 'atonement,' which was coined by William Tyndale in the 16th century to translate biblical terms, and trace its roots to the Hebrew word 'kaphar' (meaning 'to cover') and the Greek 'hilasterion.' The discussion centers on the Day of Atonement (Yom Kippur) ritual from Leviticus 16, emphasizing that its purpose is to purify the tabernacle and sacred space from the taint of sin, not to transfer sins to an animal for punishment. They detail the two goats: one sacrificed for Yahweh, its blood used to cleanse the sanctuary, and the other, the scapegoat for Azazel, which carries the sins of the people into the wilderness. The hosts then connect this ritual to the New Testament, showing how Christ fulfills the Day of Atonement as both the high priest and the sacrificial goat, purifying the entire cosmos and defeating the demonic powers, particularly Azazel. They also address common misconceptions about atonement, such as penal substitution, and emphasize that atonement is not a mechanical system but a cosmic purification that Christians participate in through the Church and sacraments.",
+  "entities": [
+    {
+      "id": "azazel",
+      "title": "Azazel",
+      "category": "theological",
+      "summary": "A demonic being associated with the wilderness, to whom the scapegoat is sent. In Second Temple literature, he is a leader of rebellious angels and is ultimately bound and cast into the lake of fire.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 1929.16,
+          "end": 2021.2
+        },
+        {
+          "episode": 14,
+          "start": 2594.0,
+          "end": 2743.239
+        },
+        {
+          "episode": 14,
+          "start": 2833.8,
+          "end": 2925.92
+        },
+        {
+          "episode": 14,
+          "start": 3522.84,
+          "end": 3770.44
+        }
+      ]
+    },
+    {
+      "id": "yahweh",
+      "title": "Yahweh",
+      "category": "theological",
+      "summary": "The personal name of God in the Old Testament. In the Day of Atonement, one goat is designated 'for Yahweh' and sacrificed to purify the sanctuary.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 1920.0,
+          "end": 2012.16
+        },
+        {
+          "episode": 14,
+          "start": 1963.88,
+          "end": 2056.28
+        }
+      ]
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "theological",
+      "summary": "The central figure of Christianity, who fulfills the Day of Atonement as both the high priest and the sacrificial goat, purifying the cosmos and defeating the devil.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 4050.0,
+          "end": 4144.92
+        },
+        {
+          "episode": 14,
+          "start": 4795.76,
+          "end": 4888.439
+        },
+        {
+          "episode": 14,
+          "start": 5258.88,
+          "end": 5349.39
+        }
+      ]
+    },
+    {
+      "id": "william-tyndale",
+      "title": "William Tyndale",
+      "category": "historical",
+      "summary": "16th-century Bible translator who coined the English word 'atonement' in his 1526 translation of the New Testament.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 262.879,
+          "end": 359.199
+        }
+      ]
+    },
+    {
+      "id": "john-the-evangelist",
+      "title": "John the Evangelist",
+      "category": "person",
+      "summary": "Author of the Gospel of John, the Epistles of John, and Revelation. He uses Day of Atonement imagery extensively, especially in 1 John, to describe Christ's work.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 4015.0,
+          "end": 4105.159
+        },
+        {
+          "episode": 14,
+          "start": 4206.479,
+          "end": 4303.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "atonement",
+      "title": "Atonement",
+      "summary": "The English word 'atonement' was coined by Tyndale to translate biblical terms, meaning 'at-one-ment' or reconciliation. In the Bible, it refers to the covering and purification of sin, especially through the Day of Atonement ritual.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 96.0,
+          "end": 335.439
+        },
+        {
+          "episode": 14,
+          "start": 7140.0,
+          "end": 7236.479
+        }
+      ]
+    },
+    {
+      "id": "day-of-atonement",
+      "title": "Day of Atonement (Yom Kippur)",
+      "summary": "The annual Jewish ritual described in Leviticus 16, involving two goats: one sacrificed to purify the sanctuary, and the other sent into the wilderness to Azazel, carrying the sins of the people.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 945.36,
+          "end": 1575.839
+        },
+        {
+          "episode": 14,
+          "start": 1576.559,
+          "end": 2610.0
+        }
+      ]
+    },
+    {
+      "id": "scapegoat",
+      "title": "Scapegoat",
+      "summary": "The goat for Azazel, which symbolically carries the sins of Israel into the wilderness. It is not sacrificed but sent away, and later traditions involved pushing it off a cliff to prevent its return.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 2310.0,
+          "end": 2610.0
+        }
+      ]
+    },
+    {
+      "id": "sacred-space",
+      "title": "Sacred Space",
+      "summary": "The concept that sin taints physical places, requiring purification. The Day of Atonement cleanses the tabernacle and, in Christ, the entire cosmos becomes sacred space.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 1155.44,
+          "end": 1575.839
+        },
+        {
+          "episode": 14,
+          "start": 5395.56,
+          "end": 5488.319
+        }
+      ]
+    },
+    {
+      "id": "eschatological-day-of-atonement",
+      "title": "Eschatological Day of Atonement",
+      "summary": "The anticipated final Day of Atonement in Second Temple literature, where Azazel is bound and defeated, and the whole creation is purified. Christians see this fulfilled in Christ.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 3786.32,
+          "end": 3977.199
+        },
+        {
+          "episode": 14,
+          "start": 4050.0,
+          "end": 4144.92
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "atonement-means-covering",
+      "text": "The biblical concept of atonement is not about punishment or satisfaction but about covering and purifying sin, especially the taint that sin leaves on sacred space.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 607.24,
+          "end": 945.36
+        },
+        {
+          "episode": 14,
+          "start": 1263.599,
+          "end": 1358.279
+        }
+      ]
+    },
+    {
+      "id": "scapegoat-not-sacrificed",
+      "text": "The scapegoat for Azazel is not sacrificed; it is sent into the wilderness carrying the sins of the people. The only animal in the Torah with sins placed on it is not killed as a sacrifice.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 2410.679,
+          "end": 2502.8
+        }
+      ]
+    },
+    {
+      "id": "christ-both-goats",
+      "text": "In the New Testament, Christ is depicted as both the goat for Yahweh (whose blood purifies) and the goat for Azazel (who takes away sins), fulfilling the Day of Atonement.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 5258.88,
+          "end": 5349.39
+        }
+      ]
+    },
+    {
+      "id": "atonement-not-system",
+      "text": "Atonement is not a mechanical system of salvation but a cosmic purification that Christians participate in through the Church and sacraments.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 7140.0,
+          "end": 7236.479
+        },
+        {
+          "episode": 14,
+          "start": 7315.56,
+          "end": 7407.239
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "leviticus-16",
+      "reference": "Leviticus 16",
+      "summary": "The primary Old Testament passage describing the Day of Atonement ritual, including the two goats and the purification of the sanctuary.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 1196.96,
+          "end": 1575.839
+        },
+        {
+          "episode": 14,
+          "start": 1576.559,
+          "end": 2610.0
+        }
+      ]
+    },
+    {
+      "id": "matthew-27-25",
+      "reference": "Matthew 27:25",
+      "summary": "The crowd says 'His blood be on us and on our children,' which the hosts interpret as a blessing, not a curse, in light of the purifying blood of Christ.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 5104.64,
+          "end": 5227.159
+        }
+      ]
+    },
+    {
+      "id": "1-john-2-2",
+      "reference": "1 John 2:2",
+      "summary": "Christ is the atonement for our sins and for the whole world, indicating the expansion of purification to all creation.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 5380.8,
+          "end": 5488.319
+        }
+      ]
+    },
+    {
+      "id": "hebrews-9-11-14",
+      "reference": "Hebrews 9:11-14",
+      "summary": "Christ enters the heavenly sanctuary as high priest, purifying the conscience and the cosmos, fulfilling the Day of Atonement.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 5927.439,
+          "end": 6048.84
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "kaphar",
+      "term": "Kaphar (KFR)",
+      "definition": "Hebrew root meaning 'to cover,' from which the word 'atonement' is derived. It refers to covering sin and purifying.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 488.79,
+          "end": 624.36
+        }
+      ]
+    },
+    {
+      "id": "hilasterion",
+      "term": "Hilasterion",
+      "definition": "Greek word translated as 'atonement' or 'propitiation,' used in the New Testament to refer to the Day of Atonement and Christ's work.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 359.199,
+          "end": 458.959
+        }
+      ]
+    },
+    {
+      "id": "yom-kippur",
+      "term": "Yom Kippur",
+      "definition": "Hebrew for 'Day of Atonement,' the annual day of covering and purification.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 954.6,
+          "end": 1046.4
+        }
+      ]
+    },
+    {
+      "id": "mercy-seat",
+      "term": "Mercy Seat",
+      "definition": "A mistranslation of the Hebrew 'kapporet' (cover) in the King James Version, referring to the lid of the Ark of the Covenant.",
+      "segments": [
+        {
+          "episode": 14,
+          "start": 708.399,
+          "end": 811.39
+        }
+      ]
+    }
+  ]
+}

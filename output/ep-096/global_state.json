@@ -1,0 +1,342 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young explore the nature of time from an Orthodox Christian perspective. They begin by critiquing the modern myth of 'Western civilization' as a fusion of Christianity and paganism, using the Olympics as an example of paganism reasserting itself. The main discussion focuses on God's relationship to time, arguing that God is not bound by time or space, and that temporal categories do not apply to Him. They emphasize that God's actions manifest in time and space for created beings, but God Himself is beyond such limitations. The hosts dismantle various theological systems, including Calvinism, Molinism, and open theism, which presuppose God's subjection to time. They also discuss the biblical concept of time, including the days of creation, the Sabbath, and the liturgical calendar, as means of theosis. In the third half, they delve into the human experience of time, drawing on St. Augustine's phenomenology, and conclude with practical advice on living in the present moment with gratitude and hope.",
+  "entities": [
+    {
+      "id": "st-augustine",
+      "title": "St. Augustine",
+      "category": "person",
+      "summary": "Early Christian theologian and bishop of Hippo, whose 'Confessions' contains a seminal phenomenological analysis of time.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 9090.0,
+          "end": 9181.76
+        },
+        {
+          "episode": 96,
+          "start": 10009.28,
+          "end": 10105.0
+        }
+      ]
+    },
+    {
+      "id": "plato",
+      "title": "Plato",
+      "category": "person",
+      "summary": "Ancient Greek philosopher who viewed time as cyclical and associated with motion, influencing pagan concepts of time.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 2290.0,
+          "end": 2519.8
+        }
+      ]
+    },
+    {
+      "id": "calvinism",
+      "title": "Calvinism",
+      "category": "theological",
+      "summary": "A Protestant theological system that emphasizes predestination and God's sovereignty, which the hosts critique for presupposing God's subjection to time.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 1965.72,
+          "end": 2059.0
+        },
+        {
+          "episode": 96,
+          "start": 5256.0,
+          "end": 5400.92
+        }
+      ]
+    },
+    {
+      "id": "open-theism",
+      "title": "Open Theism",
+      "category": "theological",
+      "summary": "A theological view that God does not know the future exhaustively, which the hosts argue makes God finite and not the true God.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 4026.48,
+          "end": 4122.88
+        },
+        {
+          "episode": 96,
+          "start": 4200.0,
+          "end": 4383.119
+        }
+      ]
+    },
+    {
+      "id": "st-john-of-damascus",
+      "title": "St. John of Damascus",
+      "category": "person",
+      "summary": "Church Father whose 'Exact Exposition of the Orthodox Faith' discusses the nature of angels and their limitations.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 7759.0,
+          "end": 7858.88
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "god-and-time",
+      "title": "God and Time",
+      "summary": "God is not bound by time; temporal categories do not apply to Him. God's actions manifest in time for created beings, but He Himself is outside of time.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 1641.0,
+          "end": 1735.68
+        },
+        {
+          "episode": 96,
+          "start": 1878.359,
+          "end": 1970.119
+        },
+        {
+          "episode": 96,
+          "start": 3221.4,
+          "end": 3315.48
+        }
+      ]
+    },
+    {
+      "id": "time-as-phenomenological",
+      "title": "Time as Phenomenological",
+      "summary": "Time is not an objective thing but a human experience, similar to color or sound. It exists only in the realm of experience and varies among different creatures.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 2838.559,
+          "end": 2928.96
+        },
+        {
+          "episode": 96,
+          "start": 3050.0,
+          "end": 3143.92
+        }
+      ]
+    },
+    {
+      "id": "apophatic-theology",
+      "title": "Apophatic Theology",
+      "summary": "Apophatic theology emphasizes humility by recognizing that human language and concepts cannot fully encapsulate God. It involves making negative statements about God to avoid idolatry.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 10674.79,
+          "end": 10769.0
+        }
+      ]
+    },
+    {
+      "id": "theosis-through-calendar",
+      "title": "Theosis through the Calendar",
+      "summary": "The liturgical calendar, with its cycles of feasts, structures human experience of time and facilitates theosis by uniting human life with divine life.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 5876.0,
+          "end": 6011.76
+        },
+        {
+          "episode": 96,
+          "start": 6180.0,
+          "end": 6285.359
+        }
+      ]
+    },
+    {
+      "id": "human-experience-of-time",
+      "title": "Human Experience of Time",
+      "summary": "St. Augustine's phenomenology describes time as a tension between memory (past) and anticipation (future), with the present being a slippery point of attention.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 9090.0,
+          "end": 9181.76
+        },
+        {
+          "episode": 96,
+          "start": 10009.28,
+          "end": 10105.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "god-not-bound-by-time",
+      "text": "God is not bound by time; temporal categories do not apply to Him. If He were, He would be a creature, not God.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 1878.359,
+          "end": 1970.119
+        },
+        {
+          "episode": 96,
+          "start": 3221.4,
+          "end": 3315.48
+        }
+      ]
+    },
+    {
+      "id": "time-does-not-exist-as-thing",
+      "text": "Time does not exist as a thing; it is a phenomenological experience of creatures. It is not an object but a mode of perception.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 2838.559,
+          "end": 2928.96
+        },
+        {
+          "episode": 96,
+          "start": 3050.0,
+          "end": 3143.92
+        }
+      ]
+    },
+    {
+      "id": "calvinism-incoherent",
+      "text": "Calvinism is logically incoherent because it presupposes God makes decrees 'before' creation, implying God is subject to time.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 1965.72,
+          "end": 2059.0
+        },
+        {
+          "episode": 96,
+          "start": 5390.96,
+          "end": 5487.119
+        }
+      ]
+    },
+    {
+      "id": "open-theism-false",
+      "text": "Open theism is false because it makes God finite and subject to time, reducing Him to a creature.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 4026.48,
+          "end": 4122.88
+        }
+      ]
+    },
+    {
+      "id": "present-moment-action",
+      "text": "The present moment is the only place where humans can act to repent, heal the past, and build the future; prayer should focus on the present.",
+      "topic": "Spirituality",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 11137.479,
+          "end": 11259.739
+        },
+        {
+          "episode": 96,
+          "start": 11230.0,
+          "end": 11480.959
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-creation-days",
+      "reference": "Genesis 1:1-2:3",
+      "summary": "The days of creation are not literal 24-hour periods but manifestations of God's work; the seventh day represents God's enthronement and kingdom.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 5469.359,
+          "end": 5729.479
+        }
+      ]
+    },
+    {
+      "id": "romans-predestination",
+      "reference": "Romans 8:29",
+      "summary": "The Greek word 'proorizo' means to put in order in advance, not to decree individuals to salvation or damnation; it refers to God providing the way of salvation.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 6390.0,
+          "end": 6561.859
+        }
+      ]
+    },
+    {
+      "id": "revelation-ages",
+      "reference": "Revelation 22:5",
+      "summary": "The phrase 'unto the ages of ages' refers to the age to come, which has no end, not a finite period.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 7355.76,
+          "end": 7530.119
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "apophatic",
+      "term": "Apophatic",
+      "definition": "A theological approach that describes God by negation, emphasizing His incomprehensibility and transcendence.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 10674.79,
+          "end": 10769.0
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming partakers of the divine nature through union with Christ, often facilitated by participation in the sacramental and liturgical life.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 6180.0,
+          "end": 6285.359
+        }
+      ]
+    },
+    {
+      "id": "proorizo",
+      "term": "Proorizo",
+      "definition": "Greek word meaning 'to put in order in advance,' often translated as 'predestined' in English, but without the fatalistic connotations.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 6341.119,
+          "end": 6433.39
+        }
+      ]
+    },
+    {
+      "id": "passible",
+      "term": "Passible",
+      "definition": "Capable of being acted upon or experiencing emotions; a quality of creatures, not God.",
+      "segments": [
+        {
+          "episode": 96,
+          "start": 3254.92,
+          "end": 3348.619
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,415 @@
+{
+  "summary": "This open-line episode of the Lord of Spirits podcast features the hosts answering a wide range of caller questions on topics including ancient Egyptian onion worship, the meaning of love words in John 21, demonic hierarchy, marriage in heaven, UFOs and Sasquatch, Pharaoh's hardened heart, God's foreknowledge vs. free will, the distinction between Hades and hell, and prayers for the departed. The hosts emphasize the importance of understanding words from usage rather than etymology, the spiritual reality of demons as cosmic intelligences, and the Orthodox view of salvation as a transformative process rather than a transactional event. They also discuss the role of storytelling in conveying truth and the need for Christians to be counter-cultural.",
+  "entities": [
+    {
+      "id": "st-john-chrysostom",
+      "title": "St. John Chrysostom",
+      "category": "person",
+      "summary": "Church Father who mentioned Egyptians worshiping onions.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 40.6,
+          "end": 131.0
+        }
+      ]
+    },
+    {
+      "id": "leviathan",
+      "title": "Leviathan",
+      "category": "theological",
+      "summary": "A spiritual entity that embodies oppressive empires, such as Rome in Revelation.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 450.0,
+          "end": 563.39
+        }
+      ]
+    },
+    {
+      "id": "st-christopher",
+      "title": "St. Christopher",
+      "category": "person",
+      "summary": "Saint sometimes depicted with a dog's head, possibly connected to werewolf or giant traditions.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 265.759,
+          "end": 359.319
+        }
+      ]
+    },
+    {
+      "id": "book-of-enoch",
+      "title": "Book of Enoch",
+      "category": "historical",
+      "summary": "Apocalyptic text referenced for the imprisonment of the Watchers and Enoch's intercession.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 3877.679,
+          "end": 3982.719
+        }
+      ]
+    },
+    {
+      "id": "st-augustine",
+      "title": "St. Augustine",
+      "category": "person",
+      "summary": "Church Father who struggled to interpret 1 Peter 3 regarding the spirits in prison.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 3738.639,
+          "end": 3831.46
+        }
+      ]
+    },
+    {
+      "id": "sasquatch",
+      "title": "Sasquatch",
+      "category": "other",
+      "summary": "Cryptid possibly related to giant traditions or a hominid species.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 5400.0,
+          "end": 5520.39
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "egyptian-onion-worship",
+      "title": "Egyptian Onion Worship",
+      "summary": "Ancient Egyptians revered onions as symbols of eternity, used them in mummification, and possibly offered sacrifices to them, as referenced by St. John Chrysostom and Roman writers.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 30.0,
+          "end": 147.199
+        }
+      ]
+    },
+    {
+      "id": "phileo-agape-interchangeability",
+      "title": "Phileo and Agape Interchangeability",
+      "summary": "In John 21, the Greek words phileo and agape are used synonymously, not as technical terms for different kinds of love, as shown by St. John's consistent usage elsewhere.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 657.96,
+          "end": 1018.559
+        }
+      ]
+    },
+    {
+      "id": "demonic-hierarchy",
+      "title": "Demonic Hierarchy",
+      "summary": "Demons lack the ordered ranks of angels because they do not participate in God's works; they cooperate for common goals but are not organized like a military hierarchy.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 1346.48,
+          "end": 1481.839
+        }
+      ]
+    },
+    {
+      "id": "marriage-in-heaven",
+      "title": "Marriage in Heaven",
+      "summary": "In the resurrection, marriage as physical procreation ends, but the spiritual intimacy and love developed in marriage endure eternally in the life of the world to come.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 1916.94,
+          "end": 2214.639
+        }
+      ]
+    },
+    {
+      "id": "christ-proclamation-to-spirits",
+      "title": "Christ's Proclamation to Spirits in Prison",
+      "summary": "In 1 Peter 3, Christ preached to the imprisoned fallen angels (Watchers) from Noah's time, proclaiming their doom, not offering them a second chance.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 3695.0,
+          "end": 4066.239
+        }
+      ]
+    },
+    {
+      "id": "glory-of-god",
+      "title": "Glory of God",
+      "summary": "God's glory (kavod) refers to His weighty, bodily manifestation, while shekinah is the theophanic cloud; both are common to the Trinity, not specific to one person.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 4290.0,
+          "end": 4477.8
+        }
+      ]
+    },
+    {
+      "id": "pharaohs-hardened-heart",
+      "title": "Pharaoh's Hardened Heart",
+      "summary": "God hardened Pharaoh's heart as an act of justice against Egypt's gods, not to prevent repentance; Pharaoh's own hardness preceded God's action.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 5799.0,
+          "end": 6364.56
+        }
+      ]
+    },
+    {
+      "id": "gods-foreknowledge-and-free-will",
+      "title": "God's Foreknowledge and Free Will",
+      "summary": "God's knowledge is not like human knowledge; He is not bound by time, so His foreknowledge does not negate human free will, as we cannot comprehend His perspective.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 6504.56,
+          "end": 7005.699
+        }
+      ]
+    },
+    {
+      "id": "hades-hell-sheol",
+      "title": "Hades, Hell, and Sheol",
+      "summary": "These terms all refer to the underworld/place of the dead; they are roughly synonymous, though individual authors may use them as technical terms for different states.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 7282.72,
+          "end": 7763.56
+        }
+      ]
+    },
+    {
+      "id": "prayer-for-departed",
+      "title": "Prayer for the Departed",
+      "summary": "Praying for the dead is a means by which God works salvation; we do not know the final state of anyone, and our prayers can benefit them through God's mercy.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 8070.0,
+          "end": 8579.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "phileo-agape-synonymous",
+      "text": "In John 21, phileo and agape are used synonymously, not as technical terms for different kinds of love, as shown by St. John's usage elsewhere.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 657.96,
+          "end": 1018.559
+        }
+      ]
+    },
+    {
+      "id": "demons-no-hierarchy",
+      "text": "Demons do not have the ordered ranks of angels because they do not participate in God's works; they cooperate but lack a hierarchy.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 1346.48,
+          "end": 1481.839
+        }
+      ]
+    },
+    {
+      "id": "marriage-endures-eternally",
+      "text": "The spiritual intimacy of marriage endures in the life of the world to come, though procreation ends.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 1916.94,
+          "end": 2214.639
+        }
+      ]
+    },
+    {
+      "id": "christ-preached-doom-to-watchers",
+      "text": "In 1 Peter 3, Christ preached to the imprisoned fallen angels (Watchers), proclaiming their doom, not offering salvation.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 3695.0,
+          "end": 4066.239
+        }
+      ]
+    },
+    {
+      "id": "pharaohs-heart-justice",
+      "text": "God hardened Pharaoh's heart as an act of justice against Egypt's gods, not to prevent repentance.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 5799.0,
+          "end": 6364.56
+        }
+      ]
+    },
+    {
+      "id": "gods-knowledge-not-human",
+      "text": "God's foreknowledge does not negate free will because His knowledge is not like human knowledge; He is not bound by time.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 6504.56,
+          "end": 7005.699
+        }
+      ]
+    },
+    {
+      "id": "hades-hell-synonyms",
+      "text": "Hades, hell, and Sheol are roughly synonymous terms for the underworld; individual authors may use them as technical terms.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 7282.72,
+          "end": 7763.56
+        }
+      ]
+    },
+    {
+      "id": "prayer-benefits-departed",
+      "text": "Praying for the departed is a means by which God works salvation; our prayers can benefit them through His mercy.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 8070.0,
+          "end": 8579.0
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "john-21-love-words",
+      "reference": "John 21:15-17",
+      "summary": "Discussion of phileo and agape used interchangeably.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 657.96,
+          "end": 1018.559
+        }
+      ]
+    },
+    {
+      "id": "matthew-22-marriage-resurrection",
+      "reference": "Matthew 22:23-30",
+      "summary": "Christ's teaching that in the resurrection there is no marriage, interpreted as no weddings, not no marital intimacy.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 1916.94,
+          "end": 2214.639
+        }
+      ]
+    },
+    {
+      "id": "1-peter-3-spirits-prison",
+      "reference": "1 Peter 3:19-20",
+      "summary": "Christ preached to the spirits in prison who disobeyed in Noah's time, identified as fallen angels.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 3695.0,
+          "end": 4066.239
+        }
+      ]
+    },
+    {
+      "id": "exodus-pharaoh-heart",
+      "reference": "Exodus 4-14",
+      "summary": "God hardens Pharaoh's heart as part of executing judgment on Egypt's gods.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 5799.0,
+          "end": 6364.56
+        }
+      ]
+    },
+    {
+      "id": "revelation-lake-of-fire",
+      "reference": "Revelation 20:14",
+      "summary": "The underworld (Hades) is cast into the lake of fire, indicating a final state.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 7439.399,
+          "end": 7533.239
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "kavod",
+      "term": "Kavod",
+      "definition": "Hebrew word for glory, meaning weight or mass, referring to God's bodily manifestation.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 4319.279,
+          "end": 4410.1
+        }
+      ]
+    },
+    {
+      "id": "shekinah",
+      "term": "Shekinah",
+      "definition": "Hebrew term for the theophanic glory cloud, often translated as glory.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 4349.39,
+          "end": 4440.0
+        }
+      ]
+    },
+    {
+      "id": "harrowing-of-hades",
+      "term": "Harrowing of Hades",
+      "definition": "Christ's descent into the underworld to liberate the righteous dead and proclaim victory over demons.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 3860.679,
+          "end": 3954.4
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God through participation in His energies.",
+      "segments": [
+        {
+          "episode": 34,
+          "start": 8483.639,
+          "end": 8579.0
+        }
+      ]
+    }
+  ]
+}

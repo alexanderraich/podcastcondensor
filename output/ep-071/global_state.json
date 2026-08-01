@@ -1,0 +1,678 @@
+{
+  "summary": "In this episode of the Lord of Spirits, Fathers Andrew Stephen Damick and Stephen DeYoung continue their series on eschatology by examining the 'bad boys of the apocalypse': the Four Horsemen, Gog and Magog, and the locust armies. They begin by discussing the Four Horsemen of Revelation 6, correcting common misconceptions and identifying them as ancient Canaanite deities filtered through the Hebrew prophetic tradition. The first horseman, often called Pestilence, is identified as Reshef, the Canaanite god of plague and war, who rides a white horse with a bow. The second horseman, War, is associated with the sword as a spiritual agent of divine judgment. The third horseman, Famine, is linked to Raav, a figure in Môt's retinue, and the scales symbolize economic injustice. The fourth horseman, Death, is identified with Môt, the Canaanite god of death, who is followed by Hades. The hosts emphasize that these demonic forces are under God's control, unleashed as instruments of judgment and calls to repentance, not as independent agents. They then turn to Gog and Magog, exploring their origins in Ezekiel 38-39, their development in Greek translations and Second Temple literature, and their later interpretations as eschatological enemies. They discuss the tradition of Alexander the Great's gate, the identification of Gog with various historical figures, and the misuse of these texts in modern dispensationalism. The episode concludes with a pastoral reflection on how these apocalyptic images should inspire repentance, trust in God's sovereignty, and a life of active love and holiness, rather than fear or speculation.",
+  "entities": [
+    {
+      "id": "reshef",
+      "title": "Reshef",
+      "category": "theological",
+      "summary": "Canaanite god of plague and war, identified as the first horseman (Pestilence) in Revelation 6:2, often depicted as an archer.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 2205.76,
+          "end": 2300.46
+        },
+        {
+          "episode": 71,
+          "start": 2310.0,
+          "end": 2400.239
+        },
+        {
+          "episode": 71,
+          "start": 2601.92,
+          "end": 2698.0
+        }
+      ]
+    },
+    {
+      "id": "mot",
+      "title": "Môt",
+      "category": "theological",
+      "summary": "Canaanite god of death, identified as the fourth horseman (Death) in Revelation 6:8, who rules the underworld and has a retinue of plague, famine, and war gods.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 1693.519,
+          "end": 1791.44
+        },
+        {
+          "episode": 71,
+          "start": 1775.96,
+          "end": 1866.92
+        },
+        {
+          "episode": 71,
+          "start": 1808.799,
+          "end": 1917.0
+        }
+      ]
+    },
+    {
+      "id": "raav",
+      "title": "Raav",
+      "category": "theological",
+      "summary": "Canaanite god of famine, identified as the third horseman (Famine) in Revelation 6:5-6, part of Môt's retinue.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 5091.64,
+          "end": 5182.8
+        },
+        {
+          "episode": 71,
+          "start": 5411.439,
+          "end": 5510.0
+        }
+      ]
+    },
+    {
+      "id": "thanatos",
+      "title": "Thanatos",
+      "category": "theological",
+      "summary": "Greek god of peaceful death, contrasted with the violent death of the fourth horseman; not the figure in Revelation.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 1410.0,
+          "end": 1500.0
+        },
+        {
+          "episode": 71,
+          "start": 1530.0,
+          "end": 1620.0
+        }
+      ]
+    },
+    {
+      "id": "hades",
+      "title": "Hades",
+      "category": "theological",
+      "summary": "Greek god of the underworld, but in Revelation 6:8, Hades follows Death as a beast, not as a ruler.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 1288.359,
+          "end": 1380.0
+        },
+        {
+          "episode": 71,
+          "start": 1633.279,
+          "end": 1734.319
+        }
+      ]
+    },
+    {
+      "id": "gog",
+      "title": "Gog",
+      "category": "historical",
+      "summary": "Eschatological enemy in Ezekiel 38-39, possibly based on Gyges of Lydia, later seen as a type of the Antichrist.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 6395.0,
+          "end": 6489.659
+        },
+        {
+          "episode": 71,
+          "start": 7050.0,
+          "end": 7140.79
+        },
+        {
+          "episode": 71,
+          "start": 9450.0,
+          "end": 9547.4
+        }
+      ]
+    },
+    {
+      "id": "magog",
+      "title": "Magog",
+      "category": "historical",
+      "summary": "Land of Gog, possibly derived from Assyrian 'mat-Gugu', later identified with various northern peoples like the Scythians.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 6647.319,
+          "end": 6740.0
+        },
+        {
+          "episode": 71,
+          "start": 6998.279,
+          "end": 7088.79
+        },
+        {
+          "episode": 71,
+          "start": 8490.0,
+          "end": 8581.68
+        }
+      ]
+    },
+    {
+      "id": "gyges",
+      "title": "Gyges",
+      "category": "historical",
+      "summary": "King of Lydia in the 7th century BC, possible historical basis for Gog, known from Plato's 'Republic' and the Ring of Gyges.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 7050.0,
+          "end": 7140.79
+        },
+        {
+          "episode": 71,
+          "start": 7187.39,
+          "end": 7277.39
+        }
+      ]
+    },
+    {
+      "id": "alexander-the-great",
+      "title": "Alexander the Great",
+      "category": "historical",
+      "summary": "Macedonian king who, in later legends, built a gate to imprison Gog and Magog, a story that developed in the Syriac Alexander Legend and Pseudo-Methodius.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 8528.479,
+          "end": 8618.959
+        },
+        {
+          "episode": 71,
+          "start": 8597.399,
+          "end": 8688.4
+        },
+        {
+          "episode": 71,
+          "start": 8738.239,
+          "end": 8828.54
+        }
+      ]
+    },
+    {
+      "id": "hal-lindsey",
+      "title": "Hal Lindsey",
+      "category": "person",
+      "summary": "Author of 'The Late Great Planet Earth', popularized the identification of Gog and Magog with the Soviet Union in dispensationalist prophecy.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 8914.239,
+          "end": 9004.799
+        },
+        {
+          "episode": 71,
+          "start": 8953.799,
+          "end": 9045.84
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "four-horsemen-of-the-apocalypse",
+      "title": "Four Horsemen of the Apocalypse",
+      "summary": "The four riders in Revelation 6, often identified as Conquest, War, Famine, and Death, but here identified as ancient Canaanite deities (Reshef, War, Raav, and Môt) filtered through Hebrew prophecy.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 397.839,
+          "end": 489.279
+        },
+        {
+          "episode": 71,
+          "start": 131.719,
+          "end": 228.319
+        },
+        {
+          "episode": 71,
+          "start": 1898.0,
+          "end": 1990.48
+        }
+      ]
+    },
+    {
+      "id": "canaanite-deities-in-revelation",
+      "title": "Canaanite Deities in Revelation",
+      "summary": "The hosts argue that the Four Horsemen are based on Canaanite gods like Reshef, Môt, and Raav, but reinterpreted through the Hebrew Bible's prophetic lens.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 1888.16,
+          "end": 1979.799
+        },
+        {
+          "episode": 71,
+          "start": 381.839,
+          "end": 474.72
+        },
+        {
+          "episode": 71,
+          "start": 1740.0,
+          "end": 1838.0
+        }
+      ]
+    },
+    {
+      "id": "left-hand-of-god",
+      "title": "Left Hand of God",
+      "summary": "The concept that God uses even demonic forces to accomplish His will, allowing them to act within limits for purposes of judgment and repentance.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 9654.959,
+          "end": 9745.879
+        },
+        {
+          "episode": 71,
+          "start": 5771.76,
+          "end": 5861.8
+        }
+      ]
+    },
+    {
+      "id": "gog-and-magog",
+      "title": "Gog and Magog",
+      "summary": "Eschatological enemies of God's people, originating in Ezekiel 38-39 as a person (Gog) from a place (Magog), later developed in Jewish and Christian tradition as symbols of the final anti-God coalition.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 6329.359,
+          "end": 6420.0
+        },
+        {
+          "episode": 71,
+          "start": 6380.68,
+          "end": 6473.22
+        },
+        {
+          "episode": 71,
+          "start": 9134.479,
+          "end": 9225.0
+        }
+      ]
+    },
+    {
+      "id": "divine-judgment-and-repentance",
+      "title": "Divine Judgment and Repentance",
+      "summary": "The purpose of apocalyptic judgments is to call people to repentance, not to destroy them; God uses even evil to bring about good.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 5879.0,
+          "end": 5969.92
+        },
+        {
+          "episode": 71,
+          "start": 5970.0,
+          "end": 6063.0
+        },
+        {
+          "episode": 71,
+          "start": 9699.84,
+          "end": 9790.6
+        }
+      ]
+    },
+    {
+      "id": "invincibility-in-christ",
+      "title": "Invincibility in Christ",
+      "summary": "The idea that by choosing to receive all circumstances as opportunities for growth and repentance, a Christian becomes invulnerable to harm, as nothing can separate them from God's love.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 10146.59,
+          "end": 10237.6
+        },
+        {
+          "episode": 71,
+          "start": 10500.0,
+          "end": 10590.79
+        },
+        {
+          "episode": 71,
+          "start": 10660.5,
+          "end": 10752.799
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "four-horsemen-are-canaanite-gods",
+      "text": "The Four Horsemen of the Apocalypse are identified as ancient Canaanite deities (Reshef, War, Raav, and Môt) filtered through Hebrew prophetic literature.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 1888.16,
+          "end": 1979.799
+        },
+        {
+          "episode": 71,
+          "start": 2205.76,
+          "end": 2300.46
+        },
+        {
+          "episode": 71,
+          "start": 5091.64,
+          "end": 5182.8
+        }
+      ]
+    },
+    {
+      "id": "only-death-is-named",
+      "text": "In Revelation 6, only the fourth horseman is explicitly named 'Death'; the other three are identified by tradition, not by the text itself.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 898.0,
+          "end": 989.84
+        }
+      ]
+    },
+    {
+      "id": "god-unleashes-demons-for-judgment",
+      "text": "God unleashes demonic forces like the Four Horsemen as instruments of judgment and calls to repentance, but always within limits.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 5771.76,
+          "end": 5861.8
+        },
+        {
+          "episode": 71,
+          "start": 5879.0,
+          "end": 5969.92
+        }
+      ]
+    },
+    {
+      "id": "gog-is-final-enemy",
+      "text": "Gog represents the final enemy of God, gathering the nations to oppose Christ, and can be seen as the ultimate Antichrist figure.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 9450.0,
+          "end": 9547.4
+        },
+        {
+          "episode": 71,
+          "start": 9452.52,
+          "end": 9547.4
+        }
+      ]
+    },
+    {
+      "id": "armageddon-is-mountain-of-assembly",
+      "text": "Armageddon does not refer to the Valley of Megiddo but is a Greek transliteration of Har Mo'ed, the mountain of assembly, attacked by Amalek in the Old Testament.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 9316.799,
+          "end": 9411.92
+        }
+      ]
+    },
+    {
+      "id": "suffering-is-opportunity-for-repentance",
+      "text": "Suffering, even demonic affliction, is an opportunity for repentance and growth in holiness, not necessarily a sign of personal sin.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 9699.84,
+          "end": 9790.6
+        },
+        {
+          "episode": 71,
+          "start": 9924.36,
+          "end": 10019.68
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "revelation-6-1-8",
+      "reference": "Revelation 6:1-8",
+      "summary": "The central passage for the Four Horsemen, each appearing as the Lamb opens the first four seals.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 131.719,
+          "end": 228.319
+        },
+        {
+          "episode": 71,
+          "start": 397.839,
+          "end": 489.279
+        },
+        {
+          "episode": 71,
+          "start": 658.59,
+          "end": 749.36
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-38-39",
+      "reference": "Ezekiel 38-39",
+      "summary": "The primary Old Testament passage about Gog and Magog, describing the invasion of Israel and God's judgment.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 6380.68,
+          "end": 6473.22
+        },
+        {
+          "episode": 71,
+          "start": 6395.0,
+          "end": 6489.659
+        },
+        {
+          "episode": 71,
+          "start": 6620.96,
+          "end": 6714.0
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-32-23-24",
+      "reference": "Deuteronomy 32:23-24",
+      "summary": "God's judgment includes sending Reshef and Keteb, showing the use of Canaanite deities as instruments of divine wrath.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 2601.92,
+          "end": 2698.0
+        }
+      ]
+    },
+    {
+      "id": "psalm-78-48",
+      "reference": "Psalm 78:48",
+      "summary": "The plague on Egypt's cattle is attributed to Reshef, linking the Canaanite god to biblical plagues.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 2666.76,
+          "end": 2759.84
+        }
+      ]
+    },
+    {
+      "id": "habakkuk-3-5",
+      "reference": "Habakkuk 3:5",
+      "summary": "Describes Deber and Reshef as attendants of Yahweh, showing God's control over these forces.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 2700.0,
+          "end": 2790.119
+        }
+      ]
+    },
+    {
+      "id": "zechariah-6-1-8",
+      "reference": "Zechariah 6:1-8",
+      "summary": "Four chariots with colored horses, a precursor to the Four Horsemen, sent to patrol the earth and bring judgment.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 5578.96,
+          "end": 5670.0
+        }
+      ]
+    },
+    {
+      "id": "genesis-10-2",
+      "reference": "Genesis 10:2",
+      "summary": "Magog is listed as a son of Japheth, providing the genealogical context for the name.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 6887.96,
+          "end": 6980.319
+        }
+      ]
+    },
+    {
+      "id": "amos-7-1",
+      "reference": "Amos 7:1",
+      "summary": "The Greek translation adds 'Gog the King' to the vision of locusts, showing an early interpretation of Gog as a locust king.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 7558.79,
+          "end": 7679.199
+        }
+      ]
+    },
+    {
+      "id": "numbers-24-7",
+      "reference": "Numbers 24:7",
+      "summary": "The Greek text replaces 'Agag' with 'Gog', associating Gog with the Amalekite king and giant clans.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 8047.439,
+          "end": 8215.68
+        }
+      ]
+    },
+    {
+      "id": "revelation-20-7-10",
+      "reference": "Revelation 20:7-10",
+      "summary": "The final battle where Satan gathers Gog and Magog, but fire from heaven consumes them.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 9134.479,
+          "end": 9225.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "behold",
+      "term": "Behold",
+      "definition": "Translation of Greek 'idou' and Hebrew 'hinneh', an interjection calling attention, often rendered as 'boom' in modern idiom.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 677.879,
+          "end": 768.44
+        }
+      ]
+    },
+    {
+      "id": "infinitive-absolute",
+      "term": "Infinitive Absolute",
+      "definition": "Hebrew grammatical construction using the same verb twice for emphasis, e.g., 'dying you will die'.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 2064.159,
+          "end": 2154.559
+        }
+      ]
+    },
+    {
+      "id": "denarius",
+      "term": "Denarius",
+      "definition": "A Roman silver coin, one day's wage for a laborer, used in Revelation 6:6 to show extreme food prices.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 5269.52,
+          "end": 5363.72
+        }
+      ]
+    },
+    {
+      "id": "bloods",
+      "term": "Bloods (plural)",
+      "definition": "Hebrew idiom 'damim' referring to bloodshed as a spiritual agent of vengeance, not just literal blood.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 4186.0,
+          "end": 4282.659
+        }
+      ]
+    },
+    {
+      "id": "furies",
+      "term": "Furies",
+      "definition": "Greek mythological spirits of vengeance, referenced in Psalm 87 (LXX) as belonging to God.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 4675.0,
+          "end": 4766.72
+        }
+      ]
+    },
+    {
+      "id": "vrykolakas",
+      "term": "Vrykolakas",
+      "definition": "Greek term for a vampire-like creature, derived from 'vriko' (to eat greedily), related to locusts in Amos 7:1.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 7669.76,
+          "end": 7767.76
+        }
+      ]
+    },
+    {
+      "id": "syriac-legend-of-alexander",
+      "term": "Syriac Legend of Alexander",
+      "definition": "A 7th-century text that developed the story of Alexander the Great building a gate to imprison Gog and Magog.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 8546.559,
+          "end": 8639.0
+        }
+      ]
+    },
+    {
+      "id": "pseudo-methodius",
+      "term": "Pseudo-Methodius",
+      "definition": "A 7th-century apocalyptic text that elaborated the Alexander legend, placing the gate between two bronze mountains.",
+      "segments": [
+        {
+          "episode": 71,
+          "start": 8618.959,
+          "end": 8713.76
+        }
+      ]
+    }
+  ]
+}

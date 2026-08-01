@@ -1,0 +1,607 @@
+{
+  "summary": "In this episode, the hosts discuss the Torah's central role in both the Old and New Testaments, addressing common misconceptions about Jesus' statement that He came not to abolish the Torah but to fulfill it. They argue that the Torah remains foundational for Christian theology and practice, and that the New Testament, including the teachings of Jesus and St. Paul, is deeply rooted in the Torah. The episode explores how the Torah's commandments apply differently to Jewish and Gentile Christians, as seen in the Council of Jerusalem, and introduces key principles such as the Torah as a structure for safely dwelling with God's holiness, the distinction between moral and ceremonial purity, and the Torah's function as a sin management system. The hosts also touch on historical misinterpretations of St. Paul, the dangers of rejecting the Old Testament, and the hope for a future mass conversion of Jewish people to Orthodox Christianity.",
+  "entities": [
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "theological",
+      "summary": "The Messiah who fulfills the Torah, not abolishing it but interpreting it and embodying it. He is the Torah-giver and the one who brings the new covenant.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 960.0,
+          "end": 1054.88
+        },
+        {
+          "episode": 87,
+          "start": 240.0,
+          "end": 340.8
+        },
+        {
+          "episode": 87,
+          "start": 10283.52,
+          "end": 10375.44
+        }
+      ]
+    },
+    {
+      "id": "st-paul",
+      "title": "St. Paul",
+      "category": "person",
+      "summary": "A Pharisee who became an apostle to the Gentiles. He did not reject the Torah but sought to reconcile Jewish and Gentile Christians, emphasizing that the Torah is fulfilled in Christ.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 1766.74,
+          "end": 1859.24
+        },
+        {
+          "episode": 87,
+          "start": 3489.28,
+          "end": 3579.679
+        },
+        {
+          "episode": 87,
+          "start": 4786.39,
+          "end": 4882.6
+        }
+      ]
+    },
+    {
+      "id": "st-james",
+      "title": "St. James",
+      "category": "person",
+      "summary": "The leader of the Jerusalem church who issued the ruling at the Council of Jerusalem, applying the Torah's commandments to Gentile Christians based on the holiness code.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 4200.0,
+          "end": 4290.319
+        },
+        {
+          "episode": 87,
+          "start": 4251.199,
+          "end": 4344.479
+        },
+        {
+          "episode": 87,
+          "start": 4395.92,
+          "end": 4488.0
+        }
+      ]
+    },
+    {
+      "id": "torah",
+      "title": "Torah",
+      "category": "theological",
+      "summary": "The first five books of the Bible, the foundation of all Scripture. It contains commandments, narratives, and structures for living in God's presence.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 432.399,
+          "end": 524.399
+        },
+        {
+          "episode": 87,
+          "start": 620.0,
+          "end": 712.96
+        },
+        {
+          "episode": 87,
+          "start": 770.159,
+          "end": 863.44
+        }
+      ]
+    },
+    {
+      "id": "council-of-jerusalem",
+      "title": "Council of Jerusalem",
+      "category": "historical",
+      "summary": "The apostolic council described in Acts 15 that decided Gentile Christians were not required to be circumcised but were to abstain from idolatry, sexual immorality, and consuming blood.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 3928.659,
+          "end": 4018.84
+        },
+        {
+          "episode": 87,
+          "start": 4200.0,
+          "end": 4290.319
+        },
+        {
+          "episode": 87,
+          "start": 4395.92,
+          "end": 4488.0
+        }
+      ]
+    },
+    {
+      "id": "martin-luther",
+      "title": "Martin Luther",
+      "category": "person",
+      "summary": "A key figure in the Protestant Reformation whose anti-Semitic writings and influence contributed to the marginalization of the Old Testament and later atrocities.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 1834.88,
+          "end": 1925.0
+        },
+        {
+          "episode": 87,
+          "start": 2880.0,
+          "end": 2977.39
+        },
+        {
+          "episode": 87,
+          "start": 2955.36,
+          "end": 3051.0
+        }
+      ]
+    },
+    {
+      "id": "marcian",
+      "title": "Marcion",
+      "category": "person",
+      "summary": "A second-century heretic who rejected the Old Testament and its God, teaching a complete break between the Old and New Testaments.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 1917.759,
+          "end": 2010.79
+        },
+        {
+          "episode": 87,
+          "start": 1949.0,
+          "end": 2040.44
+        },
+        {
+          "episode": 87,
+          "start": 2785.599,
+          "end": 2879.96
+        }
+      ]
+    },
+    {
+      "id": "nietzsche",
+      "title": "Friedrich Nietzsche",
+      "category": "person",
+      "summary": "A philosopher who saw a break between Jesus and St. Paul, but in the opposite direction, viewing Paul as judaizing Jesus' teachings.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 2309.559,
+          "end": 2400.28
+        },
+        {
+          "episode": 87,
+          "start": 2340.0,
+          "end": 2431.0
+        },
+        {
+          "episode": 87,
+          "start": 2399.28,
+          "end": 2489.32
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "torah-as-foundation",
+      "title": "Torah as Foundation",
+      "summary": "The Torah is the foundational text of all Scripture, with the rest of the Old Testament and the New Testament built upon it. The New Testament structures, including the Gospels and Epistles, are grounded in the Torah.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 432.399,
+          "end": 524.399
+        },
+        {
+          "episode": 87,
+          "start": 620.0,
+          "end": 712.96
+        },
+        {
+          "episode": 87,
+          "start": 770.159,
+          "end": 863.44
+        }
+      ]
+    },
+    {
+      "id": "fulfillment-not-abolition",
+      "title": "Fulfillment Not Abolition",
+      "summary": "Jesus' statement that He came to fulfill the Torah, not abolish it, means that the Torah remains in effect. The commandments are not relaxed, and Christians are called to do and teach them.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 960.0,
+          "end": 1054.88
+        },
+        {
+          "episode": 87,
+          "start": 1242.79,
+          "end": 1353.24
+        },
+        {
+          "episode": 87,
+          "start": 1435.88,
+          "end": 1528.92
+        }
+      ]
+    },
+    {
+      "id": "one-religion",
+      "title": "One Religion",
+      "summary": "The religion of the Old Testament and the New Testament are the same religion. Christianity is not a new religion but the fulfillment of the faith of Israel.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 1795.759,
+          "end": 1888.64
+        },
+        {
+          "episode": 87,
+          "start": 10197.44,
+          "end": 10287.6
+        },
+        {
+          "episode": 87,
+          "start": 10283.52,
+          "end": 10375.44
+        }
+      ]
+    },
+    {
+      "id": "death-by-holiness",
+      "title": "Death by Holiness",
+      "summary": "God's holiness is dangerous to sinful humans. The Torah provides structures, like the tabernacle, to allow God to dwell among His people safely.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 5813.76,
+          "end": 5906.56
+        },
+        {
+          "episode": 87,
+          "start": 5994.68,
+          "end": 6088.72
+        },
+        {
+          "episode": 87,
+          "start": 6584.6,
+          "end": 6701.159
+        }
+      ]
+    },
+    {
+      "id": "moral-vs-ceremonial-purity",
+      "title": "Moral vs. Ceremonial Purity",
+      "summary": "The Torah distinguishes between moral purity (related to sin) and ceremonial purity (related to ritual cleanliness). Both are necessary for approaching God, but they are not the same.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 6789.439,
+          "end": 6879.939
+        },
+        {
+          "episode": 87,
+          "start": 6834.79,
+          "end": 6944.479
+        },
+        {
+          "episode": 87,
+          "start": 6958.88,
+          "end": 7049.92
+        }
+      ]
+    },
+    {
+      "id": "sin-as-disease",
+      "title": "Sin as Disease",
+      "summary": "Sin is portrayed in the Torah as a disease or a metaphysical taint that requires quarantine, purification, and healing. This understanding underlies the sacrificial system and the sacraments.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 8370.0,
+          "end": 8465.0
+        },
+        {
+          "episode": 87,
+          "start": 8550.0,
+          "end": 8640.719
+        },
+        {
+          "episode": 87,
+          "start": 10077.2,
+          "end": 10169.76
+        }
+      ]
+    },
+    {
+      "id": "external-to-internal",
+      "title": "External to Internal",
+      "summary": "The Torah's commandments, especially those about the tabernacle and sacrifices, were external structures that prepared humanity for the internal indwelling of the Holy Spirit in the New Testament.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 7671.6,
+          "end": 7765.279
+        },
+        {
+          "episode": 87,
+          "start": 9586.799,
+          "end": 9680.4
+        },
+        {
+          "episode": 87,
+          "start": 9769.719,
+          "end": 9860.0
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "torah-still-in-effect",
+      "text": "The Torah is not abolished but fulfilled by Christ; every commandment remains in effect, and Christians are called to do and teach them.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 1242.79,
+          "end": 1353.24
+        },
+        {
+          "episode": 87,
+          "start": 1435.88,
+          "end": 1528.92
+        }
+      ]
+    },
+    {
+      "id": "same-religion",
+      "text": "The religion of the Old Testament and the New Testament are the same religion; Christianity is not a new religion but the fulfillment of Israel's faith.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 1795.759,
+          "end": 1888.64
+        },
+        {
+          "episode": 87,
+          "start": 10197.44,
+          "end": 10287.6
+        }
+      ]
+    },
+    {
+      "id": "gentiles-not-bound-to-all-torah",
+      "text": "Gentile Christians are not bound to all the commandments of the Torah, but only to those directed to sojourners, as decided at the Council of Jerusalem.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 4395.92,
+          "end": 4488.0
+        },
+        {
+          "episode": 87,
+          "start": 4524.359,
+          "end": 4614.6
+        }
+      ]
+    },
+    {
+      "id": "paul-not-anti-torah",
+      "text": "St. Paul did not oppose the Torah; he affirmed it and sought to reconcile Jewish and Gentile Christians, not to start a new religion.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 3489.28,
+          "end": 3579.679
+        },
+        {
+          "episode": 87,
+          "start": 4786.39,
+          "end": 4882.6
+        }
+      ]
+    },
+    {
+      "id": "sin-is-disease",
+      "text": "Sin is portrayed in the Torah as a disease or metaphysical taint that requires quarantine, purification, and healing, not merely rule-breaking.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 8370.0,
+          "end": 8465.0
+        },
+        {
+          "episode": 87,
+          "start": 8550.0,
+          "end": 8640.719
+        }
+      ]
+    },
+    {
+      "id": "unrepentant-sin-is-cut-off",
+      "text": "The 'high-handed' sin in Numbers refers to unrepentant sin, which cannot be atoned for by sacrifices; repentance is necessary for forgiveness.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 9111.44,
+          "end": 9201.719
+        },
+        {
+          "episode": 87,
+          "start": 9210.0,
+          "end": 9304.12
+        },
+        {
+          "episode": 87,
+          "start": 9328.44,
+          "end": 9420.79
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "matthew-5-17-20",
+      "reference": "Matthew 5:17-20",
+      "summary": "Jesus' key statement on the Torah: He came not to abolish but to fulfill, and not a yod or tittle will pass away until all is accomplished.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 1108.559,
+          "end": 1199.319
+        }
+      ]
+    },
+    {
+      "id": "romans-2-12-16",
+      "reference": "Romans 2:12-16",
+      "summary": "St. Paul affirms that doers of the Torah are justified, and Gentiles who keep it by nature are a law to themselves.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 3527.76,
+          "end": 3623.39
+        }
+      ]
+    },
+    {
+      "id": "acts-15",
+      "reference": "Acts 15",
+      "summary": "The Council of Jerusalem decides that Gentile Christians are not required to be circumcised but must abstain from idolatry, sexual immorality, and blood.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 3928.659,
+          "end": 4018.84
+        },
+        {
+          "episode": 87,
+          "start": 4200.0,
+          "end": 4290.319
+        }
+      ]
+    },
+    {
+      "id": "leviticus-18",
+      "reference": "Leviticus 18",
+      "summary": "The holiness code includes commandments for both Israelites and sojourners, particularly regarding sexual morality, which St. James applies to Gentiles.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 4334.539,
+          "end": 4429.0
+        }
+      ]
+    },
+    {
+      "id": "numbers-15-30-31",
+      "reference": "Numbers 15:30-31",
+      "summary": "The 'high-handed' sin refers to unrepentant sin, which results in being cut off from the people.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 9111.44,
+          "end": 9201.719
+        }
+      ]
+    },
+    {
+      "id": "genesis-3",
+      "reference": "Genesis 3",
+      "summary": "The expulsion from paradise illustrates the danger of God's presence to sinful humanity, leading to the need for structures in the Torah.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 6057.659,
+          "end": 6150.79
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "torah",
+      "term": "Torah",
+      "definition": "The first five books of the Bible (Genesis, Exodus, Leviticus, Numbers, Deuteronomy), also called the Law. It is the foundation of all Scripture.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 432.399,
+          "end": 524.399
+        }
+      ]
+    },
+    {
+      "id": "death-by-holiness",
+      "term": "Death by Holiness",
+      "definition": "The concept that God's holiness is dangerous to sinful humans, and structures are needed to protect them from being consumed by His presence.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 5813.76,
+          "end": 5906.56
+        }
+      ]
+    },
+    {
+      "id": "moral-purity",
+      "term": "Moral Purity",
+      "definition": "Purity from sin, which is required to approach God. Moral impurity is caused by sin and also makes one ceremonially impure.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 6789.439,
+          "end": 6879.939
+        }
+      ]
+    },
+    {
+      "id": "ceremonial-purity",
+      "term": "Ceremonial Purity",
+      "definition": "Ritual cleanliness required to enter the tabernacle or temple. It can be lost through non-moral actions like touching a dead body, and is restored through purification rituals.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 6789.439,
+          "end": 6879.939
+        }
+      ]
+    },
+    {
+      "id": "high-handed-sin",
+      "term": "High-Handed Sin",
+      "definition": "A sin committed with a 'high hand,' meaning unrepentant and defiant, which cannot be atoned for by sacrifices and results in being cut off.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 9111.44,
+          "end": 9201.719
+        }
+      ]
+    },
+    {
+      "id": "day-of-atonement",
+      "term": "Day of Atonement",
+      "definition": "The annual ritual in which the high priest enters the Holy of Holies to purify the sanctuary and the people from sin, including the scapegoat.",
+      "segments": [
+        {
+          "episode": 87,
+          "start": 8639.719,
+          "end": 8730.0
+        }
+      ]
+    }
+  ]
+}

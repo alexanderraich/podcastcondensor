@@ -1,0 +1,469 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young explore the concept of technology from an Orthodox Christian perspective, tracing its roots to the Greek concept of techne (know-how) and examining its implications for human knowledge, spirituality, and society. They argue that technology is not merely modern gadgets but encompasses all instrumental knowledge, including ideas and worldviews. The discussion covers the ancient understanding of technology as spiritual, the dangers of instrumentalizing people and the divine, and the historical narrative of technology's origins, from the biblical line of Cain to pagan myths like Prometheus and Sisyphus. They critique modern technological developments, particularly the internet and social media, for fostering isolation and alienation, and call for a collective, communal approach to technology guided by spiritual wisdom. The episode concludes with a call to find freedom in community, particularly within the Church, and to reject the ideologies that enslave us.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of the Lord of Spirits podcast, an Orthodox Christian priest, and author. He leads the discussion on technology, offering critiques of modern technological culture.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 15.4,
+          "end": 107.24
+        },
+        {
+          "episode": 81,
+          "start": 97.84,
+          "end": 191.599
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "Co-host of the Lord of Spirits podcast, an Orthodox Christian priest, and scholar. He provides historical and theological insights, particularly on ancient texts and traditions.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 15.4,
+          "end": 107.24
+        },
+        {
+          "episode": 81,
+          "start": 97.84,
+          "end": 191.599
+        }
+      ]
+    },
+    {
+      "id": "prometheus",
+      "title": "Prometheus",
+      "category": "mythological",
+      "summary": "A Titan in Greek mythology who brought fire to humanity, symbolizing the gift of technology and knowledge. His punishment by the gods reflects the dangers of forbidden knowledge.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 6030.0,
+          "end": 6120.0
+        },
+        {
+          "episode": 81,
+          "start": 6060.0,
+          "end": 6151.319
+        },
+        {
+          "episode": 81,
+          "start": 6130.399,
+          "end": 6220.76
+        }
+      ]
+    },
+    {
+      "id": "sisyphus",
+      "title": "Sisyphus",
+      "category": "mythological",
+      "summary": "A king in Greek mythology who used techne to deceive the gods, including chaining Death. His punishment of rolling a boulder uphill forever symbolizes futile labor and the consequences of instrumentalizing the divine.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 6280.39,
+          "end": 6374.34
+        },
+        {
+          "episode": 81,
+          "start": 6420.0,
+          "end": 6550.239
+        }
+      ]
+    },
+    {
+      "id": "tubal-cain",
+      "title": "Tubal-cain",
+      "category": "biblical",
+      "summary": "A descendant of Cain in Genesis, described as the forger of instruments of bronze and iron. His invention of metallurgy is associated with violence and the misuse of technology.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 5188.76,
+          "end": 5279.92
+        },
+        {
+          "episode": 81,
+          "start": 5460.0,
+          "end": 5551.0
+        }
+      ]
+    },
+    {
+      "id": "apkallu",
+      "title": "Apkallu",
+      "category": "mythological",
+      "summary": "Seven sages in Babylonian mythology who brought wisdom and technology to humanity, often depicted as fish-men. They are associated with the origin of civilization and are imprisoned for their gift.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 4804.0,
+          "end": 4898.319
+        },
+        {
+          "episode": 81,
+          "start": 4881.279,
+          "end": 4976.0
+        }
+      ]
+    },
+    {
+      "id": "barbie",
+      "title": "Barbie",
+      "category": "other",
+      "summary": "A cultural icon and toy doll, discussed as an example of technology that creates an artificial image of womanhood, reflecting the instrumentalization of human identity.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 6872.76,
+          "end": 6964.0
+        },
+        {
+          "episode": 81,
+          "start": 6898.579,
+          "end": 6995.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "techne",
+      "title": "Techne",
+      "summary": "The Greek concept of techne, meaning 'know-how' or instrumental knowledge, is the foundation of technology. It involves knowing how to manipulate things in the world to bring about desired results, and it is one of several ways of knowing, distinct from nous, episteme, phronesis, and sophia.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 568.8,
+          "end": 660.22
+        },
+        {
+          "episode": 81,
+          "start": 880.86,
+          "end": 971.39
+        },
+        {
+          "episode": 81,
+          "start": 936.39,
+          "end": 1029.0
+        },
+        {
+          "episode": 81,
+          "start": 1020.0,
+          "end": 1111.319
+        }
+      ]
+    },
+    {
+      "id": "technology-as-instrumental-knowledge",
+      "title": "Technology as Instrumental Knowledge",
+      "summary": "Technology is defined as the product of techne, encompassing not just physical tools but also ideas, concepts, and worldviews. It is instrumental knowledge that can be applied to objects, people, and spiritual beings, and it is not inherently good or bad but depends on how it is used.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 1375.68,
+          "end": 1469.299
+        },
+        {
+          "episode": 81,
+          "start": 1672.839,
+          "end": 1767.119
+        },
+        {
+          "episode": 81,
+          "start": 1770.0,
+          "end": 1867.0
+        }
+      ]
+    },
+    {
+      "id": "spiritual-technology",
+      "title": "Spiritual Technology",
+      "summary": "In the ancient world, techne extended into the spiritual realm, including practices like magic, idolatry, and sacrifice. These were seen as instrumental means to manipulate spiritual beings or achieve results, contrasting with relational approaches like prayer and sacrifice that respect divine agency.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 2307.79,
+          "end": 2400.0
+        },
+        {
+          "episode": 81,
+          "start": 2418.199,
+          "end": 2508.239
+        },
+        {
+          "episode": 81,
+          "start": 2637.559,
+          "end": 2728.0
+        }
+      ]
+    },
+    {
+      "id": "instrumentalization-of-persons",
+      "title": "Instrumentalization of Persons",
+      "summary": "Applying techne to human beings treats them as objects to be manipulated, leading to dehumanization and a mechanistic view of the cosmos. This is a key step toward materialism and determinism, where free will is denied.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 2760.0,
+          "end": 2855.0
+        },
+        {
+          "episode": 81,
+          "start": 2834.0,
+          "end": 2927.199
+        }
+      ]
+    },
+    {
+      "id": "mechanistic-cosmos",
+      "title": "Mechanistic Cosmos",
+      "summary": "The instrumentalization of everything leads to a view of the universe as a deterministic machine, where all events are caused by prior events, leaving no room for free will or purpose. This is a hallmark of modern scientific materialism.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 2834.0,
+          "end": 2927.199
+        },
+        {
+          "episode": 81,
+          "start": 2940.0,
+          "end": 3036.559
+        },
+        {
+          "episode": 81,
+          "start": 3011.0,
+          "end": 3101.8
+        }
+      ]
+    },
+    {
+      "id": "collective-maturity",
+      "title": "Collective Maturity",
+      "summary": "The readiness for certain knowledge or technology depends on the collective maturity of humanity, not just individuals. This is illustrated by the Tree of Knowledge of Good and Evil and the idea that humanity was not ready for it, and by the need for spiritual wisdom to use technology well.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 7950.0,
+          "end": 8046.22
+        },
+        {
+          "episode": 81,
+          "start": 8033.96,
+          "end": 8127.8
+        }
+      ]
+    },
+    {
+      "id": "freedom-in-community",
+      "title": "Freedom in Community",
+      "summary": "True freedom is not individuality but the ability to serve God and flourish as humans, which can only happen in community. The Church is the primary place where this freedom can be realized, by rejecting enslaving ideologies and living together in love.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 9670.239,
+          "end": 9813.68
+        },
+        {
+          "episode": 81,
+          "start": 9984.0,
+          "end": 10095.52
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "technology-is-not-inherently-evil",
+      "text": "Technology itself is not inherently evil; it is a form of knowledge that can be used for good or ill. The problem lies in humanity's lack of spiritual maturity to use it wisely.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 7560.0,
+          "end": 7650.0
+        },
+        {
+          "episode": 81,
+          "start": 7860.0,
+          "end": 7951.159
+        }
+      ]
+    },
+    {
+      "id": "ideas-do-not-have-agency",
+      "text": "Ideas and concepts, including religion and racism, do not have agency and cannot cause actions. People use ideas as instruments to justify or motivate their actions.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 1777.0,
+          "end": 1867.0
+        },
+        {
+          "episode": 81,
+          "start": 1843.5,
+          "end": 1941.88
+        },
+        {
+          "episode": 81,
+          "start": 1918.119,
+          "end": 2010.0
+        }
+      ]
+    },
+    {
+      "id": "modern-technology-isolates",
+      "text": "The technological explosion of the late 20th and early 21st centuries has primarily served to isolate and alienate people, unlike earlier technologies that connected communities.",
+      "topic": "Other",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 8979.0,
+          "end": 9071.879
+        },
+        {
+          "episode": 81,
+          "start": 9030.0,
+          "end": 9125.0
+        }
+      ]
+    },
+    {
+      "id": "freedom-is-found-in-community",
+      "text": "True freedom is not individuality but the ability to serve God and flourish as humans, which can only be achieved in community, particularly within the Church.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 9670.239,
+          "end": 9813.68
+        },
+        {
+          "episode": 81,
+          "start": 9984.0,
+          "end": 10095.52
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-4-19-24",
+      "reference": "Genesis 4:19-24",
+      "summary": "The genealogy of Cain, including Tubal-cain, is used to illustrate the origin of technology in a line marked by violence and rebellion against God.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 5173.6,
+          "end": 5272.72
+        }
+      ]
+    },
+    {
+      "id": "genesis-2-3",
+      "reference": "Genesis 2-3",
+      "summary": "The Tree of Knowledge of Good and Evil is discussed as an example of knowledge forbidden due to humanity's immaturity, not because it is inherently evil.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 7680.0,
+          "end": 7857.119
+        }
+      ]
+    },
+    {
+      "id": "revelation-5-11-12",
+      "reference": "Revelation 5:11-12",
+      "summary": "The closing doxology of the episode, emphasizing the worthiness of Christ and the worship of angels.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 10269.639,
+          "end": 10297.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "techne",
+      "term": "Techne",
+      "definition": "Greek for 'know-how' or craft; instrumental knowledge of how to make or do things.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 568.8,
+          "end": 660.22
+        }
+      ]
+    },
+    {
+      "id": "nous",
+      "term": "Nous",
+      "definition": "The spiritual intellect or faculty of intuitive knowledge, often compared to a sense organ.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 675.0,
+          "end": 768.24
+        }
+      ]
+    },
+    {
+      "id": "episteme",
+      "term": "Episteme",
+      "definition": "Scientific knowledge that can be demonstrated or proven, often mathematically.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 710.159,
+          "end": 801.36
+        }
+      ]
+    },
+    {
+      "id": "phronesis",
+      "term": "Phronesis",
+      "definition": "Prudence or moral reasoning; knowing what to do in a given situation.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 762.559,
+          "end": 857.399
+        }
+      ]
+    },
+    {
+      "id": "sophia",
+      "term": "Sophia",
+      "definition": "Wisdom; the ability to recognize patterns and relationships within creation.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 775.39,
+          "end": 867.919
+        }
+      ]
+    },
+    {
+      "id": "apkallu",
+      "term": "Apkallu",
+      "definition": "Seven sages in Babylonian mythology who brought wisdom and technology to humanity.",
+      "segments": [
+        {
+          "episode": 81,
+          "start": 4804.0,
+          "end": 4898.319
+        }
+      ]
+    }
+  ]
+}

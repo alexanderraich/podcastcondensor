@@ -1,0 +1,419 @@
+{
+  "summary": "In this episode of the Lord of Spirits, hosts Father Andrew Stephen Damick and Father Stephen De Young explore the Orthodox Christian mystery of Holy Unction, the anointing of the sick. They begin by discussing the nature of the human person, arguing against a Platonic view of the soul as a separate, pre-existing entity. Instead, they emphasize that the soul is the life of the body, and that human identity is deeply tied to embodiment. This leads to a discussion of healing, both physical and spiritual, and how the Bible portrays illness and sin as parallel forces. They trace the concept of pestilence as a demonic force (Resheph) in the Old Testament, and contrast it with the more individual healings seen in the prophets and in Christ's ministry. The hosts then address common misconceptions about healing, such as the idea that sickness is always a punishment for sin or that faith alone can guarantee healing. They stress the importance of using medical means alongside prayer and sacraments. Finally, they explain that Holy Unction is a sacrament aimed at the healing of the whole person, ultimately preparing us for the bodily resurrection, and they share a personal reflection on miscarriage and the hope of salvation.",
+  "entities": [
+    {
+      "id": "father-andrew-stephen-damick",
+      "title": "Father Andrew Stephen Damick",
+      "category": "person",
+      "summary": "Co-host of the Lord of Spirits podcast, an Orthodox Christian priest.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 18.58,
+          "end": 111.28
+        }
+      ]
+    },
+    {
+      "id": "father-stephen-de-young",
+      "title": "Father Stephen De Young",
+      "category": "person",
+      "summary": "Co-host of the Lord of Spirits podcast, an Orthodox Christian priest.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 13.38,
+          "end": 106.879
+        }
+      ]
+    },
+    {
+      "id": "michael-heiser",
+      "title": "Michael Heiser",
+      "category": "person",
+      "summary": "An American biblical scholar and author, known for his work on the supernatural in the Bible. His passing is mentioned at the beginning of the episode.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 329.72,
+          "end": 419.759
+        },
+        {
+          "episode": 61,
+          "start": 478.8,
+          "end": 569.84
+        }
+      ]
+    },
+    {
+      "id": "plato",
+      "title": "Plato",
+      "category": "person",
+      "summary": "Ancient Greek philosopher whose dualistic view of soul and body is critiqued in the episode.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 1451.519,
+          "end": 1545.88
+        }
+      ]
+    },
+    {
+      "id": "john-calvin",
+      "title": "John Calvin",
+      "category": "person",
+      "summary": "Protestant reformer whose views on the soul and predestination are critiqued.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 1421.92,
+          "end": 1513.92
+        },
+        {
+          "episode": 61,
+          "start": 1451.519,
+          "end": 1545.88
+        }
+      ]
+    },
+    {
+      "id": "apollinarianism",
+      "title": "Apollinarianism",
+      "category": "theological",
+      "summary": "A heresy that denied Christ had a human soul, claiming the Logos replaced it. The hosts use this to illustrate the importance of understanding the soul correctly.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 2140.519,
+          "end": 2231.0
+        },
+        {
+          "episode": 61,
+          "start": 2287.46,
+          "end": 2377.599
+        }
+      ]
+    },
+    {
+      "id": "resheph",
+      "title": "Resheph",
+      "category": "other",
+      "summary": "Ancient Near Eastern deity of plague, depicted as an archer. Mentioned in the Old Testament as a force under God's control.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 3810.0,
+          "end": 3902.239
+        },
+        {
+          "episode": 61,
+          "start": 3997.0,
+          "end": 4089.659
+        }
+      ]
+    },
+    {
+      "id": "james",
+      "title": "James",
+      "category": "person",
+      "summary": "Author of the Epistle of James, which contains the command to anoint the sick with oil.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 5716.56,
+          "end": 5809.0
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "soul-as-life-of-body",
+      "title": "Soul as the Life of the Body",
+      "summary": "The soul is not a separate, immaterial substance but the animating life of the body. This view contrasts with Platonic dualism and emphasizes the unity of the human person.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 865.679,
+          "end": 1103.44
+        },
+        {
+          "episode": 61,
+          "start": 1311.599,
+          "end": 1406.0
+        }
+      ]
+    },
+    {
+      "id": "platonic-dualism",
+      "title": "Platonic Dualism",
+      "summary": "The philosophical view that the soul is the true self, trapped in a body, and that the body is a prison. This view has influenced Christian theology in problematic ways.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 1451.519,
+          "end": 1545.88
+        },
+        {
+          "episode": 61,
+          "start": 1527.92,
+          "end": 1618.0
+        }
+      ]
+    },
+    {
+      "id": "resheph",
+      "title": "Resheph",
+      "summary": "An ancient Near Eastern demonic deity associated with plague and pestilence, often depicted as an archer. In the Bible, Resheph is portrayed as a force under God's control.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 3810.0,
+          "end": 3902.239
+        },
+        {
+          "episode": 61,
+          "start": 3997.0,
+          "end": 4089.659
+        }
+      ]
+    },
+    {
+      "id": "holy-unction",
+      "title": "Holy Unction",
+      "summary": "The sacrament of anointing the sick with oil, as commanded in James 5:14-15. It is a means of healing for the whole person, connecting physical and spiritual restoration.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 5693.88,
+          "end": 5784.1
+        },
+        {
+          "episode": 61,
+          "start": 5880.0,
+          "end": 5975.119
+        }
+      ]
+    },
+    {
+      "id": "holistic-healing",
+      "title": "Holistic Healing",
+      "summary": "Healing that addresses the whole person—body, soul, and spirit—recognizing that these aspects are interconnected and that true healing is restoration of the entire human being.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 6690.0,
+          "end": 6787.239
+        },
+        {
+          "episode": 61,
+          "start": 6773.76,
+          "end": 6864.84
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "soul-is-not-a-thing",
+      "text": "The soul is not a separate, immaterial thing but the life of the body. It is not a glowing orb or a ghostly entity.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 865.679,
+          "end": 957.0
+        }
+      ]
+    },
+    {
+      "id": "body-more-identity-than-soul",
+      "text": "Your body is more related to your identity than your soul is, because human souls are more alike than human bodies.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 2097.44,
+          "end": 2187.76
+        }
+      ]
+    },
+    {
+      "id": "resheph-under-god-control",
+      "text": "Resheph, the demonic force of pestilence, is under God's control. God uses it for judgment but is not the author of evil.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 4313.199,
+          "end": 4403.76
+        }
+      ]
+    },
+    {
+      "id": "unction-connects-sin-and-healing",
+      "text": "Holy Unction connects the forgiveness of sins with physical healing, as seen in James 5:14-15 and Christ's healings.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 5747.6,
+          "end": 5838.56
+        }
+      ]
+    },
+    {
+      "id": "healing-not-guaranteed",
+      "text": "Healing is not guaranteed in this life; the ultimate healing is the bodily resurrection. Unction prepares us for that.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 6773.76,
+          "end": 6864.84
+        },
+        {
+          "episode": 61,
+          "start": 7110.0,
+          "end": 7206.239
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-2-7",
+      "reference": "Genesis 2:7",
+      "summary": "The creation of man: God forms Adam from dust and breathes into him the breath of life, making him a living soul. Used to discuss the nature of the soul.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 746.679,
+          "end": 839.759
+        }
+      ]
+    },
+    {
+      "id": "deuteronomy-32-23-24",
+      "reference": "Deuteronomy 32:23-24",
+      "summary": "Mention of Resheph and Ketev as forces of pestilence, showing that God uses these forces.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 4130.96,
+          "end": 4221.119
+        }
+      ]
+    },
+    {
+      "id": "psalm-78-48",
+      "reference": "Psalm 78:48",
+      "summary": "God gives their flocks to Resheph (translated as thunderbolts), showing God's control over pestilence.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 4192.76,
+          "end": 4284.72
+        }
+      ]
+    },
+    {
+      "id": "habakkuk-3-3-5",
+      "reference": "Habakkuk 3:3-5",
+      "summary": "Deber and Resheph follow God, illustrating that these forces are under His command.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 4235.68,
+          "end": 4327.6
+        }
+      ]
+    },
+    {
+      "id": "revelation-6-2",
+      "reference": "Revelation 6:2",
+      "summary": "The first horseman has a bow, identified as pestilence, connecting to Resheph imagery.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 4432.0,
+          "end": 4524.239
+        }
+      ]
+    },
+    {
+      "id": "james-5-14-15",
+      "reference": "James 5:14-15",
+      "summary": "The command to anoint the sick with oil, connecting healing and forgiveness of sins.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 5716.56,
+          "end": 5809.0
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "nefesh",
+      "term": "Nefesh",
+      "definition": "Hebrew word for soul, meaning the life of a living being.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 899.519,
+          "end": 990.0
+        }
+      ]
+    },
+    {
+      "id": "psyche",
+      "term": "Psyche",
+      "definition": "Greek word for soul, similar to nefesh, referring to the life of the body.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 906.44,
+          "end": 1002.159
+        }
+      ]
+    },
+    {
+      "id": "resheph",
+      "term": "Resheph",
+      "definition": "Ancient Near Eastern deity of plague, depicted as an archer; in the Bible, a force under God's control.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 3810.0,
+          "end": 3902.239
+        }
+      ]
+    },
+    {
+      "id": "ketev",
+      "term": "Ketev",
+      "definition": "Another demonic force associated with pestilence, often paired with Resheph.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 4170.0,
+          "end": 4260.0
+        }
+      ]
+    },
+    {
+      "id": "deber",
+      "term": "Deber",
+      "definition": "A demonic force of pestilence, also under God's control.",
+      "segments": [
+        {
+          "episode": 61,
+          "start": 4170.0,
+          "end": 4260.0
+        }
+      ]
+    }
+  ]
+}

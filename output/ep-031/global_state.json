@@ -1,0 +1,348 @@
+{
+  "summary": "In this episode, Fr. Andrew Stephen Damick and Fr. Stephen De Young continue their series on Old Testament Christology, focusing on 'the word of the Lord' or 'word of God.' They argue that this phrase in Scripture never refers to the Bible but to a divine person—the pre-incarnate Christ—who appears to prophets, creates, and reveals God. They critique modern Protestant and scholarly tendencies to Hellenize John's Gospel, insisting that the logos must be understood through Hebrew and Second Temple Jewish traditions, not Greek philosophy. The hosts examine key Old Testament passages (Genesis 15, 1 Samuel 3, Jeremiah 1) where the word of the Lord is a visible, personal being, and then analyze John 1:1-18, showing how John identifies Jesus as this same Word who was with God, created all things, and became flesh. The episode concludes with a call to see Christ as the rational order behind all creation and knowledge.",
+  "entities": [
+    {
+      "id": "philo-of-alexandria",
+      "title": "Philo of Alexandria",
+      "category": "historical",
+      "summary": "A Hellenistic Jewish philosopher (c. 20 BC–AD 50) who wrote about the Logos as a divine intermediary. The hosts argue he reflects Second Temple Judaism, not Greek philosophy.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 2127.239,
+          "end": 2220.0
+        },
+        {
+          "episode": 31,
+          "start": 3349.96,
+          "end": 3441.48
+        },
+        {
+          "episode": 31,
+          "start": 3600.0,
+          "end": 3692.88
+        },
+        {
+          "episode": 31,
+          "start": 3839.36,
+          "end": 3929.4
+        }
+      ]
+    },
+    {
+      "id": "samuel",
+      "title": "Samuel",
+      "category": "historical",
+      "summary": "Old Testament prophet called as a child; the word of the Lord appeared to him bodily, standing by his bed.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 5201.279,
+          "end": 5317.52
+        },
+        {
+          "episode": 31,
+          "start": 5419.239,
+          "end": 5562.479
+        }
+      ]
+    },
+    {
+      "id": "jeremiah",
+      "title": "Jeremiah",
+      "category": "historical",
+      "summary": "Old Testament prophet; the word of the Lord came to him, spoke in first person as Yahweh, and touched his mouth.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 5625.0,
+          "end": 5766.0
+        }
+      ]
+    },
+    {
+      "id": "john-the-baptist",
+      "title": "John the Baptist",
+      "category": "historical",
+      "summary": "The forerunner of Christ, presented in John 1 as the paradigm prophet who testified to the light (salvation).",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 8529.0,
+          "end": 8654.559
+        },
+        {
+          "episode": 31,
+          "start": 9517.12,
+          "end": 9607.6
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "word-of-the-lord-as-person",
+      "title": "Word of the Lord as a Divine Person",
+      "summary": "The phrase 'word of the Lord' in the Old Testament refers to a personal, divine being—the pre-incarnate Christ—who appears to prophets, creates, and reveals God, distinct from the Father yet fully God.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 150.0,
+          "end": 265.12
+        },
+        {
+          "episode": 31,
+          "start": 591.399,
+          "end": 681.82
+        },
+        {
+          "episode": 31,
+          "start": 2788.32,
+          "end": 2880.0
+        },
+        {
+          "episode": 31,
+          "start": 5800.319,
+          "end": 5904.0
+        }
+      ]
+    },
+    {
+      "id": "logos-in-johns-gospel",
+      "title": "Logos in John's Gospel",
+      "summary": "John's prologue (1:1-18) identifies Jesus as the eternal Logos/Word, who was with God, was God, created all things, and became flesh. This is rooted in Old Testament 'word of the Lord' theology, not Greek philosophy.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 6863.0,
+          "end": 6975.0
+        },
+        {
+          "episode": 31,
+          "start": 7005.199,
+          "end": 7101.52
+        },
+        {
+          "episode": 31,
+          "start": 7869.479,
+          "end": 7973.399
+        },
+        {
+          "episode": 31,
+          "start": 9180.0,
+          "end": 9275.36
+        }
+      ]
+    },
+    {
+      "id": "theosis-as-purpose-of-creation",
+      "title": "Theosis as Purpose of Creation",
+      "summary": "The light of creation (Genesis 1) is identified as the life of Christ, sent to make humanity children of God—theosis is the goal from the beginning.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 8310.0,
+          "end": 8449.639
+        },
+        {
+          "episode": 31,
+          "start": 8970.0,
+          "end": 9063.6
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "word-of-god-not-bible",
+      "text": "The phrase 'word of God' in the Bible never refers to the Bible itself; it always refers to a divine person, the pre-incarnate Christ.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 660.0,
+          "end": 754.44
+        },
+        {
+          "episode": 31,
+          "start": 150.0,
+          "end": 265.12
+        }
+      ]
+    },
+    {
+      "id": "johns-gospel-jewish-not-greek",
+      "text": "John's use of 'Logos' is rooted in Old Testament and Second Temple Jewish traditions, not Greek philosophy; the Dead Sea Scrolls confirm this.",
+      "topic": "Scripture",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 1922.44,
+          "end": 2014.799
+        },
+        {
+          "episode": 31,
+          "start": 2285.199,
+          "end": 2376.8
+        },
+        {
+          "episode": 31,
+          "start": 2485.92,
+          "end": 2579.92
+        }
+      ]
+    },
+    {
+      "id": "theosis-from-creation",
+      "text": "The light of Genesis 1:3 is the life of Christ, sent to make humanity children of God; theosis is the purpose of creation from the beginning.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 8310.0,
+          "end": 8449.639
+        },
+        {
+          "episode": 31,
+          "start": 8970.0,
+          "end": 9063.6
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "genesis-15",
+      "reference": "Genesis 15:1-8",
+      "summary": "The word of the Lord appears to Abram in a vision; Abram calls him 'Lord Yahweh' and the figure does not correct him, showing he is Yahweh.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 4770.0,
+          "end": 5029.439
+        }
+      ]
+    },
+    {
+      "id": "1-samuel-3",
+      "reference": "1 Samuel 3:1-21",
+      "summary": "The word of the Lord appears to Samuel bodily, standing by his bed; Samuel comes to know Yahweh through seeing the word.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 5201.279,
+          "end": 5317.52
+        },
+        {
+          "episode": 31,
+          "start": 5419.239,
+          "end": 5569.6
+        }
+      ]
+    },
+    {
+      "id": "jeremiah-1",
+      "reference": "Jeremiah 1:4-9",
+      "summary": "The word of the Lord comes to Jeremiah, speaks as Yahweh, and touches his mouth, showing a personal, bodily encounter.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 5625.0,
+          "end": 5766.0
+        }
+      ]
+    },
+    {
+      "id": "john-1-1-18",
+      "reference": "John 1:1-18",
+      "summary": "The prologue identifies Jesus as the eternal Logos/Word, who was with God, was God, created all things, and became flesh.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 6863.0,
+          "end": 6975.0
+        },
+        {
+          "episode": 31,
+          "start": 7005.199,
+          "end": 7101.52
+        },
+        {
+          "episode": 31,
+          "start": 7869.479,
+          "end": 7973.399
+        },
+        {
+          "episode": 31,
+          "start": 9180.0,
+          "end": 9275.36
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "debar-yahweh",
+      "term": "Debar Yahweh",
+      "definition": "Hebrew phrase meaning 'word of the Lord'; refers to a divine person, the pre-incarnate Christ, who appears and speaks in the Old Testament.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 2788.32,
+          "end": 2880.0
+        },
+        {
+          "episode": 31,
+          "start": 638.639,
+          "end": 730.399
+        }
+      ]
+    },
+    {
+      "id": "logos",
+      "term": "Logos",
+      "definition": "Greek term for 'word'; in John's Gospel, it refers to the eternal Son of God, Jesus Christ, who is the agent of creation and revelation.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 1517.39,
+          "end": 1608.24
+        },
+        {
+          "episode": 31,
+          "start": 6863.0,
+          "end": 6975.0
+        }
+      ]
+    },
+    {
+      "id": "memra",
+      "term": "Memra",
+      "definition": "Aramaic term for 'word' used in the Targums to refer to the divine word, often inserted where God is described in human terms.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 4404.119,
+          "end": 4495.239
+        }
+      ]
+    },
+    {
+      "id": "targum",
+      "term": "Targum",
+      "definition": "Aramaic paraphrase/expansion of the Hebrew Scriptures used in synagogues; often includes theological interpretations like the Memra.",
+      "segments": [
+        {
+          "episode": 31,
+          "start": 4039.0,
+          "end": 4131.52
+        },
+        {
+          "episode": 31,
+          "start": 4230.0,
+          "end": 4325.6
+        }
+      ]
+    }
+  ]
+}

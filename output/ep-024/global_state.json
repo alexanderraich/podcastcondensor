@@ -1,0 +1,371 @@
+{
+  "summary": "In this episode, Fathers Andrew Stephen Damick and Stephen De Young explore the theological foundations for the Orthodox Christian veneration of relics. They begin by recapping and clarifying their earlier discussions on the nature of bodies, distinguishing between the ancient understanding of a body as a nexus of powers and potentialities and later Greek philosophical terms like nature, will, and energy. They emphasize that a human being is an animated body, and that the material body is not merely a suit but is truly the person. The hosts then discuss how human beings, as noetic and material beings, can serve as bodies for other spiritual beings—either for God through theosis or for demonic powers through what they call 'demonosis.' This leads to a consideration of the church as the Body of Christ, both individually and corporately, and how holy tradition is the internal life of the Holy Spirit in the church. Finally, they apply these concepts to relics, arguing that the bodies of saints remain the saints themselves and are therefore the Body of Christ, making veneration appropriate. They also address related practices such as the 40-day blessing, altar service, and cremation, and conclude with reflections on the material world as the medium of salvation.",
+  "entities": [
+    {
+      "id": "st-john-chrysostom",
+      "title": "St. John Chrysostom",
+      "category": "person",
+      "summary": "A 4th-century Church Father quoted to support the idea that souls of those who live in sin become demons, not those who die violently.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 3668.579,
+          "end": 3785.94
+        }
+      ]
+    },
+    {
+      "id": "st-john-of-damascus",
+      "title": "St. John of Damascus",
+      "category": "person",
+      "summary": "An 8th-century theologian whose defense of icons centers on the relationship of matter to God, arguing that matter is used by God for salvation.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 5741.359,
+          "end": 5950.5
+        }
+      ]
+    },
+    {
+      "id": "st-mary-magdalene",
+      "title": "St. Mary Magdalene",
+      "category": "person",
+      "summary": "A saint whose incorrupt hand is venerated at Semenopetra Monastery on Mount Athos, noted for being warm and flexible.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 180.3,
+          "end": 277.899
+        },
+        {
+          "episode": 24,
+          "start": 6193.939,
+          "end": 6286.26
+        }
+      ]
+    },
+    {
+      "id": "azazel",
+      "title": "Azazel",
+      "category": "theological",
+      "summary": "A demonic figure in 1 Enoch to whom sins are attributed and who taught corrupt works, associated with the scapegoat ritual.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 4053.579,
+          "end": 4148.939
+        }
+      ]
+    },
+    {
+      "id": "semenopetra-monastery",
+      "title": "Semenopetra Monastery",
+      "category": "place",
+      "summary": "A monastery on Mount Athos where the hand of St. Mary Magdalene is kept and venerated.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 180.3,
+          "end": 277.899
+        },
+        {
+          "episode": 24,
+          "start": 6337.14,
+          "end": 6427.699
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "body-as-nexus-of-powers",
+      "title": "Body as Nexus of Powers and Potentialities",
+      "summary": "The ancient understanding of a body is not merely a physical object but a nexus of powers and potentialities. This concept is foundational for understanding how God, angels, and humans can have bodies, and how material bodies can be instruments of spiritual beings.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 262.6,
+          "end": 357.98
+        },
+        {
+          "episode": 24,
+          "start": 309.339,
+          "end": 403.74
+        }
+      ]
+    },
+    {
+      "id": "nature-will-energy",
+      "title": "Nature, Will, and Energy",
+      "summary": "These Greek philosophical terms clarify the ancient concept of body. Nature is a set of powers and potentialities, will is a movement toward perfection, and energy is the actualization of will in the world. They are used to articulate Christology and theosis.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 621.19,
+          "end": 715.5
+        },
+        {
+          "episode": 24,
+          "start": 798.61,
+          "end": 1010.929
+        },
+        {
+          "episode": 24,
+          "start": 1091.89,
+          "end": 1185.41
+        }
+      ]
+    },
+    {
+      "id": "theosis-and-demonosis",
+      "title": "Theosis and Demonosis",
+      "summary": "Humans can function as bodies for other spiritual beings. Theosis is when a person does God's works and becomes the body of Christ. Demonosis is when a person does the works of demons and becomes like them, even becoming a demon after death.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 3452.579,
+          "end": 3625.219
+        },
+        {
+          "episode": 24,
+          "start": 3608.179,
+          "end": 3818.9
+        }
+      ]
+    },
+    {
+      "id": "church-as-body-of-christ",
+      "title": "Church as Body of Christ",
+      "summary": "The church corporately is the Body of Christ, animated by the Holy Spirit. This is not a metaphor but a reality: the church is the presence of Christ in the world, and holy tradition is the internal life of the Spirit.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 4803.539,
+          "end": 4904.739
+        },
+        {
+          "episode": 24,
+          "start": 4880.739,
+          "end": 5169.939
+        }
+      ]
+    },
+    {
+      "id": "relics-and-matter",
+      "title": "Relics and the Sacramental Nature of Matter",
+      "summary": "Relics are the bodies of saints, which remain the saints themselves and are therefore the Body of Christ. Matter is not evil but is capable of being permeated by divine energies, making veneration of relics and icons appropriate.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 5392.79,
+          "end": 5576.96
+        },
+        {
+          "episode": 24,
+          "start": 5741.359,
+          "end": 5950.5
+        },
+        {
+          "episode": 24,
+          "start": 6188.26,
+          "end": 6517.3
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "body-is-not-mere-matter",
+      "text": "The identity of a thing is not determined by its matter, as the human body replaces all its matter every seven years, yet remains the same person.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 1624.849,
+          "end": 1774.21
+        }
+      ]
+    },
+    {
+      "id": "human-works-actualize-spiritual-energies",
+      "text": "Human works are the actualization of spiritual energies: good works are God's works, evil works are the works of demons, and there is no neutral ground.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 3797.699,
+          "end": 3947.26
+        },
+        {
+          "episode": 24,
+          "start": 4204.0,
+          "end": 4302.319
+        }
+      ]
+    },
+    {
+      "id": "relics-are-body-of-christ",
+      "text": "The bodies of saints remain the saints themselves and are therefore the Body of Christ, making veneration appropriate and miracles possible.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 5392.79,
+          "end": 5576.96
+        },
+        {
+          "episode": 24,
+          "start": 6188.26,
+          "end": 6517.3
+        }
+      ]
+    },
+    {
+      "id": "cremation-acts-against-resurrection",
+      "text": "Cremation dissolves the body, which is still the person, and acts against the hope of resurrection; Christians traditionally do not cremate.",
+      "topic": "Theology",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 6696.42,
+          "end": 6846.579
+        },
+        {
+          "episode": 24,
+          "start": 6813.22,
+          "end": 6953.46
+        }
+      ]
+    }
+  ],
+  "scriptural_links": [
+    {
+      "id": "2-kings-13-21",
+      "reference": "2 Kings 13:21",
+      "summary": "Mentioned as an example of relics bringing a dead man back to life when his body touched Elisha's bones.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 167.9,
+          "end": 260.86
+        }
+      ]
+    },
+    {
+      "id": "1-enoch-48-4-5",
+      "reference": "1 Enoch 48:4-5",
+      "summary": "Quoted at the opening, describing the Lord of Spirits as a staff for the righteous and light of the nations.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 0.56,
+          "end": 90.6
+        }
+      ]
+    },
+    {
+      "id": "1-enoch-10-8",
+      "reference": "1 Enoch 10:8",
+      "summary": "Used to show that the whole earth was corrupted through the works taught by Azazel, linking sin to demonic influence.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 4053.579,
+          "end": 4148.939
+        }
+      ]
+    },
+    {
+      "id": "1-john-3-8",
+      "reference": "1 John 3:8",
+      "summary": "Quoted to support the idea that those who practice sin are of the devil, and that Christ appeared to destroy the works of the devil.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 4119.899,
+          "end": 4217.439
+        }
+      ]
+    },
+    {
+      "id": "ephesians-1-22-23",
+      "reference": "Ephesians 1:22-23",
+      "summary": "Used to describe the church as the body of Christ, the fullness of him who fills all in all.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 4986.26,
+          "end": 5076.739
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "noetic",
+      "term": "Noetic",
+      "definition": "Pertaining to the intellect or mind; in Orthodox theology, refers to the spiritual faculty of the soul that allows direct knowledge of God and spiritual realities.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 1922.799,
+          "end": 2015.519
+        }
+      ]
+    },
+    {
+      "id": "energy",
+      "term": "Energy (divine)",
+      "definition": "In Orthodox theology, the active operation or work of God in the world, distinct from His essence; often understood as grace.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 1091.89,
+          "end": 1185.41
+        },
+        {
+          "episode": 24,
+          "start": 6017.3,
+          "end": 6107.539
+        }
+      ]
+    },
+    {
+      "id": "theosis",
+      "term": "Theosis",
+      "definition": "The process of becoming like God through participation in His divine energies, often described as deification.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 3500.98,
+          "end": 3594.82
+        }
+      ]
+    },
+    {
+      "id": "demonosis",
+      "term": "Demonosis",
+      "definition": "A term coined by the hosts to describe the process of becoming like demons through sinful actions, the opposite of theosis.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 3565.139,
+          "end": 3660.98
+        }
+      ]
+    },
+    {
+      "id": "relic",
+      "term": "Relic",
+      "definition": "The physical remains of a saint, such as bones or personal items, venerated because the body remains the person and is the Body of Christ.",
+      "segments": [
+        {
+          "episode": 24,
+          "start": 5392.79,
+          "end": 5576.96
+        }
+      ]
+    }
+  ]
+}
