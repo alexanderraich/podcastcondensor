@@ -215,6 +215,7 @@ def cmd_build_super_cut(args):
         chunk_size=args.chunk_size,
         max_themes=args.max_themes,
         theme_ids=args.theme,
+        retry_empty_chunks=args.retry_empty_chunks,
         output_dir=os.path.abspath(args.output_dir) if args.output_dir else "",
         dry_run=args.dry_run,
     )
@@ -400,6 +401,8 @@ def main():
                     help="Cap on global themes after coalesce dedup (default: 25)")
     sc.add_argument("--theme", action="append", default=[],
                     help="Limit to matching theme(s) by id/title substring (repeatable; default: all)")
+    sc.add_argument("--retry-empty-chunks", action="store_true",
+                    help="From a discovery cache, re-attempt ONLY chunks that produced 0 themes (targeted recovery, not a full re-run)")
     sc.add_argument("--output-dir", default="")
     sc.add_argument("--target-duration", type=int, default=6750,
                     help="Informational only (knapsack fallback); volume is LLM-owned")
