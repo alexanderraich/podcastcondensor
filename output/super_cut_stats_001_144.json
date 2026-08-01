@@ -1,142 +1,94 @@
 {
-  "total_duration_sec": 1969.7,
+  "total_duration_sec": 1277.5,
   "themes": 1,
-  "segments": 8,
+  "segments": 6,
   "warnings": [],
   "errors": [],
   "phases": [
     {
       "phase": "merge_universe",
-      "elapsed_sec": 0.6,
+      "elapsed_sec": 0.5,
       "episodes": 125,
       "items": 3094
     },
     {
-      "phase": "chunk_themes",
-      "elapsed_sec": 557.7,
+      "phase": "discovery",
+      "cached": true,
       "chunks": 11,
-      "chunk_theme_count": 201
-    },
-    {
-      "phase": "coalesce",
-      "elapsed_sec": 77.9,
-      "global_theme_count": 25,
-      "theme_ids": [
-        "angelology-and-heavenly-host",
-        "christology-and-incarnation",
-        "spiritual-warfare-and-demonic-powers",
-        "theosis-and-deification",
-        "sacraments-and-liturgy",
-        "scripture-and-hermeneutics",
-        "eschatology-and-afterlife",
-        "atonement-and-sacrifice",
-        "creation-and-fall",
-        "paganism-and-idolatry",
-        "divine-council-and-spiritual-realities",
-        "saints-and-veneration",
-        "theology-of-the-body-and-personhood",
-        "kingship-and-priesthood",
-        "history-of-israel-and-old-testament-narrative",
-        "orthodox-theology-and-philosophy",
-        "second-temple-judaism-and-christian-origins",
-        "sacred-space-and-geography",
-        "spiritual-life-and-practice",
-        "church-and-community",
-        "prophecy-and-apocalyptic",
-        "creation-and-cosmic-order",
-        "magic-and-occult",
-        "time-and-eternity",
-        "heresy-and-orthodoxy"
-      ]
+      "chunk_theme_count": 281,
+      "global_theme_count": 25
     },
     {
       "phase": "resolve_segments",
-      "elapsed_sec": 7.0,
-      "total_candidates": 1169
+      "elapsed_sec": 9.2,
+      "total_candidates": 1180
     },
     {
       "phase": "select_segments",
-      "elapsed_sec": 21.7,
-      "selected_count": 8,
-      "total_duration_sec": 1969.7
+      "elapsed_sec": 20.7,
+      "selected_count": 6,
+      "total_duration_sec": 1277.5,
+      "llm_calls": 1
     },
     {
       "phase": "assemble_audio",
-      "elapsed_sec": 90.8,
-      "output_dir": "/mnt/c/Users/raich/Projects/podcastcondensor/output/super_cut_001_144"
+      "elapsed_sec": 77.9,
+      "output_dir": "/mnt/c/Users/raich/Projects/podcastcondensor/output"
     }
   ],
   "selections": [
     {
-      "theme_title": "Christology and the Incarnation",
-      "theme_id": "christology-and-incarnation",
-      "episode": 2,
-      "start": 230.2,
-      "end": 456.0,
-      "duration": 225.8,
+      "theme_title": "Scripture and Hermeneutics",
+      "theme_id": "scripture-and-hermeneutics",
+      "episode": 4,
+      "start": 902.9,
+      "end": 1054.5,
+      "duration": 151.6,
       "beep_before": "none"
     },
     {
-      "theme_title": "Christology and the Incarnation",
-      "theme_id": "christology-and-incarnation",
-      "episode": 3,
-      "start": 510.0,
-      "end": 909.4,
-      "duration": 399.4,
+      "theme_title": "Scripture and Hermeneutics",
+      "theme_id": "scripture-and-hermeneutics",
+      "episode": 23,
+      "start": 2248.1,
+      "end": 2386.2,
+      "duration": 138.1,
       "beep_before": "single"
     },
     {
-      "theme_title": "Christology and the Incarnation",
-      "theme_id": "christology-and-incarnation",
-      "episode": 3,
-      "start": 5587.0,
-      "end": 5810.0,
-      "duration": 223.0,
+      "theme_title": "Scripture and Hermeneutics",
+      "theme_id": "scripture-and-hermeneutics",
+      "episode": 30,
+      "start": 2135.4,
+      "end": 2249.2,
+      "duration": 113.8,
       "beep_before": "single"
     },
     {
-      "theme_title": "Christology and the Incarnation",
-      "theme_id": "christology-and-incarnation",
-      "episode": 4,
-      "start": 817.3,
-      "end": 926.8,
-      "duration": 109.6,
+      "theme_title": "Scripture and Hermeneutics",
+      "theme_id": "scripture-and-hermeneutics",
+      "episode": 39,
+      "start": 330.0,
+      "end": 539.8,
+      "duration": 209.8,
       "beep_before": "single"
     },
     {
-      "theme_title": "Christology and the Incarnation",
-      "theme_id": "christology-and-incarnation",
-      "episode": 5,
-      "start": 2920.0,
-      "end": 3148.8,
-      "duration": 228.8,
+      "theme_title": "Scripture and Hermeneutics",
+      "theme_id": "scripture-and-hermeneutics",
+      "episode": 50,
+      "start": 8497.6,
+      "end": 8741.9,
+      "duration": 244.4,
       "beep_before": "single"
     },
     {
-      "theme_title": "Christology and the Incarnation",
-      "theme_id": "christology-and-incarnation",
-      "episode": 8,
-      "start": 3326.8,
-      "end": 3465.1,
-      "duration": 138.3,
-      "beep_before": "single"
-    },
-    {
-      "theme_title": "Christology and the Incarnation",
-      "theme_id": "christology-and-incarnation",
-      "episode": 19,
-      "start": 2400.0,
-      "end": 2622.6,
-      "duration": 222.6,
-      "beep_before": "single"
-    },
-    {
-      "theme_title": "Christology and the Incarnation",
-      "theme_id": "christology-and-incarnation",
-      "episode": 79,
-      "start": 1377.8,
-      "end": 1800.0,
-      "duration": 422.2,
+      "theme_title": "Scripture and Hermeneutics",
+      "theme_id": "scripture-and-hermeneutics",
+      "episode": 57,
+      "start": 5340.0,
+      "end": 5759.8,
+      "duration": 419.8,
       "beep_before": "single"
     }
   ]
