@@ -242,6 +242,79 @@ def load_subtitles(filepath: str, reindex: bool = True) -> List[dict]:
     return cleaned
 
 
+# Words/phrases whisper frequently follows with a sentence-final period even
+# though the thought continues. If a block's last entry ends with one of these
+# (plus punctuation), the period is a whisper artifact and the block must NOT
+# close there — it keeps absorbing until a real sentence end. False positives
+# only lengthen a block; false negatives are the costly mid-sentence cuts.
+_CONTINUATION_WORDS = frozenset(
+    """and or but yet so then that because when while if which who whom whose
+    where how why until unless though although since as than whether whenever
+    wherever""".split()
+)
+
+_CONTINUATION_PHRASES = frozenset(
+    """at the same time on the other hand and yet and so so that in the same
+    way in the meantime on the one hand even though as well in order in other
+    words that is""".split()
+)
+
+# Dangling prepositions — a sentence rarely ends on one in podcast speech, so
+# a trailing period after one is a whisper artifact. (Short high-frequency
+# words like "on"/"off"/"up"/"for" are excluded — they legitimately end
+# sentences too often.)
+_DANGLING_PREPOSITIONS = frozenset(
+    """about across against among around behind below beneath beside between
+    beyond during except from inside like near of onto opposite outside over
+    past through toward under underneath upon within without""".split()
+)
+
+
+def _is_continuation_end(text: str) -> bool:
+    """True if ``text`` (already stripped, may end with .!?) reads as a
+    mid-thought continuation despite trailing sentence punctuation.
+
+    Whisper frequently inserts sentence-final periods mid-thought (e.g.
+    "...and yet at the same time.", "...And so."). Detect those by checking
+    the trailing word / trailing phrase against continuation markers.
+    """
+    t = text.rstrip().rstrip(".!?").strip()
+    if not t:
+        return False
+    words = t.lower().split()
+    if words[-1] in _CONTINUATION_WORDS:
+        return True
+    if words[-1] in _DANGLING_PREPOSITIONS:
+        return True
+    for n in range(1, min(4, len(words)) + 1):
+        if " ".join(words[-n:]) in _CONTINUATION_PHRASES:
+            return True
+    return False
+
+
+def _is_leading_continuation(text: str) -> bool:
+    """True if ``text`` starts a fresh block with a dangling preposition —
+    a fragment that continues the PREVIOUS sentence.
+
+    Whisper sometimes closes a sentence with a spurious period and then
+    starts the continuation phrase as its own block (e.g. "...something other
+    than Christianity." followed by "of Western European origin or connection
+    or cultural tradition."). Such a block has no verb and depends on the
+    prior sentence; a cut landing on it is a mid-thought cut. Mirrors
+    ``_is_continuation_end`` but on the leading edge.
+
+    Same philosophy as the trailing check: false positives only lengthen a
+    block; false negatives are the costly mid-sentence cuts, so the set leans
+    aggressive (and is restricted to dangling prepositions — coordinating
+    conjunctions like "And"/"But"/"So" legitimately begin sentences).
+    """
+    t = text.strip().lstrip("\"'(-")
+    if not t:
+        return False
+    words = t.lower().split()
+    return bool(words) and words[0] in _DANGLING_PREPOSITIONS
+
+
 def build_sentence_blocks(entries: List[dict]) -> List[dict]:
     """Merge SRT entries into sentence-complete blocks.
 
@@ -272,17 +345,37 @@ def build_sentence_blocks(entries: List[dict]) -> List[dict]:
         if not text:
             continue
 
+        # Leading-fragment detection: when we are about to START a fresh block
+        # with an entry that begins with a dangling preposition, that entry is
+        # a fragment of the PREVIOUS sentence (whisper closed the sentence with
+        # a spurious period, then continued it as a new block). Reopen the
+        # previous block so the fragment AND the following real sentence stay
+        # in one block — a block must never START on a fragment (which would
+        # let a mid-sentence cut land clean on its end).
+        if not current_entries and blocks and _is_leading_continuation(text):
+            prev = blocks.pop()
+            current_entries = list(prev.get("entries", []))
+            current_texts = [ce["text"].strip() for ce in current_entries]
+
         current_texts.append(text)
         current_entries.append(e)
 
-        # If this entry ends with sentence-ending punctuation, close the block
-        if text[-1] in (".", "!", "?"):
+        # Close only at a REAL sentence end: terminal punctuation that is
+        # neither a trailing continuation ("...and yet at the same time.")
+        # nor a leading continuation ("of Western European origin...", which
+        # whisper ended with a period even though the thought continues).
+        if (
+            text[-1] in (".", "!", "?")
+            and not _is_continuation_end(text)
+            and not _is_leading_continuation(text)
+        ):
             blocks.append({
                 "block_index": len(blocks) + 1,
                 "start": current_entries[0]["start"],
                 "end": current_entries[-1]["end"],
                 "text": " ".join(current_texts),
                 "entry_indices": [ce["index"] for ce in current_entries],
+                "entries": current_entries,
             })
             current_texts = []
             current_entries = []
@@ -295,6 +388,7 @@ def build_sentence_blocks(entries: List[dict]) -> List[dict]:
             "end": current_entries[-1]["end"],
             "text": " ".join(current_texts),
             "entry_indices": [ce["index"] for ce in current_entries],
+            "entries": current_entries,
         })
 
     logger.debug(

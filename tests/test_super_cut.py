@@ -22,6 +22,7 @@ from podcastcondensor.super_cut import (
     _parse_episode_range,
     ChunkThemeRecord,
     GlobalTheme,
+    fill_selection_volume,
 )
 
 
@@ -353,6 +354,63 @@ class TestBrackets:
         themes_info = [{"id": "t", "title": "T", "importance": 0.5}]
         results = analyze_brackets(candidates, themes_info, [("40-80", set(range(40, 81)))])
         assert results[0]["top"] == []  # no candidates in 40-80
+
+
+class TestFillSelectionVolume:
+    def _tws(self, cands):
+        from podcastcondensor.master_cut import ThemeWithSegments
+        from podcastcondensor.theme_extraction import Theme
+        return ThemeWithSegments(
+            theme=Theme(id="t", title="T", description="d"), segments=cands,
+        )
+
+    def _sel(self, tid, ep, start, end):
+        return Selection(
+            segment=ThemeSegment(theme_id=tid, episode_number=ep, audio_path="a.mp3",
+                                 start=start, end=end),
+            theme_title=tid, theme_id=tid, beep_before="single",
+        )
+
+    def test_fills_to_floor_preferring_later_episodes(self):
+        # LLM kept 1 seg (100s). Floor 300s. Candidates: ep3(200s,r5), ep76(120s,r4),
+        # ep99(150s,r5). Later-episode preference → ep99 then ep76; ep3 skipped.
+        kept = [self._sel("t", 90, 0, 100)]
+        cands = [
+            ThemeSegment(theme_id="t", episode_number=3, audio_path="a.mp3",
+                         start=500, end=700, relevance_score=5.0),
+            ThemeSegment(theme_id="t", episode_number=76, audio_path="a.mp3",
+                         start=800, end=920, relevance_score=4.0),
+            ThemeSegment(theme_id="t", episode_number=99, audio_path="a.mp3",
+                         start=1000, end=1150, relevance_score=5.0),
+        ]
+        out = fill_selection_volume(kept, [self._tws(cands)], min_duration_floor=300)
+        # kept first, then ep99 (150), then ep76 (120) → 370 >= 300
+        assert len(out) == 3
+        assert [s.segment.episode_number for s in out] == [90, 99, 76]
+        assert sum(s.segment.duration for s in out) >= 300
+
+    def test_respects_per_episode_cap_during_fill(self):
+        # ep99 already has 2 kept; its candidates must not be added (cap=2).
+        kept = [self._sel("t", 99, 0, 50), self._sel("t", 99, 100, 150)]
+        cands = [
+            ThemeSegment(theme_id="t", episode_number=99, audio_path="a.mp3",
+                         start=300, end=500, relevance_score=5.0),  # blocked by cap
+            ThemeSegment(theme_id="t", episode_number=100, audio_path="a.mp3",
+                         start=600, end=800, relevance_score=5.0),
+        ]
+        out = fill_selection_volume(kept, [self._tws(cands)], min_duration_floor=400)
+        assert [s.segment.episode_number for s in out] == [99, 99, 100]
+        assert all(s.segment.episode_number != 99 or
+                   (s.segment.start in (0, 100)) for s in out)
+
+    def test_no_fill_when_floor_met_or_zero(self):
+        kept = [self._sel("t", 90, 0, 100)]
+        # floor already met → unchanged
+        out = fill_selection_volume(kept, [], min_duration_floor=50)
+        assert out == kept
+        # floor 0 → disabled → unchanged
+        out = fill_selection_volume(kept, [], min_duration_floor=0)
+        assert out == kept
 
 
 class TestBuildCoalescePrompt:

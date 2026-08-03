@@ -218,6 +218,8 @@ def cmd_build_super_cut(args):
         retry_empty_chunks=args.retry_empty_chunks,
         output_dir=os.path.abspath(args.output_dir) if args.output_dir else "",
         dry_run=args.dry_run,
+        combine_name=args.combine,
+        min_duration_floor=args.min_duration_floor,
     )
 
     print("=" * 60)
@@ -259,6 +261,10 @@ def cmd_build_super_cut(args):
             print(f"    - {e}")
     else:
         print(f"  Errors:   0 (success)")
+
+    verify_path = result.get("verify_path", "")
+    if verify_path:
+        print(f"  Boundary verification: {verify_path}")
     print("")
 
 
@@ -406,6 +412,14 @@ def main():
     sc.add_argument("--output-dir", default="")
     sc.add_argument("--target-duration", type=int, default=6750,
                     help="Informational only (knapsack fallback); volume is LLM-owned")
+    sc.add_argument("--combine", default="",
+                    help="Combine the --theme cuts into ONE MP3 named <combine>.mp3, "
+                         "played in --theme order with triple beeps between themes")
+    sc.add_argument("--min-duration-floor", type=float, default=0.0,
+                    help="Deterministically top up each theme's selection to at "
+                         "least this many seconds (@1x) using its best un-kept "
+                         "candidates (per-episode capped, later episodes preferred). "
+                         "0 = pure LLM-owned volume (archive default)")
     sc.add_argument("--dry-run", action="store_true",
                     help="Merge → chunk → coalesce → resolve only; print theme table")
     sc.add_argument("--keep-temp", action="store_true",

@@ -261,6 +261,59 @@ have their `global_state.json` on disk.
 
 **Files:** `master_cut.py:848-926`, `minimal_theme_cut.py:917-952`
 
+## Mid-sentence cut regression — whisper-period continuation + stale-cache re-snap (2026-08-02)
+
+The first full `build-super-cut --theme scripture-and-hermeneutics` cut had
+**5/6 segments ending mid-thought** ("…and yet at the same time.", "…whether
+it's Caesaria", "…we basically interact", "…this is another thing", "…And
+so."). Two independent root causes — both fixed deterministically, 0 LLM
+calls to repair:
+
+### Root cause A: whisper inserts sentence-final periods mid-thought
+
+`build_sentence_blocks` closed a block the moment an entry ended with `.!?`
+and trusted that punctuation. Whisper frequently puts a period mid-thought,
+so a block like "…and yet at the same time." or "…And so." was treated as a
+complete sentence and the snap happily landed there.
+
+**Fix:** `subtitles.py::build_sentence_blocks` no longer closes a block when
+the closing entry is a lexical continuation despite trailing punctuation —
+trailing word in a continuation-word set ("and", "but", "because", "which",
+"that", …), a trailing continuation phrase ("at the same time", "and so",
+"on the other hand", …), or a dangling preposition ("about", "across",
+"from", "through", "toward", …). The block keeps absorbing until a real
+sentence end. False positives only lengthen a block; false negatives are the
+costly mid-sentence cuts, so the sets lean aggressive. Same lesson as the
+master-cut budget saga and Fixed #1: constraints must be enforced in code,
+not by trusting whisper's output.
+
+### Root cause B: stale selections cache bypasses the snap
+
+The super-cut selections cache (`super_cut_selections_001_144.json`) held
+boundaries written before/without the sentence-block snap, and the cache-HIT
+path assembled straight from those cached boundaries with **no re-snap** —
+so mid-sentence cuts shipped even though `apply_decisions` snaps fresh
+selections correctly (verified: feeding the stored boundaries through the
+current snap fixes 4/6 immediately, and continuation detection fixes the
+other 2).
+
+**Fix:** extract `snap_to_sentence_blocks(selections, output_root)` in
+`minimal_theme_cut.py` (shared by `apply_decisions` and the super cut) and
+have `build-super-cut` re-snap **all** selections — cached and freshly
+selected — right before assembly, writing the corrected boundaries back to
+the selections cache. The super cut is now self-healing: a stale cache is
+corrected deterministically (0 LLM calls) on every run. The cache is no
+longer trusted blindly; it is a hint that always passes through the snap.
+
+**Effect on the scripture-and-hermeneutics cut:** boundaries corrected to
+sentence-complete ends — ep23→2393.6s, ep30→2291.4s, ep39→566.0s,
+ep50→8752.3s, ep57→5820.6s (ep4 already clean). Re-assembled MP3 keeps the
+same 6 LLM-chosen segments, just correctly aligned.
+
+**Files:** `subtitles.py` (`build_sentence_blocks` + `_is_continuation_end`),
+`minimal_theme_cut.py` (`snap_to_sentence_blocks`, `apply_decisions`),
+`super_cut.py` (re-snap + cache writeback before Phase 6).
+
 ## Master cut status
 
 | Batch | Status | Notes |
@@ -427,6 +480,111 @@ universe/super-cut cache JSONs (`universe_state_*`, `super_cut_*`) are now
 version-controlled (`.gitignore` updated to un-ignore them). Rationale: they
 are LLM-generated and expensive to regenerate; a prompt change shows up as a
 git diff. Audio (`.mp3`) and `_transcribe_diag.log` remain gitignored.
+
+## Combined theme cut — coherence, playback order, boundary verification (2026-08-03)
+
+Goal: a single "combined" MP3 for a listening session — user-selected themes
+played in a chosen order, triple beeps between themes, no mid-sentence cuts,
+segments that flow as one exposition rather than isolated highlights. Built
+for the flight cut (later-run themes); verified on a `modernity-and-culture`
+pilot cut.
+
+**Three code changes (all in `minimal_theme_cut.py` / `super_cut.py` / `cli.py`):**
+
+1. **Narrative-coherence block in `build_selection_prompt`.** Instructs the LLM
+   to build ONE flowing arc (open → develop → close), drop individually-good
+   but disconnected segments, avoid cross-segment repetition, and — critically —
+   **return kept segments in the `segments` JSON array in PLAYBACK ORDER** (the
+   array order IS the audio order).
+2. **`apply_decisions` preserves the LLM's returned order** (was: re-sorted by
+   episode, which scrambled the narrative). Now the kept order IS the playback
+   order; merging only ever joins CONSECUTIVE same-episode segments (a segment
+   from another episode may play between two same-episode segments — they must
+   stay apart).
+3. **`--combine <name>` on `build-super-cut`** assembles ONE `<name>.mp3` from
+   the `--theme` args in arg order (playback order), triple beeps between
+   themes, single within. Pure deterministic helper `order_combined_selections`
+   (order + beep assignment, unit-tested).
+
+**Post-cut boundary verification (hard guarantee).** `verify_cut_boundaries` +
+`write_boundary_report`: every assembled selection is checked against its
+episode's sentence blocks — the start must equal some block START and the end
+some block END (membership in the set of boundaries, NOT a contains-check —
+blocks are contiguous, so a boundary lies at both a block end and the next
+block's start; a contains-check false-FAILs every boundary). Records the
+literal last SRT line of each cut. Report → `super_cut_verify_<label>.txt`.
+
+**Pilot result (`modernity-and-culture`, 2026-08-03):** 18 segments / 88 min
+@1x (70 min @1.25x). Boundaries: **0 violations** (deterministic, solid).
+Ordering: the LLM returned segments in candidate (episode-ascending) order,
+NOT a reordered playback arc — result reads roughly chronologically
+(Neolithic → Greek epistemology → Axial Age → modernism → postmodernism →
+contemporary) which is passable, but includes a duplicate pair (Catalhoyuk
+burial practices in both ep12 and ep99) and the LLM's own "concludes the
+theme" segment (#13) is not last. Volume: **LLM-volume mechanism kept 18
+segments (37% of candidates)** despite the 4-8 segment guide — same documented
+DeepSeek behavior as the master-cut budget saga: **volume constraints in the
+prompt are ignored.** For the flight cut (~2h, several themes) volume must be
+enforced deterministically in Python, not the prompt.
+
+**Deep-dive (same day): universal snapping + episode-diverse selection.**
+Three further fixes, all universal (no per-theme/episode logic):
+
+1. **Leading-fragment snapping (`subtitles.py`).** Whisper can close a sentence
+   with a spurious period and then start the continuation phrase as its OWN
+   block ("…other than Christianity." → "of Western European origin or
+   connection or cultural tradition."). The trailing-word check couldn't catch
+   it (the fragment ends on a normal word), so a cut landed on the fragment.
+   `build_sentence_blocks` now detects an entry that BEGINS a fresh block with
+   a dangling preposition (`_is_leading_continuation`, mirror of the trailing
+   check), REOPENS the previous block, and keeps absorbing until the next real
+   sentence end — a block never starts on a fragment, so a cut never ends on
+   one. Blocks now carry their entry list for the reopen.
+2. **Episode-diversity selection.** Prompt gains an EPISODE DIVERSITY block
+   (spread across many episodes, prefer the later half of the run for a theme
+   that spans it) AND `apply_decisions` gains a deterministic
+   `max_per_episode=2` cap — the LLM keeps whatever it keeps, then Python
+   drops the lowest-relevance excess per episode (filter in place, preserving
+   playback order). The candidate cap `cap_candidate_segments` per-episode
+   default dropped 6 → 3 so one episode can't dominate the pool.
+3. **Deterministic volume floor (`--min-duration-floor`, default 0).** DeepSeek
+   under-selects volume unreliably (measured **18 → 5 → 9 segments across
+   identical setups**, driven by prompt wording). The LLM's kept set is the
+   quality ranking + narrative spine; when a theme totals below the floor,
+   `fill_selection_volume` appends the theme's best UN-KEPT candidates —
+   per-episode capped, LATER episodes preferred — until the floor is met.
+   Topped-up segments pass through the same sentence-block snap. This is the
+   archive/curated split: `--min-duration-floor 0` = LLM-owned archive volume
+   (default); a positive floor = guaranteed runtime for a curated flight cut.
+
+**Final cut (`modernity-and-culture`, `--min-duration-floor 5250`):** 29
+segments / 119 min @1x (**95 min @1.25x**), **19 distinct episodes / 12 late**
+(76, 81, 97, 99, 100, 101, 102, 109, 131, 133, 143, 144) — the "survey the
+second half" character the user wanted. Boundary verification: **0 violations
+across all 29**. Notes: (a) volume overshoots the ~70 min target — the floor
+is a MINIMUM, and both the LLM's larger keeps and large single segments push
+it past; a deterministic ceiling would be the follow-up if exact runtime is
+wanted. (b) Repetition (3× Catalhoyuk) is not yet deterministically enforced.
+
+**Conclusion placement (same day, follow-up to the "conclude segment mid-arc"
+worry).** DeepSeek returns kept segments in roughly candidate order, so its own
+"Concludes that..." segment could land mid-arc (observed: the theme-conclusion
+segment was #17 of 29, with 12 segments after it). Fixed deterministically and
+universally (0 LLM calls): `_is_conclusion_reason` detects a theme-level
+conclusion from the kept segment's LLM reason — the reason OPENS with a
+conclusion verb (`Concludes/Concluding/Closes/Summarizes...`, or "In
+conclusion"/"To conclude"). Mid-arc reasons that merely contain "...concluding
+that..." do NOT match (first-word check). `_place_conclusion_segments`
+(RefinedSelection, called in `apply_decisions`) and `_place_conclusion_selections`
+(Selection, called in `super_cut.build_super_cut` Phase 6) move those segments
+to the END of playback order, preserving the relative order of everything else
+and of the conclusions. The Phase-6 call is the authoritative final order, so
+cache-HIT and volume-filled selections get the placement too; it is idempotent
+and survives the combine reorder (which preserves within-theme order). Applied
+cut now ends: ...ep144 illustration → Concludes (Orthodox worship) → Concludes
+(we'll be judged). Small caveat: a sub-topic reason "Concludes the discussion
+of X..." would also be moved to the tail (rare in this LLM's style; the cost is
+a longer ending, never a cut error).
 
 ## Universe state coverage (2026-08-01 — current)
 

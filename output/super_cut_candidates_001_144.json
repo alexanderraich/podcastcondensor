@@ -2447,6 +2447,7 @@
       49,
       50,
       52,
+      53,
       55,
       83,
       94,
@@ -2522,15 +2523,6 @@
         "start": 592.64,
         "end": 1132.4,
         "duration": 539.76,
-        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-006/GfPWzpgVJiU.mp3",
-        "relevance": 5.0,
-        "is_intro": false
-      },
-      {
-        "episode": 6,
-        "start": 1890.0,
-        "end": 2148.0,
-        "duration": 258.0,
         "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-006/GfPWzpgVJiU.mp3",
         "relevance": 5.0,
         "is_intro": false
@@ -2815,6 +2807,15 @@
         "is_intro": false
       },
       {
+        "episode": 53,
+        "start": 4910.28,
+        "end": 5195.0,
+        "duration": 284.72,
+        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-053/D3Gvm9dJLwc.mp3",
+        "relevance": 5.0,
+        "is_intro": false
+      },
+      {
         "episode": 55,
         "start": 2318.0,
         "end": 2649.8,
@@ -2927,6 +2928,7 @@
       43,
       45,
       46,
+      48,
       55,
       64,
       83,
@@ -3233,15 +3235,6 @@
       },
       {
         "episode": 38,
-        "start": 3120.0,
-        "end": 3427.0,
-        "duration": 307.0,
-        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-038/zYRtwCGIjnQ.mp3",
-        "relevance": 5.0,
-        "is_intro": false
-      },
-      {
-        "episode": 38,
         "start": 3936.96,
         "end": 4425.98,
         "duration": 489.02,
@@ -3310,6 +3303,15 @@
         "duration": 94.01,
         "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-046/m8M-ev6oq-s.mp3",
         "relevance": 3.13,
+        "is_intro": false
+      },
+      {
+        "episode": 48,
+        "start": 10097.32,
+        "end": 10188.4,
+        "duration": 91.08,
+        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-048/rifZjEoWJsI.mp3",
+        "relevance": 3.04,
         "is_intro": false
       },
       {
@@ -9421,6 +9423,15 @@
       },
       {
         "episode": 69,
+        "start": 1267.0,
+        "end": 1365.6,
+        "duration": 98.6,
+        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-069/QAl74dSjZZ8.mp3",
+        "relevance": 3.29,
+        "is_intro": false
+      },
+      {
+        "episode": 69,
         "start": 1513.88,
         "end": 1613.0,
         "duration": 99.12,
@@ -9525,15 +9536,6 @@
         "duration": 171.6,
         "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-097/W2ZsN74ac2E.mp3",
         "relevance": 5.0,
-        "is_intro": false
-      },
-      {
-        "episode": 99,
-        "start": 3017.0,
-        "end": 3155.92,
-        "duration": 138.92,
-        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-099/1oKdkfPiiik.mp3",
-        "relevance": 4.63,
         "is_intro": false
       },
       {
@@ -9663,7 +9665,7 @@
       143,
       144
     ],
-    "candidate_count": 48,
+    "candidate_count": 44,
     "candidates": [
       {
         "episode": 3,
@@ -9780,15 +9782,6 @@
         "duration": 92.95,
         "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-049/gheuQ5uWpwQ.mp3",
         "relevance": 3.1,
-        "is_intro": false
-      },
-      {
-        "episode": 49,
-        "start": 4350.0,
-        "end": 4440.12,
-        "duration": 90.12,
-        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-049/gheuQ5uWpwQ.mp3",
-        "relevance": 3.0,
         "is_intro": false
       },
       {
@@ -9964,24 +9957,6 @@
       },
       {
         "episode": 101,
-        "start": 2400.0,
-        "end": 2495.8,
-        "duration": 95.8,
-        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-101/i7DOWqokmt8.mp3",
-        "relevance": 3.19,
-        "is_intro": false
-      },
-      {
-        "episode": 101,
-        "start": 5073.6,
-        "end": 5169.12,
-        "duration": 95.52,
-        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-101/i7DOWqokmt8.mp3",
-        "relevance": 3.18,
-        "is_intro": false
-      },
-      {
-        "episode": 101,
         "start": 6129.48,
         "end": 6404.44,
         "duration": 274.96,
@@ -10077,15 +10052,6 @@
         "duration": 161.1,
         "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-144/GX5g3gBgU9E.mp3",
         "relevance": 5.0,
-        "is_intro": false
-      },
-      {
-        "episode": 144,
-        "start": 1167.12,
-        "end": 1274.16,
-        "duration": 107.04,
-        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-144/GX5g3gBgU9E.mp3",
-        "relevance": 3.57,
         "is_intro": false
       },
       {
@@ -10598,7 +10564,7 @@
       133,
       139
     ],
-    "candidate_count": 28,
+    "candidate_count": 24,
     "candidates": [
       {
         "episode": 6,
@@ -10656,24 +10622,6 @@
       },
       {
         "episode": 50,
-        "start": 4521.28,
-        "end": 4613.68,
-        "duration": 92.4,
-        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-050/vvuLBVulkbs.mp3",
-        "relevance": 3.08,
-        "is_intro": false
-      },
-      {
-        "episode": 50,
-        "start": 5070.0,
-        "end": 5161.48,
-        "duration": 91.48,
-        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-050/vvuLBVulkbs.mp3",
-        "relevance": 3.05,
-        "is_intro": false
-      },
-      {
-        "episode": 50,
         "start": 7480.88,
         "end": 8067.44,
         "duration": 586.56,
@@ -10692,15 +10640,6 @@
       },
       {
         "episode": 50,
-        "start": 8862.79,
-        "end": 8954.44,
-        "duration": 91.65,
-        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-050/vvuLBVulkbs.mp3",
-        "relevance": 3.05,
-        "is_intro": false
-      },
-      {
-        "episode": 50,
         "start": 9068.28,
         "end": 9236.12,
         "duration": 167.84,
@@ -10715,15 +10654,6 @@
         "duration": 100.48,
         "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-053/D3Gvm9dJLwc.mp3",
         "relevance": 3.35,
-        "is_intro": false
-      },
-      {
-        "episode": 53,
-        "start": 5313.44,
-        "end": 5406.64,
-        "duration": 93.2,
-        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-053/D3Gvm9dJLwc.mp3",
-        "relevance": 3.11,
         "is_intro": false
       },
       {
@@ -11030,15 +10960,6 @@
         "is_intro": false
       },
       {
-        "episode": 39,
-        "start": 7970.0,
-        "end": 8061.9,
-        "duration": 91.9,
-        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-039/cQ4ii1U6sLE.mp3",
-        "relevance": 3.06,
-        "is_intro": false
-      },
-      {
         "episode": 40,
         "start": 0.0,
         "end": 116.28,
@@ -11066,12 +10987,30 @@
         "is_intro": false
       },
       {
+        "episode": 42,
+        "start": 5059.68,
+        "end": 5151.2,
+        "duration": 91.52,
+        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-042/ctGs1jN-Slc.mp3",
+        "relevance": 3.05,
+        "is_intro": false
+      },
+      {
         "episode": 44,
         "start": 6316.72,
         "end": 6417.39,
         "duration": 100.67,
         "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-044/UgNzMAVaV3I.mp3",
         "relevance": 3.36,
+        "is_intro": false
+      },
+      {
+        "episode": 44,
+        "start": 9833.68,
+        "end": 9929.96,
+        "duration": 96.28,
+        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-044/UgNzMAVaV3I.mp3",
+        "relevance": 3.21,
         "is_intro": false
       },
       {
@@ -11315,15 +11254,6 @@
         "duration": 232.96,
         "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-139/EwYJNiGrVBE.mp3",
         "relevance": 5.0,
-        "is_intro": false
-      },
-      {
-        "episode": 139,
-        "start": 9708.4,
-        "end": 9814.88,
-        "duration": 106.48,
-        "audio_path": "/mnt/c/Users/raich/Projects/podcastcondensor/output/ep-139/EwYJNiGrVBE.mp3",
-        "relevance": 3.55,
         "is_intro": false
       }
     ]
