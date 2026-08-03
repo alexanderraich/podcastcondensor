@@ -689,6 +689,55 @@ def _selections_from_dicts(ds: List[dict]) -> List[Selection]:
     return sels
 
 
+def _resnap_selections(
+    selections: List[Selection],
+    output_root: str,
+) -> List[Selection]:
+    """Re-snap Selection boundaries to sentence blocks (0 LLM calls).
+
+    Defensive against a stale selections cache: boundaries written before or
+    without the sentence-block snap would otherwise ship mid-sentence cuts on
+    the cache-HIT path. Selections whose SRT can't be loaded are kept as-is.
+    """
+    from podcastcondensor.minimal_theme_cut import (
+        snap_to_sentence_blocks,
+        RefinedSelection,
+    )
+
+    refs = [
+        RefinedSelection(
+            episode_number=s.segment.episode_number,
+            audio_path=s.segment.audio_path,
+            start=s.segment.start,
+            end=s.segment.end,
+            reason=s.segment.text_preview,
+        )
+        for s in selections
+    ]
+    snapped = snap_to_sentence_blocks(refs, output_root)
+
+    out = []
+    for orig, rs in zip(selections, snapped):
+        seg = ThemeSegment(
+            theme_id=orig.segment.theme_id,
+            episode_number=rs.episode_number,
+            audio_path=rs.audio_path,
+            start=rs.start,
+            end=rs.end,
+            text_preview=rs.reason or orig.segment.text_preview,
+            is_intro=orig.segment.is_intro,
+            relevance_score=orig.segment.relevance_score,
+            match_count=orig.segment.match_count,
+        )
+        out.append(Selection(
+            segment=seg,
+            theme_title=orig.theme_title,
+            theme_id=orig.theme_id,
+            beep_before=orig.beep_before,
+        ))
+    return out
+
+
 # ---------------------------------------------------------------------------
 # Bracket analysis (read-only, 0 LLM calls)
 # ---------------------------------------------------------------------------
@@ -799,7 +848,7 @@ def cap_candidate_segments(
     segments: List[ThemeSegment],
     *,
     max_total: int = 48,
-    max_per_episode: int = 6,
+    max_per_episode: int = 3,
     reserve_top: int = 12,
 ) -> List[ThemeSegment]:
     """Keep a diversity-spread subset of candidate segments for one theme.
@@ -946,6 +995,130 @@ def resolve_global_theme_candidates(
 # ---------------------------------------------------------------------------
 
 
+def fill_selection_volume(
+    selections: List[Selection],
+    themes_with_segments: List[ThemeWithSegments],
+    *,
+    min_duration_floor: float = 0.0,
+    max_per_episode: int = 2,
+) -> List[Selection]:
+    """Deterministically top up each theme's selection to a duration floor.
+
+    The LLM's kept set is the quality ranking and narrative spine, but DeepSeek
+    under-selects volume unreliably (measured 18 → 5 → 9 segments across
+    identical setups). When a theme's total is below the floor, append the
+    theme's best UN-KEPT candidate segments — per-episode capped, preferring
+    LATER episodes so a late-arc theme surveys the run's second half — until
+    the floor is met. Universal (no per-theme logic).
+
+    Topped-up segments use their resolved candidate boundaries and pass through
+    the same sentence-block snap as the LLM's picks downstream, so the
+    no-mid-sentence-cuts guarantee holds. ``min_duration_floor=0`` disables
+    filling (pure LLM volume, the archive default).
+    """
+    if min_duration_floor <= 0 or not selections:
+        return selections
+
+    by_theme: Dict[str, List[Selection]] = defaultdict(list)
+    for s in selections:
+        by_theme[s.theme_id].append(s)
+    pool_by_theme: Dict[str, ThemeWithSegments] = {
+        tws.theme.id: tws for tws in themes_with_segments
+    }
+
+    out: List[Selection] = []
+    for tid, group in by_theme.items():
+        total = sum(s.segment.duration for s in group)
+        tws = pool_by_theme.get(tid)
+        if total >= min_duration_floor or tws is None or not tws.segments:
+            out.extend(group)
+            continue
+        used = {(s.segment.episode_number, round(s.segment.start, 1)) for s in group}
+        ep_used = defaultdict(int)
+        for s in group:
+            ep_used[s.segment.episode_number] += 1
+        # Best un-kept candidates: LATER episodes first (the series' most
+        # developed treatment), then higher relevance.
+        cands = sorted(
+            [c for c in tws.segments
+             if (c.episode_number, round(c.start, 1)) not in used],
+            key=lambda c: (-c.episode_number, -c.relevance_score),
+        )
+        added: List[Selection] = []
+        for c in cands:
+            if total >= min_duration_floor:
+                break
+            if ep_used[c.episode_number] >= max_per_episode:
+                continue
+            added.append(Selection(
+                segment=c,
+                theme_title=tws.theme.title,
+                theme_id=tid,
+                beep_before="single",
+            ))
+            ep_used[c.episode_number] += 1
+            used.add((c.episode_number, round(c.start, 1)))
+            total += c.duration
+        if added:
+            logger.info(
+                "Volume floor: theme '%s' %.0fs → %.0fs (+%d segment(s) "
+                "from later episodes)",
+                tid, total - sum(a.segment.duration for a in added),
+                total, len(added),
+            )
+        out.extend(group + added)
+    return out
+
+
+def _place_conclusion_selections(
+    selections: List[Selection],
+) -> List[Selection]:
+    """Selection-level variant of ``_place_conclusion_segments``: move theme-
+    conclusion segments (signalled by the kept reason in ``text_preview``) to
+    the END of playback order. Applied right before assembly so it covers the
+    cache-HIT and volume-filled paths too, not just fresh LLM selections.
+    """
+    from podcastcondensor.minimal_theme_cut import _is_conclusion_reason
+
+    conc_ids = {
+        id(s) for s in selections if _is_conclusion_reason(s.segment.text_preview)
+    }
+    if not conc_ids:
+        return selections
+    return (
+        [s for s in selections if id(s) not in conc_ids]
+        + [s for s in selections if id(s) in conc_ids]
+    )
+
+
+def order_combined_selections(
+    selections: List[Selection],
+    theme_order: List[str],
+) -> List[Selection]:
+    """Reorder selections to playback order and assign beeps.
+
+    ``theme_order`` is the resolved theme ids in the user's ``--theme`` arg
+    order (the order the listener should hear them). Selections for a theme
+    keep their internal (LLM-narrative) order. Beeps: none before the very
+    first segment, triple at each theme transition, single within a theme.
+
+    Pure/deterministic — no LLM, no audio. Mutates the returned Selection
+    objects' ``beep_before`` in place.
+    """
+    ordered: List[Selection] = []
+    for tid in theme_order:
+        for s in selections:
+            if s.theme_id == tid:
+                ordered.append(s)
+    if ordered:
+        ordered[0].beep_before = "none"
+        prev = ordered[0].theme_id
+        for s in ordered[1:]:
+            s.beep_before = "triple" if s.theme_id != prev else "single"
+            prev = s.theme_id
+    return ordered
+
+
 def assemble_super_cut(
     selections: List[Selection],
     output_dir: str,
@@ -991,6 +1164,119 @@ def assemble_super_cut(
             tid, out_path, sum(s.segment.duration for s in group),
         )
     return outputs
+
+
+def verify_cut_boundaries(
+    selections: List[Selection],
+    output_root: str,
+) -> List[dict]:
+    """Verify every selection lands on complete-sentence boundaries.
+
+    Loads each episode's SRT, rebuilds sentence blocks, and checks that each
+    selection's start coincides with a block START and its end with a block
+    END — the hard "no mid-sentence cuts" guarantee. Records the literal last
+    SRT line inside each cut as proof of what the listener actually hears.
+
+    Never raises: a selection whose SRT can't be loaded is reported as
+    UNVERIFIED, not dropped. Run on the POST-snap selections so it reflects
+    exactly what gets assembled.
+    """
+    from podcastcondensor.subtitles import load_subtitles, build_sentence_blocks
+
+    report: List[dict] = []
+    loaded_eps: Dict[int, List[dict]] = {}
+    for sel in selections:
+        ep = sel.segment.episode_number
+        if ep not in loaded_eps:
+            srt_path = os.path.join(
+                output_root, f"ep-{ep:03d}", "source_subtitles.srt"
+            )
+            try:
+                loaded_eps[ep] = load_subtitles(srt_path, reindex=False)
+            except FileNotFoundError:
+                loaded_eps[ep] = []
+        entries = loaded_eps.get(ep, [])
+        start_ok = end_ok = False
+        last_line = ""
+        note = ""
+        if entries:
+            blocks = build_sentence_blocks(entries)
+            # The "lands on a sentence-block boundary" check is membership in
+            # the SET of block starts/ends — NOT "which block contains the
+            # boundary". Blocks are contiguous, so a boundary (e.g. 1259.0)
+            # lies at the end of one block AND the start of the next; a
+            # contains-check matches the wrong block and yields false FAILs.
+            start_ok = any(
+                abs(b["start"] - sel.segment.start) < 0.01 for b in blocks
+            )
+            end_ok = any(
+                abs(b["end"] - sel.segment.end) < 0.01 for b in blocks
+            )
+            # Literal last line = the text of the block that ENDS at the
+            # selection's end boundary (the sentence the listener hears close).
+            e_block = next(
+                (b for b in blocks if abs(b["end"] - sel.segment.end) < 0.01),
+                None,
+            )
+            if e_block:
+                last_line = e_block.get("text", "")
+        else:
+            note = "SRT unavailable — unverified"
+        report.append({
+            "theme_id": sel.theme_id,
+            "episode": ep,
+            "start": round(sel.segment.start, 1),
+            "end": round(sel.segment.end, 1),
+            "duration": round(sel.segment.duration, 1),
+            "start_ok": start_ok,
+            "end_ok": end_ok,
+            "last_line": last_line,
+            "note": note,
+        })
+    return report
+
+
+def write_boundary_report(
+    report: List[dict],
+    output_root: str,
+    label: str,
+) -> str:
+    """Write a human-readable boundary-verification report to ``output_root``.
+
+    ``label`` becomes the file suffix (e.g. ``flight`` →
+    ``super_cut_verify_flight_001_144.txt``). Returns the report path.
+    """
+    lines = [
+        f"Boundary verification — {label}",
+        f"Checked {len(report)} segment(s) against sentence-block boundaries.",
+        "Each segment must START at a complete-sentence block start and END at",
+        "a complete-sentence block end — no mid-sentence cuts.",
+        "",
+    ]
+    bad = [r for r in report if not (r["start_ok"] and r["end_ok"]) and not r["note"]]
+    unverified = [r for r in report if r["note"]]
+    ok = len(report) - len(bad) - len(unverified)
+    lines.append(f"OK: {ok}   VIOLATIONS: {len(bad)}   UNVERIFIED: {len(unverified)}")
+    lines.append("")
+    for r in report:
+        if r["note"]:
+            status = "?  "
+        elif r["start_ok"] and r["end_ok"]:
+            status = "OK "
+        else:
+            status = "FAIL"
+        lines.append(
+            f"[{status}] {r['theme_id']}  ep{r['episode']:03d}  "
+            f"{r['start']:.1f}-{r['end']:.1f}s ({r['duration']:.0f}s)"
+        )
+        lines.append(f"       last line: {r['last_line'][:170]}")
+        if r["note"]:
+            lines.append(f"       note: {r['note']}")
+    path = os.path.join(output_root, f"super_cut_verify_{label}.txt")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+    logger.info("Wrote boundary verification report: %s", path)
+    return path
 
 
 # ---------------------------------------------------------------------------
@@ -1073,6 +1359,8 @@ def build_super_cut(
     retry_empty_chunks: bool = False,
     output_dir: str = "",
     dry_run: bool = False,
+    combine_name: Optional[str] = None,
+    min_duration_floor: float = 0.0,
 ) -> dict:
     """Build per-theme MP3s for the top topics over the full episode range.
 
@@ -1084,6 +1372,13 @@ def build_super_cut(
     ``dry_run`` runs merge → chunk → coalesce → resolve only and prints the
     theme table (with per-theme episode spread) — the "many episodes quoted"
     check before spending on selection.
+
+    ``combine_name`` (with ``theme_ids``) assembles ONE MP3 instead of one per
+    theme: selections are reordered to the ``--theme`` arg order (playback
+    order) with triple beeps between themes and single beeps within — the
+    "combined theme cut" for a single listening session. Every assembled
+    selection is verified to land on sentence-block boundaries and the report
+    is written to ``super_cut_verify_<label>.txt``.
     """
     output_root = cfg.output_root or os.path.join(
         os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
@@ -1259,13 +1554,17 @@ def build_super_cut(
         return result
 
     # ── Resolve requested themes (--theme filter, else all) ───────────────
+    # ``wanted`` is an ORDERED list, not a set: it preserves the order the
+    # user passed ``--theme`` args, which is the playback order for a
+    # combined cut.
     if theme_ids:
-        wanted: set = set()
+        wanted: List[str] = []
         for f in theme_ids:
             fl = f.strip().lower()
             for gt in global_themes:
                 if fl and (fl in gt.id.lower() or fl in gt.title.lower()):
-                    wanted.add(gt.id)
+                    if gt.id not in wanted:
+                        wanted.append(gt.id)
         if not wanted:
             result["errors"].append(
                 f"No global theme matches --theme {theme_ids} "
@@ -1339,24 +1638,120 @@ def build_super_cut(
         result["errors"].append("No segments selected — cannot continue")
         return result
 
+    # ── Deterministic volume floor (opt-in) ─────────────────────────────
+    # DeepSeek under-selects volume unreliably, so the LLM's kept set is the
+    # quality ranking + narrative spine, and the floor fills remaining runtime
+    # with the theme's best un-kept candidates (per-episode capped, later
+    # episodes preferred). ``--min-duration-floor`` opts a curated cut into
+    # guaranteed volume; 0 = pure LLM volume (archive default). Universal.
+    if min_duration_floor and min_duration_floor > 0:
+        all_selections = fill_selection_volume(
+            all_selections,
+            requested_tws,
+            min_duration_floor=float(min_duration_floor),
+        )
+        plan.total_duration = round(
+            sum(s.segment.duration for s in all_selections), 1
+        )
+        logger.info(
+            "After volume floor: %d segments, %.0fs (%.1f min @1x)",
+            len(all_selections), plan.total_duration, plan.total_duration / 60,
+        )
+
+    # ── Re-snap cached AND fresh selections to sentence blocks ──────────
+    # A stale selections cache (boundaries written before/without the snap)
+    # must never ship mid-sentence cuts. Re-snap everything deterministically
+    # (0 LLM calls) and write the corrected boundaries back to the cache so it
+    # self-heals. Keeps the LLM's editorial choice; only aligns boundaries.
+    resnapped = _resnap_selections(all_selections, output_root)
+    changed = sum(
+        1 for a, b in zip(all_selections, resnapped)
+        if abs(a.segment.start - b.segment.start) > 0.01
+        or abs(a.segment.end - b.segment.end) > 0.01
+    )
+    if changed:
+        logger.info(
+            "Re-snapped %d/%d segment boundaries to sentence blocks "
+            "(stale cache self-healed)",
+            changed, len(all_selections),
+        )
+        all_selections = resnapped
+        plan.total_duration = round(
+            sum(s.segment.duration for s in all_selections), 1
+        )
+        by_theme: Dict[str, List[Selection]] = {}
+        for s in all_selections:
+            by_theme.setdefault(s.theme_id, []).append(s)
+        _merge_selections_cache(selections_path, by_theme)
+
     warnings = _compute_selection_warnings(
         all_selections, [tws.theme for tws in requested_tws],
     )
     result["warnings"] = warnings
 
-    # ── Phase 6: Assemble one MP3 per theme ──────────────────────────────
+    # ── Boundary verification (post-snap, on what will actually be cut) ──
+    # Hard "no mid-sentence cuts" proof: every selection's start/end must land
+    # on a sentence-block boundary, with the literal last line recorded.
+    boundary_report = verify_cut_boundaries(all_selections, output_root)
+
+    # ── Phase 6: Assemble ────────────────────────────────────────────────
     logger.info("=" * 60)
-    logger.info("PHASE 6: Assemble per-theme MP3s")
+    logger.info("PHASE 6: Assemble audio")
     logger.info("=" * 60)
     if not output_dir:
         output_dir = output_root  # flat — MP3s go straight into output_root, no subfolder
     Path(output_dir).mkdir(parents=True, exist_ok=True)
     t6 = time.time()
-    try:
-        result["outputs"] = assemble_super_cut(all_selections, output_dir, cfg)
-    except Exception as e:
-        logger.exception("Super cut assembly failed: %s", e)
-        result["errors"].append(f"Audio assembly failed: {e}")
+
+    # Authoritative final playback order: theme-conclusion segments LAST. This
+    # runs on the assembled list (fresh, cache-HIT, or volume-filled alike) so
+    # the LLM's "Concludes..." segment can never play mid-arc. The combine
+    # reorder below preserves within-theme order, so placement survives combine.
+    all_selections = _place_conclusion_selections(all_selections)
+
+    combine_base = ""
+    if combine_name:
+        if not theme_ids:
+            result["errors"].append("--combine requires at least one --theme")
+            return result
+        # Combined cut: reorder to the user's --theme playback order and set
+        # triple beeps between themes, single within. ``wanted`` is already
+        # the ordered list of resolved theme ids.
+        combine_base = re.sub(r"[^a-z0-9-]+", "-", combine_name.lower()).strip("-")
+        combine_base = combine_base or "combined"
+        all_selections = order_combined_selections(all_selections, wanted)
+        if not all_selections:
+            result["errors"].append("No selections to assemble")
+            return result
+        plan.total_duration = round(sum(s.segment.duration for s in all_selections), 1)
+        out_path = os.path.join(output_dir, combine_base + ".mp3")
+        try:
+            assemble_master_cut(
+                selections=all_selections,
+                output_path=out_path,
+                sample_rate=cfg.audio_sample_rate,
+                bitrate=cfg.audio_bitrate,
+                speed=cfg.audio_speed,
+                parallel_workers=4,
+                keep_temp=cfg.keep_temp,
+            )
+            result["outputs"] = {combine_name: out_path}
+        except Exception as e:
+            logger.exception("Combined cut assembly failed: %s", e)
+            result["errors"].append(f"Audio assembly failed: {e}")
+    else:
+        try:
+            result["outputs"] = assemble_super_cut(all_selections, output_dir, cfg)
+        except Exception as e:
+            logger.exception("Super cut assembly failed: %s", e)
+            result["errors"].append(f"Audio assembly failed: {e}")
+
+    # Write the boundary report (label = combine name for combined runs).
+    verify_label = f"{combine_base}_{start_episode:03d}_{end_episode:03d}" \
+        if combine_name else f"{start_episode:03d}_{end_episode:03d}"
+    result["verify_path"] = write_boundary_report(
+        boundary_report, output_root, verify_label,
+    )
 
     result["phases"].append({
         "phase": "assemble_audio",
@@ -1381,6 +1776,7 @@ def build_super_cut(
             "warnings": warnings,
             "errors": result.get("errors", []),
             "phases": result.get("phases", []),
+            "verify_path": result.get("verify_path", ""),
             "selections": [
                 {
                     "theme_title": s.theme_title,

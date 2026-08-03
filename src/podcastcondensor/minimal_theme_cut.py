@@ -121,6 +121,79 @@ def _snap_to_sentence_blocks(
     return snapped
 
 
+def snap_to_sentence_blocks(
+    selections: List[RefinedSelection],
+    output_root: str,
+) -> List[RefinedSelection]:
+    """Snap a list of selections to sentence-block boundaries, loading each
+    episode's SRT from ``output_root`` on demand.
+
+    A HARD constraint — the returned boundaries are guaranteed to land on
+    complete-sentence block ends (per ``build_sentence_blocks``). Selections
+    whose SRT can't be loaded are kept as-is (never dropped).
+
+    Shared by ``apply_decisions`` (fresh LLM selections) and the super cut
+    (which re-snaps cached selections before assembly, so a stale cache is
+    corrected deterministically with 0 LLM calls).
+    """
+    if not output_root or not selections:
+        return selections
+
+    from podcastcondensor.subtitles import load_subtitles, build_sentence_blocks
+    loaded_eps: Dict[int, List[dict]] = {}
+    snapped_out: List[RefinedSelection] = []
+
+    for sel in selections:
+        ep = sel.episode_number
+        if ep not in loaded_eps:
+            srt_path = os.path.join(
+                output_root, f"ep-{ep:03d}", "source_subtitles.srt"
+            )
+            try:
+                loaded_eps[ep] = load_subtitles(srt_path, reindex=False)
+            except FileNotFoundError:
+                loaded_eps[ep] = []
+        entries = loaded_eps.get(ep, [])
+        blocks = build_sentence_blocks(entries) if entries else []
+        if not blocks:
+            snapped_out.append(sel)
+            continue
+
+        # Snap start to containing block start
+        s_block = None
+        for b in blocks:
+            if b["start"] <= sel.start <= b["end"]:
+                s_block = b
+                break
+        if s_block is None:
+            for b in blocks:
+                if b["end"] >= sel.start:
+                    s_block = b
+                    break
+
+        # Snap end to containing block end
+        e_block = None
+        for b in reversed(blocks):
+            if b["start"] <= sel.end <= b["end"]:
+                e_block = b
+                break
+        if e_block is None:
+            for b in blocks:
+                if b["start"] >= sel.end:
+                    e_block = b
+                    break
+
+        snapped_out.append(RefinedSelection(
+            episode_number=sel.episode_number,
+            audio_path=sel.audio_path,
+            start=s_block["start"] if s_block else sel.start,
+            end=e_block["end"] if e_block else sel.end,
+            reason=sel.reason,
+        ))
+
+    return snapped_out
+
+
 def _format_segment_with_context(
     seg: ThemeSegment,
     entries: List[dict],
@@ -232,12 +305,13 @@ def _volume_guide(time_budget: Optional[float]) -> List[str]:
             "  overflow it.",
         ]
     return [
-        "  A thorough treatment of this theme probably needs 4-8 segments",
-        "  totalling 8-20 minutes. That gives room for: a definition segment,",
-        "  a development/argument segment, a couple examples, and a",
-        "  connection-to-broader-theology segment. Fewer than 4 segments",
-        "  is unlikely to be self-contained; more than 10 is probably",
-        "  too repetitive.",
+        "  A thorough treatment of this theme needs about 12-18 segments",
+        "  totalling roughly 60-90 minutes of audio. That is a substantial",
+        "  standalone listen: room for an opening definition, several",
+        "  development/argument segments from MANY different episodes, concrete",
+        "  examples, and a closing payoff. Fewer than 12 segments (or under an",
+        "  hour) is too thin to be self-contained; the listener should come",
+        "  away genuinely understanding the theme, not with a teaser.",
     ]
 
 
@@ -349,6 +423,41 @@ def build_selection_prompt(
         "    segment ends with sentence punctuation (. ! ?). If the thought",
         "    carries into the next entry, extend your end boundary to include",
         "    it. No mid-thought cuts.",
+        "",
+        "NARRATIVE COHERENCE — the kept segments play back-to-back as ONE",
+        "continuous listen, so they must together tell ONE coherent story about",
+        "this theme:",
+        "  - Build a flowing arc, like a mini-documentary: OPEN the theme",
+        "    (what it is, where it starts), DEVELOP it (the core argument,",
+        "    how it works, key examples), then CLOSE it (what it means, why it",
+        "    matters).",
+        "  - Each kept segment should HAND OFF to the next: when the listener",
+        "    hears segment N, they should be in a position to understand",
+        "    segment N+1. Prefer segments that connect to the thread. If two",
+        "    segments cover the same ground, keep the one that advances the arc.",
+        "  - You are NOT listing isolated highlights. You are SEQUENCING one",
+        "    exposition: definition first, development in the middle, payoff last.",
+        "",
+        "OUTPUT ORDER — CRITICAL:",
+        "  - List the kept segments in the 'segments' JSON array IN PLAYBACK",
+        "    ORDER: the first kept segment is what the listener hears first,",
+        "    the last is what they hear last. The order of the array IS the",
+        "    order of the audio.",
+        "  - Do NOT return them in candidate order or in episode order. Put",
+        "    the OPENING segment first and the CLOSING segment last, whatever",
+        "    episode each comes from.",
+        "",
+        "EPISODE DIVERSITY — IMPORTANT:",
+        "  - Spread your kept segments across as many DIFFERENT episodes as",
+        "    possible — this is what makes the cut feel like a survey of the",
+        "    whole series rather than a re-hash of one or two shows. Prefer a",
+        "    segment from a NEW episode over a second segment from an already-",
+        "    used episode when both are comparable. (The editor caps repeats at",
+        "    2 per episode, so if you keep more, the weakest duplicates fall.)",
+        "  - When a theme spans the whole series, the LATER episodes (roughly",
+        "    the second half of the run) usually contain the podcast's most",
+        "    developed treatment of the topic. Prefer them when they are at",
+        "    least as strong as an earlier candidate.",
         "",
         "GUIDE ON VOLUME:",
         *_volume_guide(time_budget),
@@ -524,11 +633,61 @@ class RefinedSelection:
         return max(self.end - self.start, 0.0)
 
 
+# Verbs that open a kept segment's reason when it is the theme's CLOSING beat.
+# DeepSeek consistently writes these as "Concludes that...", "Concluding that...",
+# "In conclusion, ...". A first-word match is the signal (mid-arc reasons like
+# "Contrasts ... concluding that ..." do NOT start with one). Conservative set —
+# a false positive only moves a segment to the tail (a longer ending), never a
+# mid-sentence cut.
+_CONCLUSION_VERBS = frozenset(
+    "concludes concluding conclusion closes closing wraps summarizing "
+    "summarizes".split()
+)
+
+
+def _is_conclusion_reason(reason: str) -> bool:
+    """True if ``reason`` (an LLM kept-segment reason) opens with a theme-level
+    conclusion verb — the signal that this segment is the arc's closing beat."""
+    t = (reason or "").strip().lstrip("\"'(-").rstrip(".!?")
+    if not t:
+        return False
+    words = t.lower().split()
+    if not words:
+        return False
+    if words[0] in _CONCLUSION_VERBS:
+        return True
+    # "In conclusion, ..." / "To conclude, ..."
+    return (
+        words[0] == "in" and len(words) >= 2 and words[1] == "conclusion"
+    ) or (
+        words[0] == "to" and len(words) >= 2 and words[1] == "conclude"
+    )
+
+
+def _place_conclusion_segments(
+    selections: List[RefinedSelection],
+) -> List[RefinedSelection]:
+    """Move theme-conclusion segments to the END of playback order.
+
+    Deterministic, universal, 0 LLM calls. Preserves the relative order of the
+    non-conclusion segments and of the conclusions themselves. Fixes the
+    observed failure where the LLM's "Concludes..." segment plays mid-arc.
+    """
+    conc_ids = {id(s) for s in selections if _is_conclusion_reason(s.reason)}
+    if not conc_ids:
+        return selections
+    return (
+        [s for s in selections if id(s) not in conc_ids]
+        + [s for s in selections if id(s) in conc_ids]
+    )
+
+
 def apply_decisions(
     decisions: List[SegmentDecision],
     tws: ThemeWithSegments,
     manifests: List[EpisodeManifest],
     output_root: str = "",
+    max_per_episode: int = 2,
 ) -> List[RefinedSelection]:
     """Apply LLM decisions to build the final selection list.
 
@@ -538,6 +697,13 @@ def apply_decisions(
     When *output_root* is provided, performs a final snap to sentence-
     block boundaries — the returned segments are guaranteed to start
     and end at complete-sentence boundaries.
+
+    *max_per_episode* deterministically caps how many kept segments may
+    come from the same episode (default 2). This is the enforcement layer
+    behind the prompt's EPISODE DIVERSITY instruction — DeepSeek ignores
+    the instruction, so the cap is applied in code. It keeps the
+    highest-relevance segments per episode and preserves the LLM's
+    playback order otherwise, so a theme quotes MANY distinct episodes.
     """
     # Map seg_id -> original ThemeSegment
     seg_map: Dict[str, ThemeSegment] = {}
@@ -551,6 +717,7 @@ def apply_decisions(
 
     # Collect kept segments with refined boundaries
     kept: List[RefinedSelection] = []
+    kept_rel: List[float] = []  # parallel: the candidate's relevance score
     for d in decisions:
         if not d.keep:
             continue
@@ -579,32 +746,66 @@ def apply_decisions(
             end=end,
             reason=d.reason,
         ))
+        kept_rel.append(getattr(orig, "relevance_score", 0.0) or 0.0)
 
-    # Merge overlapping/adjacent segments from the same episode
-    # Group by episode, sort by start, merge if they touch or overlap
-    by_ep: Dict[int, List[RefinedSelection]] = {}
-    for k in kept:
-        by_ep.setdefault(k.episode_number, []).append(k)
+    # Episode-diversity cap: at most *max_per_episode* kept segments per
+    # episode, keeping the highest-relevance ones. DeepSeek ignores the
+    # prompt's diversity instruction, so this deterministic cap enforces it.
+    # Keepers are chosen per episode by (-relevance, -duration), but the kept
+    # list is FILTERED in place (by index set) so the LLM's playback order is
+    # preserved globally — the narrative arc is never scrambled by the cap.
+    if max_per_episode and max_per_episode > 0 and len(kept) > max_per_episode:
+        from collections import defaultdict
+        by_ep: Dict[int, List[int]] = defaultdict(list)
+        for i, k in enumerate(kept):
+            by_ep[k.episode_number].append(i)
+        keep_idx: set = set()
+        for ep in by_ep:
+            idxs = sorted(
+                by_ep[ep],
+                key=lambda i: (-kept_rel[i], -(kept[i].end - kept[i].start)),
+            )[:max_per_episode]
+            keep_idx.update(idxs)
+        if len(keep_idx) != len(kept):
+            logger.info(
+                "Episode-diversity cap: %d kept → %d (max %d/episode)",
+                len(kept), len(keep_idx), max_per_episode,
+            )
+            kept = [k for i, k in enumerate(kept) if i in keep_idx]
+            kept_rel = [r for i, r in enumerate(kept_rel) if i in keep_idx]
 
+    # Narrative placement: theme-conclusion segments go LAST in playback order.
+    # DeepSeek returns kept segments in roughly candidate order, so its own
+    # "Concludes that..." segment can land mid-arc (observed: seg #17 of 29 was
+    # a conclusion with 12 segments after it). Detect conclusions from the
+    # reason text (deterministic, 0 LLM calls) and move them to the end,
+    # preserving the relative order of everything else and of the conclusions.
+    kept = _place_conclusion_segments(kept)
+
+    # Merge overlapping/adjacent segments — but ONLY consecutive ones in the
+    # LLM's returned order, which is playback order (the prompt instructs the
+    # model to list kept segments in playback order). The old code grouped by
+    # episode and re-sorted, which destroyed the intended narrative sequence:
+    # a segment from ep 5 could be pulled to the front and the arc scrambled.
+    # Now the kept order IS the audio order; merging only adjacent same-episode
+    # segments preserves that. Non-consecutive same-episode segments are kept
+    # apart on purpose (they are separate scenes, possibly with another
+    # episode's segment between them).
     merged: List[RefinedSelection] = []
-    for ep in sorted(by_ep.keys()):
-        ep_segs = sorted(by_ep[ep], key=lambda s: s.start)
-        current = ep_segs[0]
-        for next_seg in ep_segs[1:]:
-            gap = next_seg.start - current.end
+    for k in kept:
+        if merged and k.episode_number == merged[-1].episode_number:
+            gap = k.start - merged[-1].end
             if gap <= 5.0:  # merge if within 5 seconds
-                reasons = [r for r in (current.reason, next_seg.reason) if r]
-                current = RefinedSelection(
-                    episode_number=current.episode_number,
-                    audio_path=current.audio_path,
-                    start=current.start,
-                    end=max(current.end, next_seg.end),
+                reasons = [r for r in (merged[-1].reason, k.reason) if r]
+                merged[-1] = RefinedSelection(
+                    episode_number=merged[-1].episode_number,
+                    audio_path=merged[-1].audio_path,
+                    start=merged[-1].start,
+                    end=max(merged[-1].end, k.end),
                     reason="; ".join(reasons),
                 )
-            else:
-                merged.append(current)
-                current = next_seg
-        merged.append(current)
+                continue
+        merged.append(k)
 
     logger.info(
         "Refined selections: %d kept after merging → %d segments",
@@ -618,70 +819,6 @@ def apply_decisions(
         )
 
     # ── Snap to sentence-block boundaries (hard constraint) ────────────
-    if output_root and merged:
-        from podcastcondensor.subtitles import load_subtitles, build_sentence_blocks
-        loaded_eps: Dict[int, List[dict]] = {}
-        sentence_snapped: List[RefinedSelection] = []
-        for mseg in merged:
-            ep = mseg.episode_number
-            # Load SRT entries for this episode (cache)
-            if ep not in loaded_eps:
-                srt_path = os.path.join(
-                    output_root, f"ep-{ep:03d}", "source_subtitles.srt"
-                )
-                try:
-                    loaded_eps[ep] = load_subtitles(srt_path, reindex=False)
-                except FileNotFoundError:
-                    loaded_eps[ep] = []
-            entries = loaded_eps.get(ep, [])
-            if not entries:
-                continue
-
-            blocks = build_sentence_blocks(entries)
-            if not blocks:
-                continue
-
-            # Snap start to containing block start
-            s_block = None
-            for b in blocks:
-                if b["start"] <= mseg.start <= b["end"]:
-                    s_block = b
-                    break
-            if s_block is None:
-                s_block = blocks[0]
-                for b in blocks:
-                    if b["end"] >= mseg.start:
-                        s_block = b
-                        break
-
-            # Snap end to containing block end
-            e_block = None
-            for b in reversed(blocks):
-                if b["start"] <= mseg.end <= b["end"]:
-                    e_block = b
-                    break
-            if e_block is None:
-                e_block = blocks[-1]
-                for b in blocks:
-                    if b["start"] >= mseg.end:
-                        e_block = b
-                        break
-
-            snapped = RefinedSelection(
-                episode_number=mseg.episode_number,
-                audio_path=mseg.audio_path,
-                start=s_block["start"] if s_block else mseg.start,
-                end=e_block["end"] if e_block else mseg.end,
-                reason=mseg.reason,
-            )
-            sentence_snapped.append(snapped)
-
-        n_before = len(merged)
-        n_after = len(sentence_snapped)
-        logger.info(
-            "Sentence-block snap: %d/%d segments aligned to sentence boundaries",
-            n_after, n_before,
-        )
-        merged = sentence_snapped
+    merged = snap_to_sentence_blocks(merged, output_root)
 
     return merged
