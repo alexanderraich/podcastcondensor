@@ -617,6 +617,18 @@ artefacts:
   `output/ep-NNN/` (`narration.txt` + `narration.mp3`); `narration.txt` is
   git-versioned. `--combined` additionally concatenates all of them into one
   MP3 (triple beeps between episodes).
+- **`--chunk-range START-END [--chunk-speed X]`** (on `build-narrations`,
+  2026-08-12): assemble a sub-range of the batch into its own combined MP3
+  `output/narrations_<START>_<END>.mp3` (same triple-beep concat as
+  `--combined`); `--chunk-speed 1.25` additionally writes
+  `output/narrations_<START>_<END>_1.25x.mp3`, pitch-preserved via ffmpeg
+  `atempo` re-encode (the 1x chunk is kept too). The chunk range must lie
+  within `--start/--end` (fail-loud guard so the loop narrates any missing
+  episodes first). Pure assembly when all narration.mp3s exist — the DeepSeek
+  client is created lazily, so a chunk-only run needs no API key. Chunking is
+  how the 7.2h 24-144 combined file is split into listenable pieces, e.g.
+  `--start 24 --end 144 --chunk-range 24-40 --chunk-speed 1.25`
+  (24-40 = 70 min @1x → 56 min @1.25x).
 
 **Demo (ep-1, 2026-08-12):** 697-word narration → 4.1-min / 1.5 MB MP3.
 Narration is coherent, flowing prose — no headers, bullets, or `(ep,ts)`

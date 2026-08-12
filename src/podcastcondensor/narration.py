@@ -103,6 +103,38 @@ def _mp3_path(output_root: str, ep_num: int) -> str:
     return os.path.join(output_root, f"ep-{ep_num:03d}", "narration.mp3")
 
 
+def _parse_chunk_range(chunk_range: str):
+    """Parse '24-40' (or '24') into (start, end). Raises ValueError."""
+    parts = [p for p in chunk_range.replace(" ", "").split("-") if p]
+    if len(parts) == 1:
+        start = end = int(parts[0])
+    elif len(parts) == 2:
+        start, end = int(parts[0]), int(parts[1])
+    else:
+        raise ValueError(f"Invalid --chunk-range {chunk_range!r}: expected 'START-END'")
+    if start < 1 or end < start:
+        raise ValueError(f"Invalid --chunk-range {chunk_range!r}: need 1 <= START <= END")
+    return start, end
+
+
+def _apply_speed(in_path: str, out_path: str, speed: float) -> str:
+    """Re-encode ``in_path`` at ``speed`` (pitch-preserving atempo) to ``out_path``."""
+    import subprocess
+
+    from podcastcondensor.audio_strategies import _atempo_filters
+
+    filters = ",".join(_atempo_filters(speed))
+    proc = subprocess.run(
+        ["ffmpeg", "-y", "-i", in_path, "-af", filters,
+         "-c:a", "libmp3lame", "-q:a", "2", out_path],
+        capture_output=True, text=True,
+    )
+    if proc.returncode != 0:
+        raise RuntimeError(f"ffmpeg speed-up failed: {proc.stderr.strip()[:300]}")
+    logger.info("Wrote %s at %sx", out_path, speed)
+    return os.path.abspath(out_path)
+
+
 def assemble_combined_narration(ep_nums, output_root: str, out_path: str) -> str:
     """Concatenate per-episode narrations into one MP3, triple beep between.
 
@@ -150,6 +182,8 @@ def build_corpus_narrations(
     start: int = 21,
     end: int = 144,
     combined_out: str = "",
+    chunk_range: str = "",
+    chunk_speed: float = 1.0,
 ) -> dict:
     """Narrate + TTS every non-Q&A episode in [start, end]; optionally combine.
 
@@ -158,14 +192,36 @@ def build_corpus_narrations(
     Missing ``global_state.json`` for a non-Q&A episode is an error — the
     batch fails loud at the end (never reported as a clean success with gaps).
 
-    Returns {"episodes": [(ep, "new"|"skipped")], "combined": path-or-""}.
+    ``chunk_range`` (e.g. ``"24-40"``) additionally assembles the non-Q&A
+    episodes in that sub-range into ``narrations_024_040.mp3`` (same triple
+    beeps as ``combined_out``); ``chunk_speed`` (e.g. ``1.25``) additionally
+    writes ``narrations_024_040_1.25x.mp3`` pitch-preserved. The chunk range
+    must lie within [start, end] so the loop narrates any missing episodes
+    before assembly.
+
+    Returns {"episodes": [(ep, "new"|"skipped")], "combined": path-or-"",
+    "chunk": path-or-"", "chunk_speed": path-or-""}.
     """
     root = output_root or _default_output_root()
     ep_nums = [n for n in _episode_dir_numbers(root) if start <= n <= end]
     if not ep_nums:
         raise RuntimeError(f"No non-Q&A episodes in range {start}-{end} under {root!r}")
 
-    client = DeepSeekClient(api_key=resolve_api_key())
+    chunk_eps = None
+    c_start = c_end = None
+    if chunk_range:
+        c_start, c_end = _parse_chunk_range(chunk_range)
+        chunk_eps = [n for n in _episode_dir_numbers(root) if c_start <= n <= c_end]
+        if not chunk_eps:
+            raise RuntimeError(f"--chunk-range {chunk_range} has no non-Q&A episodes")
+        missing = [n for n in chunk_eps if n not in ep_nums]
+        if missing:
+            raise RuntimeError(
+                f"--chunk-range {chunk_range} not fully covered by --start {start} "
+                f"--end {end}; extend the range to include: {missing}"
+            )
+
+    client = None
     errors = []
     results = []
     for ep_num in ep_nums:
@@ -180,6 +236,8 @@ def build_corpus_narrations(
         try:
             text = _existing_narration(root, ep_num)
             if not text:
+                if client is None:
+                    client = DeepSeekClient(api_key=resolve_api_key())
                 text = narrate_episode(output_root=root, ep_num=ep_num, client=client)
             synthesize_narration(text, _mp3_path(root, ep_num))
             results.append((ep_num, "new"))
@@ -196,4 +254,16 @@ def build_corpus_narrations(
     combined = ""
     if combined_out:
         combined = assemble_combined_narration(ep_nums, root, combined_out)
-    return {"episodes": results, "combined": combined}
+
+    chunk = ""
+    chunk_speed_path = ""
+    if chunk_eps:
+        chunk_out = os.path.join(root, f"narrations_{c_start:03d}_{c_end:03d}.mp3")
+        chunk = assemble_combined_narration(chunk_eps, root, chunk_out)
+        if chunk_speed and abs(chunk_speed - 1.0) > 0.01:
+            sped_out = os.path.join(
+                root, f"narrations_{c_start:03d}_{c_end:03d}_{chunk_speed}x.mp3"
+            )
+            chunk_speed_path = _apply_speed(chunk, sped_out, chunk_speed)
+    return {"episodes": results, "combined": combined,
+            "chunk": chunk, "chunk_speed": chunk_speed_path}

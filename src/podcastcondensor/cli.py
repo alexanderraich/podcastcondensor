@@ -354,12 +354,18 @@ def cmd_build_narrations(args):
         start=args.start,
         end=args.end,
         combined_out=args.combined or "",
+        chunk_range=args.chunk_range or "",
+        chunk_speed=args.chunk_speed or 1.0,
     )
     new = sum(1 for _, s in result["episodes"] if s == "new")
     skipped = sum(1 for _, s in result["episodes"] if s == "skipped")
     print(f"Narrations: {new} new, {skipped} already on disk")
     if result["combined"]:
         print(f"Combined:   {result['combined']}")
+    if result["chunk"]:
+        print(f"Chunk:      {result['chunk']}")
+    if result["chunk_speed"]:
+        print(f"Chunk speed: {result['chunk_speed']}")
 
 
 def _compact_span(eps):
@@ -529,6 +535,12 @@ def main():
                     help="Last episode to narrate (default: 144)")
     bn.add_argument("--combined", default="",
                     help="Also assemble one combined MP3 at this path (triple beeps between episodes)")
+    bn.add_argument("--chunk-range", default="",
+                    help="Also assemble the non-Q&A episodes in START-END as their own "
+                         "combined MP3 narrations_<START>_<END>.mp3 (must be within --start/--end)")
+    bn.add_argument("--chunk-speed", type=float, default=1.0,
+                    help="Also write the chunk MP3 re-encoded at this pitch-preserving "
+                         "speed (atempo), e.g. 1.25; 1.0 = no speed file (default: 1.0)")
     bn.add_argument("--output-dir", default="")
     bn.set_defaults(func=cmd_build_narrations)
 

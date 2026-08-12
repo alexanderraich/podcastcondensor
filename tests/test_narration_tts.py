@@ -7,11 +7,15 @@ import json
 import os
 import sys
 
+import pytest
+
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 from podcastcondensor.narration import (
     _existing_narration,
     _mp3_path,
+    _parse_chunk_range,
+    build_corpus_narrations,
     narrate_episode,
 )
 from podcastcondensor.tts import _chunk_sentences, _split_sentences
@@ -103,3 +107,29 @@ def test_existing_narration_empty_when_absent(tmp_path):
 
 def test_mp3_path_location(tmp_path):
     assert _mp3_path(str(tmp_path), 7) == os.path.join(tmp_path, "ep-007", "narration.mp3")
+
+
+def test_parse_chunk_range():
+    assert _parse_chunk_range("24-40") == (24, 40)
+    assert _parse_chunk_range("24") == (24, 24)
+    assert _parse_chunk_range(" 24 - 40 ") == (24, 40)
+
+
+def test_parse_chunk_range_invalid():
+    with pytest.raises(ValueError):
+        _parse_chunk_range("40-24")
+    with pytest.raises(ValueError):
+        _parse_chunk_range("24-40-50")
+    with pytest.raises(ValueError):
+        _parse_chunk_range("abc")
+
+
+def test_chunk_range_must_fall_within_narrate_range(tmp_path):
+    # eps 25,30 in-range; 31,40 on disk but outside the narrate range 24-30.
+    for n in (25, 30, 31, 40):
+        _make_episode_with_state(tmp_path, n, "S.")
+    # Guard fires before any LLM/TTS work — chunk range must be within start/end.
+    with pytest.raises(RuntimeError, match="not fully covered"):
+        build_corpus_narrations(
+            output_root=str(tmp_path), start=24, end=30, chunk_range="25-40"
+        )
