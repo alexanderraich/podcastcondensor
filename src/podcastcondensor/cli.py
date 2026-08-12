@@ -14,6 +14,9 @@ from podcastcondensor.playlist_pipeline import (
     build_master_cut,
 )
 from podcastcondensor.super_cut import build_super_cut, run_super_cut_brackets
+from podcastcondensor.narration import build_corpus_narrations, narrate_episode
+from podcastcondensor.summary_doc import _default_output_root, build_summary_doc
+from podcastcondensor.tts import synthesize_narration
 from podcastcondensor.universe_state import UniverseState
 
 
@@ -305,6 +308,60 @@ def cmd_super_cut_brackets(args):
     print("")
 
 
+def cmd_build_summary_doc(args):
+    """Concatenate the per-episode digest into one condensed-overview document.
+
+    Offline from disk (0 LLM calls): per episode, the ``summary`` plus all
+    structured knowledge (concepts, claims, entities, scripture, glossary)
+    from ``global_state.json``, with a ``# Episode NNN — <title>`` header.
+    ~110k words / ~143k tokens — one large-context LLM pass, the input for a
+    condensed-narration product. Output: ``output/summaries_all.txt``
+    (gitignored; derivable from the SRTs + LLM calls).
+    """
+    out_path = build_summary_doc(output_root=args.output_dir)
+    print(f"Summary document: {out_path}")
+
+
+def cmd_build_episode_narration(args):
+    """Narrate one episode and render it to audio via edge-tts.
+
+    Pipeline: build the episode digest (without trace-back timestamps) →
+    DeepSeek rewrites it into flowing spoken prose (1 LLM call) →
+    edge-tts renders the narration to ``output/ep-NNN/narration.mp3``.
+
+    Requires ``edge-tts`` (pip install edge-tts) and internet access to
+    Microsoft's TTS service.
+    """
+    root = os.path.abspath(args.output_dir) if args.output_dir else _default_output_root()
+    narration = narrate_episode(output_root=root, ep_num=args.episode)
+    mp3 = synthesize_narration(narration, os.path.join(
+        root, f"ep-{args.episode:03d}", "narration.mp3"))
+    print(f"Narration text: {os.path.join(root, f'ep-{args.episode:03d}', 'narration.txt')}")
+    print(f"Audio:          {mp3}")
+
+
+def cmd_build_narrations(args):
+    """Narrate + render a range of episodes to audio (batch).
+
+    For each non-Q&A episode in [start, end]: DeepSeek rewrites its digest
+    into spoken prose (or reuses an existing narration.txt), then edge-tts
+    renders ``output/ep-NNN/narration.mp3``. Resumable — already-done
+    episodes are skipped. ``--combined`` additionally concatenates all of
+    them into one MP3 (triple beeps between episodes).
+    """
+    result = build_corpus_narrations(
+        output_root=args.output_dir,
+        start=args.start,
+        end=args.end,
+        combined_out=args.combined or "",
+    )
+    new = sum(1 for _, s in result["episodes"] if s == "new")
+    skipped = sum(1 for _, s in result["episodes"] if s == "skipped")
+    print(f"Narrations: {new} new, {skipped} already on disk")
+    if result["combined"]:
+        print(f"Combined:   {result['combined']}")
+
+
 def _compact_span(eps):
     """Compact '1-5, 8' span for a sorted episode list (CLI-local helper)."""
     if not eps:
@@ -442,6 +499,38 @@ def main():
                     help="How many top themes to show per bracket (default: 5)")
     br.add_argument("--output-dir", default="")
     br.set_defaults(func=cmd_super_cut_brackets)
+
+    # build-summary-doc
+    sd = sub.add_parser(
+        "build-summary-doc",
+        help="Full per-episode digest (summary + structured knowledge) → one text file (offline, 0 LLM calls)",
+    )
+    sd.add_argument("--output-dir", default="")
+    sd.set_defaults(func=cmd_build_summary_doc)
+
+    # build-episode-narration
+    nar = sub.add_parser(
+        "build-episode-narration",
+        help="Narrate one episode (DeepSeek) and render it to audio (edge-tts)",
+    )
+    nar.add_argument("--episode", type=int, default=1,
+                     help="Episode number to narrate (default: 1)")
+    nar.add_argument("--output-dir", default="")
+    nar.set_defaults(func=cmd_build_episode_narration)
+
+    # build-narrations (batch)
+    bn = sub.add_parser(
+        "build-narrations",
+        help="Narrate + render a range of episodes to audio (batch, resumable; optionally one combined MP3)",
+    )
+    bn.add_argument("--start", type=int, default=21,
+                    help="First episode to narrate (default: 21)")
+    bn.add_argument("--end", type=int, default=144,
+                    help="Last episode to narrate (default: 144)")
+    bn.add_argument("--combined", default="",
+                    help="Also assemble one combined MP3 at this path (triple beeps between episodes)")
+    bn.add_argument("--output-dir", default="")
+    bn.set_defaults(func=cmd_build_narrations)
 
     args = parser.parse_args()
     setup_logging(args.verbose)

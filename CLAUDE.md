@@ -19,8 +19,8 @@ every architectural decision, not just the first one.
   Pipeline modes default to whisper always — no YT sub fallback.
 - **Only `source_subtitles.srt` tracked per episode.** Everything else
   (`global_state.json`, `compressed.json`, `decisions.json`, `stats.json`,
-  `universe_state.json`, `_themes.json`) is derivable from the SRT + LLM
-  calls and is NOT version-controlled.
+  `universe_state.json`, `_themes.json`, `summaries_all.txt`) is derivable
+  from the SRT + LLM calls and is NOT version-controlled.
 - **`universe_state.json` is disposable and ephemeral per range cut.** It can be
   reconstructed from scratch with `build-universe` using the version-controlled
   SRTs. Not tracked in git after July 2026 cleanup. `build-master-cut` and
@@ -161,7 +161,7 @@ python3 -m podcastcondensor super-cut-brackets --bracket 40-80 --bracket 81-120 
 
 | File | Purpose |
 |------|---------|
-| `src/podcastcondensor/cli.py` | CLI entry point, all 5 subcommands |
+| `src/podcastcondensor/cli.py` | CLI entry point, all 7 subcommands |
 | `src/podcastcondensor/super_cut.py` | `build-super-cut` orchestration (offline: merge → chunk → coalesce → resolve → select → assemble) |
 | `src/podcastcondensor/pipeline.py` | `process-playlist` single-ep orchestration |
 | `src/podcastcondensor/playlist_pipeline.py` | `build-universe` + re-exports `build_master_cut` |
@@ -179,8 +179,12 @@ python3 -m podcastcondensor super-cut-brackets --bracket 40-80 --bracket 81-120 
 | `src/podcastcondensor/transcribe.py` | Whisper transcription |
 | `src/podcastcondensor/dedup.py` | Transcript dedup merge |
 | `src/podcastcondensor/config.py` | Configuration dataclass |
+| `src/podcastcondensor/summary_doc.py` | `build-summary-doc`: per-episode digest (summary + concepts/claims/entities/scripture/glossary) → one text file (offline, 0 LLM calls) |
 | `src/podcastcondensor/segmentation/sentence_units.py` | Sentence-unit extraction (legacy) |
 | `src/podcastcondensor/llm/deepseek.py` | DeepSeek API client |
+| `src/podcastcondensor/narration.py` | `build-episode-narration` + `build-narrations` (batch): DeepSeek rewrites digests → flowing spoken prose (1 LLM call/ep, resumable) |
+| `src/podcastcondensor/tts.py` | edge-tts renders narration → MP3 (sentence-bounded chunking, ffmpeg concat) |
+| `prompts/narrate_episode.txt` | Narration prompt (narration.py) — digest → TTS-ready prose |
 | `prompts/global_state.txt` | Extraction prompt (global_state.py) |
 | `prompts/compress_episode.txt` | Compression prompt (classify_raw.py) |
 | `prompts/classify_raw.txt` | Legacy classification prompt |
@@ -324,9 +328,11 @@ same 6 LLM-chosen segments, just correctly aligned.
 ## Episode data (2026-08-01 — COMPLETE)
 
 **All 125 non-Q&A episodes have whisper SRTs in git AND `global_state.json` on
-disk** (eps 1-144 minus 19 Q&A). The 126th SRT is ep-18 — itself a Q&A episode
-that was transcribed before Q&A skipping was standard, so it has an SRT but no
-`global_state.json`. Per convention, `global_state.json` stays gitignored.
+disk** (eps 1-144 minus 19 Q&A). Per convention, `global_state.json` stays
+gitignored. **Purge (2026-08-12):** ep-18 was the only Q&A episode with a
+pre-existing SRT (transcribed before Q&A skipping was standard); it was
+removed from git and disk entirely — the corpus is now exactly the 125
+non-Q&A episodes.
 
 **Why 125, not 144:** the 19 Q&A / "Pantheon & Pandemonium Live Q&A" specials
 (18, 66, 67, 74, 78, 80, 89, 90, 98, 104, 106, 111, 117, 121, 122, 126, 134,
@@ -341,7 +347,7 @@ ep-18 is a Q&A episode (added to the list — previously mislabeled non-Q&A).
 | 31-50 | ✅ all | ✅ all |
 | 51-98 | ✅ all (minus Q&A 66,67,74,78,80,89,90,98) | ✅ all |
 | 99-144 | ✅ all (minus Q&A 104,106,111,117,121,122,126,134,135,141) | ✅ all |
-| Q&A (19) | ❌ intentionally skipped (except ep-18, pre-existing SRT) | ❌ |
+| Q&A (19) | ❌ intentionally skipped | ❌ |
 
 ## Super master cut — 144-episode thematic anthology (2026-08-01, PLAN)
 
@@ -585,6 +591,46 @@ cut now ends: ...ep144 illustration → Concludes (Orthodox worship) → Conclud
 (we'll be judged). Small caveat: a sub-topic reason "Concludes the discussion
 of X..." would also be moved to the tail (rare in this LLM's style; the cost is
 a longer ending, never a cut error).
+
+## Episode narration + TTS (2026-08-12)
+
+The thematic cut is abandoned (mid-sentence cuts, confusing segment
+adjacency), but its artefacts are reusable. The user's current product: a
+condensed-overview audio narration of the whole corpus, built from the
+per-episode digests. Two new utilities, both layered on the existing
+artefacts:
+
+- **`build-summary-doc`** (`summary_doc.py`): `output/summaries_all.txt` —
+  per-episode digest (summary + concepts/claims/entities/scripture/glossary),
+  each structured item annotated with its trace-back `(ep N, M:SS–M:SS)`
+  segments. ~110k words / ~143k tokens. 0 LLM calls, offline.
+- **`build-episode-narration --episode N`** (`narration.py` + `tts.py`):
+  digest (with trace-back timestamps stripped) → DeepSeek rewrites into
+  flowing spoken prose (1 call, `prompts/narrate_episode.txt`) → edge-tts
+  renders to `output/ep-NNN/narration.mp3` (sentence-bounded chunking, ffmpeg
+  concat).
+- **`build-narrations --start N --end M [--combined PATH]`** (batch): runs
+  the same per-episode narration+TTS over a range, skipping Q&A episodes.
+  Resumable — an episode with `narration.txt` is reused (0 LLM calls) and one
+  with `narration.mp3` is skipped entirely. Fails loud at the end if any
+  non-Q&A episode is missing `global_state.json`. Outputs live per-episode in
+  `output/ep-NNN/` (`narration.txt` + `narration.mp3`); `narration.txt` is
+  git-versioned. `--combined` additionally concatenates all of them into one
+  MP3 (triple beeps between episodes).
+
+**Demo (ep-1, 2026-08-12):** 697-word narration → 4.1-min / 1.5 MB MP3.
+Narration is coherent, flowing prose — no headers, bullets, or `(ep,ts)`
+refs; scripture spoken naturally ("Psalm eighty-two").
+
+**Batch (24-144, 2026-08-12):** non-Q&A episodes → per-episode
+`output/ep-NNN/narration.txt` (git-versioned) + `narration.mp3` (~4 min
+each) + one combined MP3. ~2-3h wall-clock, ~$0.11 DeepSeek (1 call/ep),
+TTS free.
+
+**Environment:** `edge-tts` and `requests` are installed in `venv/` (the
+project venv — PEP 668 blocks system pip). Run the CLI with
+`PYTHONPATH=src venv/bin/python -m podcastcondensor ...`; `edge-tts` needs
+internet to Microsoft's TTS service (quality choice; no API key).
 
 ## Universe state coverage (2026-08-01 — current)
 

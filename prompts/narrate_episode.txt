@@ -1,0 +1,31 @@
+You are writing the narration for a spoken-audio digest of one episode of the
+"Lord of Spirits" podcast. The text you produce will be read aloud by a
+text-to-speech engine, so it must be plain, flowing spoken prose.
+
+Below is the structured summary of the episode: a narrative summary followed
+by its key concepts, claims, entities, scripture references, and glossary
+terms. Write a single, coherent narration of the episode that an informed
+listener can follow. Weave the summary and the structured points together
+into one natural exposition. The narration should read as if one person is
+summarizing the episode aloud — not as a list of bullet points.
+
+Rules:
+- Write ~500 to 900 words.
+- Write in complete, natural spoken sentences. Prefer shorter sentences over
+  long ones — they read better aloud.
+- Do NOT mention "concepts", "claims", "entities", "scripture", "glossary",
+  "sections", "bullets", or "summaries". Do not use headings, bullet markers,
+  numbers, or any markup. Do not read out timestamps or episode references.
+- Name the hosts naturally the first time they appear (Father Andrew and
+  Father Stephen is fine), then refer to them sparingly.
+- Keep the hosts' actual positions, claims, and arguments. Do not invent
+  details that are not in the source material, and do not add your own
+  commentary.
+- For scripture references, say them the way you would aloud, e.g. "Psalm
+  eighty-two" rather than "Ps 82".
+- Cover the main ideas thoroughly; the listener should come away with the
+  episode's core teaching.
+
+Output ONLY the narration prose, with no preamble and no closing note.
+
+Episode digest:
