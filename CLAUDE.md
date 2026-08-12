@@ -622,10 +622,11 @@ artefacts:
 Narration is coherent, flowing prose — no headers, bullets, or `(ep,ts)`
 refs; scripture spoken naturally ("Psalm eighty-two").
 
-**Batch (24-144, 2026-08-12):** non-Q&A episodes → per-episode
-`output/ep-NNN/narration.txt` (git-versioned) + `narration.mp3` (~4 min
-each) + one combined MP3. ~2-3h wall-clock, ~$0.11 DeepSeek (1 call/ep),
-TTS free.
+**Batch (24-144, 2026-08-12 — DONE):** 103 non-Q&A episodes → per-episode
+`output/ep-NNN/narration.txt` (git-versioned, commit `9ef190d`) +
+`narration.mp3` (~4 min each) + one combined MP3
+`output/narrations_024_144.mp3` (**7.2 hours**, triple beeps between
+episodes). ~$0.10 DeepSeek (1 call/ep), TTS free. Committed 2026-08-12.
 
 **Environment:** `edge-tts` and `requests` are installed in `venv/` (the
 project venv — PEP 668 blocks system pip). Run the CLI with
