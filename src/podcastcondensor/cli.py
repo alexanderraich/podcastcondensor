@@ -340,6 +340,56 @@ def cmd_build_episode_narration(args):
     print(f"Audio:          {mp3}")
 
 
+def cmd_build_ultra_cut(args):
+    """One final ~30-min narration of the corpus (the "greatest insights" cut).
+
+    Four passes on the per-episode digests: known-state baseline (eps 1-40,
+    the already-listened episodes, cached once and used as the novelty prior),
+    chunked novelty mining (only paradigm-shifting insights NEW relative to
+    what you already know), coalesce + deterministic dedup + rank (no
+    arbitrary caps), then ONE final ~5,000-word narration rendered to
+    ``output/ultra_cut.mp3`` at 1x. Offline from disk — no download, no
+    whisper.
+    """
+    from podcastcondensor.ultra_cut import build_ultra_cut
+
+    result = build_ultra_cut(
+        output_root=args.output_dir,
+        start=args.start,
+        end=args.end,
+        chunk_size=args.chunk_size,
+        skip_tts=args.skip_tts,
+        speed=args.speed,
+        prior_start=args.prior_start,
+        prior_end=args.prior_end,
+    )
+
+    print("=" * 60)
+    print("ULTRA CUT RESULTS")
+    print("=" * 60)
+    for phase in result["phases"]:
+        name = phase["phase"]
+        elapsed = phase["elapsed_sec"]
+        extra = ""
+        if name == "known_state":
+            extra = f", {phase['prior_episodes']} eps → {phase['known_insight_count']} known insights (novelty prior)"
+        elif name == "mine_insights":
+            extra = f", {phase['chunks']} chunks, {phase['insight_count']} NEW insights"
+        elif name == "coalesce":
+            extra = f", {phase['theme_count']} global insights"
+        elif name == "narrate":
+            extra = f", {phase['words']} words (~{phase['words'] / 175:.0f} min at 1x)"
+        elif name == "tts":
+            extra = f", → {phase['mp3_path']}"
+            if phase.get("speed_path"):
+                extra += f", → {phase['speed_path']}"
+        print(f"  {name:12s} {elapsed:.0f}s{extra}")
+    print(f"\n  Narration: {result.get('narration', 'N/A')}")
+    print(f"  Outline:   {result.get('outline', 'N/A')}")
+    print(f"  MP3:       {result.get('mp3', '(skipped --skip-tts)')}")
+    print("")
+
+
 def cmd_build_narrations(args):
     """Narrate + render a range of episodes to audio (batch).
 
@@ -543,6 +593,33 @@ def main():
                          "speed (atempo), e.g. 1.25; 1.0 = no speed file (default: 1.0)")
     bn.add_argument("--output-dir", default="")
     bn.set_defaults(func=cmd_build_narrations)
+
+    # build-ultra-cut
+    uc = sub.add_parser(
+        "build-ultra-cut",
+        help="One final ~30-min narration of the corpus (offline from disk; ~8-10 DeepSeek calls)",
+    )
+    uc.add_argument("--start", type=int, default=41,
+                    help="First episode to include (default: 41 — eps 1-40 already listened)")
+    uc.add_argument("--end", type=int, default=144,
+                    help="Last episode to include (default: 144)")
+    uc.add_argument("--chunk-size", type=int, default=12,
+                    help="Episodes per novelty-mining chunk (default: 12)")
+    uc.add_argument("--prior-start", type=int, default=1,
+                    help="Start of the KNOWN-STATE baseline the listener has already "
+                         "absorbed — its insights seed novelty mining so already-known "
+                         "material is never re-emitted (default: 1)")
+    uc.add_argument("--prior-end", type=int, default=40,
+                    help="End of the known-state baseline (default: 40 = the already-"
+                         "listened episodes)")
+    uc.add_argument("--skip-tts", action="store_true",
+                    help="Write the narration text + caches only (no edge-tts render)")
+    uc.add_argument("--speed", type=float, default=1.0,
+                    help="ALSO write ultra_cut_<speed>x.mp3 pitch-preserved (atempo). "
+                         "1x is the default product (~5,000 words ≈ ~30 min); "
+                         "this is an optional convenience copy (default: 1.0 = none)")
+    uc.add_argument("--output-dir", default="")
+    uc.set_defaults(func=cmd_build_ultra_cut)
 
     args = parser.parse_args()
     setup_logging(args.verbose)

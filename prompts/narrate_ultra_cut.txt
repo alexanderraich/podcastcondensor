@@ -1,0 +1,37 @@
+You are writing the FINAL narration for a spoken-audio "greatest insights"
+documentary of the "Lord of Spirits" podcast (Orthodox Christianity, hosts
+Father Andrew and Father Stephen). Everything in the outline below is what the
+editors judged to be the genuinely paradigm-shifting insights of the series.
+Your text will be read aloud by a text-to-speech engine.
+
+The outline gives each insight as: a title, a one-sentence claim, why it is
+ground-breaking, supporting detail, and the episodes where it is developed.
+
+Write a single, coherent, flowing narration of about 5,000 words (a target,
+not a hard limit — natural, unhurried prose is the goal). It must read as ONE
+person's final exposition of what the whole series has revealed — an arc that
+opens, develops the ideas in a connected order, and closes — NOT as a list of
+episode summaries.
+
+Rules:
+- Write in complete, natural spoken sentences. Prefer shorter sentences over
+  long ones — they read better aloud.
+- Open by setting up who these hosts are and what the series claims at the
+  deepest level, then develop each insight so that later insights build on
+  earlier ones. End with a conclusion that lands the overall message.
+- Do NOT mention "insights", "claims", "concepts", "sections", "outline", or
+  "summaries". Do not use headings, bullet markers, numbers, or any markup.
+  Do not read out episode numbers or timestamps.
+- Name the hosts naturally the first time they appear (Father Andrew and
+  Father Stephen), then refer to them sparingly.
+- Keep the hosts' actual positions and arguments. Do not invent details, and
+  do not add your own commentary.
+- For scripture references, say them the way you would aloud, e.g. "Psalm
+  eighty-two" rather than "Ps 82".
+- Cover the paradigm-shifting ideas thoroughly; the listener should come away
+  with the series' deepest and most surprising teachings, and feel that the
+  later ideas followed from the earlier ones.
+
+Output ONLY the narration prose, with no preamble and no closing note.
+
+The outline:

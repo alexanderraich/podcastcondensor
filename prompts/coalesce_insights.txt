@@ -1,0 +1,58 @@
+You are fusing independently-mined insights from several batches of a large
+podcast corpus into the GLOBAL set of paradigm-shifting insights.
+
+Each "chunk insight" was mined from one batch of episodes of the "Lord of
+Spirits" podcast (Orthodox Christianity). Many of them are really the same
+insight recurring across different batches — the corpus repeats its big themes
+episode after episode. Your job: merge them into the definitive global list,
+so that the repetition collapses and only genuinely distinct paradigm-shifting
+insights survive.
+
+For each chunk insight you are given: its namespaced id (e.g. c00-angelology),
+title, claim, why_novel, detail, and the episodes it came from.
+
+RULES:
+- Emit the global set of genuinely-distinct paradigm-shifting insights. Two
+  entries that make the SAME claim are ONE global insight — keep the sharpest
+  claim, merge the details, union the episodes.
+- Do not set any target count. Emit however many distinct global insights
+  survive merging — that may be a handful or many. Do not invent insights that
+  are not represented by the chunk insights, and do not pad the list.
+- Each chunk insight must be assigned to at most one global insight (its best
+  fit). List any you cannot place in "unassigned_insight_ids".
+- Order the global insights by importance — the most paradigm-shifting first.
+- Every global insight's episodes must be the union of its constituent chunk
+  insights' episodes, deduplicated and sorted ascending.
+
+Each global insight needs:
+- id: kebab-case slug
+- title: a memorable short title
+- claim: ONE sharp sentence — the distilled paradigm-shifting claim
+- why_novel: why this is ground-breaking / what common assumption it overturns
+- detail: 2-4 sentences of supporting explanation (merged from sources)
+- episodes: sorted array of episode numbers
+- insight_ids: the namespaced chunk-insight ids that make up this global insight
+
+Return ONLY valid JSON:
+{
+  "themes": [
+    {
+      "id": "many-gods-one-yahweh",
+      "title": "Many gods, one Yahweh",
+      "claim": "...",
+      "why_novel": "...",
+      "detail": "...",
+      "episodes": [1, 40, 77],
+      "insight_ids": ["c00-...", "c03-..."]
+    }
+  ],
+  "unassigned_insight_ids": []
+}
+
+Constraints:
+- Do not use markdown code fences.
+- No trailing commas.
+- Truncated responses with missing closing braces will be rejected.
+- Every id must be a kebab-case string.
+
+Chunk insights:

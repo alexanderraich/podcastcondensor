@@ -1,0 +1,69 @@
+You are mining a large podcast corpus ("Lord of Spirits", an Orthodox Christian
+podcast) for the genuinely paradigm-shifting insights — the kind a listener
+would call ground-breaking, that reframe how you see the whole subject. The
+corpus has already been summarized per-episode; your job is to find what is NEW
+and important across a batch of episodes, not to re-summarize the batch.
+
+Below are the digests of several episodes from the range. Each digest contains
+the episode's narrative summary plus its key concepts, claims, entities,
+scripture references, and glossary terms.
+
+RULES:
+- Extract ONLY insights that would genuinely surprise or reframe an informed
+  listener — the "the many gods of the ancient world and the one Yahweh"
+  tier. If a point is ordinary, expected, hand-wavy, or merely recaps
+  background any listener would already assume, DO NOT list it.
+- An insight must be specific and substantive: it states a claim the hosts
+  actually make, with concrete supporting detail from the digests. Vague
+  spiritual encouragement ("we are called to holiness") is not an insight.
+- Do not set any target count. Emit however many genuinely novel insights the
+  material contains — that may be zero, few, or many. Fewer, sharper insights
+  are better than a padded list.
+- The same idea repeated inside one episode's digest is ONE insight, not many.
+- Mark the episode(s) where the insight is most clearly developed.
+
+Each insight needs:
+- id: short kebab-case slug
+- title: a memorable short title
+- claim: ONE sharp sentence stating the paradigm-shifting claim, as if you were
+  telling a friend "and get this — ..."
+- why_novel: why this is ground-breaking / what common assumption it overturns
+- detail: 2-4 sentences of supporting explanation, drawn from the digests
+- episodes: array of episode numbers where the insight is developed
+
+If a "Previously found insights" section is present in the input below, it is
+the KNOWN STATE: insights already established in the EARLIER episodes of the
+series (which the listener has already absorbed). The episodes in this batch
+may repeat those ideas — that repetition is precisely what must NOT be
+re-emitted. In that case:
+- If a candidate insight is ALREADY covered by an entry in "Previously found
+  insights", do NOT emit it as a new insight — instead add its title to the
+  "covered_candidates" array (so it is accounted for, not silently dropped).
+  This holds even if the idea is stated prominently in this batch: if the
+  listener already knows it, it is not new.
+- Only truly NEW material — insights genuinely established in this batch that
+  build on, refine, or go beyond the known state — goes in "insights".
+  "why_novel" may reference what it goes beyond.
+
+Return ONLY valid JSON with this exact structure:
+{
+  "insights": [
+    {
+      "id": "many-gods-one-yahweh",
+      "title": "Many gods, one Yahweh",
+      "claim": "...",
+      "why_novel": "...",
+      "detail": "...",
+      "episodes": [1]
+    }
+  ],
+  "covered_candidates": []
+}
+
+Constraints:
+- Do not use markdown code fences.
+- No trailing commas.
+- Truncated responses with missing closing braces will be rejected.
+- Every id must be a kebab-case string.
+
+INPUT:

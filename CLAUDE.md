@@ -645,6 +645,119 @@ project venv — PEP 668 blocks system pip). Run the CLI with
 `PYTHONPATH=src venv/bin/python -m podcastcondensor ...`; `edge-tts` needs
 internet to Microsoft's TTS service (quality choice; no API key).
 
+## Ultra master cut — one final narration of the corpus (2026-08-13 — DONE)
+
+**Result (2026-08-13):** `output/ultra_cut.mp3` — **20.4 min / 7.1 MB / 3,438
+words** at 1x. Pipeline landed: 58 known-state insights (eps 1-40) → 159 NEW
+insights (41-144) → 36 global themes (coalesce dedup 37→36) → one narration.
+Boundary-free by construction (no audio cuts). **Volume note:** the ~5,000-word
+narration guide produced 3,438 words (~20 min, not ~30) — the model's natural
+output; user chose to KEEP it as-is (no re-prompt). The known-state mechanism
+worked as designed: e.g. "theosis" itself was already in the 1-40 baseline, so
+only the genuinely new 41-144 angle ("salvation as theosis, not escape")
+survived to the outline. Minor warts: coalesce importance is uniformly 0.50
+(DeepSeek returned flat values; cosmetic — the narration doesn't rely on
+ranking), and the coalesce response hit DeepSeek's output ceiling and was
+auto-repaired (`_parse_json_object` recovered 37 themes from truncation).
+
+**Goal:** a single ~30-min "ultra" narration capturing only the truly
+paradigm-shifting insights of eps 41-144 (the "multitude of gods vs one
+Yahweh" tier from ep 1). **The listener has already absorbed eps 1-40 — that
+is the KNOWN-STATE baseline, and "new" is judged against it**: an insight
+first established in eps 1-40 and merely restated in 41-144 is NOT new, no
+matter how prominently it recurs. Motivation: the per-episode ~5-min narration
+cuts are "fluffy" — each is a full-episode overview, so across a range the
+same ground recurs episode-to-episode. The ultra cut mines for **new
+ground-breaking insights only**, drops the hand-wavy/recap material, and reads
+as ONE final exposition rather than a concatenation of episode summaries.
+
+**Design principle (user directive, 2026-08-13): NO ARBITRARY CAPS.** The
+12-15 theme cap was explicitly rejected. Let the LLM fly: it emits whatever
+novel material it finds, and volume lands where it lands (measured, not
+forced). The only deterministic guard kept is **dedup** (merging true
+near-duplicate insights — which is the anti-repetition mechanism itself, not a
+cap). Lesson history backs this: DeepSeek ignores count constraints in prompts
+(the master-cut budget saga, the 101-theme coalesce), so a numeric cap would
+have been ignored anyway. The real volume ceiling is DeepSeek's ~8k output
+token limit; a ~5,000-word target in the narration prompt is a *guide*, not a
+cap. Fallback if the single narration call truncates: split the outline in two
+and make 2 narration calls (still one MP3).
+
+**Layered on the existing digests** — zero new transcription/extraction. The
+expensive work (per-episode `global_state.json` → digest) is done. The ultra
+cut consumes the SAME digest as `narrate_episode` (summary + all structured
+knowledge, trace-back timestamps stripped — metadata never leaks into spoken
+audio). **It uses the full digest, not the 5-min narration text**, because the
+structured claims/concepts are where the novel-insight signal lives; the
+narration is the fluffy recapped layer.
+
+**Pipeline — `build-ultra-cut` (`ultra_cut.py`, 4 phases, ~11-12 DeepSeek calls):**
+
+0. **KNOWN-STATE baseline** (eps 1-40, the already-listened episodes, ~4
+   chunks → ~4 calls, mined ONCE and cached permanently as
+   `ultra_insights_001_040.json`). Its insights become the novelty prior: they
+   seed every 41-144 mining prompt's previously-found list, so a candidate
+   that merely restates something the listener already knows is marked
+   `covered_candidates`, not re-emitted. This is the "weave the 1-40 knowledge
+   in" mechanism — the baseline is input, not ignored.
+1. **Chunked novelty mining** (`prompts/mine_insights.txt`, ~8 calls, ~10-12
+   digests per chunk). Prompt is built around the repetition complaint: extract
+   ONLY paradigm-shifting insights NEW relative to the known baseline; discard
+   hand-wavy/recap material; if a candidate is already covered by an insight
+   in the baseline OR in an EARLIER chunk (previously-found list is passed
+   into each chunk's prompt — sequential, not parallel), do NOT re-emit it. No
+   count guidance. Per-chunk JSON cached → resumable; a cached chunk is reused
+   and still feeds the next chunk's previously-found list.
+2. **Coalesce + dedup + rank** (`prompts/coalesce_insights.txt`, 1 call).
+   Fuses the per-chunk insights into the global novel-theme list, folding
+   near-duplicates. Deterministic dedup in code (`_dedupe_insights`, same
+   pattern as super-cut `_dedupe_and_cap_global_themes` but with **no cap**):
+   merge exact/normalized-title duplicates, union episodes. Ranked by
+   importance. Output: `ultra_outline_041_144.json` (gitignored).
+3. **One final narration** (1 call, `prompts/narrate_ultra_cut.txt`): the
+   ranked outline → one flowing ~5,000-word spoken exposition (open → develop
+   → close, no headers/bullets, natural scripture). The prompt is ALSO handed
+   the known-baseline insight titles, so the narration can *connect* the new
+   material to what the listener already knows without re-explaining it. Then
+   reuse `synthesize_narration` (sentence-bounded chunking, ffmpeg concat) →
+   `output/ultra_cut.mp3` at **1x — 1x IS the product**. ~5,000 words ≈ ~28-30
+   min at 1x (measured TTS rate ~175-180 wpm from the ep-040 narration:
+   684 words / 228s). `--speed 1.25` optionally ALSO writes
+   `output/ultra_cut_1.25x.mp3` pitch-preserved (atempo) as a convenience
+   copy, never the default.
+
+**Artifacts:**
+
+| File | Tracked? | Contents |
+|------|----------|----------|
+| `output/ultra_cut_narration.txt` | ✅ git | the final narration text |
+| `output/ultra_cut.mp3` (+ `_1.25x.mp3`) | ❌ gitignored | TTS render |
+| `ultra_insights_001_040.json` (in output_root) | ✅ git | **permanent known-state baseline** (eps 1-40, the already-listened episodes) — the novelty prior, mined once |
+| `ultra_insights_041_144.json` (in output_root) | ✅ git | per-chunk NEW-insight mining cache |
+| `ultra_outline_041_144.json` (in output_root) | ✅ git | coalesced + deduped + ranked theme list |
+
+The `ultra_*.json` caches and `ultra_cut_narration.txt` follow the documented
+git-tracking decision (2026-08-01): LLM-generated and expensive to regenerate
+(mining is ~12 DeepSeek calls) — a prompt change shows up as a git diff. The
+MP3 stays gitignored.
+
+**CLI:** `build-ultra-cut --start 41 --end 144 [--chunk-size 12] [--output-dir]
+[--skip-tts] [--speed 1.25] [--prior-start 1] [--prior-end 40]`. **`--start`
+defaults to 41** and the known-state baseline defaults to `--prior-start 1
+--prior-end 40` — the user has already listened to eps 1-40, so the ultra cut
+deliberately covers 41-144 (the "unknown" territory), judged against 1-40.
+Q&A episodes skipped (same `_QA_EPISODES` set). Fail-loud: any non-Q&A episode
+in EITHER range missing `global_state.json` aborts the run. Range-scoped to
+`_041_144` for the current batch but works over any `--start/--end`.
+
+**Why "ultra" and not a new super-cut theme:** the thematic cut (per-theme
+MP3s) was abandoned for mid-sentence cuts and confusing segment adjacency; the
+episode narrations solved flow but are per-episode (repetitive). The ultra cut
+is the one remaining shape: a single curated narration whose INPUT has already
+been deduplicated against repetition at the insight level. It reuses the
+digest/coalesce/JSON-repair/dedup/tts machinery wholesale — no new
+transcription, no new extraction, no audio cutting.
+
 ## Universe state coverage (2026-08-01 — current)
 
 | Episodes | SRT source | In universe state |

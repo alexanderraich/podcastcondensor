@@ -8,13 +8,16 @@ build/
 *.whl
 venv/
 
-# Output artifacts — SRTs, per-episode global_state, and universe/super-cut
-# caches ARE version-controlled (LLM-generated, expensive to regenerate).
-# Everything else (audio, diag logs, temp) stays ignored.
+# Output artifacts — SRTs, per-episode global_state, and universe/super-cut/
+# ultra-cut caches ARE version-controlled (LLM-generated, expensive to
+# regenerate). Everything else (audio, diag logs, temp) stays ignored.
 output/*
 !output/*.gitkeep
 !output/universe_state_*.json
 !output/super_cut_*.json
+!output/ultra_insights_*.json
+!output/ultra_outline_*.json
+!output/ultra_cut_narration.txt
 
 # Per-episode: whisper SRT + global_state.json (LLM extraction) + narration.txt
 # (LLM narration) tracked. Audio (mp3) and diag logs stay ignored.
