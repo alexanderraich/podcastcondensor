@@ -22,8 +22,16 @@ from podcastcondensor.llm.base import (
 logger = logging.getLogger(__name__)
 
 # Env var names checked (in order) for the API key.
-# ANTHROPIC_AUTH_TOKEN is the primary; DEEPSEEK_API_KEY is the legacy fallback.
-ENV_API_KEY_VARS = ("ANTHROPIC_AUTH_TOKEN", "DEEPSEEK_API_KEY")
+# ANTHROPIC_AUTH_TOKEN is the primary; DEEPSEEK_API_KEY is the legacy
+# fallback; ANTHROPIC_API_KEY is what Claude Code sets on this box (observed
+# 2026-09-22: the pipeline could not see a key that was right there in the
+# environment, because only this name was set). Kept LAST so the two
+# explicit, project-documented names still win where both exist.
+ENV_API_KEY_VARS = (
+    "ANTHROPIC_AUTH_TOKEN",
+    "DEEPSEEK_API_KEY",
+    "ANTHROPIC_API_KEY",
+)
 # Used in error/log messages — refers to the preferred var name.
 ENV_API_KEY = ENV_API_KEY_VARS[0]
 DEFAULT_BASE_URL = "https://api.deepseek.com/v1"
@@ -33,9 +41,10 @@ DEFAULT_MODEL = "deepseek-chat"
 def resolve_api_key(api_key: Optional[str] = None) -> str:
     """Resolve the DeepSeek API key from explicit arg or env vars.
 
-    Checks env vars in order: ``ANTHROPIC_AUTH_TOKEN``, ``DEEPSEEK_API_KEY``.
-    Returns empty string if none found.  Whitespace (including trailing
-    carriage returns from .env files) is stripped.
+    Checks ``ENV_API_KEY_VARS`` in order: ``ANTHROPIC_AUTH_TOKEN``,
+    ``DEEPSEEK_API_KEY``, ``ANTHROPIC_API_KEY``.  Returns empty string if
+    none found.  Whitespace (including trailing carriage returns from .env
+    files) is stripped.
     """
     if api_key:
         return api_key.strip()
@@ -51,8 +60,8 @@ class DeepSeekClient(LLMClient):
 
     Configuration (in order of precedence — constructor arg > env vars):
         - ``base_url``:  API base URL (default ``https://api.deepseek.com/v1``)
-        - ``api_key``:   API key; falls back to ``ANTHROPIC_AUTH_TOKEN``,
-                         then ``DEEPSEEK_API_KEY`` env var
+        - ``api_key``:   API key; falls back to each name in
+                         ``ENV_API_KEY_VARS`` in order
         - ``model``:     Model name (default ``deepseek-chat``)
 
     Raises ``LLMConnectionError`` on auth/network failures and
@@ -73,9 +82,9 @@ class DeepSeekClient(LLMClient):
 
         if not self._api_key:
             logger.warning(
-                "DeepSeek API key not provided — set %s or %s env var, "
+                "DeepSeek API key not provided — set one of %s, "
                 "or pass api_key",
-                *ENV_API_KEY_VARS,
+                ", ".join(ENV_API_KEY_VARS),
             )
 
     # ------------------------------------------------------------------
@@ -121,10 +130,10 @@ class DeepSeekClient(LLMClient):
         effective_timeout = timeout or self._request_timeout
 
         if not self._api_key:
-            vars_help = " or ".join(f"${v}" for v in ENV_API_KEY_VARS)
+            vars_help = ", ".join(f"${v}" for v in ENV_API_KEY_VARS)
             raise LLMConnectionError(
-                f"DeepSeek API key is not set.  Set the {vars_help} "
-                f"environment variable or pass ``api_key`` to the constructor."
+                f"DeepSeek API key is not set.  Set one of {vars_help}, "
+                f"or pass ``api_key`` to the constructor."
             )
 
         messages = []

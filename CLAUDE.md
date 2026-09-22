@@ -12,6 +12,148 @@ the standing workflow is: plan → hammer the plan down into CLAUDE.md
 A plan is not approved until it is documented in CLAUDE.md. This applies to
 every architectural decision, not just the first one.
 
+## Deep episode narration — the current product (2026-09-22)
+
+**This supersedes the cutting and universe approaches.** Both were built, both
+were used, both failed:
+
+- **The universe approach failed.** Cross-episode knowledge extraction
+  (`universe_state`, theme discovery, super-cut) never produced something the
+  user wanted to listen to.
+- **Every cutting approach failed.** Keeping the original voices fails on
+  *delivery*: the hosts are too deliberate, with pauses and jokes, and the
+  listener loses the thread. The thematic cut / master cut / super cut are
+  abandoned. The boundary-verification and sentence-snapping machinery was all
+  an attempt to fix a problem that has no solution while you keep the original
+  audio.
+- **The digest was for the wrong job.** `global_state.json` and the per-episode
+  digest exist for *global* (cross-episode) condensing. For a single episode
+  they are a lossy middle layer that discards the argument structure a
+  narration needs. The deep narration path skips them entirely and works from
+  the transcript.
+
+The product is now **narrated per-episode condensing**: synthetic voice
+(edge-tts), no audio cutting, transcript in, prose out. This is a standing
+mechanism, not a one-off.
+
+### Pipeline — `build-deep-narration`
+
+1. **whisper** → `source_subtitles.srt` (clean settings, see below)
+2. **LLM: identify the arc** — one call per transcript chunk
+3. **LLM: summarise** — one call: the arc → the narration text
+4. **edge-tts** → `ep-NNN_narration_deep.mp3`
+
+Two logical stages, three physical calls for a ~3h episode (the arc stage
+chunks; the summarise stage never sees the transcript).
+
+| Stage | Input | Output | Call ceiling |
+|---|---|---|---|
+| 1 arc-identify (per chunk) | transcript chunk ≤ 10,000 words (~66 min) + bounded carry-forward | movements JSON ≤ 2,000 words | ~18k of 64K |
+| 2 summarise (once) | the assembled arc (≤ 6,000 words for a 3-chunk episode) | narration 2,600–3,600 words | ~14k of 64K |
+
+Measured rate on *cleaned* SRT entries is **~2.52 words/s** (ep-144: 5,632 s →
+14,215 words — note this is well below the raw-cue rate, because
+`clean_entries` drops whisper echoes and repeats). At that rate 10,000 words ≈
+66 min, so a three-hour episode splits into **three chunks — the hosts' own
+"three halves"** — and the per-call cost stays around a quarter of the window.
+
+The arc cap is deliberately set *above* the narration target: the arc is the
+only carrier of substance into stage 2, which never sees the transcript, so it
+must hold more than the narration may keep or stage 2 has nothing to select
+from.
+
+**Every limit is a prompt-fit constraint, not a stylistic preference.** Each
+stage's input must fit in one prompt — prompt rot is what this design exists to
+avoid. Episode length is absorbed by the *chunk count*, never by growing the
+prompt.
+
+**The arc caps are ceilings, not quotas.** A chunk that is all restatement
+returns a short arc section and nothing back-fills it.
+
+### The three condensing rules
+
+Stated in `prompts/narrate_deep.txt`, in priority order:
+
+1. **Repetition within this episode → cut hard.** An episode covers its ground
+   two or three times; the repeats are what must go.
+2. **Recaps of earlier *episodes* → keep.** *"Do not confound reiterating what
+   was said in the episode (bad) vs reiterating what was said over the whole
+   podcast history before (good, since I only partially know what happened)."*
+   A back-reference to an episode the listener may not have heard is
+   orientation, not padding. **This inverts rule 7 of `prompts/compress_episode.txt`,
+   which lists "recaps of previous episodes" under WHAT GETS DROPPED** — that
+   prompt belongs to the abandoned cutting path, but the inversion is
+   deliberate and must not be re-introduced.
+3. **Q&A → merit-based.** Often redundant (the hosts scrambling for an answer
+   to something already covered), occasionally genuinely new — a Shakespeare
+   rant was the example. Kept only when the arc records why.
+
+### Volume
+
+Target zone **2,600–3,600 words ≈ 15–20 min at 1x** (measured TTS rate
+~175–180 wpm). It is a zone, not a quota, and a ceiling as much as a floor: no
+per-movement allocation, and a thin episode comes in under it and stops. Never
+padded to hit a number. Same lesson as the master-cut budget saga — volume
+instructions in a prompt are advisory, so the zone is a guide the model may
+undershoot, and that is accepted (see the ultra cut's 3,438 words against a
+5,000-word guide).
+
+### Whisper settings
+
+`--whisper-model small --beam-size 5 --vad` are exposed as flags on the deep
+narration path. The module defaults stay memory-conservative (`base`, beam 1,
+no VAD) because of the documented 6 GB-VRAM OOM history — the **flags**, not
+the defaults, carry the quality change. The 30 s chunked decode in
+`transcribe.py` bounds memory regardless.
+
+### Artifacts
+
+| File | Tracked? |
+|---|---|
+| `output/ep-NNN/source_subtitles.srt` | ✅ git |
+| `output/ep-NNN/ep-NNN_arc_deep.json` | ✅ git |
+| `output/ep-NNN/ep-NNN_narration_deep.txt` | ✅ git |
+| `output/ep-NNN/ep-NNN_narration_deep.mp3` | ❌ gitignored |
+
+**The episode number is in the filename, not only the directory (2026-09-22).**
+The MP3 travels — copied to a phone for listening — and `output/ep-145/` does
+not come with it, so a bare `narration_deep.mp3` was unidentifiable once it
+left the tree. `_ep_file(ep_num, name)` in `deep_narration.py` builds
+`ep-NNN_<name>`; the module's resume checks all go through it.
+
+⚠️ **This collides with `download_pool._scan_existing_episodes()`**, which
+picks the first `.mp3` in an episode dir whose name does not start with `_`
+and takes its stem as the *video ID*. `os.listdir` order is unspecified, so
+with both `gboyFJEFQsY.mp3` and a narration MP3 present, that scan can select
+the narration as the episode audio and report `video_id="narration_deep"`.
+The rename did not create this (the 2026-08-12 `narration.mp3` files already
+trigger it) but it widens the window. The principled fix is to accept a stem
+only when it matches a YouTube video-ID shape (`^[\w-]{11}$`) — proposed,
+not yet applied.
+
+The arc and narration text follow the git-tracking decision (2026-08-01):
+LLM-generated and expensive to regenerate, so a prompt change shows up as a
+git diff. `ep-NNN_arc_deep.json` is stored **per chunk**
+(`{"episode": N, "chunks": [{..., "movements": [...]}]}`) so a failed chunk
+call resumes without re-spending the others.
+
+The 5-minute `narration.txt` / `narration.mp3` (2026-08-12) are untouched —
+this is an additional mode, not a replacement.
+
+```bash
+python3 -m podcastcondensor build-deep-narration --episode 145 --episode 147
+```
+
+### Superseded sections in this document
+
+The following sections are **history, kept for the lessons they carry**. Do not
+build on them: "Core decisions (July 2026)", "Pipelines" (the four cutting
+entry points), "Three segmentation fixes", "Mid-sentence cut regression",
+"Master cut status", "Super master cut", "Combined theme cut". The one live
+carry-over is the **git-tracking decision (2026-08-01)** — LLM-generated
+artefacts that are expensive to regenerate are version-controlled — which the
+deep narration path follows.
+
 ## Core decisions (July 2026)
 
 - **Only whisper SRTs in git.** YouTube subtitles are unreliable (fragmented,
@@ -774,5 +916,22 @@ super-cut section. Per convention all universe state is gitignored.
 
 ## Required
 
-- DeepSeek API key in `ANTHROPIC_AUTH_TOKEN` or `DEEPSEEK_API_KEY`
-- ffmpeg, yt-dlp, faster-whisper
+- DeepSeek API key in `ANTHROPIC_AUTH_TOKEN`, `DEEPSEEK_API_KEY`, or
+  `ANTHROPIC_API_KEY` — checked in that order (`ENV_API_KEY_VARS` in
+  `llm/deepseek.py`). **On this box only `ANTHROPIC_API_KEY` is set**: Claude
+  Code puts its own DeepSeek credential there, pointed at the same
+  `https://api.deepseek.com` this project defaults to. Until 2026-09-22 the
+  code checked only the first two names, so a pipeline run reported *no key*
+  while one sat in the environment — the fix is a name, not a secret.
+  `ANTHROPIC_API_KEY` is deliberately **last** so the two project-documented
+  names still win wherever both are set.
+- ffmpeg, faster-whisper
+- **yt-dlp ≥ 2026.08.19.** An older binary 403s on some episodes' media
+  streams *while metadata extraction still succeeds* — a misleading failure
+  that reads like a cookie/auth problem (observed 2026-09-22: system
+  2026.06.09 403'd on ep-145; venv 2026.08.19 downloaded the same URL fine).
+  `downloader._ytdlp_binary()` therefore prefers `venv/bin/yt-dlp` and falls
+  back to `PATH` only if it is absent; refresh with
+  `venv/bin/pip install -U yt-dlp`. `/usr/local/bin/yt-dlp` is a standalone
+  zipapp on this box, *not* a pip install — `pip show yt-dlp` will not find
+  it, so it cannot be updated that way.

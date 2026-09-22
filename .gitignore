@@ -20,7 +20,9 @@ output/*
 !output/ultra_cut_narration.txt
 
 # Per-episode: whisper SRT + global_state.json (LLM extraction) + narration.txt
-# (LLM narration) tracked. Audio (mp3) and diag logs stay ignored.
+# (LLM narration) tracked, plus the deep-narration artefacts (ep-NNN_arc_deep
+# .json, ep-NNN_narration_deep.txt) which are LLM-generated and expensive to
+# regenerate. Audio (mp3), TTS renders and diag logs stay ignored.
 # NOTE: must un-ignore the ep dirs BEFORE re-ignoring their contents, else
 # git never descends into them and the negations below never fire.
 !output/ep-*/
@@ -28,6 +30,8 @@ output/ep-*/*
 !output/ep-*/source_subtitles.srt
 !output/ep-*/global_state.json
 !output/ep-*/narration.txt
+!output/ep-*/ep-*_arc_deep.json
+!output/ep-*/ep-*_narration_deep.txt
 
 # Temp
 *.tmp

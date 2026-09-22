@@ -25,9 +25,25 @@ def extract_video_id(url: str) -> Optional[str]:
     return None
 
 
+def _ytdlp_binary() -> str:
+    """Resolve the yt-dlp binary, preferring the project venv's copy.
+
+    A stale yt-dlp 403s on some episodes' media streams *even when metadata
+    extraction succeeds* (observed 2026-09-22: system 2026.06.09 failed on
+    ep-145 while venv 2026.08.19 downloaded it fine over the same network).
+    The venv copy is the one `venv/bin/pip install -U yt-dlp` keeps current,
+    so prefer it and fall back to PATH only when it is absent.
+    """
+    root = os.path.abspath(
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
+    )
+    candidate = os.path.join(root, "venv", "bin", "yt-dlp")
+    return candidate if os.path.exists(candidate) else "yt-dlp"
+
+
 def _run_ytdlp(args, **kwargs):
     """Run yt-dlp with given args, return (returncode, stdout, stderr)."""
-    cmd = ["yt-dlp"] + args
+    cmd = [_ytdlp_binary()] + args
     logger.debug("Running: %s", " ".join(cmd))
     result = subprocess.run(
         cmd, capture_output=True, text=True, **kwargs

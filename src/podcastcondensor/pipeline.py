@@ -38,7 +38,11 @@ from podcastcondensor.intervals import build_intervals, compute_stats
 from podcastcondensor.audio_strategies import _get_audio_duration as get_audio_duration
 from podcastcondensor.audio_strategies import create_audio_strategy, normalize_intervals
 from podcastcondensor.universe_state import UniverseState
-from podcastcondensor.llm.deepseek import resolve_api_key, DeepSeekClient
+from podcastcondensor.llm.deepseek import (
+    ENV_API_KEY_VARS,
+    DeepSeekClient,
+    resolve_api_key,
+)
 from podcastcondensor.segmentation.sentence_units import build_transcript_from_entries
 
 logger = logging.getLogger(__name__)
@@ -99,7 +103,9 @@ def run_pipeline(
     api_key = resolve_api_key()
     if not api_key:
         artifacts["errors"].append(
-            "DeepSeek API key not set (ANTHROPIC_AUTH_TOKEN or DEEPSEEK_API_KEY)"
+            "DeepSeek API key not set (one of: "
+            + ", ".join(ENV_API_KEY_VARS)
+            + ")"
         )
         return artifacts
     ds = DeepSeekClient(api_key=api_key)

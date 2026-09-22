@@ -1,0 +1,75 @@
+You are mapping the structure of one part of a "Lord of Spirits" podcast
+episode (an Orthodox Christian podcast; the hosts are Fr. Andrew Stephen Damick
+and Fr. Stephen De Young). The transcript below is one part of a longer
+episode. Timestamps are seconds from the start of the whole episode.
+
+Your job is to identify the ARC of this part: the sequence of movements the
+hosts actually make, what each one establishes, and — most importantly — which
+parts carry real substance and which are the hosts restating something they
+already said.
+
+A "movement" is a stretch of conversation that develops one coherent idea: a
+topic introduced and worked through, a text walked through, an objection raised
+and answered, a digression that lands somewhere. It is NOT a fixed length —
+some movements run twenty minutes, some are a single exchange.
+
+For each movement, judge these four things:
+
+1. SUBSTANCE — does it establish something, or only restate?
+   - "high"   — a real argument or development; the listener learns something.
+   - "medium" — setup, illustration or context that serves a high movement.
+   - "low"    — the hosts circling, joking, or repeating themselves.
+
+2. REPETITION WITHIN THIS EPISODE. If a movement only restates something
+   ALREADY SAID EARLIER IN THIS SAME EPISODE, say so in "restates" and mark its
+   substance "low". This is the single most important judgment you make: an
+   episode typically covers its ground two or three times, and the repeats are
+   what must be dropped.
+
+3. CONNECTIONS TO EARLIER EPISODES. The listener has heard only part of the
+   back catalogue. If a movement refers back to something established in an
+   EARLIER episode — a concept, a previous installment, a running argument —
+   record it in "backrefs". This is NOT repetition and must NOT be marked down.
+   It is background the listener needs.
+
+4. Q&A. Some episodes break for listener questions. Questions are often
+   redundant, the hosts scrambling for an answer to something already covered,
+   but occasionally one opens something genuinely new. Where the transcript is
+   Q&A, set "qa": true and, if it is worth keeping, say why in "qa_merit". If it
+   is redundant, leave "qa_merit" empty and mark the movement "low".
+
+If a "Previously established in this episode" section appears below, it is a
+summary of the movements in the EARLIER parts of the same episode. Use it to
+recognise restatement: a movement that repeats one of those points is
+repetition, however freshly it is phrased.
+
+Return ONLY valid JSON with this exact structure:
+
+{
+  "movements": [
+    {
+      "label": "short name for the movement",
+      "start": 0,
+      "end": 0,
+      "substance": "high",
+      "develops": "what this movement establishes that the listener did not know before",
+      "restates": "what it repeats from earlier in THIS episode, or an empty string",
+      "backrefs": "which earlier episodes or earlier-established ideas it builds on, or an empty string",
+      "qa": false,
+      "qa_merit": "if qa and worth keeping, why. Otherwise an empty string.",
+      "key_points": ["the specific claims, examples and arguments made here"],
+      "scripture": ["references cited, in natural form, e.g. Psalm 82"]
+    }
+  ],
+  "carry_forward": "At most 150 words. What is now ESTABLISHED in this episode after the part you just read — enough for the next part to recognise restatement. Plain prose, no bullets."
+}
+
+`start` and `end` are seconds from the start of the episode.
+
+Constraints:
+- Do not use markdown code fences.
+- No trailing commas.
+- Truncated responses with missing closing braces will be rejected.
+- "substance" must be exactly one of "high", "medium", "low".
+
+INPUT:

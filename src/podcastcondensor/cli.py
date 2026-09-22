@@ -6,7 +6,7 @@ import os
 import sys
 
 from podcastcondensor.config import Config
-from podcastcondensor.llm.deepseek import resolve_api_key
+from podcastcondensor.llm.deepseek import ENV_API_KEY_VARS, resolve_api_key
 from podcastcondensor.pipeline import run_pipeline
 from podcastcondensor.playlist_pipeline import (
     build_universe_state,
@@ -42,7 +42,7 @@ def cmd_doctor(args):
         except Exception as e:
             print(f"API connectivity: ❌ {e}")
     if not api_key:
-        print("  Set ANTHROPIC_AUTH_TOKEN or DEEPSEEK_API_KEY env var")
+        print("  Set one of: " + ", ".join(ENV_API_KEY_VARS))
     import subprocess
     try:
         r = subprocess.run(["ffmpeg", "-version"], capture_output=True, text=True, timeout=10)
@@ -418,6 +418,72 @@ def cmd_build_narrations(args):
         print(f"Chunk speed: {result['chunk_speed']}")
 
 
+def cmd_build_deep_narration(args):
+    """Condense episodes into narrated audio — the current product.
+
+    Per episode: whisper transcript → DeepSeek identifies the arc (one call
+    per ~70-min chunk) → DeepSeek writes the narration from the arc (one call)
+    → edge-tts renders ``output/ep-NNN/narration_deep.mp3``.
+
+    Two logical stages, no audio cutting, no digest — the transcript is the
+    input and the arc is the only intermediate. Every stage's input has a hard
+    ceiling so each fits in one prompt; episode length is absorbed by the
+    chunk count, never by growing the prompt. See CLAUDE.md.
+    """
+    from podcastcondensor.deep_narration import (
+        _MAX_CHUNK_WORDS,
+        build_deep_narration,
+        fetch_episodes,
+    )
+
+    root = os.path.abspath(args.output_dir) if args.output_dir else _default_output_root()
+    episodes = sorted(set(args.episode))
+    if not episodes:
+        raise SystemExit("build-deep-narration: give at least one --episode N")
+
+    if args.fetch:
+        if not args.playlist_url:
+            raise SystemExit("build-deep-narration: --fetch needs --playlist-url")
+        fetch_episodes(
+            output_root=root,
+            ep_nums=episodes,
+            playlist_url=args.playlist_url,
+            whisper_model=args.whisper_model,
+            beam_size=args.beam_size,
+            vad=args.vad,
+        )
+
+    chunk_words = args.chunk_words or _MAX_CHUNK_WORDS
+    print("=" * 60)
+    print("DEEP NARRATION")
+    print("=" * 60)
+    failures = []
+    for ep in episodes:
+        try:
+            result = build_deep_narration(
+                output_root=root,
+                ep_num=ep,
+                skip_tts=args.skip_tts,
+                force=args.force,
+                chunk_words=chunk_words,
+            )
+        except Exception as e:  # noqa: BLE001 — one bad episode must not hide the rest
+            print(f"  ep {ep}: FAILED — {e}")
+            failures.append(ep)
+            continue
+        if result["skipped"]:
+            print(f"  ep {ep}: already on disk — skipped (--force to redo)")
+            continue
+        print(f"  ep {ep}: {result['words']} words (~{result['words'] / 175:.0f} min at 1x)"
+              f" — {result['chunks']} chunk(s) / {result['movements']} movements")
+        print(f"    arc:       {result['arc']}")
+        print(f"    narration: {result['narration']}")
+        print(f"    mp3:       {result['mp3'] or '(no render — --skip-tts)'}")
+    print("")
+    if failures:
+        raise SystemExit(f"Failed: {failures}")
+
+
 def _compact_span(eps):
     """Compact '1-5, 8' span for a sorted episode list (CLI-local helper)."""
     if not eps:
@@ -620,6 +686,38 @@ def main():
                          "this is an optional convenience copy (default: 1.0 = none)")
     uc.add_argument("--output-dir", default="")
     uc.set_defaults(func=cmd_build_ultra_cut)
+
+    # build-deep-narration
+    dnr = sub.add_parser(
+        "build-deep-narration",
+        help="Narrate episodes from the transcript (whisper → arc → narration → TTS)",
+    )
+    dnr.add_argument("--episode", type=int, action="append", default=[],
+                     help="Episode number to condense; repeat for several "
+                          "(e.g. --episode 145 --episode 147)")
+    dnr.add_argument("--fetch", action="store_true",
+                     help="Download + transcribe any episode with no transcript "
+                          "yet (needs --playlist-url)")
+    dnr.add_argument("--playlist-url", default="",
+                     help="YouTube playlist URL (used with --fetch)")
+    dnr.add_argument("--whisper-model", default="base",
+                     help="Whisper model size for --fetch (default: base; "
+                          "'small' gives a cleaner transcript)")
+    dnr.add_argument("--beam-size", type=int, default=1,
+                     help="Whisper beam size for --fetch (default: 1, the "
+                          "memory-conservative setting; 5 is cleaner)")
+    dnr.add_argument("--vad", action="store_true",
+                     help="Enable the whisper VAD filter for --fetch")
+    dnr.add_argument("--chunk-words", type=int, default=0,
+                     help="Words per arc-identification chunk (default: 10000 "
+                          "≈ 66 min of audio — the prompt-fit ceiling)")
+    dnr.add_argument("--force", action="store_true",
+                     help="Redo everything, ignoring the on-disk arc, narration "
+                          "text and mp3")
+    dnr.add_argument("--skip-tts", action="store_true",
+                     help="Write the arc + narration text only (no edge-tts render)")
+    dnr.add_argument("--output-dir", default="")
+    dnr.set_defaults(func=cmd_build_deep_narration)
 
     args = parser.parse_args()
     setup_logging(args.verbose)

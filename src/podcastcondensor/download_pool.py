@@ -50,10 +50,17 @@ def _ensure_episode_artifacts(
     audio_format: str = "mp3",
     audio_bitrate: str = "64k",
     whisper_model: str = "base",
+    whisper_beam_size: int = 1,
+    whisper_vad: bool = False,
 ) -> Optional[EpisodeManifest]:
     """Ensure one episode has audio + SRT ready.
 
     Always uses whisper transcription — YouTube subtitles are unreliable.
+
+    ``whisper_beam_size`` / ``whisper_vad`` default to the memory-conservative
+    settings (see ``transcribe.transcribe_audio``); the deep-narration path
+    raises them for a cleaner transcript. The 30 s chunked decode bounds
+    memory either way.
 
     Returns EpisodeManifest, or None if download/transcription fails.
     """
@@ -97,8 +104,8 @@ def _ensure_episode_artifacts(
         transcribe_audio(
             audio_path, ep_dir,
             model_size=whisper_model,
-            beam_size=1,
-            vad_filter=False,
+            beam_size=whisper_beam_size,
+            vad_filter=whisper_vad,
             condition_on_previous_text=False,
         )
     except Exception as e:
@@ -170,6 +177,8 @@ def ensure_all_episode_artifacts(
     audio_format: str = "mp3",
     audio_bitrate: str = "64k",
     whisper_model: str = "base",
+    whisper_beam_size: int = 1,
+    whisper_vad: bool = False,
 ) -> List[EpisodeManifest]:
     """Download audio + SRT for a range of episodes in parallel.
 
@@ -230,6 +239,8 @@ def ensure_all_episode_artifacts(
                 audio_format=audio_format,
                 audio_bitrate=audio_bitrate,
                 whisper_model=whisper_model,
+                whisper_beam_size=whisper_beam_size,
+                whisper_vad=whisper_vad,
             )
             futures[future] = ep_num
 

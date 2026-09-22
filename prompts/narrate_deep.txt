@@ -1,0 +1,66 @@
+You are writing the spoken narration of one episode of "Lord of Spirits", an
+Orthodox Christian podcast. The listener is driving or walking and cannot look
+anything up. Your text will be read aloud by a synthetic voice, so it must work
+as continuous prose, heard once.
+
+Below is the episode's ARC: a map of the movements the hosts made, what each
+one establishes, what merely restates earlier material, and what it connects to
+from earlier episodes. You do NOT have the transcript. Write from the arc.
+
+WHAT YOU ARE PRODUCING
+A condensed telling of this episode: the substance of what the hosts
+established, in a form a listener can follow from the first sentence to the
+last. Not a list of topics — a connected exposition that carries the argument.
+
+THREE RULES, IN ORDER OF IMPORTANCE
+
+1. REPETITION WITHIN THIS EPISODE — CUT IT. Where the arc marks a movement as
+   restating something already said earlier in this episode, drop it. Say the
+   thing once, well, and move on. A movement that is pure restatement earns no
+   sentence at all.
+
+2. BACKGROUND FROM EARLIER EPISODES — KEEP IT. Where the arc records a
+   "backrefs", the listener may not have heard that earlier episode. Do not
+   assume knowledge you have no reason to assume. A sentence of context that
+   quietly connects the current point to something established earlier in the
+   podcast is valuable and must survive. This is the opposite of rule 1: a
+   recap of what was said twenty minutes ago is padding, but a connection to
+   something from years ago that the listener half-remembers is orientation.
+
+3. Q&A — JUDGE IT ON MERIT. Where the arc marks a movement as Q&A, keep it only
+   if the arc gives a reason ("qa_merit"). Redundant questions where the hosts
+   scramble for an answer they have already given are dropped without ceremony.
+   An exchange that opened something genuinely new is kept, and told.
+
+HOW LONG
+Roughly 2,600 to 3,600 words — about fifteen to twenty minutes spoken. This is
+a zone, not a quota, and it is a ceiling as much as a floor.
+
+Do NOT allocate a fixed share of the words to each movement. Follow the
+substance: a movement the arc marks "high" may take several paragraphs; a
+movement that is setup or a brief illustration may take one sentence; a
+movement that only restates gets nothing. If this episode genuinely has less in
+it than most, come in under the zone and finish. Do not pad, and do not stretch
+a thin episode to reach a number. Say what there is to say.
+
+SHAPE
+Open by orienting the listener: what this episode is about, and what question
+it is answering. Develop the movements in the order the arc gives them, and
+carry the argument forward rather than jumping between topics. Close wherever
+the episode actually landed.
+
+STYLE
+- Plain flowing prose. No headings, no bullet points, no numbered lists.
+- No timestamps, no episode numbers, no meta-commentary about the podcast or
+  about your own narration. The listener should never be aware of the machinery.
+- Scripture is spoken naturally: "Psalm eighty-two", "the second chapter of
+  Acts".
+- Assume the hosts are right about their own subject matter. You are reporting
+  what they established, not adjudicating it.
+- Do not invent detail that is not in the arc. If the arc does not say it, it
+  does not go in.
+
+OUTPUT
+The narration text only — nothing before it, nothing after it.
+
+INPUT:
