@@ -1,0 +1,1108 @@
+{
+  "episode": 146,
+  "title": "Lord of Spirits - Whenever I Want You [Ep. 146]",
+  "chunk_words": 10000,
+  "chunks": [
+    {
+      "index": 0,
+      "start": 0.34,
+      "end": 4420.56,
+      "words": 10003,
+      "movements": [
+        {
+          "label": "Cold open and banter",
+          "start": 0,
+          "end": 57,
+          "substance": "low",
+          "develops": "",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Show intro and theme music",
+            "1 Enoch 48:4-5 quoted as epigraph"
+          ],
+          "scripture": [
+            "1 Enoch 48:4-5"
+          ]
+        },
+        {
+          "label": "Peter Cullen / memory eternal digression",
+          "start": 57,
+          "end": 290,
+          "substance": "low",
+          "develops": "",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Banter about episode number and self-deprecation",
+            "Memory eternal for Peter Cullen; argument that there is no rule against commemorating non-Orthodox, citing a pastoral instruction of St. John Maximovich",
+            "Kevin Conroy and Transformers tangents"
+          ],
+          "scripture": []
+        },
+        {
+          "label": "AI suggested the topic",
+          "start": 290,
+          "end": 540,
+          "substance": "low",
+          "develops": "",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Episode topic (dreams) was suggested by Google AI after scanning Reddit",
+            "Hosts joke that this is the most AI will ever be involved"
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Dreams are as old as humans (and dogs)",
+          "start": 540,
+          "end": 744,
+          "substance": "low",
+          "develops": "",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Dreams have existed as long as humans, and dogs dream too",
+            "Cannot access prehistoric understanding of dreams without written texts"
+          ],
+          "scripture": []
+        },
+        {
+          "label": "The spiritual world as overlay, not another realm",
+          "start": 744,
+          "end": 1104,
+          "substance": "medium",
+          "develops": "Corrects the modern misconception that the spiritual world is a separate dimension or astral plane; it is an overlay on the material world, perceived by the nous, which is purified in theosis.",
+          "restates": "",
+          "backrefs": "Previous episodes on the nous and on the spiritual world as overlay; the Elisha's servant example",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "'Astral' means stars; the astral plane is not the biblical spiritual world",
+            "Spiritual world is an overlay on the material world (overhead projector / CGI layers metaphor)",
+            "The nous perceives the spiritual world and is purified through theosis",
+            "Elisha's servant had his eyes opened to see the angelic host already present",
+            "Material and spiritual worlds constantly interact; giving a cup of cold water has spiritual effect"
+          ],
+          "scripture": [
+            "2 Kings 6",
+            "Matthew 10:42"
+          ]
+        },
+        {
+          "label": "Dreams as passive entrance into the spiritual world",
+          "start": 744,
+          "end": 1380,
+          "substance": "high",
+          "develops": "In the ancient Near East dreams were understood as a passive means of encountering God, spirits, demons, and departed humans; lucid dreamers became religious functionaries; dream reception and interpretation belong to the secondary tier of prophethood, below direct visionary encounter.",
+          "restates": "",
+          "backrefs": "Previous episode 'Prophet Motive' on prophethood; earlier episodes on the nous",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Dreams are a means of entrance into the spiritual world",
+            "In dreams you encounter God, spirits, demons, and deceased humans",
+            "Dreams are primarily passive; you receive a dream",
+            "Lucid dreamers were a minority who became prophets/seers",
+            "Prophethood has two tiers: direct visionary encounter (primary) and dreams (secondary)",
+            "Earliest Semitic terms for prophet meant 'seer'",
+            "Visions are active (St. John in Revelation); dreams are passive and require interpretation",
+            "Dream interpretation is itself a prophetic/visionary act, not a scientific decoding"
+          ],
+          "scripture": [
+            "Revelation"
+          ]
+        },
+        {
+          "label": "Oneromancy and its antiquity",
+          "start": 1380,
+          "end": 1920,
+          "substance": "high",
+          "develops": "Dream interpretation is a form of divination (oneromancy) attested from the earliest written texts at Mari (c. 3000 BC); Egyptian and Mesopotamian dream divination are nearly identical, indicating a common prehistoric origin. Distinguishes spontaneous from induced dreams.",
+          "restates": "",
+          "backrefs": "Earlier episodes on divination (ecstasy, reading entrails)",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Oneromancy = divination by dreams",
+            "Earliest dream-interpretation texts from Mari, Mesopotamia, c. 3000 BC",
+            "Egyptian and Mesopotamian dream divination nearly identical, pointing to prehistoric common source",
+            "'Prehistory' means before writing, not before cavemen",
+            "Distinction between spontaneous dreams and induced dreams (drugs, hallucinogens)",
+            "Induced dreams used practically: seek knowledge of the future from the gods"
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Dreams in the Epic of Gilgamesh",
+          "start": 1920,
+          "end": 2610,
+          "substance": "high",
+          "develops": "Walks through three sets of dreams in Gilgamesh: Gilgamesh's dream of a friend interpreted by his mother Ninsun; induced dreams before fighting Humbaba, reinterpreted positively by Enkidu; Enkidu's dreams of the divine council and Sheol, which foretell his death. Shows dreams as non-fatalistic omens and as passive entry into the spiritual world.",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Gilgamesh dreams of finding a friend; his mother the goddess Ninsun interprets it",
+            "Even two-thirds-divine Gilgamesh cannot interpret his own dreams",
+            "Induced dreams before the Humbaba fight; Enkidu spins them positively",
+            "Omens/dreams are not completely fatalistic; interpreters can differ",
+            "Enkidu dreams of the council of the gods decreeing his death, then of the horrors of Sheol",
+            "Enkidu's dreams are passive entry into the spiritual world, not divination"
+          ],
+          "scripture": []
+        },
+        {
+          "label": "The Assyrian Dream Book",
+          "start": 2610,
+          "end": 3180,
+          "substance": "high",
+          "develops": "Introduces the Assyrian Dream Book (Ishkar Zaqiqu), a formalized manual of dream diagnoses and cures. It recognizes three types of dreams: messages from spirits, predictive dreams, and purely internal dreams. Lists the various Mesopotamian religious functionaries involved in dream interpretation.",
+          "restates": "",
+          "backrefs": "Halloween episodes on demons like Lilith; earlier episodes on exorcism",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Ishkar Zaqiqu: 'Zaqiqu' means both spirit/ghost and the god of dreams",
+            "The book is a DSM-like list of dream diagnoses and ritual cures",
+            "Example: dreaming of eating human flesh means wealth is coming",
+            "Three categories of dreams: spirit messages, predictive dreams, internal dreams",
+            "Ancient people acknowledged many dreams were just internal, not mystical",
+            "Functionaries: sha'ilu (dream interpreter), astrologer, mahhu (ecstatic), rakimu/rakintu (prophet/prophetess), baru (diviner/haruspex), ashipu (exorcist)",
+            "Mesopotamian exorcism differs from Christian exorcism (inviting good spirits to drive out bad)",
+            "By the first millennium BC dream interpretation was a formalized societal institution with royal staff"
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Q&A: children's dreams of demons and saints",
+          "start": 3180,
+          "end": 3900,
+          "substance": "medium",
+          "develops": "First caller asks how to respond when young children report dreams of demons or patron saints. Hosts advise focusing on what the child does with the dream, teaching about protection through baptism, prayer, repentance, and patron saints, and not dismissing dreams as unreal.",
+          "restates": "",
+          "backrefs": "",
+          "qa": true,
+          "qa_merit": "Practical pastoral guidance on a concrete question; the principle 'what you do with it matters more than its source' is developed further in the next call.",
+          "key_points": [
+            "Focus on what the child does with the dream, not the phenomenon itself",
+            "Teach children about protection through baptism, prayers, repentance, patron saints",
+            "Don't dismiss dreams as unreal; that's not a healthy way to deal with fear",
+            "Anecdote: Fr. Stephen's great-nephew saw a ghost, grabbed an icon, charged it, and it disappeared",
+            "Raise dragon-slayers, not people who don't believe in dragons"
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Q&A: mystical dreams and UFOs",
+          "start": 3900,
+          "end": 4200,
+          "substance": "medium",
+          "develops": "Second caller asks how Orthodox Christians should approach profound mystical dreams and extraterrestrial/UFO phenomena. Hosts answer that the source matters less than the response: use whatever comes for repentance and faithfulness to Christ's commandments; unusual dreams should be discussed with a confessor, not acted on as private revelation.",
+          "restates": "",
+          "backrefs": "",
+          "qa": true,
+          "qa_merit": "Extends the previous answer into a general principle: even demonic activity is permitted by God for our repentance, so the question is always what we do with the experience.",
+          "key_points": [
+            "The goal is faithfulness to Christ's commandments and repentance",
+            "Even demonic activity is permitted by God for our repentance",
+            "Whether from God, angel, saint, or demon, use it as from the Lord",
+            "Unusual dreams should be discussed with a spiritual father/confessor",
+            "Don't act on dreams as private revelation (e.g., denouncing your parish)",
+            "Human beings have always done terrible things; the Christian mission is within that same dark context"
+          ],
+          "scripture": []
+        }
+      ],
+      "carry_forward": "This part establishes that dreams are a passive means of entrance into the spiritual world, which is an overlay on the material world perceived by the purified nous. It distinguishes the primary tier of prophethood (active visionary encounter) from the secondary tier (passive dreams requiring interpretation). It surveys ancient Near Eastern dream practice: oneromancy from Mari onward, spontaneous vs. induced dreams, the Epic of Gilgamesh's three dream sets, and the Assyrian Dream Book's three categories (spirit messages, predictive dreams, internal dreams) plus its roster of dream functionaries. The Q&A establishes the pastoral principle that what matters is not the dream's source but the response of repentance and faithfulness, discussed with a confessor. The second half will turn to biblical examples."
+    },
+    {
+      "index": 1,
+      "start": 4420.56,
+      "end": 8540.94,
+      "words": 10025,
+      "movements": [
+        {
+          "label": "Closing Q&A on dream discernment and premonitions",
+          "start": 4421,
+          "end": 5090,
+          "substance": "low",
+          "develops": "",
+          "restates": "The pastoral principle that what matters is not the dream's source but the response of repentance and faithfulness, discussed with a confessor; the idea that dreams should be judged by their fruit and not over-analyzed.",
+          "backrefs": "",
+          "qa": true,
+          "qa_merit": "",
+          "key_points": [
+            "Dreams are judged by their fruit: a dream that makes you think you are spiritually superior is bad.",
+            "You don't have to over-analyze comforting dreams of departed loved ones; just thank God.",
+            "Premonition dreams and deja vu are common; it's probably useful that we don't remember them so we don't think we know the future.",
+            "The hosts joke about Johnny Cash, Brussels sprout burritos, and the caller's location."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Dreams in the Bible: continuity with ancient Near East and prophetic connection",
+          "start": 5090,
+          "end": 5700,
+          "substance": "high",
+          "develops": "The Bible shows broad continuity with ancient Near Eastern dream practices, especially connecting dreams to prophecy. Numbers 12:6 and Deuteronomy 13:1-5 present dreamers as prophets, and Jeremiah 23, 27, 29 show the same connection centuries later. Dreams are a secondary tier of prophecy compared to Moses' direct encounter.",
+          "restates": "",
+          "backrefs": "The first half of this episode established the ancient Near Eastern milieu and the primary/secondary tiers of prophethood.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Numbers 12:6: God speaks to prophets in visions and dreams, but not like Moses face to face.",
+            "Deuteronomy 13:1-5: false prophets and dreamers of dreams are paralleled and must be rejected if they lead astray.",
+            "Jeremiah 23:25-32: prophets claim to have dreamed, but false dreams lead people astray; true prophets speak God's word.",
+            "Jeremiah 27:9 and 29:8: do not listen to dreamers who deceive.",
+            "The connection between dreams and prophecy persists from Moses to the late monarchy."
+          ],
+          "scripture": [
+            "Numbers 12:6",
+            "Deuteronomy 13:1-5",
+            "Jeremiah 23:25-32",
+            "Jeremiah 27:9",
+            "Jeremiah 29:8"
+          ]
+        },
+        {
+          "label": "Dreams in the New Testament: Pentecost and Saul's lack of dreams",
+          "start": 5700,
+          "end": 6300,
+          "substance": "high",
+          "develops": "Peter's Pentecost sermon (Acts 2:17, quoting Joel 2:28) declares that dreams will be available to all because of the Holy Spirit, not abolished. King Saul's story (1 Samuel 28) shows that God normally answered by dreams, Urim, and prophets, but withdrew from Saul, leading him to necromancy.",
+          "restates": "",
+          "backrefs": "The prophetic phenomenon and the secondary tier of dreams were established earlier in this episode.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Acts 2:17: 'your old men shall dream dreams' is fulfilled at Pentecost, meaning dreams are now available to everyone through the Spirit.",
+            "1 Samuel 28:6, 15: Saul inquired of the Lord but got no answer by dreams, Urim, or prophets, so he sought the witch of Endor.",
+            "Dreams were a standard way God communicated with people, including kings."
+          ],
+          "scripture": [
+            "Acts 2:17",
+            "Joel 2:28",
+            "1 Samuel 28:6",
+            "1 Samuel 28:15"
+          ]
+        },
+        {
+          "label": "Internal dreams in wisdom literature",
+          "start": 6300,
+          "end": 6900,
+          "substance": "high",
+          "develops": "Scripture also recognizes many dreams as merely internal—ephemeral, reflecting personal concerns, not divine revelation. Examples include Job 20:8, Psalm 73:20, Psalm 90:5, Ecclesiastes 5:3, Isaiah 29:7-8, and Isaiah 56:10. The hosts share personal stress dreams as illustrations.",
+          "restates": "",
+          "backrefs": "The first half of the episode discussed internal dreams as a category in the Assyrian Dream Book.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Not every dream is prophetic; many are just internal, reflecting the dreamer's mental state.",
+            "Job 20:8, Psalm 73:20, Psalm 90:5, Ecclesiastes 5:3, Isaiah 29:7-8, Isaiah 56:10 describe dreams as fleeting and insignificant.",
+            "Fr. Andrew's stress dream: enrolled in a class he didn't know about, final exam approaching.",
+            "Fr. Stephen's stress dreams: overlooking something important, or harm coming to his children.",
+            "These dreams have no greater significance than personal anxiety."
+          ],
+          "scripture": [
+            "Job 20:8",
+            "Psalm 73:20",
+            "Psalm 90:5",
+            "Ecclesiastes 5:3",
+            "Isaiah 29:7-8",
+            "Isaiah 56:10"
+          ]
+        },
+        {
+          "label": "Dreams as secondary communication in Genesis and Joseph",
+          "start": 6900,
+          "end": 7800,
+          "substance": "high",
+          "develops": "Genesis shows a pattern: direct encounters with God for Abraham, Isaac, and sometimes Jacob, but dreams for outsiders like Abimelech and for Joseph's generation. As the patriarchs decline morally, God communicates through dreams to protect them. Joseph's dreams and his interpretation of Pharaoh's dreams continue this pattern.",
+          "restates": "",
+          "backrefs": "The primary/secondary tier distinction was established earlier in this episode.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Abraham, Isaac, and Jacob have direct encounters with God; Jacob also has the dream of the ladder (Genesis 28:10-17).",
+            "Abimelech, a Gentile, receives a warning in a dream (Genesis 20).",
+            "Joseph has no direct encounters with God; all his communication is through dreams and interpreting dreams.",
+            "Joseph's dreams of his family bowing down, and his interpretation of the cupbearer's, baker's, and Pharaoh's dreams.",
+            "The pattern shows God stepping back as people descend into sin, communicating through dreams for their sake."
+          ],
+          "scripture": [
+            "Genesis 28:10-17",
+            "Genesis 20",
+            "Genesis 37",
+            "Genesis 40",
+            "Genesis 41"
+          ]
+        },
+        {
+          "label": "Daniel and dreams to Gentiles in the New Testament",
+          "start": 7800,
+          "end": 8400,
+          "substance": "high",
+          "develops": "Daniel parallels Joseph: as a young man in a pagan court, he interprets dreams (Nebuchadnezzar's statue, the beasts, the tree). Dreams are often sent to Gentiles (Abimelech, Pharaoh, Nebuchadnezzar, Pilate's wife). In the New Testament, Joseph receives a series of dreams from angels because no prophet was active.",
+          "restates": "",
+          "backrefs": "The Halloween episode on madness discussed Nebuchadnezzar's dream of the tree.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Daniel interprets Nebuchadnezzar's dream of the statue (Daniel 2) and has his own dream of the beasts (Daniel 7).",
+            "Nebuchadnezzar's dream of the tree and his madness (Daniel 4) was covered in a previous Halloween episode.",
+            "Dreams are sent to Gentiles: Abimelech, Pharaoh, Nebuchadnezzar, and Pilate's wife (Matthew 27:19).",
+            "St. Joseph receives dreams in Matthew 1-2: to take Mary as wife, to flee to Egypt, to return, and to go to Galilee.",
+            "These dreams occur because no prophet was active at that time."
+          ],
+          "scripture": [
+            "Daniel 2",
+            "Daniel 4",
+            "Daniel 7",
+            "Matthew 27:19",
+            "Matthew 1-2"
+          ]
+        },
+        {
+          "label": "Q&A: Dreams vs. visions and ancient vs. modern mind",
+          "start": 8400,
+          "end": 9600,
+          "substance": "medium",
+          "develops": "The distinction between dreams and visions is that dreams are passive while visions allow interaction (e.g., St. John in Revelation). A caller asks about the importance of an ancient understanding of the mind; the hosts affirm that modern mental health concepts are valid but must not replace the spiritual, and that spiritual, mental, and physical health are interrelated.",
+          "restates": "The passive nature of dreams was discussed in the first half.",
+          "backrefs": "The episode 'But We Have the Mind of Christ' is referenced.",
+          "qa": true,
+          "qa_merit": "It clarifies the relationship between ancient nous and modern mental health, warning against both materialist reductionism and spiritualizing mental illness.",
+          "key_points": [
+            "Dreams are passive; visions allow interaction (e.g., St. John asking questions in Revelation).",
+            "Modern mental health is a real category, but it should not replace the spiritual.",
+            "Spiritual, mental, and physical health are separable but deeply interrelated.",
+            "An ancient understanding of the nous is important for Orthodox theology, but it doesn't evict other forms of knowledge.",
+            "Mental illness should not be reduced to spiritual problems, nor physical illness to spiritual states."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Q&A: Shakespeare and the invention of the individual",
+          "start": 9600,
+          "end": 10200,
+          "substance": "medium",
+          "develops": "Shakespeare marks a transition toward the modern individual. In Hamlet, the question 'Who's there?' reflects the individual's isolation; in A Midsummer Night's Dream, the spiritual world is real but only relevant insofar as it concerns us. This sets the stage for Freud and Jung.",
+          "restates": "",
+          "backrefs": "",
+          "qa": true,
+          "qa_merit": "It provides a literary bridge between the ancient and modern understandings of dreams, illustrating the shift toward individualism.",
+          "key_points": [
+            "Shakespeare's Hamlet explores the invention of the individual; Hamlet talks to himself and ignores others.",
+            "A Midsummer Night's Dream treats the spiritual world as real but ultimately about personal resolution.",
+            "The shift from ancient to modern involves the rise of the individual, which will lead to Freud and Jung."
+          ],
+          "scripture": []
+        }
+      ],
+      "carry_forward": "This part establishes that the Bible shows broad continuity with ancient Near Eastern dream practices: dreams are connected to prophecy (Numbers 12:6, Deuteronomy 13, Jeremiah 23), are a secondary means of communication compared to direct encounters (Moses vs. prophets, Abraham vs. Abimelech), and are often sent to Gentiles (Abimelech, Pharaoh, Nebuchadnezzar, Pilate's wife). Scripture also recognizes internal dreams (Job, Psalms, Ecclesiastes, Isaiah) as merely personal. In the New Testament, Pentecost makes dreams available to all (Acts 2:17), and St. Joseph receives dreams because no prophet was active. The Q&A distinguishes dreams from visions and discusses the relationship between ancient nous and modern mental health, and Shakespeare's role in the rise of the individual."
+    },
+    {
+      "index": 2,
+      "start": 8540.94,
+      "end": 12670.959,
+      "words": 9469,
+      "movements": [
+        {
+          "label": "Shakespeare, Fairies, and the Invention of the Individual",
+          "start": 8541,
+          "end": 9307,
+          "substance": "medium",
+          "develops": "Continues the earlier discussion of Shakespeare and the rise of the individual, adding the example of fairies being reduced to tiny, materialized pests (Labyrinth) and tracing how individualism leads to materialism by shoving saints and angels aside until only the self remains.",
+          "restates": "The core point that Shakespeare marks the rise of the individual was already established in the previous Q&A.",
+          "backrefs": "Builds on the earlier Q&A about Shakespeare and the rise of the individual.",
+          "qa": true,
+          "qa_merit": "Extends the earlier answer with a vivid illustration (Labyrinth) and a clear causal chain from individualism to materialism, which helps listeners see the stakes.",
+          "key_points": [
+            "Tolkien disliked Shakespeare for shrinking fairies; modern culture treats spirits as trivial.",
+            "Labyrinth shows fairies as bugs to be exterminated, the final materialization.",
+            "Individualism creates a private world, enabling materialism.",
+            "The Reformation pushed saints and angels aside, then God, leaving only the self, and now even the self is dissolving."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Caller Monica: Three Sources of Dreams and Discernment",
+          "start": 9307,
+          "end": 11000,
+          "substance": "medium",
+          "develops": "Applies the earlier framework to a personal question: dreams can come from internal, demonic, or divine sources, but the key is how one responds. Introduces the pastoral principle that all dreams can be received as from God if they lead to repentance, and that sharing dreams requires discernment and usually the guidance of a confessor.",
+          "restates": "The three-source taxonomy and the pastoral principle of response over source were already established in the earlier Q&A.",
+          "backrefs": "Builds on the earlier Q&A about the three sources of dreams and the pastoral principle of repentance.",
+          "qa": true,
+          "qa_merit": "Provides a concrete pastoral application: start by assuming a dream is for you, then involve a confessor before sharing, which is a practical rule listeners can use.",
+          "key_points": [
+            "Dreams can be internal, demonic, or divine, but the source is often ambiguous.",
+            "All dreams can be from God if received for repentance and faithfulness.",
+            "Sharing dreams requires a close relationship and sobriety; a confessor can help discern community significance.",
+            "Start by assuming a dream is for you personally."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Caller Rudy: Shepherding a Spouse's Dreams",
+          "start": 11000,
+          "end": 11900,
+          "substance": "low",
+          "develops": "Repeats the advice to consult a parish priest and to assume dreams are for oneself first, applying it to a husband concerned about his wife's dreams.",
+          "restates": "The same pastoral advice given to Monica: talk to a confessor, start by assuming the dream is for you.",
+          "backrefs": "",
+          "qa": true,
+          "qa_merit": "",
+          "key_points": [
+            "Consult your parish priest about a spouse's dreams.",
+            "Assume any spiritual experience is first for you, then involve others for discernment."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Modern Views of Dreams: Freud and Jung",
+          "start": 11900,
+          "end": 14700,
+          "substance": "high",
+          "develops": "Introduces the two modern poles: Freud (all dreams are internal, expressions of wishes, censored by the conscious mind) and Jung (dreams come from a collective unconscious, a shared telepathic layer, not from spirits or God). Shows how both reduce the spiritual world to mental processes, setting up deception.",
+          "restates": "",
+          "backrefs": "Builds on the earlier discussion of internal dreams and the ancient vs. modern contrast.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Freud: dreams are triggered by daytime events, express wishes (including death drive), and are censored by the conscious mind.",
+            "Jung: dreams come from a collective unconscious, a shared layer of all human minds connected telepathically; symbols are universal.",
+            "Jung's Red Book emerged from his deliberate immersion in the collective unconscious.",
+            "Jung denied the supernatural, seeing telepathy as a scientific reality.",
+            "Both Freud and Jung keep dreams within the human plane, excluding God, angels, and demons."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "New Age Dream Interpretation",
+          "start": 14700,
+          "end": 16200,
+          "substance": "high",
+          "develops": "Describes the New Age pole using Llewellyn's Complete Dictionary of Dreams as an example: dreams are messages from a divine 'higher self' guiding you toward your future divine self. The symbols are a chaotic mix from Jung, paganism, medieval sources, and invention. All modern approaches share the assumption that dreams are purely human, setting people up for deception.",
+          "restates": "",
+          "backrefs": "Builds on the earlier discussion of the two poles and the ancient understanding of dreams as communication from agents.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "New Age: dreams are communication from your higher self, which is divine and future-oriented.",
+            "Llewellyn's dictionary is a popular example, with symbols drawn from various sources without a system.",
+            "All modern approaches reduce the spiritual world to mental processes, leaving people open to deception by demons.",
+            "Demons can use dream dictionaries to mislead."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "The Trade-off: Material Knowledge vs. Spiritual Wisdom",
+          "start": 16200,
+          "end": 17400,
+          "substance": "high",
+          "develops": "Argues that modern technological progress came at the cost of neglecting spiritual wisdom, so humanity has regressed in understanding dreams. The goal is not to return to the ancient world but to reacquire spiritual wisdom to guide material knowledge.",
+          "restates": "",
+          "backrefs": "Builds on the earlier discussion of the ancient vs. modern contrast and the first few episodes of the show about material vs. spiritual knowledge.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Modern material knowledge is real and valuable, but it traded off spiritual wisdom.",
+            "We are less savvy about spiritual things than ancient people.",
+            "We should not retreat to the ancient world but reacquire spiritual wisdom to guide material science.",
+            "Spiritual wisdom is more important than material knowledge."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Conclusion: Caution, Ordinary Faithfulness, and Repentance",
+          "start": 17400,
+          "end": 19200,
+          "substance": "high",
+          "develops": "Summarizes the episode's practical takeaway: restraint and caution are the normal posture toward spiritual experiences; assume they are for you; test the spirits; live an ordinary life of prayer, fasting, and almsgiving. The irony is that the modern age's scientific explanations actually set us up for less knowledge. The framework helps read Scripture better.",
+          "restates": "Repeats the pastoral advice from the Q&A (caution, start with yourself, consult a confessor) and the earlier point about the trade-off, but now as a final synthesis.",
+          "backrefs": "Builds on the earlier Q&A and the discussion of the trade-off.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Caution and restraint are the normal posture toward spiritual experiences.",
+            "Assume any spiritual experience is for you first; test the spirits.",
+            "Ordinary faithfulness (prayer, fasting, almsgiving) leads to discernment.",
+            "The modern age's scientific explanations led to less knowledge, not more.",
+            "The framework helps read Scripture more fully."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Closing: Give Up on Your Dreams",
+          "start": 19200,
+          "end": 19800,
+          "substance": "medium",
+          "develops": "A closing exhortation: dreams of the past or future distract from the beauty and blessings God has placed in the present. 'Give up on your dreams' because this is the day the Lord has made.",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Dreams of the past or future are not aimed at finding joy in the present.",
+            "Live today and see the blessings God is giving now.",
+            "Give up on your dreams because this is the day the Lord has made."
+          ],
+          "scripture": [
+            "Psalm 118:24"
+          ]
+        }
+      ],
+      "carry_forward": "This part concludes the episode by contrasting modern dream theories (Freud, Jung, New Age) with the ancient and biblical view. It establishes that all modern approaches reduce dreams to purely human processes, setting people up for deception. The hosts argue that modern material progress traded away spiritual wisdom, so we must reacquire it. The practical takeaway is caution and restraint toward spiritual experiences, assuming they are for oneself first, and living ordinary faithfulness (prayer, fasting, almsgiving) which leads to discernment. The episode ends with an exhortation to give up on dreams of past or future and live in the present, where God's blessings are available today."
+    }
+  ],
+  "movements": [
+    {
+      "label": "Cold open and banter",
+      "start": 0,
+      "end": 57,
+      "substance": "low",
+      "develops": "",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Show intro and theme music",
+        "1 Enoch 48:4-5 quoted as epigraph"
+      ],
+      "scripture": [
+        "1 Enoch 48:4-5"
+      ]
+    },
+    {
+      "label": "Peter Cullen / memory eternal digression",
+      "start": 57,
+      "end": 290,
+      "substance": "low",
+      "develops": "",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Banter about episode number and self-deprecation",
+        "Memory eternal for Peter Cullen; argument that there is no rule against commemorating non-Orthodox, citing a pastoral instruction of St. John Maximovich",
+        "Kevin Conroy and Transformers tangents"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "AI suggested the topic",
+      "start": 290,
+      "end": 540,
+      "substance": "low",
+      "develops": "",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Episode topic (dreams) was suggested by Google AI after scanning Reddit",
+        "Hosts joke that this is the most AI will ever be involved"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Dreams are as old as humans (and dogs)",
+      "start": 540,
+      "end": 744,
+      "substance": "low",
+      "develops": "",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Dreams have existed as long as humans, and dogs dream too",
+        "Cannot access prehistoric understanding of dreams without written texts"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "The spiritual world as overlay, not another realm",
+      "start": 744,
+      "end": 1104,
+      "substance": "medium",
+      "develops": "Corrects the modern misconception that the spiritual world is a separate dimension or astral plane; it is an overlay on the material world, perceived by the nous, which is purified in theosis.",
+      "restates": "",
+      "backrefs": "Previous episodes on the nous and on the spiritual world as overlay; the Elisha's servant example",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "'Astral' means stars; the astral plane is not the biblical spiritual world",
+        "Spiritual world is an overlay on the material world (overhead projector / CGI layers metaphor)",
+        "The nous perceives the spiritual world and is purified through theosis",
+        "Elisha's servant had his eyes opened to see the angelic host already present",
+        "Material and spiritual worlds constantly interact; giving a cup of cold water has spiritual effect"
+      ],
+      "scripture": [
+        "2 Kings 6",
+        "Matthew 10:42"
+      ]
+    },
+    {
+      "label": "Dreams as passive entrance into the spiritual world",
+      "start": 744,
+      "end": 1380,
+      "substance": "high",
+      "develops": "In the ancient Near East dreams were understood as a passive means of encountering God, spirits, demons, and departed humans; lucid dreamers became religious functionaries; dream reception and interpretation belong to the secondary tier of prophethood, below direct visionary encounter.",
+      "restates": "",
+      "backrefs": "Previous episode 'Prophet Motive' on prophethood; earlier episodes on the nous",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Dreams are a means of entrance into the spiritual world",
+        "In dreams you encounter God, spirits, demons, and deceased humans",
+        "Dreams are primarily passive; you receive a dream",
+        "Lucid dreamers were a minority who became prophets/seers",
+        "Prophethood has two tiers: direct visionary encounter (primary) and dreams (secondary)",
+        "Earliest Semitic terms for prophet meant 'seer'",
+        "Visions are active (St. John in Revelation); dreams are passive and require interpretation",
+        "Dream interpretation is itself a prophetic/visionary act, not a scientific decoding"
+      ],
+      "scripture": [
+        "Revelation"
+      ]
+    },
+    {
+      "label": "Oneromancy and its antiquity",
+      "start": 1380,
+      "end": 1920,
+      "substance": "high",
+      "develops": "Dream interpretation is a form of divination (oneromancy) attested from the earliest written texts at Mari (c. 3000 BC); Egyptian and Mesopotamian dream divination are nearly identical, indicating a common prehistoric origin. Distinguishes spontaneous from induced dreams.",
+      "restates": "",
+      "backrefs": "Earlier episodes on divination (ecstasy, reading entrails)",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Oneromancy = divination by dreams",
+        "Earliest dream-interpretation texts from Mari, Mesopotamia, c. 3000 BC",
+        "Egyptian and Mesopotamian dream divination nearly identical, pointing to prehistoric common source",
+        "'Prehistory' means before writing, not before cavemen",
+        "Distinction between spontaneous dreams and induced dreams (drugs, hallucinogens)",
+        "Induced dreams used practically: seek knowledge of the future from the gods"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Dreams in the Epic of Gilgamesh",
+      "start": 1920,
+      "end": 2610,
+      "substance": "high",
+      "develops": "Walks through three sets of dreams in Gilgamesh: Gilgamesh's dream of a friend interpreted by his mother Ninsun; induced dreams before fighting Humbaba, reinterpreted positively by Enkidu; Enkidu's dreams of the divine council and Sheol, which foretell his death. Shows dreams as non-fatalistic omens and as passive entry into the spiritual world.",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Gilgamesh dreams of finding a friend; his mother the goddess Ninsun interprets it",
+        "Even two-thirds-divine Gilgamesh cannot interpret his own dreams",
+        "Induced dreams before the Humbaba fight; Enkidu spins them positively",
+        "Omens/dreams are not completely fatalistic; interpreters can differ",
+        "Enkidu dreams of the council of the gods decreeing his death, then of the horrors of Sheol",
+        "Enkidu's dreams are passive entry into the spiritual world, not divination"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "The Assyrian Dream Book",
+      "start": 2610,
+      "end": 3180,
+      "substance": "high",
+      "develops": "Introduces the Assyrian Dream Book (Ishkar Zaqiqu), a formalized manual of dream diagnoses and cures. It recognizes three types of dreams: messages from spirits, predictive dreams, and purely internal dreams. Lists the various Mesopotamian religious functionaries involved in dream interpretation.",
+      "restates": "",
+      "backrefs": "Halloween episodes on demons like Lilith; earlier episodes on exorcism",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Ishkar Zaqiqu: 'Zaqiqu' means both spirit/ghost and the god of dreams",
+        "The book is a DSM-like list of dream diagnoses and ritual cures",
+        "Example: dreaming of eating human flesh means wealth is coming",
+        "Three categories of dreams: spirit messages, predictive dreams, internal dreams",
+        "Ancient people acknowledged many dreams were just internal, not mystical",
+        "Functionaries: sha'ilu (dream interpreter), astrologer, mahhu (ecstatic), rakimu/rakintu (prophet/prophetess), baru (diviner/haruspex), ashipu (exorcist)",
+        "Mesopotamian exorcism differs from Christian exorcism (inviting good spirits to drive out bad)",
+        "By the first millennium BC dream interpretation was a formalized societal institution with royal staff"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Q&A: children's dreams of demons and saints",
+      "start": 3180,
+      "end": 3900,
+      "substance": "medium",
+      "develops": "First caller asks how to respond when young children report dreams of demons or patron saints. Hosts advise focusing on what the child does with the dream, teaching about protection through baptism, prayer, repentance, and patron saints, and not dismissing dreams as unreal.",
+      "restates": "",
+      "backrefs": "",
+      "qa": true,
+      "qa_merit": "Practical pastoral guidance on a concrete question; the principle 'what you do with it matters more than its source' is developed further in the next call.",
+      "key_points": [
+        "Focus on what the child does with the dream, not the phenomenon itself",
+        "Teach children about protection through baptism, prayers, repentance, patron saints",
+        "Don't dismiss dreams as unreal; that's not a healthy way to deal with fear",
+        "Anecdote: Fr. Stephen's great-nephew saw a ghost, grabbed an icon, charged it, and it disappeared",
+        "Raise dragon-slayers, not people who don't believe in dragons"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Q&A: mystical dreams and UFOs",
+      "start": 3900,
+      "end": 4200,
+      "substance": "medium",
+      "develops": "Second caller asks how Orthodox Christians should approach profound mystical dreams and extraterrestrial/UFO phenomena. Hosts answer that the source matters less than the response: use whatever comes for repentance and faithfulness to Christ's commandments; unusual dreams should be discussed with a confessor, not acted on as private revelation.",
+      "restates": "",
+      "backrefs": "",
+      "qa": true,
+      "qa_merit": "Extends the previous answer into a general principle: even demonic activity is permitted by God for our repentance, so the question is always what we do with the experience.",
+      "key_points": [
+        "The goal is faithfulness to Christ's commandments and repentance",
+        "Even demonic activity is permitted by God for our repentance",
+        "Whether from God, angel, saint, or demon, use it as from the Lord",
+        "Unusual dreams should be discussed with a spiritual father/confessor",
+        "Don't act on dreams as private revelation (e.g., denouncing your parish)",
+        "Human beings have always done terrible things; the Christian mission is within that same dark context"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Closing Q&A on dream discernment and premonitions",
+      "start": 4421,
+      "end": 5090,
+      "substance": "low",
+      "develops": "",
+      "restates": "The pastoral principle that what matters is not the dream's source but the response of repentance and faithfulness, discussed with a confessor; the idea that dreams should be judged by their fruit and not over-analyzed.",
+      "backrefs": "",
+      "qa": true,
+      "qa_merit": "",
+      "key_points": [
+        "Dreams are judged by their fruit: a dream that makes you think you are spiritually superior is bad.",
+        "You don't have to over-analyze comforting dreams of departed loved ones; just thank God.",
+        "Premonition dreams and deja vu are common; it's probably useful that we don't remember them so we don't think we know the future.",
+        "The hosts joke about Johnny Cash, Brussels sprout burritos, and the caller's location."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Dreams in the Bible: continuity with ancient Near East and prophetic connection",
+      "start": 5090,
+      "end": 5700,
+      "substance": "high",
+      "develops": "The Bible shows broad continuity with ancient Near Eastern dream practices, especially connecting dreams to prophecy. Numbers 12:6 and Deuteronomy 13:1-5 present dreamers as prophets, and Jeremiah 23, 27, 29 show the same connection centuries later. Dreams are a secondary tier of prophecy compared to Moses' direct encounter.",
+      "restates": "",
+      "backrefs": "The first half of this episode established the ancient Near Eastern milieu and the primary/secondary tiers of prophethood.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Numbers 12:6: God speaks to prophets in visions and dreams, but not like Moses face to face.",
+        "Deuteronomy 13:1-5: false prophets and dreamers of dreams are paralleled and must be rejected if they lead astray.",
+        "Jeremiah 23:25-32: prophets claim to have dreamed, but false dreams lead people astray; true prophets speak God's word.",
+        "Jeremiah 27:9 and 29:8: do not listen to dreamers who deceive.",
+        "The connection between dreams and prophecy persists from Moses to the late monarchy."
+      ],
+      "scripture": [
+        "Numbers 12:6",
+        "Deuteronomy 13:1-5",
+        "Jeremiah 23:25-32",
+        "Jeremiah 27:9",
+        "Jeremiah 29:8"
+      ]
+    },
+    {
+      "label": "Dreams in the New Testament: Pentecost and Saul's lack of dreams",
+      "start": 5700,
+      "end": 6300,
+      "substance": "high",
+      "develops": "Peter's Pentecost sermon (Acts 2:17, quoting Joel 2:28) declares that dreams will be available to all because of the Holy Spirit, not abolished. King Saul's story (1 Samuel 28) shows that God normally answered by dreams, Urim, and prophets, but withdrew from Saul, leading him to necromancy.",
+      "restates": "",
+      "backrefs": "The prophetic phenomenon and the secondary tier of dreams were established earlier in this episode.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Acts 2:17: 'your old men shall dream dreams' is fulfilled at Pentecost, meaning dreams are now available to everyone through the Spirit.",
+        "1 Samuel 28:6, 15: Saul inquired of the Lord but got no answer by dreams, Urim, or prophets, so he sought the witch of Endor.",
+        "Dreams were a standard way God communicated with people, including kings."
+      ],
+      "scripture": [
+        "Acts 2:17",
+        "Joel 2:28",
+        "1 Samuel 28:6",
+        "1 Samuel 28:15"
+      ]
+    },
+    {
+      "label": "Internal dreams in wisdom literature",
+      "start": 6300,
+      "end": 6900,
+      "substance": "high",
+      "develops": "Scripture also recognizes many dreams as merely internal—ephemeral, reflecting personal concerns, not divine revelation. Examples include Job 20:8, Psalm 73:20, Psalm 90:5, Ecclesiastes 5:3, Isaiah 29:7-8, and Isaiah 56:10. The hosts share personal stress dreams as illustrations.",
+      "restates": "",
+      "backrefs": "The first half of the episode discussed internal dreams as a category in the Assyrian Dream Book.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Not every dream is prophetic; many are just internal, reflecting the dreamer's mental state.",
+        "Job 20:8, Psalm 73:20, Psalm 90:5, Ecclesiastes 5:3, Isaiah 29:7-8, Isaiah 56:10 describe dreams as fleeting and insignificant.",
+        "Fr. Andrew's stress dream: enrolled in a class he didn't know about, final exam approaching.",
+        "Fr. Stephen's stress dreams: overlooking something important, or harm coming to his children.",
+        "These dreams have no greater significance than personal anxiety."
+      ],
+      "scripture": [
+        "Job 20:8",
+        "Psalm 73:20",
+        "Psalm 90:5",
+        "Ecclesiastes 5:3",
+        "Isaiah 29:7-8",
+        "Isaiah 56:10"
+      ]
+    },
+    {
+      "label": "Dreams as secondary communication in Genesis and Joseph",
+      "start": 6900,
+      "end": 7800,
+      "substance": "high",
+      "develops": "Genesis shows a pattern: direct encounters with God for Abraham, Isaac, and sometimes Jacob, but dreams for outsiders like Abimelech and for Joseph's generation. As the patriarchs decline morally, God communicates through dreams to protect them. Joseph's dreams and his interpretation of Pharaoh's dreams continue this pattern.",
+      "restates": "",
+      "backrefs": "The primary/secondary tier distinction was established earlier in this episode.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Abraham, Isaac, and Jacob have direct encounters with God; Jacob also has the dream of the ladder (Genesis 28:10-17).",
+        "Abimelech, a Gentile, receives a warning in a dream (Genesis 20).",
+        "Joseph has no direct encounters with God; all his communication is through dreams and interpreting dreams.",
+        "Joseph's dreams of his family bowing down, and his interpretation of the cupbearer's, baker's, and Pharaoh's dreams.",
+        "The pattern shows God stepping back as people descend into sin, communicating through dreams for their sake."
+      ],
+      "scripture": [
+        "Genesis 28:10-17",
+        "Genesis 20",
+        "Genesis 37",
+        "Genesis 40",
+        "Genesis 41"
+      ]
+    },
+    {
+      "label": "Daniel and dreams to Gentiles in the New Testament",
+      "start": 7800,
+      "end": 8400,
+      "substance": "high",
+      "develops": "Daniel parallels Joseph: as a young man in a pagan court, he interprets dreams (Nebuchadnezzar's statue, the beasts, the tree). Dreams are often sent to Gentiles (Abimelech, Pharaoh, Nebuchadnezzar, Pilate's wife). In the New Testament, Joseph receives a series of dreams from angels because no prophet was active.",
+      "restates": "",
+      "backrefs": "The Halloween episode on madness discussed Nebuchadnezzar's dream of the tree.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Daniel interprets Nebuchadnezzar's dream of the statue (Daniel 2) and has his own dream of the beasts (Daniel 7).",
+        "Nebuchadnezzar's dream of the tree and his madness (Daniel 4) was covered in a previous Halloween episode.",
+        "Dreams are sent to Gentiles: Abimelech, Pharaoh, Nebuchadnezzar, and Pilate's wife (Matthew 27:19).",
+        "St. Joseph receives dreams in Matthew 1-2: to take Mary as wife, to flee to Egypt, to return, and to go to Galilee.",
+        "These dreams occur because no prophet was active at that time."
+      ],
+      "scripture": [
+        "Daniel 2",
+        "Daniel 4",
+        "Daniel 7",
+        "Matthew 27:19",
+        "Matthew 1-2"
+      ]
+    },
+    {
+      "label": "Q&A: Dreams vs. visions and ancient vs. modern mind",
+      "start": 8400,
+      "end": 9600,
+      "substance": "medium",
+      "develops": "The distinction between dreams and visions is that dreams are passive while visions allow interaction (e.g., St. John in Revelation). A caller asks about the importance of an ancient understanding of the mind; the hosts affirm that modern mental health concepts are valid but must not replace the spiritual, and that spiritual, mental, and physical health are interrelated.",
+      "restates": "The passive nature of dreams was discussed in the first half.",
+      "backrefs": "The episode 'But We Have the Mind of Christ' is referenced.",
+      "qa": true,
+      "qa_merit": "It clarifies the relationship between ancient nous and modern mental health, warning against both materialist reductionism and spiritualizing mental illness.",
+      "key_points": [
+        "Dreams are passive; visions allow interaction (e.g., St. John asking questions in Revelation).",
+        "Modern mental health is a real category, but it should not replace the spiritual.",
+        "Spiritual, mental, and physical health are separable but deeply interrelated.",
+        "An ancient understanding of the nous is important for Orthodox theology, but it doesn't evict other forms of knowledge.",
+        "Mental illness should not be reduced to spiritual problems, nor physical illness to spiritual states."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Q&A: Shakespeare and the invention of the individual",
+      "start": 9600,
+      "end": 10200,
+      "substance": "medium",
+      "develops": "Shakespeare marks a transition toward the modern individual. In Hamlet, the question 'Who's there?' reflects the individual's isolation; in A Midsummer Night's Dream, the spiritual world is real but only relevant insofar as it concerns us. This sets the stage for Freud and Jung.",
+      "restates": "",
+      "backrefs": "",
+      "qa": true,
+      "qa_merit": "It provides a literary bridge between the ancient and modern understandings of dreams, illustrating the shift toward individualism.",
+      "key_points": [
+        "Shakespeare's Hamlet explores the invention of the individual; Hamlet talks to himself and ignores others.",
+        "A Midsummer Night's Dream treats the spiritual world as real but ultimately about personal resolution.",
+        "The shift from ancient to modern involves the rise of the individual, which will lead to Freud and Jung."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Shakespeare, Fairies, and the Invention of the Individual",
+      "start": 8541,
+      "end": 9307,
+      "substance": "medium",
+      "develops": "Continues the earlier discussion of Shakespeare and the rise of the individual, adding the example of fairies being reduced to tiny, materialized pests (Labyrinth) and tracing how individualism leads to materialism by shoving saints and angels aside until only the self remains.",
+      "restates": "The core point that Shakespeare marks the rise of the individual was already established in the previous Q&A.",
+      "backrefs": "Builds on the earlier Q&A about Shakespeare and the rise of the individual.",
+      "qa": true,
+      "qa_merit": "Extends the earlier answer with a vivid illustration (Labyrinth) and a clear causal chain from individualism to materialism, which helps listeners see the stakes.",
+      "key_points": [
+        "Tolkien disliked Shakespeare for shrinking fairies; modern culture treats spirits as trivial.",
+        "Labyrinth shows fairies as bugs to be exterminated, the final materialization.",
+        "Individualism creates a private world, enabling materialism.",
+        "The Reformation pushed saints and angels aside, then God, leaving only the self, and now even the self is dissolving."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Caller Monica: Three Sources of Dreams and Discernment",
+      "start": 9307,
+      "end": 11000,
+      "substance": "medium",
+      "develops": "Applies the earlier framework to a personal question: dreams can come from internal, demonic, or divine sources, but the key is how one responds. Introduces the pastoral principle that all dreams can be received as from God if they lead to repentance, and that sharing dreams requires discernment and usually the guidance of a confessor.",
+      "restates": "The three-source taxonomy and the pastoral principle of response over source were already established in the earlier Q&A.",
+      "backrefs": "Builds on the earlier Q&A about the three sources of dreams and the pastoral principle of repentance.",
+      "qa": true,
+      "qa_merit": "Provides a concrete pastoral application: start by assuming a dream is for you, then involve a confessor before sharing, which is a practical rule listeners can use.",
+      "key_points": [
+        "Dreams can be internal, demonic, or divine, but the source is often ambiguous.",
+        "All dreams can be from God if received for repentance and faithfulness.",
+        "Sharing dreams requires a close relationship and sobriety; a confessor can help discern community significance.",
+        "Start by assuming a dream is for you personally."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Caller Rudy: Shepherding a Spouse's Dreams",
+      "start": 11000,
+      "end": 11900,
+      "substance": "low",
+      "develops": "Repeats the advice to consult a parish priest and to assume dreams are for oneself first, applying it to a husband concerned about his wife's dreams.",
+      "restates": "The same pastoral advice given to Monica: talk to a confessor, start by assuming the dream is for you.",
+      "backrefs": "",
+      "qa": true,
+      "qa_merit": "",
+      "key_points": [
+        "Consult your parish priest about a spouse's dreams.",
+        "Assume any spiritual experience is first for you, then involve others for discernment."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Modern Views of Dreams: Freud and Jung",
+      "start": 11900,
+      "end": 14700,
+      "substance": "high",
+      "develops": "Introduces the two modern poles: Freud (all dreams are internal, expressions of wishes, censored by the conscious mind) and Jung (dreams come from a collective unconscious, a shared telepathic layer, not from spirits or God). Shows how both reduce the spiritual world to mental processes, setting up deception.",
+      "restates": "",
+      "backrefs": "Builds on the earlier discussion of internal dreams and the ancient vs. modern contrast.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Freud: dreams are triggered by daytime events, express wishes (including death drive), and are censored by the conscious mind.",
+        "Jung: dreams come from a collective unconscious, a shared layer of all human minds connected telepathically; symbols are universal.",
+        "Jung's Red Book emerged from his deliberate immersion in the collective unconscious.",
+        "Jung denied the supernatural, seeing telepathy as a scientific reality.",
+        "Both Freud and Jung keep dreams within the human plane, excluding God, angels, and demons."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "New Age Dream Interpretation",
+      "start": 14700,
+      "end": 16200,
+      "substance": "high",
+      "develops": "Describes the New Age pole using Llewellyn's Complete Dictionary of Dreams as an example: dreams are messages from a divine 'higher self' guiding you toward your future divine self. The symbols are a chaotic mix from Jung, paganism, medieval sources, and invention. All modern approaches share the assumption that dreams are purely human, setting people up for deception.",
+      "restates": "",
+      "backrefs": "Builds on the earlier discussion of the two poles and the ancient understanding of dreams as communication from agents.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "New Age: dreams are communication from your higher self, which is divine and future-oriented.",
+        "Llewellyn's dictionary is a popular example, with symbols drawn from various sources without a system.",
+        "All modern approaches reduce the spiritual world to mental processes, leaving people open to deception by demons.",
+        "Demons can use dream dictionaries to mislead."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "The Trade-off: Material Knowledge vs. Spiritual Wisdom",
+      "start": 16200,
+      "end": 17400,
+      "substance": "high",
+      "develops": "Argues that modern technological progress came at the cost of neglecting spiritual wisdom, so humanity has regressed in understanding dreams. The goal is not to return to the ancient world but to reacquire spiritual wisdom to guide material knowledge.",
+      "restates": "",
+      "backrefs": "Builds on the earlier discussion of the ancient vs. modern contrast and the first few episodes of the show about material vs. spiritual knowledge.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Modern material knowledge is real and valuable, but it traded off spiritual wisdom.",
+        "We are less savvy about spiritual things than ancient people.",
+        "We should not retreat to the ancient world but reacquire spiritual wisdom to guide material science.",
+        "Spiritual wisdom is more important than material knowledge."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Conclusion: Caution, Ordinary Faithfulness, and Repentance",
+      "start": 17400,
+      "end": 19200,
+      "substance": "high",
+      "develops": "Summarizes the episode's practical takeaway: restraint and caution are the normal posture toward spiritual experiences; assume they are for you; test the spirits; live an ordinary life of prayer, fasting, and almsgiving. The irony is that the modern age's scientific explanations actually set us up for less knowledge. The framework helps read Scripture better.",
+      "restates": "Repeats the pastoral advice from the Q&A (caution, start with yourself, consult a confessor) and the earlier point about the trade-off, but now as a final synthesis.",
+      "backrefs": "Builds on the earlier Q&A and the discussion of the trade-off.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Caution and restraint are the normal posture toward spiritual experiences.",
+        "Assume any spiritual experience is for you first; test the spirits.",
+        "Ordinary faithfulness (prayer, fasting, almsgiving) leads to discernment.",
+        "The modern age's scientific explanations led to less knowledge, not more.",
+        "The framework helps read Scripture more fully."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Closing: Give Up on Your Dreams",
+      "start": 19200,
+      "end": 19800,
+      "substance": "medium",
+      "develops": "A closing exhortation: dreams of the past or future distract from the beauty and blessings God has placed in the present. 'Give up on your dreams' because this is the day the Lord has made.",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Dreams of the past or future are not aimed at finding joy in the present.",
+        "Live today and see the blessings God is giving now.",
+        "Give up on your dreams because this is the day the Lord has made."
+      ],
+      "scripture": [
+        "Psalm 118:24"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1276 @@
+{
+  "episode": 147,
+  "title": "Lord of Spirits - I Remember Running Through the Wet Grass [Ep. 147]",
+  "chunk_words": 10000,
+  "chunks": [
+    {
+      "index": 0,
+      "start": 0.59,
+      "end": 4428.0,
+      "words": 10005,
+      "movements": [
+        {
+          "label": "Cold open and show intro",
+          "start": 0,
+          "end": 59,
+          "substance": "low",
+          "develops": "Nothing; standard podcast intro and 1 Enoch epigraph.",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "1 Enoch 48:4-5 read as epigraph",
+            "Show premise: enchantment, unseen reality"
+          ],
+          "scripture": [
+            "1 Enoch 48:4-5"
+          ]
+        },
+        {
+          "label": "Banter and sixth anniversary",
+          "start": 59,
+          "end": 350,
+          "substance": "low",
+          "develops": "Nothing substantive; hosts joke about being live, Emilio Estevez films, and the show's sixth anniversary.",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Sixth anniversary of the podcast",
+            "Live show format with callers in second half"
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Reading negative reviews",
+          "start": 350,
+          "end": 590,
+          "substance": "low",
+          "develops": "Nothing; hosts read and react to listener reviews.",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Reviews criticize the show as an Orthodox recruiting pitch",
+            "One review calls DeYoung the false prophet"
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Who is Ezra?",
+          "start": 590,
+          "end": 1140,
+          "substance": "high",
+          "develops": "Introduces Ezra as a pivotal but neglected figure; explains the post-exilic period's odd place in the Protestant canon and the 'doughnut hole' of the intertestamental period.",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Ezra is central to the post-exilic period",
+            "Protestant canon creates a gap (400 silent years)",
+            "Hebrew canon deliberately excludes Hasmonean material",
+            "Multiple versions of late Old Testament texts exist"
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Ezra the scribe, priest, and high priest",
+          "start": 1140,
+          "end": 1900,
+          "substance": "high",
+          "develops": "Details Ezra's identity: scribe, priest, likely high priest; his name means 'Yahweh is my helper'; tradition credits him with writing Ezra, editing Nehemiah, writing Chronicles, and possibly Malachi.",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Ezra = 'Yahweh is my helper'",
+            "Greek Esdras, Latin Esdras",
+            "Talmud and Jerome say Ezra wrote Malachi, but DeYoung doubts it",
+            "Ezra likely high priest"
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Ezra's historical role and reforms",
+          "start": 1900,
+          "end": 2700,
+          "substance": "high",
+          "develops": "Ezra sent by Artaxerxes in 457 BC; Nehemiah sent in 444 BC as governor. Ezra forms proto-Sanhedrin, begins synagogue system, reorients Judean identity around Torah observance rather than temple-centric worship.",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Ezra sent 457 BC, Nehemiah 444 BC",
+            "Ezra forms Great Assembly (proto-Sanhedrin)",
+            "Synagogue system begins with Ezra",
+            "Judaism born as Torah-centered identity, not land-centered"
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Judaism as a new identity",
+          "start": 2700,
+          "end": 2900,
+          "substance": "high",
+          "develops": "Explains that 'Jew' means 'Judean' and that Ezra reoriented identity so Judeans anywhere could be Judean by Torah observance; contrasts with ancient Israelite religion focused on temple and land.",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Judean identity detached from living in Judea",
+            "Torah observance becomes central",
+            "Temple relativized within new ethos"
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Why so many books of Ezra?",
+          "start": 2900,
+          "end": 3000,
+          "substance": "medium",
+          "develops": "Sets up the question of why 10-12 books claim Ezra as author; explains Ezra's diminished role in Protestant memory versus his importance in rabbinic Judaism and historic Christianity.",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Ezra's importance explains pseudepigraphic attribution",
+            "Protestant culture has diminished Ezra"
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Break and ad",
+          "start": 3000,
+          "end": 3060,
+          "substance": "low",
+          "develops": "Nothing; ad for DeYoung's Baal book.",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [],
+          "scripture": []
+        },
+        {
+          "label": "More reviews and caller Paul",
+          "start": 3060,
+          "end": 3540,
+          "substance": "low",
+          "develops": "More review reading; caller Paul asks about how Pharisees and Sadducees attained authority. DeYoung explains Sadducees as high-priestly hijackers and Pharisees as claiming Mosaic succession through ordination chains.",
+          "restates": "",
+          "backrefs": "Hasmonean episode, ordination/apostolic succession episodes",
+          "qa": true,
+          "qa_merit": "Explains the historical mechanism of Pharisaic authority via succession lists, connecting to earlier episodes on ordination and apostolic succession.",
+          "key_points": [
+            "Sadducees = Zedekite high-priestly families, Roman collaborators",
+            "Pharisees claimed Mosaic succession via ordination chains",
+            "Ordination chains broken in first century AD",
+            "Christians believe Messiah restored these chains through apostles"
+          ],
+          "scripture": [
+            "2 Chronicles"
+          ]
+        },
+        {
+          "label": "Caller Kota on divine council and Cyrus",
+          "start": 3540,
+          "end": 3960,
+          "substance": "high",
+          "develops": "Explains that return from exile was incomplete because Persia (a demonic power) still ruled; exile is spiritual, not just geographical. Cyrus as God's anointed is like Saul—chosen but not thereby justified.",
+          "restates": "",
+          "backrefs": "Cyrus episode ('Protect the Mule'), Nebuchadnezzar episode, divine council framework",
+          "qa": true,
+          "qa_merit": "Connects the return from exile to the divine council framework and explains why the exile was seen as ongoing until Christ defeated the powers.",
+          "key_points": [
+            "Nations under evil spiritual powers",
+            "Return from exile incomplete because Persia still ruled",
+            "Exile is spiritual, not just geographical",
+            "Cyrus as God's anointed like Saul—chosen but not a saint"
+          ],
+          "scripture": [
+            "Isaiah",
+            "Daniel"
+          ]
+        },
+        {
+          "label": "The many books of Ezra: Ezra-Nehemiah vs. 1 Esdras",
+          "start": 3960,
+          "end": 4200,
+          "substance": "high",
+          "develops": "Introduces the textual complexity: Ezra-Nehemiah as one scroll in Hebrew canon, versus 1 Esdras as a competing single continuous text. Both begin with verbatim quote of end of 2 Chronicles.",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Ezra and Nehemiah originally one scroll",
+            "Hebrew canon has 22-24 books with combinations",
+            "1 Esdras is a competing version",
+            "Both begin with verbatim end of 2 Chronicles",
+            "Ezra-Nehemiah has genre differences (first vs. third person)"
+          ],
+          "scripture": [
+            "2 Chronicles"
+          ]
+        }
+      ],
+      "carry_forward": "Ezra is established as the second most significant figure after Moses in Jewish history, the priest/scribe who reoriented Judean identity around Torah observance, founded the synagogue system and proto-Sanhedrin, and whose work marks the transition from ancient Israelite religion to Second Temple Judaism. The post-exilic period is a 'doughnut hole' in the Protestant canon, and the return from exile was seen as incomplete because Persia (a demonic power) still ruled. Multiple books bear Ezra's name: Ezra-Nehemiah (one scroll in the Hebrew canon) and 1 Esdras (a competing single continuous text), both beginning with the verbatim end of 2 Chronicles. The episode is now moving into the textual complexity of these Ezra books."
+    },
+    {
+      "index": 1,
+      "start": 4428.0,
+      "end": 8923.52,
+      "words": 10011,
+      "movements": [
+        {
+          "label": "1 Esdras vs Ezra-Nehemiah: the canonical problem",
+          "start": 4428,
+          "end": 4790,
+          "substance": "high",
+          "develops": "The claim that 1 Esdras, not Ezra-Nehemiah, was the canonical Ezra for Josephus and every extant church father, and that the switch to Ezra-Nehemiah happened in the late second century AD — making the Protestant Old Testament canon demonstrably not the canon of any Jewish group before the second century.",
+          "restates": "",
+          "backrefs": "Builds on the earlier part's establishment of Ezra-Nehemiah and 1 Esdras as competing texts and the 'doughnut hole' of the post-exilic period.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "1 Esdras reorders Ezra-Nehemiah and includes the third-person Nehemiah chapters to make one continuous narrative.",
+            "Josephus's canon list names 1 Esdras, not Ezra-Nehemiah, as canonical.",
+            "Every extant church father who comments on Ezra holds 1 Esdras canonical, not Ezra-Nehemiah.",
+            "The switch to Ezra-Nehemiah in the Hebrew text occurred in the late second century AD.",
+            "Protestants often quote Josephus to support their canon, but Josephus actually supports 1 Esdras."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Numbering of the Ezras and the Vulgate",
+          "start": 4790,
+          "end": 5220,
+          "substance": "medium",
+          "develops": "A clarifying taxonomy: 1 Esdras = 1 Ezra; English Ezra = 2 Ezra; Nehemiah = 3 Ezra; 4 Ezra = 2 Esdras in the Latin tradition. Jerome translated 1 Esdras as the canonical Ezra and placed 4 Ezra in the deuterocanonical section.",
+          "restates": "",
+          "backrefs": "Continues the textual discussion from the previous movement.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "The numbering system: 1 Esdras, Ezra, Nehemiah, 4 Ezra.",
+            "Jerome's Vulgate labels 4 Ezra as 2 Esdras and places it with Tobit, Judith, and Maccabees.",
+            "The Orthodox Study Bible includes 1, 2, and 3 Ezra plus Ezra-Nehemiah, which the hosts criticize as not matching historical testimony."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Is Nehemiah canonical?",
+          "start": 5220,
+          "end": 5700,
+          "substance": "high",
+          "develops": "The provocation that Nehemiah's canonicity is hard to defend from a Protestant sola scriptura standpoint, since the only sources testifying to the non-1 Esdras parts of Nehemiah are rabbinic Jewish sources after the second century. Also argues that canon is not a black-and-white list but a living tradition with graded authority.",
+          "restates": "",
+          "backrefs": "References earlier discussions on the show about the edges of the Old Testament canon and the post-exilic texts.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Nehemiah is never read publicly in Orthodox liturgy.",
+            "No church fathers testify to Nehemiah's canonicity; they refer to 1 Esdras as 'Ezra'.",
+            "The Latin Vulgate and Slavonic Bible do not have Ezra-Nehemiah as canonical; they have 1 and 2 Esdras.",
+            "Only rabbinic Jewish sources after the second century testify to the canonicity of the non-1 Esdras parts of Nehemiah.",
+            "Canonical arguments are post-hoc; no one starts from a blank slate.",
+            "Sola scriptura requires a clear canon, which is historically unattainable."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Canon as living tradition vs. Protestant/Catholic polemics",
+          "start": 5700,
+          "end": 6300,
+          "substance": "medium",
+          "develops": "The hosts argue that the Orthodox Church does not construct doctrine from the Bible, so canonical differences are tolerable; they critique both Protestant and Roman Catholic attempts to use canon as a weapon, noting that Rome had no single Old Testament canon until Trent.",
+          "restates": "Partially restates the earlier point that canon is messy and that sola scriptura is the root of Protestant anxiety.",
+          "backrefs": "References earlier episodes on the canon and the edges of the Old Testament.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Orthodox arguments about canon are a posteriori, after receiving the tradition.",
+            "Protestants hold their canon because it's the tradition they received, not because of historical argument.",
+            "Roman Catholics had no single Old Testament canon until Trent; Florence declared one but it was debated for a century.",
+            "The Orthodox Church tolerates canonical diversity because it does not base doctrine on a fixed list."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Contents and context of Ezra: Torah reading and Aramaic",
+          "start": 6300,
+          "end": 6900,
+          "substance": "high",
+          "develops": "The public reading of the Torah by Ezra as the foundation of synagogue worship and Jewish identity, and the language shift to Aramaic as the lingua franca of the Persian Empire, explaining why Jesus and the apostles spoke Aramaic.",
+          "restates": "Restates the earlier point about Ezra reorienting identity around Torah, but adds the language dimension.",
+          "backrefs": "Builds on the earlier part's establishment of Ezra as the founder of synagogue and Torah-centered identity.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Ezra's public reading of the Torah begins the practice of synagogue Torah reading.",
+            "The people speak Aramaic, not Hebrew, requiring interpretation.",
+            "Aramaic became the imperial language of the Persian Empire through the displacement of Aramean merchants, not through violence.",
+            "This explains why Aramaic was the language of first-century Judea."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Intermarriage crisis and Judean identity",
+          "start": 6900,
+          "end": 7500,
+          "substance": "high",
+          "develops": "The intermarriage crisis as the concrete crisis in 1 Esdras: returning Judean men married local women without conversion, threatening Judean identity. The solution was to require conversion so that identity could be propagated generationally outside Judea, unlike the Northern Kingdom which disappeared through intermarriage.",
+          "restates": "Restates the earlier point about Ezra forming Jewish identity, but now gives the concrete example of intermarriage.",
+          "backrefs": "Builds on the earlier part's discussion of Ezra's reformation of Judean identity.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Earlier waves of returnees intermarried with local populations without conversion.",
+            "The Northern Kingdom ceased to exist because of intermarriage after deportation.",
+            "For Judean identity to survive in Alexandria, Egypt, and Mesopotamia, intermarriage had to stop and converts had to become Judean.",
+            "This is the concrete example of Ezra forming Jewish identity as a concept."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Anniversary banter and review readings",
+          "start": 7500,
+          "end": 8100,
+          "substance": "low",
+          "develops": "",
+          "restates": "",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Sixth anniversary of the podcast.",
+            "Reads humorous reviews, including one calling them 'Takis' and one criticizing them as 'shock jock Orthodox theology'.",
+            "Jokes about liquidation and negative net worth."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Caller Ryan: Depictability of Christ before Incarnation",
+          "start": 8100,
+          "end": 8700,
+          "substance": "medium",
+          "develops": "The question of whether Christ was depictable before the Incarnation. The hosts answer that Moses and others saw a form but did not make depictions, likely due to the cultural struggle with idolatry, whereas after the Incarnation we have depictions from the apostolic era.",
+          "restates": "",
+          "backrefs": "References the earlier episode on theophanies.",
+          "qa": true,
+          "qa_merit": "Opens a genuinely new question about the theology of icons and Old Testament theophanies, though the answer is brief.",
+          "key_points": [
+            "Moses saw a form but made no depiction, not even a verbal one.",
+            "Abraham also saw God but made no depiction.",
+            "The reason was likely the people's propensity to idolatry.",
+            "After the Incarnation, depictions of Christ go back to the time of the apostles."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Caller Ryan: Patristic definition of canon",
+          "start": 8700,
+          "end": 9900,
+          "substance": "high",
+          "develops": "A detailed answer on how the patristic era understood canon: not a fixed list but categories of books publicly read, privately read, and not to be read. St. Athanasius's 367 Paschal letter is the earliest list of 27 New Testament books, but it was written to exclude Gnostic texts, not to define a closed canon. St. Nicephorus's 9th-century list shows more complexity. The Church never divided over canon.",
+          "restates": "Restates the earlier point that canon is a living tradition, but adds specific historical examples.",
+          "backrefs": "References the earlier discussion in this episode about canon, and Father Stephen's book 'Apocrypha'.",
+          "qa": true,
+          "qa_merit": "Provides substantive historical detail on canon formation, including Athanasius's intent and the Nag Hammadi library, making it worth keeping.",
+          "key_points": [
+            "Church fathers did not produce a single definitive canon list; they spoke of books read in church.",
+            "St. Athanasius's 367 Paschal letter lists 27 New Testament books and Old Testament books, but as a exclusionary measure against Gnostic texts.",
+            "The Nag Hammadi library was buried when Athanasius drew these lines.",
+            "St. Nicephorus in the 9th century gives a more complex list: publicly read, privately read, and not to be read.",
+            "Some churches in the 9th century publicly read the Apocalypse of St. Peter instead of Revelation.",
+            "The Ethiopian and Coptic canons were pre-Chalcedonian and never an issue of division.",
+            "Church fathers sometimes quoted the Gospel of Thomas as authentic sayings of Christ."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Caller Michael: Ezra and Malachi on divorce",
+          "start": 9900,
+          "end": 11100,
+          "substance": "high",
+          "develops": "The apparent contradiction between Ezra's demand to divorce foreign wives and Malachi's condemnation of divorce is explained as two prophets applying the same principles to different situations. The hosts argue that Scripture contains apparent contradictions because texts must be interpreted and applied, and the prophet's role is to apply God's word bindingly to specific situations.",
+          "restates": "",
+          "backrefs": "References the Mosaic Succession episode and the earlier discussion of Ezra's reforms.",
+          "qa": true,
+          "qa_merit": "Opens a genuinely new question about inner-biblical interpretation and prophetic authority, with substantive theological development.",
+          "key_points": [
+            "Malachi's condemnation of divorce may be a dispute with Ezra's policy.",
+            "Scripture contains apparent contradictions (e.g., answering a fool according to his folly) because texts must be applied.",
+            "The prophet's role is to interpret and apply God's word to specific situations, and their application is binding.",
+            "The goal of both prophets is the salvation of the people involved.",
+            "Malachi's 'thus says the Lord' is not verbatim quotation but speaking with God-given authority."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Introduction to 4 Ezra / 2 Esdras",
+          "start": 11100,
+          "end": 12300,
+          "substance": "high",
+          "develops": "4 Ezra (2 Esdras) is semi-canonical, in the Slavonic appendix and Ethiopic Bible, originally written in Hebrew and/or Aramaic around the end of the first century AD by a non-Christian Jewish author, later Christianized in the Latin version. It is cited authoritatively by church fathers like Ambrose, and famously by Christopher Columbus.",
+          "restates": "",
+          "backrefs": "Continues the textual discussion from earlier in the episode.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "4 Ezra = 2 Esdras in Latin numbering.",
+            "It is in the Slavonic Bible appendix and the Ethiopic Bible.",
+            "Originally written in Hebrew and/or Aramaic around the end of the first century AD.",
+            "The Latin version has Christian additions at the beginning and end.",
+            "Church fathers like Ambrose cite it authoritatively.",
+            "Christopher Columbus quoted 2 Esdras 6:42 to argue the earth is 7/8 land and 1/8 water, and used it to estimate Japan's distance."
+          ],
+          "scripture": [
+            "2 Esdras 6:42"
+          ]
+        },
+        {
+          "label": "5th and 6th Ezra: the Christian additions",
+          "start": 12300,
+          "end": 12900,
+          "substance": "medium",
+          "develops": "The Christian additions to the Latin version of 4 Ezra are divided into 5th Ezra (first two chapters) and 6th Ezra (last two chapters), which are not in the Slavonic or Ethiopic versions.",
+          "restates": "",
+          "backrefs": "Continues the discussion of 4 Ezra.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "The first two chapters of the Latin 2 Esdras are called 5th Ezra.",
+            "The last two chapters are called 6th Ezra.",
+            "These are obvious Christian additions not present in Slavonic or Ethiopic."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Uriel in 4 Ezra and tradition",
+          "start": 12900,
+          "end": 13500,
+          "substance": "medium",
+          "develops": "The Archangel Uriel is a major figure in 4 Ezra and other Second Temple literature. He is one of the seven archangels, traditionally the angel who rescued John the Forerunner and Elizabeth.",
+          "restates": "",
+          "backrefs": "References the earlier episode on St. John the Forerunner.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Uriel is a major figure in 4 Ezra.",
+            "He is one of the seven archangels, along with Michael, Gabriel, and Raphael.",
+            "Tradition holds he rescued John the Forerunner and Elizabeth from Herod's men."
+          ],
+          "scripture": []
+        }
+      ],
+      "carry_forward": "The episode has established that 1 Esdras, not Ezra-Nehemiah, was the canonical Ezra for Josephus and the church fathers, and that the switch to Ezra-Nehemiah happened in the late second century AD. The Protestant Old Testament canon is therefore not the canon of any Jewish group before the second century. Nehemiah's canonicity is questionable from a Protestant standpoint. Canon in the patristic era was a graded, living tradition, not a fixed list. Ezra's reforms included public Torah reading and the intermarriage crisis, which shaped Jewish identity. The episode is now introducing 4 Ezra / 2 Esdras, its textual history, Christian additions (5th and 6th Ezra), and the Archangel Uriel."
+    },
+    {
+      "index": 2,
+      "start": 8923.52,
+      "end": 11765.879,
+      "words": 6547,
+      "movements": [
+        {
+          "label": "Uriel in Christian tradition",
+          "start": 8924,
+          "end": 9073,
+          "substance": "medium",
+          "develops": "Uriel is not just a figure in 4 Ezra but appears across early Christian tradition: as guardian of John the Baptist, guide of the Holy Family, in the Apocalypse of Peter, and in the lists of seven archangels by Dionysius and Gregory the Theologian.",
+          "restates": "",
+          "backrefs": "Earlier episode on John the Baptist; earlier discussion of the Apocalypse of Peter; earlier episode on angels/archangels.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Uriel is the angel in Leonardo's Virgin of the Rocks with John and Elizabeth.",
+            "Uriel accompanied the Holy Family on the flight into Egypt (attested in Pseudomathia and Coptic liturgics).",
+            "Uriel appears in the Apocalypse of Peter as the angel of judgment.",
+            "Dionysius and Gregory the Theologian list Uriel among the seven archangels."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Seven visions of 4 Ezra",
+          "start": 9073,
+          "end": 9336,
+          "substance": "high",
+          "develops": "4 Ezra proper (chapters 3–14) contains seven visions. The first three are Ezra questioning God's justice: why the exile continues, why Judah was exiled, and why a pagan empire rules. God's answer is twofold: Job-like divine incomprehensibility and the promise of coming judgment.",
+          "restates": "",
+          "backrefs": "Earlier discussion of the exile as incomplete; earlier episodes on Job and divine justice.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "First three visions are Ezra's questions to God, not abstract but Job-like.",
+            "Question 1: why does the exile continue under Persia?",
+            "Question 2: why was Judah exiled in the first place?",
+            "Question 3: why are pagan nations ruled by evil powers?",
+            "God's answer: (1) divine ways are beyond human understanding; (2) judgment is coming to set things right."
+          ],
+          "scripture": [
+            "Job"
+          ]
+        },
+        {
+          "label": "Fourth vision: bridegroom",
+          "start": 9336,
+          "end": 9482,
+          "substance": "medium",
+          "develops": "The fourth vision (bridegroom) depicts a bridegroom dying at the threshold of the bridal chamber; his mother mourns and is transformed into the city of Zion. This imagery is reflected in Orthodox hymnography for Holy Week and Pascha, especially regarding the Theotokos.",
+          "restates": "",
+          "backrefs": "Earlier episode 'One Flash' in the sacrament series on marriage.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Bridegroom dies at threshold of bridal chamber.",
+            "His mother mourns and becomes the heavenly Jerusalem/Zion.",
+            "Parallel to Orthodox hymnography of Holy Week and Pascha, where the Theotokos is both mother and city."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Fifth vision: eagle",
+          "start": 9482,
+          "end": 9623,
+          "substance": "high",
+          "develops": "The fifth vision (eagle) describes a three-headed eagle with twelve and eight wings, identified with the fourth beast of Daniel's prophecy—Rome, specifically the Flavian dynasty under Domitian. The lion of Judah (Messiah) kills and burns the eagle. The sixth vision shows the Messiah burning a mob and finding new disciples among Gentiles.",
+          "restates": "",
+          "backrefs": "Earlier episodes on Daniel's beasts and Revelation; discussion of Roman Empire as demonic power.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Eagle = fourth beast of Daniel = Rome.",
+            "Three heads and wings match Flavian iconography under Domitian.",
+            "Lion of Judah (Messiah) kills and burns the eagle.",
+            "Sixth vision: Messiah burns a mob and turns to Gentiles, prefiguring the kingdom being taken from Israel and given to the Gentiles."
+          ],
+          "scripture": [
+            "Daniel 7"
+          ]
+        },
+        {
+          "label": "Seventh vision: restoration of scriptures",
+          "start": 9623,
+          "end": 10100,
+          "substance": "high",
+          "develops": "The seventh vision describes Ezra restoring the lost Torah and all scriptures (24 books) word for word after the Babylonian destruction. This tradition is also found in the Epistle of Barnabas. St. Jerome refers to it in his preface to the Pentateuch, but his comment was later misused by 19th-century German scholars to claim Jerome doubted Mosaic authorship. The hosts debunk this and warn against repeating unverified claims.",
+          "restates": "",
+          "backrefs": "Earlier discussion of Ezra as restorer of Torah; earlier episodes on canon and textual transmission.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Tradition that Torah was lost and restored by Ezra.",
+            "4 Ezra 14: Ezra restores 24 books and 70 secret books.",
+            "The '70 secret books' likely refers to the Septuagint (the apocryphal books of the 70).",
+            "St. Jerome's preface to the Pentateuch mentions this tradition but does not doubt Moses.",
+            "19th-century scholars misused Jerome to late-date the Torah; the error persists in conservative Protestant sources.",
+            "Hosts urge listeners to verify claims even from Orthodox sources."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Greek Apocalypse of Ezra",
+          "start": 10100,
+          "end": 10500,
+          "substance": "medium",
+          "develops": "The Greek Apocalypse of Ezra is a Christian text (mentions Paul and John) that lists nine archangels, including extra names like Gabuthelon, Akr, Ourphoukatonos, Beboros, and Zebulion. It is a tour of heaven and hell where Ezra questions God about evil and free will; God answers that humans have free will and that He took flesh to forgive sins.",
+          "restates": "",
+          "backrefs": "Earlier discussion of seven archangels; earlier episodes on apocalypses and tours of heaven/hell.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Greek Apocalypse of Ezra is explicitly Christian, mentioning Paul and John.",
+            "Lists nine archangels, including unusual names.",
+            "Ezra asks why God allows sin; God answers free will.",
+            "Ezra asks about women and the devil; God answers with the incarnation and forgiveness."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Vision and Questions of Ezra",
+          "start": 10500,
+          "end": 10600,
+          "substance": "low",
+          "develops": "The Vision of Ezra and the Questions of Ezra are medieval texts that continue the theme of Ezra questioning God about the problem of evil.",
+          "restates": "Restates the theme of Ezra questioning God already covered in the Greek Apocalypse and 4 Ezra.",
+          "backrefs": "",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Medieval texts: Vision of Ezra and Questions of Ezra.",
+            "Same theme: Ezra questioning God about evil."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Revelation of Ezra (calendar logion)",
+          "start": 10600,
+          "end": 10900,
+          "substance": "medium",
+          "develops": "The Revelation of Ezra is a 9th-century Christian text, not an apocalypse but a 'calendar logion'—a genre predicting weather, crops, and fertility based on the day of the week on which New Year and feasts fall. This genre exists in Jewish and Christian literature, e.g., the Treatise of Shem (1st c. BC) and 4Q Cryptic (Dead Sea Scroll) which predicts physiognomy based on astrological sign at birth.",
+          "restates": "",
+          "backrefs": "Earlier episodes on Jewish astrology and Dead Sea Scrolls.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Revelation of Ezra is a calendar logion, not an apocalypse.",
+            "Predicts weather, crops, fertility based on calendar.",
+            "Genre includes Treatise of Shem and 4Q Cryptic.",
+            "4Q Cryptic predicts physiognomy based on astrological sign at birth."
+          ],
+          "scripture": []
+        },
+        {
+          "label": "Final thoughts: living tradition vs. encyclopedia",
+          "start": 10900,
+          "end": 11400,
+          "substance": "high",
+          "develops": "The hosts conclude that Orthodox tradition is not a static encyclopedia or code of law but a living, experienced tradition. The variety of Ezra texts illustrates this. They warn against absolutizing liturgical texts (e.g., Kontakion vs. Canon) and against putting God and reality into neat boxes. Humility is needed to accept that we cannot understand everything.",
+          "restates": "Restates earlier points about canon as graded tradition and the danger of absolutizing texts, but develops them into a broader spiritual exhortation.",
+          "backrefs": "Earlier discussion of canon as living tradition; earlier episodes on liturgical texts and humility.",
+          "qa": false,
+          "qa_merit": "",
+          "key_points": [
+            "Orthodox tradition is living, not a static encyclopedia.",
+            "Variety of Ezra texts demonstrates this.",
+            "Liturgical texts like Kontakion and Canon are not absolute dogma.",
+            "We must let go of the need to categorize everything, especially God.",
+            "Humility is necessary to accept that we cannot understand everything."
+          ],
+          "scripture": []
+        }
+      ],
+      "carry_forward": "The episode concludes by surveying the remaining Ezra traditions: the seven visions of 4 Ezra (including the bridegroom, eagle, and restoration of scriptures), the Greek Apocalypse of Ezra, medieval Vision and Questions of Ezra, and the Revelation of Ezra as a calendar logion. It debunks the misuse of St. Jerome regarding Mosaic authorship and emphasizes that Orthodox tradition is a living, varied community, not a static encyclopedia. The hosts urge humility and trust in God rather than demanding to understand everything."
+    }
+  ],
+  "movements": [
+    {
+      "label": "Cold open and show intro",
+      "start": 0,
+      "end": 59,
+      "substance": "low",
+      "develops": "Nothing; standard podcast intro and 1 Enoch epigraph.",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "1 Enoch 48:4-5 read as epigraph",
+        "Show premise: enchantment, unseen reality"
+      ],
+      "scripture": [
+        "1 Enoch 48:4-5"
+      ]
+    },
+    {
+      "label": "Banter and sixth anniversary",
+      "start": 59,
+      "end": 350,
+      "substance": "low",
+      "develops": "Nothing substantive; hosts joke about being live, Emilio Estevez films, and the show's sixth anniversary.",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Sixth anniversary of the podcast",
+        "Live show format with callers in second half"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Reading negative reviews",
+      "start": 350,
+      "end": 590,
+      "substance": "low",
+      "develops": "Nothing; hosts read and react to listener reviews.",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Reviews criticize the show as an Orthodox recruiting pitch",
+        "One review calls DeYoung the false prophet"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Who is Ezra?",
+      "start": 590,
+      "end": 1140,
+      "substance": "high",
+      "develops": "Introduces Ezra as a pivotal but neglected figure; explains the post-exilic period's odd place in the Protestant canon and the 'doughnut hole' of the intertestamental period.",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Ezra is central to the post-exilic period",
+        "Protestant canon creates a gap (400 silent years)",
+        "Hebrew canon deliberately excludes Hasmonean material",
+        "Multiple versions of late Old Testament texts exist"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Ezra the scribe, priest, and high priest",
+      "start": 1140,
+      "end": 1900,
+      "substance": "high",
+      "develops": "Details Ezra's identity: scribe, priest, likely high priest; his name means 'Yahweh is my helper'; tradition credits him with writing Ezra, editing Nehemiah, writing Chronicles, and possibly Malachi.",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Ezra = 'Yahweh is my helper'",
+        "Greek Esdras, Latin Esdras",
+        "Talmud and Jerome say Ezra wrote Malachi, but DeYoung doubts it",
+        "Ezra likely high priest"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Ezra's historical role and reforms",
+      "start": 1900,
+      "end": 2700,
+      "substance": "high",
+      "develops": "Ezra sent by Artaxerxes in 457 BC; Nehemiah sent in 444 BC as governor. Ezra forms proto-Sanhedrin, begins synagogue system, reorients Judean identity around Torah observance rather than temple-centric worship.",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Ezra sent 457 BC, Nehemiah 444 BC",
+        "Ezra forms Great Assembly (proto-Sanhedrin)",
+        "Synagogue system begins with Ezra",
+        "Judaism born as Torah-centered identity, not land-centered"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Judaism as a new identity",
+      "start": 2700,
+      "end": 2900,
+      "substance": "high",
+      "develops": "Explains that 'Jew' means 'Judean' and that Ezra reoriented identity so Judeans anywhere could be Judean by Torah observance; contrasts with ancient Israelite religion focused on temple and land.",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Judean identity detached from living in Judea",
+        "Torah observance becomes central",
+        "Temple relativized within new ethos"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Why so many books of Ezra?",
+      "start": 2900,
+      "end": 3000,
+      "substance": "medium",
+      "develops": "Sets up the question of why 10-12 books claim Ezra as author; explains Ezra's diminished role in Protestant memory versus his importance in rabbinic Judaism and historic Christianity.",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Ezra's importance explains pseudepigraphic attribution",
+        "Protestant culture has diminished Ezra"
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Break and ad",
+      "start": 3000,
+      "end": 3060,
+      "substance": "low",
+      "develops": "Nothing; ad for DeYoung's Baal book.",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [],
+      "scripture": []
+    },
+    {
+      "label": "More reviews and caller Paul",
+      "start": 3060,
+      "end": 3540,
+      "substance": "low",
+      "develops": "More review reading; caller Paul asks about how Pharisees and Sadducees attained authority. DeYoung explains Sadducees as high-priestly hijackers and Pharisees as claiming Mosaic succession through ordination chains.",
+      "restates": "",
+      "backrefs": "Hasmonean episode, ordination/apostolic succession episodes",
+      "qa": true,
+      "qa_merit": "Explains the historical mechanism of Pharisaic authority via succession lists, connecting to earlier episodes on ordination and apostolic succession.",
+      "key_points": [
+        "Sadducees = Zedekite high-priestly families, Roman collaborators",
+        "Pharisees claimed Mosaic succession via ordination chains",
+        "Ordination chains broken in first century AD",
+        "Christians believe Messiah restored these chains through apostles"
+      ],
+      "scripture": [
+        "2 Chronicles"
+      ]
+    },
+    {
+      "label": "Caller Kota on divine council and Cyrus",
+      "start": 3540,
+      "end": 3960,
+      "substance": "high",
+      "develops": "Explains that return from exile was incomplete because Persia (a demonic power) still ruled; exile is spiritual, not just geographical. Cyrus as God's anointed is like Saul—chosen but not thereby justified.",
+      "restates": "",
+      "backrefs": "Cyrus episode ('Protect the Mule'), Nebuchadnezzar episode, divine council framework",
+      "qa": true,
+      "qa_merit": "Connects the return from exile to the divine council framework and explains why the exile was seen as ongoing until Christ defeated the powers.",
+      "key_points": [
+        "Nations under evil spiritual powers",
+        "Return from exile incomplete because Persia still ruled",
+        "Exile is spiritual, not just geographical",
+        "Cyrus as God's anointed like Saul—chosen but not a saint"
+      ],
+      "scripture": [
+        "Isaiah",
+        "Daniel"
+      ]
+    },
+    {
+      "label": "The many books of Ezra: Ezra-Nehemiah vs. 1 Esdras",
+      "start": 3960,
+      "end": 4200,
+      "substance": "high",
+      "develops": "Introduces the textual complexity: Ezra-Nehemiah as one scroll in Hebrew canon, versus 1 Esdras as a competing single continuous text. Both begin with verbatim quote of end of 2 Chronicles.",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Ezra and Nehemiah originally one scroll",
+        "Hebrew canon has 22-24 books with combinations",
+        "1 Esdras is a competing version",
+        "Both begin with verbatim end of 2 Chronicles",
+        "Ezra-Nehemiah has genre differences (first vs. third person)"
+      ],
+      "scripture": [
+        "2 Chronicles"
+      ]
+    },
+    {
+      "label": "1 Esdras vs Ezra-Nehemiah: the canonical problem",
+      "start": 4428,
+      "end": 4790,
+      "substance": "high",
+      "develops": "The claim that 1 Esdras, not Ezra-Nehemiah, was the canonical Ezra for Josephus and every extant church father, and that the switch to Ezra-Nehemiah happened in the late second century AD — making the Protestant Old Testament canon demonstrably not the canon of any Jewish group before the second century.",
+      "restates": "",
+      "backrefs": "Builds on the earlier part's establishment of Ezra-Nehemiah and 1 Esdras as competing texts and the 'doughnut hole' of the post-exilic period.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "1 Esdras reorders Ezra-Nehemiah and includes the third-person Nehemiah chapters to make one continuous narrative.",
+        "Josephus's canon list names 1 Esdras, not Ezra-Nehemiah, as canonical.",
+        "Every extant church father who comments on Ezra holds 1 Esdras canonical, not Ezra-Nehemiah.",
+        "The switch to Ezra-Nehemiah in the Hebrew text occurred in the late second century AD.",
+        "Protestants often quote Josephus to support their canon, but Josephus actually supports 1 Esdras."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Numbering of the Ezras and the Vulgate",
+      "start": 4790,
+      "end": 5220,
+      "substance": "medium",
+      "develops": "A clarifying taxonomy: 1 Esdras = 1 Ezra; English Ezra = 2 Ezra; Nehemiah = 3 Ezra; 4 Ezra = 2 Esdras in the Latin tradition. Jerome translated 1 Esdras as the canonical Ezra and placed 4 Ezra in the deuterocanonical section.",
+      "restates": "",
+      "backrefs": "Continues the textual discussion from the previous movement.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "The numbering system: 1 Esdras, Ezra, Nehemiah, 4 Ezra.",
+        "Jerome's Vulgate labels 4 Ezra as 2 Esdras and places it with Tobit, Judith, and Maccabees.",
+        "The Orthodox Study Bible includes 1, 2, and 3 Ezra plus Ezra-Nehemiah, which the hosts criticize as not matching historical testimony."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Is Nehemiah canonical?",
+      "start": 5220,
+      "end": 5700,
+      "substance": "high",
+      "develops": "The provocation that Nehemiah's canonicity is hard to defend from a Protestant sola scriptura standpoint, since the only sources testifying to the non-1 Esdras parts of Nehemiah are rabbinic Jewish sources after the second century. Also argues that canon is not a black-and-white list but a living tradition with graded authority.",
+      "restates": "",
+      "backrefs": "References earlier discussions on the show about the edges of the Old Testament canon and the post-exilic texts.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Nehemiah is never read publicly in Orthodox liturgy.",
+        "No church fathers testify to Nehemiah's canonicity; they refer to 1 Esdras as 'Ezra'.",
+        "The Latin Vulgate and Slavonic Bible do not have Ezra-Nehemiah as canonical; they have 1 and 2 Esdras.",
+        "Only rabbinic Jewish sources after the second century testify to the canonicity of the non-1 Esdras parts of Nehemiah.",
+        "Canonical arguments are post-hoc; no one starts from a blank slate.",
+        "Sola scriptura requires a clear canon, which is historically unattainable."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Canon as living tradition vs. Protestant/Catholic polemics",
+      "start": 5700,
+      "end": 6300,
+      "substance": "medium",
+      "develops": "The hosts argue that the Orthodox Church does not construct doctrine from the Bible, so canonical differences are tolerable; they critique both Protestant and Roman Catholic attempts to use canon as a weapon, noting that Rome had no single Old Testament canon until Trent.",
+      "restates": "Partially restates the earlier point that canon is messy and that sola scriptura is the root of Protestant anxiety.",
+      "backrefs": "References earlier episodes on the canon and the edges of the Old Testament.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Orthodox arguments about canon are a posteriori, after receiving the tradition.",
+        "Protestants hold their canon because it's the tradition they received, not because of historical argument.",
+        "Roman Catholics had no single Old Testament canon until Trent; Florence declared one but it was debated for a century.",
+        "The Orthodox Church tolerates canonical diversity because it does not base doctrine on a fixed list."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Contents and context of Ezra: Torah reading and Aramaic",
+      "start": 6300,
+      "end": 6900,
+      "substance": "high",
+      "develops": "The public reading of the Torah by Ezra as the foundation of synagogue worship and Jewish identity, and the language shift to Aramaic as the lingua franca of the Persian Empire, explaining why Jesus and the apostles spoke Aramaic.",
+      "restates": "Restates the earlier point about Ezra reorienting identity around Torah, but adds the language dimension.",
+      "backrefs": "Builds on the earlier part's establishment of Ezra as the founder of synagogue and Torah-centered identity.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Ezra's public reading of the Torah begins the practice of synagogue Torah reading.",
+        "The people speak Aramaic, not Hebrew, requiring interpretation.",
+        "Aramaic became the imperial language of the Persian Empire through the displacement of Aramean merchants, not through violence.",
+        "This explains why Aramaic was the language of first-century Judea."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Intermarriage crisis and Judean identity",
+      "start": 6900,
+      "end": 7500,
+      "substance": "high",
+      "develops": "The intermarriage crisis as the concrete crisis in 1 Esdras: returning Judean men married local women without conversion, threatening Judean identity. The solution was to require conversion so that identity could be propagated generationally outside Judea, unlike the Northern Kingdom which disappeared through intermarriage.",
+      "restates": "Restates the earlier point about Ezra forming Jewish identity, but now gives the concrete example of intermarriage.",
+      "backrefs": "Builds on the earlier part's discussion of Ezra's reformation of Judean identity.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Earlier waves of returnees intermarried with local populations without conversion.",
+        "The Northern Kingdom ceased to exist because of intermarriage after deportation.",
+        "For Judean identity to survive in Alexandria, Egypt, and Mesopotamia, intermarriage had to stop and converts had to become Judean.",
+        "This is the concrete example of Ezra forming Jewish identity as a concept."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Anniversary banter and review readings",
+      "start": 7500,
+      "end": 8100,
+      "substance": "low",
+      "develops": "",
+      "restates": "",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Sixth anniversary of the podcast.",
+        "Reads humorous reviews, including one calling them 'Takis' and one criticizing them as 'shock jock Orthodox theology'.",
+        "Jokes about liquidation and negative net worth."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Caller Ryan: Depictability of Christ before Incarnation",
+      "start": 8100,
+      "end": 8700,
+      "substance": "medium",
+      "develops": "The question of whether Christ was depictable before the Incarnation. The hosts answer that Moses and others saw a form but did not make depictions, likely due to the cultural struggle with idolatry, whereas after the Incarnation we have depictions from the apostolic era.",
+      "restates": "",
+      "backrefs": "References the earlier episode on theophanies.",
+      "qa": true,
+      "qa_merit": "Opens a genuinely new question about the theology of icons and Old Testament theophanies, though the answer is brief.",
+      "key_points": [
+        "Moses saw a form but made no depiction, not even a verbal one.",
+        "Abraham also saw God but made no depiction.",
+        "The reason was likely the people's propensity to idolatry.",
+        "After the Incarnation, depictions of Christ go back to the time of the apostles."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Caller Ryan: Patristic definition of canon",
+      "start": 8700,
+      "end": 9900,
+      "substance": "high",
+      "develops": "A detailed answer on how the patristic era understood canon: not a fixed list but categories of books publicly read, privately read, and not to be read. St. Athanasius's 367 Paschal letter is the earliest list of 27 New Testament books, but it was written to exclude Gnostic texts, not to define a closed canon. St. Nicephorus's 9th-century list shows more complexity. The Church never divided over canon.",
+      "restates": "Restates the earlier point that canon is a living tradition, but adds specific historical examples.",
+      "backrefs": "References the earlier discussion in this episode about canon, and Father Stephen's book 'Apocrypha'.",
+      "qa": true,
+      "qa_merit": "Provides substantive historical detail on canon formation, including Athanasius's intent and the Nag Hammadi library, making it worth keeping.",
+      "key_points": [
+        "Church fathers did not produce a single definitive canon list; they spoke of books read in church.",
+        "St. Athanasius's 367 Paschal letter lists 27 New Testament books and Old Testament books, but as a exclusionary measure against Gnostic texts.",
+        "The Nag Hammadi library was buried when Athanasius drew these lines.",
+        "St. Nicephorus in the 9th century gives a more complex list: publicly read, privately read, and not to be read.",
+        "Some churches in the 9th century publicly read the Apocalypse of St. Peter instead of Revelation.",
+        "The Ethiopian and Coptic canons were pre-Chalcedonian and never an issue of division.",
+        "Church fathers sometimes quoted the Gospel of Thomas as authentic sayings of Christ."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Caller Michael: Ezra and Malachi on divorce",
+      "start": 9900,
+      "end": 11100,
+      "substance": "high",
+      "develops": "The apparent contradiction between Ezra's demand to divorce foreign wives and Malachi's condemnation of divorce is explained as two prophets applying the same principles to different situations. The hosts argue that Scripture contains apparent contradictions because texts must be interpreted and applied, and the prophet's role is to apply God's word bindingly to specific situations.",
+      "restates": "",
+      "backrefs": "References the Mosaic Succession episode and the earlier discussion of Ezra's reforms.",
+      "qa": true,
+      "qa_merit": "Opens a genuinely new question about inner-biblical interpretation and prophetic authority, with substantive theological development.",
+      "key_points": [
+        "Malachi's condemnation of divorce may be a dispute with Ezra's policy.",
+        "Scripture contains apparent contradictions (e.g., answering a fool according to his folly) because texts must be applied.",
+        "The prophet's role is to interpret and apply God's word to specific situations, and their application is binding.",
+        "The goal of both prophets is the salvation of the people involved.",
+        "Malachi's 'thus says the Lord' is not verbatim quotation but speaking with God-given authority."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Introduction to 4 Ezra / 2 Esdras",
+      "start": 11100,
+      "end": 12300,
+      "substance": "high",
+      "develops": "4 Ezra (2 Esdras) is semi-canonical, in the Slavonic appendix and Ethiopic Bible, originally written in Hebrew and/or Aramaic around the end of the first century AD by a non-Christian Jewish author, later Christianized in the Latin version. It is cited authoritatively by church fathers like Ambrose, and famously by Christopher Columbus.",
+      "restates": "",
+      "backrefs": "Continues the textual discussion from earlier in the episode.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "4 Ezra = 2 Esdras in Latin numbering.",
+        "It is in the Slavonic Bible appendix and the Ethiopic Bible.",
+        "Originally written in Hebrew and/or Aramaic around the end of the first century AD.",
+        "The Latin version has Christian additions at the beginning and end.",
+        "Church fathers like Ambrose cite it authoritatively.",
+        "Christopher Columbus quoted 2 Esdras 6:42 to argue the earth is 7/8 land and 1/8 water, and used it to estimate Japan's distance."
+      ],
+      "scripture": [
+        "2 Esdras 6:42"
+      ]
+    },
+    {
+      "label": "5th and 6th Ezra: the Christian additions",
+      "start": 12300,
+      "end": 12900,
+      "substance": "medium",
+      "develops": "The Christian additions to the Latin version of 4 Ezra are divided into 5th Ezra (first two chapters) and 6th Ezra (last two chapters), which are not in the Slavonic or Ethiopic versions.",
+      "restates": "",
+      "backrefs": "Continues the discussion of 4 Ezra.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "The first two chapters of the Latin 2 Esdras are called 5th Ezra.",
+        "The last two chapters are called 6th Ezra.",
+        "These are obvious Christian additions not present in Slavonic or Ethiopic."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Uriel in 4 Ezra and tradition",
+      "start": 12900,
+      "end": 13500,
+      "substance": "medium",
+      "develops": "The Archangel Uriel is a major figure in 4 Ezra and other Second Temple literature. He is one of the seven archangels, traditionally the angel who rescued John the Forerunner and Elizabeth.",
+      "restates": "",
+      "backrefs": "References the earlier episode on St. John the Forerunner.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Uriel is a major figure in 4 Ezra.",
+        "He is one of the seven archangels, along with Michael, Gabriel, and Raphael.",
+        "Tradition holds he rescued John the Forerunner and Elizabeth from Herod's men."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Uriel in Christian tradition",
+      "start": 8924,
+      "end": 9073,
+      "substance": "medium",
+      "develops": "Uriel is not just a figure in 4 Ezra but appears across early Christian tradition: as guardian of John the Baptist, guide of the Holy Family, in the Apocalypse of Peter, and in the lists of seven archangels by Dionysius and Gregory the Theologian.",
+      "restates": "",
+      "backrefs": "Earlier episode on John the Baptist; earlier discussion of the Apocalypse of Peter; earlier episode on angels/archangels.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Uriel is the angel in Leonardo's Virgin of the Rocks with John and Elizabeth.",
+        "Uriel accompanied the Holy Family on the flight into Egypt (attested in Pseudomathia and Coptic liturgics).",
+        "Uriel appears in the Apocalypse of Peter as the angel of judgment.",
+        "Dionysius and Gregory the Theologian list Uriel among the seven archangels."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Seven visions of 4 Ezra",
+      "start": 9073,
+      "end": 9336,
+      "substance": "high",
+      "develops": "4 Ezra proper (chapters 3–14) contains seven visions. The first three are Ezra questioning God's justice: why the exile continues, why Judah was exiled, and why a pagan empire rules. God's answer is twofold: Job-like divine incomprehensibility and the promise of coming judgment.",
+      "restates": "",
+      "backrefs": "Earlier discussion of the exile as incomplete; earlier episodes on Job and divine justice.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "First three visions are Ezra's questions to God, not abstract but Job-like.",
+        "Question 1: why does the exile continue under Persia?",
+        "Question 2: why was Judah exiled in the first place?",
+        "Question 3: why are pagan nations ruled by evil powers?",
+        "God's answer: (1) divine ways are beyond human understanding; (2) judgment is coming to set things right."
+      ],
+      "scripture": [
+        "Job"
+      ]
+    },
+    {
+      "label": "Fourth vision: bridegroom",
+      "start": 9336,
+      "end": 9482,
+      "substance": "medium",
+      "develops": "The fourth vision (bridegroom) depicts a bridegroom dying at the threshold of the bridal chamber; his mother mourns and is transformed into the city of Zion. This imagery is reflected in Orthodox hymnography for Holy Week and Pascha, especially regarding the Theotokos.",
+      "restates": "",
+      "backrefs": "Earlier episode 'One Flash' in the sacrament series on marriage.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Bridegroom dies at threshold of bridal chamber.",
+        "His mother mourns and becomes the heavenly Jerusalem/Zion.",
+        "Parallel to Orthodox hymnography of Holy Week and Pascha, where the Theotokos is both mother and city."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Fifth vision: eagle",
+      "start": 9482,
+      "end": 9623,
+      "substance": "high",
+      "develops": "The fifth vision (eagle) describes a three-headed eagle with twelve and eight wings, identified with the fourth beast of Daniel's prophecy—Rome, specifically the Flavian dynasty under Domitian. The lion of Judah (Messiah) kills and burns the eagle. The sixth vision shows the Messiah burning a mob and finding new disciples among Gentiles.",
+      "restates": "",
+      "backrefs": "Earlier episodes on Daniel's beasts and Revelation; discussion of Roman Empire as demonic power.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Eagle = fourth beast of Daniel = Rome.",
+        "Three heads and wings match Flavian iconography under Domitian.",
+        "Lion of Judah (Messiah) kills and burns the eagle.",
+        "Sixth vision: Messiah burns a mob and turns to Gentiles, prefiguring the kingdom being taken from Israel and given to the Gentiles."
+      ],
+      "scripture": [
+        "Daniel 7"
+      ]
+    },
+    {
+      "label": "Seventh vision: restoration of scriptures",
+      "start": 9623,
+      "end": 10100,
+      "substance": "high",
+      "develops": "The seventh vision describes Ezra restoring the lost Torah and all scriptures (24 books) word for word after the Babylonian destruction. This tradition is also found in the Epistle of Barnabas. St. Jerome refers to it in his preface to the Pentateuch, but his comment was later misused by 19th-century German scholars to claim Jerome doubted Mosaic authorship. The hosts debunk this and warn against repeating unverified claims.",
+      "restates": "",
+      "backrefs": "Earlier discussion of Ezra as restorer of Torah; earlier episodes on canon and textual transmission.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Tradition that Torah was lost and restored by Ezra.",
+        "4 Ezra 14: Ezra restores 24 books and 70 secret books.",
+        "The '70 secret books' likely refers to the Septuagint (the apocryphal books of the 70).",
+        "St. Jerome's preface to the Pentateuch mentions this tradition but does not doubt Moses.",
+        "19th-century scholars misused Jerome to late-date the Torah; the error persists in conservative Protestant sources.",
+        "Hosts urge listeners to verify claims even from Orthodox sources."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Greek Apocalypse of Ezra",
+      "start": 10100,
+      "end": 10500,
+      "substance": "medium",
+      "develops": "The Greek Apocalypse of Ezra is a Christian text (mentions Paul and John) that lists nine archangels, including extra names like Gabuthelon, Akr, Ourphoukatonos, Beboros, and Zebulion. It is a tour of heaven and hell where Ezra questions God about evil and free will; God answers that humans have free will and that He took flesh to forgive sins.",
+      "restates": "",
+      "backrefs": "Earlier discussion of seven archangels; earlier episodes on apocalypses and tours of heaven/hell.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Greek Apocalypse of Ezra is explicitly Christian, mentioning Paul and John.",
+        "Lists nine archangels, including unusual names.",
+        "Ezra asks why God allows sin; God answers free will.",
+        "Ezra asks about women and the devil; God answers with the incarnation and forgiveness."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Vision and Questions of Ezra",
+      "start": 10500,
+      "end": 10600,
+      "substance": "low",
+      "develops": "The Vision of Ezra and the Questions of Ezra are medieval texts that continue the theme of Ezra questioning God about the problem of evil.",
+      "restates": "Restates the theme of Ezra questioning God already covered in the Greek Apocalypse and 4 Ezra.",
+      "backrefs": "",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Medieval texts: Vision of Ezra and Questions of Ezra.",
+        "Same theme: Ezra questioning God about evil."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Revelation of Ezra (calendar logion)",
+      "start": 10600,
+      "end": 10900,
+      "substance": "medium",
+      "develops": "The Revelation of Ezra is a 9th-century Christian text, not an apocalypse but a 'calendar logion'—a genre predicting weather, crops, and fertility based on the day of the week on which New Year and feasts fall. This genre exists in Jewish and Christian literature, e.g., the Treatise of Shem (1st c. BC) and 4Q Cryptic (Dead Sea Scroll) which predicts physiognomy based on astrological sign at birth.",
+      "restates": "",
+      "backrefs": "Earlier episodes on Jewish astrology and Dead Sea Scrolls.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Revelation of Ezra is a calendar logion, not an apocalypse.",
+        "Predicts weather, crops, fertility based on calendar.",
+        "Genre includes Treatise of Shem and 4Q Cryptic.",
+        "4Q Cryptic predicts physiognomy based on astrological sign at birth."
+      ],
+      "scripture": []
+    },
+    {
+      "label": "Final thoughts: living tradition vs. encyclopedia",
+      "start": 10900,
+      "end": 11400,
+      "substance": "high",
+      "develops": "The hosts conclude that Orthodox tradition is not a static encyclopedia or code of law but a living, experienced tradition. The variety of Ezra texts illustrates this. They warn against absolutizing liturgical texts (e.g., Kontakion vs. Canon) and against putting God and reality into neat boxes. Humility is needed to accept that we cannot understand everything.",
+      "restates": "Restates earlier points about canon as graded tradition and the danger of absolutizing texts, but develops them into a broader spiritual exhortation.",
+      "backrefs": "Earlier discussion of canon as living tradition; earlier episodes on liturgical texts and humility.",
+      "qa": false,
+      "qa_merit": "",
+      "key_points": [
+        "Orthodox tradition is living, not a static encyclopedia.",
+        "Variety of Ezra texts demonstrates this.",
+        "Liturgical texts like Kontakion and Canon are not absolute dogma.",
+        "We must let go of the need to categorize everything, especially God.",
+        "Humility is necessary to accept that we cannot understand everything."
+      ],
+      "scripture": []
+    }
+  ]
+}
